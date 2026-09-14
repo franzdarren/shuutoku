@@ -94,9 +94,17 @@ floating popup with its reading and meaning:
 
 `api/jisho.js` is the production equivalent of the dev-only Vite proxy —
 same `/api/jisho` path, same job (fetch Jisho.org server-side so CORS
-doesn't apply), just running as a Vercel serverless function instead of a
-Vite dev-server proxy. `src/lib/dictionary.js` calls that same path either
-way, so nothing else needs to change between dev and production.
+doesn't apply), just running as a Vercel function instead of a Vite
+dev-server proxy. `src/lib/dictionary.js` calls that same path either way,
+so nothing else needs to change between dev and production.
+
+It specifically runs on Vercel's **Edge Runtime** (`export const config =
+{ runtime: "edge" }`), not the default regional Node.js runtime — found by
+hand while deploying this: Jisho.org's own WAF returns a 403 to Vercel's
+regional Node function IP ranges (consistently reproducible), but not to
+the Edge Runtime's network. If lookups ever start failing again in
+production, that block resurfacing (on a different IP range) is the first
+thing to check.
 
 Vercel auto-detects this as a Vite project (build command `npm run build`,
 output `dist/`) and auto-detects `api/*.js` as serverless functions — no
