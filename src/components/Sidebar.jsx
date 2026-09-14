@@ -8,6 +8,7 @@ const NAV = [
   { id: "reading", mk: "読", label: "Reading Lab" },
   { id: "kaiwa", mk: "話", label: "Kaiwa Lab" },
   { id: "quiz", mk: "力", label: "Quiz Center" },
+  { id: "ai", mk: "練", label: "Renshuu with AI", soon: true },
 ];
 
 const SIZES = [
@@ -16,8 +17,13 @@ const SIZES = [
   { v: 1.18, label: "A+" },
 ];
 
+const JP_FONTS = [
+  { v: "mincho", label: "明朝 Mincho" },
+  { v: "gothic", label: "ゴシック Gothic" },
+];
+
 export default function Sidebar({ active, onNavigate, mobileOpen, onCloseMobile }) {
-  const { furigana, setFurigana, dark, setDark, fontScale, setFontScale } = useSettings();
+  const { furigana, setFurigana, dark, setDark, fontScale, setFontScale, jpFont, setJpFont } = useSettings();
   const { stats } = useQuiz();
   const pct = stats.total ? Math.round((stats.answeredCount / stats.total) * 100) : 0;
 
@@ -38,6 +44,7 @@ export default function Sidebar({ active, onNavigate, mobileOpen, onCloseMobile 
                 onClick={() => { onNavigate(n.id); onCloseMobile(); }}
               >
                 <span className="mk">{n.mk}</span> {n.label}
+                {n.soon && <span className="soon-badge">soon</span>}
               </button>
             ))}
           </nav>
@@ -57,6 +64,14 @@ export default function Sidebar({ active, onNavigate, mobileOpen, onCloseMobile 
             <div className="fontsize-controls">
               {SIZES.map((s) => (
                 <button key={s.v} className={fontScale === s.v ? "active" : ""} onClick={() => setFontScale(s.v)}>{s.label}</button>
+              ))}
+            </div>
+          </div>
+          <div className="setting-row" style={{ display: "block" }}>
+            <span style={{ display: "block", marginBottom: 6 }}>Japanese text style</span>
+            <div className="fontsize-controls">
+              {JP_FONTS.map((f) => (
+                <button key={f.v} className={jpFont === f.v ? "active" : ""} onClick={() => setJpFont(f.v)}>{f.label}</button>
               ))}
             </div>
           </div>

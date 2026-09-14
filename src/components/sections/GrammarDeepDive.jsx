@@ -77,10 +77,12 @@ export default function GrammarDeepDive() {
         <p>{grammarModules.reduce((n, m) => n + m.points.length, 0)} points across {grammarModules.length} modules, organized by function rather than by textbook chapter — because that's how the JLPT actually tests you: it mixes lessons together and checks whether you can tell similar patterns apart. Pick a module below; each one stays on its own tab so a study session never turns into one giant scroll. Source tags point back to roughly where each point lives in Minna no Nihongo (MNN), Genki, and Sou Matome N4 — lesson numbers are approximate cross-references, not exact page citations.</p>
       </div>
 
-      <div className="modjump">
+      <div className="modjump modjump-rich">
         {grammarModules.map((m, i) => (
           <button key={i} className={i === activeMod ? "active" : ""} onClick={() => goToModule(i)}>
-            {m.num}. {m.jpTitle}
+            <span className="mj-jp">{m.num}. {m.jpTitle}</span>
+            {m.reading && m.reading !== m.jpTitle && <span className="mj-reading">{m.reading}</span>}
+            <span className="mj-en">{m.enTitle}</span>
           </button>
         ))}
       </div>

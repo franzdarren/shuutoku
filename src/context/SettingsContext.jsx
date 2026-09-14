@@ -15,6 +15,7 @@ export function SettingsProvider({ children }) {
   const [furigana, setFurigana] = useState(() => readStored("n4.furigana", true));
   const [dark, setDark] = useState(() => readStored("n4.dark", false));
   const [fontScale, setFontScale] = useState(() => readStored("n4.fontScale", 1));
+  const [jpFont, setJpFont] = useState(() => readStored("n4.jpFont", "mincho"));
 
   useEffect(() => {
     document.body.classList.toggle("no-furigana", !furigana);
@@ -31,7 +32,12 @@ export function SettingsProvider({ children }) {
     try { localStorage.setItem("n4.fontScale", JSON.stringify(fontScale)); } catch { /* ignore */ }
   }, [fontScale]);
 
-  const value = { furigana, setFurigana, dark, setDark, fontScale, setFontScale };
+  useEffect(() => {
+    document.body.setAttribute("data-jpfont", jpFont);
+    try { localStorage.setItem("n4.jpFont", JSON.stringify(jpFont)); } catch { /* ignore */ }
+  }, [jpFont]);
+
+  const value = { furigana, setFurigana, dark, setDark, fontScale, setFontScale, jpFont, setJpFont };
   return <SettingsContext.Provider value={value}>{children}</SettingsContext.Provider>;
 }
 

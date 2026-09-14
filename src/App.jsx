@@ -13,6 +13,7 @@ import KanjiFocus from "./components/sections/KanjiFocus.jsx";
 import ReadingLab from "./components/sections/ReadingLab.jsx";
 import KaiwaLab from "./components/sections/KaiwaLab.jsx";
 import QuizCenter from "./components/sections/QuizCenter.jsx";
+import RenshuuAI from "./components/sections/RenshuuAI.jsx";
 
 const SECTIONS = [
   { id: "overview", Comp: Overview },
@@ -21,6 +22,7 @@ const SECTIONS = [
   { id: "reading", Comp: ReadingLab },
   { id: "kaiwa", Comp: KaiwaLab },
   { id: "quiz", Comp: QuizCenter },
+  { id: "ai", Comp: RenshuuAI },
 ];
 
 const TOTAL_QUIZ_ITEMS = countAllQuizItems();

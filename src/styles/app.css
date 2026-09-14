@@ -46,6 +46,10 @@ body.dark{
   --line-soft: #362F29;
   --shadow: rgba(0,0,0,.35);
 }
+/* Japanese text style — Mincho (serif, default) is elegant but can be hard
+   to read at small sizes; Gothic swaps every Japanese-text element over to
+   the clearer sans-serif face by redefining the one token they all share. */
+body[data-jpfont="gothic"]{ --serif: var(--sans); }
 
 *{box-sizing:border-box;}
 html{scroll-behavior:smooth; font-size:calc(16px * var(--fs-scale));}
@@ -66,7 +70,7 @@ body{
 ruby{ ruby-position: over; }
 rt{
   font-family:var(--sans);
-  font-size:.55em;
+  font-size:.62em;
   color:var(--indigo);
   font-weight:500;
   user-select:none;
@@ -107,6 +111,11 @@ nav.mainnav button.navlink .mk{ font-family:var(--serif); font-size:1.05rem; wid
 nav.mainnav button.navlink:hover{ background:var(--paper-3); color:var(--ink); }
 nav.mainnav button.navlink.active{ background:var(--indigo); color:#fff; }
 nav.mainnav button.navlink.active .mk{ color:#fff; }
+.soon-badge{
+  margin-left:auto; font-size:.6rem; letter-spacing:.05em; color:var(--gold);
+  border:1px solid var(--gold); border-radius:10px; padding:1px 6px; flex-shrink:0;
+}
+nav.mainnav button.navlink.active .soon-badge{ color:#fff; border-color:rgba(255,255,255,.6); }
 
 .settings-panel{ border-top:1px solid var(--line); padding:16px 18px 20px; background:var(--paper-2); }
 .settings-panel .stitle{ font-size:.68rem; color:var(--ink-faint); letter-spacing:.08em; margin-bottom:10px; }
@@ -148,6 +157,16 @@ h2.modtitle .modnum{ color:var(--gold); font-size:1.1rem; }
 .modjump button{ font-family:var(--sans); font-size:.78rem; padding:7px 13px; background:var(--paper-2); border:1px solid var(--line); color:var(--ink-soft); border-radius:20px; cursor:pointer; transition:all .15s ease; }
 .modjump button:hover{ border-color:var(--indigo); color:var(--indigo); }
 .modjump button.active{ background:var(--indigo); border-color:var(--indigo); color:#fff; }
+
+.modjump-rich button{
+  display:flex; flex-direction:column; align-items:flex-start; gap:2px;
+  text-align:left; border-radius:var(--radius); padding:8px 14px;
+}
+.modjump-rich .mj-jp{ font-family:var(--serif); font-size:.92rem; }
+.modjump-rich .mj-reading{ font-size:.66rem; color:var(--ink-faint); }
+.modjump-rich .mj-en{ font-size:.68rem; color:var(--ink-faint); }
+.modjump-rich button.active .mj-reading,
+.modjump-rich button.active .mj-en{ color:rgba(255,255,255,.75); }
 
 /* ============================================================
    GRAMMAR CARD
@@ -306,6 +325,45 @@ footer.pagefoot{ margin-top:60px; padding-top:20px; border-top:1px solid var(--l
 .lookup-pop .lp-loading{ color:var(--ink-faint); font-size:.82rem; }
 .lookup-pop .lp-empty{ color:var(--ink-soft); font-size:.82rem; }
 .lookup-pop .lp-close{ position:absolute; top:6px; right:8px; background:none; border:none; color:var(--ink-faint); cursor:pointer; font-size:.9rem; line-height:1; padding:4px; }
+
+/* ============================================================
+   RENSHUU WITH AI — coming-soon preview
+   ============================================================ */
+.soon-panel{ max-width:var(--measure); margin:0 auto; }
+.soon-flag{
+  background:var(--gold-tint); border:1px dashed var(--gold); color:var(--gold);
+  border-radius:var(--radius); padding:10px 16px; font-size:.82rem; font-weight:700;
+  text-align:center; margin-bottom:22px; letter-spacing:.02em;
+}
+.ai-mock{
+  background:var(--paper-2); border:1px solid var(--line); border-radius:var(--radius);
+  overflow:hidden; opacity:.85; filter:saturate(.85);
+  position:relative;
+}
+.ai-mock::after{
+  content:"PREVIEW"; position:absolute; top:10px; right:12px; font-size:.62rem;
+  letter-spacing:.08em; color:var(--ink-faint); border:1px solid var(--line); border-radius:10px; padding:2px 8px;
+}
+.ai-mock-head{
+  display:flex; align-items:center; gap:8px; padding:12px 16px; border-bottom:1px solid var(--line);
+  font-size:.85rem; color:var(--ink-soft); background:var(--paper-3);
+}
+.ai-mock-dot{ width:9px; height:9px; border-radius:50%; background:var(--matcha); flex-shrink:0; }
+.ai-mock-body{ padding:18px 16px; display:flex; flex-direction:column; gap:10px; }
+.ai-bubble{ max-width:78%; padding:9px 13px; border-radius:14px; font-family:var(--serif); font-size:1rem; line-height:1.6; }
+.ai-bubble-bot{ background:var(--paper); border:1px solid var(--line-soft); align-self:flex-start; border-bottom-left-radius:3px; }
+.ai-bubble-me{ background:var(--indigo-tint); align-self:flex-end; border-bottom-right-radius:3px; }
+.ai-note{ display:block; font-family:var(--sans); font-size:.7rem; color:var(--ink-faint); margin-top:4px; }
+.ai-mock-input{ display:flex; gap:8px; padding:12px 16px; border-top:1px solid var(--line); background:var(--paper-3); }
+.ai-mock-input input{
+  flex:1; padding:8px 12px; border-radius:20px; border:1px solid var(--line);
+  background:var(--paper); color:var(--ink-faint); font-family:var(--sans); font-size:.85rem;
+}
+.ai-mock-input button{
+  padding:8px 18px; border-radius:20px; border:none; background:var(--line); color:var(--ink-faint);
+  font-family:var(--sans); font-size:.85rem; cursor:not-allowed;
+}
+.soon-note{ font-size:.82rem; color:var(--ink-faint); text-align:center; margin-top:18px; }
 
 /* ============================================================
    RESPONSIVE

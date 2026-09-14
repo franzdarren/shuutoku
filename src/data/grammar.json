@@ -2,6 +2,7 @@
   {
     "num": 1,
     "jpTitle": "て形と義務",
+    "reading": "てけいとぎむ",
     "enTitle": "Te-form Toolkit & Obligation",
     "accent": "indigo",
     "points": [
@@ -34,23 +35,23 @@
             "en": "I practice speaking with a Japanese teacher every week. (habit)"
           },
           {
-            "jp": "毎朝、母は六時に起きています。",
+            "jp": "<ruby>毎朝<rt>まいあさ</rt></ruby>、<ruby>母<rt>はは</rt></ruby>は<ruby>六<rt>ろく</rt></ruby><ruby>時<rt>じ</rt></ruby>に<ruby>起<rt>お</rt></ruby>きています。",
             "en": "My mother gets up at six every morning."
           },
           {
-            "jp": "子供たちは公園で遊んでいます。",
+            "jp": "<ruby>子供<rt>こども</rt></ruby>たちは<ruby>公園<rt>こうえん</rt></ruby>で<ruby>遊<rt>あそ</rt></ruby>んでいます。",
             "en": "The children are playing in the park."
           },
           {
-            "jp": "彼女は東京の大学で勉強しています。",
+            "jp": "<ruby>彼女<rt>かのじょ</rt></ruby>は<ruby>東京<rt>とうきょう</rt></ruby>の<ruby>大学<rt>だいがく</rt></ruby>で<ruby>勉強<rt>べんきょう</rt></ruby>しています。",
             "en": "She is studying at a university in Tokyo."
           },
           {
-            "jp": "妹は今、部屋で音楽を聞いています。",
+            "jp": "<ruby>妹<rt>いもうと</rt></ruby>は<ruby>今<rt>いま</rt></ruby>、<ruby>部屋<rt>へや</rt></ruby>で<ruby>音楽<rt>おんがく</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いています。",
             "en": "My little sister is listening to music in her room right now."
           },
           {
-            "jp": "兄は大阪の銀行で働いています。",
+            "jp": "<ruby>兄<rt>あに</rt></ruby>は<ruby>大阪<rt>おおさか</rt></ruby>の<ruby>銀行<rt>ぎんこう</rt></ruby>で<ruby>働<rt>はたら</rt></ruby>いています。",
             "en": "My older brother works at a bank in Osaka."
           }
         ],
@@ -130,23 +131,23 @@
             "en": "You must not drive after drinking alcohol."
           },
           {
-            "jp": "ここで靴を脱いでもいいですか。",
+            "jp": "ここで<ruby>靴<rt>くつ</rt></ruby>を<ruby>脱<rt>ぬ</rt></ruby>いでもいいですか。",
             "en": "May I take off my shoes here?"
           },
           {
-            "jp": "ここでタバコを吸ってもいいですか。",
+            "jp": "ここでタバコを<ruby>吸<rt>す</rt></ruby>ってもいいですか。",
             "en": "Is it okay to smoke here?"
           },
           {
-            "jp": "図書館の中で大きい声で話してはいけません。",
+            "jp": "<ruby>図書館<rt>としょかん</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で<ruby>大<rt>おお</rt></ruby>きい<ruby>声<rt>こえ</rt></ruby>で<ruby>話<rt>はな</rt></ruby>してはいけません。",
             "en": "You must not talk loudly inside the library."
           },
           {
-            "jp": "この公園でボールを使って遊んではいけません。",
+            "jp": "この<ruby>公園<rt>こうえん</rt></ruby>でボールを<ruby>使<rt>つか</rt></ruby>って<ruby>遊<rt>あそ</rt></ruby>んではいけません。",
             "en": "You must not play ball games in this park."
           },
           {
-            "jp": "ここで写真を撮ってもいいですが、フラッシュは使ってはいけません。",
+            "jp": "ここで<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>撮<rt>と</rt></ruby>ってもいいですが、フラッシュは<ruby>使<rt>つか</rt></ruby>ってはいけません。",
             "en": "You may take photos here, but you must not use a flash."
           }
         ],
@@ -227,23 +228,23 @@
             "en": "You have to take the medicine every day."
           },
           {
-            "jp": "明日は早く起きなくてもいいです。",
+            "jp": "<ruby>明日<rt>あした</rt></ruby>は<ruby>早<rt>はや</rt></ruby>く<ruby>起<rt>お</rt></ruby>きなくてもいいです。",
             "en": "You do not have to get up early tomorrow."
           },
           {
-            "jp": "パスポートを見せなければなりません。",
+            "jp": "パスポートを<ruby>見<rt>み</rt></ruby>せなければなりません。",
             "en": "You have to show your passport."
           },
           {
-            "jp": "今日はスーツを着なくてもいいです。",
+            "jp": "<ruby>今日<rt>きょう</rt></ruby>はスーツを<ruby>着<rt>き</rt></ruby>なくてもいいです。",
             "en": "You don't have to wear a suit today."
           },
           {
-            "jp": "明日までにこの書類を出さなければなりません。",
+            "jp": "<ruby>明日<rt>あした</rt></ruby>までにこの<ruby>書類<rt>しょるい</rt></ruby>を<ruby>出<rt>だ</rt></ruby>さなければなりません。",
             "en": "I have to hand in this document by tomorrow."
           },
           {
-            "jp": "日曜日は会社に行かなくてもいいです。",
+            "jp": "<ruby>日曜日<rt>にちようび</rt></ruby>は<ruby>会社<rt>かいしゃ</rt></ruby>に<ruby>行<rt>い</rt></ruby>かなくてもいいです。",
             "en": "I don't have to go in to the office on Sundays."
           }
         ],
@@ -319,23 +320,23 @@
             "en": "Please think carefully before answering. (lit. 'answer after thinking well')"
           },
           {
-            "jp": "朝ご飯を食べてから、学校へ行きます。",
+            "jp": "<ruby>朝<rt>あさ</rt></ruby>ご<ruby>飯<rt>はん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べてから、<ruby>学校<rt>がっこう</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きます。",
             "en": "I eat breakfast and then go to school."
           },
           {
-            "jp": "手を洗ってから、ご飯を食べます。",
+            "jp": "<ruby>手<rt>て</rt></ruby>を<ruby>洗<rt>あら</rt></ruby>ってから、ご<ruby>飯<rt>はん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べます。",
             "en": "I wash my hands and then eat."
           },
           {
-            "jp": "映画を見たあとで、感想を話しましょう。",
+            "jp": "<ruby>映画<rt>えいが</rt></ruby>を<ruby>見<rt>み</rt></ruby>たあとで、<ruby>感想<rt>かんそう</rt></ruby>を<ruby>話<rt>はな</rt></ruby>しましょう。",
             "en": "Let's talk about our impressions after watching the movie."
           },
           {
-            "jp": "手を洗ってから、ご飯を食べます。",
+            "jp": "<ruby>手<rt>て</rt></ruby>を<ruby>洗<rt>あら</rt></ruby>ってから、ご<ruby>飯<rt>はん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べます。",
             "en": "I wash my hands and then eat."
           },
           {
-            "jp": "宿題をしたあとで、ゲームをします。",
+            "jp": "<ruby>宿題<rt>しゅくだい</rt></ruby>をしたあとで、ゲームをします。",
             "en": "After I've done my homework, I play games."
           }
         ],
@@ -392,6 +393,7 @@
   {
     "num": 2,
     "jpTitle": "あげる・もらう・くれる と 依頼",
+    "reading": "あげる・もらう・くれる と いらい",
     "enTitle": "Giving, Receiving & Requests",
     "accent": "gold",
     "points": [
@@ -424,23 +426,23 @@
             "en": "My teacher (kindly) taught me the kanji."
           },
           {
-            "jp": "友達が写真を送ってくれました。",
+            "jp": "<ruby>友達<rt>ともだち</rt></ruby>が<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>送<rt>おく</rt></ruby>ってくれました。",
             "en": "My friend sent me a photo."
           },
           {
-            "jp": "友達に日本語の本を貸してあげました。",
+            "jp": "<ruby>友達<rt>ともだち</rt></ruby>に<ruby>日本語<rt>にほんご</rt></ruby>の<ruby>本<rt>ほん</rt></ruby>を<ruby>貸<rt>か</rt></ruby>してあげました。",
             "en": "I lent my friend a Japanese book."
           },
           {
-            "jp": "隣の人が荷物を持ってくれました。",
+            "jp": "<ruby>隣<rt>となり</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>が<ruby>荷物<rt>にもつ</rt></ruby>を<ruby>持<rt>も</rt></ruby>ってくれました。",
             "en": "The person next to me carried my luggage for me."
           },
           {
-            "jp": "友達が空港まで迎えに来てくれました。",
+            "jp": "<ruby>友達<rt>ともだち</rt></ruby>が<ruby>空港<rt>くうこう</rt></ruby>まで<ruby>迎<rt>むか</rt></ruby>えに<ruby>来<rt>き</rt></ruby>てくれました。",
             "en": "My friend came all the way to the airport to pick me up."
           },
           {
-            "jp": "先生に作文を直してもらいました。",
+            "jp": "<ruby>先生<rt>せんせい</rt></ruby>に<ruby>作文<rt>さくぶん</rt></ruby>を<ruby>直<rt>なお</rt></ruby>してもらいました。",
             "en": "I had my teacher correct my composition."
           }
         ],
@@ -520,23 +522,23 @@
             "en": "Could you wait a little longer, please?"
           },
           {
-            "jp": "もう一度説明してくれませんか。",
+            "jp": "もう<ruby>一度<rt>いちど</rt></ruby><ruby>説明<rt>せつめい</rt></ruby>してくれませんか。",
             "en": "Could you explain it one more time?"
           },
           {
-            "jp": "もう少しゆっくり話してほしいです。",
+            "jp": "もう<ruby>少<rt>すこ</rt></ruby>しゆっくり<ruby>話<rt>はな</rt></ruby>してほしいです。",
             "en": "I want you to speak a bit more slowly."
           },
           {
-            "jp": "駅までの道を教えてくれませんか。",
+            "jp": "<ruby>駅<rt>えき</rt></ruby>までの<ruby>道<rt>みち</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えてくれませんか。",
             "en": "Could you tell me the way to the station?"
           },
           {
-            "jp": "すみません、少し静かにしてくれませんか。",
+            "jp": "すみません、<ruby>少<rt>すこ</rt></ruby>し<ruby>静<rt>しず</rt></ruby>かにしてくれませんか。",
             "en": "Excuse me, could you be a little quieter?"
           },
           {
-            "jp": "もう少しゆっくり話してほしいです。",
+            "jp": "もう<ruby>少<rt>すこ</rt></ruby>しゆっくり<ruby>話<rt>はな</rt></ruby>してほしいです。",
             "en": "I'd like you to speak a little more slowly."
           }
         ],
@@ -616,23 +618,23 @@
             "en": "Get up quickly! (parent to child)"
           },
           {
-            "jp": "先生は宿題を忘れないように言いました。",
+            "jp": "<ruby>先生<rt>せんせい</rt></ruby>は<ruby>宿題<rt>しゅくだい</rt></ruby>を<ruby>忘<rt>わす</rt></ruby>れないように<ruby>言<rt>い</rt></ruby>いました。",
             "en": "The teacher told us not to forget our homework."
           },
           {
-            "jp": "医者は塩分を減らすように言いました。",
+            "jp": "<ruby>医者<rt>いしゃ</rt></ruby>は<ruby>塩分<rt>えんぶん</rt></ruby>を<ruby>減<rt>へ</rt></ruby>らすように<ruby>言<rt>い</rt></ruby>いました。",
             "en": "The doctor told me to reduce my salt intake."
           },
           {
-            "jp": "静かにしなさい。",
+            "jp": "<ruby>静<rt>しず</rt></ruby>かにしなさい。",
             "en": "Be quiet. (parent or teacher to a child)"
           },
           {
-            "jp": "先生は学生に毎日復習するように言いました。",
+            "jp": "<ruby>先生<rt>せんせい</rt></ruby>は<ruby>学生<rt>がくせい</rt></ruby>に<ruby>毎日<rt>まいにち</rt></ruby><ruby>復習<rt>ふくしゅう</rt></ruby>するように<ruby>言<rt>い</rt></ruby>いました。",
             "en": "The teacher told the students to review every day."
           },
           {
-            "jp": "医者に、お酒を飲まないように言われました。",
+            "jp": "<ruby>医者<rt>いしゃ</rt></ruby>に、お<ruby>酒<rt>さけ</rt></ruby>を<ruby>飲<rt>の</rt></ruby>まないように<ruby>言<rt>い</rt></ruby>われました。",
             "en": "The doctor told me not to drink alcohol."
           }
         ],
@@ -707,23 +709,23 @@
             "en": "I can't read this kanji."
           },
           {
-            "jp": "私は漢字を少し読むことができます。",
+            "jp": "<ruby>私<rt>わたし</rt></ruby>は<ruby>漢字<rt>かんじ</rt></ruby>を<ruby>少<rt>すこ</rt></ruby>し<ruby>読<rt>よ</rt></ruby>むことができます。",
             "en": "I can read a little kanji."
           },
           {
-            "jp": "わたしは自転車に乗ることができます。",
+            "jp": "わたしは<ruby>自転車<rt>じてんしゃ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>ることができます。",
             "en": "I can ride a bicycle."
           },
           {
-            "jp": "この魚は生で食べられます。",
+            "jp": "この<ruby>魚<rt>さかな</rt></ruby>は<ruby>生<rt>なま</rt></ruby>で<ruby>食<rt>た</rt></ruby>べられます。",
             "en": "This fish can be eaten raw."
           },
           {
-            "jp": "駅の近くで自転車が借りられます。",
+            "jp": "<ruby>駅<rt>えき</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くで<ruby>自転車<rt>じてんしゃ</rt></ruby>が<ruby>借<rt>か</rt></ruby>りられます。",
             "en": "You can rent bicycles near the station."
           },
           {
-            "jp": "日本語のメニューが読めるようになりました。",
+            "jp": "<ruby>日本語<rt>にほんご</rt></ruby>のメニューが<ruby>読<rt>よ</rt></ruby>めるようになりました。",
             "en": "I've become able to read Japanese menus."
           }
         ],
@@ -775,6 +777,7 @@
   {
     "num": 3,
     "jpTitle": "受身・使役・使役受身",
+    "reading": "うけみ・しえき・しえきうけみ",
     "enTitle": "Passive, Causative & Causative-Passive",
     "accent": "shu",
     "points": [
@@ -806,23 +809,23 @@
             "en": "It rained on us during the trip (and that was a hassle). — meiwaku passive"
           },
           {
-            "jp": "駅で財布を拾われました。",
+            "jp": "<ruby>駅<rt>えき</rt></ruby>で<ruby>財布<rt>さいふ</rt></ruby>を<ruby>拾<rt>ひろ</rt></ruby>われました。",
             "en": "My wallet was picked up at the station."
           },
           {
-            "jp": "この本は多くの国で読まれています。",
+            "jp": "この<ruby>本<rt>ほん</rt></ruby>は<ruby>多<rt>おお</rt></ruby>くの<ruby>国<rt>くに</rt></ruby>で<ruby>読<rt>よ</rt></ruby>まれています。",
             "en": "This book is read in many countries."
           },
           {
-            "jp": "電車の中で子供に泣かれて、少し困りました。",
+            "jp": "<ruby>電車<rt>でんしゃ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で<ruby>子供<rt>こども</rt></ruby>に<ruby>泣<rt>な</rt></ruby>かれて、<ruby>少<rt>すこ</rt></ruby>し<ruby>困<rt>こま</rt></ruby>りました。",
             "en": "A child near me cried on the train, which was a bit of a hassle. (meiwaku passive)"
           },
           {
-            "jp": "この建物は百年前に建てられました。",
+            "jp": "この<ruby>建物<rt>たてもの</rt></ruby>は<ruby>百<rt>ひゃく</rt></ruby><ruby>年<rt>ねん</rt></ruby><ruby>前<rt>まえ</rt></ruby>に<ruby>建<rt>た</rt></ruby>てられました。",
             "en": "This building was built a hundred years ago."
           },
           {
-            "jp": "この歌は世界中で歌われています。",
+            "jp": "この<ruby>歌<rt>うた</rt></ruby>は<ruby>世界中<rt>せかいじゅう</rt></ruby>で<ruby>歌<rt>うた</rt></ruby>われています。",
             "en": "This song is sung all over the world."
           }
         ],
@@ -896,23 +899,23 @@
             "en": "Sorry, please let me think about it a little."
           },
           {
-            "jp": "子どもに部屋を掃除させます。",
+            "jp": "<ruby>子<rt>こ</rt></ruby>どもに<ruby>部屋<rt>へや</rt></ruby>を<ruby>掃除<rt>そうじ</rt></ruby>させます。",
             "en": "I make my child clean the room."
           },
           {
-            "jp": "先生は学生に本を読ませました。",
+            "jp": "<ruby>先生<rt>せんせい</rt></ruby>は<ruby>学生<rt>がくせい</rt></ruby>に<ruby>本<rt>ほん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>ませました。",
             "en": "The teacher had the students read the book."
           },
           {
-            "jp": "少し休ませてください。",
+            "jp": "<ruby>少<rt>すこ</rt></ruby>し<ruby>休<rt>やす</rt></ruby>ませてください。",
             "en": "Please let me rest a little."
           },
           {
-            "jp": "母は弟に部屋を掃除させました。",
+            "jp": "<ruby>母<rt>はは</rt></ruby>は<ruby>弟<rt>おとうと</rt></ruby>に<ruby>部屋<rt>へや</rt></ruby>を<ruby>掃除<rt>そうじ</rt></ruby>させました。",
             "en": "My mother made my little brother clean his room."
           },
           {
-            "jp": "すみません、ちょっと写真を撮らせてください。",
+            "jp": "すみません、ちょっと<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>撮<rt>と</rt></ruby>らせてください。",
             "en": "Excuse me, please let me take a quick photo."
           }
         ],
@@ -986,23 +989,23 @@
             "en": "I was made to wait a whole hour at the station."
           },
           {
-            "jp": "毎日、野菜を食べさせられました。",
+            "jp": "<ruby>毎日<rt>まいにち</rt></ruby>、<ruby>野菜<rt>やさい</rt></ruby>を<ruby>食<rt>た</rt></ruby>べさせられました。",
             "en": "I was made to eat vegetables every day."
           },
           {
-            "jp": "上司に毎週レポートを書かせられました。",
+            "jp": "<ruby>上司<rt>じょうし</rt></ruby>に<ruby>毎週<rt>まいしゅう</rt></ruby>レポートを<ruby>書<rt>か</rt></ruby>かせられました。",
             "en": "I was made to write a report every week by my boss."
           },
           {
-            "jp": "田中さんは会議で長く話させられました。",
+            "jp": "<ruby>田中<rt>たなか</rt></ruby>さんは<ruby>会議<rt>かいぎ</rt></ruby>で<ruby>長<rt>なが</rt></ruby>く<ruby>話<rt>はな</rt></ruby>させられました。",
             "en": "Tanaka-san was made to speak for a long time at the meeting."
           },
           {
-            "jp": "子供のとき、毎日ピアノを練習させられました。",
+            "jp": "<ruby>子供<rt>こども</rt></ruby>のとき、<ruby>毎日<rt>まいにち</rt></ruby>ピアノを<ruby>練習<rt>れんしゅう</rt></ruby>させられました。",
             "en": "When I was a child, I was made to practise the piano every day."
           },
           {
-            "jp": "新人のとき、毎日残業させられました。",
+            "jp": "<ruby>新人<rt>しんじん</rt></ruby>のとき、<ruby>毎日<rt>まいにち</rt></ruby><ruby>残業<rt>ざんぎょう</rt></ruby>させられました。",
             "en": "When I was new, I was made to work overtime every day."
           }
         ],
@@ -1077,23 +1080,23 @@
             "en": "I'll carry your luggage. (humble — lowers the speaker's own action)"
           },
           {
-            "jp": "社長はもうお帰りになりました。",
+            "jp": "<ruby>社長<rt>しゃちょう</rt></ruby>はもうお<ruby>帰<rt>かえ</rt></ruby>りになりました。",
             "en": "The company president has already gone home."
           },
           {
-            "jp": "社長は何時にいらっしゃいますか。",
+            "jp": "<ruby>社長<rt>しゃちょう</rt></ruby>は<ruby>何<rt>なん</rt></ruby><ruby>時<rt>じ</rt></ruby>にいらっしゃいますか。",
             "en": "What time will the company president arrive? (honorific)"
           },
           {
-            "jp": "お荷物をお預かりします。",
+            "jp": "お<ruby>荷物<rt>にもつ</rt></ruby>をお<ruby>預<rt>あず</rt></ruby>かりします。",
             "en": "I'll take care of your luggage for you. (humble)"
           },
           {
-            "jp": "担当の者がすぐに参ります。",
+            "jp": "<ruby>担当<rt>たんとう</rt></ruby>の<ruby>者<rt>もの</rt></ruby>がすぐに<ruby>参<rt>まい</rt></ruby>ります。",
             "en": "The person in charge will come right away. (humble)"
           },
           {
-            "jp": "先生はもうお帰りになりました。",
+            "jp": "<ruby>先生<rt>せんせい</rt></ruby>はもうお<ruby>帰<rt>かえ</rt></ruby>りになりました。",
             "en": "The teacher has already gone home. (honorific)"
           }
         ],
@@ -1145,6 +1148,7 @@
   {
     "num": 4,
     "jpTitle": "条件形（と・たら・ば・なら）",
+    "reading": "じょうけんけい（と・たら・ば・なら）",
     "enTitle": "The Four Conditionals",
     "accent": "indigo-deep",
     "points": [
@@ -1176,23 +1180,23 @@
             "en": "If you press this button, the light turns on. (mechanical)"
           },
           {
-            "jp": "春になると、桜が咲きます。",
+            "jp": "<ruby>春<rt>はる</rt></ruby>になると、<ruby>桜<rt>さくら</rt></ruby>が<ruby>咲<rt>さ</rt></ruby>きます。",
             "en": "When spring comes, the cherry blossoms bloom."
           },
           {
-            "jp": "冬になると、雪が降ります。",
+            "jp": "<ruby>冬<rt>ふゆ</rt></ruby>になると、<ruby>雪<rt>ゆき</rt></ruby>が<ruby>降<rt>お</rt></ruby>ります。",
             "en": "When winter comes, it snows."
           },
           {
-            "jp": "このスイッチを入れると、機械が動きます。",
+            "jp": "このスイッチを<ruby>入<rt>い</rt></ruby>れると、<ruby>機械<rt>きかい</rt></ruby>が<ruby>動<rt>うご</rt></ruby>きます。",
             "en": "If you turn on this switch, the machine starts moving."
           },
           {
-            "jp": "このボタンを押すと、切符が出ます。",
+            "jp": "このボタンを<ruby>押<rt>お</rt></ruby>すと、<ruby>切符<rt>きっぷ</rt></ruby>が<ruby>出<rt>で</rt></ruby>ます。",
             "en": "If you press this button, the ticket comes out."
           },
           {
-            "jp": "まっすぐ行くと、右にコンビニがあります。",
+            "jp": "まっすぐ<ruby>行<rt>い</rt></ruby>くと、<ruby>右<rt>みぎ</rt></ruby>にコンビニがあります。",
             "en": "If you go straight, there's a convenience store on the right."
           }
         ],
@@ -1266,23 +1270,23 @@
             "en": "If you happen to have time, would you like to go together?"
           },
           {
-            "jp": "家に帰ったら、メールをください。",
+            "jp": "<ruby>家<rt>いえ</rt></ruby>に<ruby>帰<rt>かえ</rt></ruby>ったら、メールをください。",
             "en": "When you get home, please email me."
           },
           {
-            "jp": "宿題が終わったら、遊びに行ってもいいですよ。",
+            "jp": "<ruby>宿題<rt>しゅくだい</rt></ruby>が<ruby>終<rt>お</rt></ruby>わったら、<ruby>遊<rt>あそ</rt></ruby>びに<ruby>行<rt>い</rt></ruby>ってもいいですよ。",
             "en": "Once you finish your homework, you may go out to play."
           },
           {
-            "jp": "分からないことがあったら、聞いてください。",
+            "jp": "<ruby>分<rt>わ</rt></ruby>からないことがあったら、<ruby>聞<rt>き</rt></ruby>いてください。",
             "en": "If there's something you don't understand, please ask."
           },
           {
-            "jp": "雨が降ったら、試合は中止です。",
+            "jp": "<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>ったら、<ruby>試合<rt>しあい</rt></ruby>は<ruby>中止<rt>ちゅうし</rt></ruby>です。",
             "en": "If it rains, the match is cancelled."
           },
           {
-            "jp": "もし時間があったら、美術館にも行きたいです。",
+            "jp": "もし<ruby>時間<rt>じかん</rt></ruby>があったら、<ruby>美術館<rt>びじゅつかん</rt></ruby>にも<ruby>行<rt>い</rt></ruby>きたいです。",
             "en": "If I have time, I'd like to visit the art museum as well."
           }
         ],
@@ -1356,23 +1360,23 @@
             "en": "If you take this medicine, you'll get better quickly. (general tendency)"
           },
           {
-            "jp": "時間があれば、映画を見たいです。",
+            "jp": "<ruby>時間<rt>じかん</rt></ruby>があれば、<ruby>映画<rt>えいが</rt></ruby>を<ruby>見<rt>み</rt></ruby>たいです。",
             "en": "If I have time, I want to watch a movie."
           },
           {
-            "jp": "早く出れば、電車に間に合います。",
+            "jp": "<ruby>早<rt>はや</rt></ruby>く<ruby>出<rt>で</rt></ruby>れば、<ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>間<rt>ま</rt></ruby>に<ruby>合<rt>あ</rt></ruby>います。",
             "en": "If you leave early, you'll make it in time for the train."
           },
           {
-            "jp": "説明書を読めば、使い方がわかります。",
+            "jp": "<ruby>説明<rt>せつめい</rt></ruby><ruby>書<rt>しょ</rt></ruby>を<ruby>読<rt>よ</rt></ruby>めば、<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>がわかります。",
             "en": "If you read the instructions, you'll understand how to use it."
           },
           {
-            "jp": "安ければ、二つ買います。",
+            "jp": "<ruby>安<rt>やす</rt></ruby>ければ、<ruby>二<rt>ふた</rt></ruby>つ<ruby>買<rt>か</rt></ruby>います。",
             "en": "If it's cheap, I'll buy two."
           },
           {
-            "jp": "地図を見れば、すぐ分かりますよ。",
+            "jp": "<ruby>地図<rt>ちず</rt></ruby>を<ruby>見<rt>み</rt></ruby>れば、すぐ<ruby>分<rt>わ</rt></ruby>かりますよ。",
             "en": "If you look at the map, you'll understand right away."
           }
         ],
@@ -1447,23 +1451,23 @@
             "en": "If you want to eat sushi, that shop over there is good."
           },
           {
-            "jp": "京都へ行くなら、秋がいいですよ。",
+            "jp": "<ruby>京都<rt>きょうと</rt></ruby>へ<ruby>行<rt>い</rt></ruby>くなら、<ruby>秋<rt>あき</rt></ruby>がいいですよ。",
             "en": "If you are going to Kyoto, autumn is good."
           },
           {
-            "jp": "スマホを買うなら、この店が安いですよ。",
+            "jp": "スマホを<ruby>買<rt>か</rt></ruby>うなら、この<ruby>店<rt>みせ</rt></ruby>が<ruby>安<rt>やす</rt></ruby>いですよ。",
             "en": "If you're buying a smartphone, this shop is cheap."
           },
           {
-            "jp": "それが本当の話なら、驚きです。",
+            "jp": "それが<ruby>本当<rt>ほんとう</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>なら、<ruby>驚<rt>おどろ</rt></ruby>きです。",
             "en": "If that story is true, it's surprising."
           },
           {
-            "jp": "京都に行くなら、秋がおすすめです。",
+            "jp": "<ruby>京都<rt>きょうと</rt></ruby>に<ruby>行<rt>い</rt></ruby>くなら、<ruby>秋<rt>あき</rt></ruby>がおすすめです。",
             "en": "If you're going to Kyoto, autumn is the season I'd recommend."
           },
           {
-            "jp": "安いホテルを探しているなら、この辺が便利ですよ。",
+            "jp": "<ruby>安<rt>やす</rt></ruby>いホテルを<ruby>探<rt>さが</rt></ruby>しているなら、この<ruby>辺<rt>あたり</rt></ruby>が<ruby>便利<rt>べんり</rt></ruby>ですよ。",
             "en": "If you're looking for a cheap hotel, this area is convenient."
           }
         ],
@@ -1515,6 +1519,7 @@
   {
     "num": 5,
     "jpTitle": "伝聞・様態・推量",
+    "reading": "でんぶん・ようたい・すいりょう",
     "enTitle": "Hearsay, Appearance & Guessing",
     "accent": "matcha",
     "points": [
@@ -1546,23 +1551,23 @@
             "en": "I heard that Tanaka-san is getting married next month."
           },
           {
-            "jp": "天気予報によると、明日は雪だそうです。",
+            "jp": "<ruby>天気<rt>てんき</rt></ruby><ruby>予報<rt>よほう</rt></ruby>によると、<ruby>明日<rt>あした</rt></ruby>は<ruby>雪<rt>ゆき</rt></ruby>だそうです。",
             "en": "According to the forecast, I hear it will snow tomorrow."
           },
           {
-            "jp": "ニュースによると、来週から値上がりするそうです。",
+            "jp": "ニュースによると、<ruby>来週<rt>らいしゅう</rt></ruby>から<ruby>値上<rt>ねあ</rt></ruby>がりするそうです。",
             "en": "According to the news, prices will go up starting next week."
           },
           {
-            "jp": "友達の話では、その映画はとても感動的だそうです。",
+            "jp": "<ruby>友達<rt>ともだち</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>では、その<ruby>映画<rt>えいが</rt></ruby>はとても<ruby>感動<rt>かんどう</rt></ruby><ruby>的<rt>てき</rt></ruby>だそうです。",
             "en": "According to my friend, that movie is very moving."
           },
           {
-            "jp": "天気予報によると、週末は晴れるそうです。",
+            "jp": "<ruby>天気<rt>てんき</rt></ruby><ruby>予報<rt>よほう</rt></ruby>によると、<ruby>週末<rt>しゅうまつ</rt></ruby>は<ruby>晴<rt>は</rt></ruby>れるそうです。",
             "en": "According to the forecast, it will be clear at the weekend."
           },
           {
-            "jp": "田中さんは来月、東京に転勤するそうです。",
+            "jp": "<ruby>田中<rt>たなか</rt></ruby>さんは<ruby>来月<rt>らいげつ</rt></ruby>、<ruby>東京<rt>とうきょう</rt></ruby>に<ruby>転勤<rt>てんきん</rt></ruby>するそうです。",
             "en": "I hear Tanaka-san is being transferred to Tokyo next month."
           }
         ],
@@ -1636,23 +1641,23 @@
             "en": "That box looks heavy."
           },
           {
-            "jp": "このケーキは甘そうです。",
+            "jp": "このケーキは<ruby>甘<rt>あま</rt></ruby>そうです。",
             "en": "This cake looks sweet."
           },
           {
-            "jp": "この料理、おいしそうな匂いがしますね。",
+            "jp": "この<ruby>料理<rt>りょうり</rt></ruby>、おいしそうな<ruby>匂<rt>にお</rt></ruby>いがしますね。",
             "en": "This dish smells like it's delicious."
           },
           {
-            "jp": "彼は何か言いたそうな顔をしていました。",
+            "jp": "<ruby>彼<rt>かれ</rt></ruby>は<ruby>何<rt>なに</rt></ruby>か<ruby>言<rt>い</rt></ruby>いたそうな<ruby>顔<rt>かお</rt></ruby>をしていました。",
             "en": "He had a face like he wanted to say something."
           },
           {
-            "jp": "その荷物、重そうですね。持ちましょうか。",
+            "jp": "その<ruby>荷物<rt>にもつ</rt></ruby>、<ruby>重<rt>おも</rt></ruby>そうですね。<ruby>持<rt>も</rt></ruby>ちましょうか。",
             "en": "That luggage looks heavy. Shall I carry it?"
           },
           {
-            "jp": "空が暗くなって、雨が降りそうです。",
+            "jp": "<ruby>空<rt>そら</rt></ruby>が<ruby>暗<rt>くら</rt></ruby>くなって、<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>お</rt></ruby>りそうです。",
             "en": "The sky has gone dark — it looks like it's about to rain."
           }
         ],
@@ -1727,23 +1732,23 @@
             "en": "She seems to be Japanese."
           },
           {
-            "jp": "彼は疲れているようです。",
+            "jp": "<ruby>彼<rt>かれ</rt></ruby>は<ruby>疲<rt>つか</rt></ruby>れているようです。",
             "en": "He seems to be tired."
           },
           {
-            "jp": "外は静かなので、もう雨がやんだようです。",
+            "jp": "<ruby>外<rt>そと</rt></ruby>は<ruby>静<rt>しず</rt></ruby>かなので、もう<ruby>雨<rt>あめ</rt></ruby>がやんだようです。",
             "en": "It's quiet outside, so it seems the rain has stopped."
           },
           {
-            "jp": "この漢字、間違っているみたいですよ。",
+            "jp": "この<ruby>漢字<rt>かんじ</rt></ruby>、<ruby>間違<rt>まちが</rt></ruby>っているみたいですよ。",
             "en": "This kanji seems to be wrong."
           },
           {
-            "jp": "店の前に人が並んでいるので、人気があるようです。",
+            "jp": "<ruby>店<rt>みせ</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>に<ruby>人<rt>ひと</rt></ruby>が<ruby>並<rt>なら</rt></ruby>んでいるので、<ruby>人気<rt>にんき</rt></ruby>があるようです。",
             "en": "People are queuing in front of the shop, so it seems to be popular."
           },
           {
-            "jp": "電気がついていないので、留守のようです。",
+            "jp": "<ruby>電気<rt>でんき</rt></ruby>がついていないので、<ruby>留守<rt>るす</rt></ruby>のようです。",
             "en": "The lights are off, so it seems nobody's home."
           }
         ],
@@ -1817,23 +1822,23 @@
             "en": "He might not come."
           },
           {
-            "jp": "週末は雨かもしれません。",
+            "jp": "<ruby>週末<rt>しゅうまつ</rt></ruby>は<ruby>雨<rt>あめ</rt></ruby>かもしれません。",
             "en": "It might rain this weekend."
           },
           {
-            "jp": "彼は来年、引っ越すらしいです。",
+            "jp": "<ruby>彼<rt>かれ</rt></ruby>は<ruby>来年<rt>らいねん</rt></ruby>、<ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>すらしいです。",
             "en": "Apparently, he's moving next year."
           },
           {
-            "jp": "この道は工事中で通れないかもしれません。",
+            "jp": "この<ruby>道<rt>みち</rt></ruby>は<ruby>工事<rt>こうじ</rt></ruby><ruby>中<rt>ちゅう</rt></ruby>で<ruby>通<rt>とお</rt></ruby>れないかもしれません。",
             "en": "This road might be closed for construction."
           },
           {
-            "jp": "この道は工事中らしいですよ。",
+            "jp": "この<ruby>道<rt>みち</rt></ruby>は<ruby>工事<rt>こうじ</rt></ruby><ruby>中<rt>ちゅう</rt></ruby>らしいですよ。",
             "en": "Apparently this road is under construction."
           },
           {
-            "jp": "渋滞しているので、少し遅れるかもしれません。",
+            "jp": "<ruby>渋滞<rt>じゅうたい</rt></ruby>しているので、<ruby>少<rt>すこ</rt></ruby>し<ruby>遅<rt>おく</rt></ruby>れるかもしれません。",
             "en": "There's traffic, so I might be a little late."
           }
         ],
@@ -1884,6 +1889,7 @@
   {
     "num": 6,
     "jpTitle": "接続と決定",
+    "reading": "せつぞくとけってい",
     "enTitle": "Connectors & Decisions",
     "accent": "gold",
     "points": [
@@ -1915,23 +1921,23 @@
             "en": "How come you're late? (asking for the reason/story)"
           },
           {
-            "jp": "今日は少し相談したいんです。",
+            "jp": "<ruby>今日<rt>きょう</rt></ruby>は<ruby>少<rt>すこ</rt></ruby>し<ruby>相談<rt>そうだん</rt></ruby>したいんです。",
             "en": "I want to ask you about something today."
           },
           {
-            "jp": "実は、来月引っ越すんです。",
+            "jp": "<ruby>実<rt>じつ</rt></ruby>は、<ruby>来月<rt>らいげつ</rt></ruby><ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>すんです。",
             "en": "Actually, I'm moving next month, you see."
           },
           {
-            "jp": "どうして今日は元気がないんですか。",
+            "jp": "どうして<ruby>今日<rt>きょう</rt></ruby>は<ruby>元気<rt>げんき</rt></ruby>がないんですか。",
             "en": "How come you don't seem well today?"
           },
           {
-            "jp": "実は、まだ切符を買っていないんです。",
+            "jp": "<ruby>実<rt>じつ</rt></ruby>は、まだ<ruby>切符<rt>きっぷ</rt></ruby>を<ruby>買<rt>か</rt></ruby>っていないんです。",
             "en": "Actually, I haven't bought a ticket yet."
           },
           {
-            "jp": "明日から日本に行くんです。",
+            "jp": "<ruby>明日<rt>あした</rt></ruby>から<ruby>日本<rt>にっぽん</rt></ruby>に<ruby>行<rt>い</rt></ruby>くんです。",
             "en": "I'm off to Japan from tomorrow, actually."
           }
         ],
@@ -2005,23 +2011,23 @@
             "en": "Even though we made plans, he didn't come."
           },
           {
-            "jp": "この店は安いし、駅から近いです。",
+            "jp": "この<ruby>店<rt>みせ</rt></ruby>は<ruby>安<rt>やす</rt></ruby>いし、<ruby>駅<rt>えき</rt></ruby>から<ruby>近<rt>ちか</rt></ruby>いです。",
             "en": "This shop is cheap, and it is close to the station."
           },
           {
-            "jp": "この部屋は明るいし、静かだし、気に入っています。",
+            "jp": "この<ruby>部屋<rt>へや</rt></ruby>は<ruby>明<rt>あか</rt></ruby>るいし、<ruby>静<rt>しず</rt></ruby>かだし、<ruby>気<rt>き</rt></ruby>に<ruby>入<rt>い</rt></ruby>っています。",
             "en": "This room is bright, and it's quiet, so I like it."
           },
           {
-            "jp": "電話したのに、誰も出ませんでした。",
+            "jp": "<ruby>電話<rt>でんわ</rt></ruby>したのに、<ruby>誰<rt>だれ</rt></ruby>も<ruby>出<rt>で</rt></ruby>ませんでした。",
             "en": "Even though I called, no one answered."
           },
           {
-            "jp": "値段も高いし、味も普通だし、あまりおすすめしません。",
+            "jp": "<ruby>値段<rt>ねだん</rt></ruby>も<ruby>高<rt>たか</rt></ruby>いし、<ruby>味<rt>あじ</rt></ruby>も<ruby>普通<rt>ふつう</rt></ruby>だし、あまりおすすめしません。",
             "en": "It's pricey, and the taste is nothing special, so I don't really recommend it."
           },
           {
-            "jp": "たくさん練習したのに、うまく話せませんでした。",
+            "jp": "たくさん<ruby>練習<rt>れんしゅう</rt></ruby>したのに、うまく<ruby>話<rt>はな</rt></ruby>せませんでした。",
             "en": "Even though I practised a lot, I couldn't speak well."
           }
         ],
@@ -2096,23 +2102,23 @@
             "en": "I'll wear warm clothes so that I don't catch a cold."
           },
           {
-            "jp": "健康のために、毎日歩いています。",
+            "jp": "<ruby>健康<rt>けんこう</rt></ruby>のために、<ruby>毎日<rt>まいにち</rt></ruby><ruby>歩<rt>ある</rt></ruby>いています。",
             "en": "I walk every day for my health."
           },
           {
-            "jp": "健康を保つために、野菜をたくさん食べます。",
+            "jp": "<ruby>健康<rt>けんこう</rt></ruby>を<ruby>保<rt>たも</rt></ruby>つために、<ruby>野菜<rt>やさい</rt></ruby>をたくさん<ruby>食<rt>た</rt></ruby>べます。",
             "en": "In order to stay healthy, I eat a lot of vegetables."
           },
           {
-            "jp": "電車に間に合うように、早く家を出ます。",
+            "jp": "<ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>間<rt>ま</rt></ruby>に<ruby>合<rt>あ</rt></ruby>うように、<ruby>早<rt>はや</rt></ruby>く<ruby>家<rt>いえ</rt></ruby>を<ruby>出<rt>で</rt></ruby>ます。",
             "en": "I leave home early so that I'll make it in time for the train."
           },
           {
-            "jp": "忘れないように、スマホにメモしました。",
+            "jp": "<ruby>忘<rt>わす</rt></ruby>れないように、スマホにメモしました。",
             "en": "So that I wouldn't forget, I made a note on my phone."
           },
           {
-            "jp": "日本で働くために、日本語を勉強しています。",
+            "jp": "<ruby>日本<rt>にっぽん</rt></ruby>で<ruby>働<rt>はたら</rt></ruby>くために、<ruby>日本語<rt>にほんご</rt></ruby>を<ruby>勉強<rt>べんきょう</rt></ruby>しています。",
             "en": "I'm studying Japanese in order to work in Japan."
           }
         ],
@@ -2186,23 +2192,23 @@
             "en": "It's been decided that I'll be transferred to Osaka next month."
           },
           {
-            "jp": "来月からジムに通うことにしました。",
+            "jp": "<ruby>来月<rt>らいげつ</rt></ruby>からジムに<ruby>通<rt>かよ</rt></ruby>うことにしました。",
             "en": "I decided to start going to the gym next month."
           },
           {
-            "jp": "来年、日本語学校に通うことにしました。",
+            "jp": "<ruby>来年<rt>らいねん</rt></ruby>、<ruby>日本語<rt>にほんご</rt></ruby><ruby>学校<rt>がっこう</rt></ruby>に<ruby>通<rt>かよ</rt></ruby>うことにしました。",
             "en": "I've decided to attend a Japanese language school next year."
           },
           {
-            "jp": "会議は来週の月曜日に行われることになりました。",
+            "jp": "<ruby>会議<rt>かいぎ</rt></ruby>は<ruby>来週<rt>らいしゅう</rt></ruby>の<ruby>月曜日<rt>げつようび</rt></ruby>に<ruby>行<rt>おこな</rt></ruby>われることになりました。",
             "en": "It's been decided that the meeting will be held next Monday."
           },
           {
-            "jp": "今年から自転車で通うことにしました。",
+            "jp": "<ruby>今年<rt>ことし</rt></ruby>から<ruby>自転車<rt>じてんしゃ</rt></ruby>で<ruby>通<rt>かよ</rt></ruby>うことにしました。",
             "en": "I've decided to commute by bicycle from this year."
           },
           {
-            "jp": "来月から新しい店を手伝うことになりました。",
+            "jp": "<ruby>来月<rt>らいげつ</rt></ruby>から<ruby>新<rt>あたら</rt></ruby>しい<ruby>店<rt>みせ</rt></ruby>を<ruby>手伝<rt>てつだ</rt></ruby>うことになりました。",
             "en": "It's been arranged that I'll help out at the new shop from next month."
           }
         ],
@@ -2285,23 +2291,23 @@
             "en": "I've written a letter in Japanese before."
           },
           {
-            "jp": "北海道へ行ったことがあります。",
+            "jp": "<ruby>北海道<rt>ほっかいどう</rt></ruby>へ<ruby>行<rt>い</rt></ruby>ったことがあります。",
             "en": "I have been to Hokkaido before."
           },
           {
-            "jp": "沖縄へ行ったことがあります。",
+            "jp": "<ruby>沖縄<rt>おきなわ</rt></ruby>へ<ruby>行<rt>い</rt></ruby>ったことがあります。",
             "en": "I have been to Okinawa before."
           },
           {
-            "jp": "有名な歌手に会ったことがあります。",
+            "jp": "<ruby>有名<rt>ゆうめい</rt></ruby>な<ruby>歌手<rt>かしゅ</rt></ruby>に<ruby>会<rt>あ</rt></ruby>ったことがあります。",
             "en": "I've met a famous singer before."
           },
           {
-            "jp": "温泉に入ったことがありますか。",
+            "jp": "<ruby>温泉<rt>おんせん</rt></ruby>に<ruby>入<rt>はい</rt></ruby>ったことがありますか。",
             "en": "Have you ever been into an onsen?"
           },
           {
-            "jp": "一度も飛行機に乗ったことがありません。",
+            "jp": "<ruby>一<rt>いち</rt></ruby><ruby>度<rt>ど</rt></ruby>も<ruby>飛行機<rt>ひこうき</rt></ruby>に<ruby>乗<rt>の</rt></ruby>ったことがありません。",
             "en": "I have never once been on a plane."
           }
         ],
@@ -2343,23 +2349,23 @@
             "en": "On the trip we did things like swim and eat good food."
           },
           {
-            "jp": "休みの日は本を読んだり、料理したりします。",
+            "jp": "<ruby>休<rt>やす</rt></ruby>みの<ruby>日<rt>ひ</rt></ruby>は<ruby>本<rt>ほん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>んだり、<ruby>料理<rt>りょうり</rt></ruby>したりします。",
             "en": "On days off, I do things like read and cook."
           },
           {
-            "jp": "旅行中は写真を撮ったり、地元の料理を食べたりしました。",
+            "jp": "<ruby>旅行<rt>りょこう</rt></ruby><ruby>中<rt>ちゅう</rt></ruby>は<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>撮<rt>と</rt></ruby>ったり、<ruby>地元<rt>じもと</rt></ruby>の<ruby>料理<rt>りょうり</rt></ruby>を<ruby>食<rt>た</rt></ruby>べたりしました。",
             "en": "During the trip we did things like take photos and eat local food."
           },
           {
-            "jp": "休みの日は掃除したり、洗濯したりします。",
+            "jp": "<ruby>休<rt>やす</rt></ruby>みの<ruby>日<rt>ひ</rt></ruby>は<ruby>掃除<rt>そうじ</rt></ruby>したり、<ruby>洗濯<rt>せんたく</rt></ruby>したりします。",
             "en": "On days off I do things like clean and do laundry."
           },
           {
-            "jp": "日曜日は本を読んだり、散歩したりします。",
+            "jp": "<ruby>日曜日<rt>にちようび</rt></ruby>は<ruby>本<rt>ほん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>んだり、<ruby>散歩<rt>さんぽ</rt></ruby>したりします。",
             "en": "On Sundays I do things like read and go for walks."
           },
           {
-            "jp": "旅行の準備で、荷物を作ったり、切符を買ったりしています。",
+            "jp": "<ruby>旅行<rt>りょこう</rt></ruby>の<ruby>準備<rt>じゅんび</rt></ruby>で、<ruby>荷物<rt>にもつ</rt></ruby>を<ruby>作<rt>つく</rt></ruby>ったり、<ruby>切符<rt>きっぷ</rt></ruby>を<ruby>買<rt>か</rt></ruby>ったりしています。",
             "en": "Getting ready for the trip, I'm packing, buying tickets, and so on."
           }
         ],
@@ -2404,23 +2410,23 @@
             "en": "It was too expensive, so I couldn't buy it."
           },
           {
-            "jp": "このかばんは大きすぎます。",
+            "jp": "このかばんは<ruby>大<rt>おお</rt></ruby>きすぎます。",
             "en": "This bag is too large."
           },
           {
-            "jp": "昨日は寝すぎてしまいました。",
+            "jp": "<ruby>昨日<rt>きのう</rt></ruby>は<ruby>寝<rt>ね</rt></ruby>すぎてしまいました。",
             "en": "I ended up oversleeping yesterday."
           },
           {
-            "jp": "この道は狭すぎて、車が通れません。",
+            "jp": "この<ruby>道<rt>みち</rt></ruby>は<ruby>狭<rt>せま</rt></ruby>すぎて、<ruby>車<rt>くるま</rt></ruby>が<ruby>通<rt>とお</rt></ruby>れません。",
             "en": "This road is too narrow for a car to pass through."
           },
           {
-            "jp": "昨日は食べすぎて、お腹が痛くなりました。",
+            "jp": "<ruby>昨日<rt>きのう</rt></ruby>は<ruby>食<rt>た</rt></ruby>べすぎて、お<ruby>腹<rt>なか</rt></ruby>が<ruby>痛<rt>いた</rt></ruby>くなりました。",
             "en": "I ate too much yesterday and my stomach started hurting."
           },
           {
-            "jp": "このかばんは大きすぎて、電車で邪魔になります。",
+            "jp": "このかばんは<ruby>大<rt>おお</rt></ruby>きすぎて、<ruby>電車<rt>でんしゃ</rt></ruby>で<ruby>邪魔<rt>じゃま</rt></ruby>になります。",
             "en": "This bag is too big and gets in the way on the train."
           }
         ],
@@ -2466,23 +2472,23 @@
             "en": "This dictionary is easy to use."
           },
           {
-            "jp": "このペンは使いやすいです。",
+            "jp": "このペンは<ruby>使<rt>つか</rt></ruby>いやすいです。",
             "en": "This pen is easy to use."
           },
           {
-            "jp": "このアプリは操作しやすいです。",
+            "jp": "このアプリは<ruby>操作<rt>そうさ</rt></ruby>しやすいです。",
             "en": "This app is easy to operate."
           },
           {
-            "jp": "この字は小さくて読みにくいです。",
+            "jp": "この<ruby>字<rt>じ</rt></ruby>は<ruby>小<rt>ちい</rt></ruby>さくて<ruby>読<rt>よ</rt></ruby>みにくいです。",
             "en": "These characters are small and hard to read."
           },
           {
-            "jp": "この靴は歩きやすいです。",
+            "jp": "この<ruby>靴<rt>くつ</rt></ruby>は<ruby>歩<rt>ある</rt></ruby>きやすいです。",
             "en": "These shoes are easy to walk in."
           },
           {
-            "jp": "この説明は分かりにくいです。",
+            "jp": "この<ruby>説明<rt>せつめい</rt></ruby>は<ruby>分<rt>わ</rt></ruby>かりにくいです。",
             "en": "This explanation is hard to follow."
           }
         ],
@@ -2528,23 +2534,23 @@
             "en": "I'll book the hotel in advance, before the trip."
           },
           {
-            "jp": "旅行の前にホテルを予約しておきます。",
+            "jp": "<ruby>旅行<rt>りょこう</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>にホテルを<ruby>予約<rt>よやく</rt></ruby>しておきます。",
             "en": "I will reserve the hotel in advance before the trip."
           },
           {
-            "jp": "大切なメールを消してしまいました。",
+            "jp": "<ruby>大切<rt>たいせつ</rt></ruby>なメールを<ruby>消<rt>け</rt></ruby>してしまいました。",
             "en": "I accidentally deleted an important email."
           },
           {
-            "jp": "会議の前に資料を準備しておきます。",
+            "jp": "<ruby>会議<rt>かいぎ</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>に<ruby>資料<rt>しりょう</rt></ruby>を<ruby>準備<rt>じゅんび</rt></ruby>しておきます。",
             "en": "I'll prepare the materials in advance before the meeting."
           },
           {
-            "jp": "旅行の前に、ホテルを予約しておきます。",
+            "jp": "<ruby>旅行<rt>りょこう</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>に、ホテルを<ruby>予約<rt>よやく</rt></ruby>しておきます。",
             "en": "I'll book the hotel in advance, before the trip."
           },
           {
-            "jp": "出かける前に、窓を閉めておいてください。",
+            "jp": "<ruby>出<rt>で</rt></ruby>かける<ruby>前<rt>まえ</rt></ruby>に、<ruby>窓<rt>まど</rt></ruby>を<ruby>閉<rt>し</rt></ruby>めておいてください。",
             "en": "Please close the windows before you go out."
           }
         ],
@@ -2601,23 +2607,23 @@
             "en": "Among Japanese food, I like sushi the most."
           },
           {
-            "jp": "電車よりバスのほうが安いです。",
+            "jp": "<ruby>電車<rt>でんしゃ</rt></ruby>よりバスのほうが<ruby>安<rt>やす</rt></ruby>いです。",
             "en": "The bus is cheaper than the train."
           },
           {
-            "jp": "犬より猫のほうが好きです。",
+            "jp": "<ruby>犬<rt>いぬ</rt></ruby>より<ruby>猫<rt>ねこ</rt></ruby>のほうが<ruby>好<rt>す</rt></ruby>きです。",
             "en": "I like cats more than dogs."
           },
           {
-            "jp": "クラスの中で山田さんが一番よく話します。",
+            "jp": "クラスの<ruby>中<rt>なか</rt></ruby>で<ruby>山田<rt>やまだ</rt></ruby>さんが<ruby>一番<rt>いちばん</rt></ruby>よく<ruby>話<rt>はな</rt></ruby>します。",
             "en": "Out of everyone in the class, Yamada-san talks the most."
           },
           {
-            "jp": "この店の中で、このケーキが一番人気です。",
+            "jp": "この<ruby>店<rt>みせ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で、このケーキが<ruby>一番<rt>いちばん</rt></ruby><ruby>人気<rt>にんき</rt></ruby>です。",
             "en": "In this shop, this cake is the most popular item."
           },
           {
-            "jp": "兄弟の中で、私が一番早く起きます。",
+            "jp": "<ruby>兄弟<rt>きょうだい</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で、<ruby>私<rt>わたし</rt></ruby>が<ruby>一番<rt>いちばん</rt></ruby><ruby>早<rt>はや</rt></ruby>く<ruby>起<rt>お</rt></ruby>きます。",
             "en": "Out of my siblings, I'm the one who gets up earliest."
           }
         ],

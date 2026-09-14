@@ -2,15 +2,21 @@
 //
 // 1. Exact match against a local glossary built from this app's own data
 //    (reading-passage vocab lists + the N4 kanji list) — instant, offline.
-// 2. Otherwise, Jisho.org's public search API — but jisho.org sends no
+// 2. Otherwise, Jisho.org's public search API. Jisho sends no
 //    Access-Control-Allow-Origin header, so a direct browser fetch from any
-//    other origin is blocked by CORS (confirmed by hand). We try it anyway
-//    first (in case this is ever hosted somewhere that proxies it), then
-//    fall back to a public CORS relay (api.allorigins.win) which fetches it
-//    server-side and hands the JSON back to us.
-// 3. If both network paths fail, the caller shows a "search on Jisho"
+//    other origin is always blocked by CORS (confirmed by hand — this isn't
+//    fixable from our side). Since this app is always served through Vite
+//    (dev or preview, never a bare file://), vite.config.js proxies
+//    /api/jisho to jisho.org server-side, where CORS doesn't apply at all —
+//    that's the primary path and it's reliable. If this build is ever
+//    hosted somewhere without that proxy, we fall back to a direct
+//    cross-origin call (works if the host proxies it another way) and then
+//    a public CORS relay as a last resort (best-effort — third-party
+//    services like this rate-limit and go down).
+// 3. If every network path fails, the caller shows a "search on Jisho"
 //    link-out instead of an inline definition.
 
+const SAME_ORIGIN_PROXY = "/api/jisho?keyword=";
 const JISHO_ENDPOINT = "https://jisho.org/api/v1/search/words?keyword=";
 const CORS_RELAY = "https://api.allorigins.win/raw?url=";
 
@@ -54,14 +60,25 @@ function withTimeout(promise, ms) {
 }
 
 async function fetchJisho(term) {
-  const url = JISHO_ENDPOINT + encodeURIComponent(term);
+  const encoded = encodeURIComponent(term);
+
   try {
-    const res = await withTimeout(fetch(url, { mode: "cors" }), 3500);
+    const res = await withTimeout(fetch(SAME_ORIGIN_PROXY + encoded), 4000);
     if (!res.ok) throw new Error("bad status");
     return await res.json();
   } catch {
-    // Direct call almost always fails here (no CORS header on jisho.org) —
-    // fall back to a relay that fetches it server-side for us.
+    // No dev/preview proxy available (e.g. a bare static deploy) — fall
+    // back to a direct cross-origin call, then a public relay. The browser
+    // will log a CORS error in the console for the direct attempt when it
+    // fails; that's expected and harmless — it's caught here regardless.
+  }
+
+  const url = JISHO_ENDPOINT + encoded;
+  try {
+    const res = await withTimeout(fetch(url), 3500);
+    if (!res.ok) throw new Error("bad status");
+    return await res.json();
+  } catch {
     const res = await withTimeout(fetch(CORS_RELAY + encodeURIComponent(url)), 5000);
     if (!res.ok) throw new Error("bad status");
     return await res.json();

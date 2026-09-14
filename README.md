@@ -55,7 +55,9 @@ src/
 
   lib/
     dictionary.js          Vocab lookup: local glossary first, then
-                            Jisho.org (via a CORS relay — see below).
+                            Jisho.org (via our own dev-server proxy — see below).
+
+vite.config.js             Proxies /api/jisho -> jisho.org (see below).
 ```
 
 ### Adding content
@@ -74,14 +76,18 @@ floating popup with its reading and meaning:
    passages' vocab lists and the N4 kanji list) — instant, offline.
 2. Otherwise it queries [Jisho.org](https://jisho.org)'s public API.
    Jisho's API does **not** send CORS headers, so a direct browser request
-   from this app's origin is blocked — confirmed by hand while building
-   this. To make live lookups work anyway, failed direct requests fall
-   back to a public CORS relay (`api.allorigins.win`), which fetches the
-   Jisho response server-side and hands the JSON back to the browser. Only
-   the highlighted Japanese text is sent, but it does pass through that
-   third-party relay — swap `CORS_RELAY` in `src/lib/dictionary.js` for
-   your own proxy if you'd rather not depend on it.
-3. If both fail (offline, relay down, etc.), the popup shows a
+   from this app's origin is always blocked (confirmed by hand — you'll
+   see a CORS error logged in the browser console the first time this path
+   is hit; it's expected and harmless, not a sign anything is broken).
+   Since this app is always served through Vite, `vite.config.js` proxies
+   `/api/jisho` to `jisho.org` server-side, where CORS doesn't apply — that
+   same-origin request is the primary, reliable path (works in both
+   `npm run dev` and `npm run preview`). If this build is ever hosted
+   somewhere without that proxy (e.g. deployed as a bare static site), it
+   falls back to a direct cross-origin call and then a public CORS relay
+   (`api.allorigins.win`) as a last resort — best-effort only, since that's
+   a third-party service outside our control.
+3. If every path fails (offline, etc.), the popup shows a
    "Search on Jisho ↗" link instead of an inline definition.
 
 ## Where the original version went
@@ -92,3 +98,13 @@ that converted it into the JSON files under `src/data/` — re-run it if you
 ever need to regenerate from `legacy/` again (it will overwrite
 `grammar.json`, `kanji.json`, `reading.json`, `kaiwa-*.json`, and
 `quiz.json`; `grammar-extra.json` is hand-written and untouched by it).
+
+`scripts/add-furigana-to-grammar.mjs` is another one-off: it auto-generates
+`<ruby>` furigana (via `kuroshiro` + `kuroshiro-analyzer-kuromoji`, a
+morphological analyzer) for any grammar example sentence that doesn't have
+any yet. It's already been run once — most examples now have furigana
+throughout, not just the first few per point — but if you add new example
+sentences without furigana, install those two packages
+(`npm install --no-save kuroshiro kuroshiro-analyzer-kuromoji`) and re-run
+it. Auto-generated readings are usually right but not guaranteed — spot
+check anything added this way.

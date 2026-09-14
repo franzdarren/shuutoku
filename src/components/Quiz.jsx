@@ -39,7 +39,9 @@ function QuizItem({ qid, item }) {
 
   return (
     <div className="qitem">
-      <div className="qprompt">{item.q}</div>
+      {/* q/choices/ex are rendered as HTML — most are plain text (harmless
+          either way), but some (e.g. Reading Lab) include <ruby> furigana. */}
+      <div className="qprompt jp-lookup" dangerouslySetInnerHTML={{ __html: item.q }} />
       <div className="qchoices">
         {item.choices.map((c, idx) => {
           const isCorrectChoice = attempted && idx === item.a;
@@ -47,11 +49,11 @@ function QuizItem({ qid, item }) {
           const cls = ["qchoice", isCorrectChoice && "correct", isWrongPick && "incorrect", busy && "disabled"]
             .filter(Boolean).join(" ");
           return (
-            <button key={idx} className={cls} onClick={() => pick(idx)}>{c}</button>
+            <button key={idx} className={cls} onClick={() => pick(idx)} dangerouslySetInnerHTML={{ __html: c }} />
           );
         })}
       </div>
-      <div className={"qexplain" + (attempted ? " show" : "")}>{item.ex}</div>
+      <div className={"qexplain jp-lookup" + (attempted ? " show" : "")} dangerouslySetInnerHTML={{ __html: item.ex }} />
     </div>
   );
 }
