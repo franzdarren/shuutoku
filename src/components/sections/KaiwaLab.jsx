@@ -3,6 +3,7 @@ import { kaiwaTips, phraseBank, kaiwaScenarios, countPhrases } from "../../data/
 import JpText from "../JpText.jsx";
 import Quiz from "../Quiz.jsx";
 import SpeakButton from "../SpeakButton.jsx";
+import FloatingNav from "../FloatingNav.jsx";
 
 // Scenario titles carry inline <ruby> furigana; for a plain-text nav label,
 // drop the reading (<rt>...</rt>) before stripping the remaining tags —
@@ -24,14 +25,21 @@ const CATEGORIES = [
 // ids) attached even after grouping/filtering by category.
 const scenariosWithIndex = kaiwaScenarios.map((sc, i) => ({ sc, i }));
 
+const NAV_ITEMS = CATEGORIES.map((c) => ({ label: c.jp }));
+
 export default function KaiwaLab() {
   const [activeCat, setActiveCat] = useState(CATEGORIES[0].id);
-  const cat = CATEGORIES.find((c) => c.id === activeCat);
+  const activeCatIndex = CATEGORIES.findIndex((c) => c.id === activeCat);
+  const cat = CATEGORIES[activeCatIndex];
   const scenariosInCat = scenariosWithIndex.filter(({ sc }) => sc.category === activeCat);
 
   function goToCategory(id) {
     setActiveCat(id);
     window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  function goToCategoryIndex(i) {
+    goToCategory(CATEGORIES[i].id);
   }
 
   return (
@@ -138,6 +146,8 @@ export default function KaiwaLab() {
           </div>
         </div>
       ))}
+
+      <FloatingNav items={NAV_ITEMS} activeIndex={activeCatIndex} onGo={goToCategoryIndex} />
     </>
   );
 }

@@ -90,6 +90,25 @@ floating popup with its reading and meaning:
 3. If every path fails (offline, etc.), the popup shows a
    "Search on Jisho ↗" link instead of an inline definition.
 
+## Deploying (Vercel, free)
+
+`api/jisho.js` is the production equivalent of the dev-only Vite proxy —
+same `/api/jisho` path, same job (fetch Jisho.org server-side so CORS
+doesn't apply), just running as a Vercel serverless function instead of a
+Vite dev-server proxy. `src/lib/dictionary.js` calls that same path either
+way, so nothing else needs to change between dev and production.
+
+Vercel auto-detects this as a Vite project (build command `npm run build`,
+output `dist/`) and auto-detects `api/*.js` as serverless functions — no
+`vercel.json` needed. Two ways to ship it, both free for a personal
+project:
+
+- **Dashboard (no CLI):** push this repo to GitHub, go to
+  [vercel.com/new](https://vercel.com/new), sign in with GitHub, and import
+  the repo. Deploys automatically on every push after that.
+- **CLI:** `npx vercel --prod` from this folder (prompts a one-time login
+  the first time).
+
 ## Where the original version went
 
 The original single-file `index.html` + `data/*.js` version is kept in

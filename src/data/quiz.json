@@ -168,7 +168,7 @@
         "ex": "駅に近い is the standard pattern for being close to a place."
       },
       {
-        "q": "「荷物をここに置いて＿＿。」 (please leave it here in advance)",
+        "q": "「荷物をここに置いて＿＿。」 (I'll leave the luggage here for now — stating your own plan)",
         "choices": [
           "あります",
           "おいてください",
@@ -176,7 +176,7 @@
           "しまいます"
         ],
         "a": 2,
-        "ex": "〜ておきます describes doing something in advance."
+        "ex": "〜ておきます describes doing something in advance, as your own action: 置いておきます = 'I'll leave it here (for later convenience)'. Note 置いておいてください would also be valid Japanese, but for a different sentence — that's a REQUEST ('please leave it here'), not this one, which is the speaker stating their own plan."
       },
       {
         "q": "「富士山は日本で＿＿高い山です。」",
@@ -651,7 +651,7 @@
         "ex": "The memo states plainly: 九時からです — 'it's from 9 o'clock.'"
       },
       {
-        "q": "同じメモで、田中さんは何を忘れないようにしなければなりませんか。",
+        "q": "メモ：「田中さん、今日は会議が三十分早くなりました。九時からです。資料を忘れないようにしてください。」— 田中さんは何を忘れないようにしなければなりませんか。",
         "choices": [
           "財布",
           "資料",

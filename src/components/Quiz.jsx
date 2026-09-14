@@ -21,7 +21,9 @@ function QuizItem({ qid, item }) {
   const { answered, answerQuestion } = useQuiz();
   const [lastIdx, setLastIdx] = useState(null);
   const [busy, setBusy] = useState(false);
+  const [showWhy, setShowWhy] = useState(false);
   const attempted = answered.has(qid) || lastIdx !== null;
+  const hasWhy = Array.isArray(item.why) && item.why.some(Boolean);
 
   function pick(idx) {
     if (busy) return;
@@ -54,6 +56,27 @@ function QuizItem({ qid, item }) {
         })}
       </div>
       <div className={"qexplain jp-lookup" + (attempted ? " show" : "")} dangerouslySetInnerHTML={{ __html: item.ex }} />
+
+      {attempted && hasWhy && (
+        <div className="qwhy-wrap">
+          <button className="qwhy-toggle" onClick={() => setShowWhy(!showWhy)}>
+            {showWhy ? "Hide" : "Why are the others wrong?"} {showWhy ? "▾" : "▸"}
+          </button>
+          {showWhy && (
+            <ul className="qwhy-list">
+              {item.choices.map((c, idx) => {
+                if (idx === item.a || !item.why[idx]) return null;
+                return (
+                  <li key={idx}>
+                    <span className="jp-lookup" dangerouslySetInnerHTML={{ __html: c }} />
+                    {" — " + item.why[idx]}
+                  </li>
+                );
+              })}
+            </ul>
+          )}
+        </div>
+      )}
     </div>
   );
 }

@@ -229,6 +229,16 @@ h2.modtitle .modnum{ color:var(--gold); font-size:1.1rem; }
 .qchoice.disabled{ pointer-events:none; opacity:.55; }
 .qexplain{ font-size:.8rem; color:var(--ink-soft); margin-top:7px; padding:8px 12px; background:var(--paper); border-left:3px solid var(--accent, var(--indigo)); display:none; }
 .qexplain.show{ display:block; }
+.qwhy-wrap{ margin-top:6px; }
+.qwhy-toggle{
+  background:none; border:none; color:var(--indigo); font-size:.76rem;
+  cursor:pointer; padding:2px 0; font-family:var(--sans);
+}
+.qwhy-toggle:hover{ text-decoration:underline; }
+.qwhy-list{ margin:6px 0 0; padding-left:18px; font-size:.8rem; color:var(--ink-soft); }
+.qwhy-list li{ margin-bottom:5px; }
+.qwhy-list li:last-child{ margin-bottom:0; }
+.qwhy-list b, .qwhy-list span{ color:var(--ink); }
 
 /* ============================================================
    KANJI TABLE
@@ -331,6 +341,56 @@ h2.modtitle .modnum{ color:var(--gold); font-size:1.1rem; }
 .qc-reset{ background:none; border:1px solid var(--line); color:var(--ink-soft); padding:8px 16px; border-radius:20px; cursor:pointer; font-family:var(--sans); font-size:.82rem; }
 .qc-reset:hover{ border-color:var(--shu); color:var(--shu); }
 .qc-group-title{ font-family:var(--serif); font-size:1.1rem; color:var(--gold); margin:28px 0 12px; }
+
+/* ============================================================
+   FLOATING MODULE NAV — Grammar Deep-Dive
+   Stays fixed on screen so switching modules never needs a
+   scroll back to the top.
+   ============================================================ */
+.floatnav{ position:fixed; right:28px; bottom:24px; z-index:50; display:flex; flex-direction:column; align-items:flex-end; gap:8px; }
+.floatnav-bar{
+  display:flex; align-items:stretch; background:var(--paper-2); border:1px solid var(--line);
+  border-radius:999px; box-shadow:0 4px 18px var(--shadow); overflow:hidden;
+}
+.floatnav-arrow{
+  background:none; border:none; color:var(--indigo); font-size:1rem; width:38px;
+  cursor:pointer; transition:background .15s ease;
+}
+.floatnav-arrow:hover:not(:disabled){ background:var(--paper-3); }
+.floatnav-arrow:disabled{ color:var(--ink-faint); cursor:default; opacity:.5; }
+.floatnav-label{
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  background:none; border:none; border-left:1px solid var(--line); border-right:1px solid var(--line);
+  padding:6px 14px; cursor:pointer; min-width:100px; max-width:160px;
+}
+.floatnav-label:hover{ background:var(--paper-3); }
+.floatnav-count{ font-size:.64rem; color:var(--ink-faint); letter-spacing:.04em; }
+.floatnav-title{ font-family:var(--serif); font-size:.84rem; color:var(--ink); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:100%; }
+.floatnav-menu{
+  background:var(--paper-2); border:1px solid var(--line); border-radius:var(--radius);
+  box-shadow:0 8px 24px var(--shadow); padding:6px; max-height:min(360px, 60vh); overflow-y:auto;
+  width:min(280px, calc(100vw - 40px));
+}
+.floatnav-group{
+  font-size:.62rem; letter-spacing:.05em; color:var(--ink-faint); text-transform:uppercase;
+  padding:10px 10px 4px; border-top:1px solid var(--line-soft); margin-top:4px;
+}
+.floatnav-menu > div:first-child .floatnav-group{ border-top:none; margin-top:0; }
+.floatnav-item{
+  display:flex; align-items:baseline; gap:8px; width:100%; text-align:left;
+  background:none; border:none; padding:7px 10px; border-radius:6px; cursor:pointer;
+  font-family:var(--serif); font-size:.85rem; color:var(--ink-soft);
+}
+.floatnav-item-label{ white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.floatnav-item:hover{ background:var(--paper-3); }
+.floatnav-item.active{ background:var(--indigo); color:#fff; }
+.floatnav-item.active .floatnav-num{ color:#fff; }
+.floatnav-num{ color:var(--gold); font-size:.76rem; flex-shrink:0; }
+
+@media (max-width: 600px){
+  .floatnav{ right:14px; bottom:14px; }
+  .floatnav-label{ min-width:70px; max-width:120px; padding:6px 8px; }
+}
 
 /* ============================================================
    MODULE CHECK — per-module checkpoint quiz (Grammar Deep-Dive)

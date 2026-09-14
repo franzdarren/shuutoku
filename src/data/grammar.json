@@ -88,7 +88,13 @@
               "持ちませんでした"
             ],
             "a": 1,
-            "ex": "持つ describes owning something as an ongoing state, so 持っています ('has/owns') is correct — not the plain present, which would sound like a one-time act of picking something up."
+            "ex": "持つ describes owning something as an ongoing state, so 持っています ('has/owns') is correct — not the plain present, which would sound like a one-time act of picking something up.",
+            "why": [
+              "持ちます sounds like a one-time act of acquiring it, not an ongoing state of owning it.",
+              null,
+              "持ちました (past) says he acquired it at some point — not that he currently owns one.",
+              "持ちませんでした is negative past — the opposite of what we want to say."
+            ]
           },
           {
             "q": "How would you say 'It's raining right now' vs 'It rains every June' — which grammar point covers BOTH?",
@@ -99,7 +105,13 @@
               "〜そうだ"
             ],
             "a": 1,
-            "ex": "〜ている covers both the in-progress and the habitual meaning — context (今 vs 毎年) tells the listener which one you mean."
+            "ex": "〜ている covers both the in-progress and the habitual meaning — context (今 vs 毎年) tells the listener which one you mean.",
+            "why": [
+              "〜たり〜たりする lists a few example actions — it doesn't handle the 'right now' progressive meaning at all.",
+              null,
+              "〜てから means 'after doing X' — sequencing, not describing an ongoing action or habit.",
+              "〜そうだ is a guess/hearsay marker, unrelated to progressive or habitual meaning."
+            ]
           }
         ]
       },
@@ -184,7 +196,13 @@
               "これを着ています"
             ],
             "a": 0,
-            "ex": "着てもいいですか politely asks for permission — exactly what you want when asking to try something on."
+            "ex": "着てもいいですか politely asks for permission — exactly what you want when asking to try something on.",
+            "why": [
+              null,
+              "着てはいけません forbids trying it on — the opposite of asking permission.",
+              "着なければなりません says you must wear it — not what you want to ask.",
+              "着ています states you are currently wearing it, not a request."
+            ]
           },
           {
             "q": "「たばこを吸っては＿＿。」 (Smoking is forbidden here) — fill in the blank.",
@@ -195,7 +213,13 @@
               "しまいます"
             ],
             "a": 1,
-            "ex": "〜てはいけません expresses that an action is prohibited."
+            "ex": "〜てはいけません expresses that an action is prohibited.",
+            "why": [
+              "てはいいです isn't natural here — 〜てもいいです (permission) needs も, not は, and even then it would mean the opposite (allowed).",
+              null,
+              "てはおきます isn't a standard construction — おく attaches after て, not after ては.",
+              "てはしまいます has the same problem — しまう pairs with て, not ては."
+            ]
           }
         ]
       },
@@ -276,7 +300,13 @@
               "行ってはいけません"
             ],
             "a": 2,
-            "ex": "行かなければなりません = 'must go' — matching 'have to go today'."
+            "ex": "行かなければなりません = 'must go' — matching 'have to go today'.",
+            "why": [
+              "行ってもいいです means it's optional — the opposite of 'have to'.",
+              "行きます is a plain statement of fact, missing the 'have to/must' obligation.",
+              null,
+              "行ってはいけません forbids going — the opposite meaning entirely."
+            ]
           },
           {
             "q": "Which sentence means 'You don't have to bring an umbrella'?",
@@ -287,7 +317,13 @@
               "傘を持っています"
             ],
             "a": 2,
-            "ex": "〜なくてもいいです = optional / not required, which fits 'don't have to'."
+            "ex": "〜なくてもいいです = optional / not required, which fits 'don't have to'.",
+            "why": [
+              "持ってはいけません forbids bringing one — much stronger than 'don't have to'.",
+              "持たなければなりません means the opposite: you must bring one.",
+              null,
+              "持っています just states you currently have one — unrelated to obligation."
+            ]
           }
         ]
       },
@@ -373,7 +409,13 @@
               "ば"
             ],
             "a": 0,
-            "ex": "〜てから attaches to the て-form (浴びて) to mean 'after showering'."
+            "ex": "〜てから attaches to the て-form (浴びて) to mean 'after showering'.",
+            "why": [
+              null,
+              "たまえ is an old-fashioned command form (professor-to-student in fiction) — not a sequencing pattern.",
+              "ながら needs the ます-stem (浴びながら), not the て-form, and would mean 'while', not 'after'.",
+              "ば is a conditional ('if you shower'), not a sequencing word for 'after'."
+            ]
           },
           {
             "q": "Which is closer in feeling to giving step-by-step instructions?",
@@ -384,7 +426,13 @@
               "〜てもいい"
             ],
             "a": 1,
-            "ex": "〜てから is the more natural, common choice for sequencing instructions in everyday speech."
+            "ex": "〜てから is the more natural, common choice for sequencing instructions in everyday speech.",
+            "why": [
+              "たあとで is correct too but reads more neutral/formal — てから is the more natural pick for casual step-by-step instructions.",
+              null,
+              "ている describes an ongoing action or state, not a sequence of steps.",
+              "てもいい grants permission — unrelated to sequencing instructions."
+            ]
           }
         ]
       }
@@ -479,7 +527,13 @@
               "友達は電話を直します"
             ],
             "a": 1,
-            "ex": "くれる centers the favor on you as the grateful receiver — the natural way to describe someone helping you."
+            "ex": "くれる centers the favor on you as the grateful receiver — the natural way to describe someone helping you.",
+            "why": [
+              "あげました would mean YOU did the favor for your friend — backwards from what happened.",
+              null,
+              "もらいませんでした is negative — it says you did NOT receive the favor, the opposite of what happened.",
+              "This is just a flat statement with no sense of gratitude or favor at all."
+            ]
           },
           {
             "q": "「わたしは母に料理を教えて＿＿。」 (I had my mother teach me cooking — I asked her)",
@@ -490,7 +544,13 @@
               "いました"
             ],
             "a": 1,
-            "ex": "もらう puts the focus on 'I received the favor of being taught' — the speaker's own viewpoint as receiver."
+            "ex": "もらう puts the focus on 'I received the favor of being taught' — the speaker's own viewpoint as receiver.",
+            "why": [
+              "あげました would mean you did the teaching for your mother — backwards.",
+              null,
+              "くれました needs が for the giver (母がくれました), not に, and shifts away from your own 'I asked for it' viewpoint.",
+              "いました isn't a valid completion of 教えて — it doesn't attach meaningfully here."
+            ]
           }
         ]
       },
@@ -575,7 +635,13 @@
               "写真を撮ってはいけません"
             ],
             "a": 1,
-            "ex": "〜てくれませんか is a soft, polite request form — ideal for asking a stranger a favor."
+            "ex": "〜てくれませんか is a soft, polite request form — ideal for asking a stranger a favor.",
+            "why": [
+              "写真を撮ります just states you'll take a photo — it doesn't ask the stranger for anything.",
+              null,
+              "写真を撮りたいです states your own wish, not a request directed at them.",
+              "てはいけません forbids taking photos — the opposite of what you want."
+            ]
           },
           {
             "q": "「わたしは彼にもっと勉強し＿＿。」 (I want him to study more)",
@@ -586,7 +652,13 @@
               "てあげます"
             ],
             "a": 0,
-            "ex": "〜てほしい expresses a wish about someone else's action."
+            "ex": "〜てほしい expresses a wish about someone else's action.",
+            "why": [
+              null,
+              "てもいいです would mean giving HIM permission to study more, not expressing your own wish about him.",
+              "なければなりません would express an obligation on the SPEAKER, not a wish about someone else.",
+              "てあげます means doing the studying as a favor FOR him, not wanting him to do it himself."
+            ]
           }
         ]
       },
@@ -666,7 +738,13 @@
               "たら"
             ],
             "a": 0,
-            "ex": "ように言った reports an indirect command."
+            "ex": "ように言った reports an indirect command.",
+            "why": [
+              null,
+              "なさい must come from the verb stem directly (勉強しなさい), not stack after the dictionary form する — 勉強するなさいと isn't grammatical.",
+              "てから means 'after doing' — unrelated to reporting a command.",
+              "たら is a conditional, unrelated to reporting what was said."
+            ]
           },
           {
             "q": "Who would you most naturally say 早く食べなさい to?",
@@ -677,7 +755,13 @@
               "A hotel receptionist"
             ],
             "a": 2,
-            "ex": "なさい commands are gentle but direct — typically parent-to-child or teacher-to-student, not for strangers or superiors."
+            "ex": "なさい commands are gentle but direct — typically parent-to-child or teacher-to-student, not for strangers or superiors.",
+            "why": [
+              "なさい to your boss would be strikingly rude — it's a downward-register command form.",
+              "Commanding a stranger with なさい would come across as bizarrely presumptuous.",
+              null,
+              "Hotel staff are addressed politely, not with a parent-to-child command form."
+            ]
           }
         ]
       },
@@ -757,7 +841,13 @@
               "飲まれる"
             ],
             "a": 1,
-            "ex": "Group 1 verb: change the final u-sound (む) to the e-sound (め) and add る → 飲める."
+            "ex": "Group 1 verb: change the final u-sound (む) to the e-sound (め) and add る → 飲める.",
+            "why": [
+              "飲みる isn't a real conjugation — potential form replaces the u-sound with an e-sound plus る, giving 飲める.",
+              null,
+              "飲むことが is the start of a different pattern (〜ことができる), not the potential form itself.",
+              "飲まれる is the passive form ('be drunk [by someone]'), not the potential."
+            ]
           },
           {
             "q": "「漢字を＿＿することができます。」 fill in the correct dictionary-form verb for 'read'",
@@ -768,7 +858,13 @@
               "読めば"
             ],
             "a": 1,
-            "ex": "ことができる attaches to the dictionary form of the verb."
+            "ex": "ことができる attaches to the dictionary form of the verb.",
+            "why": [
+              "読み (stem alone) doesn't attach directly before することができます — the pattern needs the dictionary form.",
+              null,
+              "読んで (て-form) doesn't combine with ことができる this way.",
+              "読めば is already the potential+conditional — ことができる needs the plain dictionary form instead."
+            ]
           }
         ]
       }
@@ -857,7 +953,13 @@
               "呼んでいる"
             ],
             "a": 0,
-            "ex": "Group 1: u→a, +れる → 呼ぶ → 呼ばれる."
+            "ex": "Group 1: u→a, +れる → 呼ぶ → 呼ばれる.",
+            "why": [
+              null,
+              "呼べる is the potential form ('can call'), not passive.",
+              "呼ばせる is the causative ('make/let someone call'), not passive.",
+              "呼んでいる is progressive/state ('is calling'), unrelated to passive."
+            ]
           },
           {
             "q": "「電車で足を＿＿。」 (My foot got stepped on)",
@@ -868,7 +970,13 @@
               "踏んでいました"
             ],
             "a": 1,
-            "ex": "The passive 踏まれました shows the speaker is on the receiving end of the action."
+            "ex": "The passive 踏まれました shows the speaker is on the receiving end of the action.",
+            "why": [
+              "踏みました (plain past, active) would mean YOU stepped on something, not that your foot got stepped on.",
+              null,
+              "踏ませました is causative — 'made someone step on it' — wrong voice entirely.",
+              "踏んでいました means you were (actively) stepping on something — again the wrong direction."
+            ]
           }
         ]
       },
@@ -947,7 +1055,13 @@
               "飲んでいる"
             ],
             "a": 1,
-            "ex": "Group 1: u→a, +せる → 飲む → 飲ませる."
+            "ex": "Group 1: u→a, +せる → 飲む → 飲ませる.",
+            "why": [
+              "飲まれる is passive, not causative.",
+              null,
+              "飲める is potential ('can drink').",
+              "飲んでいる is progressive ('is drinking')."
+            ]
           },
           {
             "q": "「子供を一人で外に＿＿のは心配です。」 (Letting a child go outside alone is worrying)",
@@ -958,7 +1072,13 @@
               "行っている"
             ],
             "a": 0,
-            "ex": "行かせる = 'let/make [someone] go' — the causative fits 'letting a child go out alone'."
+            "ex": "行かせる = 'let/make [someone] go' — the causative fits 'letting a child go out alone'.",
+            "why": [
+              null,
+              "行かれる (passive) doesn't fit — nobody is 'having the going done to them' here.",
+              "行ける is potential ('can go') — the sentence is about letting/permission, not ability.",
+              "行っている is progressive/state ('is going') — unrelated to letting someone do something."
+            ]
           }
         ]
       },
@@ -1037,7 +1157,13 @@
               "My mother cleaned the room herself"
             ],
             "a": 2,
-            "ex": "Causative-passive: the speaker was made to do the cleaning, implying some reluctance."
+            "ex": "Causative-passive: the speaker was made to do the cleaning, implying some reluctance.",
+            "why": [
+              "させられる never means doing something happily by choice — it specifically marks unwilling coercion.",
+              "The room, not the mother, is what got cleaned — させられる describes the SPEAKER's forced action.",
+              null,
+              "If the mother cleaned it herself, the causative-passive wouldn't be needed at all."
+            ]
           },
           {
             "q": "Which describes 'being forced to wait' most naturally in casual speech?",
@@ -1048,7 +1174,13 @@
               "待ってあげました"
             ],
             "a": 2,
-            "ex": "待たされました is the common contracted causative-passive of 待つ, meaning 'was made to wait'."
+            "ex": "待たされました is the common contracted causative-passive of 待つ, meaning 'was made to wait'.",
+            "why": [
+              "待ちました is just plain past ('I waited') — no sense of being forced.",
+              "待たれました (passive) would mean someone else's waiting affects you somehow — not 'forced to wait'.",
+              null,
+              "待ってあげました means YOU did someone else the favor of waiting — the opposite direction."
+            ]
           }
         ]
       },
@@ -1128,7 +1260,13 @@
               "They are asking you to leave"
             ],
             "a": 1,
-            "ex": "いらっしゃいませ is the standard honorific greeting used to welcome customers."
+            "ex": "いらっしゃいませ is the standard honorific greeting used to welcome customers.",
+            "why": [
+              "Asking your name would be お名前は？— いらっしゃいませ carries no question content at all.",
+              null,
+              "An apology would be すみません or 申し訳ございません, not this greeting.",
+              "いらっしゃいませ invites you IN — the opposite of asking you to leave."
+            ]
           },
           {
             "q": "かしこまりました, said by staff after your request, most closely means:",
@@ -1139,7 +1277,13 @@
               "Please wait"
             ],
             "a": 2,
-            "ex": "かしこまりました is a humble, very polite way of saying 'understood/certainly' in service contexts."
+            "ex": "かしこまりました is a humble, very polite way of saying 'understood/certainly' in service contexts.",
+            "why": [
+              "If they didn't understand, they'd ask a follow-up question, not say かしこまりました.",
+              "かしこまりました is agreement, not refusal — a refusal would sound like 申し訳ございませんが〜.",
+              null,
+              "'Please wait' is 少々お待ちください — a different, though often paired, phrase."
+            ]
           }
         ]
       }
@@ -1227,7 +1371,13 @@
               "冬になると寒くなります"
             ],
             "a": 1,
-            "ex": "電話してください is a request/command, which the と-clause cannot lead into — it needs たら instead: 駅に着いたら電話してください。"
+            "ex": "電話してください is a request/command, which the と-clause cannot lead into — it needs たら instead: 駅に着いたら電話してください。",
+            "why": [
+              "This is a natural automatic-result と sentence (spring → warm) — no request involved, so it's fine.",
+              null,
+              "Also a valid automatic-result と sentence (press button → sound) — no issue.",
+              "Also fine — another natural, general cause-and-effect と sentence."
+            ]
           },
           {
             "q": "「1に2を足す＿＿、3になります。」",
@@ -1238,7 +1388,13 @@
               "なら"
             ],
             "a": 2,
-            "ex": "This is a mathematical/automatic fact, the textbook case for と."
+            "ex": "This is a mathematical/automatic fact, the textbook case for と.",
+            "why": [
+              "たら would sound like a specific one-off scenario, an odd fit for a general mathematical rule.",
+              "ば could work loosely, but と is the standard textbook choice for an unfailing, automatic fact like this.",
+              null,
+              "なら would frame it as reacting to someone's topic, not stating a general truth."
+            ]
           }
         ]
       },
@@ -1318,7 +1474,13 @@
               "なら"
             ],
             "a": 0,
-            "ex": "安い → 安かった → 安かったら, the た-form + ら pattern for い-adjectives."
+            "ex": "安い → 安かった → 安かったら, the た-form + ら pattern for い-adjectives.",
+            "why": [
+              null,
+              "と would need the plain non-past form directly (安いと) — it doesn't attach to this たform stem.",
+              "ければ attaches to 安い directly (安ければ), not to this たform stem.",
+              "なら attaches to 安い directly (安いなら) too — not to this stem."
+            ]
           },
           {
             "q": "Which conditional most naturally leads into a request or invitation?",
@@ -1329,7 +1491,13 @@
               "し"
             ],
             "a": 1,
-            "ex": "たら can be followed by requests, invitations, and opinions — unlike と."
+            "ex": "たら can be followed by requests, invitations, and opinions — unlike と.",
+            "why": [
+              "と cannot be followed by a request, invitation, or command — a well-known restriction.",
+              null,
+              "ながら links two simultaneous actions — it isn't a conditional at all.",
+              "し lists reasons — also not a conditional."
+            ]
           }
         ]
       },
@@ -1407,7 +1575,13 @@
               "安えば"
             ],
             "a": 1,
-            "ex": "い-adjective rule: drop い, add ければ → 安い → 安ければ."
+            "ex": "い-adjective rule: drop い, add ければ → 安い → 安ければ.",
+            "why": [
+              "安いば keeps the plain い ending — the ば-form requires dropping い first.",
+              null,
+              "安くば isn't a recognized conjugation — you drop い entirely (not to く) before adding ければ.",
+              "安えば isn't valid either — い-adjectives don't take an え-sound + ば."
+            ]
           },
           {
             "q": "「〜すれば〜するほど」means:",
@@ -1418,7 +1592,13 @@
               "Before... after..."
             ],
             "a": 1,
-            "ex": "This is a set pattern using ば to mean 'the more you do X, the more Y'."
+            "ex": "This is a set pattern using ば to mean 'the more you do X, the more Y'.",
+            "why": [
+              "'Either...or' would be か〜か, unrelated to this pattern.",
+              null,
+              "'Even if...still' is 〜ても, a different grammar point entirely.",
+              "'Before...after' would use 前に／後で, not this ば〜ほど pattern."
+            ]
           }
         ]
       },
@@ -1499,7 +1679,13 @@
               "買えばよかった"
             ],
             "a": 2,
-            "ex": "なら reacts directly to the topic your friend just raised (buying a laptop) with advice — the classic なら use case."
+            "ex": "なら reacts directly to the topic your friend just raised (buying a laptop) with advice — the classic なら use case.",
+            "why": [
+              "買うと alone doesn't form a complete natural reply, and と can't easily lead into a recommendation like this.",
+              "買ったら、買います just echoes their statement back oddly ('if you buy it, I'll buy it') — doesn't fit as advice.",
+              null,
+              "買えばよかった means 'I should have bought it' — regret about the past, not advice about their plan."
+            ]
           },
           {
             "q": "Which of the four conditionals is built around reacting to a topic already mentioned, rather than cause-and-effect?",
@@ -1510,7 +1696,13 @@
               "なら"
             ],
             "a": 3,
-            "ex": "なら is topic-based/reactive, unlike と・たら・ば which describe conditions leading to results."
+            "ex": "なら is topic-based/reactive, unlike と・たら・ば which describe conditions leading to results.",
+            "why": [
+              "と describes automatic cause-and-effect, not reacting to a raised topic.",
+              "たら is a specific hypothetical condition, not topic-based reaction.",
+              "ば is a general/hypothetical conditional, also not about reacting to a topic.",
+              null
+            ]
           }
         ]
       }
@@ -1590,7 +1782,7 @@
         ],
         "quiz": [
           {
-            "q": "「彼は忙しい＿＿。」 reporting something you heard: 'I heard he's busy'",
+            "q": "「彼は忙しい＿＿。」 reporting something you heard: 'I heard he's busy' (polite ですform)",
             "choices": [
               "そうです",
               "そうな",
@@ -1598,7 +1790,13 @@
               "そうに"
             ],
             "a": 0,
-            "ex": "い-adjective plain form (忙しい) + そうです for hearsay — no change to the adjective itself."
+            "ex": "い-adjective plain form (忙しい) + そうです for hearsay — no change to the adjective itself.",
+            "why": [
+              null,
+              "そうな is the pre-noun modifying form (忙しそうな人) — not how you end a sentence.",
+              "そうだ is the casual/plain equivalent — fine in casual speech, but です is what this polite sentence calls for.",
+              "そうに is the adverbial form (used before a verb), not a sentence-ending form."
+            ]
           },
           {
             "q": "〜によると most often introduces:",
@@ -1609,7 +1807,13 @@
               "A hypothetical condition"
             ],
             "a": 1,
-            "ex": "〜によると ('according to...') marks the source for a そうです hearsay statement."
+            "ex": "〜によると ('according to...') marks the source for a そうです hearsay statement.",
+            "why": [
+              "An opinion would use と思います, not によると.",
+              null,
+              "によると never introduces a command — that needs a different structure entirely.",
+              "A hypothetical condition would use たら/ば/と/なら, not によると."
+            ]
           }
         ]
       },
@@ -1689,7 +1893,13 @@
               "雨が降ったそうです"
             ],
             "a": 1,
-            "ex": "Visual guess = stem + そう → 降り + そう = 降りそうです. (降るそうです would mean you heard it from a forecast, not observed it yourself.)"
+            "ex": "Visual guess = stem + そう → 降り + そう = 降りそうです. (降るそうです would mean you heard it from a forecast, not observed it yourself.)",
+            "why": [
+              "降るそうです (dictionary form + そう) is hearsay — 'I heard it'll rain' — not a visual guess.",
+              null,
+              "降ってそうです isn't the standard appearance-そう pattern — that attaches to the stem (降り), not the て-form.",
+              "降ったそうです (past + そう) is hearsay about a past event — wrong tense and wrong そう."
+            ]
           },
           {
             "q": "What is the irregular appearance-そう form of いい (good)?",
@@ -1700,7 +1910,13 @@
               "よいそう"
             ],
             "a": 1,
-            "ex": "いい is irregular: it becomes よさそう, not いいそう."
+            "ex": "いい is irregular: it becomes よさそう, not いいそう.",
+            "why": [
+              "いいそう is the classic learner mistake — いい is irregular and doesn't take そう directly.",
+              null,
+              "いそう drops too much — not a recognized form.",
+              "よいそう isn't correct either; the irregular replacement is よさ, not よい, before そう."
+            ]
           }
         ]
       },
@@ -1779,7 +1995,13 @@
               "〜なければなりません"
             ],
             "a": 1,
-            "ex": "みたいです is the casual/spoken equivalent of ようです."
+            "ex": "みたいです is the casual/spoken equivalent of ようです.",
+            "why": [
+              "ようです is the more neutral/written-feeling equivalent, not the casual one being asked for.",
+              null,
+              "そうです（伝聞）is hearsay, a different meaning (reported information) from inference.",
+              "なければなりません is obligation — unrelated to this inference/comparison pattern."
+            ]
           },
           {
             "q": "「あの二人は付き合っている＿＿。」 ('It seems those two are dating', based on how they act)",
@@ -1790,7 +2012,13 @@
               "ことになる"
             ],
             "a": 1,
-            "ex": "ようです fits an inference built from observed behavior, distinct from raw hearsay or a visual snap-judgment."
+            "ex": "ようです fits an inference built from observed behavior, distinct from raw hearsay or a visual snap-judgment.",
+            "why": [
+              "伝聞そうです would mean you heard it from someone, not that you're guessing from their behavior.",
+              null,
+              "なさい is a command form, unrelated to making an inference.",
+              "ことになる reports an arrangement/decision, unrelated to inferring from observation."
+            ]
           }
         ]
       },
@@ -1869,7 +2097,13 @@
               "そうです（伝聞）"
             ],
             "a": 1,
-            "ex": "かもしれません expresses genuine uncertainty/possibility, weaker in confidence than でしょう or はずです."
+            "ex": "かもしれません expresses genuine uncertainty/possibility, weaker in confidence than でしょう or はずです.",
+            "why": [
+              "でしょう expresses a fairly confident guess — more certain than 'might, but not sure'.",
+              null,
+              "はずです expresses strong logical expectation — the MOST confident of the four, not the least.",
+              "伝聞そうです reports something you heard as fact — no uncertainty built in at all."
+            ]
           },
           {
             "q": "「彼は今、忙しい＿＿。手伝ってもらうのは難しいかもしれません。」 fill with 'apparently'",
@@ -1880,7 +2114,13 @@
               "させられます"
             ],
             "a": 0,
-            "ex": "らしい fits 'apparently, from what I gather' — a slightly detached secondhand impression."
+            "ex": "らしい fits 'apparently, from what I gather' — a slightly detached secondhand impression.",
+            "why": [
+              null,
+              "なさい is a command, unrelated to reporting an impression.",
+              "ことにする marks a personal decision, unrelated to 'apparently'.",
+              "させられます is causative-passive ('was made to do'), unrelated to this meaning."
+            ]
           }
         ]
       }
@@ -1969,7 +2209,13 @@
               "何をしていますか"
             ],
             "a": 1,
-            "ex": "んですか adds the explanatory/curious nuance — asking for the background, not just a flat fact."
+            "ex": "んですか adds the explanatory/curious nuance — asking for the background, not just a flat fact.",
+            "why": [
+              "何をしますか is a flat, neutral question about future plans — no extra curiosity nuance.",
+              null,
+              "何をしましたか asks about the past — different tense, and still lacks the んです warmth.",
+              "何をしていますか asks about a current action, without the curious/background-seeking んです feel."
+            ]
           },
           {
             "q": "「もう帰るんですか。」 best captures which nuance?",
@@ -1980,7 +2226,13 @@
               "A hearsay report"
             ],
             "a": 1,
-            "ex": "んですか frames the question as seeking the reason/background — here, surprise that they're leaving already."
+            "ex": "んですか frames the question as seeking the reason/background — here, surprise that they're leaving already.",
+            "why": [
+              "A flat neutral question wouldn't use んですか — it would just be もう帰りますか。",
+              null,
+              "This is a question, not a command — nothing here is imperative.",
+              "Nothing here reports something heard from someone else."
+            ]
           }
         ]
       },
@@ -2059,7 +2311,13 @@
               "春なら寒いです"
             ],
             "a": 0,
-            "ex": "のに expresses contrast with a complaining/surprised nuance — a mismatch between expectation (spring = warm) and reality (cold)."
+            "ex": "のに expresses contrast with a complaining/surprised nuance — a mismatch between expectation (spring = warm) and reality (cold).",
+            "why": [
+              null,
+              "し just lists this as one of several reasons/facts — no sense of surprised complaint.",
+              "だから claims cold is a CONSEQUENCE of it being spring — logically backwards for a complaint.",
+              "なら would react to someone's mention of spring with a condition — not a personal complaint."
+            ]
           },
           {
             "q": "「この店は近い＿＿、静かだ＿＿、よく来ます。」 (listing reasons)",
@@ -2070,7 +2328,13 @@
               "ば／ば"
             ],
             "a": 1,
-            "ex": "し lists multiple supporting reasons, chained together."
+            "ex": "し lists multiple supporting reasons, chained together.",
+            "why": [
+              "のに sets up a single contrast, not a chain of supporting reasons, and doesn't repeat naturally like this.",
+              null,
+              "たら／たら would stack two hypothetical conditions — not what's happening in a reason-listing sentence.",
+              "ば／ば has the same issue — conditionals, not a reasons list."
+            ]
           }
         ]
       },
@@ -2149,7 +2413,13 @@
               "なら"
             ],
             "a": 1,
-            "ex": "合格する (to pass) is a volitional, deliberately-chosen action, so ために is correct."
+            "ex": "合格する (to pass) is a volitional, deliberately-chosen action, so ために is correct.",
+            "why": [
+              "ように is for non-volitional/potential goals — 合格する here is something you actively choose to pursue, calling for ために.",
+              null,
+              "のに signals contrast/complaint, unrelated to stating a purpose.",
+              "なら reacts to a raised topic, unrelated to expressing purpose."
+            ]
           },
           {
             "q": "「忘れない＿＿、メモします。」 (non-volitional — forgetting/not-forgetting isn't a direct action)",
@@ -2160,7 +2430,13 @@
               "たら"
             ],
             "a": 1,
-            "ex": "忘れない (not forgetting) is not something you directly, deliberately do, so ように is correct."
+            "ex": "忘れない (not forgetting) is not something you directly, deliberately do, so ように is correct.",
+            "why": [
+              "ために is for deliberately-chosen goals; not forgetting isn't something you directly perform as an action, so ように is correct instead.",
+              null,
+              "し lists reasons, unrelated to purpose.",
+              "たら is a conditional, unrelated to purpose."
+            ]
           }
         ]
       },
@@ -2240,7 +2516,13 @@
               "タバコをやめさせられました"
             ],
             "a": 1,
-            "ex": "ことにする marks an active, personal decision — fitting for quitting smoking by your own choice."
+            "ex": "ことにする marks an active, personal decision — fitting for quitting smoking by your own choice.",
+            "why": [
+              "ことになりました implies it was decided by circumstances, not your own active choice.",
+              null,
+              "らしいです reports an impression/rumor, not a personal decision.",
+              "させられました (causative-passive) means you were forced to — the opposite of choosing yourself."
+            ]
           },
           {
             "q": "Your company decided to relocate your department, not something you chose. Which fits?",
@@ -2251,7 +2533,13 @@
               "てほしいです"
             ],
             "a": 1,
-            "ex": "ことになる fits a decision made by circumstance/others rather than the speaker."
+            "ex": "ことになる fits a decision made by circumstance/others rather than the speaker.",
+            "why": [
+              "ことにしました would say YOU personally decided — wrong here since the company decided.",
+              null,
+              "ことができました means 'was able to' — an ability statement, unrelated to a decision being made.",
+              "てほしいです expresses a wish about someone else's action, unrelated to reporting a decision."
+            ]
           }
         ]
       }
@@ -2321,7 +2609,13 @@
               "食べます"
             ],
             "a": 1,
-            "ex": "ことがある always attaches to the past/た-form of the verb, regardless of when you're asking."
+            "ex": "ことがある always attaches to the past/た-form of the verb, regardless of when you're asking.",
+            "why": [
+              null,
+              "ことがある always pairs with the past/た-form, regardless of the overall question's tense — plain 食べる doesn't fit.",
+              "食べて (て-form) isn't the form ことがある attaches to.",
+              "食べます (polite non-past) also doesn't fit — the fixed pattern needs plain past."
+            ]
           }
         ]
       },
@@ -2379,7 +2673,13 @@
               "読むように料理します"
             ],
             "a": 1,
-            "ex": "〜たり〜たりする signals a few representative examples rather than an exhaustive, ordered list."
+            "ex": "〜たり〜たりする signals a few representative examples rather than an exhaustive, ordered list.",
+            "why": [
+              "読んで、料理して just chains two actions in sequence — it doesn't signal 'examples among other things'.",
+              null,
+              "読んだから料理します claims reading CAUSED the cooking — an unrelated cause-effect meaning.",
+              "読むように料理します would mean cooking 'in the manner of' reading — nonsensical here."
+            ]
           }
         ]
       },
@@ -2440,7 +2740,13 @@
               "難しいますぎる"
             ],
             "a": 1,
-            "ex": "い-adjective rule: drop the final い before attaching すぎる → 難し + すぎる."
+            "ex": "い-adjective rule: drop the final い before attaching すぎる → 難し + すぎる.",
+            "why": [
+              "難しいすぎる keeps the い that should be dropped before attaching すぎる.",
+              null,
+              "難くすぎる wrongly converts to the adverbial くform first — すぎる attaches to the stem directly.",
+              "難しいますぎる isn't a real conjugation at all."
+            ]
           }
         ]
       },
@@ -2502,7 +2808,13 @@
               "書かにくいです"
             ],
             "a": 1,
-            "ex": "Attach にくい to the ます-stem of the verb: 書き + にくい."
+            "ex": "Attach にくい to the ます-stem of the verb: 書き + にくい.",
+            "why": [
+              "書くにくいです keeps the dictionary form — にくい attaches to the ます-stem (書き), not the dictionary form.",
+              null,
+              "書いてにくいです wrongly uses the て-form — にくい doesn't attach there.",
+              "書かにくいです wrongly uses the ない-stem (書か) — that's for negative forms, not にくい."
+            ]
           }
         ]
       },
@@ -2564,7 +2876,13 @@
               "書かせて"
             ],
             "a": 1,
-            "ex": "ておく = do it now for later convenience, matching 'get it done first, then go have fun'."
+            "ex": "ておく = do it now for later convenience, matching 'get it done first, then go have fun'.",
+            "why": [
+              "書いてしまって emphasizes finishing/completion (possibly with relief or regret) rather than 'doing it now for later benefit' — おく better captures the deliberate advance-prep framing here.",
+              null,
+              "書かれて is passive ('having been written [by someone]') — wrong voice for 'I'll write it'.",
+              "書かせて is causative ('let/make [someone] write') — wrong meaning entirely."
+            ]
           },
           {
             "q": "Which best captures a slightly regretful 'oops, I did it completely'?",
@@ -2575,7 +2893,13 @@
               "〜ようになります"
             ],
             "a": 1,
-            "ex": "てしまう often carries a nuance of regret or 'oh no, it's done' about a completed action."
+            "ex": "てしまう often carries a nuance of regret or 'oh no, it's done' about a completed action.",
+            "why": [
+              "ておきます is forward-looking prep, with no regret nuance at all.",
+              null,
+              "てほしいです expresses a wish about someone else, unrelated to regret over your own completed action.",
+              "ようになります describes a gradual change/new ability, unrelated to regret."
+            ]
           }
         ]
       },
@@ -2637,7 +2961,13 @@
               "のに"
             ],
             "a": 0,
-            "ex": "AよりBのほうが〜 is the standard two-way comparison pattern; B (電車) takes のほうが."
+            "ex": "AよりBのほうが〜 is the standard two-way comparison pattern; B (電車) takes のほうが.",
+            "why": [
+              null,
+              "なかで ('among') doesn't fit the two-way comparison pattern with より.",
+              "ように ('so that/like') doesn't fit a comparison sentence at all.",
+              "のに (contrast) doesn't fit either — nothing here is being contrasted unexpectedly."
+            ]
           },
           {
             "q": "How do you say 'the most' among three or more things?",
@@ -2648,7 +2978,13 @@
               "〜てもいい"
             ],
             "a": 2,
-            "ex": "〜の中で一番〜 picks a single superlative winner from a group of three or more."
+            "ex": "〜の中で一番〜 picks a single superlative winner from a group of three or more.",
+            "why": [
+              "より alone just marks one side of a two-way comparison — it doesn't express a superlative by itself.",
+              "のほうが is for comparing exactly two things, not picking a winner from three or more.",
+              null,
+              "てもいい grants permission — unrelated to comparisons."
+            ]
           }
         ]
       }

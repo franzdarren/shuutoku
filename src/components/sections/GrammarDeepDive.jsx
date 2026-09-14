@@ -1,16 +1,17 @@
-import { useReducer, useRef, useState } from "react";
+import { useEffect, useReducer, useRef, useState } from "react";
 import { grammarModules } from "../../data/index.js";
 import { useQuiz } from "../../context/QuizContext.jsx";
 import { drawSample } from "../../lib/quiz.js";
 import JpText from "../JpText.jsx";
 import Quiz from "../Quiz.jsx";
 import SpeakButton from "../SpeakButton.jsx";
+import FloatingNav from "../FloatingNav.jsx";
 
 function GrammarCard({ mod, mi, pt, pi }) {
   const accent = "var(--" + mod.accent + ")";
   const pid = "g" + mi + "-" + pi;
   return (
-    <div className="gcard" style={{ "--accent": accent }}>
+    <div className="gcard" id={"gpt-" + mi + "-" + pi} style={{ "--accent": accent }}>
       <div className="gcard-head">
         <div className="gcard-title">
           <JpText tag="div" className="jp" html={pt.jp} />
@@ -105,12 +106,28 @@ function ModuleCheck({ mi, mod, sample, onNewSet }) {
   );
 }
 
+// Flat list of every individual grammar point ("lesson"), independent of
+// module boundaries — this is what the floating nav jumps between. Each
+// module still shows all its points together on one page (that grouping
+// solves "too long to scroll"); the floating nav is a separate, finer-
+// grained way to jump straight to one specific point/lesson by name.
+const ALL_POINTS = grammarModules.flatMap((m, mi) =>
+  m.points.map((pt, pi) => ({ mi, pi, jp: pt.jp, group: m.num + ". " + m.jpTitle }))
+);
+const NAV_ITEMS = ALL_POINTS.map((p) => ({ label: p.jp, group: p.group }));
+
+function firstPointIndexOfModule(mi) {
+  return ALL_POINTS.findIndex((p) => p.mi === mi);
+}
+
 export default function GrammarDeepDive() {
-  const [activeMod, setActiveMod] = useState(0);
+  const [activePoint, setActivePoint] = useState(0);
+  const activeMod = ALL_POINTS[activePoint].mi;
   const mod = grammarModules[activeMod];
   const { clearQuestions } = useQuiz();
   const [, bump] = useReducer((c) => c + 1, 0);
   const sampleCache = useRef({});
+  const pendingScrollId = useRef(null);
 
   if (!sampleCache.current[activeMod]) {
     sampleCache.current[activeMod] = drawSample(mod.points.flatMap((p) => p.quiz || []));
@@ -124,9 +141,35 @@ export default function GrammarDeepDive() {
     bump();
   }
 
+  // Module-level navigation (top tabs, prev/next-module buttons): switches
+  // the whole page to that module and scrolls to its top.
   function goToModule(i) {
-    setActiveMod(i);
+    setActivePoint(firstPointIndexOfModule(i));
     window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  // Point-level navigation (the floating nav): jumps straight to one
+  // specific lesson's card, switching module first if it's elsewhere.
+  useEffect(() => {
+    if (pendingScrollId.current) {
+      const id = pendingScrollId.current;
+      pendingScrollId.current = null;
+      requestAnimationFrame(() => {
+        document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    }
+  }, [activeMod]);
+
+  function goToPoint(flatIdx) {
+    const target = ALL_POINTS[flatIdx];
+    const id = "gpt-" + target.mi + "-" + target.pi;
+    const sameModule = target.mi === activeMod;
+    setActivePoint(flatIdx);
+    if (sameModule) {
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    } else {
+      pendingScrollId.current = id;
+    }
   }
 
   return (
@@ -159,6 +202,8 @@ export default function GrammarDeepDive() {
         <button disabled={activeMod === 0} style={{ visibility: activeMod === 0 ? "hidden" : "visible" }} onClick={() => goToModule(activeMod - 1)}>← Previous module</button>
         <button disabled={activeMod === grammarModules.length - 1} style={{ visibility: activeMod === grammarModules.length - 1 ? "hidden" : "visible" }} onClick={() => goToModule(activeMod + 1)}>Next module →</button>
       </div>
+
+      <FloatingNav items={NAV_ITEMS} activeIndex={activePoint} onGo={goToPoint} />
     </>
   );
 }
