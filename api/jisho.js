@@ -3,11 +3,19 @@
 // fetch Jisho.org server-side, where CORS doesn't apply, and hand the JSON
 // back to the browser. src/lib/dictionary.js calls this exact path in both
 // environments, so no client code needs to know which one is running.
-export default async function handler(req, res) {
-  const keyword = typeof req.query.keyword === "string" ? req.query.keyword : "";
+//
+// Runs on Vercel's Edge Runtime rather than a regional Node function —
+// tested by hand: Jisho's own WAF returns 403 to Vercel's regional Node
+// function IP ranges (confirmed reproducible), but not to the edge network.
+export const config = { runtime: "edge" };
+
+export default async function handler(req) {
+  const keyword = new URL(req.url).searchParams.get("keyword") || "";
   if (!keyword) {
-    res.status(400).json({ error: "missing keyword" });
-    return;
+    return new Response(JSON.stringify({ error: "missing keyword" }), {
+      status: 400,
+      headers: { "Content-Type": "application/json" },
+    });
   }
 
   try {
@@ -15,11 +23,17 @@ export default async function handler(req, res) {
       "https://jisho.org/api/v1/search/words?keyword=" + encodeURIComponent(keyword)
     );
     const body = await upstream.text();
-    res.status(upstream.status);
-    res.setHeader("Content-Type", "application/json; charset=utf-8");
-    res.setHeader("Cache-Control", "public, max-age=3600"); // dictionary results don't change
-    res.send(body);
+    return new Response(body, {
+      status: upstream.status,
+      headers: {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "public, max-age=3600", // dictionary results don't change
+      },
+    });
   } catch {
-    res.status(502).json({ error: "upstream fetch failed" });
+    return new Response(JSON.stringify({ error: "upstream fetch failed" }), {
+      status: 502,
+      headers: { "Content-Type": "application/json" },
+    });
   }
 }
