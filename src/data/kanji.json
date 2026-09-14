@@ -5,1202 +5,3425 @@
       "on": "ドウ",
       "kun": "おな(じ)",
       "meaning": "same, agree, equal",
-      "word": "同じ (おなじ) — same"
+      "examples": [
+        {
+          "word": "同じ",
+          "reading": "おなじ",
+          "meaning": "same",
+          "type": "kun"
+        },
+        {
+          "word": "同時に",
+          "reading": "どうじに",
+          "meaning": "at the same time",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "発",
       "on": "ハツ・ホツ",
       "kun": "—",
       "meaning": "departure, emit, start",
-      "word": "出発 (しゅっぱつ) — departure"
+      "examples": [
+        {
+          "word": "出発",
+          "reading": "しゅっぱつ",
+          "meaning": "departure",
+          "type": "on"
+        },
+        {
+          "word": "発表",
+          "reading": "はっぴょう",
+          "meaning": "presentation, announcement",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "地",
       "on": "チ・ジ",
       "kun": "—",
       "meaning": "ground, earth",
-      "word": "地図 (ちず) — map"
+      "examples": [
+        {
+          "word": "地図",
+          "reading": "ちず",
+          "meaning": "map",
+          "type": "on"
+        },
+        {
+          "word": "地下鉄",
+          "reading": "ちかてつ",
+          "meaning": "subway",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "主",
       "on": "シュ",
       "kun": "ぬし・おも",
       "meaning": "lord, main, master",
-      "word": "主人 (しゅじん) — husband, master"
+      "examples": [
+        {
+          "word": "主人",
+          "reading": "しゅじん",
+          "meaning": "husband, master",
+          "type": "on"
+        },
+        {
+          "word": "主に",
+          "reading": "おもに",
+          "meaning": "mainly, primarily",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "題",
       "on": "ダイ",
       "kun": "—",
       "meaning": "topic, subject",
-      "word": "問題 (もんだい) — problem, question"
+      "examples": [
+        {
+          "word": "問題",
+          "reading": "もんだい",
+          "meaning": "problem, question",
+          "type": "on"
+        },
+        {
+          "word": "話題",
+          "reading": "わだい",
+          "meaning": "topic",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "意",
       "on": "イ",
       "kun": "—",
       "meaning": "idea, mind, thought",
-      "word": "意味 (いみ) — meaning"
+      "examples": [
+        {
+          "word": "意味",
+          "reading": "いみ",
+          "meaning": "meaning",
+          "type": "on"
+        },
+        {
+          "word": "用意",
+          "reading": "ようい",
+          "meaning": "preparation",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "不",
       "on": "フ・ブ",
       "kun": "—",
       "meaning": "negative, non-, bad",
-      "word": "不便 (ふべん) — inconvenient"
+      "examples": [
+        {
+          "word": "不便",
+          "reading": "ふべん",
+          "meaning": "inconvenient",
+          "type": "on"
+        },
+        {
+          "word": "不安",
+          "reading": "ふあん",
+          "meaning": "anxiety, unease",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "用",
       "on": "ヨウ",
       "kun": "もち(いる)",
       "meaning": "utilize, use, business",
-      "word": "用事 (ようじ) — errand"
+      "examples": [
+        {
+          "word": "用事",
+          "reading": "ようじ",
+          "meaning": "errand",
+          "type": "on"
+        },
+        {
+          "word": "用いる",
+          "reading": "もちいる",
+          "meaning": "to use, employ",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "度",
       "on": "ド・タク",
       "kun": "たび",
       "meaning": "degrees, times, occurrence",
-      "word": "一度 (いちど) — once"
+      "examples": [
+        {
+          "word": "一度",
+          "reading": "いちど",
+          "meaning": "once",
+          "type": "on"
+        },
+        {
+          "word": "度に",
+          "reading": "たびに",
+          "meaning": "each time, on every occasion",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "公",
       "on": "コウ",
       "kun": "—",
       "meaning": "public, official",
-      "word": "公園 (こうえん) — park"
+      "examples": [
+        {
+          "word": "公園",
+          "reading": "こうえん",
+          "meaning": "park",
+          "type": "on"
+        },
+        {
+          "word": "公開",
+          "reading": "こうかい",
+          "meaning": "making public",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "以",
       "on": "イ",
       "kun": "もっ(て)",
       "meaning": "by means of, compared with",
-      "word": "以上 (いじょう) — or more"
+      "examples": [
+        {
+          "word": "以上",
+          "reading": "いじょう",
+          "meaning": "or more",
+          "type": "on"
+        },
+        {
+          "word": "以下",
+          "reading": "いか",
+          "meaning": "below, less than",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "世",
       "on": "セイ・セ",
       "kun": "よ",
       "meaning": "generation, world, society",
-      "word": "世界 (せかい) — world"
+      "examples": [
+        {
+          "word": "世界",
+          "reading": "せかい",
+          "meaning": "world",
+          "type": "on"
+        },
+        {
+          "word": "世の中",
+          "reading": "よのなか",
+          "meaning": "the world, society",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "正",
       "on": "セイ・ショウ",
       "kun": "ただ(しい)・まさ",
       "meaning": "correct, righteous",
-      "word": "正しい (ただしい) — correct"
+      "examples": [
+        {
+          "word": "正しい",
+          "reading": "ただしい",
+          "meaning": "correct",
+          "type": "kun"
+        },
+        {
+          "word": "正月",
+          "reading": "しょうがつ",
+          "meaning": "New Year",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "心",
       "on": "シン",
       "kun": "こころ",
       "meaning": "heart, mind, spirit",
-      "word": "心配 (しんぱい) — worry"
+      "examples": [
+        {
+          "word": "心配",
+          "reading": "しんぱい",
+          "meaning": "worry",
+          "type": "on"
+        },
+        {
+          "word": "心",
+          "reading": "こころ",
+          "meaning": "heart, mind",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "界",
       "on": "カイ",
       "kun": "—",
       "meaning": "world, boundary",
-      "word": "世界 (せかい) — world"
+      "examples": [
+        {
+          "word": "世界",
+          "reading": "せかい",
+          "meaning": "world",
+          "type": "on"
+        },
+        {
+          "word": "限界",
+          "reading": "げんかい",
+          "meaning": "limit",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "集",
       "on": "シュウ",
       "kun": "あつ(める)",
       "meaning": "gather, collect",
-      "word": "集める (あつめる) — to gather"
+      "examples": [
+        {
+          "word": "集める",
+          "reading": "あつめる",
+          "meaning": "to gather",
+          "type": "kun"
+        },
+        {
+          "word": "集合",
+          "reading": "しゅうごう",
+          "meaning": "gathering, assembly",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "別",
       "on": "ベツ",
       "kun": "わか(れる)・わ(ける)",
       "meaning": "separate, branch off",
-      "word": "特別 (とくべつ) — special"
+      "examples": [
+        {
+          "word": "特別",
+          "reading": "とくべつ",
+          "meaning": "special",
+          "type": "on"
+        },
+        {
+          "word": "別れる",
+          "reading": "わかれる",
+          "meaning": "to part ways",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "品",
       "on": "ヒン",
       "kun": "しな",
       "meaning": "goods, article",
-      "word": "品物 (しなもの) — goods, item"
+      "examples": [
+        {
+          "word": "品物",
+          "reading": "しなもの",
+          "meaning": "goods, item",
+          "type": "kun"
+        },
+        {
+          "word": "食品",
+          "reading": "しょくひん",
+          "meaning": "foodstuff",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "計",
       "on": "ケイ",
       "kun": "はか(る)",
       "meaning": "plan, measure",
-      "word": "時計 (とけい) — clock"
+      "examples": [
+        {
+          "word": "時計",
+          "reading": "とけい",
+          "meaning": "clock",
+          "type": "on"
+        },
+        {
+          "word": "計る",
+          "reading": "はかる",
+          "meaning": "to measure",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "死",
       "on": "シ",
       "kun": "し(ぬ)",
       "meaning": "death, die",
-      "word": "死ぬ (しぬ) — to die"
+      "examples": [
+        {
+          "word": "死ぬ",
+          "reading": "しぬ",
+          "meaning": "to die",
+          "type": "kun"
+        },
+        {
+          "word": "必死",
+          "reading": "ひっし",
+          "meaning": "frantic, desperate",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "特",
       "on": "トク",
       "kun": "—",
       "meaning": "special",
-      "word": "特別 (とくべつ) — special"
+      "examples": [
+        {
+          "word": "特別",
+          "reading": "とくべつ",
+          "meaning": "special",
+          "type": "on"
+        },
+        {
+          "word": "特に",
+          "reading": "とくに",
+          "meaning": "especially, particularly",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "私",
       "on": "シ",
       "kun": "わたくし・わたし",
       "meaning": "private, I, me",
-      "word": "私 (わたし) — I, me"
+      "examples": [
+        {
+          "word": "私",
+          "reading": "わたし",
+          "meaning": "I, me",
+          "type": "kun"
+        },
+        {
+          "word": "私立",
+          "reading": "しりつ",
+          "meaning": "private (institution)",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "朝",
       "on": "チョウ",
       "kun": "あさ",
       "meaning": "morning",
-      "word": "朝ご飯 (あさごはん) — breakfast"
+      "examples": [
+        {
+          "word": "朝ご飯",
+          "reading": "あさごはん",
+          "meaning": "breakfast",
+          "type": "kun"
+        },
+        {
+          "word": "朝食",
+          "reading": "ちょうしょく",
+          "meaning": "breakfast",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "無",
       "on": "ム・ブ",
       "kun": "な(い)",
       "meaning": "nothingness, none",
-      "word": "無理 (むり) — unreasonable, impossible"
+      "examples": [
+        {
+          "word": "無理",
+          "reading": "むり",
+          "meaning": "unreasonable, impossible",
+          "type": "on"
+        },
+        {
+          "word": "無料",
+          "reading": "むりょう",
+          "meaning": "free of charge",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "建",
       "on": "ケン・コン",
       "kun": "た(てる)",
       "meaning": "build",
-      "word": "建物 (たてもの) — building"
+      "examples": [
+        {
+          "word": "建物",
+          "reading": "たてもの",
+          "meaning": "building",
+          "type": "kun"
+        },
+        {
+          "word": "建設",
+          "reading": "けんせつ",
+          "meaning": "construction",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "急",
       "on": "キュウ",
       "kun": "いそ(ぐ)",
       "meaning": "hurry, sudden, emergency",
-      "word": "急に (きゅうに) — suddenly"
+      "examples": [
+        {
+          "word": "急に",
+          "reading": "きゅうに",
+          "meaning": "suddenly",
+          "type": "on"
+        },
+        {
+          "word": "急ぐ",
+          "reading": "いそぐ",
+          "meaning": "to hurry",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "止",
       "on": "シ",
       "kun": "と(まる)・や(める)",
       "meaning": "stop, halt",
-      "word": "止まる (とまる) — to stop"
+      "examples": [
+        {
+          "word": "止まる",
+          "reading": "とまる",
+          "meaning": "to stop",
+          "type": "kun"
+        },
+        {
+          "word": "中止",
+          "reading": "ちゅうし",
+          "meaning": "cancellation",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "切",
       "on": "セツ・サイ",
       "kun": "き(る)",
       "meaning": "cut, cutoff",
-      "word": "切符 (きっぷ) — ticket"
+      "examples": [
+        {
+          "word": "切符",
+          "reading": "きっぷ",
+          "meaning": "ticket",
+          "type": "kun"
+        },
+        {
+          "word": "切る",
+          "reading": "きる",
+          "meaning": "to cut",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "研",
       "on": "ケン",
       "kun": "と(ぐ)",
       "meaning": "polish, study of",
-      "word": "研究 (けんきゅう) — research"
+      "examples": [
+        {
+          "word": "研究",
+          "reading": "けんきゅう",
+          "meaning": "research",
+          "type": "on"
+        },
+        {
+          "word": "研ぐ",
+          "reading": "とぐ",
+          "meaning": "to sharpen, polish",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "究",
       "on": "キュウ",
       "kun": "—",
       "meaning": "research, study",
-      "word": "研究 (けんきゅう) — research"
+      "examples": [
+        {
+          "word": "研究",
+          "reading": "けんきゅう",
+          "meaning": "research",
+          "type": "on"
+        },
+        {
+          "word": "追究",
+          "reading": "ついきゅう",
+          "meaning": "pursuit (of truth), further study",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "着",
       "on": "チャク",
       "kun": "き(る)・つ(く)",
       "meaning": "arrive, wear",
-      "word": "到着 (とうちゃく) — arrival"
+      "examples": [
+        {
+          "word": "到着",
+          "reading": "とうちゃく",
+          "meaning": "arrival",
+          "type": "on"
+        },
+        {
+          "word": "着る",
+          "reading": "きる",
+          "meaning": "to wear",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "質",
       "on": "シツ・シチ",
       "kun": "たち",
       "meaning": "substance, quality",
-      "word": "質問 (しつもん) — question"
+      "examples": [
+        {
+          "word": "質問",
+          "reading": "しつもん",
+          "meaning": "question",
+          "type": "on"
+        },
+        {
+          "word": "品質",
+          "reading": "ひんしつ",
+          "meaning": "quality",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "産",
       "on": "サン",
       "kun": "う(む)・うぶ",
       "meaning": "give birth, product",
-      "word": "お土産 (おみやげ) — souvenir"
+      "examples": [
+        {
+          "word": "お土産",
+          "reading": "おみやげ",
+          "meaning": "souvenir",
+          "type": "on"
+        },
+        {
+          "word": "産む",
+          "reading": "うむ",
+          "meaning": "to give birth",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "引",
       "on": "イン",
       "kun": "ひ(く)",
       "meaning": "pull",
-      "word": "割引 (わりびき) — discount"
+      "examples": [
+        {
+          "word": "割引",
+          "reading": "わりびき",
+          "meaning": "discount",
+          "type": "on"
+        },
+        {
+          "word": "引く",
+          "reading": "ひく",
+          "meaning": "to pull",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "声",
       "on": "セイ・ショウ",
       "kun": "こえ",
       "meaning": "voice",
-      "word": "大声 (おおごえ) — loud voice"
+      "examples": [
+        {
+          "word": "大声",
+          "reading": "おおごえ",
+          "meaning": "loud voice",
+          "type": "on"
+        },
+        {
+          "word": "音声",
+          "reading": "おんせい",
+          "meaning": "audio, voice",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "試",
       "on": "シ",
       "kun": "こころ(みる)・ため(す)",
       "meaning": "try, test",
-      "word": "試験 (しけん) — exam"
+      "examples": [
+        {
+          "word": "試験",
+          "reading": "しけん",
+          "meaning": "exam",
+          "type": "on"
+        },
+        {
+          "word": "試す",
+          "reading": "ためす",
+          "meaning": "to try, test",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "銀",
       "on": "ギン",
       "kun": "—",
       "meaning": "silver",
-      "word": "銀行 (ぎんこう) — bank"
+      "examples": [
+        {
+          "word": "銀行",
+          "reading": "ぎんこう",
+          "meaning": "bank",
+          "type": "on"
+        },
+        {
+          "word": "銀色",
+          "reading": "ぎんいろ",
+          "meaning": "silver color",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "験",
       "on": "ケン・ゲン",
       "kun": "—",
       "meaning": "verify, test, effect",
-      "word": "試験 (しけん) — exam"
+      "examples": [
+        {
+          "word": "試験",
+          "reading": "しけん",
+          "meaning": "exam",
+          "type": "on"
+        },
+        {
+          "word": "経験",
+          "reading": "けいけん",
+          "meaning": "experience",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "働",
       "on": "ドウ",
       "kun": "はたら(く)",
       "meaning": "work",
-      "word": "働く (はたらく) — to work"
+      "examples": [
+        {
+          "word": "働く",
+          "reading": "はたらく",
+          "meaning": "to work",
+          "type": "kun"
+        },
+        {
+          "word": "労働",
+          "reading": "ろうどう",
+          "meaning": "labor",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "英",
       "on": "エイ",
       "kun": "—",
       "meaning": "England, excellent",
-      "word": "英語 (えいご) — English"
+      "examples": [
+        {
+          "word": "英語",
+          "reading": "えいご",
+          "meaning": "English",
+          "type": "on"
+        },
+        {
+          "word": "英会話",
+          "reading": "えいかいわ",
+          "meaning": "English conversation",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "夜",
       "on": "ヤ",
       "kun": "よる・よ",
       "meaning": "night",
-      "word": "今夜 (こんや) — tonight"
+      "examples": [
+        {
+          "word": "今夜",
+          "reading": "こんや",
+          "meaning": "tonight",
+          "type": "on"
+        },
+        {
+          "word": "夜間",
+          "reading": "やかん",
+          "meaning": "nighttime",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "注",
       "on": "チュウ",
       "kun": "そそ(ぐ)",
       "meaning": "pour, pay attention",
-      "word": "注意 (ちゅうい) — caution"
+      "examples": [
+        {
+          "word": "注意",
+          "reading": "ちゅうい",
+          "meaning": "caution",
+          "type": "on"
+        },
+        {
+          "word": "注ぐ",
+          "reading": "そそぐ",
+          "meaning": "to pour",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "光",
       "on": "コウ",
       "kun": "ひかり・ひか(る)",
       "meaning": "light, ray",
-      "word": "光る (ひかる) — to shine"
+      "examples": [
+        {
+          "word": "光る",
+          "reading": "ひかる",
+          "meaning": "to shine",
+          "type": "kun"
+        },
+        {
+          "word": "日光",
+          "reading": "にっこう",
+          "meaning": "sunlight",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "悪",
       "on": "アク・オ",
       "kun": "わる(い)",
       "meaning": "bad, evil",
-      "word": "悪い (わるい) — bad"
+      "examples": [
+        {
+          "word": "悪い",
+          "reading": "わるい",
+          "meaning": "bad",
+          "type": "kun"
+        },
+        {
+          "word": "最悪",
+          "reading": "さいあく",
+          "meaning": "the worst",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "図",
       "on": "ズ・ト",
       "kun": "はか(る)",
       "meaning": "diagram, plan, map",
-      "word": "地図 (ちず) — map"
+      "examples": [
+        {
+          "word": "地図",
+          "reading": "ちず",
+          "meaning": "map",
+          "type": "on"
+        },
+        {
+          "word": "図る",
+          "reading": "はかる",
+          "meaning": "to plan, scheme",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "歩",
       "on": "ホ・ブ",
       "kun": "ある(く)・あゆ(む)",
       "meaning": "walk",
-      "word": "散歩 (さんぽ) — a walk, stroll"
+      "examples": [
+        {
+          "word": "散歩",
+          "reading": "さんぽ",
+          "meaning": "a walk, stroll",
+          "type": "on"
+        },
+        {
+          "word": "歩く",
+          "reading": "あるく",
+          "meaning": "to walk",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "紙",
       "on": "シ",
       "kun": "かみ",
       "meaning": "paper",
-      "word": "手紙 (てがみ) — letter"
+      "examples": [
+        {
+          "word": "手紙",
+          "reading": "てがみ",
+          "meaning": "letter",
+          "type": "on"
+        },
+        {
+          "word": "用紙",
+          "reading": "ようし",
+          "meaning": "form, sheet",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "黒",
       "on": "コク",
       "kun": "くろ・くろ(い)",
       "meaning": "black",
-      "word": "黒い (くろい) — black"
+      "examples": [
+        {
+          "word": "黒い",
+          "reading": "くろい",
+          "meaning": "black",
+          "type": "kun"
+        },
+        {
+          "word": "黒板",
+          "reading": "こくばん",
+          "meaning": "blackboard",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "赤",
       "on": "セキ",
       "kun": "あか・あか(い)",
       "meaning": "red",
-      "word": "赤い (あかい) — red"
+      "examples": [
+        {
+          "word": "赤い",
+          "reading": "あかい",
+          "meaning": "red",
+          "type": "kun"
+        },
+        {
+          "word": "赤道",
+          "reading": "せきどう",
+          "meaning": "the equator",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "青",
       "on": "セイ・ショウ",
       "kun": "あお・あお(い)",
       "meaning": "blue",
-      "word": "青い (あおい) — blue"
+      "examples": [
+        {
+          "word": "青い",
+          "reading": "あおい",
+          "meaning": "blue",
+          "type": "kun"
+        },
+        {
+          "word": "青年",
+          "reading": "せいねん",
+          "meaning": "young man, youth",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "屋",
       "on": "オク",
       "kun": "や",
       "meaning": "roof, shop",
-      "word": "本屋 (ほんや) — bookstore"
+      "examples": [
+        {
+          "word": "本屋",
+          "reading": "ほんや",
+          "meaning": "bookstore",
+          "type": "on"
+        },
+        {
+          "word": "屋上",
+          "reading": "おくじょう",
+          "meaning": "rooftop",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "色",
       "on": "ショク・シキ",
       "kun": "いろ",
       "meaning": "color",
-      "word": "色 (いろ) — color"
+      "examples": [
+        {
+          "word": "色",
+          "reading": "いろ",
+          "meaning": "color",
+          "type": "kun"
+        },
+        {
+          "word": "特色",
+          "reading": "とくしょく",
+          "meaning": "characteristic feature",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "走",
       "on": "ソウ",
       "kun": "はし(る)",
       "meaning": "run",
-      "word": "走る (はしる) — to run"
+      "examples": [
+        {
+          "word": "走る",
+          "reading": "はしる",
+          "meaning": "to run",
+          "type": "kun"
+        },
+        {
+          "word": "走者",
+          "reading": "そうしゃ",
+          "meaning": "runner",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "習",
       "on": "シュウ",
       "kun": "なら(う)",
       "meaning": "learn, practice",
-      "word": "練習 (れんしゅう) — practice"
+      "examples": [
+        {
+          "word": "練習",
+          "reading": "れんしゅう",
+          "meaning": "practice",
+          "type": "on"
+        },
+        {
+          "word": "習う",
+          "reading": "ならう",
+          "meaning": "to learn (from someone)",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "便",
       "on": "ベン・ビン",
       "kun": "たよ(り)",
       "meaning": "convenience, mail",
-      "word": "便利 (べんり) — convenient"
+      "examples": [
+        {
+          "word": "便利",
+          "reading": "べんり",
+          "meaning": "convenient",
+          "type": "on"
+        },
+        {
+          "word": "便り",
+          "reading": "たより",
+          "meaning": "news, correspondence",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "服",
       "on": "フク",
       "kun": "—",
       "meaning": "clothes",
-      "word": "洋服 (ようふく) — (Western) clothes"
+      "examples": [
+        {
+          "word": "洋服",
+          "reading": "ようふく",
+          "meaning": "(Western) clothes",
+          "type": "on"
+        },
+        {
+          "word": "服装",
+          "reading": "ふくそう",
+          "meaning": "attire",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "夕",
       "on": "セキ",
       "kun": "ゆう",
       "meaning": "evening",
-      "word": "夕方 (ゆうがた) — evening"
+      "examples": [
+        {
+          "word": "夕方",
+          "reading": "ゆうがた",
+          "meaning": "evening",
+          "type": "kun"
+        },
+        {
+          "word": "夕日",
+          "reading": "ゆうひ",
+          "meaning": "evening sun",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "曜",
       "on": "ヨウ",
       "kun": "—",
       "meaning": "day of the week",
-      "word": "曜日 (ようび) — day of the week"
+      "examples": [
+        {
+          "word": "曜日",
+          "reading": "ようび",
+          "meaning": "day of the week",
+          "type": "on"
+        },
+        {
+          "word": "土曜日",
+          "reading": "どようび",
+          "meaning": "Saturday",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "堂",
       "on": "ドウ",
       "kun": "—",
       "meaning": "hall",
-      "word": "食堂 (しょくどう) — cafeteria, dining hall"
+      "examples": [
+        {
+          "word": "食堂",
+          "reading": "しょくどう",
+          "meaning": "cafeteria, dining hall",
+          "type": "on"
+        },
+        {
+          "word": "講堂",
+          "reading": "こうどう",
+          "meaning": "auditorium, lecture hall",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "説",
       "on": "セツ",
       "kun": "と(く)",
       "meaning": "theory, explain",
-      "word": "説明 (せつめい) — explanation"
+      "examples": [
+        {
+          "word": "説明",
+          "reading": "せつめい",
+          "meaning": "explanation",
+          "type": "on"
+        },
+        {
+          "word": "説く",
+          "reading": "とく",
+          "meaning": "to explain, preach",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "乗",
       "on": "ジョウ",
       "kun": "の(る)",
       "meaning": "ride",
-      "word": "乗る (のる) — to ride, board"
+      "examples": [
+        {
+          "word": "乗る",
+          "reading": "のる",
+          "meaning": "to ride, board",
+          "type": "kun"
+        },
+        {
+          "word": "乗車",
+          "reading": "じょうしゃ",
+          "meaning": "boarding (a vehicle)",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "会",
       "on": "カイ",
       "kun": "あ(う)",
       "meaning": "meeting, association",
-      "word": "会社 (かいしゃ) — company"
+      "examples": [
+        {
+          "word": "会社",
+          "reading": "かいしゃ",
+          "meaning": "company",
+          "type": "on"
+        },
+        {
+          "word": "会う",
+          "reading": "あう",
+          "meaning": "to meet",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "事",
       "on": "ジ",
       "kun": "こと",
       "meaning": "matter, thing, affair",
-      "word": "仕事 (しごと) — job, work"
+      "examples": [
+        {
+          "word": "仕事",
+          "reading": "しごと",
+          "meaning": "job, work",
+          "type": "on"
+        },
+        {
+          "word": "事故",
+          "reading": "じこ",
+          "meaning": "accident",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "自",
       "on": "ジ・シ",
       "kun": "みずか(ら)",
       "meaning": "self, oneself",
-      "word": "自分 (じぶん) — oneself"
+      "examples": [
+        {
+          "word": "自分",
+          "reading": "じぶん",
+          "meaning": "oneself",
+          "type": "on"
+        },
+        {
+          "word": "自ら",
+          "reading": "みずから",
+          "meaning": "oneself, personally",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "社",
       "on": "シャ",
       "kun": "—",
       "meaning": "company, shrine",
-      "word": "会社 (かいしゃ) — company"
+      "examples": [
+        {
+          "word": "会社",
+          "reading": "かいしゃ",
+          "meaning": "company",
+          "type": "on"
+        },
+        {
+          "word": "社会",
+          "reading": "しゃかい",
+          "meaning": "society",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "者",
       "on": "シャ",
       "kun": "もの",
       "meaning": "person",
-      "word": "医者 (いしゃ) — doctor"
+      "examples": [
+        {
+          "word": "医者",
+          "reading": "いしゃ",
+          "meaning": "doctor",
+          "type": "on"
+        },
+        {
+          "word": "若者",
+          "reading": "わかもの",
+          "meaning": "young person",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "業",
       "on": "ギョウ・ゴウ",
       "kun": "—",
       "meaning": "business, industry, occupation",
-      "word": "授業 (じゅぎょう) — class, lesson"
+      "examples": [
+        {
+          "word": "授業",
+          "reading": "じゅぎょう",
+          "meaning": "class, lesson",
+          "type": "on"
+        },
+        {
+          "word": "卒業",
+          "reading": "そつぎょう",
+          "meaning": "graduation",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "方",
       "on": "ホウ",
       "kun": "かた",
       "meaning": "direction, way, person (polite)",
-      "word": "使い方 (つかいかた) — way of using"
+      "examples": [
+        {
+          "word": "使い方",
+          "reading": "つかいかた",
+          "meaning": "way of using",
+          "type": "on"
+        },
+        {
+          "word": "方法",
+          "reading": "ほうほう",
+          "meaning": "method",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "新",
       "on": "シン",
       "kun": "あたら(しい)・あら(た)",
       "meaning": "new",
-      "word": "新聞 (しんぶん) — newspaper"
+      "examples": [
+        {
+          "word": "新聞",
+          "reading": "しんぶん",
+          "meaning": "newspaper",
+          "type": "on"
+        },
+        {
+          "word": "新しい",
+          "reading": "あたらしい",
+          "meaning": "new",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "場",
       "on": "ジョウ",
       "kun": "ば",
       "meaning": "place",
-      "word": "場所 (ばしょ) — place, location"
+      "examples": [
+        {
+          "word": "場所",
+          "reading": "ばしょ",
+          "meaning": "place, location",
+          "type": "kun"
+        },
+        {
+          "word": "会場",
+          "reading": "かいじょう",
+          "meaning": "venue",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "員",
       "on": "イン",
       "kun": "—",
       "meaning": "member, staff",
-      "word": "会社員 (かいしゃいん) — company employee"
+      "examples": [
+        {
+          "word": "会社員",
+          "reading": "かいしゃいん",
+          "meaning": "company employee",
+          "type": "on"
+        },
+        {
+          "word": "店員",
+          "reading": "てんいん",
+          "meaning": "shop clerk",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "立",
       "on": "リツ",
       "kun": "た(つ)・た(てる)",
       "meaning": "stand",
-      "word": "立つ (たつ) — to stand"
+      "examples": [
+        {
+          "word": "立つ",
+          "reading": "たつ",
+          "meaning": "to stand",
+          "type": "kun"
+        },
+        {
+          "word": "立派",
+          "reading": "りっぱ",
+          "meaning": "splendid, admirable",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "開",
       "on": "カイ",
       "kun": "ひら(く)・あ(ける)",
       "meaning": "open",
-      "word": "開ける (あける) — to open"
+      "examples": [
+        {
+          "word": "開ける",
+          "reading": "あける",
+          "meaning": "to open",
+          "type": "kun"
+        },
+        {
+          "word": "開始",
+          "reading": "かいし",
+          "meaning": "commencement, start",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "手",
       "on": "シュ",
       "kun": "て",
       "meaning": "hand",
-      "word": "手紙 (てがみ) — letter"
+      "examples": [
+        {
+          "word": "手紙",
+          "reading": "てがみ",
+          "meaning": "letter",
+          "type": "kun"
+        },
+        {
+          "word": "選手",
+          "reading": "せんしゅ",
+          "meaning": "athlete, player",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "力",
       "on": "リョク・リキ",
       "kun": "ちから",
       "meaning": "power, strength",
-      "word": "力 (ちから) — strength, power"
+      "examples": [
+        {
+          "word": "力",
+          "reading": "ちから",
+          "meaning": "strength, power",
+          "type": "kun"
+        },
+        {
+          "word": "努力",
+          "reading": "どりょく",
+          "meaning": "effort",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "問",
       "on": "モン",
       "kun": "と(う)",
       "meaning": "question, ask",
-      "word": "質問 (しつもん) — question"
+      "examples": [
+        {
+          "word": "質問",
+          "reading": "しつもん",
+          "meaning": "question",
+          "type": "on"
+        },
+        {
+          "word": "問う",
+          "reading": "とう",
+          "meaning": "to ask, question",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "代",
       "on": "ダイ・タイ",
       "kun": "か(わる)・よ",
       "meaning": "substitute, era, generation",
-      "word": "時代 (じだい) — era"
+      "examples": [
+        {
+          "word": "時代",
+          "reading": "じだい",
+          "meaning": "era",
+          "type": "on"
+        },
+        {
+          "word": "代わりに",
+          "reading": "かわりに",
+          "meaning": "instead of",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "明",
       "on": "メイ",
       "kun": "あか(るい)・あき(らか)",
       "meaning": "bright, clear",
-      "word": "説明 (せつめい) — explanation"
+      "examples": [
+        {
+          "word": "説明",
+          "reading": "せつめい",
+          "meaning": "explanation",
+          "type": "on"
+        },
+        {
+          "word": "明るい",
+          "reading": "あかるい",
+          "meaning": "bright",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "動",
       "on": "ドウ",
       "kun": "うご(く)",
       "meaning": "move",
-      "word": "運動 (うんどう) — exercise"
+      "examples": [
+        {
+          "word": "運動",
+          "reading": "うんどう",
+          "meaning": "exercise",
+          "type": "on"
+        },
+        {
+          "word": "動く",
+          "reading": "うごく",
+          "meaning": "to move",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "京",
       "on": "キョウ",
       "kun": "—",
       "meaning": "capital",
-      "word": "東京 (とうきょう) — Tokyo"
+      "examples": [
+        {
+          "word": "東京",
+          "reading": "とうきょう",
+          "meaning": "Tokyo",
+          "type": "on"
+        },
+        {
+          "word": "京都",
+          "reading": "きょうと",
+          "meaning": "Kyoto",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "目",
       "on": "モク",
       "kun": "め",
       "meaning": "eye",
-      "word": "目 (め) — eye"
+      "examples": [
+        {
+          "word": "目",
+          "reading": "め",
+          "meaning": "eye",
+          "type": "kun"
+        },
+        {
+          "word": "目的",
+          "reading": "もくてき",
+          "meaning": "purpose, goal",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "通",
       "on": "ツウ",
       "kun": "とお(る)・かよ(う)",
       "meaning": "pass through, commute",
-      "word": "交通 (こうつう) — traffic"
+      "examples": [
+        {
+          "word": "交通",
+          "reading": "こうつう",
+          "meaning": "traffic",
+          "type": "on"
+        },
+        {
+          "word": "通う",
+          "reading": "かよう",
+          "meaning": "to commute",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "言",
       "on": "ゲン・ゴン",
       "kun": "い(う)・こと",
       "meaning": "say, word",
-      "word": "言葉 (ことば) — word, language"
+      "examples": [
+        {
+          "word": "言葉",
+          "reading": "ことば",
+          "meaning": "word, language",
+          "type": "kun"
+        },
+        {
+          "word": "言語",
+          "reading": "げんご",
+          "meaning": "language",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "理",
       "on": "リ",
       "kun": "—",
       "meaning": "logic, reason",
-      "word": "料理 (りょうり) — cooking"
+      "examples": [
+        {
+          "word": "料理",
+          "reading": "りょうり",
+          "meaning": "cooking",
+          "type": "on"
+        },
+        {
+          "word": "理由",
+          "reading": "りゆう",
+          "meaning": "reason",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "体",
       "on": "タイ",
       "kun": "からだ",
       "meaning": "body",
-      "word": "体 (からだ) — body"
+      "examples": [
+        {
+          "word": "体",
+          "reading": "からだ",
+          "meaning": "body",
+          "type": "kun"
+        },
+        {
+          "word": "体育",
+          "reading": "たいいく",
+          "meaning": "physical education",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "田",
       "on": "デン",
       "kun": "た",
       "meaning": "rice field",
-      "word": "田舎 (いなか) — countryside"
+      "examples": [
+        {
+          "word": "田舎",
+          "reading": "いなか",
+          "meaning": "countryside",
+          "type": "on"
+        },
+        {
+          "word": "田園",
+          "reading": "でんえん",
+          "meaning": "countryside, rural fields",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "作",
       "on": "サク・サ",
       "kun": "つく(る)",
       "meaning": "make",
-      "word": "作る (つくる) — to make"
+      "examples": [
+        {
+          "word": "作る",
+          "reading": "つくる",
+          "meaning": "to make",
+          "type": "kun"
+        },
+        {
+          "word": "作文",
+          "reading": "さくぶん",
+          "meaning": "composition, essay",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "強",
       "on": "キョウ",
       "kun": "つよ(い)",
       "meaning": "strong",
-      "word": "強い (つよい) — strong"
+      "examples": [
+        {
+          "word": "強い",
+          "reading": "つよい",
+          "meaning": "strong",
+          "type": "kun"
+        },
+        {
+          "word": "勉強",
+          "reading": "べんきょう",
+          "meaning": "study",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "持",
       "on": "ジ",
       "kun": "も(つ)",
       "meaning": "hold, have",
-      "word": "持つ (もつ) — to hold, carry"
+      "examples": [
+        {
+          "word": "持つ",
+          "reading": "もつ",
+          "meaning": "to hold, carry",
+          "type": "kun"
+        },
+        {
+          "word": "支持",
+          "reading": "しじ",
+          "meaning": "support",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "野",
       "on": "ヤ",
       "kun": "の",
       "meaning": "field, plain",
-      "word": "野菜 (やさい) — vegetable"
+      "examples": [
+        {
+          "word": "野菜",
+          "reading": "やさい",
+          "meaning": "vegetable",
+          "type": "on"
+        },
+        {
+          "word": "野原",
+          "reading": "のはら",
+          "meaning": "field, meadow",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "思",
       "on": "シ",
       "kun": "おも(う)",
       "meaning": "think",
-      "word": "思う (おもう) — to think"
+      "examples": [
+        {
+          "word": "思う",
+          "reading": "おもう",
+          "meaning": "to think",
+          "type": "kun"
+        },
+        {
+          "word": "意思",
+          "reading": "いし",
+          "meaning": "intention",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "家",
       "on": "カ・ケ",
       "kun": "いえ・や",
       "meaning": "house, family",
-      "word": "家族 (かぞく) — family"
+      "examples": [
+        {
+          "word": "家族",
+          "reading": "かぞく",
+          "meaning": "family",
+          "type": "on"
+        },
+        {
+          "word": "家",
+          "reading": "いえ",
+          "meaning": "house, home",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "多",
       "on": "タ",
       "kun": "おお(い)",
       "meaning": "many",
-      "word": "多い (おおい) — many"
+      "examples": [
+        {
+          "word": "多い",
+          "reading": "おおい",
+          "meaning": "many",
+          "type": "kun"
+        },
+        {
+          "word": "多分",
+          "reading": "たぶん",
+          "meaning": "probably",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "安",
       "on": "アン",
       "kun": "やす(い)",
       "meaning": "cheap, safe",
-      "word": "安い (やすい) — cheap"
+      "examples": [
+        {
+          "word": "安い",
+          "reading": "やすい",
+          "meaning": "cheap",
+          "type": "kun"
+        },
+        {
+          "word": "安全",
+          "reading": "あんぜん",
+          "meaning": "safety",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "院",
       "on": "イン",
       "kun": "—",
       "meaning": "institution",
-      "word": "病院 (びょういん) — hospital"
+      "examples": [
+        {
+          "word": "病院",
+          "reading": "びょういん",
+          "meaning": "hospital",
+          "type": "on"
+        },
+        {
+          "word": "美容院",
+          "reading": "びよういん",
+          "meaning": "beauty salon",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "教",
       "on": "キョウ",
       "kun": "おし(える)・おそ(わる)",
       "meaning": "teach",
-      "word": "教える (おしえる) — to teach"
+      "examples": [
+        {
+          "word": "教える",
+          "reading": "おしえる",
+          "meaning": "to teach",
+          "type": "kun"
+        },
+        {
+          "word": "教室",
+          "reading": "きょうしつ",
+          "meaning": "classroom",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "文",
       "on": "ブン・モン",
       "kun": "ふみ",
       "meaning": "sentence, writing",
-      "word": "文化 (ぶんか) — culture"
+      "examples": [
+        {
+          "word": "文化",
+          "reading": "ぶんか",
+          "meaning": "culture",
+          "type": "on"
+        },
+        {
+          "word": "文章",
+          "reading": "ぶんしょう",
+          "meaning": "sentence, writing",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "元",
       "on": "ゲン・ガン",
       "kun": "もと",
       "meaning": "origin",
-      "word": "元気 (げんき) — healthy, energetic"
+      "examples": [
+        {
+          "word": "元気",
+          "reading": "げんき",
+          "meaning": "healthy, energetic",
+          "type": "on"
+        },
+        {
+          "word": "元",
+          "reading": "もと",
+          "meaning": "origin, basis",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "重",
       "on": "ジュウ・チョウ",
       "kun": "おも(い)・かさ(ねる)",
       "meaning": "heavy",
-      "word": "重い (おもい) — heavy"
+      "examples": [
+        {
+          "word": "重い",
+          "reading": "おもい",
+          "meaning": "heavy",
+          "type": "kun"
+        },
+        {
+          "word": "重要",
+          "reading": "じゅうよう",
+          "meaning": "important",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "近",
       "on": "キン",
       "kun": "ちか(い)",
       "meaning": "near",
-      "word": "近く (ちかく) — nearby"
+      "examples": [
+        {
+          "word": "近く",
+          "reading": "ちかく",
+          "meaning": "nearby",
+          "type": "kun"
+        },
+        {
+          "word": "近所",
+          "reading": "きんじょ",
+          "meaning": "neighborhood",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "考",
       "on": "コウ",
       "kun": "かんが(える)",
       "meaning": "think, consider",
-      "word": "考える (かんがえる) — to think, consider"
+      "examples": [
+        {
+          "word": "考える",
+          "reading": "かんがえる",
+          "meaning": "to think, consider",
+          "type": "kun"
+        },
+        {
+          "word": "参考",
+          "reading": "さんこう",
+          "meaning": "reference",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "画",
       "on": "ガ・カク",
       "kun": "—",
       "meaning": "picture, plan",
-      "word": "映画 (えいが) — movie"
+      "examples": [
+        {
+          "word": "映画",
+          "reading": "えいが",
+          "meaning": "movie",
+          "type": "on"
+        },
+        {
+          "word": "画面",
+          "reading": "がめん",
+          "meaning": "screen",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "海",
       "on": "カイ",
       "kun": "うみ",
       "meaning": "sea",
-      "word": "海 (うみ) — sea"
+      "examples": [
+        {
+          "word": "海",
+          "reading": "うみ",
+          "meaning": "sea",
+          "type": "kun"
+        },
+        {
+          "word": "海外",
+          "reading": "かいがい",
+          "meaning": "overseas",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "売",
       "on": "バイ",
       "kun": "う(る)",
       "meaning": "sell",
-      "word": "売る (うる) — to sell"
+      "examples": [
+        {
+          "word": "売る",
+          "reading": "うる",
+          "meaning": "to sell",
+          "type": "kun"
+        },
+        {
+          "word": "販売",
+          "reading": "はんばい",
+          "meaning": "sales",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "知",
       "on": "チ",
       "kun": "し(る)",
       "meaning": "know",
-      "word": "知る (しる) — to know"
+      "examples": [
+        {
+          "word": "知る",
+          "reading": "しる",
+          "meaning": "to know",
+          "type": "kun"
+        },
+        {
+          "word": "知識",
+          "reading": "ちしき",
+          "meaning": "knowledge",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "道",
       "on": "ドウ",
       "kun": "みち",
       "meaning": "road, way",
-      "word": "道 (みち) — road"
+      "examples": [
+        {
+          "word": "道",
+          "reading": "みち",
+          "meaning": "road",
+          "type": "kun"
+        },
+        {
+          "word": "道路",
+          "reading": "どうろ",
+          "meaning": "road",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "物",
       "on": "ブツ・モツ",
       "kun": "もの",
       "meaning": "thing",
-      "word": "買い物 (かいもの) — shopping"
+      "examples": [
+        {
+          "word": "買い物",
+          "reading": "かいもの",
+          "meaning": "shopping",
+          "type": "on"
+        },
+        {
+          "word": "動物",
+          "reading": "どうぶつ",
+          "meaning": "animal",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "使",
       "on": "シ",
       "kun": "つか(う)",
       "meaning": "use",
-      "word": "使う (つかう) — to use"
+      "examples": [
+        {
+          "word": "使う",
+          "reading": "つかう",
+          "meaning": "to use",
+          "type": "kun"
+        },
+        {
+          "word": "使用",
+          "reading": "しよう",
+          "meaning": "use, usage",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "始",
       "on": "シ",
       "kun": "はじ(める)・はじ(まる)",
       "meaning": "begin",
-      "word": "始める (はじめる) — to start"
+      "examples": [
+        {
+          "word": "始める",
+          "reading": "はじめる",
+          "meaning": "to start",
+          "type": "kun"
+        },
+        {
+          "word": "始発",
+          "reading": "しはつ",
+          "meaning": "first train",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "運",
       "on": "ウン",
       "kun": "—",
       "meaning": "luck, carry, transport",
-      "word": "運動 (うんどう) — exercise"
+      "examples": [
+        {
+          "word": "運動",
+          "reading": "うんどう",
+          "meaning": "exercise",
+          "type": "on"
+        },
+        {
+          "word": "運転",
+          "reading": "うんてん",
+          "meaning": "driving",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "終",
       "on": "シュウ",
       "kun": "お(わる)",
       "meaning": "end",
-      "word": "終わる (おわる) — to end"
+      "examples": [
+        {
+          "word": "終わる",
+          "reading": "おわる",
+          "meaning": "to end",
+          "type": "kun"
+        },
+        {
+          "word": "最終",
+          "reading": "さいしゅう",
+          "meaning": "final, last",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "台",
       "on": "タイ・ダイ",
       "kun": "—",
       "meaning": "platform, counter for machines",
-      "word": "台風 (たいふう) — typhoon"
+      "examples": [
+        {
+          "word": "台風",
+          "reading": "たいふう",
+          "meaning": "typhoon",
+          "type": "on"
+        },
+        {
+          "word": "台所",
+          "reading": "だいどころ",
+          "meaning": "kitchen",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "広",
       "on": "コウ",
       "kun": "ひろ(い)",
       "meaning": "wide, spacious",
-      "word": "広い (ひろい) — wide, spacious"
+      "examples": [
+        {
+          "word": "広い",
+          "reading": "ひろい",
+          "meaning": "wide, spacious",
+          "type": "kun"
+        },
+        {
+          "word": "広告",
+          "reading": "こうこく",
+          "meaning": "advertisement",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "住",
       "on": "ジュウ",
       "kun": "す(む)",
       "meaning": "live, reside",
-      "word": "住む (すむ) — to live, reside"
+      "examples": [
+        {
+          "word": "住む",
+          "reading": "すむ",
+          "meaning": "to live, reside",
+          "type": "kun"
+        },
+        {
+          "word": "住所",
+          "reading": "じゅうしょ",
+          "meaning": "address",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "真",
       "on": "シン",
       "kun": "ま",
       "meaning": "true, real",
-      "word": "写真 (しゃしん) — photograph"
+      "examples": [
+        {
+          "word": "写真",
+          "reading": "しゃしん",
+          "meaning": "photograph",
+          "type": "on"
+        },
+        {
+          "word": "真ん中",
+          "reading": "まんなか",
+          "meaning": "the middle",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "有",
       "on": "ユウ",
       "kun": "あ(る)",
       "meaning": "exist, have",
-      "word": "有名 (ゆうめい) — famous"
+      "examples": [
+        {
+          "word": "有名",
+          "reading": "ゆうめい",
+          "meaning": "famous",
+          "type": "on"
+        },
+        {
+          "word": "有る",
+          "reading": "ある",
+          "meaning": "to exist, have (formal written form)",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "口",
       "on": "コウ",
       "kun": "くち",
       "meaning": "mouth",
-      "word": "入口 (いりぐち) — entrance"
+      "examples": [
+        {
+          "word": "入口",
+          "reading": "いりぐち",
+          "meaning": "entrance",
+          "type": "on"
+        },
+        {
+          "word": "人口",
+          "reading": "じんこう",
+          "meaning": "population",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "少",
       "on": "ショウ",
       "kun": "すこ(し)・すく(ない)",
       "meaning": "few, little",
-      "word": "少し (すこし) — a little"
+      "examples": [
+        {
+          "word": "少し",
+          "reading": "すこし",
+          "meaning": "a little",
+          "type": "kun"
+        },
+        {
+          "word": "少年",
+          "reading": "しょうねん",
+          "meaning": "boy, youth",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "町",
       "on": "チョウ",
       "kun": "まち",
       "meaning": "town",
-      "word": "町 (まち) — town"
+      "examples": [
+        {
+          "word": "町",
+          "reading": "まち",
+          "meaning": "town",
+          "type": "kun"
+        },
+        {
+          "word": "町内",
+          "reading": "ちょうない",
+          "meaning": "in the neighborhood, town",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "料",
       "on": "リョウ",
       "kun": "—",
       "meaning": "fee, material",
-      "word": "料理 (りょうり) — cooking"
+      "examples": [
+        {
+          "word": "料理",
+          "reading": "りょうり",
+          "meaning": "cooking",
+          "type": "on"
+        },
+        {
+          "word": "料金",
+          "reading": "りょうきん",
+          "meaning": "fee, charge",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "工",
       "on": "コウ",
       "kun": "—",
       "meaning": "craft, construction",
-      "word": "工場 (こうじょう) — factory"
+      "examples": [
+        {
+          "word": "工場",
+          "reading": "こうじょう",
+          "meaning": "factory",
+          "type": "on"
+        },
+        {
+          "word": "工事",
+          "reading": "こうじ",
+          "meaning": "construction",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "空",
       "on": "クウ",
       "kun": "そら・あ(く)",
       "meaning": "sky, empty",
-      "word": "空港 (くうこう) — airport"
+      "examples": [
+        {
+          "word": "空港",
+          "reading": "くうこう",
+          "meaning": "airport",
+          "type": "on"
+        },
+        {
+          "word": "空",
+          "reading": "そら",
+          "meaning": "sky",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "送",
       "on": "ソウ",
       "kun": "おく(る)",
       "meaning": "send",
-      "word": "送る (おくる) — to send"
+      "examples": [
+        {
+          "word": "送る",
+          "reading": "おくる",
+          "meaning": "to send",
+          "type": "kun"
+        },
+        {
+          "word": "送料",
+          "reading": "そうりょう",
+          "meaning": "shipping fee",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "転",
       "on": "テン",
       "kun": "—",
       "meaning": "roll, turn, change",
-      "word": "運転 (うんてん) — driving"
+      "examples": [
+        {
+          "word": "運転",
+          "reading": "うんてん",
+          "meaning": "driving",
+          "type": "on"
+        },
+        {
+          "word": "転校",
+          "reading": "てんこう",
+          "meaning": "changing schools",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "足",
       "on": "ソク",
       "kun": "あし・た(りる)",
       "meaning": "foot, leg, sufficient",
-      "word": "足りる (たりる) — to be enough"
+      "examples": [
+        {
+          "word": "足りる",
+          "reading": "たりる",
+          "meaning": "to be enough",
+          "type": "kun"
+        },
+        {
+          "word": "満足",
+          "reading": "まんぞく",
+          "meaning": "satisfaction",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "楽",
       "on": "ラク・ガク",
       "kun": "たの(しい)",
       "meaning": "comfort, music, fun",
-      "word": "楽しい (たのしい) — fun, enjoyable"
+      "examples": [
+        {
+          "word": "楽しい",
+          "reading": "たのしい",
+          "meaning": "fun, enjoyable",
+          "type": "kun"
+        },
+        {
+          "word": "音楽",
+          "reading": "おんがく",
+          "meaning": "music",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "起",
       "on": "キ",
       "kun": "お(きる)",
       "meaning": "rise, wake up",
-      "word": "起きる (おきる) — to wake up, get up"
+      "examples": [
+        {
+          "word": "起きる",
+          "reading": "おきる",
+          "meaning": "to wake up, get up",
+          "type": "kun"
+        },
+        {
+          "word": "起立",
+          "reading": "きりつ",
+          "meaning": "standing up",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "店",
       "on": "テン",
       "kun": "みせ",
       "meaning": "shop, store",
-      "word": "店 (みせ) — shop"
+      "examples": [
+        {
+          "word": "店",
+          "reading": "みせ",
+          "meaning": "shop",
+          "type": "kun"
+        },
+        {
+          "word": "開店",
+          "reading": "かいてん",
+          "meaning": "shop opening",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "病",
       "on": "ビョウ",
       "kun": "やまい",
       "meaning": "sickness, disease",
-      "word": "病気 (びょうき) — sickness"
+      "examples": [
+        {
+          "word": "病気",
+          "reading": "びょうき",
+          "meaning": "sickness",
+          "type": "on"
+        },
+        {
+          "word": "病",
+          "reading": "やまい",
+          "meaning": "illness (literary)",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "所",
       "on": "ショ",
       "kun": "ところ",
       "meaning": "place",
-      "word": "場所 (ばしょ) — place"
+      "examples": [
+        {
+          "word": "場所",
+          "reading": "ばしょ",
+          "meaning": "place",
+          "type": "on"
+        },
+        {
+          "word": "所",
+          "reading": "ところ",
+          "meaning": "place",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "待",
       "on": "タイ",
       "kun": "ま(つ)",
       "meaning": "wait",
-      "word": "待つ (まつ) — to wait"
+      "examples": [
+        {
+          "word": "待つ",
+          "reading": "まつ",
+          "meaning": "to wait",
+          "type": "kun"
+        },
+        {
+          "word": "期待",
+          "reading": "きたい",
+          "meaning": "expectation",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "族",
       "on": "ゾク",
       "kun": "—",
       "meaning": "family, tribe, clan",
-      "word": "家族 (かぞく) — family"
+      "examples": [
+        {
+          "word": "家族",
+          "reading": "かぞく",
+          "meaning": "family",
+          "type": "on"
+        },
+        {
+          "word": "民族",
+          "reading": "みんぞく",
+          "meaning": "ethnic group",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "早",
       "on": "ソウ",
       "kun": "はや(い)",
       "meaning": "early, fast",
-      "word": "早い (はやい) — early"
+      "examples": [
+        {
+          "word": "早い",
+          "reading": "はやい",
+          "meaning": "early",
+          "type": "kun"
+        },
+        {
+          "word": "早退",
+          "reading": "そうたい",
+          "meaning": "leaving early",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "映",
       "on": "エイ",
       "kun": "うつ(る)・うつ(す)",
       "meaning": "reflect, project",
-      "word": "映画 (えいが) — movie"
+      "examples": [
+        {
+          "word": "映画",
+          "reading": "えいが",
+          "meaning": "movie",
+          "type": "on"
+        },
+        {
+          "word": "映る",
+          "reading": "うつる",
+          "meaning": "to be reflected, projected",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "親",
       "on": "シン",
       "kun": "おや・した(しい)",
       "meaning": "parent, intimate",
-      "word": "両親 (りょうしん) — parents"
+      "examples": [
+        {
+          "word": "両親",
+          "reading": "りょうしん",
+          "meaning": "parents",
+          "type": "on"
+        },
+        {
+          "word": "親しい",
+          "reading": "したしい",
+          "meaning": "close, intimate (friend)",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "好",
       "on": "コウ",
       "kun": "す(き)・こう(む)",
       "meaning": "like, fond",
-      "word": "好きな (すきな) — favorite, liked"
+      "examples": [
+        {
+          "word": "好きな",
+          "reading": "すきな",
+          "meaning": "favorite, liked",
+          "type": "kun"
+        },
+        {
+          "word": "好物",
+          "reading": "こうぶつ",
+          "meaning": "favorite food",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "頭",
       "on": "トウ・ズ",
       "kun": "あたま",
       "meaning": "head",
-      "word": "頭 (あたま) — head"
+      "examples": [
+        {
+          "word": "頭",
+          "reading": "あたま",
+          "meaning": "head",
+          "type": "kun"
+        },
+        {
+          "word": "頭痛",
+          "reading": "ずつう",
+          "meaning": "headache",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "低",
       "on": "テイ",
       "kun": "ひく(い)",
       "meaning": "low",
-      "word": "低い (ひくい) — low"
+      "examples": [
+        {
+          "word": "低い",
+          "reading": "ひくい",
+          "meaning": "low",
+          "type": "kun"
+        },
+        {
+          "word": "低下",
+          "reading": "ていか",
+          "meaning": "decline, drop",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "医",
       "on": "イ",
       "kun": "—",
       "meaning": "medicine, healing",
-      "word": "医者 (いしゃ) — doctor"
+      "examples": [
+        {
+          "word": "医者",
+          "reading": "いしゃ",
+          "meaning": "doctor",
+          "type": "on"
+        },
+        {
+          "word": "医学",
+          "reading": "いがく",
+          "meaning": "medicine (the study of)",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "仕",
       "on": "シ",
       "kun": "—",
       "meaning": "serve, attend",
-      "word": "仕事 (しごと) — job, work"
+      "examples": [
+        {
+          "word": "仕事",
+          "reading": "しごと",
+          "meaning": "job, work",
+          "type": "on"
+        },
+        {
+          "word": "仕方",
+          "reading": "しかた",
+          "meaning": "way of doing something",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "去",
       "on": "キョ・コ",
       "kun": "さ(る)",
       "meaning": "leave, past",
-      "word": "去年 (きょねん) — last year"
+      "examples": [
+        {
+          "word": "去年",
+          "reading": "きょねん",
+          "meaning": "last year",
+          "type": "on"
+        },
+        {
+          "word": "去る",
+          "reading": "さる",
+          "meaning": "to leave, depart",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "味",
       "on": "ミ",
       "kun": "あじ",
       "meaning": "taste, flavor",
-      "word": "味 (あじ) — taste, flavor"
+      "examples": [
+        {
+          "word": "味",
+          "reading": "あじ",
+          "meaning": "taste, flavor",
+          "type": "kun"
+        },
+        {
+          "word": "興味",
+          "reading": "きょうみ",
+          "meaning": "interest",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "門",
       "on": "モン",
       "kun": "—",
       "meaning": "gate",
-      "word": "門 (もん) — gate"
+      "examples": [
+        {
+          "word": "門",
+          "reading": "もん",
+          "meaning": "gate",
+          "type": "on"
+        },
+        {
+          "word": "専門",
+          "reading": "せんもん",
+          "meaning": "specialty, major",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "写",
       "on": "シャ",
       "kun": "うつ(す)",
       "meaning": "copy, photograph",
-      "word": "写真 (しゃしん) — photograph"
+      "examples": [
+        {
+          "word": "写真",
+          "reading": "しゃしん",
+          "meaning": "photograph",
+          "type": "on"
+        },
+        {
+          "word": "写す",
+          "reading": "うつす",
+          "meaning": "to copy, photograph",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "字",
       "on": "ジ",
       "kun": "—",
       "meaning": "character, letter",
-      "word": "漢字 (かんじ) — kanji character"
+      "examples": [
+        {
+          "word": "漢字",
+          "reading": "かんじ",
+          "meaning": "kanji character",
+          "type": "on"
+        },
+        {
+          "word": "文字",
+          "reading": "もじ",
+          "meaning": "character, letter",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "答",
       "on": "トウ",
       "kun": "こた(える)",
       "meaning": "answer",
-      "word": "答える (こたえる) — to answer"
+      "examples": [
+        {
+          "word": "答える",
+          "reading": "こたえる",
+          "meaning": "to answer",
+          "type": "kun"
+        },
+        {
+          "word": "回答",
+          "reading": "かいとう",
+          "meaning": "response, answer",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "音",
       "on": "オン・イン",
       "kun": "おと",
       "meaning": "sound",
-      "word": "音楽 (おんがく) — music"
+      "examples": [
+        {
+          "word": "音楽",
+          "reading": "おんがく",
+          "meaning": "music",
+          "type": "on"
+        },
+        {
+          "word": "音",
+          "reading": "おと",
+          "meaning": "sound",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "帰",
       "on": "キ",
       "kun": "かえ(る)",
       "meaning": "return, go home",
-      "word": "帰る (かえる) — to go home, return"
+      "examples": [
+        {
+          "word": "帰る",
+          "reading": "かえる",
+          "meaning": "to go home, return",
+          "type": "kun"
+        },
+        {
+          "word": "帰国",
+          "reading": "きこく",
+          "meaning": "returning to one's country",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "歌",
       "on": "カ",
       "kun": "うた・うた(う)",
       "meaning": "song, sing",
-      "word": "歌う (うたう) — to sing"
+      "examples": [
+        {
+          "word": "歌う",
+          "reading": "うたう",
+          "meaning": "to sing",
+          "type": "kun"
+        },
+        {
+          "word": "歌手",
+          "reading": "かしゅ",
+          "meaning": "singer",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "室",
       "on": "シツ",
       "kun": "—",
       "meaning": "room",
-      "word": "教室 (きょうしつ) — classroom"
+      "examples": [
+        {
+          "word": "教室",
+          "reading": "きょうしつ",
+          "meaning": "classroom",
+          "type": "on"
+        },
+        {
+          "word": "室内",
+          "reading": "しつない",
+          "meaning": "indoor",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "太",
       "on": "タイ",
       "kun": "ふと(い)",
       "meaning": "fat, thick",
-      "word": "太い (ふとい) — thick, fat"
+      "examples": [
+        {
+          "word": "太い",
+          "reading": "ふとい",
+          "meaning": "thick, fat",
+          "type": "kun"
+        },
+        {
+          "word": "太陽",
+          "reading": "たいよう",
+          "meaning": "sun",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "風",
       "on": "フウ・フ",
       "kun": "かぜ",
       "meaning": "wind",
-      "word": "台風 (たいふう) — typhoon"
+      "examples": [
+        {
+          "word": "台風",
+          "reading": "たいふう",
+          "meaning": "typhoon",
+          "type": "on"
+        },
+        {
+          "word": "風",
+          "reading": "かぜ",
+          "meaning": "wind",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "春",
       "on": "シュン",
       "kun": "はる",
       "meaning": "spring (season)",
-      "word": "春 (はる) — spring"
+      "examples": [
+        {
+          "word": "春",
+          "reading": "はる",
+          "meaning": "spring",
+          "type": "kun"
+        },
+        {
+          "word": "青春",
+          "reading": "せいしゅん",
+          "meaning": "youth",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "森",
       "on": "シン",
       "kun": "もり",
       "meaning": "forest",
-      "word": "森 (もり) — forest"
+      "examples": [
+        {
+          "word": "森",
+          "reading": "もり",
+          "meaning": "forest",
+          "type": "kun"
+        },
+        {
+          "word": "森林",
+          "reading": "しんりん",
+          "meaning": "forest, woodland",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "館",
       "on": "カン",
       "kun": "—",
       "meaning": "hall, building",
-      "word": "図書館 (としょかん) — library"
+      "examples": [
+        {
+          "word": "図書館",
+          "reading": "としょかん",
+          "meaning": "library",
+          "type": "on"
+        },
+        {
+          "word": "大使館",
+          "reading": "たいしかん",
+          "meaning": "embassy",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "秋",
       "on": "シュウ",
       "kun": "あき",
       "meaning": "autumn",
-      "word": "秋 (あき) — autumn"
+      "examples": [
+        {
+          "word": "秋",
+          "reading": "あき",
+          "meaning": "autumn",
+          "type": "kun"
+        },
+        {
+          "word": "秋晴れ",
+          "reading": "あきばれ",
+          "meaning": "clear autumn weather",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "林",
       "on": "リン",
       "kun": "はやし",
       "meaning": "woods, grove",
-      "word": "林 (はやし) — woods"
+      "examples": [
+        {
+          "word": "林",
+          "reading": "はやし",
+          "meaning": "woods",
+          "type": "kun"
+        },
+        {
+          "word": "林業",
+          "reading": "りんぎょう",
+          "meaning": "forestry",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "夏",
       "on": "カ",
       "kun": "なつ",
       "meaning": "summer",
-      "word": "夏 (なつ) — summer"
+      "examples": [
+        {
+          "word": "夏",
+          "reading": "なつ",
+          "meaning": "summer",
+          "type": "kun"
+        },
+        {
+          "word": "夏休み",
+          "reading": "なつやすみ",
+          "meaning": "summer vacation",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "顔",
       "on": "ガン",
       "kun": "かお",
       "meaning": "face",
-      "word": "顔 (かお) — face"
+      "examples": [
+        {
+          "word": "顔",
+          "reading": "かお",
+          "meaning": "face",
+          "type": "kun"
+        },
+        {
+          "word": "顔色",
+          "reading": "かおいろ",
+          "meaning": "complexion",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "短",
       "on": "タン",
       "kun": "みじか(い)",
       "meaning": "short",
-      "word": "短い (みじかい) — short"
+      "examples": [
+        {
+          "word": "短い",
+          "reading": "みじかい",
+          "meaning": "short",
+          "type": "kun"
+        },
+        {
+          "word": "短期",
+          "reading": "たんき",
+          "meaning": "short-term",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "薬",
       "on": "ヤク",
       "kun": "くすり",
       "meaning": "medicine",
-      "word": "薬 (くすり) — medicine"
+      "examples": [
+        {
+          "word": "薬",
+          "reading": "くすり",
+          "meaning": "medicine",
+          "type": "kun"
+        },
+        {
+          "word": "薬局",
+          "reading": "やっきょく",
+          "meaning": "pharmacy",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "洋",
       "on": "ヨウ",
       "kun": "—",
       "meaning": "ocean, western",
-      "word": "洋服 (ようふく) — Western clothes"
+      "examples": [
+        {
+          "word": "洋服",
+          "reading": "ようふく",
+          "meaning": "Western clothes",
+          "type": "on"
+        },
+        {
+          "word": "洋食",
+          "reading": "ようしょく",
+          "meaning": "Western food",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "旅",
       "on": "リョ",
       "kun": "たび",
       "meaning": "travel",
-      "word": "旅行 (りょこう) — travel, trip"
+      "examples": [
+        {
+          "word": "旅行",
+          "reading": "りょこう",
+          "meaning": "travel, trip",
+          "type": "on"
+        },
+        {
+          "word": "旅",
+          "reading": "たび",
+          "meaning": "journey, trip",
+          "type": "kun"
+        }
+      ]
     },
     {
       "kj": "軽",
       "on": "ケイ",
       "kun": "かる(い)",
       "meaning": "light (weight)",
-      "word": "軽い (かるい) — light (weight)"
+      "examples": [
+        {
+          "word": "軽い",
+          "reading": "かるい",
+          "meaning": "light (weight)",
+          "type": "kun"
+        },
+        {
+          "word": "軽食",
+          "reading": "けいしょく",
+          "meaning": "light meal",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "池",
       "on": "チ",
       "kun": "いけ",
       "meaning": "pond",
-      "word": "池 (いけ) — pond"
+      "examples": [
+        {
+          "word": "池",
+          "reading": "いけ",
+          "meaning": "pond",
+          "type": "kun"
+        },
+        {
+          "word": "電池",
+          "reading": "でんち",
+          "meaning": "battery",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "遠",
       "on": "エン",
       "kun": "とお(い)",
       "meaning": "far",
-      "word": "遠い (とおい) — far"
+      "examples": [
+        {
+          "word": "遠い",
+          "reading": "とおい",
+          "meaning": "far",
+          "type": "kun"
+        },
+        {
+          "word": "遠慮",
+          "reading": "えんりょ",
+          "meaning": "reservation, holding back",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "借",
       "on": "シャク",
       "kun": "か(りる)",
       "meaning": "borrow",
-      "word": "借りる (かりる) — to borrow"
+      "examples": [
+        {
+          "word": "借りる",
+          "reading": "かりる",
+          "meaning": "to borrow",
+          "type": "kun"
+        },
+        {
+          "word": "借金",
+          "reading": "しゃっきん",
+          "meaning": "debt",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "弱",
       "on": "ジャク",
       "kun": "よわ(い)",
       "meaning": "weak",
-      "word": "弱い (よわい) — weak"
+      "examples": [
+        {
+          "word": "弱い",
+          "reading": "よわい",
+          "meaning": "weak",
+          "type": "kun"
+        },
+        {
+          "word": "弱点",
+          "reading": "じゃくてん",
+          "meaning": "weak point",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "肉",
       "on": "ニク",
       "kun": "—",
       "meaning": "meat",
-      "word": "肉 (にく) — meat"
+      "examples": [
+        {
+          "word": "肉",
+          "reading": "にく",
+          "meaning": "meat",
+          "type": "on"
+        },
+        {
+          "word": "牛肉",
+          "reading": "ぎゅうにく",
+          "meaning": "beef",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "貸",
       "on": "タイ",
       "kun": "か(す)",
       "meaning": "lend",
-      "word": "貸す (かす) — to lend"
+      "examples": [
+        {
+          "word": "貸す",
+          "reading": "かす",
+          "meaning": "to lend",
+          "type": "kun"
+        },
+        {
+          "word": "賃貸",
+          "reading": "ちんたい",
+          "meaning": "rental (property)",
+          "type": "on"
+        }
+      ]
     },
     {
       "kj": "村",
       "on": "ソン",
       "kun": "むら",
       "meaning": "village",
-      "word": "村 (むら) — village"
+      "examples": [
+        {
+          "word": "村",
+          "reading": "むら",
+          "meaning": "village",
+          "type": "kun"
+        },
+        {
+          "word": "農村",
+          "reading": "のうそん",
+          "meaning": "farming village",
+          "type": "on"
+        }
+      ]
     }
   ],
   "kanjiQuiz": [
     {
-      "q": "What is the reading of 質問 (しつ＋もん)?",
+      "q": "What is the reading of 質問?",
       "choices": [
         "しつぎ",
         "しつもん",
@@ -1222,7 +3445,7 @@
       "ex": "死 = death/die. 死ぬ is the dictionary form of 'to die'."
     },
     {
-      "q": "Which kanji means 'silver', as in 銀行 (bank)?",
+      "q": "Which kanji means 'silver', as in ぎんこう (bank)?",
       "choices": [
         "金",
         "銀",
@@ -1266,7 +3489,7 @@
       "ex": "働 = work. 働く is the verb 'to work'."
     },
     {
-      "q": "Which pair of kanji together form 研究 (research)?",
+      "q": "Which pair of kanji, read けんきゅう, means 'research'?",
       "choices": [
         "研＋究",
         "計＋画",
@@ -1299,7 +3522,7 @@
       "ex": "会社 (company) + 員 (member/staff) = 会社員, 'company employee'."
     },
     {
-      "q": "Which kanji means 'borrow', as in 借りる?",
+      "q": "Which kanji means 'borrow', as in かりる?",
       "choices": [
         "貸",
         "借",
@@ -1310,7 +3533,7 @@
       "ex": "借 = borrow (借りる). Don't confuse it with 貸 (lend, 貸す) — they look similar but point in opposite directions."
     },
     {
-      "q": "病院 and 病気 share which kanji, and what does it mean?",
+      "q": "びょういん (hospital) and びょうき (illness) share which kanji, and what does it mean?",
       "choices": [
         "院 — institution",
         "病 — sickness",
@@ -1376,7 +3599,7 @@
       "ex": "住 = live/reside. 住む is the dictionary form of 'to live (somewhere)'."
     },
     {
-      "q": "Which kanji pair makes 運動 (exercise)?",
+      "q": "Which kanji pair, read うんどう, means 'exercise'?",
       "choices": [
         "運＋動",
         "動＋業",
@@ -1453,7 +3676,7 @@
       "ex": "特 (special) + 別 (separate) = 特別, 'special'. You'll see it on menus and train tickets constantly."
     },
     {
-      "q": "Which kanji means 'to stop', as in 止まる?",
+      "q": "Which kanji means 'to stop', as in とまる?",
       "choices": [
         "正",
         "止",

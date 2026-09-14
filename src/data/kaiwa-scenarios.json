@@ -92,7 +92,8 @@
         "a": 1,
         "ex": "少々お待ちください is the keigo version of ちょっと待ってください — 'please wait a moment'. You hear it constantly from staff."
       }
-    ]
+    ],
+    "category": "food"
   },
   {
     "jp": "道を<ruby>尋<rt>たず</rt></ruby>ねる",
@@ -182,7 +183,8 @@
         "a": 1,
         "ex": "〜と is used for a reliable, automatic result — perfect for directions, where going straight always puts the place on your right."
       }
-    ]
+    ],
+    "category": "arrival"
   },
   {
     "jp": "ホテルで",
@@ -277,7 +279,8 @@
         "a": 1,
         "ex": "〜てもらう marks receiving an action from someone else — here, asking them to do the room change for you (Module on giving & receiving)."
       }
-    ]
+    ],
+    "category": "daily"
   },
   {
     "jp": "買い物・<ruby>試着<rt>しちゃく</rt></ruby>",
@@ -367,7 +370,8 @@
         "a": 1,
         "ex": "どちら＋のほうが is the two-way comparison. For three or more you'd need どれが一番〜 instead."
       }
-    ]
+    ],
+    "category": "errands"
   },
   {
     "jp": "<ruby>世間話<rt>せけんばなし</rt></ruby>",
@@ -457,7 +461,8 @@
         "a": 1,
         "ex": "〜ことになる reports an arrangement that has come about; 〜つもり would stress your personal intention. The speaker is announcing that it's now settled."
       }
-    ]
+    ],
+    "category": "social"
   },
   {
     "jp": "<ruby>電車<rt>でんしゃ</rt></ruby>の中で",
@@ -542,7 +547,8 @@
         "a": 1,
         "ex": "〜なければなりません expresses obligation, so the question asks whether you must transfer. 乗り換えなくてもいいですか would ask whether you can skip it."
       }
-    ]
+    ],
+    "category": "arrival"
   },
   {
     "jp": "<ruby>病院<rt>びょういん</rt></ruby>で",
@@ -632,7 +638,8 @@
         "a": 1,
         "ex": "〜ないほうがいい／やめておいたほうがいい is advice, not prohibition — softer than 〜てはいけません."
       }
-    ]
+    ],
+    "category": "trouble"
   },
   {
     "jp": "コンビニで",
@@ -727,7 +734,8 @@
         "a": 0,
         "ex": "大丈夫です works as a soft 'no thanks' all over Japan. そのままで大丈夫です ('as it is, it's fine') is the fuller version."
       }
-    ]
+    ],
+    "category": "food"
   },
   {
     "jp": "<ruby>友達<rt>ともだち</rt></ruby>を<ruby>誘<rt>さそ</rt></ruby>う",
@@ -812,7 +820,8 @@
         "a": 1,
         "ex": "The negative question form is the standard polite invitation — it leaves the listener room to decline, which is why it feels softer than 〜ましょう."
       }
-    ]
+    ],
+    "category": "social"
   },
   {
     "jp": "<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>撮<rt>と</rt></ruby>る",
@@ -897,7 +906,8 @@
         "a": 1,
         "ex": "〜ましょうか offers your own action for someone else's benefit — 'shall I ~ (for you)?'"
       }
-    ]
+    ],
+    "category": "social"
   },
   {
     "jp": "<ruby>空港<rt>くうこう</rt></ruby>・<ruby>入国審査<rt>にゅうこくしんさ</rt></ruby>",
@@ -992,7 +1002,8 @@
         "a": 1,
         "ex": "見せる is 'to show (someone)' — 見る is 'to look'. 〜ましょうか then turns it into an offer: 'shall I show you?'"
       }
-    ]
+    ],
+    "category": "arrival"
   },
   {
     "jp": "<ruby>駅<rt>えき</rt></ruby>で<ruby>切符<rt>きっぷ</rt></ruby>を<ruby>買<rt>か</rt></ruby>う",
@@ -1082,7 +1093,8 @@
         "a": 1,
         "ex": "〜んですが trails off deliberately, presenting your need as context for them to act on. It's the standard shape for requests at a counter."
       }
-    ]
+    ],
+    "category": "arrival"
   },
   {
     "jp": "タクシーで",
@@ -1172,7 +1184,8 @@
         "a": 0,
         "ex": "降りる (to get off/out) with で marking the place of the action. 乗る would mean getting in."
       }
-    ]
+    ],
+    "category": "arrival"
   },
   {
     "jp": "バスの<ruby>乗<rt>の</rt></ruby>り<ruby>方<rt>かた</rt></ruby>",
@@ -1257,7 +1270,8 @@
         "a": 1,
         "ex": "〜たら here is the 'when/once' conditional for a one-off future event — you arrive first, then they tell you."
       }
-    ]
+    ],
+    "category": "arrival"
   },
   {
     "jp": "カフェで",
@@ -1352,7 +1366,8 @@
         "a": 0,
         "ex": "持ち帰りで(お願いします) is the standard counter phrase. テイクアウトで also works."
       }
-    ]
+    ],
+    "category": "food"
   },
   {
     "jp": "<ruby>居酒屋<rt>いざかや</rt></ruby>で",
@@ -1447,7 +1462,8 @@
         "a": 1,
         "ex": "割り勘 is splitting the bill evenly. 別々 (separately) means each person pays for what they ordered — two different arrangements."
       }
-    ]
+    ],
+    "category": "food"
   },
   {
     "jp": "<ruby>電話<rt>でんわ</rt></ruby>で<ruby>予約<rt>よやく</rt></ruby>する",
@@ -1537,7 +1553,8 @@
         "a": 1,
         "ex": "失礼します is the standard polite way to close a phone call, and also to enter or leave a room."
       }
-    ]
+    ],
+    "category": "daily"
   },
   {
     "jp": "<ruby>遅<rt>おく</rt></ruby>れる<ruby>連絡<rt>れんらく</rt></ruby>",
@@ -1622,7 +1639,8 @@
         "a": 1,
         "ex": "〜たところ marks an action completed just now. A very natural way to tell a late friend not to worry."
       }
-    ]
+    ],
+    "category": "trouble"
   },
   {
     "jp": "<ruby>道<rt>みち</rt></ruby>に<ruby>迷<rt>まよ</rt></ruby>った",
@@ -1712,7 +1730,8 @@
         "a": 1,
         "ex": "Repeating instructions back with ですね is a native habit — it confirms comprehension and gives the other person a chance to fix a misunderstanding immediately."
       }
-    ]
+    ],
+    "category": "arrival"
   },
   {
     "jp": "<ruby>忘<rt>わす</rt></ruby>れ<ruby>物<rt>もの</rt></ruby>",
@@ -1802,7 +1821,8 @@
         "a": 1,
         "ex": "入る is a change-of-state verb, so 入っています = 'is (currently) inside' — the same state meaning as 住んでいます or 結婚しています."
       }
-    ]
+    ],
+    "category": "trouble"
   },
   {
     "jp": "<ruby>郵便局<rt>ゆうびんきょく</rt></ruby>で",
@@ -1892,7 +1912,8 @@
         "a": 0,
         "ex": "〜たいんですが states your goal and stops, inviting the staff to take over. Compare the blunter 送ってください."
       }
-    ]
+    ],
+    "category": "errands"
   },
   {
     "jp": "<ruby>薬局<rt>やっきょく</rt></ruby>で",
@@ -1982,7 +2003,8 @@
         "a": 1,
         "ex": "良くなる → 良くならなかった → 良くならなかったら. Negative + たら is the standard 'if it doesn't / hasn't' conditional."
       }
-    ]
+    ],
+    "category": "errands"
   },
   {
     "jp": "お<ruby>土産<rt>みやげ</rt></ruby>を<ruby>選<rt>えら</rt></ruby>ぶ",
@@ -2072,7 +2094,8 @@
         "a": 1,
         "ex": "にくい = hard/unlikely to. 壊れやすい would be the opposite: fragile."
       }
-    ]
+    ],
+    "category": "errands"
   },
   {
     "jp": "<ruby>温泉<rt>おんせん</rt></ruby>で",
@@ -2162,7 +2185,8 @@
         "a": 0,
         "ex": "い-adjectives form 〜ば by dropping い and adding ければ: 小さい → 小さければ."
       }
-    ]
+    ],
+    "category": "daily"
   },
   {
     "jp": "<ruby>美容院<rt>びよういん</rt></ruby>で",
@@ -2252,7 +2276,8 @@
         "a": 0,
         "ex": "〜ぐらいに sets the degree: 'to roughly the extent that it doesn't reach my eyes'. Handy whenever you need to describe 'about this much'."
       }
-    ]
+    ],
+    "category": "daily"
   },
   {
     "jp": "ポケットWi‑Fiを<ruby>借<rt>か</rt></ruby>りる",
@@ -2347,7 +2372,8 @@
         "a": 1,
         "ex": "〜ていただければ結構です is polite service language: 'if you would kindly do ~, that's all that's needed.' Recognising it saves you a lot of confusion at counters."
       }
-    ]
+    ],
+    "category": "errands"
   },
   {
     "jp": "<ruby>天気<rt>てんき</rt></ruby>・<ruby>季節<rt>きせつ</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>",
@@ -2437,7 +2463,8 @@
         "a": 1,
         "ex": "〜し lists reasons in a relaxed, spoken way, often trailing off — exactly the register you want in small talk."
       }
-    ]
+    ],
+    "category": "social"
   },
   {
     "jp": "<ruby>趣味<rt>しゅみ</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>",
@@ -2527,7 +2554,8 @@
         "a": 1,
         "ex": "くれる marks the action as coming toward you for your benefit. 教えてあげませんか would offer to teach them instead."
       }
-    ]
+    ],
+    "category": "social"
   },
   {
     "jp": "<ruby>家族<rt>かぞく</rt></ruby>と<ruby>出身<rt>しゅっしん</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>",
@@ -2617,7 +2645,8 @@
         "a": 0,
         "ex": "言われる is the passive of 言う. 'People often say that to me' — a very natural reaction line."
       }
-    ]
+    ],
+    "category": "social"
   },
   {
     "jp": "<ruby>職場<rt>しょくば</rt></ruby>で<ruby>頼<rt>たの</rt></ruby>む",
@@ -2707,7 +2736,8 @@
         "a": 1,
         "ex": "〜なくてもいい／大丈夫 = you don't have to. Don't confuse it with 急いではいけません, which would forbid hurrying."
       }
-    ]
+    ],
+    "category": "daily"
   },
   {
     "jp": "アルバイトの<ruby>面接<rt>めんせつ</rt></ruby>",
@@ -2802,7 +2832,8 @@
         "a": 1,
         "ex": "働く → 働ける (potential). Saying 働けます answers the ability question directly, which is what the interviewer asked."
       }
-    ]
+    ],
+    "category": "daily"
   },
   {
     "jp": "ホストファミリーと",
@@ -2897,7 +2928,8 @@
         "a": 1,
         "ex": "For ru-verbs, potential and passive look identical (食べられる), and context decides. 何でも ('anything at all') makes the ability reading the only sensible one."
       }
-    ]
+    ],
+    "category": "daily"
   },
   {
     "jp": "<ruby>誘<rt>さそ</rt></ruby>いをことわる",
@@ -2987,7 +3019,8 @@
         "a": 1,
         "ex": "Leaving the refusal unsaid is the politeness. Finishing the sentence with a blunt 行けません would be noticeably harder-edged."
       }
-    ]
+    ],
+    "category": "social"
   },
   {
     "jp": "お<ruby>祝<rt>いわ</rt></ruby>い・プレゼント",
@@ -3077,6 +3110,7 @@
         "a": 0,
         "ex": "もらえる (potential of もらう) + と (if/when) + うれしい: 'if I can receive your liking it, I'm happy.' A very natural way to hand something over."
       }
-    ]
+    ],
+    "category": "social"
   }
 ]

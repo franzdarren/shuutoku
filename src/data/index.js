@@ -23,14 +23,24 @@ export function countQuizPool() {
   return finalQuizGroups.reduce((n, g) => n + g.items.length, 0);
 }
 
+/** How many questions a module's "Module Check" draws — capped at 10, or
+ *  the module's own quiz pool size if it has fewer than that. */
+export function moduleCheckSize(mod) {
+  const pool = mod.points.reduce((n, p) => n + (p.quiz?.length || 0), 0);
+  return Math.min(10, pool);
+}
+
 /** Total number of quiz questions across the whole handbook — used for the
  *  sidebar progress bar. The Quiz Center's rotating sample is a fixed-size
- *  10-question slice (ids final-q0..9), so it contributes a flat 10. */
+ *  10-question slice (ids final-q0..9), so it contributes a flat 10; each
+ *  grammar module's own 10-question "Module Check" (ids modcheck{i}-q0..9)
+ *  works the same way. */
 export function countAllQuizItems() {
   const grammarQ = grammarModules.reduce((n, m) => n + m.points.reduce((a, p) => a + (p.quiz?.length || 0), 0), 0);
+  const moduleCheckQ = grammarModules.reduce((n, m) => n + moduleCheckSize(m), 0);
   const kanjiQ = kanjiQuiz.length;
   const readingQ = readingPassages.reduce((n, p) => n + (p.quiz?.length || 0), 0);
   const kaiwaQ = kaiwaScenarios.reduce((n, s) => n + (s.quiz?.length || 0), 0);
   const finalQ = Math.min(10, countQuizPool());
-  return grammarQ + kanjiQ + readingQ + kaiwaQ + finalQ;
+  return grammarQ + moduleCheckQ + kanjiQ + readingQ + kaiwaQ + finalQ;
 }

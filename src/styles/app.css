@@ -139,7 +139,7 @@ nav.mainnav button.navlink.active .soon-badge{ color:#fff; border-color:rgba(255
 /* Content area — centered within the space to the right of the
    sidebar instead of hugging the left edge. */
 main.content{ margin-left:272px; flex:1; min-width:0; padding:44px 48px 100px; display:flex; justify-content:center; }
-.section-inner{ width:100%; max-width:900px; }
+.section-inner{ width:100%; max-width:900px; min-width:0; }
 .section{ display:none; }
 .section.active{ display:block; animation:fadein .3s ease; }
 @keyframes fadein{ from{opacity:0; transform:translateY(6px);} to{opacity:1; transform:translateY(0);} }
@@ -197,8 +197,19 @@ h2.modtitle .modnum{ color:var(--gold); font-size:1.1rem; }
 .dline{ display:flex; gap:10px; margin-bottom:9px; align-items:flex-start; }
 .dline:last-child{ margin-bottom:0; }
 .dline .speaker{ flex-shrink:0; width:64px; font-size:.72rem; color:#fff; background:var(--accent, var(--indigo)); border-radius:3px; text-align:center; padding:3px 4px; height:fit-content; margin-top:3px; }
+.jp-row{ display:flex; align-items:baseline; flex-wrap:wrap; gap:8px; }
 .dline .dtext .jp{ font-family:var(--serif); font-size:1.08rem; line-height:1.9; }
 .dline .dtext .en{ font-size:.78rem; color:var(--ink-faint); margin-top:1px; }
+
+.speak-btn{
+  flex-shrink:0; width:24px; height:24px; border-radius:50%;
+  background:none; border:1px solid var(--line); color:var(--indigo);
+  font-size:.72rem; line-height:1; cursor:pointer; padding:0;
+  display:inline-flex; align-items:center; justify-content:center;
+  transition:transform .1s ease, border-color .15s ease;
+}
+.speak-btn:hover{ border-color:var(--indigo); }
+.speak-btn.playing{ transform:scale(.88); border-color:var(--indigo); }
 .kaiwa-tip{ font-size:.82rem; color:var(--matcha); margin-top:10px; padding-top:10px; border-top:1px dashed var(--line); }
 .kaiwa-tip b{ color:var(--matcha); }
 
@@ -226,14 +237,37 @@ h2.modtitle .modnum{ color:var(--gold); font-size:1.1rem; }
 .kanji-search{ flex:1; min-width:200px; padding:9px 14px; border:1px solid var(--line); border-radius:20px; background:var(--paper-2); color:var(--ink); font-family:var(--sans); font-size:.88rem; }
 .kanji-search:focus{ outline:none; border-color:var(--indigo); }
 .kanji-count{ font-size:.78rem; color:var(--ink-faint); white-space:nowrap; }
-.kgrid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:12px; margin-bottom:14px; }
+
+.kanji-pager{ display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px; margin-bottom:16px; }
+.kanji-pager-range{ font-size:.76rem; color:var(--ink-faint); }
+.kanji-pager-btns{ display:flex; flex-wrap:wrap; gap:6px; }
+.kanji-pager-btns button{
+  font-family:var(--sans); font-size:.78rem; padding:6px 11px;
+  background:var(--paper-2); border:1px solid var(--line); color:var(--ink-soft);
+  border-radius:var(--radius); cursor:pointer; transition:all .15s ease;
+}
+.kanji-pager-btns button:hover:not(:disabled){ border-color:var(--indigo); color:var(--indigo); }
+.kanji-pager-btns button.active{ background:var(--indigo); border-color:var(--indigo); color:#fff; }
+.kanji-pager-btns button:disabled{ opacity:.4; cursor:default; }
+
+.kgrid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:12px; margin-bottom:14px; }
 .kcard{ background:var(--paper-2); border:1px solid var(--line); border-radius:var(--radius); padding:14px 16px; display:flex; gap:14px; align-items:flex-start; }
 .kcard .kj{ font-family:var(--serif); font-size:2.1rem; color:var(--ink); line-height:1; flex-shrink:0; }
-.kcard .kmeta{ font-size:.78rem; }
+.kcard .kmeta{ font-size:.78rem; min-width:0; }
 .kcard .kmeaning{ color:var(--ink); font-weight:700; margin-bottom:3px; }
 .kcard .kreading{ color:var(--ink-soft); }
 .kcard .kreading .lbl{ color:var(--ink-faint); }
-.kcard .kword{ color:var(--gold); margin-top:4px; }
+.kexamples{ margin-top:6px; display:flex; flex-direction:column; gap:3px; }
+.kexample{ display:flex; flex-wrap:wrap; align-items:baseline; gap:5px; color:var(--gold); }
+.kexample-word{ font-family:var(--serif); }
+.kexample-reading{ color:var(--ink-faint); font-size:.9em; }
+.kexample-meaning{ color:var(--ink-soft); }
+.ktype{
+  font-size:.6rem; letter-spacing:.04em; text-transform:uppercase;
+  border-radius:8px; padding:0 5px; flex-shrink:0; line-height:1.4;
+}
+.ktype-on{ background:var(--indigo-tint); color:var(--indigo); }
+.ktype-kun{ background:var(--matcha-tint); color:var(--matcha); }
 
 .collapsible-head{ cursor:pointer; display:flex; align-items:center; gap:8px; margin:36px 0 12px; color:var(--ink-soft); font-size:.88rem; user-select:none; }
 .collapsible-head .tri{ transition:transform .2s ease; color:var(--gold); display:inline-block; }
@@ -298,6 +332,23 @@ h2.modtitle .modnum{ color:var(--gold); font-size:1.1rem; }
 .qc-reset:hover{ border-color:var(--shu); color:var(--shu); }
 .qc-group-title{ font-family:var(--serif); font-size:1.1rem; color:var(--gold); margin:28px 0 12px; }
 
+/* ============================================================
+   MODULE CHECK — per-module checkpoint quiz (Grammar Deep-Dive)
+   ============================================================ */
+.modcheck{
+  margin-top:32px; padding:22px 26px; background:var(--paper-2);
+  border:1px solid var(--line); border-radius:var(--radius);
+}
+.modcheck-head{ display:flex; justify-content:space-between; align-items:flex-start; gap:16px; flex-wrap:wrap; margin-bottom:14px; }
+.modcheck-title{ font-family:var(--serif); font-size:1.15rem; color:var(--gold); }
+.modcheck-sub{ font-size:.78rem; color:var(--ink-faint); max-width:52ch; margin-top:3px; }
+.modcheck-result{
+  font-size:.86rem; font-weight:700; padding:9px 14px; border-radius:var(--radius);
+  margin-bottom:14px;
+}
+.modcheck-result.pass{ background:var(--matcha-tint); color:var(--matcha); }
+.modcheck-result.retry{ background:var(--shu-tint); color:var(--shu); }
+
 footer.pagefoot{ margin-top:60px; padding-top:20px; border-top:1px solid var(--line); font-size:.74rem; color:var(--ink-faint); max-width:var(--measure); margin-left:auto; margin-right:auto; text-align:center; }
 
 /* ============================================================
@@ -308,11 +359,17 @@ footer.pagefoot{ margin-top:60px; padding-top:20px; border-top:1px solid var(--l
    ============================================================ */
 .jp-lookup{ cursor:text; }
 .lookup-pop{
-  position:fixed; z-index:200; max-width:280px; min-width:200px;
+  position:fixed; z-index:200;
+  max-width:min(280px, calc(100vw - 24px));
+  max-height:min(360px, calc(100vh - 24px));
+  overflow-y:auto; overscroll-behavior:contain;
+  min-width:200px;
   background:var(--paper-2); border:1px solid var(--line); border-radius:var(--radius);
   box-shadow:0 8px 24px var(--shadow); padding:14px 16px; font-size:.85rem;
   animation:popin .12s ease;
 }
+.lookup-pop::-webkit-scrollbar{ width:6px; }
+.lookup-pop::-webkit-scrollbar-thumb{ background:var(--line); border-radius:4px; }
 @keyframes popin{ from{opacity:0; transform:translateY(4px) scale(.98);} to{opacity:1; transform:translateY(0) scale(1);} }
 .lookup-pop .lp-word{ font-family:var(--serif); font-size:1.3rem; color:var(--ink); }
 .lookup-pop .lp-reading{ font-size:.8rem; color:var(--indigo); margin-top:1px; }
@@ -372,6 +429,26 @@ footer.pagefoot{ margin-top:60px; padding-top:20px; border-top:1px solid var(--l
   .sidebar{ transform:translateX(-100%); }
   .sidebar.open{ transform:translateX(0); }
   .menubtn{ display:block; }
-  main.content{ margin-left:0; padding:70px 20px 80px; }
+  main.content{ margin-left:0; padding:70px 16px 80px; }
   .section-head h1{ font-size:1.6rem; }
 }
+
+/* Flex children holding text need min-width:0 or they refuse to shrink
+   below their content's natural width and force the page to scroll
+   sideways — the single most common cause of mobile layout breakage. */
+.gcard-title, .dtext, .kmeta, .tipcard, .phrase, .kpline,
+.scenario-head .sjp, .modcheck-head > div:first-child, .qc-score > div{
+  min-width:0;
+}
+
+@media (max-width: 520px){
+  .section-head h1{ font-size:1.35rem; }
+  .gcard, .modcheck, .passage-card, .scenario-body, .dialogue-box{ padding-left:16px; padding-right:16px; }
+  .gcard-head{ flex-direction:column; }
+  .scenario-head{ flex-direction:column; align-items:flex-start; gap:4px; }
+  .qc-score{ padding:16px 18px; }
+  .kgrid{ grid-template-columns:1fr; }
+  .modjump-rich button{ flex:1 1 100%; }
+  .lookup-pop{ max-width:calc(100vw - 20px); }
+}
+

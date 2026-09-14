@@ -5,13 +5,10 @@ export default function VocabTooltip() {
   const { state, close } = useLookupState();
   if (!state) return null;
 
-  const { term, x, y, loading, result } = state;
-  const flipBelow = y < 160;
-  const style = {
-    left: x,
-    top: flipBelow ? y + 26 : y - 10,
-    transform: `translate(-50%, ${flipBelow ? "0" : "-100%"})`,
-  };
+  const { term, box, loading, result } = state;
+  const style = { left: box.left, maxHeight: box.maxHeight, transform: "translateX(-50%)" };
+  if (box.top !== undefined) style.top = box.top;
+  if (box.bottom !== undefined) style.bottom = box.bottom;
 
   return (
     <div className="lookup-pop" style={style} role="dialog" aria-label={"Definition of " + term}>

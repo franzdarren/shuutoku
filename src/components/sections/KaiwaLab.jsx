@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { kaiwaTips, phraseBank, kaiwaScenarios, countPhrases } from "../../data/index.js";
 import JpText from "../JpText.jsx";
 import Quiz from "../Quiz.jsx";
+import SpeakButton from "../SpeakButton.jsx";
 
 // Scenario titles carry inline <ruby> furigana; for a plain-text nav label,
 // drop the reading (<rt>...</rt>) before stripping the remaining tags —
@@ -9,7 +11,29 @@ function plainTitle(html) {
   return html.replace(/<rt>.*?<\/rt>/g, "").replace(/<[^>]+>/g, "");
 }
 
+const CATEGORIES = [
+  { id: "arrival", jp: "到着・交通", en: "Arrival & getting around" },
+  { id: "food", jp: "食事", en: "Food & drink" },
+  { id: "errands", jp: "買い物・用事", en: "Shopping & errands" },
+  { id: "trouble", jp: "困った時", en: "Handling problems" },
+  { id: "social", jp: "社交・雑談", en: "Socializing & small talk" },
+  { id: "daily", jp: "生活・仕事", en: "Daily life & work" },
+];
+
+// Keep each scenario's original index (used for stable quiz ids and anchor
+// ids) attached even after grouping/filtering by category.
+const scenariosWithIndex = kaiwaScenarios.map((sc, i) => ({ sc, i }));
+
 export default function KaiwaLab() {
+  const [activeCat, setActiveCat] = useState(CATEGORIES[0].id);
+  const cat = CATEGORIES.find((c) => c.id === activeCat);
+  const scenariosInCat = scenariosWithIndex.filter(({ sc }) => sc.category === activeCat);
+
+  function goToCategory(id) {
+    setActiveCat(id);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
   return (
     <>
       <div className="section-head">
@@ -42,7 +66,10 @@ export default function KaiwaLab() {
           <div className="phrasebank">
             {g.items.map((p, pi) => (
               <div key={pi} className="phrase">
-                <JpText tag="div" className="pjp" html={p.jp} />
+                <div className="jp-row">
+                  <JpText tag="span" className="pjp" html={p.jp} />
+                  <SpeakButton html={p.jp} />
+                </div>
                 <div className="pen">{p.en}</div>
               </div>
             ))}
@@ -51,15 +78,26 @@ export default function KaiwaLab() {
       ))}
 
       <h2 className="modtitle"><span className="modnum">場</span> Scenario Scripts</h2>
-      <div className="modtitle-en">Read both parts out loud, then cover the Japanese and try to reconstruct it from the English</div>
+      <div className="modtitle-en">{kaiwaScenarios.length} scripts in {CATEGORIES.length} groups — pick a group below, then read both parts out loud and try to reconstruct the Japanese from the English</div>
 
-      <div className="modjump">
-        {kaiwaScenarios.map((sc, i) => (
-          <button key={i} onClick={() => document.getElementById("sc-" + i)?.scrollIntoView({ behavior: "smooth", block: "start" })}>{i + 1}. {plainTitle(sc.jp)}</button>
+      <div className="modjump modjump-rich">
+        {CATEGORIES.map((c) => (
+          <button key={c.id} className={c.id === activeCat ? "active" : ""} onClick={() => goToCategory(c.id)}>
+            <span className="mj-jp">{c.jp}</span>
+            <span className="mj-en">{c.en}</span>
+          </button>
         ))}
       </div>
 
-      {kaiwaScenarios.map((sc, i) => (
+      <div className="modjump" style={{ marginBottom: 30 }}>
+        {scenariosInCat.map(({ sc, i }) => (
+          <button key={i} onClick={() => document.getElementById("sc-" + i)?.scrollIntoView({ behavior: "smooth", block: "start" })}>{plainTitle(sc.jp)}</button>
+        ))}
+      </div>
+
+      <div className="modtitle-en" style={{ marginBottom: 12 }}>{cat.jp} — {cat.en} ({scenariosInCat.length} scenarios)</div>
+
+      {scenariosInCat.map(({ sc, i }) => (
         <div key={i} className="scenario-card" id={"sc-" + i}>
           <div className="scenario-head">
             <JpText tag="span" className="sjp" html={(i + 1) + ". " + sc.jp} />
@@ -72,7 +110,10 @@ export default function KaiwaLab() {
                 <div key={li} className="dline">
                   <div className="speaker" style={{ background: "var(--indigo)" }}>{d.who}</div>
                   <div className="dtext">
-                    <JpText tag="div" className="jp" html={d.jp} />
+                    <div className="jp-row">
+                      <JpText tag="span" className="jp" html={d.jp} />
+                      <SpeakButton html={d.jp} />
+                    </div>
                     <div className="en">{d.en}</div>
                   </div>
                 </div>
@@ -85,6 +126,7 @@ export default function KaiwaLab() {
                 {sc.keyPhrases.map((p, pi) => (
                   <div key={pi} className="kpline">
                     <JpText tag="span" className="kpjp" html={p.jp} />
+                    <SpeakButton html={p.jp} />
                     <span className="kpen">{p.en}</span>
                   </div>
                 ))}

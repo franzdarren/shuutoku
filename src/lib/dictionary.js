@@ -41,12 +41,11 @@ export function buildLocalIndex({ readingPassages = [], kanjiFocus = [] } = {}) 
         source: "N4 kanji list",
       });
     }
-    if (k.word) {
-      const wordText = k.word.replace(/\s*\([^)]*\)\s*$/, "").trim();
-      if (wordText && !index.has(wordText)) {
-        index.set(wordText, { jp: wordText, reading: "", en: k.word, source: "N4 kanji list" });
+    (k.examples || []).forEach((ex) => {
+      if (ex.word && !index.has(ex.word)) {
+        index.set(ex.word, { jp: ex.word, reading: ex.reading, en: ex.meaning, source: "N4 kanji list" });
       }
-    }
+    });
   });
   localIndex = index;
   return index;

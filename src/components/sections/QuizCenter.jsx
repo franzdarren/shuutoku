@@ -1,32 +1,19 @@
 import { useState } from "react";
 import { finalQuizGroups, countQuizPool } from "../../data/index.js";
 import { useQuiz } from "../../context/QuizContext.jsx";
+import { drawSample } from "../../lib/quiz.js";
 import Quiz from "../Quiz.jsx";
 
-function shuffled(items) {
-  const copy = items.slice();
-  for (let i = copy.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [copy[i], copy[j]] = [copy[j], copy[i]];
-  }
-  return copy;
-}
-
-function drawSample() {
-  const pool = [];
-  finalQuizGroups.forEach((group) => group.items.forEach((item) => pool.push(item)));
-  return shuffled(pool).slice(0, Math.min(10, pool.length));
-}
-
+const finalPool = finalQuizGroups.flatMap((g) => g.items);
 const FINAL_IDS = Array.from({ length: 10 }, (_, i) => "final-q" + i);
 
 export default function QuizCenter() {
   const { stats, resetAll, clearQuestions } = useQuiz();
-  const [sample, setSample] = useState(() => drawSample());
+  const [sample, setSample] = useState(() => drawSample(finalPool));
 
   function newSet() {
     clearQuestions(FINAL_IDS);
-    setSample(drawSample());
+    setSample(drawSample(finalPool));
   }
 
   return (

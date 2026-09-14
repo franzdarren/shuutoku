@@ -4,16 +4,37 @@ import { lookupLocal, lookupWord } from "../lib/dictionary.js";
 const LookupContext = createContext(null);
 
 const JP_CHAR = /[぀-ヿ㐀-鿿ｦ-ﾟ]/;
-const POP_WIDTH = 300;
+const MARGIN = 12;
+const MAX_POP_HEIGHT = 360;
+const MAX_POP_WIDTH = 280;
+
+/** Places the popup on whichever side of the selection (above/below) has
+ *  more room, and caps its height to whatever actually fits there — so a
+ *  long Jisho result never grows past the edge of the window (it scrolls
+ *  internally instead), and the close button is never pushed off-screen. */
+function computeBox(rect) {
+  const popWidth = Math.min(MAX_POP_WIDTH, window.innerWidth - MARGIN * 2);
+  const left = Math.min(
+    Math.max(rect.left + rect.width / 2, popWidth / 2 + MARGIN),
+    window.innerWidth - popWidth / 2 - MARGIN
+  );
+  const spaceBelow = window.innerHeight - rect.bottom - MARGIN;
+  const spaceAbove = rect.top - MARGIN;
+  const placeBelow = spaceBelow >= spaceAbove;
+  const maxHeight = Math.max(120, Math.min(MAX_POP_HEIGHT, placeBelow ? spaceBelow : spaceAbove));
+  return placeBelow
+    ? { left, top: rect.bottom + 8, maxHeight }
+    : { left, bottom: window.innerHeight - rect.top + 8, maxHeight };
+}
 
 export function LookupProvider({ children }) {
-  const [state, setState] = useState(null); // {term, x, y, loading, result}
+  const [state, setState] = useState(null); // {term, loading, result, box:{...}}
 
   const close = useCallback(() => setState(null), []);
 
-  const runLookup = useCallback(async (term, x, y) => {
+  const runLookup = useCallback(async (term, box) => {
     const local = lookupLocal(term);
-    setState({ term, x, y, loading: !local, result: local ? { status: "local", entry: local } : null });
+    setState({ term, box, loading: !local, result: local ? { status: "local", entry: local } : null });
     if (local) return;
     const result = await lookupWord(term);
     // only apply if the user hasn't since opened a different lookup
@@ -36,9 +57,7 @@ export function LookupProvider({ children }) {
       if (!text || text.length > 40 || !JP_CHAR.test(text)) return;
 
       const rect = sel.getRangeAt(0).getBoundingClientRect();
-      const x = Math.min(Math.max(rect.left + rect.width / 2, POP_WIDTH / 2 + 8), window.innerWidth - POP_WIDTH / 2 - 8);
-      const y = rect.top;
-      runLookup(text, x, y);
+      runLookup(text, computeBox(rect));
     }
     function onDown(e) {
       // clicking anywhere outside the popup closes it; native selection
