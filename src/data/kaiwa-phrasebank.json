@@ -1,0 +1,654 @@
+[
+  {
+    "cat": "あいさつ・出会い",
+    "catEn": "Greetings & first contact",
+    "items": [
+      {
+        "jp": "はじめまして",
+        "en": "Nice to meet you (first time only)"
+      },
+      {
+        "jp": "よろしくお願いします",
+        "en": "Please treat me well / looking forward to it"
+      },
+      {
+        "jp": "お世話になります",
+        "en": "Thank you in advance for your help"
+      },
+      {
+        "jp": "お久しぶりです",
+        "en": "It's been a long time"
+      },
+      {
+        "jp": "お元気ですか",
+        "en": "How have you been?"
+      },
+      {
+        "jp": "おかげさまで元気です",
+        "en": "I'm well, thanks for asking"
+      },
+      {
+        "jp": "失礼します",
+        "en": "Excuse me (entering/leaving a room)"
+      },
+      {
+        "jp": "お邪魔します",
+        "en": "Sorry to intrude (entering someone's home)"
+      },
+      {
+        "jp": "お名前は何ですか",
+        "en": "What's your name?"
+      },
+      {
+        "jp": "どちらから来ましたか",
+        "en": "Where are you from?"
+      }
+    ]
+  },
+  {
+    "cat": "つなぎ言葉",
+    "catEn": "Fillers & buying time",
+    "items": [
+      {
+        "jp": "そうですね",
+        "en": "Well, let's see... / I agree"
+      },
+      {
+        "jp": "ええと…",
+        "en": "Um... (thinking)"
+      },
+      {
+        "jp": "あの…",
+        "en": "Um, excuse me... (getting attention)"
+      },
+      {
+        "jp": "まあ…",
+        "en": "Well... (softening a statement)"
+      },
+      {
+        "jp": "なんと言うか…",
+        "en": "How should I put it..."
+      },
+      {
+        "jp": "ちょっと考えさせてください",
+        "en": "Let me think for a second"
+      },
+      {
+        "jp": "つまり…",
+        "en": "In other words..."
+      },
+      {
+        "jp": "実は…",
+        "en": "Actually... (introducing the real point)"
+      },
+      {
+        "jp": "それで…",
+        "en": "And so... (continuing your own story)"
+      },
+      {
+        "jp": "何だっけ…",
+        "en": "What was it again... (casual, to yourself)"
+      }
+    ]
+  },
+  {
+    "cat": "あいづち",
+    "catEn": "Reactions — showing you're listening",
+    "items": [
+      {
+        "jp": "なるほど",
+        "en": "I see, that makes sense"
+      },
+      {
+        "jp": "たしかに",
+        "en": "That's true / indeed"
+      },
+      {
+        "jp": "やっぱり",
+        "en": "As I thought / after all"
+      },
+      {
+        "jp": "それで？",
+        "en": "And then? / so?"
+      },
+      {
+        "jp": "本当ですか",
+        "en": "Really?"
+      },
+      {
+        "jp": "すごいですね",
+        "en": "That's amazing"
+      },
+      {
+        "jp": "へえ、そうなんですか",
+        "en": "Huh, is that so"
+      },
+      {
+        "jp": "いいですね",
+        "en": "That sounds nice"
+      },
+      {
+        "jp": "わかります",
+        "en": "I know what you mean"
+      },
+      {
+        "jp": "大変でしたね",
+        "en": "That must have been rough"
+      },
+      {
+        "jp": "よかったですね",
+        "en": "I'm glad for you"
+      },
+      {
+        "jp": "ですよね",
+        "en": "Right? / exactly (agreeing warmly)"
+      }
+    ]
+  },
+  {
+    "cat": "聞き返す",
+    "catEn": "When you didn't catch it",
+    "items": [
+      {
+        "jp": "もう一度お願いします",
+        "en": "One more time, please"
+      },
+      {
+        "jp": "ゆっくり話してください",
+        "en": "Please speak slowly"
+      },
+      {
+        "jp": "すみません、聞こえませんでした",
+        "en": "Sorry, I couldn't hear you"
+      },
+      {
+        "jp": "どういう意味ですか",
+        "en": "What does that mean?"
+      },
+      {
+        "jp": "日本語で何と言いますか",
+        "en": "How do you say it in Japanese?"
+      },
+      {
+        "jp": "書いてもらえますか",
+        "en": "Could you write it down?"
+      },
+      {
+        "jp": "つまり、〜ということですか",
+        "en": "So you mean...?"
+      },
+      {
+        "jp": "すみません、まだ日本語が上手じゃないんです",
+        "en": "Sorry, my Japanese isn't good yet"
+      },
+      {
+        "jp": "英語でもいいですか",
+        "en": "Would English be okay? (last resort)"
+      },
+      {
+        "jp": "ゆっくりなら、わかります",
+        "en": "If it's slow, I understand"
+      }
+    ]
+  },
+  {
+    "cat": "お願いする",
+    "catEn": "Making requests",
+    "items": [
+      {
+        "jp": "お願いします",
+        "en": "Please (do it) / yes please"
+      },
+      {
+        "jp": "〜をください",
+        "en": "Please give me ~"
+      },
+      {
+        "jp": "〜てもいいですか",
+        "en": "Is it okay if I ~?"
+      },
+      {
+        "jp": "〜てくれませんか",
+        "en": "Could you ~ for me?"
+      },
+      {
+        "jp": "〜ていただけませんか",
+        "en": "Could you kindly ~? (politer)"
+      },
+      {
+        "jp": "手伝ってもらえますか",
+        "en": "Could you give me a hand?"
+      },
+      {
+        "jp": "ちょっと待ってください",
+        "en": "Please wait a moment"
+      },
+      {
+        "jp": "教えてください",
+        "en": "Please tell me / show me"
+      },
+      {
+        "jp": "すみません、お願いがあるんですが",
+        "en": "Excuse me, I have a favour to ask"
+      },
+      {
+        "jp": "もし よかったら…",
+        "en": "If you don't mind... / if it's okay with you"
+      }
+    ]
+  },
+  {
+    "cat": "ことわる・やわらげる",
+    "catEn": "Refusing & softening",
+    "items": [
+      {
+        "jp": "ちょっと…",
+        "en": "That's a bit... (soft refusal — leave it unfinished)"
+      },
+      {
+        "jp": "すみません、今日はちょっと",
+        "en": "Sorry, today is a little difficult"
+      },
+      {
+        "jp": "また今度お願いします",
+        "en": "Another time, please"
+      },
+      {
+        "jp": "ありがたいんですが…",
+        "en": "I appreciate it, but..."
+      },
+      {
+        "jp": "ちょっと難しいと思います",
+        "en": "I think that would be difficult"
+      },
+      {
+        "jp": "今はやめておきます",
+        "en": "I'll pass for now"
+      },
+      {
+        "jp": "けっこうです",
+        "en": "No thank you (declining an offer)"
+      },
+      {
+        "jp": "大丈夫です",
+        "en": "I'm fine / no need (very common polite decline)"
+      },
+      {
+        "jp": "考えておきます",
+        "en": "I'll think about it"
+      },
+      {
+        "jp": "残念ですが、行けません",
+        "en": "Unfortunately I can't go"
+      }
+    ]
+  },
+  {
+    "cat": "店・レストランで",
+    "catEn": "Shops & restaurants",
+    "items": [
+      {
+        "jp": "おすすめは何ですか",
+        "en": "What do you recommend?"
+      },
+      {
+        "jp": "これは何ですか",
+        "en": "What is this?"
+      },
+      {
+        "jp": "辛くないものはありますか",
+        "en": "Do you have anything not spicy?"
+      },
+      {
+        "jp": "これをお願いします",
+        "en": "I'll have this one, please"
+      },
+      {
+        "jp": "お会計をお願いします",
+        "en": "The bill, please"
+      },
+      {
+        "jp": "カードで払えますか",
+        "en": "Can I pay by card?"
+      },
+      {
+        "jp": "別々でお願いします",
+        "en": "Separate bills, please"
+      },
+      {
+        "jp": "持ち帰りでお願いします",
+        "en": "To take away, please"
+      },
+      {
+        "jp": "いくらですか",
+        "en": "How much is it?"
+      },
+      {
+        "jp": "試着してもいいですか",
+        "en": "May I try this on?"
+      },
+      {
+        "jp": "もっと安いのはありますか",
+        "en": "Do you have a cheaper one?"
+      },
+      {
+        "jp": "これで大丈夫です",
+        "en": "This is fine"
+      }
+    ]
+  },
+  {
+    "cat": "移動・道",
+    "catEn": "Getting around",
+    "items": [
+      {
+        "jp": "〜はどこですか",
+        "en": "Where is ~?"
+      },
+      {
+        "jp": "どうやって行きますか",
+        "en": "How do I get there?"
+      },
+      {
+        "jp": "ここから遠いですか",
+        "en": "Is it far from here?"
+      },
+      {
+        "jp": "歩いて何分ぐらいですか",
+        "en": "About how many minutes on foot?"
+      },
+      {
+        "jp": "乗り換えが必要ですか",
+        "en": "Do I need to change trains?"
+      },
+      {
+        "jp": "これは〜行きですか",
+        "en": "Does this go to ~?"
+      },
+      {
+        "jp": "次の駅で降ります",
+        "en": "I'm getting off at the next station"
+      },
+      {
+        "jp": "ここで降ります",
+        "en": "I'll get off here"
+      },
+      {
+        "jp": "道に迷いました",
+        "en": "I'm lost"
+      },
+      {
+        "jp": "地図で教えてもらえますか",
+        "en": "Could you show me on the map?"
+      }
+    ]
+  },
+  {
+    "cat": "時間・予定",
+    "catEn": "Time & plans",
+    "items": [
+      {
+        "jp": "何時からですか",
+        "en": "What time does it start?"
+      },
+      {
+        "jp": "何時までですか",
+        "en": "Until what time is it open?"
+      },
+      {
+        "jp": "いつがいいですか",
+        "en": "When works for you?"
+      },
+      {
+        "jp": "何時に会いましょうか",
+        "en": "What time shall we meet?"
+      },
+      {
+        "jp": "予定がありますか",
+        "en": "Do you have plans?"
+      },
+      {
+        "jp": "今週末は空いています",
+        "en": "I'm free this weekend"
+      },
+      {
+        "jp": "ちょっと遅れます",
+        "en": "I'll be a little late"
+      },
+      {
+        "jp": "間に合いますか",
+        "en": "Will we make it in time?"
+      },
+      {
+        "jp": "時間を変えてもいいですか",
+        "en": "Could we change the time?"
+      },
+      {
+        "jp": "楽しみにしています",
+        "en": "I'm looking forward to it"
+      }
+    ]
+  },
+  {
+    "cat": "気持ちを伝える",
+    "catEn": "Feelings & opinions",
+    "items": [
+      {
+        "jp": "うれしいです",
+        "en": "I'm happy"
+      },
+      {
+        "jp": "楽しかったです",
+        "en": "It was fun"
+      },
+      {
+        "jp": "おいしかったです",
+        "en": "It was delicious"
+      },
+      {
+        "jp": "疲れました",
+        "en": "I'm tired"
+      },
+      {
+        "jp": "びっくりしました",
+        "en": "I was surprised"
+      },
+      {
+        "jp": "心配しています",
+        "en": "I'm worried"
+      },
+      {
+        "jp": "〜と思います",
+        "en": "I think that ~ (softens any opinion)"
+      },
+      {
+        "jp": "〜かもしれません",
+        "en": "It might be ~"
+      },
+      {
+        "jp": "どちらでもいいです",
+        "en": "Either is fine"
+      },
+      {
+        "jp": "私も同じです",
+        "en": "Same for me"
+      }
+    ]
+  },
+  {
+    "cat": "トラブル",
+    "catEn": "When something goes wrong",
+    "items": [
+      {
+        "jp": "すみません、困っているんですが",
+        "en": "Excuse me, I'm having trouble"
+      },
+      {
+        "jp": "〜がこわれています",
+        "en": "The ~ is broken"
+      },
+      {
+        "jp": "〜が動きません",
+        "en": "The ~ won't work"
+      },
+      {
+        "jp": "お湯が出ません",
+        "en": "There's no hot water"
+      },
+      {
+        "jp": "Wi‑Fiがつながりません",
+        "en": "The wifi won't connect"
+      },
+      {
+        "jp": "財布をなくしました",
+        "en": "I lost my wallet"
+      },
+      {
+        "jp": "電車に忘れました",
+        "en": "I left it on the train"
+      },
+      {
+        "jp": "気分が悪いです",
+        "en": "I feel unwell"
+      },
+      {
+        "jp": "病院はどこですか",
+        "en": "Where is a hospital?"
+      },
+      {
+        "jp": "助けてください",
+        "en": "Please help me"
+      }
+    ]
+  },
+  {
+    "cat": "あやまる・お礼",
+    "catEn": "Apologies & thanks",
+    "items": [
+      {
+        "jp": "すみません",
+        "en": "Excuse me / sorry (also to get attention)"
+      },
+      {
+        "jp": "ごめんなさい",
+        "en": "I'm sorry (personal, warmer)"
+      },
+      {
+        "jp": "申し訳ありません",
+        "en": "I deeply apologise (formal)"
+      },
+      {
+        "jp": "お待たせしました",
+        "en": "Sorry to keep you waiting"
+      },
+      {
+        "jp": "ご迷惑をかけました",
+        "en": "I caused you trouble"
+      },
+      {
+        "jp": "ありがとうございます",
+        "en": "Thank you"
+      },
+      {
+        "jp": "どういたしまして",
+        "en": "You're welcome"
+      },
+      {
+        "jp": "助かりました",
+        "en": "That was a big help"
+      },
+      {
+        "jp": "おかげさまで",
+        "en": "Thanks to you"
+      },
+      {
+        "jp": "わざわざありがとうございます",
+        "en": "Thank you for going out of your way"
+      }
+    ]
+  },
+  {
+    "cat": "別れのあいさつ",
+    "catEn": "Wrapping up & goodbyes",
+    "items": [
+      {
+        "jp": "じゃあ、また",
+        "en": "See you then"
+      },
+      {
+        "jp": "また明日",
+        "en": "See you tomorrow"
+      },
+      {
+        "jp": "気をつけて",
+        "en": "Take care (on your way)"
+      },
+      {
+        "jp": "お大事に",
+        "en": "Take care (when someone is ill)"
+      },
+      {
+        "jp": "お先に失礼します",
+        "en": "Excuse me for leaving first (at work)"
+      },
+      {
+        "jp": "お疲れさまでした",
+        "en": "Thanks for your hard work (leaving work)"
+      },
+      {
+        "jp": "また連絡します",
+        "en": "I'll be in touch"
+      },
+      {
+        "jp": "今日はありがとうございました",
+        "en": "Thank you for today"
+      },
+      {
+        "jp": "よい一日を",
+        "en": "Have a good day"
+      },
+      {
+        "jp": "お先にどうぞ",
+        "en": "After you / go ahead"
+      }
+    ]
+  },
+  {
+    "cat": "話を広げる",
+    "catEn": "Steering & extending the conversation",
+    "items": [
+      {
+        "jp": "〜はどうですか",
+        "en": "How about ~? (turning it back to them)"
+      },
+      {
+        "jp": "〜と言えば…",
+        "en": "Speaking of ~..."
+      },
+      {
+        "jp": "そういえば…",
+        "en": "Now that you mention it... / by the way"
+      },
+      {
+        "jp": "ちなみに…",
+        "en": "Incidentally..."
+      },
+      {
+        "jp": "例えば？",
+        "en": "For example?"
+      },
+      {
+        "jp": "どうしてですか",
+        "en": "Why is that?"
+      },
+      {
+        "jp": "よく〜んですか",
+        "en": "Do you often ~?"
+      },
+      {
+        "jp": "かしこまりました",
+        "en": "Certainly (what staff say to you)"
+      }
+    ]
+  }
+]

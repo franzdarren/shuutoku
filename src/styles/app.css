@@ -1,0 +1,319 @@
+/* ============================================================
+   DESIGN TOKENS
+   ============================================================ */
+:root{
+  --fs-scale: 1;
+  --paper: #EEEAE0;
+  --paper-2: #E3DDD0;
+  --paper-3: #DAD2C1;
+  --ink: #24211D;
+  --ink-soft: #5B5648;
+  --ink-faint: #8B8474;
+  --indigo: #29466F;
+  --indigo-deep: #1B2F4C;
+  --indigo-tint: #DCE3EC;
+  --gold: #A67C2E;
+  --gold-tint: #F1E4C6;
+  --shu: #B5553A;
+  --shu-tint: #F4E1D9;
+  --matcha: #5D7A55;
+  --matcha-tint: #E3EBE0;
+  --line: #D6CDBB;
+  --line-soft: #E1DACB;
+  --shadow: rgba(40,32,16,.12);
+  --serif: "Shippori Mincho", serif;
+  --sans: "Zen Kaku Gothic New", sans-serif;
+  --radius: 8px;
+  --measure: 640px;
+}
+body.dark{
+  --paper: #1E1B17;
+  --paper-2: #262220;
+  --paper-3: #322D28;
+  --ink: #EDE6D8;
+  --ink-soft: #C1B8A6;
+  --ink-faint: #857D6C;
+  --indigo: #8FADD1;
+  --indigo-deep: #6C90BA;
+  --indigo-tint: #29354A;
+  --gold: #D8B25E;
+  --gold-tint: #3B3120;
+  --shu: #DD8265;
+  --shu-tint: #402A22;
+  --matcha: #9DBC97;
+  --matcha-tint: #263323;
+  --line: #453F37;
+  --line-soft: #362F29;
+  --shadow: rgba(0,0,0,.35);
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth; font-size:calc(16px * var(--fs-scale));}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--sans);
+  line-height:1.7;
+  transition:background .25s ease, color .25s ease;
+}
+
+/* ============================================================
+   FURIGANA (ruby) — toggled globally, and text-selectable
+   without dragging the reading into the selection (so the
+   highlight-to-look-up tooltip gets clean base text).
+   ============================================================ */
+ruby{ ruby-position: over; }
+rt{
+  font-family:var(--sans);
+  font-size:.55em;
+  color:var(--indigo);
+  font-weight:500;
+  user-select:none;
+}
+body.no-furigana rt{ display:none; }
+
+/* ============================================================
+   LAYOUT SHELL
+   ============================================================ */
+.shell{ display:flex; min-height:100vh; }
+
+.sidebar{
+  position:fixed; top:0; left:0; bottom:0; width:272px;
+  background:var(--paper-2);
+  border-right:1px solid var(--line);
+  display:flex; flex-direction:column;
+  z-index:40;
+  transition:transform .25s ease, background .25s ease, border-color .25s ease;
+}
+.sidebar-scroll{ flex:1; overflow-y:auto; padding:0 0 12px 0; }
+.sidebar-scroll::-webkit-scrollbar{ width:6px; }
+.sidebar-scroll::-webkit-scrollbar-thumb{ background:var(--line); border-radius:4px; }
+
+.brand{ padding:24px 22px 16px; border-bottom:1px solid var(--line); }
+.brand .jp{ font-family:var(--serif); font-weight:700; font-size:1.5rem; color:var(--ink); letter-spacing:.02em; line-height:1.3; }
+.brand .en{ font-size:.72rem; color:var(--ink-faint); margin-top:4px; letter-spacing:.03em; }
+
+nav.mainnav{ padding:14px 12px; }
+nav.mainnav .navgroup-label{ font-size:.68rem; color:var(--ink-faint); padding:10px 10px 4px; letter-spacing:.08em; }
+nav.mainnav button.navlink{
+  display:flex; align-items:center; gap:10px; width:100%;
+  text-align:left; background:none; border:none; cursor:pointer;
+  color:var(--ink-soft); font-family:var(--sans); font-size:.92rem;
+  padding:10px 10px; border-radius:var(--radius); margin-bottom:2px;
+  transition:background .15s ease, color .15s ease;
+}
+nav.mainnav button.navlink .mk{ font-family:var(--serif); font-size:1.05rem; width:1.4em; text-align:center; color:var(--indigo); }
+nav.mainnav button.navlink:hover{ background:var(--paper-3); color:var(--ink); }
+nav.mainnav button.navlink.active{ background:var(--indigo); color:#fff; }
+nav.mainnav button.navlink.active .mk{ color:#fff; }
+
+.settings-panel{ border-top:1px solid var(--line); padding:16px 18px 20px; background:var(--paper-2); }
+.settings-panel .stitle{ font-size:.68rem; color:var(--ink-faint); letter-spacing:.08em; margin-bottom:10px; }
+.setting-row{ display:flex; align-items:center; justify-content:space-between; margin-bottom:10px; font-size:.82rem; color:var(--ink-soft); }
+.switch{ position:relative; width:38px; height:21px; flex-shrink:0; background:var(--line); border-radius:20px; cursor:pointer; border:none; transition:background .2s ease; padding:0; }
+.switch::after{ content:""; position:absolute; top:2px; left:2px; width:17px; height:17px; background:#fff; border-radius:50%; transition:left .2s ease; box-shadow:0 1px 2px rgba(0,0,0,.3); }
+.switch.on{ background:var(--indigo); }
+.switch.on::after{ left:19px; }
+.fontsize-controls{ display:flex; gap:6px; }
+.fontsize-controls button{ flex:1; padding:5px 0; font-family:var(--sans); font-size:.78rem; background:var(--paper); border:1px solid var(--line); color:var(--ink-soft); border-radius:var(--radius); cursor:pointer; }
+.fontsize-controls button.active{ background:var(--indigo); color:#fff; border-color:var(--indigo); }
+
+.progress-mini{ font-size:.72rem; color:var(--ink-faint); margin-top:12px; }
+.progress-bar-track{ height:5px; background:var(--paper-3); border-radius:4px; margin-top:5px; overflow:hidden; }
+.progress-bar-fill{ height:100%; background:var(--gold); width:0%; transition:width .3s ease; }
+
+.menubtn{ display:none; position:fixed; top:14px; left:14px; z-index:60; background:var(--indigo); color:#fff; border:none; border-radius:var(--radius); width:40px; height:40px; font-size:1.1rem; cursor:pointer; box-shadow:0 2px 8px var(--shadow); }
+.scrim{ display:none; position:fixed; inset:0; background:rgba(0,0,0,.4); z-index:35; }
+.scrim.show{ display:block; }
+
+/* Content area — centered within the space to the right of the
+   sidebar instead of hugging the left edge. */
+main.content{ margin-left:272px; flex:1; min-width:0; padding:44px 48px 100px; display:flex; justify-content:center; }
+.section-inner{ width:100%; max-width:900px; }
+.section{ display:none; }
+.section.active{ display:block; animation:fadein .3s ease; }
+@keyframes fadein{ from{opacity:0; transform:translateY(6px);} to{opacity:1; transform:translateY(0);} }
+
+.section-head{ margin-bottom:34px; }
+.section-head .eyebrow-jp{ font-family:var(--serif); font-size:1rem; color:var(--gold); margin-bottom:2px; }
+.section-head h1{ font-family:var(--serif); font-weight:700; font-size:2.15rem; margin:0 0 10px; color:var(--ink); line-height:1.25; }
+.section-head p{ color:var(--ink-soft); max-width:var(--measure); margin:0 auto; font-size:.98rem; }
+
+h2.modtitle{ font-family:var(--serif); font-size:1.4rem; margin:48px 0 6px; color:var(--ink); display:flex; align-items:baseline; gap:10px; }
+h2.modtitle .modnum{ color:var(--gold); font-size:1.1rem; }
+.modtitle-en{ font-size:.8rem; color:var(--ink-faint); font-weight:400; margin-bottom:22px; }
+
+.modjump{ display:flex; flex-wrap:wrap; gap:8px; margin-bottom:36px; }
+.modjump button{ font-family:var(--sans); font-size:.78rem; padding:7px 13px; background:var(--paper-2); border:1px solid var(--line); color:var(--ink-soft); border-radius:20px; cursor:pointer; transition:all .15s ease; }
+.modjump button:hover{ border-color:var(--indigo); color:var(--indigo); }
+.modjump button.active{ background:var(--indigo); border-color:var(--indigo); color:#fff; }
+
+/* ============================================================
+   GRAMMAR CARD
+   ============================================================ */
+.gcard{ background:var(--paper-2); border-left:4px solid var(--accent, var(--indigo)); border-radius:0 var(--radius) var(--radius) 0; padding:22px 26px 26px; margin-bottom:22px; box-shadow:0 1px 3px var(--shadow); }
+.gcard-head{ display:flex; justify-content:space-between; align-items:flex-start; gap:16px; flex-wrap:wrap; margin-bottom:10px;}
+.gcard-title .jp{ font-family:var(--serif); font-size:1.5rem; color:var(--ink); }
+.gcard-title .romaji{ font-size:.76rem; color:var(--ink-faint); margin-top:1px; }
+.gcard-title .fn{ font-size:.86rem; color:var(--accent, var(--indigo)); font-weight:700; margin-top:4px; }
+.sourcetags{ display:flex; gap:6px; flex-wrap:wrap; }
+.sourcetag{ font-size:.68rem; padding:3px 8px; border:1px solid var(--line); border-radius:20px; color:var(--ink-faint); white-space:nowrap; }
+.gcard .explain{ font-size:.93rem; color:var(--ink-soft); margin:10px 0 14px; max-width:var(--measure); }
+.gcard .explain b{ color:var(--ink); }
+
+.formation-box{ background:var(--paper); border:1px dashed var(--line); border-radius:var(--radius); padding:12px 16px; margin-bottom:16px; font-size:.86rem; }
+.formation-box .flabel{ font-size:.68rem; color:var(--ink-faint); letter-spacing:.06em; margin-bottom:6px; }
+.formation-box .fline{ font-family:var(--serif); font-size:1.02rem; color:var(--ink); margin:3px 0; }
+.formation-box .fline .arrow{ color:var(--accent, var(--indigo)); margin:0 6px; }
+
+.examples{ margin-bottom:16px; }
+.ex-item{ padding:9px 0; border-bottom:1px solid var(--line-soft); }
+.ex-item:last-child{ border-bottom:none; }
+.ex-jp{ font-family:var(--serif); font-size:1.2rem; color:var(--ink); line-height:2.1; }
+.ex-en{ font-size:.82rem; color:var(--ink-faint); margin-top:2px; }
+
+.dialogue-box{ background:var(--paper); border-radius:var(--radius); padding:16px 18px; margin-bottom:16px; border:1px solid var(--line-soft); }
+.dialogue-box .dlabel{ font-size:.68rem; color:var(--ink-faint); letter-spacing:.06em; margin-bottom:10px; }
+.dline{ display:flex; gap:10px; margin-bottom:9px; align-items:flex-start; }
+.dline:last-child{ margin-bottom:0; }
+.dline .speaker{ flex-shrink:0; width:64px; font-size:.72rem; color:#fff; background:var(--accent, var(--indigo)); border-radius:3px; text-align:center; padding:3px 4px; height:fit-content; margin-top:3px; }
+.dline .dtext .jp{ font-family:var(--serif); font-size:1.08rem; line-height:1.9; }
+.dline .dtext .en{ font-size:.78rem; color:var(--ink-faint); margin-top:1px; }
+.kaiwa-tip{ font-size:.82rem; color:var(--matcha); margin-top:10px; padding-top:10px; border-top:1px dashed var(--line); }
+.kaiwa-tip b{ color:var(--matcha); }
+
+/* ============================================================
+   QUIZ WIDGET
+   ============================================================ */
+.quizbox{ margin-top:6px; }
+.quizbox .qlabel{ font-size:.68rem; color:var(--ink-faint); letter-spacing:.06em; margin-bottom:8px; }
+.qitem{ margin-bottom:14px; }
+.qitem:last-child{ margin-bottom:0; }
+.qprompt{ font-size:.92rem; color:var(--ink); margin-bottom:8px; font-family:var(--serif); }
+.qchoices{ display:flex; flex-direction:column; gap:6px; }
+.qchoice{ text-align:left; background:var(--paper); border:1px solid var(--line); border-radius:var(--radius); padding:8px 12px; font-family:var(--sans); font-size:.86rem; color:var(--ink-soft); cursor:pointer; transition:all .15s ease; }
+.qchoice:hover{ border-color:var(--accent, var(--indigo)); }
+.qchoice.correct{ background:var(--matcha-tint); border-color:var(--matcha); color:var(--ink); font-weight:700; }
+.qchoice.incorrect{ background:var(--shu-tint); border-color:var(--shu); color:var(--ink); }
+.qchoice.disabled{ pointer-events:none; opacity:.55; }
+.qexplain{ font-size:.8rem; color:var(--ink-soft); margin-top:7px; padding:8px 12px; background:var(--paper); border-left:3px solid var(--accent, var(--indigo)); display:none; }
+.qexplain.show{ display:block; }
+
+/* ============================================================
+   KANJI TABLE
+   ============================================================ */
+.kanji-toolbar{ display:flex; gap:10px; margin-bottom:18px; flex-wrap:wrap; align-items:center;}
+.kanji-search{ flex:1; min-width:200px; padding:9px 14px; border:1px solid var(--line); border-radius:20px; background:var(--paper-2); color:var(--ink); font-family:var(--sans); font-size:.88rem; }
+.kanji-search:focus{ outline:none; border-color:var(--indigo); }
+.kanji-count{ font-size:.78rem; color:var(--ink-faint); white-space:nowrap; }
+.kgrid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:12px; margin-bottom:14px; }
+.kcard{ background:var(--paper-2); border:1px solid var(--line); border-radius:var(--radius); padding:14px 16px; display:flex; gap:14px; align-items:flex-start; }
+.kcard .kj{ font-family:var(--serif); font-size:2.1rem; color:var(--ink); line-height:1; flex-shrink:0; }
+.kcard .kmeta{ font-size:.78rem; }
+.kcard .kmeaning{ color:var(--ink); font-weight:700; margin-bottom:3px; }
+.kcard .kreading{ color:var(--ink-soft); }
+.kcard .kreading .lbl{ color:var(--ink-faint); }
+.kcard .kword{ color:var(--gold); margin-top:4px; }
+
+.collapsible-head{ cursor:pointer; display:flex; align-items:center; gap:8px; margin:36px 0 12px; color:var(--ink-soft); font-size:.88rem; user-select:none; }
+.collapsible-head .tri{ transition:transform .2s ease; color:var(--gold); display:inline-block; }
+.collapsible-head.open .tri{ transform:rotate(90deg); }
+.collapsible-body{ display:none; }
+.collapsible-body.open{ display:block; }
+
+/* ============================================================
+   READING PASSAGES
+   ============================================================ */
+.passage-card{ background:var(--paper-2); border-radius:var(--radius); padding:24px 28px; margin-bottom:16px; border:1px solid var(--line); }
+.passage-card .ptitle{ font-family:var(--serif); font-size:1.15rem; color:var(--gold); margin-bottom:4px; }
+.passage-card .ptitle-en{ font-size:.76rem; color:var(--ink-faint); margin-bottom:16px; }
+.passage-text{ font-family:var(--serif); font-size:1.18rem; line-height:2.3; color:var(--ink); max-width:var(--measure); margin:0 auto 6px; white-space:pre-line; }
+.passage-hint{ font-size:.74rem; color:var(--ink-faint); text-align:center; margin-bottom:18px; }
+.passage-hint b{ color:var(--indigo); }
+
+/* ============================================================
+   KAIWA LAB
+   ============================================================ */
+.tipgrid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; margin-bottom:36px; }
+.tipcard{ background:var(--paper-2); border-radius:var(--radius); padding:16px 18px; border-top:3px solid var(--gold); }
+.tipcard .ttitle{ font-weight:700; font-size:.9rem; margin-bottom:6px; color:var(--ink); }
+.tipcard p{ font-size:.82rem; color:var(--ink-soft); margin:0; }
+
+.phrasebank{ display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:10px; margin-bottom:30px; }
+.phrase{ background:var(--paper-2); border:1px solid var(--line); border-radius:var(--radius); padding:10px 14px; }
+.phrase .pjp{ font-family:var(--serif); font-size:1.05rem; color:var(--ink); }
+.phrase .pen{ font-size:.76rem; color:var(--ink-faint); margin-top:2px; }
+
+.pb-nav{ display:flex; flex-wrap:wrap; gap:7px; margin-bottom:26px; justify-content:center; }
+.pb-nav button{ font-family:var(--serif); font-size:.88rem; padding:5px 12px; background:var(--paper-2); border:1px solid var(--line); color:var(--ink-soft); border-radius:20px; cursor:pointer; transition:all .15s ease; }
+.pb-nav button:hover{ border-color:var(--matcha); color:var(--matcha); }
+.pb-group{ scroll-margin-top:20px; }
+.pb-cat{ display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; margin:0 0 12px; padding-bottom:6px; border-bottom:1px solid var(--line-soft); }
+.pb-cat .jp{ font-family:var(--serif); font-size:1.12rem; color:var(--matcha); }
+.pb-cat .en{ font-size:.76rem; color:var(--ink-faint); }
+
+.keyphrases{ margin-top:14px; padding:13px 16px; border-radius:var(--radius); background:var(--gold-tint); border:1px solid var(--line-soft); }
+.keyphrases .kplabel{ font-size:.66rem; letter-spacing:.08em; color:var(--gold); margin-bottom:8px; font-weight:700; }
+.kpline{ display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; padding:4px 0; border-bottom:1px dotted var(--line); }
+.kpline:last-child{ border-bottom:none; }
+.kpline .kpjp{ font-family:var(--serif); font-size:1.04rem; color:var(--ink); }
+.kpline .kpen{ font-size:.76rem; color:var(--ink-soft); }
+
+.scenario-card{ background:var(--paper-2); border-radius:var(--radius); margin-bottom:22px; overflow:hidden; border:1px solid var(--line); scroll-margin-top:20px; }
+.scenario-head{ background:var(--indigo); color:#fff; padding:12px 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:6px; }
+.scenario-head .sjp{ font-family:var(--serif); font-size:1.15rem; }
+.scenario-head .sen{ font-size:.76rem; opacity:.85; }
+.scenario-body{ padding:20px 22px; }
+.scenario-setup{ font-size:.83rem; color:var(--ink-soft); margin-bottom:14px; font-style:italic; }
+.roleplay-note{ margin-top:14px; padding-top:14px; border-top:1px dashed var(--line); font-size:.82rem; color:var(--ink-soft); }
+.roleplay-note b{ color:var(--indigo); }
+
+/* ============================================================
+   QUIZ CENTER (final)
+   ============================================================ */
+.qc-score{ background:var(--paper-2); border-radius:var(--radius); padding:20px 26px; margin-bottom:24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; }
+.qc-score .num{ font-family:var(--serif); font-size:2.2rem; color:var(--gold); }
+.qc-score .lbl{ font-size:.78rem; color:var(--ink-faint); }
+.qc-reset{ background:none; border:1px solid var(--line); color:var(--ink-soft); padding:8px 16px; border-radius:20px; cursor:pointer; font-family:var(--sans); font-size:.82rem; }
+.qc-reset:hover{ border-color:var(--shu); color:var(--shu); }
+.qc-group-title{ font-family:var(--serif); font-size:1.1rem; color:var(--gold); margin:28px 0 12px; }
+
+footer.pagefoot{ margin-top:60px; padding-top:20px; border-top:1px solid var(--line); font-size:.74rem; color:var(--ink-faint); max-width:var(--measure); margin-left:auto; margin-right:auto; text-align:center; }
+
+/* ============================================================
+   VOCAB LOOKUP TOOLTIP
+   Anything with .jp-lookup can be highlighted; the selection
+   is looked up (local glossary first, then Jisho) and shown
+   in a small floating card near the highlight.
+   ============================================================ */
+.jp-lookup{ cursor:text; }
+.lookup-pop{
+  position:fixed; z-index:200; max-width:280px; min-width:200px;
+  background:var(--paper-2); border:1px solid var(--line); border-radius:var(--radius);
+  box-shadow:0 8px 24px var(--shadow); padding:14px 16px; font-size:.85rem;
+  animation:popin .12s ease;
+}
+@keyframes popin{ from{opacity:0; transform:translateY(4px) scale(.98);} to{opacity:1; transform:translateY(0) scale(1);} }
+.lookup-pop .lp-word{ font-family:var(--serif); font-size:1.3rem; color:var(--ink); }
+.lookup-pop .lp-reading{ font-size:.8rem; color:var(--indigo); margin-top:1px; }
+.lookup-pop .lp-jlpt{ display:inline-block; font-size:.62rem; letter-spacing:.04em; color:var(--gold); border:1px solid var(--gold); border-radius:10px; padding:1px 7px; margin-top:6px; }
+.lookup-pop .lp-sense{ font-size:.8rem; color:var(--ink-soft); margin-top:8px; padding-top:8px; border-top:1px solid var(--line-soft); }
+.lookup-pop .lp-sense:first-of-type{ border-top:none; padding-top:0; }
+.lookup-pop .lp-pos{ font-size:.68rem; color:var(--ink-faint); font-style:italic; }
+.lookup-pop .lp-source{ font-size:.64rem; color:var(--ink-faint); margin-top:10px; letter-spacing:.03em; }
+.lookup-pop .lp-jisho-link{ display:inline-block; margin-top:10px; font-size:.76rem; color:var(--indigo); border-bottom:1px dotted var(--indigo); }
+.lookup-pop .lp-loading{ color:var(--ink-faint); font-size:.82rem; }
+.lookup-pop .lp-empty{ color:var(--ink-soft); font-size:.82rem; }
+.lookup-pop .lp-close{ position:absolute; top:6px; right:8px; background:none; border:none; color:var(--ink-faint); cursor:pointer; font-size:.9rem; line-height:1; padding:4px; }
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 860px){
+  .sidebar{ transform:translateX(-100%); }
+  .sidebar.open{ transform:translateX(0); }
+  .menubtn{ display:block; }
+  main.content{ margin-left:0; padding:70px 20px 80px; }
+  .section-head h1{ font-size:1.6rem; }
+}

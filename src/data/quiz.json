@@ -1,0 +1,913 @@
+[
+  {
+    "title": "文法穴埋め — Grammar fill-in-the-blank",
+    "items": [
+      {
+        "q": "「駅に着く＿＿、電話してください。」",
+        "choices": [
+          "と",
+          "たら",
+          "し",
+          "のに"
+        ],
+        "a": 1,
+        "ex": "と cannot lead into a request/command clause. たら is the correct choice here."
+      },
+      {
+        "q": "「友達の話によると、彼は忙しくてパーティーに来られない＿＿。」",
+        "choices": [
+          "そうです",
+          "ようです",
+          "つもりです",
+          "ことになります"
+        ],
+        "a": 0,
+        "ex": "〜によると explicitly marks secondhand information, matching hearsay そうです."
+      },
+      {
+        "q": "「息子に野菜を＿＿。」 (I made my son eat vegetables)",
+        "choices": [
+          "食べさせました",
+          "食べられました",
+          "食べてもらいました",
+          "食べさせられました"
+        ],
+        "a": 0,
+        "ex": "Causative 食べさせる = 'make/let [someone] eat' — fits a parent making a child eat vegetables."
+      },
+      {
+        "q": "「彼女は先生に＿＿。」 (She was praised by the teacher)",
+        "choices": [
+          "褒めました",
+          "褒められました",
+          "褒めさせました",
+          "褒めてあげました"
+        ],
+        "a": 1,
+        "ex": "Passive 褒められる = 'be praised' — she is the one receiving the teacher's action."
+      },
+      {
+        "q": "「日本に行く＿＿、この本を読んだほうがいいですよ。」 (reacting to a friend's mentioned plan)",
+        "choices": [
+          "と",
+          "たら",
+          "ば",
+          "なら"
+        ],
+        "a": 3,
+        "ex": "なら reacts to a topic the other person just raised (going to Japan) with advice — the classic なら shape."
+      },
+      {
+        "q": "「ここで写真を＿＿。」 (asking permission)",
+        "choices": [
+          "撮ってもいいですか",
+          "撮ってはいけません",
+          "撮らせられます",
+          "撮るらしいです"
+        ],
+        "a": 0,
+        "ex": "〜てもいいですか politely asks for permission."
+      },
+      {
+        "q": "「N4に合格する＿＿、毎日勉強しています。」 (deliberate purpose)",
+        "choices": [
+          "ように",
+          "ために",
+          "のに",
+          "し"
+        ],
+        "a": 1,
+        "ex": "合格する is a volitional action you choose to do, so ために fits."
+      },
+      {
+        "q": "「電車で足を＿＿、痛かったです。」 (had your foot stepped on)",
+        "choices": [
+          "踏みました",
+          "踏まれました",
+          "踏ませました",
+          "踏んでいました"
+        ],
+        "a": 1,
+        "ex": "Passive 踏まれる — the speaker is on the receiving end of someone else's action."
+      },
+      {
+        "q": "「薬を飲んだ＿＿、寝てください。」",
+        "choices": [
+          "あとで",
+          "ながら",
+          "までに",
+          "しか"
+        ],
+        "a": 0,
+        "ex": "あとで means 'after doing'; take the medicine first and then sleep."
+      },
+      {
+        "q": "「日本語が＿＿ように、毎日音読します。」",
+        "choices": [
+          "話せる",
+          "話す",
+          "話した",
+          "話させる"
+        ],
+        "a": 0,
+        "ex": "ように can express a desired ability or state: so that I can speak Japanese."
+      },
+      {
+        "q": "「来週の試験は難しい＿＿。」 (I hear it will be difficult)",
+        "choices": [
+          "そうです",
+          "ようです",
+          "つもりです",
+          "はずです"
+        ],
+        "a": 0,
+        "ex": "This is hearsay, so 伝聞のそうです fits."
+      },
+      {
+        "q": "「この漢字は＿＿にくいです。」 (difficult to read)",
+        "choices": [
+          "読み",
+          "読んで",
+          "読む",
+          "読める"
+        ],
+        "a": 0,
+        "ex": "The stem 読み + にくい means difficult to read."
+      },
+      {
+        "q": "「忘れない＿＿、メモしてください。」",
+        "choices": [
+          "ために",
+          "ように",
+          "そうに",
+          "らしく"
+        ],
+        "a": 1,
+        "ex": "ように is used for a desired outcome or prevention: so that you do not forget."
+      },
+      {
+        "q": "「先生が学生に本を＿＿。」 (the teacher lent a book to the student)",
+        "choices": [
+          "貸しました",
+          "借りました",
+          "貸されました",
+          "借りさせました"
+        ],
+        "a": 0,
+        "ex": "貸す means lend; 借りる means borrow."
+      },
+      {
+        "q": "「この店は駅＿＿近いです。」",
+        "choices": [
+          "を",
+          "が",
+          "に",
+          "で"
+        ],
+        "a": 2,
+        "ex": "駅に近い is the standard pattern for being close to a place."
+      },
+      {
+        "q": "「荷物をここに置いて＿＿。」 (please leave it here in advance)",
+        "choices": [
+          "あります",
+          "おいてください",
+          "おきます",
+          "しまいます"
+        ],
+        "a": 2,
+        "ex": "〜ておきます describes doing something in advance."
+      },
+      {
+        "q": "「富士山は日本で＿＿高い山です。」",
+        "choices": [
+          "もっと",
+          "いちばん",
+          "より",
+          "しか"
+        ],
+        "a": 1,
+        "ex": "いちばん expresses the superlative: the highest mountain in Japan."
+      },
+      {
+        "q": "「この本は＿＿やすいです。」 (easy to read)",
+        "choices": [
+          "読み",
+          "読んで",
+          "読む",
+          "読める"
+        ],
+        "a": 0,
+        "ex": "Verb stem + やすい = easy to do. 読む → 読み + やすい."
+      },
+      {
+        "q": "「弟にケーキを全部＿＿。」 (my little brother ate it all on me — nuisance passive)",
+        "choices": [
+          "食べました",
+          "食べられました",
+          "食べさせました",
+          "食べておきました"
+        ],
+        "a": 1,
+        "ex": "迷惑の受身: 食べられました shows the speaker was adversely affected by someone else's action."
+      },
+      {
+        "q": "「窓が開いて＿＿。」 (the window is open — a state someone left it in)",
+        "choices": [
+          "います",
+          "あります",
+          "おきます",
+          "しまいます"
+        ],
+        "a": 0,
+        "ex": "開く is intransitive, so 開いています describes the resulting state. 開けてあります would be the 〜てある version with a transitive verb."
+      },
+      {
+        "q": "「明日雨が＿＿、ピクニックは中止です。」",
+        "choices": [
+          "降ると",
+          "降ったら",
+          "降れば",
+          "降るなら"
+        ],
+        "a": 1,
+        "ex": "A specific one-time future condition with a consequence takes たら. と would imply an automatic general rule, which doesn't fit a single picnic."
+      },
+      {
+        "q": "「日本語が上手に＿＿ように、毎日練習しています。」",
+        "choices": [
+          "なる",
+          "なって",
+          "なれる",
+          "なった"
+        ],
+        "a": 0,
+        "ex": "ように takes the plain non-past form: 上手になるように — 'so that I become good at it'."
+      },
+      {
+        "q": "「先生に漢字の読み方を＿＿。」 (the teacher kindly taught me)",
+        "choices": [
+          "教えてあげました",
+          "教えてもらいました",
+          "教えてくれました",
+          "教えさせました"
+        ],
+        "a": 1,
+        "ex": "With 先生に marking the giver and you as the subject, 教えてもらいました is the natural choice. 先生が教えてくれました would also be correct but needs が, not に."
+      },
+      {
+        "q": "「電車が遅れた＿＿、会議に間に合いました。」",
+        "choices": [
+          "ので",
+          "のに",
+          "から",
+          "し"
+        ],
+        "a": 1,
+        "ex": "のに marks an unexpected contrast: the train was late, yet you still made it. ので／から would imply the delay caused you to arrive on time, which makes no sense."
+      },
+      {
+        "q": "「ちょっと窓を閉め＿＿か。」 (asking someone to close it, politely)",
+        "choices": [
+          "てくれません",
+          "ておきません",
+          "てしまいません",
+          "させません"
+        ],
+        "a": 0,
+        "ex": "〜てくれませんか is the standard polite request for someone to do something for you."
+      },
+      {
+        "q": "「子供のとき、父に毎日漢字を＿＿。」 (I was made to write kanji every day)",
+        "choices": [
+          "書かせました",
+          "書かれました",
+          "書かせられました",
+          "書いてもらいました"
+        ],
+        "a": 2,
+        "ex": "Causative-passive 書かせられる = 'to be made to write' — the speaker did it unwillingly under someone else's will."
+      },
+      {
+        "q": "「あの店はいつも人が多いです。＿＿、おいしいんでしょう。」",
+        "choices": [
+          "だから",
+          "でも",
+          "しかし",
+          "のに"
+        ],
+        "a": 0,
+        "ex": "だから draws a conclusion from the previous sentence: it's always crowded, so it must be good."
+      },
+      {
+        "q": "「宿題を＿＿しまいました。」 (I finished it — completion nuance)",
+        "choices": [
+          "やって",
+          "やった",
+          "やり",
+          "やろう"
+        ],
+        "a": 0,
+        "ex": "〜てしまう attaches to the て-form: やってしまいました. It can mean either 'finished it off' or 'did it, unfortunately', depending on context."
+      },
+      {
+        "q": "「田中さんは今、電話中の＿＿です。」 (it seems he's on the phone — you can hear him)",
+        "choices": [
+          "そう",
+          "よう",
+          "らしい",
+          "つもり"
+        ],
+        "a": 1,
+        "ex": "よう(です) draws an inference from direct evidence you can perceive. Here it needs の before よう because 電話中 is a noun."
+      },
+      {
+        "q": "「パーティーに行く＿＿ですが、まだ決めていません。」",
+        "choices": [
+          "つもり",
+          "ように",
+          "そう",
+          "ため"
+        ],
+        "a": 0,
+        "ex": "〜つもり expresses your own intention. It fits a plan you're leaning toward but haven't settled."
+      },
+      {
+        "q": "「日本へ行った＿＿がありますか。」",
+        "choices": [
+          "こと",
+          "もの",
+          "とき",
+          "ところ"
+        ],
+        "a": 0,
+        "ex": "〜たことがある is the fixed pattern for past experience: have you ever been to Japan?"
+      },
+      {
+        "q": "「この漢字は難し＿＿て、覚えられません。」",
+        "choices": [
+          "すぎ",
+          "すぎる",
+          "すぎた",
+          "すごい"
+        ],
+        "a": 0,
+        "ex": "すぎる joins as 難しすぎて (drop い from 難しい, add すぎて) — 'too difficult, so I can't memorise it'."
+      }
+    ]
+  },
+  {
+    "title": "漢字・語彙 — Kanji & vocabulary",
+    "items": [
+      {
+        "q": "意味 is read:",
+        "choices": [
+          "いみ",
+          "いい",
+          "いび",
+          "いめ"
+        ],
+        "a": 0,
+        "ex": "意味 (いみ) means 'meaning'."
+      },
+      {
+        "q": "悪い means:",
+        "choices": [
+          "good",
+          "bad",
+          "big",
+          "small"
+        ],
+        "a": 1,
+        "ex": "悪 = bad/evil. 悪い is the plain adjective 'bad'."
+      },
+      {
+        "q": "銀行 means:",
+        "choices": [
+          "school",
+          "bank",
+          "hospital",
+          "library"
+        ],
+        "a": 1,
+        "ex": "銀 (silver) + 行 (go/institution) = 銀行, 'bank'."
+      },
+      {
+        "q": "大声 is read, and 声 alone means:",
+        "choices": [
+          "おと (sound)",
+          "こえ (voice)",
+          "いろ (color)",
+          "かみ (paper)"
+        ],
+        "a": 1,
+        "ex": "声 = voice, read こえ on its own."
+      },
+      {
+        "q": "働く means:",
+        "choices": [
+          "to rest",
+          "to work",
+          "to walk",
+          "to run"
+        ],
+        "a": 1,
+        "ex": "働 = work. 働く is the verb 'to work'."
+      },
+      {
+        "q": "割引 means:",
+        "choices": [
+          "receipt",
+          "discount",
+          "reservation",
+          "refund"
+        ],
+        "a": 1,
+        "ex": "引 = pull; 割引 (わりびき) is 'discount'."
+      },
+      {
+        "q": "予定 is read:",
+        "choices": [
+          "よてい",
+          "よで",
+          "ようてい",
+          "よたい"
+        ],
+        "a": 0,
+        "ex": "予定 (よてい) means plan or schedule."
+      },
+      {
+        "q": "病院 means:",
+        "choices": [
+          "station",
+          "hospital",
+          "post office",
+          "restaurant"
+        ],
+        "a": 1,
+        "ex": "病院 (びょういん) means hospital."
+      },
+      {
+        "q": "急ぐ means:",
+        "choices": [
+          "to hurry",
+          "to forget",
+          "to borrow",
+          "to turn off"
+        ],
+        "a": 0,
+        "ex": "急ぐ (いそぐ) means to hurry."
+      },
+      {
+        "q": "受付 is read:",
+        "choices": [
+          "うけつけ",
+          "うけづけ",
+          "うけとり",
+          "うけたて"
+        ],
+        "a": 0,
+        "ex": "受付 (うけつけ) means reception or front desk."
+      },
+      {
+        "q": "必要 means:",
+        "choices": [
+          "necessary",
+          "dangerous",
+          "quiet",
+          "famous"
+        ],
+        "a": 0,
+        "ex": "必要 (ひつよう) means necessary or needed."
+      },
+      {
+        "q": "出発 is read:",
+        "choices": [
+          "しゅっぱつ",
+          "しゅつはつ",
+          "でぱつ",
+          "しゅっぽつ"
+        ],
+        "a": 0,
+        "ex": "出発 (しゅっぱつ) means departure — note the doubled consonant."
+      },
+      {
+        "q": "地図 means:",
+        "choices": [
+          "floor",
+          "map",
+          "ground",
+          "address"
+        ],
+        "a": 1,
+        "ex": "地 (ground) + 図 (diagram) = 地図 (ちず), 'map'."
+      },
+      {
+        "q": "不便 means:",
+        "choices": [
+          "convenient",
+          "inconvenient",
+          "cheap",
+          "far"
+        ],
+        "a": 1,
+        "ex": "不 negates: 便利 (convenient) → 不便 (inconvenient)."
+      },
+      {
+        "q": "お土産 is read:",
+        "choices": [
+          "おみやげ",
+          "おどさん",
+          "おみあげ",
+          "おつちさん"
+        ],
+        "a": 0,
+        "ex": "お土産 (おみやげ) means souvenir — an irregular whole-word reading."
+      },
+      {
+        "q": "交通 means:",
+        "choices": [
+          "traffic, transport",
+          "exchange",
+          "intersection",
+          "communication"
+        ],
+        "a": 0,
+        "ex": "交通 (こうつう) means traffic or transport."
+      },
+      {
+        "q": "説明 is read:",
+        "choices": [
+          "せつめい",
+          "せつみょう",
+          "せいめい",
+          "せつめん"
+        ],
+        "a": 0,
+        "ex": "説明 (せつめい) means explanation."
+      },
+      {
+        "q": "予約 means:",
+        "choices": [
+          "plan",
+          "reservation",
+          "promise",
+          "preparation"
+        ],
+        "a": 1,
+        "ex": "予約 (よやく) is a reservation or booking. 予定 (よてい) is a plan or schedule — keep the two apart."
+      },
+      {
+        "q": "言葉 means:",
+        "choices": [
+          "word, language",
+          "reason",
+          "leaf",
+          "place"
+        ],
+        "a": 0,
+        "ex": "言葉 (ことば) means word or language."
+      },
+      {
+        "q": "足りる means:",
+        "choices": [
+          "to walk",
+          "to be enough",
+          "to add",
+          "to stand"
+        ],
+        "a": 1,
+        "ex": "足りる (たりる) = to be sufficient. 足 covers both 'foot' and 'sufficient'."
+      },
+      {
+        "q": "心配 means:",
+        "choices": [
+          "kindness",
+          "worry",
+          "decision",
+          "delivery"
+        ],
+        "a": 1,
+        "ex": "心配 (しんぱい) means worry or concern."
+      },
+      {
+        "q": "Which kanji means 'to lend'?",
+        "choices": [
+          "借",
+          "貸",
+          "買",
+          "売"
+        ],
+        "a": 1,
+        "ex": "貸す (かす) = to lend; 借りる (かりる) = to borrow. They look similar and point opposite ways."
+      },
+      {
+        "q": "到着 means:",
+        "choices": [
+          "departure",
+          "arrival",
+          "delay",
+          "transfer"
+        ],
+        "a": 1,
+        "ex": "到着 (とうちゃく) = arrival. 着 also appears in 着る (to wear) with a completely different meaning."
+      },
+      {
+        "q": "特別 means:",
+        "choices": [
+          "ordinary",
+          "special",
+          "separate",
+          "difficult"
+        ],
+        "a": 1,
+        "ex": "特別 (とくべつ) means special."
+      },
+      {
+        "q": "世界 is read:",
+        "choices": [
+          "せかい",
+          "せいかい",
+          "せがい",
+          "よかい"
+        ],
+        "a": 0,
+        "ex": "世界 (せかい) means world."
+      }
+    ]
+  },
+  {
+    "title": "短文読解 — Mini reading check",
+    "items": [
+      {
+        "q": "次のメモを読んでください：「田中さん、今日は会議が三十分早くなりました。九時からです。資料を忘れないようにしてください。」— 会議は何時からですか。",
+        "choices": [
+          "8:30",
+          "9:00",
+          "9:30",
+          "10:00"
+        ],
+        "a": 1,
+        "ex": "The memo states plainly: 九時からです — 'it's from 9 o'clock.'"
+      },
+      {
+        "q": "同じメモで、田中さんは何を忘れないようにしなければなりませんか。",
+        "choices": [
+          "財布",
+          "資料",
+          "傘",
+          "携帯"
+        ],
+        "a": 1,
+        "ex": "資料を忘れないようにしてください — 'please make sure not to forget the materials/documents.'"
+      },
+      {
+        "q": "メール：「明日の午後ならいつでも大丈夫です。」— いつ会えますか。",
+        "choices": [
+          "明日の午前だけ",
+          "明日の午後ならいつでも",
+          "今日の夜だけ",
+          "来週だけ"
+        ],
+        "a": 1,
+        "ex": "午後ならいつでも means any time tomorrow afternoon is okay."
+      },
+      {
+        "q": "お知らせ：「雨の場合は、イベントを体育館で行います。」— 雨のとき、どこで行いますか。",
+        "choices": [
+          "公園",
+          "駅",
+          "体育館",
+          "教室"
+        ],
+        "a": 2,
+        "ex": "雨の場合は体育館で行うと notice says."
+      },
+      {
+        "q": "日記：「朝は忙しかったですが、午後はゆっくりできました。」— 午後はどうでしたか。",
+        "choices": [
+          "忙しかった",
+          "休めなかった",
+          "ゆっくりできた",
+          "出かけた"
+        ],
+        "a": 2,
+        "ex": "午後はゆっくりできました means the writer could relax in the afternoon."
+      },
+      {
+        "q": "お知らせ：「エレベーターは点検中ですので、階段をご利用ください。」— どうすればいいですか。",
+        "choices": [
+          "エレベーターを待つ",
+          "階段を使う",
+          "帰る",
+          "管理人を呼ぶ"
+        ],
+        "a": 1,
+        "ex": "階段をご利用ください — please use the stairs. ご利用ください is polite service language for 'please use'."
+      },
+      {
+        "q": "メモ：「先に注文しておいてください。少し遅れます。」— 書いた人はどうなりますか。",
+        "choices": [
+          "来ない",
+          "少し遅れて来る",
+          "早く来る",
+          "注文しない"
+        ],
+        "a": 1,
+        "ex": "少し遅れます — they'll be slightly late, and are asking you to order in advance (注文しておいて)."
+      },
+      {
+        "q": "店の紙：「この商品は本日のみ20％割引です。」— いつ安いですか。",
+        "choices": [
+          "今日だけ",
+          "明日だけ",
+          "一週間",
+          "毎日"
+        ],
+        "a": 0,
+        "ex": "本日のみ (ほんじつのみ) = today only. のみ is a formal written equivalent of だけ."
+      },
+      {
+        "q": "メール：「雨なら中止ですが、くもりなら行います。」— くもりの日はどうなりますか。",
+        "choices": [
+          "中止になる",
+          "行う",
+          "わからない",
+          "雨を待つ"
+        ],
+        "a": 1,
+        "ex": "くもりなら行います — if it's cloudy, it goes ahead. Only rain cancels it."
+      },
+      {
+        "q": "案内：「二階は靴を脱いでお上がりください。」— 二階に行くとき、何をしますか。",
+        "choices": [
+          "靴を脱ぐ",
+          "靴を買う",
+          "靴を履く",
+          "何もしない"
+        ],
+        "a": 0,
+        "ex": "靴を脱いで (take off your shoes) + お上がりください (please come up). Standard for tatami floors and many homes."
+      },
+      {
+        "q": "日記：「試験は思ったより簡単だった。でも、時間が足りなかった。」— 試験はどうでしたか。",
+        "choices": [
+          "難しくて時間も足りた",
+          "簡単だったが時間が足りなかった",
+          "簡単で時間も余った",
+          "難しくて時間も足りなかった"
+        ],
+        "a": 1,
+        "ex": "思ったより簡単 (easier than expected) but 時間が足りなかった (not enough time) — the でも flags the contrast."
+      },
+      {
+        "q": "手紙：「お体に気をつけて、ゆっくり休んでください。」— この手紙はどんな人に書きましたか。",
+        "choices": [
+          "引っ越す人",
+          "病気の人",
+          "結婚する人",
+          "旅行する人"
+        ],
+        "a": 1,
+        "ex": "お体に気をつけて and ゆっくり休んでください are what you write to someone who is unwell."
+      }
+    ]
+  },
+  {
+    "title": "会話表現 — Conversation expressions",
+    "items": [
+      {
+        "q": "Staff ask 「袋はご利用ですか。」What are they asking?",
+        "choices": [
+          "Do you have a point card?",
+          "Would you like a bag?",
+          "Shall I heat it up?",
+          "Are you paying by card?"
+        ],
+        "a": 1,
+        "ex": "ご利用ですか is polite for 'will you use one?'. This exact line comes at almost every Japanese register."
+      },
+      {
+        "q": "Someone says 「少々お待ちください。」You should:",
+        "choices": [
+          "leave",
+          "wait a moment",
+          "pay now",
+          "repeat yourself"
+        ],
+        "a": 1,
+        "ex": "少々お待ちください is the keigo form of ちょっと待ってください."
+      },
+      {
+        "q": "A friend invites you out and you can't go. The most natural reply is:",
+        "choices": [
+          "行きません",
+          "今日はちょっと…",
+          "だめです",
+          "行きたくないです"
+        ],
+        "a": 1,
+        "ex": "Trailing off with 〜はちょっと… is the standard polite refusal. The flat alternatives all sound blunt or cold."
+      },
+      {
+        "q": "「お会計をお願いします」is used to:",
+        "choices": [
+          "order food",
+          "ask for the bill",
+          "complain",
+          "book a table"
+        ],
+        "a": 1,
+        "ex": "お会計 is the bill. お願いします turns it into a polite request."
+      },
+      {
+        "q": "You didn't catch what someone said. Say:",
+        "choices": [
+          "もう一度お願いします",
+          "もういいです",
+          "そうですね",
+          "けっこうです"
+        ],
+        "a": 0,
+        "ex": "もう一度お願いします asks for a repeat. けっこうです would decline something, and もういいです can sound like 'forget it'."
+      },
+      {
+        "q": "「かしこまりました」is said by:",
+        "choices": [
+          "a customer to staff",
+          "staff to a customer",
+          "a child to a parent",
+          "friends to each other"
+        ],
+        "a": 1,
+        "ex": "かしこまりました is humble service language meaning 'certainly'. You hear it; you rarely say it."
+      },
+      {
+        "q": "Someone helped you a lot. The warmest short reply is:",
+        "choices": [
+          "助かりました",
+          "大丈夫です",
+          "どうも",
+          "失礼します"
+        ],
+        "a": 0,
+        "ex": "助かりました ('that saved me') is a genuine, natural thank-you for real help."
+      },
+      {
+        "q": "At an izakaya, 「別々でお願いします」means:",
+        "choices": [
+          "split the bill evenly",
+          "separate bills, each pays their own",
+          "one person pays",
+          "pay next time"
+        ],
+        "a": 1,
+        "ex": "別々 = separately, per person's order. 割り勘 (わりかん) is the even split."
+      },
+      {
+        "q": "「お先に失礼します」is said when:",
+        "choices": [
+          "arriving at work",
+          "leaving work before others",
+          "apologising for a mistake",
+          "answering the phone"
+        ],
+        "a": 1,
+        "ex": "It's the standard line for leaving the office before your colleagues; they answer お疲れさまでした."
+      },
+      {
+        "q": "「つまらない物ですが」when handing over a gift means:",
+        "choices": [
+          "the gift is bad",
+          "it's a humble set phrase",
+          "the gift was cheap",
+          "you don't want to give it"
+        ],
+        "a": 1,
+        "ex": "Downplaying your own gift is the convention. Never take it literally — and never say it about someone else's gift."
+      },
+      {
+        "q": "A café asks 「店内でお召し上がりですか。」They want to know:",
+        "choices": [
+          "what you'll order",
+          "whether you'll eat in",
+          "whether you have a card",
+          "whether you want it hot"
+        ],
+        "a": 1,
+        "ex": "召し上がる is honorific 'to eat/drink'. 店内で〜 asks eat-in versus takeaway."
+      },
+      {
+        "q": "Which one softens a request the most?",
+        "choices": [
+          "教えて",
+          "教えてください",
+          "教えてくれない？",
+          "教えていただけませんか"
+        ],
+        "a": 3,
+        "ex": "〜ていただけませんか is the politest of the four — humble receiving plus a negative question. Use it with strangers and at work."
+      }
+    ]
+  }
+]

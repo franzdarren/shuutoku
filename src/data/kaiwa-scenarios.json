@@ -1,0 +1,3082 @@
+[
+  {
+    "jp": "レストランで",
+    "en": "At a restaurant",
+    "setup": "You're at a small restaurant and want to order, ask about a dish, and pay.",
+    "lines": [
+      {
+        "who": "Staff",
+        "jp": "いらっしゃいませ。<ruby>何名様<rt>なんめいさま</rt></ruby>ですか。",
+        "en": "Welcome. How many people?"
+      },
+      {
+        "who": "You",
+        "jp": "二人です。",
+        "en": "Two people."
+      },
+      {
+        "who": "Staff",
+        "jp": "こちらへどうぞ。<ruby>注文<rt>ちゅうもん</rt></ruby>がお<ruby>決<rt>き</rt></ruby>まりになりましたら、お<ruby>呼<rt>よ</rt></ruby>びください。",
+        "en": "This way please. When you've decided, please call us."
+      },
+      {
+        "who": "You",
+        "jp": "すみません、これはどんな<ruby>料理<rt>りょうり</rt></ruby>ですか。",
+        "en": "Excuse me, what kind of dish is this?"
+      },
+      {
+        "who": "Staff",
+        "jp": "少し<ruby>辛<rt>から</rt></ruby>い<ruby>魚<rt>さかな</rt></ruby>料理です。",
+        "en": "It's a slightly spicy fish dish."
+      },
+      {
+        "who": "You",
+        "jp": "じゃあ、それを一つと、水をお願いします。",
+        "en": "Then I'll have one of that, and water please."
+      },
+      {
+        "who": "Staff",
+        "jp": "かしこまりました。<ruby>少<rt>しょう</rt></ruby>々お<ruby>待<rt>ま</rt></ruby>ちください。",
+        "en": "Certainly. One moment please."
+      },
+      {
+        "who": "You",
+        "jp": "（<ruby>食後<rt>しょくご</rt></ruby>）すみません、お<ruby>会計<rt>かいけい</rt></ruby>をお願いします。",
+        "en": "(after eating) Excuse me, could I get the bill please."
+      },
+      {
+        "who": "Staff",
+        "jp": "レジでお<ruby>願<rt>ねが</rt></ruby>いします。カードもお<ruby>使<rt>つか</rt></ruby>いいただけます。",
+        "en": "Please pay at the register. You can use a card as well."
+      }
+    ],
+    "keyPhrases": [
+      {
+        "jp": "これはどんな料理ですか",
+        "en": "What kind of dish is this?"
+      },
+      {
+        "jp": "それを一つお願いします",
+        "en": "One of those, please"
+      },
+      {
+        "jp": "お会計をお願いします",
+        "en": "The bill, please"
+      },
+      {
+        "jp": "カードで払えますか",
+        "en": "Can I pay by card?"
+      }
+    ],
+    "roleplay": "Swap roles after reading through once — try being the staff member and improvise slightly different menu items.",
+    "quiz": [
+      {
+        "q": "How do you ask for the bill?",
+        "choices": [
+          "お願いします",
+          "お会計をお願いします",
+          "いただきます",
+          "ごちそうさまでした"
+        ],
+        "a": 1,
+        "ex": "お会計をお願いします directly asks for the check — お願いします alone is too vague on its own."
+      },
+      {
+        "q": "The staff say 少々お待ちください。What are they telling you?",
+        "choices": [
+          "Please order now",
+          "Please wait a moment",
+          "Please pay first",
+          "Please come again"
+        ],
+        "a": 1,
+        "ex": "少々お待ちください is the keigo version of ちょっと待ってください — 'please wait a moment'. You hear it constantly from staff."
+      }
+    ]
+  },
+  {
+    "jp": "道を<ruby>尋<rt>たず</rt></ruby>ねる",
+    "en": "Asking for directions",
+    "setup": "You're looking for a temple and stop someone on the street.",
+    "lines": [
+      {
+        "who": "You",
+        "jp": "すみません、<ruby>清水寺<rt>きよみずでら</rt></ruby>はどう<ruby>行<rt>い</rt></ruby>けばいいですか。",
+        "en": "Excuse me, how do I get to Kiyomizu-dera?"
+      },
+      {
+        "who": "Passerby",
+        "jp": "ああ、この<ruby>道<rt>みち</rt></ruby>をまっすぐ<ruby>行<rt>い</rt></ruby>くと、<ruby>右側<rt>みぎがわ</rt></ruby>にありますよ。",
+        "en": "Ah, if you go straight down this street, it'll be on your right."
+      },
+      {
+        "who": "You",
+        "jp": "歩いてどのくらいかかりますか。",
+        "en": "About how long does it take on foot?"
+      },
+      {
+        "who": "Passerby",
+        "jp": "十分ぐらいだと思います。",
+        "en": "I think about ten minutes."
+      },
+      {
+        "who": "You",
+        "jp": "<ruby>途中<rt>とちゅう</rt></ruby>に<ruby>目印<rt>めじるし</rt></ruby>はありますか。",
+        "en": "Is there a landmark on the way?"
+      },
+      {
+        "who": "Passerby",
+        "jp": "<ruby>大<rt>おお</rt></ruby>きいコンビニがあるので、その<ruby>角<rt>かど</rt></ruby>を<ruby>左<rt>ひだり</rt></ruby>に<ruby>曲<rt>ま</rt></ruby>がってください。",
+        "en": "There's a big convenience store, so turn left at that corner."
+      },
+      {
+        "who": "You",
+        "jp": "わかりました。ありがとうございます。",
+        "en": "Got it. Thank you."
+      },
+      {
+        "who": "Passerby",
+        "jp": "<ruby>気<rt>き</rt></ruby>をつけて。",
+        "en": "Take care."
+      }
+    ],
+    "keyPhrases": [
+      {
+        "jp": "〜はどう行けばいいですか",
+        "en": "How should I get to ~?"
+      },
+      {
+        "jp": "歩いてどのくらいかかりますか",
+        "en": "How long does it take on foot?"
+      },
+      {
+        "jp": "その角を左に曲がってください",
+        "en": "Turn left at that corner"
+      },
+      {
+        "jp": "目印はありますか",
+        "en": "Is there a landmark?"
+      }
+    ],
+    "roleplay": "Try substituting a different landmark and direction (左側、まっすぐ、この道の奥) each time you practise.",
+    "quiz": [
+      {
+        "q": "「気をつけて」means roughly:",
+        "choices": [
+          "Hurry up",
+          "Take care / be careful",
+          "Come again",
+          "Never mind"
+        ],
+        "a": 1,
+        "ex": "気をつけて is a common, warm way to say 'take care' as someone parts ways with you."
+      },
+      {
+        "q": "Which pattern is doing the work in 「まっすぐ行くと、右側にあります」?",
+        "choices": [
+          "〜たら (if/when, one-off)",
+          "〜と (whenever A, inevitably B)",
+          "〜ば (conditional emphasis)",
+          "〜なら (reacting to a topic)"
+        ],
+        "a": 1,
+        "ex": "〜と is used for a reliable, automatic result — perfect for directions, where going straight always puts the place on your right."
+      }
+    ]
+  },
+  {
+    "jp": "ホテルで",
+    "en": "Hotel check-in & a small problem",
+    "setup": "You arrive at your hotel, and the room's air conditioner doesn't seem to work.",
+    "lines": [
+      {
+        "who": "You",
+        "jp": "こんにちは、<ruby>予約<rt>よやく</rt></ruby>している<ruby>田中<rt>たなか</rt></ruby>です。",
+        "en": "Hello, I have a reservation under Tanaka."
+      },
+      {
+        "who": "Staff",
+        "jp": "お待ちしておりました。こちらにご<ruby>記入<rt>きにゅう</rt></ruby>をお願いします。",
+        "en": "We've been expecting you. Please fill this out."
+      },
+      {
+        "who": "You",
+        "jp": "これでいいですか。",
+        "en": "Is this okay?"
+      },
+      {
+        "who": "Staff",
+        "jp": "はい、ありがとうございます。お<ruby>部屋<rt>へや</rt></ruby>は305<ruby>号室<rt>ごうしつ</rt></ruby>です。",
+        "en": "Yes, thank you. Your room is 305."
+      },
+      {
+        "who": "You",
+        "jp": "<ruby>朝食<rt>ちょうしょく</rt></ruby>は<ruby>何時<rt>なんじ</rt></ruby>からですか。",
+        "en": "What time is breakfast from?"
+      },
+      {
+        "who": "Staff",
+        "jp": "七時から九時半までです。二<ruby>階<rt>かい</rt></ruby>の<ruby>食堂<rt>しょくどう</rt></ruby>でどうぞ。",
+        "en": "From seven until nine thirty, in the dining room on the second floor."
+      },
+      {
+        "who": "You",
+        "jp": "（<ruby>部屋<rt>へや</rt></ruby>で）すみません、エアコンがつかないんですが…",
+        "en": "(in the room) Excuse me, the air conditioner won't turn on..."
+      },
+      {
+        "who": "Staff",
+        "jp": "<ruby>申<rt>もう</rt></ruby>し<ruby>訳<rt>わけ</rt></ruby>ございません、すぐに<ruby>確認<rt>かくにん</rt></ruby>いたします。",
+        "en": "I'm very sorry, I'll check right away."
+      },
+      {
+        "who": "You",
+        "jp": "お願いします。<ruby>直<rt>なお</rt></ruby>らなかったら、<ruby>部屋<rt>へや</rt></ruby>を<ruby>変<rt>か</rt></ruby>えてもらえますか。",
+        "en": "Please do. If it can't be fixed, could I change rooms?"
+      }
+    ],
+    "keyPhrases": [
+      {
+        "jp": "予約している〜です",
+        "en": "I have a reservation under ~"
+      },
+      {
+        "jp": "朝食は何時からですか",
+        "en": "What time is breakfast from?"
+      },
+      {
+        "jp": "〜がつかないんですが",
+        "en": "The ~ won't turn on... (soft complaint)"
+      },
+      {
+        "jp": "部屋を変えてもらえますか",
+        "en": "Could I change rooms?"
+      }
+    ],
+    "roleplay": "Practise describing a different problem instead — Wi‑Fiがつながらない (wifi won't connect), お湯が出ない (no hot water), 鍵が開かない (the key won't open the door).",
+    "quiz": [
+      {
+        "q": "んですが at the end of つかないんですが softens the sentence into:",
+        "choices": [
+          "a command",
+          "an explanation/complaint leading into a request",
+          "a question about the weather",
+          "a hearsay report"
+        ],
+        "a": 1,
+        "ex": "んですが frames the problem as background/explanation, leaving room for the staff to respond and help — much softer than a flat statement."
+      },
+      {
+        "q": "「直らなかったら、部屋を変えてもらえますか」uses 〜てもらう to mean:",
+        "choices": [
+          "I'll change the room myself",
+          "having someone do something for me",
+          "I must change rooms",
+          "the room changed on its own"
+        ],
+        "a": 1,
+        "ex": "〜てもらう marks receiving an action from someone else — here, asking them to do the room change for you (Module on giving & receiving)."
+      }
+    ]
+  },
+  {
+    "jp": "買い物・<ruby>試着<rt>しちゃく</rt></ruby>",
+    "en": "Shopping & trying something on",
+    "setup": "You're in a clothing shop and want to try on a jacket.",
+    "lines": [
+      {
+        "who": "You",
+        "jp": "すみません、これ、<ruby>試着<rt>しちゃく</rt></ruby>してもいいですか。",
+        "en": "Excuse me, may I try this on?"
+      },
+      {
+        "who": "Staff",
+        "jp": "はい、どうぞ。あちらの<ruby>試着室<rt>しちゃくしつ</rt></ruby>をお使いください。",
+        "en": "Yes, go ahead. Please use the fitting room over there."
+      },
+      {
+        "who": "You",
+        "jp": "（<ruby>試着<rt>しちゃく</rt></ruby>後）これとこれ、どちらのほうが<ruby>似合<rt>にあ</rt></ruby>いますか。",
+        "en": "(after trying on) Which of these two suits me better?"
+      },
+      {
+        "who": "Staff",
+        "jp": "そうですね、こちらの<ruby>色<rt>いろ</rt></ruby>のほうが<ruby>似合<rt>にあ</rt></ruby>うと<ruby>思<rt>おも</rt></ruby>いますよ。",
+        "en": "Let's see — I think this color suits you better."
+      },
+      {
+        "who": "You",
+        "jp": "もう<ruby>少<rt>すこ</rt></ruby>し<ruby>大<rt>おお</rt></ruby>きいサイズはありますか。",
+        "en": "Do you have it one size larger?"
+      },
+      {
+        "who": "Staff",
+        "jp": "<ruby>在庫<rt>ざいこ</rt></ruby>を<ruby>見<rt>み</rt></ruby>てきますので、<ruby>少<rt>しょう</rt></ruby>々お<ruby>待<rt>ま</rt></ruby>ちください。",
+        "en": "I'll go check the stock, so one moment please."
+      },
+      {
+        "who": "You",
+        "jp": "じゃあ、これにします。",
+        "en": "Then I'll go with this one."
+      },
+      {
+        "who": "Staff",
+        "jp": "ありがとうございます。プレゼント<ruby>用<rt>よう</rt></ruby>ですか。",
+        "en": "Thank you. Is it a gift?"
+      }
+    ],
+    "keyPhrases": [
+      {
+        "jp": "試着してもいいですか",
+        "en": "May I try this on?"
+      },
+      {
+        "jp": "どちらのほうが似合いますか",
+        "en": "Which suits me better?"
+      },
+      {
+        "jp": "もう少し大きいサイズはありますか",
+        "en": "Do you have a larger size?"
+      },
+      {
+        "jp": "これにします",
+        "en": "I'll take this one"
+      }
+    ],
+    "roleplay": "Swap in different items — 靴 (くつ, shoes), 帽子 (ぼうし, hat) — and try もっと安いのはありますか (do you have a cheaper one?).",
+    "quiz": [
+      {
+        "q": "これにします most naturally means:",
+        "choices": [
+          "I'll decide never",
+          "I'll take/choose this one",
+          "This is too expensive",
+          "I don't want this"
+        ],
+        "a": 1,
+        "ex": "〜にする means 'to decide on/choose' — これにします = 'I'll go with this one.'"
+      },
+      {
+        "q": "どちらのほうが似合いますか is a comparison between:",
+        "choices": [
+          "three or more things",
+          "exactly two things",
+          "a thing and a person",
+          "past and present"
+        ],
+        "a": 1,
+        "ex": "どちら＋のほうが is the two-way comparison. For three or more you'd need どれが一番〜 instead."
+      }
+    ]
+  },
+  {
+    "jp": "<ruby>世間話<rt>せけんばなし</rt></ruby>",
+    "en": "Small talk with a new acquaintance",
+    "setup": "You've just met someone at a language exchange event.",
+    "lines": [
+      {
+        "who": "A",
+        "jp": "<ruby>日本語<rt>にほんご</rt></ruby>、お<ruby>上手<rt>じょうず</rt></ruby>ですね！どのくらい<ruby>勉強<rt>べんきょう</rt></ruby>しているんですか。",
+        "en": "Your Japanese is great! How long have you been studying?"
+      },
+      {
+        "who": "B",
+        "jp": "ありがとうございます。まだ一<ruby>年<rt>ねん</rt></ruby>ぐらいです。",
+        "en": "Thank you. About a year so far."
+      },
+      {
+        "who": "A",
+        "jp": "すごいですね！<ruby>日本<rt>にほん</rt></ruby>に<ruby>来<rt>き</rt></ruby>たことがありますか。",
+        "en": "That's impressive! Have you ever been to Japan?"
+      },
+      {
+        "who": "B",
+        "jp": "いいえ、まだないんです。<ruby>今度<rt>こんど</rt></ruby>、<ruby>行<rt>い</rt></ruby>くことになりました。",
+        "en": "No, not yet. It's actually just been decided that I'm going soon."
+      },
+      {
+        "who": "A",
+        "jp": "それはいいですね！いつ<ruby>行<rt>い</rt></ruby>くんですか。",
+        "en": "That's great! When are you going?"
+      },
+      {
+        "who": "B",
+        "jp": "十<ruby>二月<rt>にがつ</rt></ruby>に<ruby>行<rt>い</rt></ruby>く<ruby>予定<rt>よてい</rt></ruby>です。<ruby>Aさん<rt>エーさん</rt></ruby>はどこに<ruby>住<rt>す</rt></ruby>んでいるんですか。",
+        "en": "I'm planning to go in December. Where do you live?"
+      },
+      {
+        "who": "A",
+        "jp": "<ruby>大阪<rt>おおさか</rt></ruby>です。よかったら、おすすめの<ruby>場所<rt>ばしょ</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えますよ。",
+        "en": "Osaka. If you like, I can tell you some places I recommend."
+      },
+      {
+        "who": "B",
+        "jp": "ぜひお<ruby>願<rt>ねが</rt></ruby>いします！",
+        "en": "Yes please, I'd love that!"
+      }
+    ],
+    "keyPhrases": [
+      {
+        "jp": "どのくらい勉強しているんですか",
+        "en": "How long have you been studying?"
+      },
+      {
+        "jp": "〜たことがあります",
+        "en": "I have ~ before (experience)"
+      },
+      {
+        "jp": "〜ことになりました",
+        "en": "It's been decided that ~"
+      },
+      {
+        "jp": "Aさんはどうですか",
+        "en": "How about you, A? (turn it back)"
+      }
+    ],
+    "roleplay": "Continue the conversation yourself — try asking A something back using 〜んですか to keep the explanatory, curious tone going.",
+    "quiz": [
+      {
+        "q": "どのくらい勉強しているんですか is asking about:",
+        "choices": [
+          "Where you study",
+          "How long you've been studying",
+          "Why you study",
+          "What you're studying"
+        ],
+        "a": 1,
+        "ex": "どのくらい asks 'how much/how long', and んですか adds the curious, explanatory nuance covered in Module 6."
+      },
+      {
+        "q": "Why is 行くことになりました better here than 行くつもりです?",
+        "choices": [
+          "It's more polite",
+          "It shows the trip got settled by circumstances, not just your own intent",
+          "It's past tense so the trip is over",
+          "つもり is ungrammatical here"
+        ],
+        "a": 1,
+        "ex": "〜ことになる reports an arrangement that has come about; 〜つもり would stress your personal intention. The speaker is announcing that it's now settled."
+      }
+    ]
+  },
+  {
+    "jp": "<ruby>電車<rt>でんしゃ</rt></ruby>の中で",
+    "en": "On the train",
+    "setup": "You are unsure whether you are on the right train and need to ask another passenger.",
+    "lines": [
+      {
+        "who": "You",
+        "jp": "すみません、この<ruby>電車<rt>でんしゃ</rt></ruby>は<ruby>東京駅<rt>とうきょうえき</rt></ruby>に行きますか。",
+        "en": "Excuse me, does this train go to Tokyo Station?"
+      },
+      {
+        "who": "Passenger",
+        "jp": "はい、行きます。三つ<ruby>目<rt>め</rt></ruby>の<ruby>駅<rt>えき</rt></ruby>ですよ。",
+        "en": "Yes, it does. It is the third station."
+      },
+      {
+        "who": "You",
+        "jp": "ありがとうございます。<ruby>何分<rt>なんぷん</rt></ruby>ぐらいかかりますか。",
+        "en": "Thank you. About how many minutes does it take?"
+      },
+      {
+        "who": "Passenger",
+        "jp": "二十分ぐらいだと思います。",
+        "en": "I think about twenty minutes."
+      },
+      {
+        "who": "You",
+        "jp": "<ruby>乗<rt>の</rt></ruby>り<ruby>換<rt>か</rt></ruby>えなければなりませんか。",
+        "en": "Do I have to change trains?"
+      },
+      {
+        "who": "Passenger",
+        "jp": "いいえ、この<ruby>電車<rt>でんしゃ</rt></ruby>のままで<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>ですよ。",
+        "en": "No, you can stay on this train."
+      },
+      {
+        "who": "You",
+        "jp": "わかりました。<ruby>助<rt>たす</rt></ruby>かりました。",
+        "en": "I understand. That was a big help."
+      }
+    ],
+    "keyPhrases": [
+      {
+        "jp": "この電車は〜に行きますか",
+        "en": "Does this train go to ~?"
+      },
+      {
+        "jp": "何分ぐらいかかりますか",
+        "en": "About how many minutes does it take?"
+      },
+      {
+        "jp": "乗り換えなければなりませんか",
+        "en": "Do I have to transfer?"
+      },
+      {
+        "jp": "助かりました",
+        "en": "That was a big help"
+      }
+    ],
+    "roleplay": "Change the destination, then practise the follow-up you'll really need: 何番線ですか (which platform?) and 次は何駅ですか (what's the next station?).",
+    "quiz": [
+      {
+        "q": "How do you ask whether a train goes to a destination?",
+        "choices": [
+          "この電車は行きますか",
+          "この電車は行きますね",
+          "この電車に行きました",
+          "この電車を行きますか"
+        ],
+        "a": 0,
+        "ex": "この電車は東京駅に行きますか uses は for the train as the topic and に for the destination."
+      },
+      {
+        "q": "乗り換えなければなりませんか is asking whether transferring is:",
+        "choices": [
+          "forbidden",
+          "required",
+          "optional",
+          "finished"
+        ],
+        "a": 1,
+        "ex": "〜なければなりません expresses obligation, so the question asks whether you must transfer. 乗り換えなくてもいいですか would ask whether you can skip it."
+      }
+    ]
+  },
+  {
+    "jp": "<ruby>病院<rt>びょういん</rt></ruby>で",
+    "en": "At a clinic",
+    "setup": "You have a sore throat and explain your symptoms at a clinic.",
+    "lines": [
+      {
+        "who": "Reception",
+        "jp": "今日はどうしましたか。",
+        "en": "What brings you in today?"
+      },
+      {
+        "who": "You",
+        "jp": "昨日から<ruby>喉<rt>のど</rt></ruby>が<ruby>痛<rt>いた</rt></ruby>いんです。",
+        "en": "My throat has hurt since yesterday."
+      },
+      {
+        "who": "Reception",
+        "jp": "<ruby>熱<rt>ねつ</rt></ruby>がありますか。",
+        "en": "Do you have a fever?"
+      },
+      {
+        "who": "You",
+        "jp": "いいえ、<ruby>熱<rt>ねつ</rt></ruby>はありません。でも、<ruby>咳<rt>せき</rt></ruby>が出ます。",
+        "en": "No, I do not have a fever. But I have a cough."
+      },
+      {
+        "who": "Doctor",
+        "jp": "ちょっと<ruby>口<rt>くち</rt></ruby>を<ruby>開<rt>あ</rt></ruby>けてください。…<ruby>風邪<rt>かぜ</rt></ruby>ですね。",
+        "en": "Please open your mouth a moment. ...It's a cold."
+      },
+      {
+        "who": "You",
+        "jp": "<ruby>薬<rt>くすり</rt></ruby>を<ruby>飲<rt>の</rt></ruby>んだら、<ruby>運動<rt>うんどう</rt></ruby>してもいいですか。",
+        "en": "After I take the medicine, is it okay to exercise?"
+      },
+      {
+        "who": "Doctor",
+        "jp": "今日はやめておいたほうがいいですね。<ruby>薬<rt>くすり</rt></ruby>を出します。ゆっくり<ruby>休<rt>やす</rt></ruby>んでください。",
+        "en": "You'd better skip it today. I'll prescribe medicine. Please rest."
+      },
+      {
+        "who": "You",
+        "jp": "わかりました。ありがとうございました。",
+        "en": "Understood. Thank you very much."
+      }
+    ],
+    "keyPhrases": [
+      {
+        "jp": "昨日から〜が痛いんです",
+        "en": "My ~ has hurt since yesterday"
+      },
+      {
+        "jp": "熱はありません",
+        "en": "I don't have a fever"
+      },
+      {
+        "jp": "咳が出ます",
+        "en": "I have a cough"
+      },
+      {
+        "jp": "〜たほうがいいですね",
+        "en": "You'd better ~ (advice you'll hear)"
+      }
+    ],
+    "roleplay": "Swap in 頭が痛い (my head hurts), お腹が痛い (my stomach hurts), or 気分が悪い (I feel sick), and add 二日前から (since two days ago).",
+    "quiz": [
+      {
+        "q": "「昨日から」shows that the symptom started:",
+        "choices": [
+          "tomorrow",
+          "yesterday and continues",
+          "only next week",
+          "because of medicine"
+        ],
+        "a": 1,
+        "ex": "から after a time expression marks the starting point: since yesterday."
+      },
+      {
+        "q": "やめておいたほうがいいですね is the doctor:",
+        "choices": [
+          "forbidding it outright",
+          "recommending you not do it",
+          "asking if you want to",
+          "saying it's already stopped"
+        ],
+        "a": 1,
+        "ex": "〜ないほうがいい／やめておいたほうがいい is advice, not prohibition — softer than 〜てはいけません."
+      }
+    ]
+  },
+  {
+    "jp": "コンビニで",
+    "en": "At a convenience store",
+    "setup": "You buy a drink and a snack, answer the standard counter questions, and pay.",
+    "lines": [
+      {
+        "who": "Staff",
+        "jp": "いらっしゃいませ。",
+        "en": "Welcome."
+      },
+      {
+        "who": "You",
+        "jp": "このお<ruby>茶<rt>ちゃ</rt></ruby>とおにぎりをください。",
+        "en": "This tea and a rice ball, please."
+      },
+      {
+        "who": "Staff",
+        "jp": "おにぎりは<ruby>温<rt>あたた</rt></ruby>めますか。",
+        "en": "Shall I warm up the rice ball?"
+      },
+      {
+        "who": "You",
+        "jp": "いえ、<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です。",
+        "en": "No, it's fine as it is."
+      },
+      {
+        "who": "Staff",
+        "jp": "<ruby>袋<rt>ふくろ</rt></ruby>はご<ruby>利用<rt>りよう</rt></ruby>ですか。",
+        "en": "Would you like a bag?"
+      },
+      {
+        "who": "You",
+        "jp": "はい、お願いします。",
+        "en": "Yes, please."
+      },
+      {
+        "who": "Staff",
+        "jp": "三<ruby>百八十円<rt>ひゃくはちじゅうえん</rt></ruby>です。",
+        "en": "That will be 380 yen."
+      },
+      {
+        "who": "You",
+        "jp": "はい、どうぞ。",
+        "en": "Here you are."
+      },
+      {
+        "who": "Staff",
+        "jp": "ありがとうございました。またお<ruby>越<rt>こ</rt></ruby>しください。",
+        "en": "Thank you very much. Please come again."
+      }
+    ],
+    "keyPhrases": [
+      {
+        "jp": "〜をください",
+        "en": "~, please"
+      },
+      {
+        "jp": "温めますか",
+        "en": "Shall I heat it up? (staff line — recognise it)"
+      },
+      {
+        "jp": "袋はご利用ですか",
+        "en": "Do you need a bag? (staff line)"
+      },
+      {
+        "jp": "大丈夫です",
+        "en": "I'm fine / no need"
+      }
+    ],
+    "roleplay": "Try ordering a different drink and answer the counter questions the other way: 温めてください、袋はいりません、ポイントカードはありません.",
+    "quiz": [
+      {
+        "q": "How do you politely say 'this tea and a rice ball, please'?",
+        "choices": [
+          "このお茶とおにぎりをください",
+          "このお茶がおにぎりです",
+          "このお茶でおにぎりをします",
+          "このお茶におにぎりがいます"
+        ],
+        "a": 0,
+        "ex": "ください after the object is a direct, useful way to request something in a shop."
+      },
+      {
+        "q": "Staff ask 温めますか。You don't want it heated. The most natural reply is:",
+        "choices": [
+          "大丈夫です",
+          "温めます",
+          "おいしいです",
+          "わかりません"
+        ],
+        "a": 0,
+        "ex": "大丈夫です works as a soft 'no thanks' all over Japan. そのままで大丈夫です ('as it is, it's fine') is the fuller version."
+      }
+    ]
+  },
+  {
+    "jp": "<ruby>友達<rt>ともだち</rt></ruby>を<ruby>誘<rt>さそ</rt></ruby>う",
+    "en": "Inviting a friend",
+    "setup": "You invite a friend to a movie and work out a time together.",
+    "lines": [
+      {
+        "who": "A",
+        "jp": "<ruby>土曜日<rt>どようび</rt></ruby>、いっしょに<ruby>映画<rt>えいが</rt></ruby>を見ませんか。",
+        "en": "Would you like to watch a movie together on Saturday?"
+      },
+      {
+        "who": "B",
+        "jp": "いいですね。<ruby>何時<rt>なんじ</rt></ruby>に会いましょうか。",
+        "en": "Sounds good. What time shall we meet?"
+      },
+      {
+        "who": "A",
+        "jp": "<ruby>駅<rt>えき</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>で二時に会いましょう。",
+        "en": "Let's meet in front of the station at two."
+      },
+      {
+        "who": "B",
+        "jp": "すみません、二時はちょっと…。三時でもいいですか。",
+        "en": "Sorry, two is a little difficult... Is three okay?"
+      },
+      {
+        "who": "A",
+        "jp": "はい、三時で<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です。",
+        "en": "Yes, three is fine."
+      },
+      {
+        "who": "B",
+        "jp": "<ruby>映画<rt>えいが</rt></ruby>のあとで、ごはんも<ruby>食<rt>た</rt></ruby>べに行きませんか。",
+        "en": "After the movie, shall we go eat as well?"
+      },
+      {
+        "who": "A",
+        "jp": "いいですね。じゃあ、<ruby>楽<rt>たの</rt></ruby>しみにしています。",
+        "en": "Nice. I'm looking forward to it, then."
+      }
+    ],
+    "keyPhrases": [
+      {
+        "jp": "いっしょに〜ませんか",
+        "en": "Won't you ~ together? (invitation)"
+      },
+      {
+        "jp": "何時に会いましょうか",
+        "en": "What time shall we meet?"
+      },
+      {
+        "jp": "〜はちょっと…",
+        "en": "~ is a bit difficult (soft refusal)"
+      },
+      {
+        "jp": "楽しみにしています",
+        "en": "I'm looking forward to it"
+      }
+    ],
+    "roleplay": "Change the activity to lunch, shopping, or a museum visit and negotiate a new time. Then practise the harder version: decline the whole invitation politely.",
+    "quiz": [
+      {
+        "q": "Which is a natural soft refusal or hesitation?",
+        "choices": [
+          "二時はちょっと…",
+          "二時をちょっと…",
+          "二時にちょっと…",
+          "二時がちょっとです"
+        ],
+        "a": 0,
+        "ex": "二時はちょっと… leaves the reason unsaid and is a very common soft way to say the time is difficult."
+      },
+      {
+        "q": "〜ませんか as an invitation is:",
+        "choices": [
+          "a negative question expecting 'no'",
+          "a polite invitation, softer than 〜ましょう",
+          "a command",
+          "hearsay"
+        ],
+        "a": 1,
+        "ex": "The negative question form is the standard polite invitation — it leaves the listener room to decline, which is why it feels softer than 〜ましょう."
+      }
+    ]
+  },
+  {
+    "jp": "<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>撮<rt>と</rt></ruby>る",
+    "en": "Taking a photo",
+    "setup": "You ask someone to take your photo at a sightseeing spot.",
+    "lines": [
+      {
+        "who": "You",
+        "jp": "すみません、<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>撮<rt>と</rt></ruby>っていただけませんか。",
+        "en": "Excuse me, could you take a photo for me?"
+      },
+      {
+        "who": "Visitor",
+        "jp": "はい、もちろんです。",
+        "en": "Yes, of course."
+      },
+      {
+        "who": "You",
+        "jp": "このボタンを<ruby>押<rt>お</rt></ruby>してください。",
+        "en": "Please press this button."
+      },
+      {
+        "who": "Visitor",
+        "jp": "わかりました。<ruby>後<rt>うし</rt></ruby>ろの<ruby>塔<rt>とう</rt></ruby>も<ruby>入<rt>い</rt></ruby>れますか。",
+        "en": "Okay. Shall I get the tower behind you in as well?"
+      },
+      {
+        "who": "You",
+        "jp": "はい、お願いします。",
+        "en": "Yes, please."
+      },
+      {
+        "who": "Visitor",
+        "jp": "はい、<ruby>撮<rt>と</rt></ruby>りますよ。もう一<ruby>枚<rt>まい</rt></ruby><ruby>撮<rt>と</rt></ruby>りましょうか。",
+        "en": "Okay, here goes. Shall I take one more?"
+      },
+      {
+        "who": "You",
+        "jp": "ありがとうございます。<ruby>完璧<rt>かんぺき</rt></ruby>です！<ruby>私<rt>わたし</rt></ruby>が<ruby>撮<rt>と</rt></ruby>りましょうか。",
+        "en": "Thank you. It's perfect! Shall I take one of you?"
+      }
+    ],
+    "keyPhrases": [
+      {
+        "jp": "写真を撮っていただけませんか",
+        "en": "Could you take a photo for me?"
+      },
+      {
+        "jp": "このボタンを押してください",
+        "en": "Please press this button"
+      },
+      {
+        "jp": "もう一枚お願いします",
+        "en": "One more, please"
+      },
+      {
+        "jp": "私が撮りましょうか",
+        "en": "Shall I take one for you?"
+      }
+    ],
+    "roleplay": "Practise asking for two photos and offering to take the other person's photo too: 私が撮りましょうか。",
+    "quiz": [
+      {
+        "q": "写真を撮っていただけませんか is a polite way to ask someone to:",
+        "choices": [
+          "buy a camera",
+          "take a photo",
+          "look at a photo",
+          "delete a photo"
+        ],
+        "a": 1,
+        "ex": "撮っていただけませんか is a respectful request meaning 'could you take it for me?'"
+      },
+      {
+        "q": "撮りましょうか (rather than 撮りますか) is used to:",
+        "choices": [
+          "ask what the other person will do",
+          "offer to do something for the other person",
+          "report hearsay",
+          "give a command"
+        ],
+        "a": 1,
+        "ex": "〜ましょうか offers your own action for someone else's benefit — 'shall I ~ (for you)?'"
+      }
+    ]
+  },
+  {
+    "jp": "<ruby>空港<rt>くうこう</rt></ruby>・<ruby>入国審査<rt>にゅうこくしんさ</rt></ruby>",
+    "en": "Airport & immigration",
+    "setup": "You land in Japan and go through immigration, then collect your bag.",
+    "lines": [
+      {
+        "who": "Officer",
+        "jp": "パスポートをお<ruby>願<rt>ねが</rt></ruby>いします。<ruby>旅行<rt>りょこう</rt></ruby>の<ruby>目的<rt>もくてき</rt></ruby>は<ruby>何<rt>なん</rt></ruby>ですか。",
+        "en": "Your passport, please. What is the purpose of your trip?"
+      },
+      {
+        "who": "You",
+        "jp": "<ruby>観光<rt>かんこう</rt></ruby>です。",
+        "en": "Sightseeing."
+      },
+      {
+        "who": "Officer",
+        "jp": "どのくらい<ruby>滞在<rt>たいざい</rt></ruby>しますか。",
+        "en": "How long will you be staying?"
+      },
+      {
+        "who": "You",
+        "jp": "十<ruby>日間<rt>にちかん</rt></ruby>の<ruby>予定<rt>よてい</rt></ruby>です。",
+        "en": "Ten days, as planned."
+      },
+      {
+        "who": "Officer",
+        "jp": "どこに<ruby>泊<rt>と</rt></ruby>まりますか。",
+        "en": "Where will you be staying?"
+      },
+      {
+        "who": "You",
+        "jp": "<ruby>大阪<rt>おおさか</rt></ruby>のホテルです。<ruby>予約表<rt>よやくひょう</rt></ruby>を<ruby>見<rt>み</rt></ruby>せましょうか。",
+        "en": "A hotel in Osaka. Shall I show you the booking?"
+      },
+      {
+        "who": "Officer",
+        "jp": "お願いします。…はい、<ruby>結構<rt>けっこう</rt></ruby>です。<ruby>次<rt>つぎ</rt></ruby>は<ruby>荷物<rt>にもつ</rt></ruby>の<ruby>受取所<rt>うけとりじょ</rt></ruby>へどうぞ。",
+        "en": "Please. ...Alright, that's fine. Please proceed to baggage claim."
+      },
+      {
+        "who": "You",
+        "jp": "すみません、<ruby>荷物<rt>にもつ</rt></ruby>が<ruby>出<rt>で</rt></ruby>てこないんですが…",
+        "en": "Excuse me, my luggage hasn't come out..."
+      },
+      {
+        "who": "Staff",
+        "jp": "こちらの<ruby>紙<rt>かみ</rt></ruby>にご<ruby>記入<rt>きにゅう</rt></ruby>ください。ホテルまでお<ruby>届<rt>とど</rt></ruby>けします。",
+        "en": "Please fill in this form. We'll deliver it to your hotel."
+      }
+    ],
+    "keyPhrases": [
+      {
+        "jp": "旅行の目的は観光です",
+        "en": "The purpose of my trip is sightseeing"
+      },
+      {
+        "jp": "十日間の予定です",
+        "en": "I'm planning to stay ten days"
+      },
+      {
+        "jp": "〜に泊まります",
+        "en": "I'm staying at ~"
+      },
+      {
+        "jp": "荷物が出てこないんですが",
+        "en": "My luggage hasn't come out..."
+      }
+    ],
+    "roleplay": "Answer the same three questions (目的・滞在・泊まる所) about a business trip instead: 仕事です／一週間です／東京の会社の近くです.",
+    "quiz": [
+      {
+        "q": "The officer asks どのくらい滞在しますか。They want to know:",
+        "choices": [
+          "where you're staying",
+          "how long you're staying",
+          "who you're with",
+          "how much money you have"
+        ],
+        "a": 1,
+        "ex": "滞在する = to stay; どのくらい asks about duration. Compare どこに泊まりますか, which asks about the place."
+      },
+      {
+        "q": "「見せましょうか」offers to:",
+        "choices": [
+          "look at something",
+          "show something to them",
+          "be shown something",
+          "stop showing"
+        ],
+        "a": 1,
+        "ex": "見せる is 'to show (someone)' — 見る is 'to look'. 〜ましょうか then turns it into an offer: 'shall I show you?'"
+      }
+    ]
+  },
+  {
+    "jp": "<ruby>駅<rt>えき</rt></ruby>で<ruby>切符<rt>きっぷ</rt></ruby>を<ruby>買<rt>か</rt></ruby>う",
+    "en": "Buying a ticket at the station",
+    "setup": "The ticket machine is confusing, so you ask at the window instead.",
+    "lines": [
+      {
+        "who": "You",
+        "jp": "すみません、<ruby>京都<rt>きょうと</rt></ruby>までの<ruby>切符<rt>きっぷ</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたいんですが。",
+        "en": "Excuse me, I'd like to buy a ticket to Kyoto."
+      },
+      {
+        "who": "Staff",
+        "jp": "<ruby>片道<rt>かたみち</rt></ruby>ですか、<ruby>往復<rt>おうふく</rt></ruby>ですか。",
+        "en": "One way, or round trip?"
+      },
+      {
+        "who": "You",
+        "jp": "<ruby>片道<rt>かたみち</rt></ruby>でお願いします。いくらですか。",
+        "en": "One way, please. How much is it?"
+      },
+      {
+        "who": "Staff",
+        "jp": "二<ruby>千八百円<rt>せんはっぴゃくえん</rt></ruby>です。<ruby>指定席<rt>していせき</rt></ruby>にしますか。",
+        "en": "2,800 yen. Would you like a reserved seat?"
+      },
+      {
+        "who": "You",
+        "jp": "はい、<ruby>窓側<rt>まどがわ</rt></ruby>の<ruby>席<rt>せき</rt></ruby>があれば、お願いします。",
+        "en": "Yes, a window seat if there is one, please."
+      },
+      {
+        "who": "Staff",
+        "jp": "ございます。<ruby>次<rt>つぎ</rt></ruby>の<ruby>電車<rt>でんしゃ</rt></ruby>は十<ruby>時十五分発<rt>じじゅうごふんはつ</rt></ruby>、三<ruby>番線<rt>ばんせん</rt></ruby>です。",
+        "en": "We have one. The next train is at 10:15 from platform 3."
+      },
+      {
+        "who": "You",
+        "jp": "<ruby>三番線<rt>さんばんせん</rt></ruby>ですね。ICカードもここで<ruby>買<rt>か</rt></ruby>えますか。",
+        "en": "Platform 3, right? Can I buy an IC card here too?"
+      },
+      {
+        "who": "Staff",
+        "jp": "はい、こちらでお<ruby>作<rt>つく</rt></ruby>りできます。",
+        "en": "Yes, we can make one for you here."
+      }
+    ],
+    "keyPhrases": [
+      {
+        "jp": "〜までの切符を買いたいんですが",
+        "en": "I'd like a ticket to ~"
+      },
+      {
+        "jp": "片道／往復でお願いします",
+        "en": "One way / round trip, please"
+      },
+      {
+        "jp": "窓側の席があれば、お願いします",
+        "en": "A window seat if available, please"
+      },
+      {
+        "jp": "何番線ですか",
+        "en": "Which platform?"
+      }
+    ],
+    "roleplay": "Buy a round-trip ticket for two people instead: 二人分、往復でお願いします。Then ask 何時の電車がありますか.",
+    "quiz": [
+      {
+        "q": "「窓側の席があれば、お願いします」uses 〜ば to mean:",
+        "choices": [
+          "because there is one",
+          "if there is one",
+          "even though there is one",
+          "after there is one"
+        ],
+        "a": 1,
+        "ex": "〜ば is the conditional here — 'if there is a window seat'. It's a polite way to make the request contingent rather than demanding."
+      },
+      {
+        "q": "買いたいんですが is softer than 買いたいです because んですが:",
+        "choices": [
+          "makes it past tense",
+          "sets up your situation and invites the staff to respond",
+          "turns it into hearsay",
+          "makes it a command"
+        ],
+        "a": 1,
+        "ex": "〜んですが trails off deliberately, presenting your need as context for them to act on. It's the standard shape for requests at a counter."
+      }
+    ]
+  },
+  {
+    "jp": "タクシーで",
+    "en": "Taking a taxi",
+    "setup": "You take a taxi to your hotel and need to explain where you're going.",
+    "lines": [
+      {
+        "who": "Driver",
+        "jp": "どちらまでですか。",
+        "en": "Where to?"
+      },
+      {
+        "who": "You",
+        "jp": "この<ruby>住所<rt>じゅうしょ</rt></ruby>までお願いします。",
+        "en": "To this address, please."
+      },
+      {
+        "who": "Driver",
+        "jp": "はい、かしこまりました。<ruby>道<rt>みち</rt></ruby>が<ruby>混<rt>こ</rt></ruby>んでいるので、<ruby>少<rt>すこ</rt></ruby>し時間がかかります。",
+        "en": "Certainly. The roads are busy, so it'll take a little while."
+      },
+      {
+        "who": "You",
+        "jp": "どのくらいかかりますか。",
+        "en": "About how long will it take?"
+      },
+      {
+        "who": "Driver",
+        "jp": "二十分ぐらいだと思います。",
+        "en": "About twenty minutes, I'd say."
+      },
+      {
+        "who": "You",
+        "jp": "すみません、<ruby>急<rt>いそ</rt></ruby>いでいるので、<ruby>近道<rt>ちかみち</rt></ruby>はありますか。",
+        "en": "Sorry — I'm in a hurry, is there a shortcut?"
+      },
+      {
+        "who": "Driver",
+        "jp": "では、<ruby>別<rt>べつ</rt></ruby>の<ruby>道<rt>みち</rt></ruby>で行きますね。",
+        "en": "Alright, I'll take a different route then."
+      },
+      {
+        "who": "You",
+        "jp": "（<ruby>到着<rt>とうちゃく</rt></ruby>）ここで<ruby>降<rt>お</rt></ruby>ります。<ruby>領収書<rt>りょうしゅうしょ</rt></ruby>をお願いします。",
+        "en": "(on arrival) I'll get out here. May I have a receipt, please?"
+      }
+    ],
+    "keyPhrases": [
+      {
+        "jp": "この住所までお願いします",
+        "en": "To this address, please"
+      },
+      {
+        "jp": "どのくらいかかりますか",
+        "en": "How long will it take?"
+      },
+      {
+        "jp": "急いでいるんですが",
+        "en": "I'm in a hurry..."
+      },
+      {
+        "jp": "ここで降ります／領収書をお願いします",
+        "en": "I'll get out here / receipt please"
+      }
+    ],
+    "roleplay": "Give the destination three ways: by address, by landmark (東京駅の北口まで), and by showing your phone (ここまでお願いします).",
+    "quiz": [
+      {
+        "q": "「道が混んでいる」means:",
+        "choices": [
+          "the road is closed",
+          "the road is crowded",
+          "the road is narrow",
+          "the road is new"
+        ],
+        "a": 1,
+        "ex": "混む (こむ) = to be crowded; 混んでいる is the resulting-state 〜ている. Extremely common for trains and roads."
+      },
+      {
+        "q": "You want the driver to stop where you are. Say:",
+        "choices": [
+          "ここで降ります",
+          "ここに乗ります",
+          "ここを行きます",
+          "ここが来ます"
+        ],
+        "a": 0,
+        "ex": "降りる (to get off/out) with で marking the place of the action. 乗る would mean getting in."
+      }
+    ]
+  },
+  {
+    "jp": "バスの<ruby>乗<rt>の</rt></ruby>り<ruby>方<rt>かた</rt></ruby>",
+    "en": "Working out how the bus works",
+    "setup": "Local buses often take payment on exit, which catches visitors out. You ask before boarding.",
+    "lines": [
+      {
+        "who": "You",
+        "jp": "すみません、このバスは<ruby>駅<rt>えき</rt></ruby>に行きますか。",
+        "en": "Excuse me, does this bus go to the station?"
+      },
+      {
+        "who": "Driver",
+        "jp": "はい、行きますよ。<ruby>後<rt>うし</rt></ruby>ろから<ruby>乗<rt>の</rt></ruby>ってください。",
+        "en": "Yes, it does. Please board from the rear."
+      },
+      {
+        "who": "You",
+        "jp": "<ruby>料金<rt>りょうきん</rt></ruby>はいつ<ruby>払<rt>はら</rt></ruby>えばいいですか。",
+        "en": "When should I pay the fare?"
+      },
+      {
+        "who": "Driver",
+        "jp": "<ruby>降<rt>お</rt></ruby>りるときに<ruby>払<rt>はら</rt></ruby>ってください。<ruby>整理券<rt>せいりけん</rt></ruby>を<ruby>取<rt>と</rt></ruby>ってくださいね。",
+        "en": "Please pay when you get off. Take a numbered ticket."
+      },
+      {
+        "who": "You",
+        "jp": "わかりました。<ruby>駅<rt>えき</rt></ruby>に<ruby>着<rt>つ</rt></ruby>いたら、<ruby>教<rt>おし</rt></ruby>えてもらえますか。",
+        "en": "Understood. Could you let me know when we reach the station?"
+      },
+      {
+        "who": "Driver",
+        "jp": "はい、<ruby>放送<rt>ほうそう</rt></ruby>もありますから、<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>ですよ。",
+        "en": "Sure — there's an announcement too, so you'll be fine."
+      },
+      {
+        "who": "You",
+        "jp": "ありがとうございます。<ruby>助<rt>たす</rt></ruby>かりました。",
+        "en": "Thank you. That's a big help."
+      }
+    ],
+    "keyPhrases": [
+      {
+        "jp": "料金はいつ払えばいいですか",
+        "en": "When should I pay the fare?"
+      },
+      {
+        "jp": "降りるときに払います",
+        "en": "You pay when you get off"
+      },
+      {
+        "jp": "整理券を取ってください",
+        "en": "Please take a numbered ticket"
+      },
+      {
+        "jp": "着いたら教えてもらえますか",
+        "en": "Could you tell me when we arrive?"
+      }
+    ],
+    "roleplay": "Practise the same exchange for a city bus with flat fare: 料金は先払いですか、後払いですか (do you pay before or after?).",
+    "quiz": [
+      {
+        "q": "払えばいいですか is asking:",
+        "choices": [
+          "whether paying is forbidden",
+          "what the best/expected way to pay is",
+          "whether you already paid",
+          "how much it costs"
+        ],
+        "a": 1,
+        "ex": "〜ばいいですか asks for guidance — 'what should I do?'. It's one of the single most useful question shapes for a traveller."
+      },
+      {
+        "q": "「駅に着いたら、教えてもらえますか」— the たら clause means:",
+        "choices": [
+          "because we arrived",
+          "when we arrive",
+          "even if we arrive",
+          "in order to arrive"
+        ],
+        "a": 1,
+        "ex": "〜たら here is the 'when/once' conditional for a one-off future event — you arrive first, then they tell you."
+      }
+    ]
+  },
+  {
+    "jp": "カフェで",
+    "en": "At a café",
+    "setup": "You order a coffee and have to answer size, hot/cold and eat-in questions.",
+    "lines": [
+      {
+        "who": "Staff",
+        "jp": "いらっしゃいませ。ご<ruby>注文<rt>ちゅうもん</rt></ruby>はお<ruby>決<rt>き</rt></ruby>まりですか。",
+        "en": "Welcome. Are you ready to order?"
+      },
+      {
+        "who": "You",
+        "jp": "ホットコーヒーを一つお願いします。",
+        "en": "One hot coffee, please."
+      },
+      {
+        "who": "Staff",
+        "jp": "サイズはどうしますか。S、M、Lがございます。",
+        "en": "What size? We have small, medium and large."
+      },
+      {
+        "who": "You",
+        "jp": "Mでお願いします。それから、この<ruby>甘<rt>あま</rt></ruby>いパンも一つください。",
+        "en": "Medium, please. And one of these sweet buns too."
+      },
+      {
+        "who": "Staff",
+        "jp": "<ruby>店内<rt>てんない</rt></ruby>でお<ruby>召<rt>め</rt></ruby>し<ruby>上<rt>あ</rt></ruby>がりですか、お<ruby>持<rt>も</rt></ruby>ち<ruby>帰<rt>かえ</rt></ruby>りですか。",
+        "en": "Will you eat in, or take away?"
+      },
+      {
+        "who": "You",
+        "jp": "<ruby>店内<rt>てんない</rt></ruby>でお願いします。",
+        "en": "Eat in, please."
+      },
+      {
+        "who": "Staff",
+        "jp": "かしこまりました。あちらの<ruby>席<rt>せき</rt></ruby>でお<ruby>待<rt>ま</rt></ruby>ちください。",
+        "en": "Certainly. Please wait at that seat over there."
+      },
+      {
+        "who": "You",
+        "jp": "すみません、<ruby>電源<rt>でんげん</rt></ruby>はありますか。",
+        "en": "Excuse me, is there a power outlet?"
+      },
+      {
+        "who": "Staff",
+        "jp": "<ruby>窓側<rt>まどがわ</rt></ruby>の<ruby>席<rt>せき</rt></ruby>にございます。Wi‑Fiも<ruby>無料<rt>むりょう</rt></ruby>です。",
+        "en": "There are some at the window seats. The wifi is free too."
+      }
+    ],
+    "keyPhrases": [
+      {
+        "jp": "〜を一つお願いします",
+        "en": "One ~, please"
+      },
+      {
+        "jp": "店内で／持ち帰りで",
+        "en": "Eat in / take away"
+      },
+      {
+        "jp": "電源はありますか",
+        "en": "Is there a power outlet?"
+      },
+      {
+        "jp": "Wi‑Fiは無料ですか",
+        "en": "Is the wifi free?"
+      }
+    ],
+    "roleplay": "Run it again as a takeaway order for two drinks, and add 氷を少なめでお願いします (less ice, please).",
+    "quiz": [
+      {
+        "q": "お召し上がりですか is the polite equivalent of:",
+        "choices": [
+          "買いますか",
+          "食べますか",
+          "作りますか",
+          "帰りますか"
+        ],
+        "a": 1,
+        "ex": "召し上がる is the honorific form of 食べる／飲む. Staff use it about you; you don't use it about yourself."
+      },
+      {
+        "q": "To say you're taking the drink away, the natural phrase is:",
+        "choices": [
+          "持ち帰りでお願いします",
+          "店内でお願いします",
+          "持っていきましょうか",
+          "帰ってもいいですか"
+        ],
+        "a": 0,
+        "ex": "持ち帰りで(お願いします) is the standard counter phrase. テイクアウトで also works."
+      }
+    ]
+  },
+  {
+    "jp": "<ruby>居酒屋<rt>いざかや</rt></ruby>で",
+    "en": "At an izakaya with coworkers",
+    "setup": "A casual after-work meal — ordering as a group, toasting, and splitting the bill.",
+    "lines": [
+      {
+        "who": "Coworker",
+        "jp": "とりあえず、<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>を<ruby>頼<rt>たの</rt></ruby>みましょうか。<ruby>何<rt>なに</rt></ruby>にしますか。",
+        "en": "Shall we order drinks first? What'll you have?"
+      },
+      {
+        "who": "You",
+        "jp": "じゃあ、ウーロン<ruby>茶<rt>ちゃ</rt></ruby>にします。お<ruby>酒<rt>さけ</rt></ruby>はあまり<ruby>飲<rt>の</rt></ruby>めないんです。",
+        "en": "I'll have oolong tea, then. I can't really drink alcohol."
+      },
+      {
+        "who": "Coworker",
+        "jp": "そうなんですね。じゃあ、<ruby>食<rt>た</rt></ruby>べ<ruby>物<rt>もの</rt></ruby>は<ruby>何<rt>なに</rt></ruby>か<ruby>苦手<rt>にがて</rt></ruby>なものはありますか。",
+        "en": "Ah, I see. Is there any food you'd rather avoid?"
+      },
+      {
+        "who": "You",
+        "jp": "<ruby>生<rt>なま</rt></ruby>の<ruby>魚<rt>さかな</rt></ruby>はちょっと…。<ruby>他<rt>ほか</rt></ruby>は<ruby>何<rt>なん</rt></ruby>でも<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です。",
+        "en": "Raw fish is a bit... Anything else is fine."
+      },
+      {
+        "who": "Coworker",
+        "jp": "わかりました。じゃあ、<ruby>焼<rt>や</rt></ruby>き<ruby>鳥<rt>とり</rt></ruby>と<ruby>枝豆<rt>えだまめ</rt></ruby>を<ruby>頼<rt>たの</rt></ruby>みますね。…かんぱい！",
+        "en": "Got it. I'll order yakitori and edamame then. ...Cheers!"
+      },
+      {
+        "who": "You",
+        "jp": "かんぱい！この<ruby>店<rt>みせ</rt></ruby>、<ruby>雰囲気<rt>ふんいき</rt></ruby>がいいですね。",
+        "en": "Cheers! This place has a nice atmosphere."
+      },
+      {
+        "who": "Coworker",
+        "jp": "でしょう？よく<ruby>来<rt>き</rt></ruby>るんですよ。…そろそろ<ruby>帰<rt>かえ</rt></ruby>りましょうか。",
+        "en": "Right? I come here a lot. ...Shall we head off soon?"
+      },
+      {
+        "who": "You",
+        "jp": "はい。お<ruby>会計<rt>かいけい</rt></ruby>は<ruby>別々<rt>べつべつ</rt></ruby>でお願いできますか。",
+        "en": "Yes. Could we have separate bills?"
+      },
+      {
+        "who": "Coworker",
+        "jp": "じゃあ、<ruby>割<rt>わ</rt></ruby>り<ruby>勘<rt>かん</rt></ruby>にしましょう。お<ruby>疲<rt>つか</rt></ruby>れさまでした！",
+        "en": "Let's split it evenly then. Good work today!"
+      }
+    ],
+    "keyPhrases": [
+      {
+        "jp": "とりあえず飲み物を頼みましょうか",
+        "en": "Shall we order drinks first?"
+      },
+      {
+        "jp": "お酒はあまり飲めないんです",
+        "en": "I can't really drink alcohol"
+      },
+      {
+        "jp": "〜はちょっと…",
+        "en": "~ is a bit much for me (polite avoidance)"
+      },
+      {
+        "jp": "別々でお願いできますか／割り勘にしましょう",
+        "en": "Separate bills? / let's split it"
+      }
+    ],
+    "roleplay": "Practise refusing a second drink without killing the mood: もう十分です、ありがとうございます／次はお茶にします。",
+    "quiz": [
+      {
+        "q": "「飲めないんです」uses which form?",
+        "choices": [
+          "passive",
+          "potential (negative)",
+          "causative",
+          "volitional"
+        ],
+        "a": 1,
+        "ex": "飲める is the potential form of 飲む, so 飲めない = 'cannot drink' — an ability statement, not a refusal."
+      },
+      {
+        "q": "割り勘 means:",
+        "choices": [
+          "paying separately by item",
+          "splitting the total evenly",
+          "the host pays",
+          "paying by card"
+        ],
+        "a": 1,
+        "ex": "割り勘 is splitting the bill evenly. 別々 (separately) means each person pays for what they ordered — two different arrangements."
+      }
+    ]
+  },
+  {
+    "jp": "<ruby>電話<rt>でんわ</rt></ruby>で<ruby>予約<rt>よやく</rt></ruby>する",
+    "en": "Making a reservation by phone",
+    "setup": "Phone calls are the hardest kaiwa situation — no gestures, no lip reading. Rehearse this one out loud twice.",
+    "lines": [
+      {
+        "who": "Shop",
+        "jp": "はい、レストラン<ruby>さくら<rt>さくら</rt></ruby>でございます。",
+        "en": "Hello, this is Restaurant Sakura."
+      },
+      {
+        "who": "You",
+        "jp": "あの、<ruby>予約<rt>よやく</rt></ruby>をお願いしたいんですが。",
+        "en": "Um, I'd like to make a reservation."
+      },
+      {
+        "who": "Shop",
+        "jp": "ありがとうございます。<ruby>何日<rt>なんにち</rt></ruby>の<ruby>何時<rt>なんじ</rt></ruby>ごろでしょうか。",
+        "en": "Thank you. For what date and time?"
+      },
+      {
+        "who": "You",
+        "jp": "<ruby>今週<rt>こんしゅう</rt></ruby>の<ruby>金曜日<rt>きんようび</rt></ruby>、<ruby>七時<rt>しちじ</rt></ruby>から二人でお願いします。",
+        "en": "This Friday at seven, for two people, please."
+      },
+      {
+        "who": "Shop",
+        "jp": "<ruby>少<rt>しょう</rt></ruby>々お<ruby>待<rt>ま</rt></ruby>ちください。…はい、ご<ruby>用意<rt>ようい</rt></ruby>できます。お<ruby>名前<rt>なまえ</rt></ruby>をお願いします。",
+        "en": "One moment please. ...Yes, we can accommodate that. May I have your name?"
+      },
+      {
+        "who": "You",
+        "jp": "ダレンです。すみません、もう一<ruby>度<rt>ど</rt></ruby><ruby>確認<rt>かくにん</rt></ruby>させてください。<ruby>金曜日<rt>きんようび</rt></ruby>の<ruby>七時<rt>しちじ</rt></ruby>、二人ですね。",
+        "en": "It's Darren. Sorry, let me confirm once more — Friday at seven, two people, correct?"
+      },
+      {
+        "who": "Shop",
+        "jp": "はい、<ruby>左様<rt>さよう</rt></ruby>でございます。お<ruby>待<rt>ま</rt></ruby>ちしております。",
+        "en": "Yes, that's right. We look forward to seeing you."
+      },
+      {
+        "who": "You",
+        "jp": "よろしくお願いします。<ruby>失礼<rt>しつれい</rt></ruby>します。",
+        "en": "Thank you very much. Goodbye."
+      }
+    ],
+    "keyPhrases": [
+      {
+        "jp": "予約をお願いしたいんですが",
+        "en": "I'd like to make a reservation"
+      },
+      {
+        "jp": "金曜日の七時から二人でお願いします",
+        "en": "Friday at seven, for two, please"
+      },
+      {
+        "jp": "もう一度確認させてください",
+        "en": "Let me confirm once more"
+      },
+      {
+        "jp": "失礼します",
+        "en": "Goodbye (ending a call politely)"
+      }
+    ],
+    "roleplay": "Call to change the booking instead: すみません、予約の時間を変えたいんですが — then cancel it: キャンセルをお願いします。",
+    "quiz": [
+      {
+        "q": "確認させてください uses the causative to mean:",
+        "choices": [
+          "make me confirm",
+          "please let me confirm",
+          "I was made to confirm",
+          "confirm it for me"
+        ],
+        "a": 1,
+        "ex": "Causative + てください = 'please let me ~'. It's the polite way to claim a moment for yourself: 説明させてください、考えさせてください."
+      },
+      {
+        "q": "On the phone, 失礼します at the end functions as:",
+        "choices": [
+          "an apology for a mistake",
+          "a polite sign-off",
+          "a request to continue",
+          "a greeting"
+        ],
+        "a": 1,
+        "ex": "失礼します is the standard polite way to close a phone call, and also to enter or leave a room."
+      }
+    ]
+  },
+  {
+    "jp": "<ruby>遅<rt>おく</rt></ruby>れる<ruby>連絡<rt>れんらく</rt></ruby>",
+    "en": "Telling someone you'll be late",
+    "setup": "You're stuck on a delayed train and need to message, then apologise in person.",
+    "lines": [
+      {
+        "who": "You",
+        "jp": "もしもし、すみません、<ruby>電車<rt>でんしゃ</rt></ruby>が<ruby>遅<rt>おく</rt></ruby>れていて、十五分ぐらい<ruby>遅<rt>おく</rt></ruby>れそうです。",
+        "en": "Hello, sorry — the train is delayed, so I'll probably be about fifteen minutes late."
+      },
+      {
+        "who": "Friend",
+        "jp": "あ、<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>ですよ。<ruby>気<rt>き</rt></ruby>をつけて<ruby>来<rt>き</rt></ruby>てください。",
+        "en": "Ah, no problem. Take care on the way."
+      },
+      {
+        "who": "You",
+        "jp": "<ruby>本当<rt>ほんとう</rt></ruby>にすみません。<ruby>先<rt>さき</rt></ruby>に<ruby>注文<rt>ちゅうもん</rt></ruby>していてください。",
+        "en": "I'm really sorry. Please go ahead and order without me."
+      },
+      {
+        "who": "Friend",
+        "jp": "わかりました。じゃあ、<ruby>店<rt>みせ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で<ruby>待<rt>ま</rt></ruby>っています。",
+        "en": "Okay. I'll wait inside the restaurant then."
+      },
+      {
+        "who": "You",
+        "jp": "（<ruby>到着<rt>とうちゃく</rt></ruby>）お<ruby>待<rt>ま</rt></ruby>たせしました。<ruby>遅<rt>おく</rt></ruby>くなって、すみません。",
+        "en": "(arriving) Sorry to keep you waiting. Apologies for being late."
+      },
+      {
+        "who": "Friend",
+        "jp": "いえいえ、<ruby>私<rt>わたし</rt></ruby>もさっき<ruby>着<rt>つ</rt></ruby>いたところです。",
+        "en": "Not at all, I only got here a moment ago myself."
+      },
+      {
+        "who": "You",
+        "jp": "よかった。<ruby>次<rt>つぎ</rt></ruby>はもっと<ruby>早<rt>はや</rt></ruby>く<ruby>出<rt>で</rt></ruby>るようにします。",
+        "en": "Good. I'll make sure to leave earlier next time."
+      }
+    ],
+    "keyPhrases": [
+      {
+        "jp": "十五分ぐらい遅れそうです",
+        "en": "I'll probably be about 15 minutes late"
+      },
+      {
+        "jp": "先に注文していてください",
+        "en": "Please go ahead and order"
+      },
+      {
+        "jp": "遅くなって、すみません",
+        "en": "Sorry for being late"
+      },
+      {
+        "jp": "〜ようにします",
+        "en": "I'll make an effort to ~"
+      }
+    ],
+    "roleplay": "Do the workplace version, one notch politer: 申し訳ありません、電車が遅れておりまして、三十分ほど遅れます。",
+    "quiz": [
+      {
+        "q": "遅れそうです expresses:",
+        "choices": [
+          "hearsay from someone else",
+          "your own judgement from the situation that you'll be late",
+          "a firm decision",
+          "a past event"
+        ],
+        "a": 1,
+        "ex": "〜そう attached to the verb stem is the 'looks like / about to' appearance meaning — you're judging from what you can see. Hearsay would be 遅れるそうです."
+      },
+      {
+        "q": "「着いたところです」means:",
+        "choices": [
+          "I'm about to arrive",
+          "I just arrived a moment ago",
+          "I arrived long ago",
+          "the place where I arrived"
+        ],
+        "a": 1,
+        "ex": "〜たところ marks an action completed just now. A very natural way to tell a late friend not to worry."
+      }
+    ]
+  },
+  {
+    "jp": "<ruby>道<rt>みち</rt></ruby>に<ruby>迷<rt>まよ</rt></ruby>った",
+    "en": "Properly lost, phone in hand",
+    "setup": "Your map app is confusing you and you need real human help.",
+    "lines": [
+      {
+        "who": "You",
+        "jp": "すみません、ちょっといいですか。<ruby>道<rt>みち</rt></ruby>に<ruby>迷<rt>まよ</rt></ruby>ってしまいました。",
+        "en": "Excuse me, do you have a second? I've got myself lost."
+      },
+      {
+        "who": "Passerby",
+        "jp": "どこへ行きたいんですか。",
+        "en": "Where are you trying to go?"
+      },
+      {
+        "who": "You",
+        "jp": "このホテルなんですが、<ruby>地図<rt>ちず</rt></ruby>で<ruby>教<rt>おし</rt></ruby>えてもらえますか。",
+        "en": "This hotel — could you show me on the map?"
+      },
+      {
+        "who": "Passerby",
+        "jp": "ああ、ここですね。今、<ruby>反対<rt>はんたい</rt></ruby>の<ruby>方向<rt>ほうこう</rt></ruby>に<ruby>歩<rt>ある</rt></ruby>いていますよ。",
+        "en": "Ah, it's here. You're walking in the opposite direction right now."
+      },
+      {
+        "who": "You",
+        "jp": "えっ、<ruby>本当<rt>ほんとう</rt></ruby>ですか。じゃあ、どう行けばいいですか。",
+        "en": "Oh no, really? So how should I go?"
+      },
+      {
+        "who": "Passerby",
+        "jp": "あの<ruby>信号<rt>しんごう</rt></ruby>まで<ruby>戻<rt>もど</rt></ruby>って、<ruby>右<rt>みぎ</rt></ruby>に<ruby>曲<rt>ま</rt></ruby>がってください。五分ぐらいです。",
+        "en": "Go back to that traffic light and turn right. It's about five minutes."
+      },
+      {
+        "who": "You",
+        "jp": "<ruby>信号<rt>しんごう</rt></ruby>まで<ruby>戻<rt>もど</rt></ruby>って、<ruby>右<rt>みぎ</rt></ruby>ですね。ありがとうございます、<ruby>助<rt>たす</rt></ruby>かりました。",
+        "en": "Back to the light, then right. Thank you, that's a big help."
+      },
+      {
+        "who": "Passerby",
+        "jp": "いえいえ。<ruby>気<rt>き</rt></ruby>をつけてくださいね。",
+        "en": "Not at all. Do take care."
+      }
+    ],
+    "keyPhrases": [
+      {
+        "jp": "道に迷ってしまいました",
+        "en": "I've gotten lost"
+      },
+      {
+        "jp": "地図で教えてもらえますか",
+        "en": "Could you show me on the map?"
+      },
+      {
+        "jp": "どう行けばいいですか",
+        "en": "How should I go?"
+      },
+      {
+        "jp": "〜まで戻ってください",
+        "en": "Please go back as far as ~"
+      }
+    ],
+    "roleplay": "Practise the confirmation echo — repeat the directions back in your own words every time. That one habit prevents most lost-again situations.",
+    "quiz": [
+      {
+        "q": "迷ってしまいました adds しまう to convey:",
+        "choices": [
+          "it was on purpose",
+          "regret about an unintended result",
+          "it's still happening",
+          "it happened to someone else"
+        ],
+        "a": 1,
+        "ex": "〜てしまう marks an action as completed with a sense of 'oops' — perfect for getting lost, oversleeping, or deleting a file."
+      },
+      {
+        "q": "Echoing back 「信号まで戻って、右ですね」does what for you?",
+        "choices": [
+          "Nothing, it's redundant",
+          "Confirms you understood and invites correction",
+          "Sounds rude",
+          "Changes the meaning"
+        ],
+        "a": 1,
+        "ex": "Repeating instructions back with ですね is a native habit — it confirms comprehension and gives the other person a chance to fix a misunderstanding immediately."
+      }
+    ]
+  },
+  {
+    "jp": "<ruby>忘<rt>わす</rt></ruby>れ<ruby>物<rt>もの</rt></ruby>",
+    "en": "Lost property",
+    "setup": "You left a bag on the train and go to the station office.",
+    "lines": [
+      {
+        "who": "You",
+        "jp": "すみません、<ruby>電車<rt>でんしゃ</rt></ruby>にかばんを<ruby>忘<rt>わす</rt></ruby>れてしまったんですが。",
+        "en": "Excuse me, I left my bag on the train."
+      },
+      {
+        "who": "Staff",
+        "jp": "どの<ruby>電車<rt>でんしゃ</rt></ruby>ですか。<ruby>時間<rt>じかん</rt></ruby>はわかりますか。",
+        "en": "Which train? Do you know the time?"
+      },
+      {
+        "who": "You",
+        "jp": "三十分ぐらい<ruby>前<rt>まえ</rt></ruby>の、<ruby>大阪行<rt>おおさかゆ</rt></ruby>きの<ruby>電車<rt>でんしゃ</rt></ruby>です。",
+        "en": "About thirty minutes ago, the train bound for Osaka."
+      },
+      {
+        "who": "Staff",
+        "jp": "どんなかばんですか。<ruby>色<rt>いろ</rt></ruby>や<ruby>大<rt>おお</rt></ruby>きさを<ruby>教<rt>おし</rt></ruby>えてください。",
+        "en": "What kind of bag? Please tell me the colour and size."
+      },
+      {
+        "who": "You",
+        "jp": "<ruby>黒<rt>くろ</rt></ruby>くて、<ruby>小<rt>ちい</rt></ruby>さいリュックです。<ruby>中<rt>なか</rt></ruby>にパスポートが<ruby>入<rt>はい</rt></ruby>っています。",
+        "en": "It's a small black backpack. My passport is inside."
+      },
+      {
+        "who": "Staff",
+        "jp": "<ruby>調<rt>しら</rt></ruby>べてみます。…<ruby>届<rt>とど</rt></ruby>いていますね。こちらで<ruby>確認<rt>かくにん</rt></ruby>してください。",
+        "en": "Let me check. ...Yes, it's been handed in. Please confirm it here."
+      },
+      {
+        "who": "You",
+        "jp": "あっ、これです！<ruby>本当<rt>ほんとう</rt></ruby>にありがとうございます。",
+        "en": "Oh, that's it! Thank you so much."
+      },
+      {
+        "who": "Staff",
+        "jp": "よかったですね。こちらに<ruby>名前<rt>なまえ</rt></ruby>をお<ruby>書<rt>か</rt></ruby>きください。",
+        "en": "I'm glad. Please write your name here."
+      }
+    ],
+    "keyPhrases": [
+      {
+        "jp": "〜を忘れてしまったんですが",
+        "en": "I left my ~ behind..."
+      },
+      {
+        "jp": "黒くて、小さいリュックです",
+        "en": "It's a small black backpack"
+      },
+      {
+        "jp": "中に〜が入っています",
+        "en": "My ~ is inside it"
+      },
+      {
+        "jp": "届いていますね",
+        "en": "It's been handed in (staff line)"
+      }
+    ],
+    "roleplay": "Describe three of your own belongings in one sentence each using 〜くて／〜で to link adjectives: 大きくて、青いスーツケースです。",
+    "quiz": [
+      {
+        "q": "「黒くて、小さいリュック」— why 黒くて and not 黒いと?",
+        "choices": [
+          "黒い is a noun",
+          "い-adjectives link with 〜くて, not と",
+          "と is only for verbs",
+          "both are equally correct"
+        ],
+        "a": 1,
+        "ex": "To stack adjectives you use the て-form: 黒い → 黒くて. と linking is for nouns/lists of things, not for chaining adjectives."
+      },
+      {
+        "q": "入っています here describes:",
+        "choices": [
+          "an action happening now",
+          "a continuing state — it's in there",
+          "a habit",
+          "a completed action with regret"
+        ],
+        "a": 1,
+        "ex": "入る is a change-of-state verb, so 入っています = 'is (currently) inside' — the same state meaning as 住んでいます or 結婚しています."
+      }
+    ]
+  },
+  {
+    "jp": "<ruby>郵便局<rt>ゆうびんきょく</rt></ruby>で",
+    "en": "At the post office",
+    "setup": "You send a parcel of souvenirs home and ask about cost and speed.",
+    "lines": [
+      {
+        "who": "You",
+        "jp": "すみません、これをフィリピンまで<ruby>送<rt>おく</rt></ruby>りたいんですが。",
+        "en": "Excuse me, I'd like to send this to the Philippines."
+      },
+      {
+        "who": "Staff",
+        "jp": "<ruby>中身<rt>なかみ</rt></ruby>は<ruby>何<rt>なん</rt></ruby>ですか。",
+        "en": "What are the contents?"
+      },
+      {
+        "who": "You",
+        "jp": "お<ruby>土産<rt>みやげ</rt></ruby>です。お<ruby>菓子<rt>かし</rt></ruby>とTシャツが<ruby>入<rt>はい</rt></ruby>っています。",
+        "en": "Souvenirs. There are sweets and a T-shirt inside."
+      },
+      {
+        "who": "Staff",
+        "jp": "<ruby>船便<rt>ふなびん</rt></ruby>と<ruby>航空便<rt>こうくうびん</rt></ruby>がありますが、どちらにしますか。",
+        "en": "We have sea mail and air mail — which would you like?"
+      },
+      {
+        "who": "You",
+        "jp": "<ruby>値段<rt>ねだん</rt></ruby>と<ruby>日数<rt>にっすう</rt></ruby>はどのくらい<ruby>違<rt>ちが</rt></ruby>いますか。",
+        "en": "How much do they differ in price and number of days?"
+      },
+      {
+        "who": "Staff",
+        "jp": "<ruby>航空便<rt>こうくうびん</rt></ruby>は<ruby>一週間<rt>いっしゅうかん</rt></ruby>ぐらいですが、<ruby>船便<rt>ふなびん</rt></ruby>より<ruby>高<rt>たか</rt></ruby>いです。",
+        "en": "Air mail takes about a week, but it's more expensive than sea mail."
+      },
+      {
+        "who": "You",
+        "jp": "じゃあ、<ruby>航空便<rt>こうくうびん</rt></ruby>でお願いします。<ruby>箱<rt>はこ</rt></ruby>も<ruby>買<rt>か</rt></ruby>えますか。",
+        "en": "Air mail, then. Can I buy a box here too?"
+      },
+      {
+        "who": "Staff",
+        "jp": "はい、こちらにございます。この<ruby>紙<rt>かみ</rt></ruby>にご<ruby>記入<rt>きにゅう</rt></ruby>をお願いします。",
+        "en": "Yes, they're over here. Please fill in this form."
+      }
+    ],
+    "keyPhrases": [
+      {
+        "jp": "これを〜まで送りたいんですが",
+        "en": "I'd like to send this to ~"
+      },
+      {
+        "jp": "中身はお土産です",
+        "en": "The contents are souvenirs"
+      },
+      {
+        "jp": "どのくらい違いますか",
+        "en": "How much difference is there?"
+      },
+      {
+        "jp": "航空便でお願いします",
+        "en": "Air mail, please"
+      }
+    ],
+    "roleplay": "Ask the two follow-ups a real sender needs: 追跡できますか (can it be tracked?) and いつ着きますか (when will it arrive?).",
+    "quiz": [
+      {
+        "q": "「船便より高いです」means air mail is:",
+        "choices": [
+          "cheaper than sea mail",
+          "more expensive than sea mail",
+          "the same as sea mail",
+          "not available"
+        ],
+        "a": 1,
+        "ex": "AよりB = B compared to A. Here 船便より高い = 'expensive compared to sea mail', i.e. air mail costs more."
+      },
+      {
+        "q": "送りたいんですが is a polite request shape because it:",
+        "choices": [
+          "states your wish and leaves the staff to guide you",
+          "is a command",
+          "reports what someone else wants",
+          "is past tense"
+        ],
+        "a": 0,
+        "ex": "〜たいんですが states your goal and stops, inviting the staff to take over. Compare the blunter 送ってください."
+      }
+    ]
+  },
+  {
+    "jp": "<ruby>薬局<rt>やっきょく</rt></ruby>で",
+    "en": "At the pharmacy",
+    "setup": "You need something for a cold and have to describe symptoms without a doctor.",
+    "lines": [
+      {
+        "who": "You",
+        "jp": "すみません、<ruby>風邪<rt>かぜ</rt></ruby>の<ruby>薬<rt>くすり</rt></ruby>はありますか。",
+        "en": "Excuse me, do you have cold medicine?"
+      },
+      {
+        "who": "Pharmacist",
+        "jp": "どんな<ruby>症状<rt>しょうじょう</rt></ruby>ですか。<ruby>熱<rt>ねつ</rt></ruby>や<ruby>咳<rt>せき</rt></ruby>はありますか。",
+        "en": "What are your symptoms? Do you have a fever or a cough?"
+      },
+      {
+        "who": "You",
+        "jp": "<ruby>熱<rt>ねつ</rt></ruby>はありませんが、<ruby>喉<rt>のど</rt></ruby>が<ruby>痛<rt>いた</rt></ruby>くて、<ruby>鼻水<rt>はなみず</rt></ruby>も<ruby>出<rt>で</rt></ruby>ます。",
+        "en": "No fever, but my throat hurts and I have a runny nose."
+      },
+      {
+        "who": "Pharmacist",
+        "jp": "では、こちらがいいと思います。一日三<ruby>回<rt>かい</rt></ruby>、<ruby>食後<rt>しょくご</rt></ruby>に<ruby>飲<rt>の</rt></ruby>んでください。",
+        "en": "Then I'd recommend this one. Take it three times a day, after meals."
+      },
+      {
+        "who": "You",
+        "jp": "<ruby>眠<rt>ねむ</rt></ruby>くなりますか。<ruby>明日<rt>あした</rt></ruby><ruby>運転<rt>うんてん</rt></ruby>するんですが。",
+        "en": "Will it make me drowsy? I have to drive tomorrow."
+      },
+      {
+        "who": "Pharmacist",
+        "jp": "それなら、こちらのほうが<ruby>安心<rt>あんしん</rt></ruby>です。<ruby>眠<rt>ねむ</rt></ruby>くなりにくいですよ。",
+        "en": "In that case this one is safer — it's less likely to make you sleepy."
+      },
+      {
+        "who": "You",
+        "jp": "じゃあ、それをください。<ruby>何日<rt>なんにち</rt></ruby>ぐらい<ruby>飲<rt>の</rt></ruby>めばいいですか。",
+        "en": "I'll take that, then. How many days should I take it for?"
+      },
+      {
+        "who": "Pharmacist",
+        "jp": "三日<ruby>飲<rt>の</rt></ruby>んでも<ruby>良<rt>よ</rt></ruby>くならなかったら、<ruby>病院<rt>びょういん</rt></ruby>へ行ってください。",
+        "en": "If it hasn't improved after three days, please see a doctor."
+      }
+    ],
+    "keyPhrases": [
+      {
+        "jp": "風邪の薬はありますか",
+        "en": "Do you have cold medicine?"
+      },
+      {
+        "jp": "喉が痛くて、鼻水も出ます",
+        "en": "My throat hurts and I have a runny nose"
+      },
+      {
+        "jp": "一日三回、食後に飲んでください",
+        "en": "Three times a day, after meals"
+      },
+      {
+        "jp": "眠くなりますか",
+        "en": "Will it make me drowsy?"
+      }
+    ],
+    "roleplay": "Describe two symptoms linked with 〜くて for three different illnesses — 頭が痛くて、熱があります／お腹が痛くて、気分が悪いです。",
+    "quiz": [
+      {
+        "q": "眠くなりにくいです means it is:",
+        "choices": [
+          "easy to fall asleep",
+          "hard to become sleepy",
+          "impossible to take",
+          "strong medicine"
+        ],
+        "a": 1,
+        "ex": "Stem + にくい = hard to do / unlikely to happen. The opposite, 〜やすい, would mean it easily makes you sleepy."
+      },
+      {
+        "q": "「良くならなかったら」is built from:",
+        "choices": [
+          "potential + たら",
+          "negative past + たら (if it hasn't improved)",
+          "causative + たら",
+          "passive + たら"
+        ],
+        "a": 1,
+        "ex": "良くなる → 良くならなかった → 良くならなかったら. Negative + たら is the standard 'if it doesn't / hasn't' conditional."
+      }
+    ]
+  },
+  {
+    "jp": "お<ruby>土産<rt>みやげ</rt></ruby>を<ruby>選<rt>えら</rt></ruby>ぶ",
+    "en": "Choosing souvenirs",
+    "setup": "You're buying gifts for family and need wrapping and a bag that survives the flight.",
+    "lines": [
+      {
+        "who": "You",
+        "jp": "すみません、<ruby>家族<rt>かぞく</rt></ruby>へのお<ruby>土産<rt>みやげ</rt></ruby>を<ruby>探<rt>さが</rt></ruby>しているんですが。",
+        "en": "Excuse me, I'm looking for souvenirs for my family."
+      },
+      {
+        "who": "Staff",
+        "jp": "こちらのお<ruby>菓子<rt>かし</rt></ruby>が<ruby>人気<rt>にんき</rt></ruby>ですよ。<ruby>味見<rt>あじみ</rt></ruby>もできます。",
+        "en": "These sweets are popular. You can try a sample too."
+      },
+      {
+        "who": "You",
+        "jp": "おいしいですね。これは<ruby>日持<rt>ひも</rt></ruby>ちしますか。<ruby>飛行機<rt>ひこうき</rt></ruby>で<ruby>持<rt>も</rt></ruby>って<ruby>帰<rt>かえ</rt></ruby>りたいんです。",
+        "en": "That's tasty. Does it keep well? I want to take it home on a plane."
+      },
+      {
+        "who": "Staff",
+        "jp": "二<ruby>週間<rt>しゅうかん</rt></ruby>ぐらい<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です。<ruby>箱入<rt>はこい</rt></ruby>りなので、<ruby>壊<rt>こわ</rt></ruby>れにくいですよ。",
+        "en": "It lasts about two weeks. It's boxed, so it's unlikely to get crushed."
+      },
+      {
+        "who": "You",
+        "jp": "じゃあ、これを三つください。<ruby>別々<rt>べつべつ</rt></ruby>の<ruby>袋<rt>ふくろ</rt></ruby>に<ruby>入<rt>い</rt></ruby>れてもらえますか。",
+        "en": "I'll take three, then. Could you put them in separate bags?"
+      },
+      {
+        "who": "Staff",
+        "jp": "かしこまりました。プレゼント<ruby>用<rt>よう</rt></ruby>にお<ruby>包<rt>つつ</rt></ruby>みしますか。",
+        "en": "Certainly. Shall I gift-wrap them?"
+      },
+      {
+        "who": "You",
+        "jp": "はい、お願いします。<ruby>紙袋<rt>かみぶくろ</rt></ruby>も<ruby>一枚<rt>いちまい</rt></ruby>いただけますか。",
+        "en": "Yes please. Could I also have a paper bag?"
+      },
+      {
+        "who": "Staff",
+        "jp": "どうぞ。<ruby>消費期限<rt>しょうひきげん</rt></ruby>は<ruby>箱<rt>はこ</rt></ruby>の<ruby>下<rt>した</rt></ruby>に<ruby>書<rt>か</rt></ruby>いてあります。",
+        "en": "Here you are. The expiry date is written on the bottom of the box."
+      }
+    ],
+    "keyPhrases": [
+      {
+        "jp": "お土産を探しているんですが",
+        "en": "I'm looking for souvenirs..."
+      },
+      {
+        "jp": "日持ちしますか",
+        "en": "Does it keep well?"
+      },
+      {
+        "jp": "別々の袋に入れてもらえますか",
+        "en": "Could you bag them separately?"
+      },
+      {
+        "jp": "プレゼント用にお包みしますか",
+        "en": "Shall I gift-wrap it? (staff line)"
+      }
+    ],
+    "roleplay": "Ask for three different quantities and wrappings in one go, then ask 一番人気なのはどれですか (which is the most popular?).",
+    "quiz": [
+      {
+        "q": "「書いてあります」tells you the date is:",
+        "choices": [
+          "about to be written",
+          "written and still there (a state someone created)",
+          "being written now",
+          "not written"
+        ],
+        "a": 1,
+        "ex": "〜てある describes a state resulting from someone's deliberate action — the writing is there because somebody wrote it. Compare 書いています (is writing)."
+      },
+      {
+        "q": "壊れにくい means:",
+        "choices": [
+          "breaks easily",
+          "unlikely to break",
+          "already broken",
+          "easy to fix"
+        ],
+        "a": 1,
+        "ex": "にくい = hard/unlikely to. 壊れやすい would be the opposite: fragile."
+      }
+    ]
+  },
+  {
+    "jp": "<ruby>温泉<rt>おんせん</rt></ruby>で",
+    "en": "At an onsen",
+    "setup": "The etiquette questions every first-timer needs, asked politely at reception.",
+    "lines": [
+      {
+        "who": "You",
+        "jp": "すみません、<ruby>初<rt>はじ</rt></ruby>めてなんですが、タオルは<ruby>借<rt>か</rt></ruby>りられますか。",
+        "en": "Excuse me, it's my first time — can I rent a towel?"
+      },
+      {
+        "who": "Staff",
+        "jp": "はい、<ruby>三百円<rt>さんびゃくえん</rt></ruby>で<ruby>貸<rt>か</rt></ruby>し<ruby>出<rt>だ</rt></ruby>ししています。",
+        "en": "Yes, we rent them for 300 yen."
+      },
+      {
+        "who": "You",
+        "jp": "<ruby>入<rt>はい</rt></ruby>る<ruby>前<rt>まえ</rt></ruby>に、<ruby>体<rt>からだ</rt></ruby>を<ruby>洗<rt>あら</rt></ruby>わなければなりませんか。",
+        "en": "Do I have to wash my body before getting in?"
+      },
+      {
+        "who": "Staff",
+        "jp": "はい、まず<ruby>体<rt>からだ</rt></ruby>を<ruby>洗<rt>あら</rt></ruby>ってから、お<ruby>湯<rt>ゆ</rt></ruby>に<ruby>入<rt>はい</rt></ruby>ってください。",
+        "en": "Yes — please wash first, then enter the bath."
+      },
+      {
+        "who": "You",
+        "jp": "タオルはお<ruby>湯<rt>ゆ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>に<ruby>入<rt>い</rt></ruby>れてもいいですか。",
+        "en": "Is it okay to put the towel in the water?"
+      },
+      {
+        "who": "Staff",
+        "jp": "いえ、<ruby>入<rt>い</rt></ruby>れてはいけません。<ruby>頭<rt>あたま</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>か、<ruby>外<rt>そと</rt></ruby>に<ruby>置<rt>お</rt></ruby>いてください。",
+        "en": "No, that's not allowed. Please put it on your head or leave it outside."
+      },
+      {
+        "who": "You",
+        "jp": "わかりました。<ruby>入<rt>い</rt></ruby>れ<ruby>墨<rt>ずみ</rt></ruby>があるんですが、<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>ですか。",
+        "en": "Understood. I have a tattoo — is that okay?"
+      },
+      {
+        "who": "Staff",
+        "jp": "<ruby>小<rt>ちい</rt></ruby>さければ、シールで<ruby>隠<rt>かく</rt></ruby>せば<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です。<ruby>受付<rt>うけつけ</rt></ruby>でお<ruby>渡<rt>わた</rt></ruby>しします。",
+        "en": "If it's small, covering it with a patch is fine. We'll give you one at reception."
+      }
+    ],
+    "keyPhrases": [
+      {
+        "jp": "初めてなんですが",
+        "en": "It's my first time..."
+      },
+      {
+        "jp": "〜なければなりませんか",
+        "en": "Do I have to ~?"
+      },
+      {
+        "jp": "〜てもいいですか",
+        "en": "Is it okay to ~?"
+      },
+      {
+        "jp": "〜てはいけません",
+        "en": "You must not ~ (what you'll hear)"
+      }
+    ],
+    "roleplay": "This scenario is a permission-and-prohibition drill in disguise. Ask five more questions using 〜てもいいですか and answer them yourself with either はい、どうぞ or いえ、〜てはいけません。",
+    "quiz": [
+      {
+        "q": "「体を洗ってから、お湯に入ってください」makes the order clear because 〜てから means:",
+        "choices": [
+          "while doing",
+          "after doing (and only then)",
+          "before doing",
+          "instead of doing"
+        ],
+        "a": 1,
+        "ex": "〜てから emphasises sequence: wash first, and only after that get in. Useful anywhere order matters."
+      },
+      {
+        "q": "「小さければ」is the conditional form of:",
+        "choices": [
+          "小さい (i-adjective)",
+          "小さな (na-adjective)",
+          "小さくない",
+          "小さくて"
+        ],
+        "a": 0,
+        "ex": "い-adjectives form 〜ば by dropping い and adding ければ: 小さい → 小さければ."
+      }
+    ]
+  },
+  {
+    "jp": "<ruby>美容院<rt>びよういん</rt></ruby>で",
+    "en": "At the hair salon",
+    "setup": "A high-stakes conversation where being vague costs you — practise the numbers.",
+    "lines": [
+      {
+        "who": "Stylist",
+        "jp": "今日はどうなさいますか。",
+        "en": "What would you like done today?"
+      },
+      {
+        "who": "You",
+        "jp": "<ruby>短<rt>みじか</rt></ruby>くしてください。でも、<ruby>短<rt>みじか</rt></ruby>くしすぎないでください。",
+        "en": "I'd like it shorter, please. But not too short."
+      },
+      {
+        "who": "Stylist",
+        "jp": "どのくらい<ruby>切<rt>き</rt></ruby>りましょうか。",
+        "en": "How much shall I take off?"
+      },
+      {
+        "who": "You",
+        "jp": "三センチぐらいお願いします。<ruby>横<rt>よこ</rt></ruby>はそのままで<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です。",
+        "en": "About three centimetres, please. The sides can stay as they are."
+      },
+      {
+        "who": "Stylist",
+        "jp": "<ruby>前髪<rt>まえがみ</rt></ruby>はどうしますか。",
+        "en": "What about the fringe?"
+      },
+      {
+        "who": "You",
+        "jp": "<ruby>目<rt>め</rt></ruby>にかからないぐらいに<ruby>切<rt>き</rt></ruby>ってもらえますか。",
+        "en": "Could you cut it so it doesn't reach my eyes?"
+      },
+      {
+        "who": "Stylist",
+        "jp": "わかりました。シャンプーもいたしますね。…こんな<ruby>感<rt>かん</rt></ruby>じでいかがですか。",
+        "en": "Understood. I'll shampoo it as well. ...How does this look?"
+      },
+      {
+        "who": "You",
+        "jp": "いいですね、ありがとうございます。<ruby>気<rt>き</rt></ruby>に<ruby>入<rt>い</rt></ruby>りました。",
+        "en": "It looks great, thank you. I really like it."
+      }
+    ],
+    "keyPhrases": [
+      {
+        "jp": "短くしてください",
+        "en": "Please make it shorter"
+      },
+      {
+        "jp": "三センチぐらいお願いします",
+        "en": "About three centimetres, please"
+      },
+      {
+        "jp": "そのままで大丈夫です",
+        "en": "Leave it as it is"
+      },
+      {
+        "jp": "気に入りました",
+        "en": "I like it"
+      }
+    ],
+    "roleplay": "Add one request you'd actually make — 色を変えたいです (I want to change the colour), パーマをかけたいです (I want a perm) — and always finish with a number or a comparison.",
+    "quiz": [
+      {
+        "q": "短くしすぎないでください is asking them not to:",
+        "choices": [
+          "cut it at all",
+          "overdo the cutting",
+          "cut it slowly",
+          "wash it"
+        ],
+        "a": 1,
+        "ex": "〜すぎる = to do too much; 〜ないでください = please don't. Together: 'please don't make it too short.'"
+      },
+      {
+        "q": "「目にかからないぐらいに」uses ぐらい to express:",
+        "choices": [
+          "approximately that amount/extent",
+          "a location",
+          "a reason",
+          "a comparison of two things"
+        ],
+        "a": 0,
+        "ex": "〜ぐらいに sets the degree: 'to roughly the extent that it doesn't reach my eyes'. Handy whenever you need to describe 'about this much'."
+      }
+    ]
+  },
+  {
+    "jp": "ポケットWi‑Fiを<ruby>借<rt>か</rt></ruby>りる",
+    "en": "Renting pocket wifi / a SIM",
+    "setup": "A counter transaction with numbers, dates and a return process — high value, low risk.",
+    "lines": [
+      {
+        "who": "You",
+        "jp": "すみません、ポケットWi‑Fiを<ruby>借<rt>か</rt></ruby>りたいんですが。",
+        "en": "Excuse me, I'd like to rent a pocket wifi."
+      },
+      {
+        "who": "Staff",
+        "jp": "<ruby>何日間<rt>なんにちかん</rt></ruby>ご<ruby>利用<rt>りよう</rt></ruby>ですか。",
+        "en": "How many days will you be using it?"
+      },
+      {
+        "who": "You",
+        "jp": "十<ruby>日間<rt>にちかん</rt></ruby>です。<ruby>一日<rt>いちにち</rt></ruby>いくらですか。",
+        "en": "Ten days. How much per day?"
+      },
+      {
+        "who": "Staff",
+        "jp": "<ruby>一日<rt>いちにち</rt></ruby><ruby>五百円<rt>ごひゃくえん</rt></ruby>です。データは<ruby>無制限<rt>むせいげん</rt></ruby>です。",
+        "en": "500 yen a day. The data is unlimited."
+      },
+      {
+        "who": "You",
+        "jp": "<ruby>返<rt>かえ</rt></ruby>すときは、どうすればいいですか。",
+        "en": "What should I do when I return it?"
+      },
+      {
+        "who": "Staff",
+        "jp": "<ruby>空港<rt>くうこう</rt></ruby>の<ruby>郵便<rt>ゆうびん</rt></ruby>ポストに<ruby>入<rt>い</rt></ruby>れていただければ<ruby>結構<rt>けっこう</rt></ruby>です。",
+        "en": "Just dropping it in the postbox at the airport is fine."
+      },
+      {
+        "who": "You",
+        "jp": "わかりました。もし<ruby>壊<rt>こわ</rt></ruby>れたら、どうなりますか。",
+        "en": "Understood. What happens if it breaks?"
+      },
+      {
+        "who": "Staff",
+        "jp": "<ruby>保険<rt>ほけん</rt></ruby>に<ruby>入<rt>はい</rt></ruby>っていれば、お<ruby>金<rt>かね</rt></ruby>はかかりません。",
+        "en": "If you've taken the insurance, there's no charge."
+      },
+      {
+        "who": "You",
+        "jp": "じゃあ、<ruby>保険<rt>ほけん</rt></ruby>もお願いします。",
+        "en": "I'll take the insurance too, then."
+      }
+    ],
+    "keyPhrases": [
+      {
+        "jp": "〜を借りたいんですが",
+        "en": "I'd like to rent ~"
+      },
+      {
+        "jp": "一日いくらですか",
+        "en": "How much per day?"
+      },
+      {
+        "jp": "返すときは、どうすればいいですか",
+        "en": "What do I do when returning it?"
+      },
+      {
+        "jp": "もし壊れたら、どうなりますか",
+        "en": "What happens if it breaks?"
+      }
+    ],
+    "roleplay": "Change the item to a bicycle, a suitcase locker, or a rental car and keep the same four questions — they transfer to any rental counter.",
+    "quiz": [
+      {
+        "q": "「保険に入っていれば」means:",
+        "choices": [
+          "because you have insurance",
+          "if you have insurance",
+          "even though you have insurance",
+          "after you get insurance"
+        ],
+        "a": 1,
+        "ex": "〜ていれば is the conditional of the 〜ている state: 'if you are in a state of having entered insurance', i.e. if you're covered."
+      },
+      {
+        "q": "「入れていただければ結構です」is the staff saying:",
+        "choices": [
+          "you must not put it in",
+          "it's enough if you just put it in",
+          "they will put it in",
+          "putting it in is forbidden"
+        ],
+        "a": 1,
+        "ex": "〜ていただければ結構です is polite service language: 'if you would kindly do ~, that's all that's needed.' Recognising it saves you a lot of confusion at counters."
+      }
+    ]
+  },
+  {
+    "jp": "<ruby>天気<rt>てんき</rt></ruby>・<ruby>季節<rt>きせつ</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>",
+    "en": "Weather & season small talk",
+    "setup": "The safest conversation opener in Japan. Learn it well enough to run on autopilot.",
+    "lines": [
+      {
+        "who": "A",
+        "jp": "今日は<ruby>寒<rt>さむ</rt></ruby>いですね。",
+        "en": "It's cold today, isn't it."
+      },
+      {
+        "who": "B",
+        "jp": "そうですね。<ruby>急<rt>きゅう</rt></ruby>に<ruby>寒<rt>さむ</rt></ruby>くなりましたね。",
+        "en": "It really is. It got cold all of a sudden."
+      },
+      {
+        "who": "A",
+        "jp": "<ruby>天気予報<rt>てんきよほう</rt></ruby>によると、<ruby>明日<rt>あした</rt></ruby>は<ruby>雪<rt>ゆき</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>るそうですよ。",
+        "en": "According to the forecast, it's supposed to snow tomorrow."
+      },
+      {
+        "who": "B",
+        "jp": "えっ、<ruby>本当<rt>ほんとう</rt></ruby>ですか。<ruby>電車<rt>でんしゃ</rt></ruby>が<ruby>止<rt>と</rt></ruby>まるかもしれませんね。",
+        "en": "Really? The trains might stop, then."
+      },
+      {
+        "who": "A",
+        "jp": "<ruby>困<rt>こま</rt></ruby>りますね。<ruby>Bさん<rt>ビーさん</rt></ruby>はどの<ruby>季節<rt>きせつ</rt></ruby>が<ruby>一番<rt>いちばん</rt></ruby><ruby>好<rt>す</rt></ruby>きですか。",
+        "en": "That'd be a nuisance. Which season do you like best?"
+      },
+      {
+        "who": "B",
+        "jp": "<ruby>秋<rt>あき</rt></ruby>が<ruby>一番<rt>いちばん</rt></ruby><ruby>好<rt>す</rt></ruby>きです。<ruby>涼<rt>すず</rt></ruby>しいし、<ruby>紅葉<rt>こうよう</rt></ruby>もきれいだし。",
+        "en": "Autumn is my favourite. It's cool, and the autumn leaves are beautiful."
+      },
+      {
+        "who": "A",
+        "jp": "わかります。<ruby>私<rt>わたし</rt></ruby>は<ruby>夏<rt>なつ</rt></ruby>のほうが<ruby>好<rt>す</rt></ruby>きですが、<ruby>暑<rt>あつ</rt></ruby>すぎるのはちょっと…",
+        "en": "I know what you mean. I prefer summer, though when it's too hot it's a bit much..."
+      },
+      {
+        "who": "B",
+        "jp": "ですよね。<ruby>今年<rt>ことし</rt></ruby>の<ruby>夏<rt>なつ</rt></ruby>は<ruby>特<rt>とく</rt></ruby>に<ruby>暑<rt>あつ</rt></ruby>かったですね。",
+        "en": "Right? This summer was especially hot."
+      }
+    ],
+    "keyPhrases": [
+      {
+        "jp": "今日は寒いですね",
+        "en": "It's cold today, isn't it"
+      },
+      {
+        "jp": "急に〜くなりましたね",
+        "en": "It suddenly became ~"
+      },
+      {
+        "jp": "天気予報によると〜そうです",
+        "en": "According to the forecast, ~"
+      },
+      {
+        "jp": "〜し、〜し",
+        "en": "It's ~, and also ~ (stacking reasons)"
+      }
+    ],
+    "roleplay": "Open three conversations with a weather line and steer each one to a different topic within two turns — food, travel, work. That pivot is what small talk actually is.",
+    "quiz": [
+      {
+        "q": "「雪が降るそうですよ」after 天気予報によると is:",
+        "choices": [
+          "appearance (looks like snow)",
+          "hearsay (I hear it will snow)",
+          "intention",
+          "obligation"
+        ],
+        "a": 1,
+        "ex": "〜によると is the giveaway: it explicitly marks a source, so そうです is the hearsay そう, not the appearance そう."
+      },
+      {
+        "q": "「涼しいし、紅葉もきれいだし」uses 〜し to:",
+        "choices": [
+          "contrast two things",
+          "stack up reasons casually",
+          "express regret",
+          "give a command"
+        ],
+        "a": 1,
+        "ex": "〜し lists reasons in a relaxed, spoken way, often trailing off — exactly the register you want in small talk."
+      }
+    ]
+  },
+  {
+    "jp": "<ruby>趣味<rt>しゅみ</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>",
+    "en": "Talking about hobbies",
+    "setup": "Getting past 趣味は何ですか into an actual conversation — and an invitation.",
+    "lines": [
+      {
+        "who": "A",
+        "jp": "<ruby>休<rt>やす</rt></ruby>みの<ruby>日<rt>ひ</rt></ruby>は<ruby>何<rt>なに</rt></ruby>をしていますか。",
+        "en": "What do you do on your days off?"
+      },
+      {
+        "who": "B",
+        "jp": "<ruby>映画<rt>えいが</rt></ruby>を<ruby>見<rt>み</rt></ruby>たり、<ruby>料理<rt>りょうり</rt></ruby>を<ruby>作<rt>つく</rt></ruby>ったりしています。",
+        "en": "I do things like watch movies and cook."
+      },
+      {
+        "who": "A",
+        "jp": "へえ、<ruby>料理<rt>りょうり</rt></ruby>ができるんですね。どんな<ruby>料理<rt>りょうり</rt></ruby>を<ruby>作<rt>つく</rt></ruby>るんですか。",
+        "en": "Oh, you can cook. What kind of food do you make?"
+      },
+      {
+        "who": "B",
+        "jp": "<ruby>最近<rt>さいきん</rt></ruby>、<ruby>日本料理<rt>にほんりょうり</rt></ruby>を<ruby>習<rt>なら</rt></ruby>っています。まだ<ruby>下手<rt>へた</rt></ruby>なんですが、<ruby>楽<rt>たの</rt></ruby>しいです。",
+        "en": "Lately I've been learning Japanese food. I'm still bad at it, but it's fun."
+      },
+      {
+        "who": "A",
+        "jp": "すごいですね。<ruby>何<rt>なに</rt></ruby>が<ruby>一番<rt>いちばん</rt></ruby><ruby>上手<rt>じょうず</rt></ruby>にできますか。",
+        "en": "That's impressive. What can you make best?"
+      },
+      {
+        "who": "B",
+        "jp": "<ruby>肉<rt>にく</rt></ruby>じゃがです。<ruby>簡単<rt>かんたん</rt></ruby>だし、<ruby>失敗<rt>しっぱい</rt></ruby>しにくいので。",
+        "en": "Nikujaga. It's simple, and hard to get wrong."
+      },
+      {
+        "who": "A",
+        "jp": "<ruby>私<rt>わたし</rt></ruby>も<ruby>習<rt>なら</rt></ruby>ってみたいです。<ruby>今度<rt>こんど</rt></ruby>、<ruby>教<rt>おし</rt></ruby>えてくれませんか。",
+        "en": "I'd like to try learning too. Could you teach me sometime?"
+      },
+      {
+        "who": "B",
+        "jp": "もちろんです！じゃあ、<ruby>材料<rt>ざいりょう</rt></ruby>を<ruby>買<rt>か</rt></ruby>いに行きましょう。",
+        "en": "Of course! Let's go buy the ingredients, then."
+      }
+    ],
+    "keyPhrases": [
+      {
+        "jp": "休みの日は何をしていますか",
+        "en": "What do you do on your days off?"
+      },
+      {
+        "jp": "〜たり〜たりしています",
+        "en": "I do things like ~ and ~"
+      },
+      {
+        "jp": "まだ下手なんですが、楽しいです",
+        "en": "I'm still bad at it, but it's fun"
+      },
+      {
+        "jp": "今度、教えてくれませんか",
+        "en": "Could you teach me sometime?"
+      }
+    ],
+    "roleplay": "Answer 休みの日は何をしていますか three different ways using 〜たり〜たり, then end each answer with a question back. Never let the ball stop on your side.",
+    "quiz": [
+      {
+        "q": "〜たり〜たりしています is used to:",
+        "choices": [
+          "list representative activities, not an exhaustive list",
+          "describe one action in progress",
+          "report hearsay",
+          "give two alternatives to choose from"
+        ],
+        "a": 0,
+        "ex": "〜たり〜たり gives examples of the sort of thing you do — it implies 'among other things', which is exactly right for hobbies."
+      },
+      {
+        "q": "「教えてくれませんか」asks the other person to:",
+        "choices": [
+          "be taught by you",
+          "teach you, as a favour to you",
+          "teach someone else",
+          "stop teaching"
+        ],
+        "a": 1,
+        "ex": "くれる marks the action as coming toward you for your benefit. 教えてあげませんか would offer to teach them instead."
+      }
+    ]
+  },
+  {
+    "jp": "<ruby>家族<rt>かぞく</rt></ruby>と<ruby>出身<rt>しゅっしん</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>",
+    "en": "Family & where you're from",
+    "setup": "The questions you will be asked in every first conversation in Japan. Have the answers ready.",
+    "lines": [
+      {
+        "who": "A",
+        "jp": "ご<ruby>出身<rt>しゅっしん</rt></ruby>はどちらですか。",
+        "en": "Where are you from?"
+      },
+      {
+        "who": "B",
+        "jp": "フィリピンのマニラです。<ruby>大<rt>おお</rt></ruby>きくて、にぎやかな<ruby>町<rt>まち</rt></ruby>です。",
+        "en": "Manila, in the Philippines. It's a big, lively city."
+      },
+      {
+        "who": "A",
+        "jp": "<ruby>日本<rt>にほん</rt></ruby>とどこが<ruby>一番<rt>いちばん</rt></ruby><ruby>違<rt>ちが</rt></ruby>いますか。",
+        "en": "What's the biggest difference from Japan?"
+      },
+      {
+        "who": "B",
+        "jp": "<ruby>電車<rt>でんしゃ</rt></ruby>ですね。<ruby>日本<rt>にほん</rt></ruby>の<ruby>電車<rt>でんしゃ</rt></ruby>は<ruby>時間<rt>じかん</rt></ruby>に<ruby>正確<rt>せいかく</rt></ruby>で、びっくりしました。",
+        "en": "The trains. Japanese trains are so punctual — it surprised me."
+      },
+      {
+        "who": "A",
+        "jp": "ああ、よく<ruby>言<rt>い</rt></ruby>われます。ご<ruby>家族<rt>かぞく</rt></ruby>は<ruby>何人<rt>なんにん</rt></ruby>ですか。",
+        "en": "Ah, people often say that. How many are in your family?"
+      },
+      {
+        "who": "B",
+        "jp": "五人<ruby>家族<rt>かぞく</rt></ruby>です。<ruby>両親<rt>りょうしん</rt></ruby>と<ruby>姉<rt>あね</rt></ruby>が二人います。",
+        "en": "Five. My parents and two older sisters."
+      },
+      {
+        "who": "A",
+        "jp": "にぎやかでしょうね。ご<ruby>家族<rt>かぞく</rt></ruby>は<ruby>日本<rt>にほん</rt></ruby>に<ruby>来<rt>き</rt></ruby>たことがありますか。",
+        "en": "That must be lively. Has your family ever been to Japan?"
+      },
+      {
+        "who": "B",
+        "jp": "まだないんです。でも、<ruby>来年<rt>らいねん</rt></ruby><ruby>呼<rt>よ</rt></ruby>びたいと<ruby>思<rt>おも</rt></ruby>っています。",
+        "en": "Not yet. But I'm hoping to invite them next year."
+      }
+    ],
+    "keyPhrases": [
+      {
+        "jp": "ご出身はどちらですか",
+        "en": "Where are you from?"
+      },
+      {
+        "jp": "〜人家族です",
+        "en": "There are ~ of us in my family"
+      },
+      {
+        "jp": "びっくりしました",
+        "en": "It surprised me"
+      },
+      {
+        "jp": "〜たいと思っています",
+        "en": "I'm hoping to ~ (softer than 〜たいです)"
+      }
+    ],
+    "roleplay": "Write and memorise a four-sentence self-introduction: name, where you're from, family, and one thing you like about Japan. Say it until it needs no thinking.",
+    "quiz": [
+      {
+        "q": "Why is 呼びたいと思っています softer than 呼びたいです?",
+        "choices": [
+          "It's past tense",
+          "と思っています frames it as a current thought rather than a flat demand",
+          "It's hearsay",
+          "It's more formal grammar only"
+        ],
+        "a": 1,
+        "ex": "Wrapping a desire in と思っています presents it as something you're considering — Japanese speakers routinely soften wants this way."
+      },
+      {
+        "q": "「よく言われます」is:",
+        "choices": [
+          "passive — 'I'm often told that'",
+          "causative — 'I make people say that'",
+          "potential — 'I can say that'",
+          "volitional"
+        ],
+        "a": 0,
+        "ex": "言われる is the passive of 言う. 'People often say that to me' — a very natural reaction line."
+      }
+    ]
+  },
+  {
+    "jp": "<ruby>職場<rt>しょくば</rt></ruby>で<ruby>頼<rt>たの</rt></ruby>む",
+    "en": "Asking a coworker for help",
+    "setup": "Work Japanese is mostly softening. Notice how much padding goes in front of the actual request.",
+    "lines": [
+      {
+        "who": "You",
+        "jp": "すみません、<ruby>今<rt>いま</rt></ruby>ちょっといいですか。",
+        "en": "Excuse me, do you have a moment?"
+      },
+      {
+        "who": "Coworker",
+        "jp": "はい、どうしましたか。",
+        "en": "Sure, what's up?"
+      },
+      {
+        "who": "You",
+        "jp": "この<ruby>書類<rt>しょるい</rt></ruby>の<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>が わからないんですが、<ruby>教<rt>おし</rt></ruby>えていただけませんか。",
+        "en": "I don't know how to fill in this document — could you show me?"
+      },
+      {
+        "who": "Coworker",
+        "jp": "いいですよ。ここに<ruby>名前<rt>なまえ</rt></ruby>と<ruby>日付<rt>ひづけ</rt></ruby>を<ruby>書<rt>か</rt></ruby>いてください。",
+        "en": "Sure. Write your name and the date here."
+      },
+      {
+        "who": "You",
+        "jp": "ここですね。ありがとうございます。それから、これはいつまでに<ruby>出<rt>だ</rt></ruby>せばいいですか。",
+        "en": "Here, right? Thank you. Also, by when should I submit it?"
+      },
+      {
+        "who": "Coworker",
+        "jp": "<ruby>金曜日<rt>きんようび</rt></ruby>までにお願いします。<ruby>急<rt>いそ</rt></ruby>がなくても<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>ですよ。",
+        "en": "By Friday, please. There's no need to rush."
+      },
+      {
+        "who": "You",
+        "jp": "<ruby>助<rt>たす</rt></ruby>かりました。お<ruby>忙<rt>いそが</rt></ruby>しいところ、すみませんでした。",
+        "en": "That was a big help. Sorry to bother you while you're busy."
+      },
+      {
+        "who": "Coworker",
+        "jp": "いえいえ、<ruby>何<rt>なに</rt></ruby>かあったら、また<ruby>聞<rt>き</rt></ruby>いてください。",
+        "en": "Not at all — if anything comes up, just ask again."
+      }
+    ],
+    "keyPhrases": [
+      {
+        "jp": "今ちょっといいですか",
+        "en": "Do you have a moment?"
+      },
+      {
+        "jp": "〜ていただけませんか",
+        "en": "Could you kindly ~?"
+      },
+      {
+        "jp": "いつまでに出せばいいですか",
+        "en": "By when should I submit it?"
+      },
+      {
+        "jp": "お忙しいところ、すみません",
+        "en": "Sorry to bother you while you're busy"
+      }
+    ],
+    "roleplay": "Make the same request three times at three politeness levels: 教えて／教えてくれる？／教えていただけませんか。Notice which one fits which listener.",
+    "quiz": [
+      {
+        "q": "「金曜日までに」means:",
+        "choices": [
+          "until Friday (continuously)",
+          "by Friday (deadline)",
+          "from Friday",
+          "on Friday only"
+        ],
+        "a": 1,
+        "ex": "までに marks a deadline; まで marks a continuous endpoint. 金曜日まで待ちます = I'll wait until Friday; 金曜日までに出します = I'll submit it by Friday."
+      },
+      {
+        "q": "急がなくても大丈夫です tells you rushing is:",
+        "choices": [
+          "required",
+          "not necessary",
+          "forbidden",
+          "already done"
+        ],
+        "a": 1,
+        "ex": "〜なくてもいい／大丈夫 = you don't have to. Don't confuse it with 急いではいけません, which would forbid hurrying."
+      }
+    ]
+  },
+  {
+    "jp": "アルバイトの<ruby>面接<rt>めんせつ</rt></ruby>",
+    "en": "A part-time job interview",
+    "setup": "A short, predictable interview. The answers are mostly fixed — learn them as blocks.",
+    "lines": [
+      {
+        "who": "Manager",
+        "jp": "では、<ruby>自己紹介<rt>じこしょうかい</rt></ruby>をお願いします。",
+        "en": "Alright, please introduce yourself."
+      },
+      {
+        "who": "You",
+        "jp": "はじめまして、ダレンと<ruby>申<rt>もう</rt></ruby>します。フィリピンから<ruby>来<rt>き</rt></ruby>ました。よろしくお願いします。",
+        "en": "Nice to meet you, my name is Darren. I came from the Philippines. Pleased to meet you."
+      },
+      {
+        "who": "Manager",
+        "jp": "<ruby>日本語<rt>にほんご</rt></ruby>はどのくらい<ruby>勉強<rt>べんきょう</rt></ruby>していますか。",
+        "en": "How long have you been studying Japanese?"
+      },
+      {
+        "who": "You",
+        "jp": "二<ruby>年<rt>ねん</rt></ruby>ぐらいです。<ruby>会話<rt>かいわ</rt></ruby>はまだ<ruby>練習中<rt>れんしゅうちゅう</rt></ruby>ですが、<ruby>頑張<rt>がんば</rt></ruby>ります。",
+        "en": "About two years. My conversation is still a work in progress, but I'll do my best."
+      },
+      {
+        "who": "Manager",
+        "jp": "<ruby>週<rt>しゅう</rt></ruby>に<ruby>何日<rt>なんにち</rt></ruby><ruby>働<rt>はたら</rt></ruby>けますか。",
+        "en": "How many days a week can you work?"
+      },
+      {
+        "who": "You",
+        "jp": "<ruby>週<rt>しゅう</rt></ruby>に三日、<ruby>夕方<rt>ゆうがた</rt></ruby>から<ruby>働<rt>はたら</rt></ruby>けます。<ruby>土日<rt>どにち</rt></ruby>も<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です。",
+        "en": "Three days a week, from the evening. Weekends are fine too."
+      },
+      {
+        "who": "Manager",
+        "jp": "<ruby>経験<rt>けいけん</rt></ruby>はありますか。",
+        "en": "Do you have any experience?"
+      },
+      {
+        "who": "You",
+        "jp": "レストランで<ruby>働<rt>はたら</rt></ruby>いたことがあります。<ruby>覚<rt>おぼ</rt></ruby>えるのは<ruby>早<rt>はや</rt></ruby>いと<ruby>思<rt>おも</rt></ruby>います。",
+        "en": "I've worked at a restaurant before. I think I learn quickly."
+      },
+      {
+        "who": "Manager",
+        "jp": "わかりました。<ruby>来週<rt>らいしゅう</rt></ruby>、ご<ruby>連絡<rt>れんらく</rt></ruby>します。",
+        "en": "Understood. We'll contact you next week."
+      }
+    ],
+    "keyPhrases": [
+      {
+        "jp": "〜と申します",
+        "en": "My name is ~ (humble)"
+      },
+      {
+        "jp": "週に三日働けます",
+        "en": "I can work three days a week"
+      },
+      {
+        "jp": "〜たことがあります",
+        "en": "I have ~ before (experience)"
+      },
+      {
+        "jp": "頑張ります",
+        "en": "I'll do my best"
+      }
+    ],
+    "roleplay": "Rehearse the four fixed answers — name, how long you've studied, availability, experience — until each comes out in one breath.",
+    "quiz": [
+      {
+        "q": "申します is:",
+        "choices": [
+          "the passive of 言う",
+          "the humble form of 言う, used about yourself",
+          "honorific, used about others",
+          "the potential form"
+        ],
+        "a": 1,
+        "ex": "申す is 謙譲語 (humble) — you lower yourself. 〜とおっしゃいます would be the honorific you'd use about the other person."
+      },
+      {
+        "q": "働けます is which form of 働く?",
+        "choices": [
+          "passive",
+          "potential (can work)",
+          "causative",
+          "past"
+        ],
+        "a": 1,
+        "ex": "働く → 働ける (potential). Saying 働けます answers the ability question directly, which is what the interviewer asked."
+      }
+    ]
+  },
+  {
+    "jp": "ホストファミリーと",
+    "en": "With a host family",
+    "setup": "House rules, meals and the small polite noises that make living with a family work.",
+    "lines": [
+      {
+        "who": "Host",
+        "jp": "どうぞ、<ruby>入<rt>はい</rt></ruby>ってください。<ruby>疲<rt>つか</rt></ruby>れましたか。",
+        "en": "Please come in. Are you tired?"
+      },
+      {
+        "who": "You",
+        "jp": "お<ruby>邪魔<rt>じゃま</rt></ruby>します。<ruby>少<rt>すこ</rt></ruby>し<ruby>疲<rt>つか</rt></ruby>れましたが、<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です。",
+        "en": "Thank you for having me. A little tired, but I'm fine."
+      },
+      {
+        "who": "Host",
+        "jp": "ご<ruby>飯<rt>はん</rt></ruby>は七時ごろです。<ruby>苦手<rt>にがて</rt></ruby>な<ruby>物<rt>もの</rt></ruby>はありますか。",
+        "en": "Dinner is around seven. Is there anything you don't eat?"
+      },
+      {
+        "who": "You",
+        "jp": "<ruby>何<rt>なん</rt></ruby>でも<ruby>食<rt>た</rt></ruby>べられます。でも、<ruby>辛<rt>から</rt></ruby>いのはあまり<ruby>得意<rt>とくい</rt></ruby>じゃないんです。",
+        "en": "I can eat anything. Though I'm not great with spicy food."
+      },
+      {
+        "who": "Host",
+        "jp": "わかりました。あ、お<ruby>風呂<rt>ふろ</rt></ruby>は<ruby>何時<rt>なんじ</rt></ruby>でもいいですが、十一時までにお願いします。",
+        "en": "Got it. Oh, the bath is fine any time, but please use it before eleven."
+      },
+      {
+        "who": "You",
+        "jp": "はい。<ruby>洗濯<rt>せんたく</rt></ruby>は<ruby>自分<rt>じぶん</rt></ruby>でしてもいいですか。",
+        "en": "Okay. Is it alright if I do my own laundry?"
+      },
+      {
+        "who": "Host",
+        "jp": "もちろん。<ruby>機械<rt>きかい</rt></ruby>の<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>はあとで<ruby>教<rt>おし</rt></ruby>えますね。",
+        "en": "Of course. I'll show you how to use the machine later."
+      },
+      {
+        "who": "You",
+        "jp": "ありがとうございます。…いただきます！これ、<ruby>本当<rt>ほんとう</rt></ruby>においしいです。",
+        "en": "Thank you. ...Let's eat! This is really delicious."
+      },
+      {
+        "who": "Host",
+        "jp": "よかった。おかわりもありますよ。",
+        "en": "I'm glad. There are seconds, too."
+      }
+    ],
+    "keyPhrases": [
+      {
+        "jp": "お邪魔します",
+        "en": "Sorry to intrude (entering a home)"
+      },
+      {
+        "jp": "苦手な物はありますか",
+        "en": "Is there anything you don't like? (host line)"
+      },
+      {
+        "jp": "〜てもいいですか",
+        "en": "Is it okay if I ~?"
+      },
+      {
+        "jp": "いただきます／ごちそうさまでした",
+        "en": "Before / after eating"
+      }
+    ],
+    "roleplay": "Practise the daily set: おはようございます、いってきます、ただいま、おやすみなさい, plus one question about a house rule each time.",
+    "quiz": [
+      {
+        "q": "「十一時までにお願いします」sets:",
+        "choices": [
+          "a starting time",
+          "a deadline — before eleven",
+          "a duration",
+          "an appointment"
+        ],
+        "a": 1,
+        "ex": "までに again — the deadline particle. Any bath before eleven is fine; eleven is the cut-off."
+      },
+      {
+        "q": "食べられます in 「何でも食べられます」is:",
+        "choices": [
+          "passive — 'I get eaten'",
+          "potential — 'I can eat'",
+          "causative",
+          "honorific"
+        ],
+        "a": 1,
+        "ex": "For ru-verbs, potential and passive look identical (食べられる), and context decides. 何でも ('anything at all') makes the ability reading the only sensible one."
+      }
+    ]
+  },
+  {
+    "jp": "<ruby>誘<rt>さそ</rt></ruby>いをことわる",
+    "en": "Declining an invitation gracefully",
+    "setup": "The hardest social skill at N4: saying no without sounding cold. Notice the four-part shape.",
+    "lines": [
+      {
+        "who": "A",
+        "jp": "<ruby>今晩<rt>こんばん</rt></ruby>、みんなで<ruby>飲<rt>の</rt></ruby>みに行くんですが、<ruby>一緒<rt>いっしょ</rt></ruby>にどうですか。",
+        "en": "We're all going out for drinks tonight — how about joining us?"
+      },
+      {
+        "who": "You",
+        "jp": "あ、<ruby>誘<rt>さそ</rt></ruby>ってくれてありがとうございます。<ruby>行<rt>い</rt></ruby>きたいんですが…",
+        "en": "Ah, thank you for inviting me. I'd love to go, but..."
+      },
+      {
+        "who": "A",
+        "jp": "あ、<ruby>都合<rt>つごう</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>いですか。",
+        "en": "Oh, is it a bad time?"
+      },
+      {
+        "who": "You",
+        "jp": "<ruby>明日<rt>あした</rt></ruby>の<ruby>朝<rt>あさ</rt></ruby>、<ruby>早<rt>はや</rt></ruby>く<ruby>出<rt>で</rt></ruby>なければならないので、<ruby>今日<rt>きょう</rt></ruby>はちょっと…",
+        "en": "I have to leave early tomorrow morning, so today is a bit difficult..."
+      },
+      {
+        "who": "A",
+        "jp": "そうですか、<ruby>残念<rt>ざんねん</rt></ruby>です。じゃあ、また<ruby>今度<rt>こんど</rt></ruby>ぜひ。",
+        "en": "I see, that's a shame. Next time for sure, then."
+      },
+      {
+        "who": "You",
+        "jp": "はい、ぜひ<ruby>誘<rt>さそ</rt></ruby>ってください。<ruby>来週<rt>らいしゅう</rt></ruby>なら<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です。",
+        "en": "Yes, please do invite me again. Next week I'd be fine."
+      },
+      {
+        "who": "A",
+        "jp": "じゃあ、<ruby>来週<rt>らいしゅう</rt></ruby><ruby>計画<rt>けいかく</rt></ruby>しますね。",
+        "en": "I'll plan something for next week, then."
+      },
+      {
+        "who": "You",
+        "jp": "<ruby>楽<rt>たの</rt></ruby>しみにしています。<ruby>皆<rt>みな</rt></ruby>さんによろしくお<ruby>伝<rt>つた</rt></ruby>えください。",
+        "en": "I'm looking forward to it. Please say hello to everyone for me."
+      }
+    ],
+    "keyPhrases": [
+      {
+        "jp": "誘ってくれてありがとうございます",
+        "en": "Thanks for inviting me"
+      },
+      {
+        "jp": "行きたいんですが…",
+        "en": "I'd like to go, but..."
+      },
+      {
+        "jp": "〜ので、今日はちょっと…",
+        "en": "Because ~, today is a bit difficult..."
+      },
+      {
+        "jp": "また今度ぜひ／来週なら大丈夫です",
+        "en": "Next time for sure / next week would be fine"
+      }
+    ],
+    "roleplay": "Memorise the four-part shape — thank, show willingness, give a light reason, offer an alternative — then run it for three different invitations. It works in every language, but in Japanese the reason stays deliberately vague.",
+    "quiz": [
+      {
+        "q": "「来週なら大丈夫です」uses なら because the speaker is:",
+        "choices": [
+          "stating a general rule",
+          "reacting to the topic just raised and offering a condition",
+          "reporting hearsay",
+          "expressing obligation"
+        ],
+        "a": 1,
+        "ex": "なら picks up the topic in play (going out) and sets a condition on it — 'if it's next week we're talking about, then I'm fine.' That's exactly what なら is for."
+      },
+      {
+        "q": "Why does the speaker leave 「今日はちょっと…」unfinished?",
+        "choices": [
+          "They forgot the word",
+          "Trailing off is the polite convention — the listener completes it",
+          "It's grammatically required",
+          "It means 'yes'"
+        ],
+        "a": 1,
+        "ex": "Leaving the refusal unsaid is the politeness. Finishing the sentence with a blunt 行けません would be noticeably harder-edged."
+      }
+    ]
+  },
+  {
+    "jp": "お<ruby>祝<rt>いわ</rt></ruby>い・プレゼント",
+    "en": "Congratulations & giving a gift",
+    "setup": "Gift-giving has fixed phrases on both sides. Learn the giver's line and the receiver's line.",
+    "lines": [
+      {
+        "who": "You",
+        "jp": "<ruby>合格<rt>ごうかく</rt></ruby>、おめでとうございます！",
+        "en": "Congratulations on passing!"
+      },
+      {
+        "who": "Friend",
+        "jp": "ありがとう！<ruby>実<rt>じつ</rt></ruby>は、まだ<ruby>信<rt>しん</rt></ruby>じられないんです。",
+        "en": "Thank you! Honestly, I still can't believe it."
+      },
+      {
+        "who": "You",
+        "jp": "<ruby>頑張<rt>がんば</rt></ruby>っていましたからね。これ、つまらない<ruby>物<rt>もの</rt></ruby>ですが、どうぞ。",
+        "en": "You worked so hard for it. Here — it's nothing much, but please take it."
+      },
+      {
+        "who": "Friend",
+        "jp": "えっ、いいんですか。<ruby>開<rt>あ</rt></ruby>けてもいいですか。",
+        "en": "Oh, really? May I open it?"
+      },
+      {
+        "who": "You",
+        "jp": "もちろん。<ruby>気<rt>き</rt></ruby>に<ruby>入<rt>い</rt></ruby>ってもらえるとうれしいです。",
+        "en": "Of course. I'd be happy if you like it."
+      },
+      {
+        "who": "Friend",
+        "jp": "わあ、<ruby>前<rt>まえ</rt></ruby>から<ruby>欲<rt>ほ</rt></ruby>しかったんです！<ruby>本当<rt>ほんとう</rt></ruby>にありがとう。",
+        "en": "Wow, I've wanted this for ages! Thank you so much."
+      },
+      {
+        "who": "You",
+        "jp": "よかった。これからも<ruby>応援<rt>おうえん</rt></ruby>しています。",
+        "en": "I'm glad. I'll keep cheering you on."
+      },
+      {
+        "who": "Friend",
+        "jp": "ありがとう。<ruby>今度<rt>こんど</rt></ruby>、お<ruby>礼<rt>れい</rt></ruby>にごはんをごちそうしますね。",
+        "en": "Thanks. I'll treat you to a meal to say thank you sometime."
+      }
+    ],
+    "keyPhrases": [
+      {
+        "jp": "おめでとうございます",
+        "en": "Congratulations"
+      },
+      {
+        "jp": "つまらない物ですが、どうぞ",
+        "en": "It's nothing much, but please take it"
+      },
+      {
+        "jp": "気に入ってもらえるとうれしいです",
+        "en": "I hope you like it"
+      },
+      {
+        "jp": "お礼に〜します",
+        "en": "I'll ~ to thank you"
+      }
+    ],
+    "roleplay": "Practise both sides: give a gift with the humble formula, then receive one with 開けてもいいですか and a reaction. Swap roles.",
+    "quiz": [
+      {
+        "q": "「つまらない物ですが」literally says the gift is boring. It actually functions as:",
+        "choices": [
+          "an insult",
+          "a set humble formula when giving",
+          "a complaint about the price",
+          "a question"
+        ],
+        "a": 1,
+        "ex": "Downplaying your own gift is the polite convention. Taking it literally is the classic learner mistake — the giver doesn't think it's boring at all."
+      },
+      {
+        "q": "「気に入ってもらえるとうれしいです」combines:",
+        "choices": [
+          "potential + conditional と + feeling",
+          "passive + causative",
+          "hearsay + volitional",
+          "obligation + negative"
+        ],
+        "a": 0,
+        "ex": "もらえる (potential of もらう) + と (if/when) + うれしい: 'if I can receive your liking it, I'm happy.' A very natural way to hand something over."
+      }
+    ]
+  }
+]
