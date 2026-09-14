@@ -1,0 +1,805 @@
+/* ============================================================
+   DATA — GRAMMAR MODULES
+   7 modules / 30 grammar points. Each point:
+     jp, romaji, fn, sources[], explain, formation[],
+     examples[{jp,en}], dialogue[{who,jp,en}], tip, quiz[]
+   Extra example sentences live in N4.grammarExampleRounds
+   at the bottom of this file (one entry per grammar point,
+   in the same order as the points above).
+   ============================================================ */
+(function(){
+"use strict";
+
+var grammarModules = [
+{num:1, jpTitle:"て形と義務", enTitle:"Te-form Toolkit & Obligation", accent:"indigo", points:[
+{
+  jp:"〜ている", romaji:"~te iru", fn:"Ongoing action, resulting state & habits",
+  sources:["MNN Bk1 L14","Genki I Ch9","Sou Matome Wk1"],
+  explain:"One form, three jobs. It can describe an action happening right now (雨が"+R("降","ふ")+"っています — it's raining now), a state left behind by a change (結婚しています — I'm married; literally 'the getting-married happened and the result continues'), or a habit (毎朝走っています — I run every morning). Verbs like 結婚する, 住む, 知る, and 持つ almost always describe a state rather than an action-in-progress — exactly the mix-up N4 reading questions like to test.",
+  formation:["Verb (て-form) + いる／います","たべる → たべて + いる → たべています","死ぬ → 死んで + いる → "+R("死","し")+"んでいる <span class='arrow'>→</span> a state ('is dead'), not 'is dying'"],
+  examples:[
+    {jp:"今、"+R("木村","きむら")+"さんは"+R("電話","でんわ")+"で"+R("話","はな")+"しています。", en:"Right now, Kimura-san is talking on the phone. (action in progress)"},
+    {jp:"わたしはマニラに"+R("住","す")+"んでいます。", en:"I live in Manila. (state, not an action happening this second)"},
+    {jp:"毎週、"+R("日本語","にほんご")+"の"+R("先生","せんせい")+"と"+R("話","はな")+"す"+R("練習","れんしゅう")+"をしています。", en:"I practice speaking with a Japanese teacher every week. (habit)"}
+  ],
+  dialogue:[
+    {who:"A", jp:"あれ、"+R("鈴木","すずき")+"さんは？", en:"Oh — where's Suzuki-san?"},
+    {who:"B", jp:R("会議室","かいぎしつ")+"で"+R("待","ま")+"っていますよ。", en:"He's waiting in the meeting room."},
+    {who:"A", jp:"そうですか。もう"+R("結婚","けっこん")+"していますよね？", en:"I see. He's already married, right?"},
+    {who:"B", jp:"ええ、"+R("去年","きょねん")+"結婚しました。", en:"Yes, he got married last year."}
+  ],
+  tip:"In real conversation, native speakers often drop い in casual speech — 話してる instead of 話している. Recognizing both is more useful for kaiwa than only ever saying the full form.",
+  quiz:[
+    {q:"「田中さんは車を＿＿。」 (Tanaka owns a car — pick the natural form)", choices:["持ちます","持っています","持ちました","持ちませんでした"], a:1, ex:"持つ describes owning something as an ongoing state, so 持っています ('has/owns') is correct — not the plain present, which would sound like a one-time act of picking something up."},
+    {q:"How would you say 'It's raining right now' vs 'It rains every June' — which grammar point covers BOTH?", choices:["〜たり〜たりする","〜ている","〜てから","〜そうだ"], a:1, ex:"〜ている covers both the in-progress and the habitual meaning — context (今 vs 毎年) tells the listener which one you mean."}
+  ]
+},
+{
+  jp:"〜てもいいです／〜てはいけません", romaji:"~te mo ii desu / ~te wa ikemasen", fn:"Permission & prohibition",
+  sources:["MNN Bk1 L15","Genki I Ch12","Sou Matome Wk1"],
+  explain:"〜てもいいです asks or gives permission ('it's fine even if you do X'). 〜てはいけません is much stronger than 'you don't have to' — it means the action is genuinely forbidden. In fast speech 〜てはいけません often contracts to 〜ちゃいけません／〜ちゃだめです, which you will hear far more than the textbook form when people actually talk.",
+  formation:["Verb (て-form) + もいいです？ <span class='arrow'>=</span> may I / is it OK to...","Verb (て-form) + はいけません <span class='arrow'>=</span> must not..."],
+  examples:[
+    {jp:"ここで"+R("写真","しゃしん")+"を"+R("撮","と")+"ってもいいですか。", en:"Is it okay to take photos here?"},
+    {jp:"この"+R("部屋","へや")+"に"+R("入","はい")+"ってはいけません。", en:"You must not enter this room."},
+    {jp:"お"+R("酒","さけ")+"を"+R("飲","の")+"んでから"+R("運転","うんてん")+"してはいけません。", en:"You must not drive after drinking alcohol."}
+  ],
+  dialogue:[
+    {who:"A", jp:"すみません、ここに"+R("荷物","にもつ")+"を"+R("置","お")+"いてもいいですか。", en:"Excuse me, is it okay to leave my luggage here?"},
+    {who:"B", jp:"あ、そこは"+R("通路","つうろ")+"なので"+R("置","お")+"いちゃだめなんです。", en:"Ah, that's a walkway, so you can't leave it there."},
+    {who:"A", jp:"わかりました。どこに"+R("置","お")+"けばいいですか。", en:"I understand. Where should I put it?"},
+    {who:"B", jp:"あちらのロッカーに"+R("入","い")+"れてもいいですよ。", en:"You're welcome to put it in the locker over there."}
+  ],
+  tip:"For real travel situations, てもいいですか (asking permission politely) will get you much further than the textbook-perfect てはいけません — you'll mostly hear prohibitions, not need to produce them.",
+  quiz:[
+    {q:"You want to ask if it's okay to try on a jacket in a shop. Which is correct?",choices:["これを着てもいいですか","これを着てはいけません","これを着なければなりません","これを着ています"],a:0, ex:"着てもいいですか politely asks for permission — exactly what you want when asking to try something on."},
+    {q:"「たばこを吸っては＿＿。」 (Smoking is forbidden here) — fill in the blank.", choices:["いいです","いけません","おきます","しまいます"], a:1, ex:"〜てはいけません expresses that an action is prohibited."}
+  ]
+},
+{
+  jp:"〜なければなりません／〜なくてもいいです", romaji:"~nakereba narimasen / ~nakute mo ii desu", fn:"Obligation & lack of obligation",
+  sources:["MNN Bk1 L17","Genki I Ch12","Sou Matome Wk2"],
+  explain:"This is one of the highest-frequency confusions on N4 mock tests, because the negative-of-a-negative logic feels backwards in English. 〜なければなりません literally means 'if [you] don't do X, it won't do' — so it means you MUST do it. 〜なくてもいいです means 'even if you don't do X, it's fine' — so it's optional. Don't confuse なくてもいい (optional) with てはいけない (forbidden) — they answer completely different questions.",
+  formation:["Verb (ない-form, drop い) + ければなりません <span class='arrow'>=</span> must do","Verb (ない-form, drop い) + くてもいいです <span class='arrow'>=</span> don't have to do","行かない → 行かなければなりません／行かなくてもいいです"],
+  examples:[
+    {jp:R("明日","あした")+"までにレポートを"+R("出","だ")+"さなければなりません。", en:"I have to submit the report by tomorrow."},
+    {jp:R("土曜日","どようび")+"は"+R("会社","かいしゃ")+"に"+R("行","い")+"かなくてもいいです。", en:"I don't have to go to the office on Saturday."},
+    {jp:R("薬","くすり")+"は"+R("毎日","まいにち")+"飲まなければなりません。", en:"You have to take the medicine every day."}
+  ],
+  dialogue:[
+    {who:"A", jp:R("明日","あした")+"の"+R("会議","かいぎ")+"、"+R("何時","なんじ")+"までに"+R("行","い")+"かなければなりませんか。", en:"By what time do I have to get to tomorrow's meeting?"},
+    {who:"B", jp:R("九時","くじ")+"には"+R("来","き")+"てほしいですが、"+R("資料","しりょう")+"は"+R("今日","きょう")+"じゃなくてもいいですよ。", en:"I'd like you here by 9, but the materials don't have to be ready today."},
+    {who:"A", jp:"じゃあ、"+R("明日","あした")+"の"+R("朝","あさ")+"までに"+R("準備","じゅんび")+"すればいいですね。", en:"Then I just need to have it ready by tomorrow morning, right?"}
+  ],
+  tip:"When someone tells you a deadline in Japan, echoing it back with なければなりませんね ('so I have to... right?') is a very natural way to confirm you understood correctly — it buys you a second to process, too.",
+  quiz:[
+    {q:"「今日は病院に＿＿。あさっては行かなくてもいいです。」 fill the first blank so it means 'I have to go to the hospital today'", choices:["行ってもいいです","行きます","行かなければなりません","行ってはいけません"], a:2, ex:"行かなければなりません = 'must go' — matching 'have to go today'."},
+    {q:"Which sentence means 'You don't have to bring an umbrella'?", choices:["傘を持ってはいけません","傘を持たなければなりません","傘を持たなくてもいいです","傘を持っています"], a:2, ex:"〜なくてもいいです = optional / not required, which fits 'don't have to'."}
+  ]
+},
+{
+  jp:"〜てから／〜たあとで", romaji:"~te kara / ~ta ato de", fn:"Sequencing: doing one thing after another",
+  sources:["MNN Bk1 L16","Genki I Ch13","Sou Matome Wk2"],
+  explain:"Both mean 'after doing X'. 〜てから carries a slight nuance of 'and then, as a deliberate next step' and is very common when giving instructions or a sequence of actions. 〜たあとで is a bit more neutral/formal and pairs naturally with a following clause that describes something happening later. In casual speech, てから is far more common than たあとで.",
+  formation:["Verb (て-form) + から","Verb (た-form / plain past) + あとで","手を洗ってから食べます／手を洗ったあとで食べます"],
+  examples:[
+    {jp:R("宿題","しゅくだい")+"を"+R("終","お")+"わってから、テレビを"+R("見","み")+"ます。", en:"I'll watch TV after I finish my homework."},
+    {jp:R("空港","くうこう")+"に"+R("着","つ")+"いたあとで、"+R("両替","りょうがえ")+"をします。", en:"After arriving at the airport, I'll exchange money."},
+    {jp:"よく"+R("考","かんが")+"えてから"+R("答","こた")+"えてください。", en:"Please think carefully before answering. (lit. 'answer after thinking well')"}
+  ],
+  dialogue:[
+    {who:"A", jp:R("チェックイン","ちぇっくいん")+"はどうすればいいですか。", en:"How do I check in?"},
+    {who:"B", jp:"まずパスポートを"+R("見","み")+"せてから、この"+R("紙","かみ")+"に"+R("書","か")+"いてください。", en:"First show your passport, then please fill out this form."},
+    {who:"A", jp:"書いたあとで、どこに"+R("出","だ")+"せばいいですか。", en:"After I write it, where do I hand it in?"},
+    {who:"B", jp:"こちらのカウンターに"+R("出","だ")+"してください。", en:"Please hand it in at this counter."}
+  ],
+  tip:"Sequencing words like まず (first)、それから (then)、さいごに (lastly) pair naturally with 〜てから and make a whole set of instructions sound much more fluent than stacking short sentences.",
+  quiz:[
+    {q:"「シャワーを浴び＿＿、寝ます。」", choices:["てから","たまえ","ながら","ば"], a:0, ex:"〜てから attaches to the て-form (浴びて) to mean 'after showering'."},
+    {q:"Which is closer in feeling to giving step-by-step instructions?", choices:["〜たあとで","〜てから","〜ている","〜てもいい"], a:1, ex:"〜てから is the more natural, common choice for sequencing instructions in everyday speech."}
+  ]
+}
+]},
+
+{num:2, jpTitle:"あげる・もらう・くれる と 依頼", enTitle:"Giving, Receiving & Requests", accent:"gold", points:[
+{
+  jp:"あげる・もらう・くれる（＋てform）", romaji:"ageru / morau / kureru", fn:"Giving and receiving actions, not just objects",
+  sources:["MNN Bk2 L7 (review)","Genki II Ch4","Sou Matome Wk2"],
+  explain:"You likely learned these for objects (プレゼントをあげる — give a present). The N4-level twist is using them after a て-form to talk about doing a favor. The key is direction and 'insideness': あげる = I do something for someone else; もらう = someone does something for me (viewpoint is on the receiver); くれる = someone does something for me/my in-group, and specifically implies I'm grateful. Mixing up くれる and あげる when the favor is done for you is the single most common mistake here.",
+  formation:["Verb (て-form) + あげる <span class='arrow'>=</span> I do X for someone","Verb (て-form) + もらう <span class='arrow'>=</span> I have/get someone to do X for me","Verb (て-form) + くれる <span class='arrow'>=</span> someone (kindly) does X for me"],
+  examples:[
+    {jp:"わたしは"+R("友達","ともだち")+"に"+R("道","みち")+"を"+R("教","おし")+"えてあげました。", en:"I showed my friend the way (I did the favor)."},
+    {jp:"わたしは"+R("駅員","えきいん")+"さんに"+R("道","みち")+"を"+R("教","おし")+"えてもらいました。", en:"I had the station staff show me the way (I received the favor)."},
+    {jp:R("先生","せんせい")+"がわたしに"+R("漢字","かんじ")+"を"+R("教","おし")+"えてくれました。", en:"My teacher (kindly) taught me the kanji."}
+  ],
+  dialogue:[
+    {who:"A", jp:"この"+R("荷物","にもつ")+"、"+R("重","おも")+"くて…", en:"This luggage is heavy..."},
+    {who:"B", jp:"じゃ、"+R("持","も")+"ってあげますよ。", en:"Then let me carry it for you."},
+    {who:"A", jp:"ありがとうございます！"+R("助","たす")+"かります。", en:"Thank you so much! That really helps."},
+    {who:"B", jp:"いえいえ。ホテルまで"+R("送","おく")+"ってあげますね。", en:"No problem. I'll walk you to the hotel."}
+  ],
+  tip:"When a Japanese person does something for you, react with 〜てくれてありがとうございます (thank you for doing X for me) instead of just ありがとう — it explicitly acknowledges the favor and sounds noticeably more natural.",
+  quiz:[
+    {q:"Your friend fixed your phone for you. Which best expresses your gratitude?",choices:["わたしが友達の電話を直してあげました","友達がわたしの電話を直してくれました","わたしは友達に電話を直してもらいませんでした","友達は電話を直します"],a:1, ex:"くれる centers the favor on you as the grateful receiver — the natural way to describe someone helping you."},
+    {q:"「わたしは母に料理を教えて＿＿。」 (I had my mother teach me cooking — I asked her)", choices:["あげました","もらいました","くれました","いました"], a:1, ex:"もらう puts the focus on 'I received the favor of being taught' — the speaker's own viewpoint as receiver."}
+  ]
+},
+{
+  jp:"〜てほしい／〜てくれませんか", romaji:"~te hoshii / ~te kuremasen ka", fn:"Wanting someone to do something / polite requests",
+  sources:["MNN Bk2 L29","Genki II Ch7","Sou Matome Wk3"],
+  explain:"〜てほしい expresses a wish about someone else's action ('I want you to...') and is used to talk ABOUT a wish, often to a third person, or softened into a direct request. 〜てくれませんか is the actual polite request form you'll use constantly while traveling — literally 'won't you do X for me?', which reads as more polite than 〜てください because it leaves room for the other person to say no.",
+  formation:["Verb (て-form) + ほしいです <span class='arrow'>=</span> I want [someone] to do X","Verb (て-form) + くれませんか <span class='arrow'>=</span> could you please do X (for me)?"],
+  examples:[
+    {jp:R("子供","こども")+"に"+R("野菜","やさい")+"を"+R("食","た")+"べてほしいです。", en:"I want my child to eat vegetables."},
+    {jp:"すみません、この"+R("住所","じゅうしょ")+"まで"+R("連","つ")+"れて"+"行"+"ってくれませんか。", en:"Excuse me, could you take me to this address?"},
+    {jp:"もう"+R("少","すこ")+"し"+R("待","ま")+"ってくれませんか。", en:"Could you wait a little longer, please?"}
+  ],
+  dialogue:[
+    {who:"A", jp:"すみません、これ、"+R("英語","えいご")+"のメニューはありますか。", en:"Excuse me, is there an English menu?"},
+    {who:"B", jp:"あ、"+R("少","すこ")+"々"+R("待","ま")+"ってくれませんか。", en:"Ah, could you wait just a moment?"},
+    {who:"A", jp:"はい、"+R("大丈夫","だいじょうぶ")+"です。", en:"Sure, that's fine."},
+    {who:"B", jp:"お待たせしました、こちらです。", en:"Sorry to keep you waiting, here you go."}
+  ],
+  tip:"〜てくれませんか is noticeably softer than 〜てください. When you're not sure how polite to be with a stranger (train staff, shopkeepers), default to 〜てくれませんか or the even more polite 〜ていただけませんか.",
+  quiz:[
+    {q:"Which is the most naturally polite way to ask a stranger to take your photo?",choices:["写真を撮ります","写真を撮ってくれませんか","写真を撮りたいです","写真を撮ってはいけません"], a:1, ex:"〜てくれませんか is a soft, polite request form — ideal for asking a stranger a favor."},
+    {q:"「わたしは彼にもっと勉強し＿＿。」 (I want him to study more)", choices:["てほしいです","てもいいです","なければなりません","てあげます"], a:0, ex:"〜てほしい expresses a wish about someone else's action."}
+  ]
+},
+{
+  jp:"〜ように言う／Verb＋なさい", romaji:"~you ni iu / ~nasai", fn:"Indirect commands & reported requests",
+  sources:["MNN Bk2 L29","Genki II Ch4 (indirect quotes)","Sou Matome Wk3"],
+  explain:"〜ように言う reports a command or request indirectly ('[someone] told [someone] to do X') using the dictionary or ない form + ように, which softens a direct command into a description of one — useful for retelling what a teacher, doctor, or staff member told you. Verb＋なさい is a direct command itself, gentler than the plain imperative, most often heard from parents to children or teachers to students — not something you'd usually say to another adult.",
+  formation:["Verb (dictionary/plain) + ように言う／言いました <span class='arrow'>=</span> told [someone] to do X","Verb (ます-stem) + なさい <span class='arrow'>=</span> a direct (softened) command"],
+  examples:[
+    {jp:R("医者","いしゃ")+"はもっと"+R("休","やす")+"むように"+R("言","い")+"いました。", en:"The doctor told me to rest more."},
+    {jp:R("先生","せんせい")+"は"+R("宿題","しゅくだい")+"を"+R("忘","わす")+"れないように"+R("言","い")+"いました。", en:"The teacher told us not to forget the homework."},
+    {jp:"はやく"+R("起","お")+"きなさい！", en:"Get up quickly! (parent to child)"}
+  ],
+  dialogue:[
+    {who:"A", jp:R("薬局","やっきょく")+"の"+R("人","ひと")+"は"+R("何","なん")+"と"+R("言","い")+"っていましたか。", en:"What did the pharmacy staff say?"},
+    {who:"B", jp:R("食後","しょくご")+"に"+R("飲","の")+"むように"+R("言","い")+"われました。", en:"I was told to take it after meals."},
+    {who:"A", jp:"わかりました。お"+R("大事","だいじ")+"に。", en:"Got it. Take care."}
+  ],
+  tip:"〜ように言われました (the passive form — 'I was told to...') comes up constantly in real life when you're relaying instructions from staff, hotel front desks, or tour guides.",
+  quiz:[
+    {q:"Report this: the teacher said, 'Study more.' → Sensei wa motto benkyou suru ＿＿ itta.",choices:["ように","なさいと","てから","たら"],a:0, ex:"ように言った reports an indirect command."},
+    {q:"Who would you most naturally say 早く食べなさい to?",choices:["Your boss","A stranger on the train","Your own child","A hotel receptionist"],a:2, ex:"なさい commands are gentle but direct — typically parent-to-child or teacher-to-student, not for strangers or superiors."}
+  ]
+},
+{
+  jp:"〜ことができる／可能形", romaji:"~koto ga dekiru / potential form", fn:"Expressing ability",
+  sources:["MNN Bk1 L18","Genki I Ch11","Sou Matome Wk1"],
+  explain:"There are two ways to say 'can do X', and N4 expects you to use both naturally: the analytical dictionary-form + ことができる (a bit more formal/explicit, works with any verb), and the potential verb form (れる／られる — more natural in everyday conversation and required if you want a truly native-sounding sentence). Group 2 (る-verbs) → drop る, add られる. Group 1 (う-verbs) → change the final u-sound to the e-sound, add る. する→できる, 来る→来られる are irregular.",
+  formation:["Verb (dictionary form) + ことができます — more formal/explicit","Group 1: 話す → 話せる ・ Group 2: 食べる → 食べられる ・ irregular: する→できる, 来る→来られる"],
+  examples:[
+    {jp:"わたしは"+R("日本語","にほんご")+"を"+R("話","はな")+"すことができます。", en:"I can speak Japanese. (explicit form)"},
+    {jp:"わたしは"+R("日本語","にほんご")+"が"+R("話","はな")+"せます。", en:"I can speak Japanese. (potential form, more natural)"},
+    {jp:"この"+R("漢字","かんじ")+"は"+R("読","よ")+"めません。", en:"I can't read this kanji."}
+  ],
+  dialogue:[
+    {who:"A", jp:R("辛","から")+"いもの、"+R("食","た")+"べられますか。", en:"Can you eat spicy food?"},
+    {who:"B", jp:"少しなら"+R("食","た")+"べられます。でも"+R("本当","ほんとう")+"に"+R("辛","から")+"いのはちょっと…", en:"I can handle a little bit. But really spicy is a bit... (not great)"},
+    {who:"A", jp:"じゃあ、"+R("辛","から")+"くないメニューを"+R("頼","たの")+"みましょう。", en:"Then let's order something that isn't spicy."}
+  ],
+  tip:"を + potential verb (食べることができる) is grammatically fine, but が + potential verb (食べられる, with が) is what actually comes out of native speakers' mouths — try to switch your default to が.",
+  quiz:[
+    {q:"What is the potential form of 飲む (to drink)?",choices:["飲みる","飲める","飲むことが","飲まれる"], a:1, ex:"Group 1 verb: change the final u-sound (む) to the e-sound (め) and add る → 飲める."},
+    {q:"「漢字を＿＿することができます。」 fill in the correct dictionary-form verb for 'read'", choices:["読み","読む","読んで","読めば"], a:1, ex:"ことができる attaches to the dictionary form of the verb."}
+  ]
+}
+]},
+
+{num:3, jpTitle:"受身・使役・使役受身", enTitle:"Passive, Causative & Causative-Passive", accent:"shu", points:[
+{
+  jp:"受身形（〜れる／られる）", romaji:"ukemi-kei (passive)", fn:"The passive voice",
+  sources:["MNN Bk2 L30","Genki II Ch5","Sou Matome Wk4"],
+  explain:"The passive turns 'X did Y' into 'Y was done (to me/something), by X'. Direct passive works like English (褒められた — I was praised). N4 also has the 迷惑受身 ('suffering passive'), which has no English equivalent: it's used when someone else's action negatively affects you, even for intransitive verbs — 雨に降られた doesn't mean 'I was rained on' literally, it means 'it rained (on me), and that was annoying/inconvenient for me'. This nuance shows up a lot in reading passages about someone's bad day.",
+  formation:["Group 1: change u→a, add れる (書く→書かれる) ・ Group 2: drop る, add られる (見る→見られる) ・ irregular: する→される, 来る→来られる","Person/thing acted upon が／は ＋ 〜(ら)れる ＋ に (agent)"],
+  examples:[
+    {jp:"わたしは"+R("先生","せんせい")+"に"+R("褒","ほ")+"められました。", en:"I was praised by the teacher."},
+    {jp:R("電車","でんしゃ")+"の"+R("中","なか")+"で"+R("足","あし")+"を"+R("踏","ふ")+"まれました。", en:"My foot got stepped on inside the train."},
+    {jp:R("旅行中","りょこうちゅう")+"に"+R("雨","あめ")+"に"+R("降","ふ")+"られました。", en:"It rained on us during the trip (and that was a hassle). — meiwaku passive"}
+  ],
+  dialogue:[
+    {who:"A", jp:R("財布","さいふ")+"、"+R("盗","ぬす")+"まれちゃったみたい。", en:"I think my wallet got stolen."},
+    {who:"B", jp:"え、"+R("本当","ほんとう")+"ですか！"+R("交番","こうばん")+"に"+R("行","い")+"きましょう。", en:"What, really!? Let's go to the police box."},
+    {who:"A", jp:"はい…"+R("旅行中","りょこうちゅう")+"なのに、"+R("困","こま")+"ったなあ。", en:"Yeah... this is during our trip, so it's really a pain."}
+  ],
+  tip:"盗まれる (had something stolen), なくす (to lose something), and 落とす (to drop something) are worth having ready before any trip — hopefully you never need them, but recognizing them in a hotel or police conversation matters more than almost any other vocabulary.",
+  quiz:[
+    {q:"What is the passive form of 呼ぶ (to call)?",choices:["呼ばれる","呼べる","呼ばせる","呼んでいる"], a:0, ex:"Group 1: u→a, +れる → 呼ぶ → 呼ばれる."},
+    {q:"「電車で足を＿＿。」 (My foot got stepped on)", choices:["踏みました","踏まれました","踏ませました","踏んでいました"], a:1, ex:"The passive 踏まれました shows the speaker is on the receiving end of the action."}
+  ]
+},
+{
+  jp:"使役形（〜せる／させる）", romaji:"shieki-kei (causative)", fn:"Making or letting someone do something",
+  sources:["MNN Bk2 L32","Genki II Ch4","Sou Matome Wk4"],
+  explain:"The causative can mean either 'make someone do X' (forced) or 'let someone do X' (permitted) — context and the surrounding words tell you which. It's the natural form for talking about parents, teachers, or bosses directing other people's actions, and it's also how you politely ask for permission to do something yourself, using 〜させてください ('please let me do X').",
+  formation:["Group 1: change u→a, add せる (行く→行かせる) ・ Group 2: drop る, add させる (食べる→食べさせる) ・ irregular: する→させる, 来る→来させる"],
+  examples:[
+    {jp:R("母","はは")+"はわたしに"+R("野菜","やさい")+"を"+R("食","た")+"べさせました。", en:"My mother made me eat the vegetables."},
+    {jp:R("先生","せんせい")+"は"+R("学生","がくせい")+"を"+R("早","はや")+"く"+R("帰","かえ")+"らせました。", en:"The teacher let the students go home early."},
+    {jp:"すみません、"+R("少","すこ")+"し"+R("考","かんが")+"えさせてください。", en:"Sorry, please let me think about it a little."}
+  ],
+  dialogue:[
+    {who:"A", jp:"あの、この"+R("店","みせ")+"で"+R("写真","しゃしん")+"を"+R("撮","と")+"らせてください。", en:"Um, please let me take a photo in this shop."},
+    {who:"B", jp:"すみません、"+R("店内","てんない")+"は"+R("撮","と")+"らせられないんです。", en:"Sorry, we're not able to allow photos inside the shop."},
+    {who:"A", jp:"あ、わかりました。"+R("外","そと")+"だけにします。", en:"Ah, I understand. I'll just take one outside."}
+  ],
+  tip:"〜させてください is one of the most useful phrases for polite self-assertion in Japan — 'please let me pay', 'please let me carry that', 'please let me try' all use exactly this pattern.",
+  quiz:[
+    {q:"What is the causative form of 飲む (to drink)?",choices:["飲まれる","飲ませる","飲める","飲んでいる"], a:1, ex:"Group 1: u→a, +せる → 飲む → 飲ませる."},
+    {q:"「子供を一人で外に＿＿のは心配です。」 (Letting a child go outside alone is worrying)", choices:["行かせる","行かれる","行ける","行っている"], a:0, ex:"行かせる = 'let/make [someone] go' — the causative fits 'letting a child go out alone'."}
+  ]
+},
+{
+  jp:"使役受身形（〜させられる）", romaji:"shieki-ukemi-kei (causative-passive)", fn:"Being made to do something (unwillingly)",
+  sources:["MNN Bk2 L33","Genki II Ch9","Sou Matome Wk5"],
+  explain:"This combines causative and passive: someone made you do something, and you didn't necessarily want to. It's the grammar of complaining politely — describing homework you were forced to do, overtime you were made to work, or a childhood chore you hated. The ending changes slightly for Group 1 verbs, where 〜せられる often contracts to 〜される in speech (待たせられる → 待たされる).",
+  formation:["Group 1: causative + られる, often contracts (話す→話させられる→話させられる／待たせられる→待たされる) ・ Group 2: causative stem + られる (食べさせられる) ・ irregular: する→させられる, 来る→来させられる"],
+  examples:[
+    {jp:R("子供","こども")+"のとき、"+R("毎日","まいにち")+"ピアノを"+R("練習","れんしゅう")+"させられました。", en:"When I was a kid, I was made to practice piano every day."},
+    {jp:R("会社","かいしゃ")+"で"+R("残業","ざんぎょう")+"させられました。", en:"I was made to work overtime at the office."},
+    {jp:R("駅","えき")+"で1"+R("時間","じかん")+"も"+R("待","ま")+"たされました。", en:"I was made to wait a whole hour at the station."}
+  ],
+  dialogue:[
+    {who:"A", jp:R("昨日","きのう")+"の"+R("会議","かいぎ")+"、どうでしたか。", en:"How was yesterday's meeting?"},
+    {who:"B", jp:R("疲","つか")+"れました…"+R("三時間","さんじかん")+"も"+R("座","すわ")+"らされましたから。", en:"I'm exhausted... I was made to sit there for three whole hours."},
+    {who:"A", jp:"それは"+R("大変","たいへん")+"でしたね。", en:"That sounds rough."}
+  ],
+  tip:"This form carries real emotional weight — it's the grammar of light complaining. Overusing it about something small (having to wait five minutes) reads as a bit dramatic/joking, which is actually a very natural way native speakers use it too.",
+  quiz:[
+    {q:"What does 母に部屋を掃除させられました mean?",choices:["I cleaned my mother's room for her, happily","My mother was cleaned by me","I was made to clean the room by my mother","My mother cleaned the room herself"], a:2, ex:"Causative-passive: the speaker was made to do the cleaning, implying some reluctance."},
+    {q:"Which describes 'being forced to wait' most naturally in casual speech?",choices:["待ちました","待たれました","待たされました","待ってあげました"], a:2, ex:"待たされました is the common contracted causative-passive of 待つ, meaning 'was made to wait'."}
+  ]
+},
+{
+  jp:"尊敬語・謙譲語入門", romaji:"sonkeigo / kenjougo (intro)", fn:"Recognizing honorific & humble speech",
+  sources:["MNN Bk2 L34-35","Genki II Ch11","Sou Matome Wk6"],
+  explain:"Full keigo is more of an N3/N2 topic, but N4 reading passages and real service encounters in Japan use basic forms constantly, so recognizing them matters even before you can produce them fluently. Honorific (尊敬語) raises the other person's action — used for customers, teachers, elders. Humble (謙譲語) lowers your own action — used when talking about what you do for someone above you. You'll hear these from every hotel and train employee in Japan.",
+  formation:["Honorific pattern: お + verb stem + になる (お待ちになる = 'wait', said about the other person) ・ Humble pattern: お + verb stem + する (お待ちする = 'wait', said about yourself)","Common irregular honorifics: 行く／来る／いる → いらっしゃいます ・ 食べる／飲む → 召し上がります ・ 見る → ご覧になります"],
+  examples:[
+    {jp:R("先生","せんせい")+"はもう"+R("帰","かえ")+"られましたか。", en:"Has the teacher already gone home? (basic honorific, uses the passive-shaped form)"},
+    {jp:"こちらでお"+R("待","ま")+"ちください。", en:"Please wait here. (polite request using the honorific pattern)"},
+    {jp:R("荷物","にもつ")+"をお"+R("持","も")+"ちします。", en:"I'll carry your luggage. (humble — lowers the speaker's own action)"}
+  ],
+  dialogue:[
+    {who:"Staff", jp:R("何名様","なんめいさま")+"でいらっしゃいますか。", en:"How many people (in your party)?"},
+    {who:"You", jp:"二人です。", en:"Two people."},
+    {who:"Staff", jp:"かしこまりました。こちらへどうぞ。", en:"Understood. This way, please."}
+  ],
+  tip:"You don't need to produce full keigo as a traveler — です／ます is completely fine and expected from a visitor. What matters is recognizing いらっしゃいます, ご覧になります, and かしこまりました when staff say them to you.",
+  quiz:[
+    {q:"A hotel clerk says いらっしゃいませ. What is happening?",choices:["They are asking your name","They are welcoming you as a customer","They are apologizing","They are asking you to leave"], a:1, ex:"いらっしゃいませ is the standard honorific greeting used to welcome customers."},
+    {q:"かしこまりました, said by staff after your request, most closely means:",choices:["I don't understand","I refuse","Understood, certainly (very polite)","Please wait"], a:2, ex:"かしこまりました is a humble, very polite way of saying 'understood/certainly' in service contexts."}
+  ]
+}
+]},
+
+{num:4, jpTitle:"条件形（と・たら・ば・なら）", enTitle:"The Four Conditionals", accent:"indigo-deep", points:[
+{
+  jp:"〜と", romaji:"~to", fn:"Automatic / natural result",
+  sources:["MNN Bk1 L24","Genki II Ch8","Sou Matome Wk3"],
+  explain:"と is for things that happen automatically or predictably every time the condition is met — natural laws, machine behavior, habitual routes. It cannot be followed by a clause expressing a request, invitation, opinion, or intention (you can't say 春になると旅行しましょう — 'let's travel when spring comes' — with と). If B is a deliberate choice rather than an automatic consequence, と is the wrong conditional.",
+  formation:["Plain form + と (no past tense allowed in the と-clause itself)","このボタンを押すと、ドアが開きます。"],
+  examples:[
+    {jp:"この"+R("道","みち")+"をまっすぐ"+R("行","い")+"くと、"+R("駅","えき")+"があります。", en:"If you go straight down this road, there's the station. (predictable result)"},
+    {jp:R("春","はる")+"になると、"+R("桜","さくら")+"が"+R("咲","さ")+"きます。", en:"When spring comes, the cherry blossoms bloom. (natural law)"},
+    {jp:"このボタンを"+R("押","お")+"すと、"+R("電気","でんき")+"がつきます。", en:"If you press this button, the light turns on. (mechanical)"}
+  ],
+  dialogue:[
+    {who:"A", jp:"すみません、"+R("駅","えき")+"まではどう"+R("行","い")+"けばいいですか。", en:"Excuse me, how do I get to the station?"},
+    {who:"B", jp:"この"+R("道","みち")+"をまっすぐ"+R("行","い")+"くと、"+R("右側","みぎがわ")+"にありますよ。", en:"If you go straight down this road, it'll be on your right."},
+    {who:"A", jp:"ありがとうございます！", en:"Thank you!"}
+  ],
+  quiz:[
+    {q:"Which sentence is grammatically WRONG because と can't express an invitation?",choices:["春になると暖かくなります","駅に着くと電話してください","このボタンを押すと音が出ます","冬になると寒くなります"], a:1, ex:"電話してください is a request/command, which the と-clause cannot lead into — it needs たら instead: 駅に着いたら電話してください。"},
+    {q:"「1に2を足す＿＿、3になります。」", choices:["たら","ば","と","なら"], a:2, ex:"This is a mathematical/automatic fact, the textbook case for と."}
+  ]
+},
+{
+  jp:"〜たら", romaji:"~tara", fn:"Specific, one-time conditions",
+  sources:["MNN Bk1 L25","Genki II Ch8","Sou Matome Wk3"],
+  explain:"たら is the most flexible and forgiving of the four conditionals — it works for specific one-time situations, hypotheticals, and can be followed by requests, invitations, opinions, or intentions (unlike と). It also does double duty as 'when' for a specific future event: 家に着いたら、電話します (when/if I get home, I'll call) doesn't necessarily doubt whether you'll get home — it's just marking the sequence.",
+  formation:["Verb/adjective (た-form) + ら","食べる → 食べた → 食べたら／安い → 安かった → 安かったら"],
+  examples:[
+    {jp:R("雨","あめ")+"が"+R("降","ふ")+"ったら、"+R("試合","しあい")+"は"+R("中止","ちゅうし")+"です。", en:"If it rains, the game is cancelled."},
+    {jp:R("空港","くうこう")+"に"+R("着","つ")+"いたら、メッセージを"+R("送","おく")+"ってください。", en:"When you arrive at the airport, please send me a message."},
+    {jp:"もし"+R("時間","じかん")+"があったら、"+R("一緒","いっしょ")+"に"+R("行","い")+"きませんか。", en:"If you happen to have time, would you like to go together?"}
+  ],
+  dialogue:[
+    {who:"A", jp:"もし"+R("道","みち")+"に"+R("迷","まよ")+"ったら、どうすればいいですか。", en:"If I get lost, what should I do?"},
+    {who:"B", jp:R("迷","まよ")+"ったら、コンビニの"+R("人","ひと")+"に"+R("聞","き")+"いてみてください。", en:"If you get lost, try asking someone at a convenience store."},
+    {who:"A", jp:"わかりました。ありがとうございます。", en:"Got it. Thank you."}
+  ],
+  tip:"たら is the safest all-purpose conditional to reach for in conversation when you're not sure which of the four fits — it's rarely wrong, unlike と or ば which have stricter rules.",
+  quiz:[
+    {q:"「安かっ＿＿、買います。」 (If it's cheap, I'll buy it)",choices:["たら","と","ければ","なら"], a:0, ex:"安い → 安かった → 安かったら, the た-form + ら pattern for い-adjectives."},
+    {q:"Which conditional most naturally leads into a request or invitation?",choices:["と","たら","ながら","し"], a:1, ex:"たら can be followed by requests, invitations, and opinions — unlike と."}
+  ]
+},
+{
+  jp:"〜ば", romaji:"~ba", fn:"General tendencies & hypotheticals",
+  sources:["MNN Bk2 L39","Genki II Ch8","Sou Matome Wk4"],
+  explain:"ば conditions feel a bit more 'if, hypothetically' and are common in general statements, proverbs, and advice about tendencies, rather than one specific event. A well-known restriction: if the subject of both clauses is the same person and the second clause is a request or intention about a specific action, ば usually sounds unnatural and たら is preferred. ば shines in patterns like 〜すればするほど ('the more you do X, the more...') and general truths.",
+  formation:["Group 1: change u→e, add ば (話す→話せば) ・ Group 2: drop る, add れば (食べる→食べれば) ・ い-adjective: drop い, add ければ (安い→安ければ) ・ な-adj/noun: 〜であれば／なら"],
+  examples:[
+    {jp:"お"+R("金","かね")+"があれば、"+R("旅行","りょこう")+"に"+R("行","い")+"きたいです。", en:"If I had money, I'd want to travel. (hypothetical)"},
+    {jp:R("練習","れんしゅう")+"すればするほど、"+R("上手","じょうず")+"になります。", en:"The more you practice, the better you get."},
+    {jp:"この"+R("薬","くすり")+"を"+R("飲","の")+"めば、すぐ"+R("良","よ")+"くなります。", en:"If you take this medicine, you'll get better quickly. (general tendency)"}
+  ],
+  dialogue:[
+    {who:"A", jp:R("日本語","にほんご")+"、どうすればもっと"+R("上手","じょうず")+"になりますか。", en:"What should I do to get better at Japanese?"},
+    {who:"B", jp:"たくさん"+R("話","はな")+"せば、"+R("話","はな")+"すほど"+R("上手","じょうず")+"になりますよ。", en:"The more you speak, the better you'll get."},
+    {who:"A", jp:"じゃあ、もっと"+R("先生","せんせい")+"と"+R("話","はな")+"す"+R("練習","れんしゅう")+"をします！", en:"Then I'll practice speaking with my teacher more!"}
+  ],
+  quiz:[
+    {q:"What is the ば-form of 安い (cheap)?",choices:["安いば","安ければ","安くば","安えば"], a:1, ex:"い-adjective rule: drop い, add ければ → 安い → 安ければ."},
+    {q:"「〜すれば〜するほど」means:",choices:["Either... or...","The more... the more...","Even if... still...","Before... after..."], a:1, ex:"This is a set pattern using ば to mean 'the more you do X, the more Y'."}
+  ]
+},
+{
+  jp:"〜なら", romaji:"~nara", fn:"Topic-based reaction & advice",
+  sources:["MNN Bk2 L40","Genki II Ch9","Sou Matome Wk4"],
+  explain:"なら is different from the other three: it reacts to something the other person just said or a topic already on the table, then gives advice, an opinion, or a plan built around that topic — it doesn't describe a cause-and-effect sequence the way と/たら/ば do. 'If you're going to Kyoto, [I recommend]...' is the classic なら shape: you pick up their topic (Kyoto) and respond to it.",
+  formation:["Plain form (drop の for verbs in casual speech, keep for nouns sometimes) + なら","Noun + なら／な-adjective + なら","京都に行くなら、清水寺がおすすめです。"],
+  examples:[
+    {jp:R("京都","きょうと")+"に"+R("行","い")+"くなら、"+R("清水寺","きよみずでら")+"がおすすめです。", en:"If you're going to Kyoto, I'd recommend Kiyomizu-dera."},
+    {jp:"それが"+R("本当","ほんとう")+"なら、"+R("大変","たいへん")+"ですね。", en:"If that's true, that's really tough."},
+    {jp:R("寿司","すし")+"が"+R("食","た")+"べたいなら、あの"+R("店","みせ")+"がいいですよ。", en:"If you want to eat sushi, that shop over there is good."}
+  ],
+  dialogue:[
+    {who:"A", jp:R("来月","らいげつ")+"、"+R("日本","にほん")+"へ"+R("旅行","りょこう")+"に"+R("行","い")+"きます。", en:"I'm going on a trip to Japan next month."},
+    {who:"B", jp:"へえ、いいですね！"+R("冬","ふゆ")+"に"+R("行","い")+"くなら、あたたかい"+R("服","ふく")+"を"+R("持","も")+"って"+R("行","い")+"ったほうがいいですよ。", en:"Oh nice! If you're going in winter, you should bring warm clothes."},
+    {who:"A", jp:"アドバイス、ありがとうございます。", en:"Thanks for the advice."}
+  ],
+  tip:"なら is the conversational conditional — it's how you react in the moment to whatever your conversation partner just brought up, which makes it enormously useful for kaiwa specifically, not just grammar quizzes.",
+  quiz:[
+    {q:"Your friend says 'I want to buy a laptop.' The most natural reply pattern uses:",choices:["買うと","買ったら、買います","買うなら、これがいいですよ","買えばよかった"], a:2, ex:"なら reacts directly to the topic your friend just raised (buying a laptop) with advice — the classic なら use case."},
+    {q:"Which of the four conditionals is built around reacting to a topic already mentioned, rather than cause-and-effect?",choices:["と","たら","ば","なら"], a:3, ex:"なら is topic-based/reactive, unlike と・たら・ば which describe conditions leading to results."}
+  ]
+}
+]},
+
+{num:5, jpTitle:"伝聞・様態・推量", enTitle:"Hearsay, Appearance & Guessing", accent:"matcha", points:[
+{
+  jp:"〜そうです（伝聞）", romaji:"~sou desu (hearsay)", fn:"'I heard that...'",
+  sources:["MNN Bk2 L36","Genki II Ch5","Sou Matome Wk5"],
+  explain:"This そうです attaches to the plain form of a whole sentence and reports something you heard or read from another source — it never changes form for tense or politeness inside the そう part; only the source of information matters, often marked with 〜によると (according to...).",
+  formation:["Plain form (any tense) + そうです","天気予報によると、明日は雨だそうです。"],
+  examples:[
+    {jp:R("天気予報","てんきよほう")+"によると、"+R("明日","あした")+"は"+R("雨","あめ")+"だそうです。", en:"According to the weather forecast, it's going to rain tomorrow."},
+    {jp:"ニュースで、"+R("あの店","あのみせ")+"はもうすぐ"+R("閉","し")+"まるそうです。", en:"According to the news, that shop is closing soon."},
+    {jp:R("田中","たなか")+"さんは"+R("来月","らいげつ")+"、"+R("結婚","けっこん")+"するそうです。", en:"I heard that Tanaka-san is getting married next month."}
+  ],
+  dialogue:[
+    {who:"A", jp:R("明日","あした")+"の"+R("天気","てんき")+"、どうですか。", en:"How's tomorrow's weather?"},
+    {who:"B", jp:R("予報","よほう")+"によると、"+R("台風","たいふう")+"が"+R("来","く")+"るそうです。", en:"According to the forecast, a typhoon is coming."},
+    {who:"A", jp:"え、"+R("本当","ほんとう")+"ですか。じゃあ、"+R("予定","よてい")+"を"+R("変","か")+"えたほうがいいですね。", en:"Oh, really? Then we should probably change our plans."}
+  ],
+  quiz:[
+    {q:"「彼は忙しい＿＿。」 reporting something you heard: 'I heard he's busy'",choices:["そうです","そうな","そうだ","そうに"], a:0, ex:"い-adjective plain form (忙しい) + そうです for hearsay — no change to the adjective itself."},
+    {q:"〜によると most often introduces:",choices:["Your own opinion","A source of secondhand information","A direct command","A hypothetical condition"], a:1, ex:"〜によると ('according to...') marks the source for a そうです hearsay statement."}
+  ]
+},
+{
+  jp:"〜そうです（様態）", romaji:"~sou desu (appearance)", fn:"'Looks like...' (visual impression)",
+  sources:["MNN Bk2 L37","Genki II Ch5","Sou Matome Wk5"],
+  explain:"This そうです is completely different from the hearsay one above, even though it looks identical — this one attaches to the stem (verb ます-stem, or adjective minus い) and describes a visual impression, something you can tell just by looking, before it actually happens or is confirmed. いい becomes よさそう (irregular) and ない becomes なさそう.",
+  formation:["Verb (ます-stem) + そうです ・ い-adjective (drop い) + そうです ・ irregular: いい→よさそう, ない→なさそう","雨が降りそうです（空を見て）／このケーキはおいしそうです（見て）"],
+  examples:[
+    {jp:""+R("空","そら")+"が"+R("暗","くら")+"いですね。"+R("雨","あめ")+"が"+R("降","ふ")+"りそうです。", en:"The sky is dark. It looks like it's going to rain."},
+    {jp:"この"+R("ケーキ","けーき")+"、おいしそうですね。", en:"This cake looks delicious."},
+    {jp:"あの"+R("箱","はこ")+"、"+R("重","おも")+"そうです。", en:"That box looks heavy."}
+  ],
+  dialogue:[
+    {who:"A", jp:R("空","そら")+"、"+R("暗","くら")+"くなってきましたね。", en:"The sky's getting dark, isn't it."},
+    {who:"B", jp:"ほんとだ、"+R("雨","あめ")+"が"+R("降","ふ")+"りそうですね。"+R("傘","かさ")+"、"+R("持","も")+"ってますか。", en:"You're right, looks like rain. Do you have an umbrella?"},
+    {who:"A", jp:"はい、"+R("持","も")+"ってます。"+R("大丈夫","だいじょうぶ")+"です。", en:"Yes, I have one. I'm fine."}
+  ],
+  tip:"The hearsay そう (plain form + そう) and the appearance そう (stem + そう) are famous for tripping up learners precisely because they sound the same — 雨が降るそうです (heard it will rain) vs 雨が降りそうです (looks like it will rain) is a genuinely common N4 trap.",
+  quiz:[
+    {q:"You look at the sky and guess it might rain. Which is correct?",choices:["雨が降るそうです","雨が降りそうです","雨が降ってそうです","雨が降ったそうです"], a:1, ex:"Visual guess = stem + そう → 降り + そう = 降りそうです. (降るそうです would mean you heard it from a forecast, not observed it yourself.)"},
+    {q:"What is the irregular appearance-そう form of いい (good)?",choices:["いいそう","よさそう","いそう","よいそう"], a:1, ex:"いい is irregular: it becomes よさそう, not いいそう."}
+  ]
+},
+{
+  jp:"〜ようです／〜みたいです", romaji:"~you desu / ~mitai desu", fn:"Inference from evidence",
+  sources:["MNN Bk2 L37","Genki II Ch10","Sou Matome Wk5"],
+  explain:"Both express 'it seems that...', based on some kind of evidence or reasoning you've put together yourself (not just a raw visual guess like appearance-そう, and not something you were simply told like hearsay-そう). みたいです is the casual, spoken-language version; ようです is more neutral/written. They also both do double duty as similarity ('like/similar to') outside of the inference meaning.",
+  formation:["Plain form + ようです (noun/na-adj: 〜の／な + ようです) ・ Plain form + みたいです (casual — noun/na-adj drop の/な before みたい)","隣の部屋に誰かいるようです／いるみたいです"],
+  examples:[
+    {jp:R("隣","となり")+"の"+R("部屋","へや")+"に"+R("誰","だれ")+"かいるようです。", en:"It seems like there's someone in the next room."},
+    {jp:"この"+R("道","みち")+"、"+R("間違","まちが")+"えたみたいです。", en:"Looks like we took the wrong road."},
+    {jp:R("彼女","かのじょ")+"は"+R("日本人","にほんじん")+"のようです。", en:"She seems to be Japanese."}
+  ],
+  dialogue:[
+    {who:"A", jp:"あれ、この"+R("駅","えき")+"、さっき"+R("来","き")+"ましたよね？", en:"Wait, didn't we already pass this station?"},
+    {who:"B", jp:"あ、ほんとだ。"+R("同","おな")+"じところをぐるぐる"+R("回","まわ")+"っているみたいですね。", en:"Oh, you're right. Seems like we've been going around in circles."},
+    {who:"A", jp:R("地図","ちず")+"アプリでもう"+R("一度","いちど")+"確認しましょう。", en:"Let's double-check with the map app."}
+  ],
+  quiz:[
+    {q:"Which sentence pattern is the more casual, spoken-language version?",choices:["〜ようです","〜みたいです","〜そうです（伝聞）","〜なければなりません"], a:1, ex:"みたいです is the casual/spoken equivalent of ようです."},
+    {q:"「あの二人は付き合っている＿＿。」 ('It seems those two are dating', based on how they act)", choices:["そうです（伝聞）","ようです","なさい","ことになる"], a:1, ex:"ようです fits an inference built from observed behavior, distinct from raw hearsay or a visual snap-judgment."}
+  ]
+},
+{
+  jp:"〜らしいです／〜かもしれません", romaji:"~rashii desu / ~kamoshiremasen", fn:"Apparently... / Maybe...",
+  sources:["MNN Bk2 L38","Genki II Ch6, Ch9","Sou Matome Wk6"],
+  explain:"らしい sits between hearsay and inference — it means 'apparently, based on information/reasoning available', often overlapping with 〜そうです but with a slightly more detached, 'that's what I gather' feeling. かもしれません is a straightforward 'maybe/might', expressing your own uncertainty about a possibility, with no restriction on how you know it. A quick related note: でしょう also expresses probability but with more confidence than かもしれません — 明日は晴れるでしょう ('it will probably be sunny') is a weather-forecaster-confidence guess.",
+  formation:["Plain form + らしいです (na-adj/noun drop だ)","Plain form + かもしれません (na-adj/noun drop だ) — works for any tense/politeness level of the plain form"],
+  examples:[
+    {jp:R("来週","らいしゅう")+"から"+R("値段","ねだん")+"が"+R("上","あ")+"がるらしいです。", en:"Apparently prices are going up starting next week."},
+    {jp:R("今日","きょう")+"は"+R("道","みち")+"が"+R("混","こ")+"んでいるかもしれません。", en:"The roads might be crowded today."},
+    {jp:R("彼","かれ")+"は"+R("来","こ")+"ないかもしれません。", en:"He might not come."}
+  ],
+  dialogue:[
+    {who:"A", jp:R("鈴木","すずき")+"さん、"+R("今日","きょう")+"来ますかね。", en:"Is Suzuki-san coming today, I wonder?"},
+    {who:"B", jp:"どうでしょう、"+R("風邪","かぜ")+"を"+R("引","ひ")+"いているから"+R("来","こ")+"ないかもしれません。", en:"Not sure — he's got a cold, so he might not come."},
+    {who:"A", jp:"それは"+R("心配","しんぱい")+"ですね。", en:"That's a bit worrying."}
+  ],
+  quiz:[
+    {q:"Which expresses the least certainty ('might, but really not sure')?",choices:["でしょう","かもしれません","はずです","そうです（伝聞）"], a:1, ex:"かもしれません expresses genuine uncertainty/possibility, weaker in confidence than でしょう or はずです."},
+    {q:"「彼は今、忙しい＿＿。手伝ってもらうのは難しいかもしれません。」 fill with 'apparently'",choices:["らしいです","なさい","ことにする","させられます"], a:0, ex:"らしい fits 'apparently, from what I gather' — a slightly detached secondhand impression."}
+  ]
+}
+]},
+
+{num:6, jpTitle:"接続と決定", enTitle:"Connectors & Decisions", accent:"gold", points:[
+{
+  jp:"〜んです", romaji:"~n desu", fn:"Explanatory nuance",
+  sources:["MNN Bk2 L26, L18-19","Genki II Ch3","Sou Matome Wk2"],
+  explain:"んです (written form) / んだ (casual) adds an explanatory, 'let me tell you the background/reason' nuance that plain です／ます doesn't carry. It's what makes a sentence sound like an explanation rather than a flat statement, and it's also how you naturally ask a probing question ('what's going on? / how come?') without sounding like you're interrogating someone. Skipping んです entirely is one of the biggest reasons learner Japanese can sound stiff even when it's grammatically correct.",
+  formation:["Plain form + んです (noun/na-adj + なんです)","どうしたんですか（What's wrong?）／頭が痛いんです（explaining: it's that my head hurts）"],
+  examples:[
+    {jp:"どうしたんですか。"+R("顔色","かおいろ")+"が"+R("悪","わる")+"いですよ。", en:"What's wrong? You look pale."},
+    {jp:R("頭","あたま")+"が"+R("痛","いた")+"いんです。", en:"(It's that) my head hurts. (explaining why you look bad)"},
+    {jp:"どうして"+R("遅","おく")+"れたんですか。", en:"How come you're late? (asking for the reason/story)"}
+  ],
+  dialogue:[
+    {who:"A", jp:"あれ、"+R("元気","げんき")+"ないですね。どうしたんですか。", en:"Hey, you seem low-energy. What's up?"},
+    {who:"B", jp:R("財布","さいふ")+"をなくしたんです。", en:"I lost my wallet, you see."},
+    {who:"A", jp:"それは"+R("大変","たいへん")+"ですね！どこでなくしたんですか。", en:"That's rough! Where did you lose it?"}
+  ],
+  tip:"んですか is the natural way to ask 'what happened?' in Japanese — plain ですか on its own can sound like you're just confirming a fact rather than genuinely asking for the story, which matters a lot in casual conversation.",
+  quiz:[
+    {q:"Which question sounds more like genuine, warm curiosity about someone's situation?",choices:["何をしますか","何をするんですか","何をしましたか","何をしていますか"], a:1, ex:"んですか adds the explanatory/curious nuance — asking for the background, not just a flat fact."},
+    {q:"「もう帰るんですか。」 best captures which nuance?",choices:["A flat, neutral question","Surprise/curiosity about the reason someone is leaving already","A command to leave","A hearsay report"], a:1, ex:"んですか frames the question as seeking the reason/background — here, surprise that they're leaving already."}
+  ]
+},
+{
+  jp:"〜し／〜のに", romaji:"~shi / ~noni", fn:"Listing reasons / unexpected contrast",
+  sources:["MNN Bk2 L38, L41","Genki II Ch10","Sou Matome Wk6"],
+  explain:"し lists multiple reasons or facts, implying 'and on top of that...' — often used to build up a casual justification (this place is cheap, AND it's close, AND the food is good). のに expresses contrast with a note of surprise, disappointment, or complaint — 'even though X, Y (which doesn't match)'. のに is emotionally loaded in a way that が (plain 'but') is not.",
+  formation:["Plain form + し（、plain form + し、...） ・ Plain form + のに (na-adj/noun + な + のに)"],
+  examples:[
+    {jp:"この"+R("店","みせ")+"は"+R("安","やす")+"いし、"+R("おいしい","おいしい")+"し、いつも"+R("行","い")+"きます。", en:"This shop is cheap, and it's tasty, so I always go there."},
+    {jp:R("勉強","べんきょう")+"したのに、テストの"+R("点数","てんすう")+"が"+R("悪","わる")+"かったです。", en:"Even though I studied, my test score was bad."},
+    {jp:R("約束","やくそく")+"したのに、"+R("彼","かれ")+"は"+R("来","こ")+"ませんでした。", en:"Even though we made plans, he didn't come."}
+  ],
+  dialogue:[
+    {who:"A", jp:"テスト、どうでしたか。", en:"How was the test?"},
+    {who:"B", jp:R("毎日","まいにち")+"勉強したのに、あまりできませんでした…", en:"Even though I studied every day, I couldn't do that well..."},
+    {who:"A", jp:R("残念","ざんねん")+"でしたね。でも、"+R("次","つぎ")+"の"+R("機会","きかい")+"がありますよ。", en:"That's a shame. But there'll be another chance."}
+  ],
+  tip:"のに carries real emotional weight — if you use it about a mock-exam score that didn't match your effort, that's exactly the situation it was built for.",
+  quiz:[
+    {q:"Which connector best fits a complaint tone: 'It's cold, even though it's supposed to be spring'?",choices:["春なのに寒いです","春だし寒いです","春だから寒いです","春なら寒いです"], a:0, ex:"のに expresses contrast with a complaining/surprised nuance — a mismatch between expectation (spring = warm) and reality (cold)."},
+    {q:"「この店は近い＿＿、静かだ＿＿、よく来ます。」 (listing reasons)",choices:["のに／のに","し／し","たら／たら","ば／ば"], a:1, ex:"し lists multiple supporting reasons, chained together."}
+  ]
+},
+{
+  jp:"〜ために／〜ように", romaji:"~tame ni / ~you ni", fn:"Purpose: 'in order to'",
+  sources:["MNN Bk2 L42","Genki II Ch8","Sou Matome Wk5"],
+  explain:"Both express purpose, but they split along a controllability line. ために attaches to verbs you can deliberately choose to do (volitional) — 'in order to [do something on purpose]'. ように attaches to situations that are NOT under your direct control — potential verbs, unintentional verbs (わかる, 見える, できる), or someone else's action — 'so that [something happens/becomes possible]'. 日本語が話せるようになるために練習する mixes both correctly: 話せるようになる (become able — not directly controllable, so ように) + ために練習する (studying is your deliberate choice).",
+  formation:["Volitional verb (dictionary form) + ために ・ Potential/involuntary verb (dictionary form) + ように","N4に合格するために、毎日勉強します。／日本語が話せるように、毎日練習します。"],
+  examples:[
+    {jp:"N4に"+R("合格","ごうかく")+"するために、"+R("毎日","まいにち")+"勉強しています。", en:"I study every day in order to pass N4. (deliberate action)"},
+    {jp:R("忘","わす")+"れないように、メモしておきます。", en:"I'll write a note so that I don't forget. (non-volitional — 'not forgetting' isn't something you directly do)"},
+    {jp:R("風邪","かぜ")+"をひかないように、"+R("暖","あたた")+"かい"+R("服","ふく")+"を"+R("着","き")+"ます。", en:"I'll wear warm clothes so that I don't catch a cold."}
+  ],
+  dialogue:[
+    {who:"A", jp:"どうして"+R("毎日","まいにち")+"、そんなに"+R("勉強","べんきょう")+"しているんですか。", en:"How come you're studying that much every day?"},
+    {who:"B", jp:R("日本語","にほんご")+"がもっと"+R("話","はな")+"せるようになるために、"+R("頑張","がんば")+"っているんです。", en:"I'm working hard so that I'll become able to speak Japanese better."},
+    {who:"A", jp:"すごいですね！", en:"That's impressive!"}
+  ],
+  quiz:[
+    {q:"「N4に合格する＿＿、毎日勉強します。」 (deliberate purpose)",choices:["ように","ために","のに","なら"], a:1, ex:"合格する (to pass) is a volitional, deliberately-chosen action, so ために is correct."},
+    {q:"「忘れない＿＿、メモします。」 (non-volitional — forgetting/not-forgetting isn't a direct action)",choices:["ために","ように","し","たら"], a:1, ex:"忘れない (not forgetting) is not something you directly, deliberately do, so ように is correct."}
+  ]
+},
+{
+  jp:"〜ことにする／〜ことになる", romaji:"~koto ni suru / ~koto ni naru", fn:"Deciding vs. being decided",
+  sources:["MNN Bk2 L47","Genki II Ch9","Sou Matome Wk6"],
+  explain:"ことにする is YOUR decision — you actively chose it. ことになる is a decision that happened around you or through circumstance — a group decision, a company policy, or something that 'just turned out this way'. Japanese speakers often prefer ことになる even for things they personally arranged, because it sounds softer and less self-important than directly claiming credit for the decision — a real cultural nuance, not just a grammar rule. Quick companion note: つもりです (my intention, not yet acted on) and 予定です (a scheduled plan, often with a set date) are the two related 'plan' expressions worth keeping distinct from these.",
+  formation:["Verb (dictionary/ない form) + ことにする <span class='arrow'>=</span> I decide to / not to","Verb (dictionary/ない form) + ことになる <span class='arrow'>=</span> it has been decided / it turns out that"],
+  examples:[
+    {jp:R("来年","らいねん")+"、"+R("日本","にほん")+"に"+R("留学","りゅうがく")+"することにしました。", en:"I've decided to study abroad in Japan next year. (my own decision)"},
+    {jp:R("会社","かいしゃ")+"を"+R("辞","や")+"めることになりました。", en:"It's been decided that I'll be leaving the company. (circumstance / softened phrasing)"},
+    {jp:R("来月","らいげつ")+"、"+R("大阪","おおさか")+"に"+R("転勤","てんきん")+"することになりました。", en:"It's been decided that I'll be transferred to Osaka next month."}
+  ],
+  dialogue:[
+    {who:"A", jp:R("今年","ことし")+"の"+R("冬","ふゆ")+"、どうするか"+R("決","き")+"めましたか。", en:"Have you decided what you're doing this winter?"},
+    {who:"B", jp:"はい、"+R("日本","にほん")+"に"+R("旅行","りょこう")+"に"+R("行","い")+"くことにしました。", en:"Yes, I've decided to travel to Japan."},
+    {who:"A", jp:"いいですね！いつ"+R("行","い")+"くことになったんですか。", en:"Nice! So when did it end up being decided you'd go?"}
+  ],
+  tip:"When you tell people about your December trip, 日本に行くことになりました sounds a touch more natural and modest than 日本に行くことにしました, even though you made the choice yourself — worth having both ready.",
+  quiz:[
+    {q:"You personally chose to quit smoking. Which fits?",choices:["タバコをやめることになりました","タバコをやめることにしました","タバコをやめるらしいです","タバコをやめさせられました"], a:1, ex:"ことにする marks an active, personal decision — fitting for quitting smoking by your own choice."},
+    {q:"Your company decided to relocate your department, not something you chose. Which fits?",choices:["ことにしました","ことになりました","ことができました","てほしいです"], a:1, ex:"ことになる fits a decision made by circumstance/others rather than the speaker."}
+  ]
+}
+]},
+
+{num:7, jpTitle:"クイックリファレンス", enTitle:"Quick-Reference Extras", accent:"indigo", points:[
+{
+  jp:"〜たことがあります", romaji:"~ta koto ga arimasu", fn:"Experience: 'have done X before'",
+  sources:["MNN Bk1 L17","Genki I Ch11","Sou Matome Wk1"],
+  explain:"Talks about life experience, not a specific recent event — 富士山に登ったことがあります means 'I have climbed Mt. Fuji (at some point in my life)', not 'I climbed it yesterday'. This is one of the single most useful patterns for small talk, since it's exactly how you'd talk about past trips, foods you've tried, or things you've done.",
+  formation:["Verb (た-form) + ことがあります／ありません","日本に行ったことがあります。／納豆を食べたことがありません。"],
+  examples:[
+    {jp:R("富士山","ふじさん")+"に"+R("登","のぼ")+"ったことがあります。", en:"I have climbed Mt. Fuji before."},
+    {jp:R("納豆","なっとう")+"を"+R("食","た")+"べたことがありません。", en:"I've never eaten natto."},
+    {jp:R("日本語","にほんご")+"で"+R("手紙","てがみ")+"を"+R("書","か")+"いたことがあります。", en:"I've written a letter in Japanese before."}
+  ],
+  quiz:[
+    {q:"「刺身を＿＿ことがありますか。」 (Have you ever eaten sashimi?)",choices:["食べる","食べた","食べて","食べます"], a:1, ex:"ことがある always attaches to the past/た-form of the verb, regardless of when you're asking."}
+  ]
+},
+{
+  jp:"〜たり〜たりします", romaji:"~tari ~tari shimasu", fn:"Listing representative actions",
+  sources:["MNN Bk1 L17","Genki I Ch10","Sou Matome Wk1"],
+  explain:"Lists a few representative actions out of many possible ones — it implies 'among other things', rather than a complete, ordered list (that would just be て-form chaining). Great for describing a typical weekend or a trip: 泳いだり、食べたり、寝たりしました ('I swam, ate, napped — that sort of thing').",
+  formation:["Verb (た-form) + り + Verb (た-form) + り + します","週末は本を読んだり、映画を見たりします。"],
+  examples:[
+    {jp:R("週末","しゅうまつ")+"は"+R("本","ほん")+"を"+R("読","よ")+"んだり、"+R("映画","えいが")+"を"+R("見","み")+"たりします。", en:"On weekends I do things like read books and watch movies."},
+    {jp:R("旅行","りょこう")+"では"+R("泳","およ")+"いだり、おいしいものを"+R("食","た")+"べたりしました。", en:"On the trip we did things like swim and eat good food."}
+  ],
+  quiz:[
+    {q:"Which best describes a weekend of 'reading, cooking, and that kind of thing' (a few examples, not a full list)?",choices:["読んで、料理して","読んだり、料理したりします","読んだから料理します","読むように料理します"], a:1, ex:"〜たり〜たりする signals a few representative examples rather than an exhaustive, ordered list."}
+  ]
+},
+{
+  jp:"〜すぎます", romaji:"~sugimasu", fn:"Excessive degree: 'too much'",
+  sources:["MNN Bk2 L28 (review)","Genki II Ch1","Sou Matome Wk2"],
+  explain:"Attaches to the verb stem or adjective (drop い／だ) to say something goes past a reasonable amount — almost always with a slightly negative or complaining nuance, even for things that sound positive (食べすぎました isn't neutral, it implies you regret it a little).",
+  formation:["Verb (ます-stem) + すぎます ・ い-adjective (drop い) + すぎます ・ な-adjective (drop な/だ) + すぎます"],
+  examples:[
+    {jp:R("昨日","きのう")+"、"+R("食","た")+"べすぎました。", en:"I ate too much yesterday."},
+    {jp:"この"+R("問題","もんだい")+"は"+R("難","むずか")+"しすぎます。", en:"This question is too difficult."},
+    {jp:R("値段","ねだん")+"が"+R("高","たか")+"すぎて、"+R("買","か")+"えませんでした。", en:"It was too expensive, so I couldn't buy it."}
+  ],
+  quiz:[
+    {q:"What is 難しい (difficult) + すぎる?",choices:["難しいすぎる","難しすぎる","難くすぎる","難しいますぎる"], a:1, ex:"い-adjective rule: drop the final い before attaching すぎる → 難し + すぎる."}
+  ]
+},
+{
+  jp:"〜やすいです／〜にくいです", romaji:"~yasui desu / ~nikui desu", fn:"Easy/hard to do",
+  sources:["MNN Bk2 L28","Genki II Ch1","Sou Matome Wk2"],
+  explain:"Describes how easy or difficult an action is by nature, becoming a new い-adjective built onto the verb stem. This is genuinely useful for giving feedback and opinions — この靴は歩きやすいです (these shoes are easy to walk in), この漢字は覚えにくいです (this kanji is hard to remember).",
+  formation:["Verb (ます-stem) + やすいです／にくいです","歩く → 歩きやすい／歩きにくい"],
+  examples:[
+    {jp:"この"+R("靴","くつ")+"は"+R("歩","ある")+"きやすいです。", en:"These shoes are easy to walk in."},
+    {jp:"この"+R("漢字","かんじ")+"は"+R("覚","おぼ")+"えにくいです。", en:"This kanji is hard to remember."},
+    {jp:"この"+R("辞書","じしょ")+"は"+R("使","つか")+"いやすいです。", en:"This dictionary is easy to use."}
+  ],
+  quiz:[
+    {q:"'This pen is hard to write with' — 書く + にくい, correctly conjugated:",choices:["書くにくいです","書きにくいです","書いてにくいです","書かにくいです"], a:1, ex:"Attach にくい to the ます-stem of the verb: 書き + にくい."}
+  ]
+},
+{
+  jp:"〜てしまいます／〜ておきます", romaji:"~te shimaimasu / ~te okimasu", fn:"Completion (often with regret) & advance preparation",
+  sources:["MNN Bk2 L28, L31","Genki II Ch7","Sou Matome Wk3"],
+  explain:"てしまう emphasizes that something is completely finished, and very often carries a nuance of regret or 'oops' — 財布を忘れてしまいました ('I went and forgot my wallet', with a sigh built in). In casual speech it contracts to ちゃう／じゃう. ておく means doing something now, in advance, for later convenience — a classic trip-prep verb: ホテルを予約しておきます (I'll book the hotel in advance).",
+  formation:["Verb (て-form) + しまいます <span class='arrow'>=</span> finished completely (often regrettably) — casual: 〜ちゃう／じゃう","Verb (て-form) + おきます <span class='arrow'>=</span> do in advance, for later"],
+  examples:[
+    {jp:R("財布","さいふ")+"を"+R("忘","わす")+"れてしまいました。", en:"I went and forgot my wallet. (regret)"},
+    {jp:R("宿題","しゅくだい")+"、もう"+R("終","お")+"わっちゃった。", en:"I already finished my homework. (casual completion, no regret here)"},
+    {jp:R("旅行","りょこう")+"の"+R("前","まえ")+"に、ホテルを"+R("予約","よやく")+"しておきます。", en:"I'll book the hotel in advance, before the trip."}
+  ],
+  quiz:[
+    {q:"「レポートを＿＿から、遊びに行きましょう。」 (Let's do our prep — finish the report in advance, THEN go play)",choices:["書いてしまって","書いておいて","書かれて","書かせて"], a:1, ex:"ておく = do it now for later convenience, matching 'get it done first, then go have fun'."},
+    {q:"Which best captures a slightly regretful 'oops, I did it completely'?",choices:["〜ておきます","〜てしまいます","〜てほしいです","〜ようになります"], a:1, ex:"てしまう often carries a nuance of regret or 'oh no, it's done' about a completed action."}
+  ]
+},
+{
+  jp:"〜より〜のほうが／〜の中で一番", romaji:"~yori ~no hou ga / ~no naka de ichiban", fn:"Comparisons & superlatives",
+  sources:["MNN Bk1 L17","Genki I Ch10","Sou Matome Wk1"],
+  explain:"AよりBのほうが〜 compares two things and says B wins ('compared to A, B is more ~'). For three or more things, 〜の中で一番〜 picks the single winner out of a group. Small but important detail: the thing being compared FROM takes より, and the winner takes のほうが.",
+  formation:["A より B のほうが 〜です <span class='arrow'>=</span> compared to A, B is more ~","B は [group] の中で 一番 〜です <span class='arrow'>=</span> B is the most ~ within [group]"],
+  examples:[
+    {jp:R("電車","でんしゃ")+"より"+R("飛行機","ひこうき")+"のほうが"+R("速","はや")+"いです。", en:"Compared to the train, the plane is faster."},
+    {jp:R("三人","さんにん")+"の"+R("中","なか")+"で"+R("田中","たなか")+"さんが"+R("一番","いちばん")+R("背","せ")+"が"+R("高","たか")+"いです。", en:"Out of the three of them, Tanaka-san is the tallest."},
+    {jp:R("日本","にほん")+"の"+R("料理","りょうり")+"の"+R("中","なか")+"で"+R("寿司","すし")+"が"+R("一番","いちばん")+"好きです。", en:"Among Japanese food, I like sushi the most."}
+  ],
+  quiz:[
+    {q:"「バスより電車の＿＿速いです。」",choices:["ほうが","なかで","ように","のに"], a:0, ex:"AよりBのほうが〜 is the standard two-way comparison pattern; B (電車) takes のほうが."},
+    {q:"How do you say 'the most' among three or more things?",choices:["〜より","〜のほうが","〜の中で一番","〜てもいい"], a:2, ex:"〜の中で一番〜 picks a single superlative winner from a group of three or more."}
+  ]
+}
+]}
+];
+
+/* One extra production example for every grammar point. */
+var supplementalGrammarExamples = [
+  ["毎朝、母は六時に起きています。", "My mother gets up at six every morning."],
+  ["ここで靴を脱いでもいいですか。", "May I take off my shoes here?"],
+  ["明日は早く起きなくてもいいです。", "You do not have to get up early tomorrow."],
+  ["朝ご飯を食べてから、学校へ行きます。", "I eat breakfast and then go to school."],
+  ["友達が写真を送ってくれました。", "My friend sent me a photo."],
+  ["もう一度説明してくれませんか。", "Could you explain it one more time?"],
+  ["先生は宿題を忘れないように言いました。", "The teacher told us not to forget our homework."],
+  ["私は漢字を少し読むことができます。", "I can read a little kanji."],
+  ["駅で財布を拾われました。", "My wallet was picked up at the station."],
+  ["子どもに部屋を掃除させます。", "I make my child clean the room."],
+  ["毎日、野菜を食べさせられました。", "I was made to eat vegetables every day."],
+  ["社長はもうお帰りになりました。", "The company president has already gone home."],
+  ["春になると、桜が咲きます。", "When spring comes, the cherry blossoms bloom."],
+  ["家に帰ったら、メールをください。", "When you get home, please email me."],
+  ["時間があれば、映画を見たいです。", "If I have time, I want to watch a movie."],
+  ["京都へ行くなら、秋がいいですよ。", "If you are going to Kyoto, autumn is good."],
+  ["天気予報によると、明日は雪だそうです。", "According to the forecast, I hear it will snow tomorrow."],
+  ["このケーキは甘そうです。", "This cake looks sweet."],
+  ["彼は疲れているようです。", "He seems to be tired."],
+  ["週末は雨かもしれません。", "It might rain this weekend."],
+  ["今日は少し相談したいんです。", "I want to ask you about something today."],
+  ["この店は安いし、駅から近いです。", "This shop is cheap, and it is close to the station."],
+  ["健康のために、毎日歩いています。", "I walk every day for my health."],
+  ["来月からジムに通うことにしました。", "I decided to start going to the gym next month."],
+  ["北海道へ行ったことがあります。", "I have been to Hokkaido before."],
+  ["休みの日は本を読んだり、料理したりします。", "On days off, I do things like read and cook."],
+  ["このかばんは大きすぎます。", "This bag is too large."],
+  ["このペンは使いやすいです。", "This pen is easy to use."],
+  ["旅行の前にホテルを予約しておきます。", "I will reserve the hotel in advance before the trip."],
+  ["電車よりバスのほうが安いです。", "The bus is cheaper than the train."]
+];
+/* Two more production examples for every grammar point (round 2). */
+var supplementalGrammarExamples2 = [
+  ["子供たちは公園で遊んでいます。", "The children are playing in the park."],
+  ["ここでタバコを吸ってもいいですか。", "Is it okay to smoke here?"],
+  ["パスポートを見せなければなりません。", "You have to show your passport."],
+  ["手を洗ってから、ご飯を食べます。", "I wash my hands and then eat."],
+  ["友達に日本語の本を貸してあげました。", "I lent my friend a Japanese book."],
+  ["もう少しゆっくり話してほしいです。", "I want you to speak a bit more slowly."],
+  ["医者は塩分を減らすように言いました。", "The doctor told me to reduce my salt intake."],
+  ["わたしは自転車に乗ることができます。", "I can ride a bicycle."],
+  ["この本は多くの国で読まれています。", "This book is read in many countries."],
+  ["先生は学生に本を読ませました。", "The teacher had the students read the book."],
+  ["上司に毎週レポートを書かせられました。", "I was made to write a report every week by my boss."],
+  ["社長は何時にいらっしゃいますか。", "What time will the company president arrive? (honorific)"],
+  ["冬になると、雪が降ります。", "When winter comes, it snows."],
+  ["宿題が終わったら、遊びに行ってもいいですよ。", "Once you finish your homework, you may go out to play."],
+  ["早く出れば、電車に間に合います。", "If you leave early, you'll make it in time for the train."],
+  ["スマホを買うなら、この店が安いですよ。", "If you're buying a smartphone, this shop is cheap."],
+  ["ニュースによると、来週から値上がりするそうです。", "According to the news, prices will go up starting next week."],
+  ["この料理、おいしそうな匂いがしますね。", "This dish smells like it's delicious."],
+  ["外は静かなので、もう雨がやんだようです。", "It's quiet outside, so it seems the rain has stopped."],
+  ["彼は来年、引っ越すらしいです。", "Apparently, he's moving next year."],
+  ["実は、来月引っ越すんです。", "Actually, I'm moving next month, you see."],
+  ["この部屋は明るいし、静かだし、気に入っています。", "This room is bright, and it's quiet, so I like it."],
+  ["健康を保つために、野菜をたくさん食べます。", "In order to stay healthy, I eat a lot of vegetables."],
+  ["来年、日本語学校に通うことにしました。", "I've decided to attend a Japanese language school next year."],
+  ["沖縄へ行ったことがあります。", "I have been to Okinawa before."],
+  ["旅行中は写真を撮ったり、地元の料理を食べたりしました。", "During the trip we did things like take photos and eat local food."],
+  ["昨日は寝すぎてしまいました。", "I ended up oversleeping yesterday."],
+  ["このアプリは操作しやすいです。", "This app is easy to operate."],
+  ["大切なメールを消してしまいました。", "I accidentally deleted an important email."],
+  ["犬より猫のほうが好きです。", "I like cats more than dogs."]
+];
+
+/* Three more production examples for every grammar point (round 3). */
+var supplementalGrammarExamples3 = [
+  ["彼女は東京の大学で勉強しています。", "She is studying at a university in Tokyo."],
+  ["図書館の中で大きい声で話してはいけません。", "You must not talk loudly inside the library."],
+  ["今日はスーツを着なくてもいいです。", "You don't have to wear a suit today."],
+  ["映画を見たあとで、感想を話しましょう。", "Let's talk about our impressions after watching the movie."],
+  ["隣の人が荷物を持ってくれました。", "The person next to me carried my luggage for me."],
+  ["駅までの道を教えてくれませんか。", "Could you tell me the way to the station?"],
+  ["静かにしなさい。", "Be quiet. (parent or teacher to a child)"],
+  ["この魚は生で食べられます。", "This fish can be eaten raw."],
+  ["電車の中で子供に泣かれて、少し困りました。", "A child near me cried on the train, which was a bit of a hassle. (meiwaku passive)"],
+  ["少し休ませてください。", "Please let me rest a little."],
+  ["田中さんは会議で長く話させられました。", "Tanaka-san was made to speak for a long time at the meeting."],
+  ["お荷物をお預かりします。", "I'll take care of your luggage for you. (humble)"],
+  ["このスイッチを入れると、機械が動きます。", "If you turn on this switch, the machine starts moving."],
+  ["分からないことがあったら、聞いてください。", "If there's something you don't understand, please ask."],
+  ["説明書を読めば、使い方がわかります。", "If you read the instructions, you'll understand how to use it."],
+  ["それが本当の話なら、驚きです。", "If that story is true, it's surprising."],
+  ["友達の話では、その映画はとても感動的だそうです。", "According to my friend, that movie is very moving."],
+  ["彼は何か言いたそうな顔をしていました。", "He had a face like he wanted to say something."],
+  ["この漢字、間違っているみたいですよ。", "This kanji seems to be wrong."],
+  ["この道は工事中で通れないかもしれません。", "This road might be closed for construction."],
+  ["どうして今日は元気がないんですか。", "How come you don't seem well today?"],
+  ["電話したのに、誰も出ませんでした。", "Even though I called, no one answered."],
+  ["電車に間に合うように、早く家を出ます。", "I leave home early so that I'll make it in time for the train."],
+  ["会議は来週の月曜日に行われることになりました。", "It's been decided that the meeting will be held next Monday."],
+  ["有名な歌手に会ったことがあります。", "I've met a famous singer before."],
+  ["休みの日は掃除したり、洗濯したりします。", "On days off I do things like clean and do laundry."],
+  ["この道は狭すぎて、車が通れません。", "This road is too narrow for a car to pass through."],
+  ["この字は小さくて読みにくいです。", "These characters are small and hard to read."],
+  ["会議の前に資料を準備しておきます。", "I'll prepare the materials in advance before the meeting."],
+  ["クラスの中で山田さんが一番よく話します。", "Out of everyone in the class, Yamada-san talks the most."]
+];
+
+/* Round 4 — leaning toward travel and trip-week situations. */
+var supplementalGrammarExamples4 = [
+  ["妹は今、部屋で音楽を聞いています。", "My little sister is listening to music in her room right now."],
+  ["この公園でボールを使って遊んではいけません。", "You must not play ball games in this park."],
+  ["明日までにこの書類を出さなければなりません。", "I have to hand in this document by tomorrow."],
+  ["手を洗ってから、ご飯を食べます。", "I wash my hands and then eat."],
+  ["友達が空港まで迎えに来てくれました。", "My friend came all the way to the airport to pick me up."],
+  ["すみません、少し静かにしてくれませんか。", "Excuse me, could you be a little quieter?"],
+  ["先生は学生に毎日復習するように言いました。", "The teacher told the students to review every day."],
+  ["駅の近くで自転車が借りられます。", "You can rent bicycles near the station."],
+  ["この建物は百年前に建てられました。", "This building was built a hundred years ago."],
+  ["母は弟に部屋を掃除させました。", "My mother made my little brother clean his room."],
+  ["子供のとき、毎日ピアノを練習させられました。", "When I was a child, I was made to practise the piano every day."],
+  ["担当の者がすぐに参ります。", "The person in charge will come right away. (humble)"],
+  ["このボタンを押すと、切符が出ます。", "If you press this button, the ticket comes out."],
+  ["雨が降ったら、試合は中止です。", "If it rains, the match is cancelled."],
+  ["安ければ、二つ買います。", "If it's cheap, I'll buy two."],
+  ["京都に行くなら、秋がおすすめです。", "If you're going to Kyoto, autumn is the season I'd recommend."],
+  ["天気予報によると、週末は晴れるそうです。", "According to the forecast, it will be clear at the weekend."],
+  ["その荷物、重そうですね。持ちましょうか。", "That luggage looks heavy. Shall I carry it?"],
+  ["店の前に人が並んでいるので、人気があるようです。", "People are queuing in front of the shop, so it seems to be popular."],
+  ["この道は工事中らしいですよ。", "Apparently this road is under construction."],
+  ["実は、まだ切符を買っていないんです。", "Actually, I haven't bought a ticket yet."],
+  ["値段も高いし、味も普通だし、あまりおすすめしません。", "It's pricey, and the taste is nothing special, so I don't really recommend it."],
+  ["忘れないように、スマホにメモしました。", "So that I wouldn't forget, I made a note on my phone."],
+  ["今年から自転車で通うことにしました。", "I've decided to commute by bicycle from this year."],
+  ["温泉に入ったことがありますか。", "Have you ever been into an onsen?"],
+  ["日曜日は本を読んだり、散歩したりします。", "On Sundays I do things like read and go for walks."],
+  ["昨日は食べすぎて、お腹が痛くなりました。", "I ate too much yesterday and my stomach started hurting."],
+  ["この靴は歩きやすいです。", "These shoes are easy to walk in."],
+  ["旅行の前に、ホテルを予約しておきます。", "I'll book the hotel in advance, before the trip."],
+  ["この店の中で、このケーキが一番人気です。", "In this shop, this cake is the most popular item."]
+];
+
+/* Round 5 — a second pass, with the harder half of each pattern. */
+var supplementalGrammarExamples5 = [
+  ["兄は大阪の銀行で働いています。", "My older brother works at a bank in Osaka."],
+  ["ここで写真を撮ってもいいですが、フラッシュは使ってはいけません。", "You may take photos here, but you must not use a flash."],
+  ["日曜日は会社に行かなくてもいいです。", "I don't have to go in to the office on Sundays."],
+  ["宿題をしたあとで、ゲームをします。", "After I've done my homework, I play games."],
+  ["先生に作文を直してもらいました。", "I had my teacher correct my composition."],
+  ["もう少しゆっくり話してほしいです。", "I'd like you to speak a little more slowly."],
+  ["医者に、お酒を飲まないように言われました。", "The doctor told me not to drink alcohol."],
+  ["日本語のメニューが読めるようになりました。", "I've become able to read Japanese menus."],
+  ["この歌は世界中で歌われています。", "This song is sung all over the world."],
+  ["すみません、ちょっと写真を撮らせてください。", "Excuse me, please let me take a quick photo."],
+  ["新人のとき、毎日残業させられました。", "When I was new, I was made to work overtime every day."],
+  ["先生はもうお帰りになりました。", "The teacher has already gone home. (honorific)"],
+  ["まっすぐ行くと、右にコンビニがあります。", "If you go straight, there's a convenience store on the right."],
+  ["もし時間があったら、美術館にも行きたいです。", "If I have time, I'd like to visit the art museum as well."],
+  ["地図を見れば、すぐ分かりますよ。", "If you look at the map, you'll understand right away."],
+  ["安いホテルを探しているなら、この辺が便利ですよ。", "If you're looking for a cheap hotel, this area is convenient."],
+  ["田中さんは来月、東京に転勤するそうです。", "I hear Tanaka-san is being transferred to Tokyo next month."],
+  ["空が暗くなって、雨が降りそうです。", "The sky has gone dark — it looks like it's about to rain."],
+  ["電気がついていないので、留守のようです。", "The lights are off, so it seems nobody's home."],
+  ["渋滞しているので、少し遅れるかもしれません。", "There's traffic, so I might be a little late."],
+  ["明日から日本に行くんです。", "I'm off to Japan from tomorrow, actually."],
+  ["たくさん練習したのに、うまく話せませんでした。", "Even though I practised a lot, I couldn't speak well."],
+  ["日本で働くために、日本語を勉強しています。", "I'm studying Japanese in order to work in Japan."],
+  ["来月から新しい店を手伝うことになりました。", "It's been arranged that I'll help out at the new shop from next month."],
+  ["一度も飛行機に乗ったことがありません。", "I have never once been on a plane."],
+  ["旅行の準備で、荷物を作ったり、切符を買ったりしています。", "Getting ready for the trip, I'm packing, buying tickets, and so on."],
+  ["このかばんは大きすぎて、電車で邪魔になります。", "This bag is too big and gets in the way on the train."],
+  ["この説明は分かりにくいです。", "This explanation is hard to follow."],
+  ["出かける前に、窓を閉めておいてください。", "Please close the windows before you go out."],
+  ["兄弟の中で、私が一番早く起きます。", "Out of my siblings, I'm the one who gets up earliest."]
+];
+
+N4.grammarModules = grammarModules;
+
+/* One entry per grammar point per round, in point order. renderGrammar()
+   appends every round it finds here, so adding a round 6 is just a matter
+   of writing 30 more sentences and listing the array below. */
+N4.grammarExampleRounds = [
+  supplementalGrammarExamples,
+  supplementalGrammarExamples2,
+  supplementalGrammarExamples3,
+  supplementalGrammarExamples4,
+  supplementalGrammarExamples5
+];
+})();
