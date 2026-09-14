@@ -117,6 +117,9 @@ nav.mainnav button.navlink.active .mk{ color:#fff; }
 }
 nav.mainnav button.navlink.active .soon-badge{ color:#fff; border-color:rgba(255,255,255,.6); }
 
+.sidebar-footer{ padding:12px 18px 16px; font-size:.7rem; color:var(--ink-faint); background:var(--paper-2); text-align:center; }
+.sidebar-footer a{ color:var(--ink-faint); text-decoration:underline; }
+.sidebar-footer a:hover{ color:var(--indigo); }
 .settings-panel{ border-top:1px solid var(--line); padding:16px 18px 20px; background:var(--paper-2); }
 .settings-panel .stitle{ font-size:.68rem; color:var(--ink-faint); letter-spacing:.08em; margin-bottom:10px; }
 .setting-row{ display:flex; align-items:center; justify-content:space-between; margin-bottom:10px; font-size:.82rem; color:var(--ink-soft); }

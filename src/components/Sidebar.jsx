@@ -31,7 +31,7 @@ export default function Sidebar({ active, onNavigate, mobileOpen, onCloseMobile 
     <>
       <aside className={"sidebar" + (mobileOpen ? " open" : "")}>
         <div className="brand">
-          <div className="jp">N4総復習</div>
+          <div className="jp">習得 Shuutoku</div>
           <div className="en">Your N4 Review Handbook</div>
         </div>
         <div className="sidebar-scroll">
@@ -79,6 +79,10 @@ export default function Sidebar({ active, onNavigate, mobileOpen, onCloseMobile 
             Quiz progress: <span>{stats.answeredCount} / {stats.total}</span>
             <div className="progress-bar-track"><div className="progress-bar-fill" style={{ width: pct + "%" }} /></div>
           </div>
+        </div>
+        <div className="sidebar-footer">
+          © 2026 Shuutoku ・{" "}
+          <a href="https://github.com/franzdarren/shuutoku" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </aside>
       <div className={"scrim" + (mobileOpen ? " show" : "")} onClick={onCloseMobile} />
