@@ -12,3 +12,19 @@ export function shuffled(items) {
 export function drawSample(pool, n = 10) {
   return shuffled(pool).slice(0, Math.min(n, pool.length));
 }
+
+/** A random sample biased toward "weak" items (ones you've previously
+ *  gotten wrong, per `weakIds`) — a lightweight stand-in for spaced
+ *  repetition: up to 60% of the slots are filled from your mistakes first
+ *  (so they resurface more often), the rest filled randomly as usual, then
+ *  the whole set is reshuffled so weak items aren't always sorted first.
+ *  Falls back to a plain random sample when there's no mistake history yet. */
+export function drawSampleWeighted(pool, n, weakIds, getId) {
+  if (!weakIds || weakIds.size === 0) return drawSample(pool, n);
+  const weak = pool.filter((it) => weakIds.has(getId(it)));
+  const rest = pool.filter((it) => !weakIds.has(getId(it)));
+  const weakSlots = Math.min(weak.length, Math.ceil(n * 0.6));
+  const picked = shuffled(weak).slice(0, weakSlots);
+  picked.push(...shuffled(rest).slice(0, n - picked.length));
+  return shuffled(picked);
+}

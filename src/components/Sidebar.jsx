@@ -1,5 +1,6 @@
 import { useSettings } from "../context/SettingsContext.jsx";
 import { useQuiz } from "../context/QuizContext.jsx";
+import SearchBox from "./SearchBox.jsx";
 
 const NAV = [
   { id: "overview", mk: "概", label: "Overview" },
@@ -8,6 +9,7 @@ const NAV = [
   { id: "reading", mk: "読", label: "Reading Lab" },
   { id: "kaiwa", mk: "話", label: "Kaiwa Lab" },
   { id: "quiz", mk: "力", label: "Quiz Center" },
+  { id: "mistakes", mk: "直", label: "Review Mistakes" },
   { id: "ai", mk: "練", label: "Renshuu with AI", soon: true },
 ];
 
@@ -22,7 +24,7 @@ const JP_FONTS = [
   { v: "gothic", label: "ゴシック Gothic" },
 ];
 
-export default function Sidebar({ active, onNavigate, mobileOpen, onCloseMobile }) {
+export default function Sidebar({ active, onNavigate, mobileOpen, onCloseMobile, onSearchJump }) {
   const { furigana, setFurigana, dark, setDark, fontScale, setFontScale, jpFont, setJpFont } = useSettings();
   const { stats } = useQuiz();
   const pct = stats.total ? Math.round((stats.answeredCount / stats.total) * 100) : 0;
@@ -35,6 +37,9 @@ export default function Sidebar({ active, onNavigate, mobileOpen, onCloseMobile 
           <div className="en">Your N4 Review Handbook</div>
         </div>
         <div className="sidebar-scroll">
+          <div className="searchbox-wrap">
+            <SearchBox onJump={(entry) => { onSearchJump(entry); onCloseMobile(); }} />
+          </div>
           <nav className="mainnav">
             <div className="navgroup-label">MENU</div>
             {NAV.map((n) => (

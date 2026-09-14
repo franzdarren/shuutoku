@@ -98,6 +98,31 @@ body.no-furigana rt{ display:none; }
 .brand .jp{ font-family:var(--serif); font-weight:700; font-size:1.5rem; color:var(--ink); letter-spacing:.02em; line-height:1.3; }
 .brand .en{ font-size:.72rem; color:var(--ink-faint); margin-top:4px; letter-spacing:.03em; }
 
+.searchbox-wrap{ padding:12px 12px 0; position:relative; }
+.searchbox{ position:relative; }
+.search-input{
+  width:100%; box-sizing:border-box; font-family:var(--sans); font-size:.85rem;
+  padding:9px 12px; border:1px solid var(--line); border-radius:var(--radius);
+  background:var(--paper); color:var(--ink); outline:none;
+}
+.search-input:focus{ border-color:var(--indigo); }
+.search-results{
+  position:absolute; left:0; right:0; top:calc(100% + 4px); z-index:20;
+  background:var(--paper); border:1px solid var(--line); border-radius:var(--radius);
+  box-shadow:0 4px 14px var(--shadow); max-height:280px; overflow-y:auto;
+}
+.search-result{
+  display:flex; align-items:center; gap:8px; width:100%; text-align:left;
+  background:none; border:none; cursor:pointer; padding:8px 10px;
+  font-family:var(--sans); font-size:.82rem; color:var(--ink-soft);
+  border-bottom:1px solid var(--line-soft);
+}
+.search-result:last-child{ border-bottom:none; }
+.search-result:hover{ background:var(--paper-3); color:var(--ink); }
+.search-result .sr-type{ font-family:var(--serif); color:var(--indigo); flex-shrink:0; }
+.search-result .sr-title{ font-family:var(--serif); color:var(--ink); flex-shrink:0; max-width:40%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.search-result .sr-sub{ color:var(--ink-faint); font-size:.76rem; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+
 nav.mainnav{ padding:14px 12px; }
 nav.mainnav .navgroup-label{ font-size:.68rem; color:var(--ink-faint); padding:10px 10px 4px; letter-spacing:.08em; }
 nav.mainnav button.navlink{

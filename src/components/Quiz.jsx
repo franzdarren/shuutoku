@@ -5,20 +5,23 @@ import { useQuiz } from "../context/QuizContext.jsx";
  *  kaiwa scenario, kanji check, or the Quiz Center needs a "check your
  *  understanding" block. Scoring/progress is tracked centrally so the
  *  sidebar progress bar and Quiz Center score cover the whole handbook. */
-export default function Quiz({ idPrefix, items, label = "CHECK YOUR UNDERSTANDING" }) {
+export default function Quiz({ idPrefix, items, label = "CHECK YOUR UNDERSTANDING", ids, getContentId }) {
   if (!items || !items.length) return null;
   return (
     <div className="quizbox">
       <div className="qlabel">{label}</div>
-      {items.map((item, i) => (
-        <QuizItem key={idPrefix + "-q" + i} qid={idPrefix + "-q" + i} item={item} />
-      ))}
+      {items.map((item, i) => {
+        const qid = ids ? ids[i] : idPrefix + "-q" + i;
+        return (
+          <QuizItem key={qid} qid={qid} item={item} contentId={getContentId ? getContentId(item, i) : null} />
+        );
+      })}
     </div>
   );
 }
 
-function QuizItem({ qid, item }) {
-  const { answered, answerQuestion } = useQuiz();
+function QuizItem({ qid, item, contentId }) {
+  const { answered, answerQuestion, recordPoolResult } = useQuiz();
   const [lastIdx, setLastIdx] = useState(null);
   const [busy, setBusy] = useState(false);
   const [showWhy, setShowWhy] = useState(false);
@@ -35,6 +38,7 @@ function QuizItem({ qid, item }) {
     } else {
       answerQuestion(qid, false);
     }
+    if (contentId) recordPoolResult(contentId, isCorrect);
     setBusy(true);
     setTimeout(() => setBusy(false), 250);
   }

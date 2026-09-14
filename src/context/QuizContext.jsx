@@ -2,6 +2,7 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useState } 
 
 const QuizContext = createContext(null);
 const STORAGE_KEY = "n4.quizAnswered";
+const POOL_KEY = "n4.poolStats";
 
 // The Quiz Center's 10-question sample and each grammar module's "Module
 // Check" draw a fresh random set every time you visit (ids final-q0..9 /
@@ -25,11 +26,26 @@ function loadStored() {
   }
 }
 
+// Quiz Center's pool items have their own stable content id (see
+// `finalPool` in data/index.js) separate from the rotating slot id Quiz.jsx
+// assigns, so — unlike `answered` — this is safe to persist for every item,
+// and doubles as the wrong-answer history the SRS sampling weights against.
+function loadPoolStats() {
+  try {
+    const raw = localStorage.getItem(POOL_KEY);
+    if (!raw) return new Map();
+    return new Map(JSON.parse(raw));
+  } catch {
+    return new Map();
+  }
+}
+
 /** Shared quiz-progress tracking for every quiz widget on the page, so the
  *  sidebar progress bar and the Quiz Center score cover the whole handbook,
  *  not just one section — mirrors the original single-page behaviour. */
 export function QuizProvider({ total, children }) {
   const [answered, setAnswered] = useState(loadStored); // qid -> boolean(correct)
+  const [poolStats, setPoolStats] = useState(loadPoolStats); // pool content id -> boolean(correct)
 
   useEffect(() => {
     try {
@@ -37,6 +53,12 @@ export function QuizProvider({ total, children }) {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(toSave));
     } catch { /* ignore (private browsing, quota, etc.) */ }
   }, [answered]);
+
+  useEffect(() => {
+    try {
+      localStorage.setItem(POOL_KEY, JSON.stringify(Array.from(poolStats)));
+    } catch { /* ignore (private browsing, quota, etc.) */ }
+  }, [poolStats]);
 
   const answerQuestion = useCallback((qid, isCorrect) => {
     setAnswered((prev) => {
@@ -54,7 +76,21 @@ export function QuizProvider({ total, children }) {
     });
   }, []);
 
-  const resetAll = useCallback(() => setAnswered(new Map()), []);
+  const resetAll = useCallback(() => { setAnswered(new Map()); setPoolStats(new Map()); }, []);
+
+  const recordPoolResult = useCallback((contentId, isCorrect) => {
+    setPoolStats((prev) => {
+      const next = new Map(prev);
+      next.set(contentId, isCorrect);
+      return next;
+    });
+  }, []);
+
+  const weakPoolIds = useMemo(() => {
+    const s = new Set();
+    poolStats.forEach((correct, id) => { if (!correct) s.add(id); });
+    return s;
+  }, [poolStats]);
 
   const stats = useMemo(() => {
     let correct = 0;
@@ -62,7 +98,7 @@ export function QuizProvider({ total, children }) {
     return { answeredCount: answered.size, correctCount: correct, total };
   }, [answered, total]);
 
-  const value = { answered, answerQuestion, clearQuestions, resetAll, stats };
+  const value = { answered, answerQuestion, clearQuestions, resetAll, stats, poolStats, recordPoolResult, weakPoolIds };
   return <QuizContext.Provider value={value}>{children}</QuizContext.Provider>;
 }
 

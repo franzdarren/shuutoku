@@ -120,7 +120,7 @@ function firstPointIndexOfModule(mi) {
   return ALL_POINTS.findIndex((p) => p.mi === mi);
 }
 
-export default function GrammarDeepDive() {
+export default function GrammarDeepDive({ jumpTarget }) {
   const [activePoint, setActivePoint] = useState(0);
   const activeMod = ALL_POINTS[activePoint].mi;
   const mod = grammarModules[activeMod];
@@ -171,6 +171,14 @@ export default function GrammarDeepDive() {
       pendingScrollId.current = id;
     }
   }
+
+  // Search results land here as {mi, pi} — jump straight to that point,
+  // same as clicking it in the floating nav.
+  useEffect(() => {
+    if (!jumpTarget) return;
+    const flatIdx = ALL_POINTS.findIndex((p) => p.mi === jumpTarget.mi && p.pi === jumpTarget.pi);
+    if (flatIdx >= 0) goToPoint(flatIdx);
+  }, [jumpTarget]);
 
   return (
     <>

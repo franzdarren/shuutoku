@@ -1,12 +1,13 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { kanjiFocus, kanjiQuiz } from "../../data/index.js";
 import Quiz from "../Quiz.jsx";
 
 const PAGE_SIZE = 30;
 
-export default function KanjiFocus() {
+export default function KanjiFocus({ jumpTarget }) {
   const [filter, setFilter] = useState("");
   const [page, setPage] = useState(0);
+  const skipNextFilterReset = useRef(false);
 
   const filtered = useMemo(() => {
     const f = filter.trim().toLowerCase();
@@ -19,9 +20,27 @@ export default function KanjiFocus() {
   const pageCount = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
 
   // Searching (or the result set shrinking below the current page) snaps
-  // back to page 1 instead of silently showing an empty grid.
-  useEffect(() => { setPage(0); }, [filter]);
+  // back to page 1 instead of silently showing an empty grid — except right
+  // after a search-jump clears the filter itself, which sets its own page.
+  useEffect(() => {
+    if (skipNextFilterReset.current) { skipNextFilterReset.current = false; return; }
+    setPage(0);
+  }, [filter]);
   useEffect(() => { if (page >= pageCount) setPage(0); }, [pageCount, page]);
+
+  // A search result lands here as {index} into the full (unfiltered) kanji
+  // list — clear any active filter so that index lines up, jump straight
+  // to its page, and scroll it into view.
+  useEffect(() => {
+    if (!jumpTarget) return;
+    skipNextFilterReset.current = true;
+    setFilter("");
+    setPage(Math.floor(jumpTarget.index / PAGE_SIZE));
+    const id = "kcard-" + jumpTarget.index;
+    requestAnimationFrame(() => {
+      setTimeout(() => document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "center" }), 60);
+    });
+  }, [jumpTarget]);
 
   const pageItems = filtered.slice(page * PAGE_SIZE, page * PAGE_SIZE + PAGE_SIZE);
   const rangeStart = filtered.length ? page * PAGE_SIZE + 1 : 0;
@@ -60,7 +79,7 @@ export default function KanjiFocus() {
 
       <div className="kgrid">
         {pageItems.map((k, i) => (
-          <div key={i} className="kcard">
+          <div key={i} id={filter ? undefined : "kcard-" + (page * PAGE_SIZE + i)} className="kcard">
             <div className="kj">{k.kj}</div>
             <div className="kmeta">
               <div className="kmeaning">{k.meaning}</div>

@@ -13,6 +13,7 @@ import KanjiFocus from "./components/sections/KanjiFocus.jsx";
 import ReadingLab from "./components/sections/ReadingLab.jsx";
 import KaiwaLab from "./components/sections/KaiwaLab.jsx";
 import QuizCenter from "./components/sections/QuizCenter.jsx";
+import ReviewMistakes from "./components/sections/ReviewMistakes.jsx";
 import RenshuuAI from "./components/sections/RenshuuAI.jsx";
 
 const SECTIONS = [
@@ -22,6 +23,7 @@ const SECTIONS = [
   { id: "reading", Comp: ReadingLab },
   { id: "kaiwa", Comp: KaiwaLab },
   { id: "quiz", Comp: QuizCenter },
+  { id: "mistakes", Comp: ReviewMistakes },
   { id: "ai", Comp: RenshuuAI },
 ];
 
@@ -30,6 +32,7 @@ const TOTAL_QUIZ_ITEMS = countAllQuizItems();
 export default function App() {
   const [active, setActive] = useState("overview");
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [searchTarget, setSearchTarget] = useState(null);
 
   useEffect(() => {
     buildLocalIndex({ readingPassages, kanjiFocus });
@@ -40,18 +43,26 @@ export default function App() {
     window.scrollTo(0, 0);
   }
 
+  // A search result's `type` ("grammar" | "kanji") happens to match the
+  // section id it belongs to, so the same jump target can be handed to
+  // whichever section is active — each one only acts on it if it's theirs.
+  function handleSearchJump(entry) {
+    navigate(entry.type);
+    setSearchTarget({ ...entry, key: Date.now() });
+  }
+
   return (
     <SettingsProvider>
       <QuizProvider total={TOTAL_QUIZ_ITEMS}>
         <LookupProvider>
           <button className="menubtn" onClick={() => setMobileOpen(true)} aria-label="Menu">☰</button>
           <div className="shell">
-            <Sidebar active={active} onNavigate={navigate} mobileOpen={mobileOpen} onCloseMobile={() => setMobileOpen(false)} />
+            <Sidebar active={active} onNavigate={navigate} mobileOpen={mobileOpen} onCloseMobile={() => setMobileOpen(false)} onSearchJump={handleSearchJump} />
             <main className="content">
               <div className="section-inner">
                 {SECTIONS.map(({ id, Comp }) => (
                   <section key={id} className={"section" + (active === id ? " active" : "")}>
-                    <Comp />
+                    <Comp jumpTarget={searchTarget && searchTarget.type === id ? searchTarget : null} isActive={active === id} />
                   </section>
                 ))}
               </div>

@@ -1,19 +1,19 @@
 import { useState } from "react";
-import { finalQuizGroups, countQuizPool } from "../../data/index.js";
+import { finalPool, countQuizPool } from "../../data/index.js";
 import { useQuiz } from "../../context/QuizContext.jsx";
-import { drawSample } from "../../lib/quiz.js";
+import { drawSampleWeighted } from "../../lib/quiz.js";
 import Quiz from "../Quiz.jsx";
 
-const finalPool = finalQuizGroups.flatMap((g) => g.items);
 const FINAL_IDS = Array.from({ length: 10 }, (_, i) => "final-q" + i);
+const getPoolId = (item) => item._pid;
 
 export default function QuizCenter() {
-  const { stats, resetAll, clearQuestions } = useQuiz();
-  const [sample, setSample] = useState(() => drawSample(finalPool));
+  const { stats, resetAll, clearQuestions, weakPoolIds } = useQuiz();
+  const [sample, setSample] = useState(() => drawSampleWeighted(finalPool, 10, weakPoolIds, getPoolId));
 
   function newSet() {
     clearQuestions(FINAL_IDS);
-    setSample(drawSample(finalPool));
+    setSample(drawSampleWeighted(finalPool, 10, weakPoolIds, getPoolId));
   }
 
   return (
@@ -21,7 +21,7 @@ export default function QuizCenter() {
       <div className="section-head">
         <div className="eyebrow-jp">総復習クイズ</div>
         <h1>Quiz Center</h1>
-        <p>A mixed-format mock review — fill-in-the-blank grammar, kanji reading, and short comprehension — modeled on how the actual N4 groups these together. Each visit draws 10 questions at random from a pool of {countQuizPool()}, so the set is different every time you come back. Your score below covers every quiz on this entire page, not just this section.</p>
+        <p>A mixed-format mock review — fill-in-the-blank grammar, kanji reading, and short comprehension — modeled on how the actual N4 groups these together. Each visit draws 10 questions from a pool of {countQuizPool()}, leaning toward ones you've missed before so mistakes resurface more often, with the rest filled in at random. Your score below covers every quiz on this entire page, not just this section.</p>
       </div>
 
       <div className="qc-score">
@@ -35,7 +35,7 @@ export default function QuizCenter() {
 
       <div className="qc-group-title">Random sample of 10</div>
       <div className="gcard" style={{ "--accent": "var(--gold)" }}>
-        <Quiz idPrefix="final" items={sample} label="MIXED REVIEW SET" />
+        <Quiz idPrefix="final" items={sample} label="MIXED REVIEW SET" getContentId={getPoolId} />
       </div>
 
       <footer className="pagefoot">Built for your N4 review and travel prep. Lesson/chapter references are approximate cross-references between editions — use them to find more practice in your own books, not as exact page numbers. Kanji classification follows commonly used N4 study references; the JLPT itself does not publish an official kanji list.</footer>
