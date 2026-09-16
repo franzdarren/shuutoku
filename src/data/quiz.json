@@ -3,15 +3,15 @@
     "title": "文法穴埋め — Grammar fill-in-the-blank",
     "items": [
       {
-        "q": "「駅に着く＿＿、電話してください。」",
+        "q": "「駅に＿＿、電話してください。」",
         "choices": [
-          "と",
-          "たら",
-          "し",
-          "のに"
+          "着くと",
+          "着いたら",
+          "着くし",
+          "着くのに"
         ],
         "a": 1,
-        "ex": "と cannot lead into a request/command clause. たら is the correct choice here."
+        "ex": "と cannot lead into a request/command clause, and のに would express an unexpected contrast that doesn't fit here. 着いたら ('once you arrive') is the natural choice before a request."
       },
       {
         "q": "「友達の話によると、彼は忙しくてパーティーに来られない＿＿。」",
@@ -47,15 +47,15 @@
         "ex": "Passive 褒められる = 'be praised' — she is the one receiving the teacher's action."
       },
       {
-        "q": "「日本に行く＿＿、この本を読んだほうがいいですよ。」 (reacting to a friend's mentioned plan)",
+        "q": "「日本に＿＿、この本を読んだほうがいいですよ。」 (reacting to a friend's mentioned plan)",
         "choices": [
-          "と",
-          "たら",
-          "ば",
-          "なら"
+          "行くと",
+          "行ったら",
+          "行けば",
+          "行くなら"
         ],
         "a": 3,
-        "ex": "なら reacts to a topic the other person just raised (going to Japan) with advice — the classic なら shape."
+        "ex": "なら reacts to a topic the other person just raised (going to Japan) with advice — the classic なら shape. 行くと implies an automatic rule, and 行ったら／行けば shift the focus onto after arriving or a general condition, neither of which fits reacting to someone's stated plan."
       },
       {
         "q": "「ここで写真を＿＿。」 (asking permission)",

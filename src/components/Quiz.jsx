@@ -12,8 +12,15 @@ export default function Quiz({ idPrefix, items, label = "CHECK YOUR UNDERSTANDIN
       <div className="qlabel">{label}</div>
       {items.map((item, i) => {
         const qid = ids ? ids[i] : idPrefix + "-q" + i;
+        const contentId = getContentId ? getContentId(item, i) : null;
+        // Slots like "final-q0" / "modcheck2-q0" are reused across resamples
+        // (same qid, different question). Fold the actual content into the
+        // key so a "New random set" click remounts the item instead of
+        // reusing a QuizItem whose local answered/selected state belongs to
+        // the previous question that lived in this slot.
+        const key = qid + "|" + (contentId ?? item.q ?? i);
         return (
-          <QuizItem key={qid} qid={qid} item={item} contentId={getContentId ? getContentId(item, i) : null} />
+          <QuizItem key={key} qid={qid} item={item} contentId={contentId} />
         );
       })}
     </div>
@@ -21,26 +28,24 @@ export default function Quiz({ idPrefix, items, label = "CHECK YOUR UNDERSTANDIN
 }
 
 function QuizItem({ qid, item, contentId }) {
-  const { answered, answerQuestion, recordPoolResult } = useQuiz();
+  const { answered, poolStats, answerQuestion, recordPoolResult } = useQuiz();
   const [lastIdx, setLastIdx] = useState(null);
-  const [busy, setBusy] = useState(false);
   const [showWhy, setShowWhy] = useState(false);
-  const attempted = answered.has(qid) || lastIdx !== null;
+  // Slot ids like "final-qN" / "modcheckN-qM" get reused for a different
+  // question on every resample, so the global `answered` map (keyed by
+  // slot) can't tell us whether *this* question was answered. Pool items
+  // carry a stable contentId instead — check that map for them so a fresh
+  // question dropped into a previously-answered slot doesn't render as
+  // already attempted.
+  const attempted = (contentId ? poolStats.has(contentId) : answered.has(qid)) || lastIdx !== null;
   const hasWhy = Array.isArray(item.why) && item.why.some(Boolean);
 
   function pick(idx) {
-    if (busy) return;
-    const isFirstAttempt = !answered.has(qid);
+    if (attempted) return; // one attempt per question — no changing your answer after seeing the result
     const isCorrect = idx === item.a;
     setLastIdx(idx);
-    if (isCorrect) {
-      if (isFirstAttempt) answerQuestion(qid, true);
-    } else {
-      answerQuestion(qid, false);
-    }
+    answerQuestion(qid, isCorrect);
     if (contentId) recordPoolResult(contentId, isCorrect);
-    setBusy(true);
-    setTimeout(() => setBusy(false), 250);
   }
 
   return (
@@ -52,7 +57,7 @@ function QuizItem({ qid, item, contentId }) {
         {item.choices.map((c, idx) => {
           const isCorrectChoice = attempted && idx === item.a;
           const isWrongPick = attempted && idx === lastIdx && idx !== item.a;
-          const cls = ["qchoice", isCorrectChoice && "correct", isWrongPick && "incorrect", busy && "disabled"]
+          const cls = ["qchoice", isCorrectChoice && "correct", isWrongPick && "incorrect", attempted && "disabled"]
             .filter(Boolean).join(" ");
           return (
             <button key={idx} className={cls} onClick={() => pick(idx)} dangerouslySetInnerHTML={{ __html: c }} />

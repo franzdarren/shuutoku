@@ -254,7 +254,8 @@ h2.modtitle .modnum{ color:var(--gold); font-size:1.1rem; }
 .qchoice:hover{ border-color:var(--accent, var(--indigo)); }
 .qchoice.correct{ background:var(--matcha-tint); border-color:var(--matcha); color:var(--ink); font-weight:700; }
 .qchoice.incorrect{ background:var(--shu-tint); border-color:var(--shu); color:var(--ink); }
-.qchoice.disabled{ pointer-events:none; opacity:.55; }
+.qchoice.disabled{ pointer-events:none; }
+.qchoice.disabled:not(.correct):not(.incorrect){ opacity:.55; }
 .qexplain{ font-size:.8rem; color:var(--ink-soft); margin-top:7px; padding:8px 12px; background:var(--paper); border-left:3px solid var(--accent, var(--indigo)); display:none; }
 .qexplain.show{ display:block; }
 .qwhy-wrap{ margin-top:6px; }

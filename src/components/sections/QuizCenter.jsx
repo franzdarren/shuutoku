@@ -1,19 +1,32 @@
 import { useState } from "react";
 import { finalPool, countQuizPool } from "../../data/index.js";
 import { useQuiz } from "../../context/QuizContext.jsx";
-import { drawSampleWeighted } from "../../lib/quiz.js";
+import { drawSample, shuffled } from "../../lib/quiz.js";
 import Quiz from "../Quiz.jsx";
 
-const FINAL_IDS = Array.from({ length: 10 }, (_, i) => "final-q" + i);
 const getPoolId = (item) => item._pid;
 
+/** Draws 10 questions you haven't already answered in Quiz Center before,
+ *  so "New random set" never repeats something you've seen (right or
+ *  wrong) until you reset progress. Only falls back to repeats once the
+ *  pool of never-seen questions runs dry. */
+function drawFreshSet(poolStats) {
+  const unseen = finalPool.filter((item) => !poolStats.has(getPoolId(item)));
+  if (unseen.length >= 10) return drawSample(unseen, 10);
+
+  const picked = drawSample(unseen, unseen.length);
+  const pickedIds = new Set(picked.map(getPoolId));
+  const filler = finalPool.filter((item) => !pickedIds.has(getPoolId(item)));
+  picked.push(...drawSample(filler, 10 - picked.length));
+  return shuffled(picked);
+}
+
 export default function QuizCenter() {
-  const { stats, resetAll, clearQuestions, weakPoolIds } = useQuiz();
-  const [sample, setSample] = useState(() => drawSampleWeighted(finalPool, 10, weakPoolIds, getPoolId));
+  const { stats, resetAll, poolStats } = useQuiz();
+  const [sample, setSample] = useState(() => drawFreshSet(poolStats));
 
   function newSet() {
-    clearQuestions(FINAL_IDS);
-    setSample(drawSampleWeighted(finalPool, 10, weakPoolIds, getPoolId));
+    setSample(drawFreshSet(poolStats));
   }
 
   return (
@@ -21,7 +34,7 @@ export default function QuizCenter() {
       <div className="section-head">
         <div className="eyebrow-jp">総復習クイズ</div>
         <h1>Quiz Center</h1>
-        <p>A mixed-format mock review — fill-in-the-blank grammar, kanji reading, and short comprehension — modeled on how the actual N4 groups these together. Each visit draws 10 questions from a pool of {countQuizPool()}, leaning toward ones you've missed before so mistakes resurface more often, with the rest filled in at random. Your score below covers every quiz on this entire page, not just this section.</p>
+        <p>A mixed-format mock review — fill-in-the-blank grammar, kanji reading, and short comprehension — modeled on how the actual N4 groups these together. Each visit draws 10 questions from a pool of {countQuizPool()}; once you've answered a question here it won't come up again until you reset your progress below. Your score below covers every quiz on this entire page, not just this section.</p>
       </div>
 
       <div className="qc-score">
