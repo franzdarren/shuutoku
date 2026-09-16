@@ -48,7 +48,7 @@ export default function Overview() {
         <span className="tri">▸</span> How to actually use this before your mocks
       </div>
       <div className={"collapsible-body" + (open ? " open" : "")}>
-        <div className="gcard" style={{ borderLeftColor: "var(--gold)" }}>
+        <div className="gcard" style={{ "--accent": "var(--gold)" }}>
           <div className="explain" style={{ marginBottom: 0 }}>
             <b>1. Diagnose first.</b> Skim the Grammar Deep-Dive module titles below. The ones where you hesitate even reading the title (not the explanation) are your real gaps — start there, not from the top.<br /><br />
             <b>2. Read the nuance, not just the formation.</b> Most N4 mock-test mistakes come from mixing up two similar patterns (たら vs ば, そう vs よう, てもいい vs なくてもいい) rather than not knowing either one exists. The explanation text calls these confusions out directly.<br /><br />
