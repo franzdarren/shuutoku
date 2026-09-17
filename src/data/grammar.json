@@ -35,7 +35,7 @@
             "en": "I practice speaking with a Japanese teacher every week. (habit)"
           },
           {
-            "jp": "<ruby>毎朝<rt>まいあさ</rt></ruby>、母は六時に<ruby>起<rt>お</rt></ruby>きています。",
+            "jp": "<ruby>毎朝<rt>まいあさ</rt></ruby>、母は<ruby>六時<rt>ろくじ</rt></ruby>に<ruby>起<rt>お</rt></ruby>きています。",
             "en": "My mother gets up at six every morning."
           },
           {
@@ -117,8 +117,8 @@
         "conjugation": [
           {
             "label": "Group 1 verb",
-            "from": "書く",
-            "to": "書いている"
+            "from": "<ruby>書<rt>か</rt></ruby>く",
+            "to": "<ruby>書<rt>か</rt></ruby>いている"
           },
           {
             "label": "Group 2 verb",
@@ -156,7 +156,7 @@
             "en": "You must not enter this room."
           },
           {
-            "jp": "お<ruby>酒<rt>さけ</rt></ruby>を飲んでから<ruby>運転<rt>うんてん</rt></ruby>してはいけません。",
+            "jp": "お<ruby>酒<rt>さけ</rt></ruby>を<ruby>飲<rt>の</rt></ruby>んでから<ruby>運転<rt>うんてん</rt></ruby>してはいけません。",
             "en": "You must not drive after drinking alcohol."
           },
           {
@@ -198,7 +198,7 @@
           },
           {
             "who": "B",
-            "jp": "あちらのロッカーに入れてもいいですよ。",
+            "jp": "あちらのロッカーに<ruby>入<rt>い</rt></ruby>れてもいいですよ。",
             "en": "You're welcome to put it in the locker over there."
           }
         ],
@@ -242,8 +242,8 @@
         "conjugation": [
           {
             "label": "Group 1 verb",
-            "from": "書く",
-            "to": "書いてもいい"
+            "from": "<ruby>書<rt>か</rt></ruby>く",
+            "to": "<ruby>書<rt>か</rt></ruby>いてもいい"
           },
           {
             "label": "Group 2 verb",
@@ -290,7 +290,7 @@
             "en": "You do not have to get up early tomorrow."
           },
           {
-            "jp": "パスポートを見せなければなりません。",
+            "jp": "パスポートを<ruby>見<rt>み</rt></ruby>せなければなりません。",
             "en": "You have to show your passport."
           },
           {
@@ -309,12 +309,12 @@
         "dialogue": [
           {
             "who": "A",
-            "jp": "<ruby>明日<rt>あした</rt></ruby>の<ruby>会議<rt>かいぎ</rt></ruby>、何時までに<ruby>行<rt>い</rt></ruby>かなければなりませんか。",
+            "jp": "<ruby>明日<rt>あした</rt></ruby>の<ruby>会議<rt>かいぎ</rt></ruby>、<ruby>何時<rt>なんじ</rt></ruby>までに<ruby>行<rt>い</rt></ruby>かなければなりませんか。",
             "en": "By what time do I have to get to tomorrow's meeting?"
           },
           {
             "who": "B",
-            "jp": "九時には<ruby>来<rt>き</rt></ruby>てほしいですが、<ruby>資料<rt>しりょう</rt></ruby>は<ruby>今日<rt>きょう</rt></ruby>じゃなくてもいいですよ。",
+            "jp": "<ruby>九時<rt>くじ</rt></ruby>には<ruby>来<rt>き</rt></ruby>てほしいですが、<ruby>資料<rt>しりょう</rt></ruby>は<ruby>今日<rt>きょう</rt></ruby>じゃなくてもいいですよ。",
             "en": "I'd like you here by 9, but the materials don't have to be ready today."
           },
           {
@@ -363,7 +363,7 @@
         "conjugation": [
           {
             "label": "Group 1 verb",
-            "from": "書く",
+            "from": "<ruby>書<rt>か</rt></ruby>く",
             "to": "書かなければならない"
           },
           {
@@ -435,17 +435,17 @@
           },
           {
             "who": "B",
-            "jp": "まずパスポートを見せてから、この<ruby>紙<rt>かみ</rt></ruby>に書いてください。",
+            "jp": "まずパスポートを<ruby>見<rt>み</rt></ruby>せてから、この<ruby>紙<rt>かみ</rt></ruby>に<ruby>書<rt>か</rt></ruby>いてください。",
             "en": "First show your passport, then please fill out this form."
           },
           {
             "who": "A",
-            "jp": "書いたあとで、どこに出せばいいですか。",
+            "jp": "<ruby>書<rt>か</rt></ruby>いたあとで、どこに<ruby>出<rt>だ</rt></ruby>せばいいですか。",
             "en": "After I write it, where do I hand it in?"
           },
           {
             "who": "B",
-            "jp": "こちらのカウンターに出してください。",
+            "jp": "こちらのカウンターに<ruby>出<rt>だ</rt></ruby>してください。",
             "en": "Please hand it in at this counter."
           }
         ],
@@ -489,8 +489,8 @@
         "conjugation": [
           {
             "label": "Group 1 verb",
-            "from": "書く",
-            "to": "書いてから／書いたあとで"
+            "from": "<ruby>書<rt>か</rt></ruby>く",
+            "to": "<ruby>書<rt>か</rt></ruby>いてから／<ruby>書<rt>か</rt></ruby>いたあとで"
           },
           {
             "label": "Group 2 verb",
@@ -509,7 +509,7 @@
       {
         "q": "「<ruby>今<rt>いま</rt></ruby>、何をしていますか。」「本を＿＿。」",
         "choices": [
-          "読んでいます",
+          "<ruby>読<rt>よ</rt></ruby>んでいます",
           "読みます",
           "読みました",
           "読むでしょう"
@@ -540,7 +540,7 @@
         "ex": "〜なくてもいいです releases you from an obligation — the natural fit for a day off."
       },
       {
-        "q": "「ご<ruby>飯<rt>はん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べた＿＿、<ruby>薬<rt>くすり</rt></ruby>を飲みます。」",
+        "q": "「ご<ruby>飯<rt>はん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べた＿＿、<ruby>薬<rt>くすり</rt></ruby>を<ruby>飲<rt>の</rt></ruby>みます。」",
         "choices": [
           "あとで",
           "まえに",
@@ -628,7 +628,7 @@
         "ex": "A classroom rule is an obligation, so 〜なければなりません fits."
       },
       {
-        "q": "「<ruby>私<rt>わたし</rt></ruby>は毎日ジョギングをし＿＿。」 (an ongoing habit)",
+        "q": "「<ruby>私<rt>わたし</rt></ruby>は<ruby>毎日<rt>まいにち</rt></ruby>ジョギングをし＿＿。」 (an ongoing habit)",
         "choices": [
           "ています",
           "てあります",
@@ -772,7 +772,7 @@
             "why": [
               "あげました would mean you did the teaching for your mother — backwards.",
               null,
-              "くれました needs が for the giver (母がくれました), not に, and shifts away from your own 'I asked for it' viewpoint.",
+              "くれました needs が for the giver (<ruby>母<rt>はは</rt></ruby>がくれました), not に, and shifts away from your own 'I asked for it' viewpoint.",
               "いました isn't a valid completion of <ruby>教<rt>おし</rt></ruby>えて — it doesn't attach meaningfully here."
             ]
           }
@@ -780,8 +780,8 @@
         "conjugation": [
           {
             "label": "Group 1 verb",
-            "from": "書く",
-            "to": "書いてあげる／もらう／くれる"
+            "from": "<ruby>書<rt>か</rt></ruby>く",
+            "to": "<ruby>書<rt>か</rt></ruby>いてあげる／もらう／くれる"
           },
           {
             "label": "Group 2 verb",
@@ -905,8 +905,8 @@
         "conjugation": [
           {
             "label": "Group 1 verb",
-            "from": "書く",
-            "to": "書いてほしい"
+            "from": "<ruby>書<rt>か</rt></ruby>く",
+            "to": "<ruby>書<rt>か</rt></ruby>いてほしい"
           },
           {
             "label": "Group 2 verb",
@@ -960,7 +960,7 @@
             "en": "Be quiet. (parent or teacher to a child)"
           },
           {
-            "jp": "<ruby>先生<rt>せんせい</rt></ruby>は<ruby>学生<rt>がくせい</rt></ruby>に毎日<ruby>復習<rt>ふくしゅう</rt></ruby>するように<ruby>言<rt>い</rt></ruby>いました。",
+            "jp": "<ruby>先生<rt>せんせい</rt></ruby>は<ruby>学生<rt>がくせい</rt></ruby>に<ruby>毎日<rt>まいにち</rt></ruby><ruby>復習<rt>ふくしゅう</rt></ruby>するように<ruby>言<rt>い</rt></ruby>いました。",
             "en": "The teacher told the students to review every day."
           },
           {
@@ -1025,12 +1025,12 @@
         "conjugation": [
           {
             "label": "〜ように言う (plain form)",
-            "from": "書く",
-            "to": "書くように<ruby>言<rt>い</rt></ruby>う"
+            "from": "<ruby>書<rt>か</rt></ruby>く",
+            "to": "<ruby>書<rt>か</rt></ruby>くように<ruby>言<rt>い</rt></ruby>う"
           },
           {
             "label": "Group 1 verb ＋なさい",
-            "from": "書く",
+            "from": "<ruby>書<rt>か</rt></ruby>く",
             "to": "書きなさい"
           },
           {
@@ -1054,10 +1054,10 @@
           "Genki I Ch11",
           "Sou Matome Wk1"
         ],
-        "explain": "There are two ways to say 'can do X', and N4 expects you to use both naturally: the analytical dictionary-form + ことができる (a bit more formal/explicit, works with any verb), and the potential verb form (れる／られる — more natural in everyday conversation and required if you want a truly native-sounding sentence). Group 2 (る-verbs) → drop る, add られる. Group 1 (う-verbs) → change the final u-sound to the e-sound, add る. する→できる, <ruby>来<rt>く</rt></ruby>る→来られる are irregular.",
+        "explain": "There are two ways to say 'can do X', and N4 expects you to use both naturally: the analytical dictionary-form + ことができる (a bit more formal/explicit, works with any verb), and the potential verb form (れる／られる — more natural in everyday conversation and required if you want a truly native-sounding sentence). Group 2 (る-verbs) → drop る, add られる. Group 1 (う-verbs) → change the final u-sound to the e-sound, add る. する→できる, <ruby>来<rt>く</rt></ruby>る→<ruby>来<rt>こ</rt></ruby>られる are irregular.",
         "formation": [
           "Verb (dictionary form) + ことができます — more formal/explicit",
-          "Group 1: 話す → 話せる ・ Group 2: <ruby>食<rt>た</rt></ruby>べる → <ruby>食<rt>た</rt></ruby>べられる ・ irregular: する→できる, <ruby>来<rt>く</rt></ruby>る→来られる"
+          "Group 1: 話す → <ruby>話<rt>はな</rt></ruby>せる ・ Group 2: <ruby>食<rt>た</rt></ruby>べる → <ruby>食<rt>た</rt></ruby>べられる ・ irregular: する→できる, <ruby>来<rt>く</rt></ruby>る→<ruby>来<rt>こ</rt></ruby>られる"
         ],
         "examples": [
           {
@@ -1065,11 +1065,11 @@
             "en": "I can speak Japanese. (explicit form)"
           },
           {
-            "jp": "わたしは<ruby>日本語<rt>にほんご</rt></ruby>が話せます。",
+            "jp": "わたしは<ruby>日本語<rt>にほんご</rt></ruby>が<ruby>話<rt>はな</rt></ruby>せます。",
             "en": "I can speak Japanese. (potential form, more natural)"
           },
           {
-            "jp": "この<ruby>漢字<rt>かんじ</rt></ruby>は読めません。",
+            "jp": "この<ruby>漢字<rt>かんじ</rt></ruby>は<ruby>読<rt>よ</rt></ruby>めません。",
             "en": "I can't read this kanji."
           },
           {
@@ -1089,7 +1089,7 @@
             "en": "You can rent bicycles near the station."
           },
           {
-            "jp": "<ruby>日本語<rt>にほんご</rt></ruby>のメニューが読めるようになりました。",
+            "jp": "<ruby>日本語<rt>にほんご</rt></ruby>のメニューが<ruby>読<rt>よ</rt></ruby>めるようになりました。",
             "en": "I've become able to read Japanese menus."
           }
         ],
@@ -1115,7 +1115,7 @@
           {
             "q": "What is the potential form of 飲む (to drink)?",
             "choices": [
-              "飲みる",
+              "<ruby>飲<rt>の</rt></ruby>みる",
               "飲める",
               "飲むことが",
               "飲まれる"
@@ -1123,7 +1123,7 @@
             "a": 1,
             "ex": "Group 1 verb: change the final u-sound (む) to the e-sound (め) and add る → 飲める.",
             "why": [
-              "飲みる isn't a real conjugation — potential form replaces the u-sound with an e-sound plus る, giving 飲める.",
+              "<ruby>飲<rt>の</rt></ruby>みる isn't a real conjugation — potential form replaces the u-sound with an e-sound plus る, giving 飲める.",
               null,
               "飲むことが is the start of a different pattern (〜ことができる), not the potential form itself.",
               "飲まれる is the passive form ('be drunk [by someone]'), not the potential."
@@ -1134,23 +1134,23 @@
             "choices": [
               "読み",
               "読む",
-              "読んで",
-              "読めば"
+              "<ruby>読<rt>よ</rt></ruby>んで",
+              "<ruby>読<rt>よ</rt></ruby>めば"
             ],
             "a": 1,
             "ex": "ことができる attaches to the dictionary form of the verb.",
             "why": [
               "読み (stem alone) doesn't attach directly before することができます — the pattern needs the dictionary form.",
               null,
-              "読んで (て-form) doesn't combine with ことができる this way.",
-              "読めば is already the potential+conditional — ことができる needs the plain dictionary form instead."
+              "<ruby>読<rt>よ</rt></ruby>んで (て-form) doesn't combine with ことができる this way.",
+              "<ruby>読<rt>よ</rt></ruby>めば is already the potential+conditional — ことができる needs the plain dictionary form instead."
             ]
           }
         ],
         "conjugation": [
           {
             "label": "Group 1 verb",
-            "from": "書く",
+            "from": "<ruby>書<rt>か</rt></ruby>く",
             "to": "書ける"
           },
           {
@@ -1161,7 +1161,7 @@
           {
             "label": "Group 3 verb",
             "from": "する／<ruby>来<rt>く</rt></ruby>る",
-            "to": "できる／来られる"
+            "to": "できる／<ruby>来<rt>こ</rt></ruby>られる"
           }
         ]
       }
@@ -1258,13 +1258,13 @@
       {
         "q": "「<ruby>彼<rt>かれ</rt></ruby>は<ruby>日本語<rt>にほんご</rt></ruby>が＿＿。」 (he can read it)",
         "choices": [
-          "読めます",
+          "<ruby>読<rt>よ</rt></ruby>めます",
           "読みます",
           "読まれます",
           "読ませます"
         ],
         "a": 0,
-        "ex": "読める is the potential form. 読まれる would be passive and 読ませる causative."
+        "ex": "<ruby>読<rt>よ</rt></ruby>める is the potential form. 読まれる would be passive and 読ませる causative."
       },
       {
         "q": "「<ruby>先生<rt>せんせい</rt></ruby>が<ruby>漢字<rt>かんじ</rt></ruby>の<ruby>意味<rt>いみ</rt></ruby>を<ruby>教<rt>おし</rt></ruby>え＿＿。」 (the teacher kindly did it for me)",
@@ -1311,7 +1311,7 @@
         "ex": "〜てあげましょうか offers to do something for another person. てくれる points the favour at yourself."
       },
       {
-        "q": "「<ruby>日本<rt>にほん</rt></ruby>へ<ruby>行<rt>い</rt></ruby>く前に、<ruby>日本語<rt>にほんご</rt></ruby>が話せる＿＿なりたいです。」",
+        "q": "「<ruby>日本<rt>にほん</rt></ruby>へ<ruby>行<rt>い</rt></ruby>く前に、<ruby>日本語<rt>にほんご</rt></ruby>が<ruby>話<rt>はな</rt></ruby>せる＿＿なりたいです。」",
         "choices": [
           "ように",
           "ことに",
@@ -1319,7 +1319,7 @@
           "そうに"
         ],
         "a": 0,
-        "ex": "〜ようになる describes coming to be able to do something — paired here with the potential 話せる."
+        "ex": "〜ようになる describes coming to be able to do something — paired here with the potential <ruby>話<rt>はな</rt></ruby>せる."
       }
     ]
   },
@@ -1341,7 +1341,7 @@
         ],
         "explain": "The passive turns 'X did Y' into 'Y was done (to me/something), by X'. Direct passive works like English (<ruby>褒<rt>ほ</rt></ruby>められた — I was praised). N4 also has the 迷惑受身 ('suffering passive'), which has no English equivalent: it's used when someone else's action negatively affects you, even for intransitive verbs — <ruby>雨<rt>あめ</rt></ruby>に<ruby>降<rt>ふ</rt></ruby>られた doesn't mean 'I was rained on' literally, it means 'it rained (on me), and that was annoying/inconvenient for me'. This nuance shows up a lot in reading passages about someone's bad day.",
         "formation": [
-          "Group 1: change u→a, add れる (書く→書かれる) ・ Group 2: drop る, add られる (見る→見られる) ・ irregular: する→される, <ruby>来<rt>く</rt></ruby>る→来られる",
+          "Group 1: change u→a, add れる (<ruby>書<rt>か</rt></ruby>く→書かれる) ・ Group 2: drop る, add られる (見る→見られる) ・ irregular: する→される, <ruby>来<rt>く</rt></ruby>る→<ruby>来<rt>こ</rt></ruby>られる",
           "Person/thing acted upon が／は ＋ 〜(ら)れる ＋ に (agent)"
         ],
         "examples": [
@@ -1435,7 +1435,7 @@
         "conjugation": [
           {
             "label": "Group 1 verb",
-            "from": "書く",
+            "from": "<ruby>書<rt>か</rt></ruby>く",
             "to": "書かれる"
           },
           {
@@ -1446,7 +1446,7 @@
           {
             "label": "Group 3 verb",
             "from": "する／<ruby>来<rt>く</rt></ruby>る",
-            "to": "される／来られる"
+            "to": "される／<ruby>来<rt>こ</rt></ruby>られる"
           }
         ]
       },
@@ -1477,7 +1477,7 @@
             "en": "Sorry, please let me think about it a little."
           },
           {
-            "jp": "子どもに<ruby>部屋<rt>へや</rt></ruby>を<ruby>掃除<rt>そうじ</rt></ruby>させます。",
+            "jp": "<ruby>子<rt>こ</rt></ruby>どもに<ruby>部屋<rt>へや</rt></ruby>を<ruby>掃除<rt>そうじ</rt></ruby>させます。",
             "en": "I make my child clean the room."
           },
           {
@@ -1522,7 +1522,7 @@
               "飲まれる",
               "飲ませる",
               "飲める",
-              "飲んでいる"
+              "<ruby>飲<rt>の</rt></ruby>んでいる"
             ],
             "a": 1,
             "ex": "Group 1: u→a, +せる → 飲む → 飲ませる.",
@@ -1530,7 +1530,7 @@
               "飲まれる is passive, not causative.",
               null,
               "飲める is potential ('can drink').",
-              "飲んでいる is progressive ('is drinking')."
+              "<ruby>飲<rt>の</rt></ruby>んでいる is progressive ('is drinking')."
             ]
           },
           {
@@ -1554,7 +1554,7 @@
         "conjugation": [
           {
             "label": "Group 1 verb",
-            "from": "書く",
+            "from": "<ruby>書<rt>か</rt></ruby>く",
             "to": "書かせる"
           },
           {
@@ -1584,7 +1584,7 @@
         ],
         "examples": [
           {
-            "jp": "<ruby>子供<rt>こども</rt></ruby>のとき、毎日ピアノを<ruby>練習<rt>れんしゅう</rt></ruby>させられました。",
+            "jp": "<ruby>子供<rt>こども</rt></ruby>のとき、<ruby>毎日<rt>まいにち</rt></ruby>ピアノを<ruby>練習<rt>れんしゅう</rt></ruby>させられました。",
             "en": "When I was a kid, I was made to practice piano every day."
           },
           {
@@ -1596,7 +1596,7 @@
             "en": "I was made to wait a whole hour at the station."
           },
           {
-            "jp": "毎日、<ruby>野菜<rt>やさい</rt></ruby>を<ruby>食<rt>た</rt></ruby>べさせられました。",
+            "jp": "<ruby>毎日<rt>まいにち</rt></ruby>、<ruby>野菜<rt>やさい</rt></ruby>を<ruby>食<rt>た</rt></ruby>べさせられました。",
             "en": "I was made to eat vegetables every day."
           },
           {
@@ -1612,7 +1612,7 @@
             "en": "As a student, I was made to clean every morning."
           },
           {
-            "jp": "<ruby>新人<rt>しんじん</rt></ruby>のとき、毎日<ruby>残業<rt>ざんぎょう</rt></ruby>させられました。",
+            "jp": "<ruby>新人<rt>しんじん</rt></ruby>のとき、<ruby>毎日<rt>まいにち</rt></ruby><ruby>残業<rt>ざんぎょう</rt></ruby>させられました。",
             "en": "When I was new, I was made to work overtime every day."
           }
         ],
@@ -1624,7 +1624,7 @@
           },
           {
             "who": "B",
-            "jp": "<ruby>疲<rt>つか</rt></ruby>れました…三時間も<ruby>座<rt>すわ</rt></ruby>らされましたから。",
+            "jp": "<ruby>疲<rt>つか</rt></ruby>れました…<ruby>三時間<rt>さんじかん</rt></ruby>も<ruby>座<rt>すわ</rt></ruby>らされましたから。",
             "en": "I'm exhausted... I was made to sit there for three whole hours."
           },
           {
@@ -1673,7 +1673,7 @@
         "conjugation": [
           {
             "label": "Group 1 verb",
-            "from": "書く",
+            "from": "<ruby>書<rt>か</rt></ruby>く",
             "to": "書かされる／書かせられる"
           },
           {
@@ -1696,7 +1696,7 @@
           "読まれました",
           "読みました",
           "読ませました",
-          "読んでもらいました"
+          "<ruby>読<rt>よ</rt></ruby>んでもらいました"
         ],
         "a": 0,
         "ex": "The suffering passive 読まれる marks you as adversely affected by someone else's action."
@@ -1718,7 +1718,7 @@
           "書かせました",
           "書かれました",
           "書かせられました",
-          "書いてもらいました"
+          "<ruby>書<rt>か</rt></ruby>いてもらいました"
         ],
         "a": 0,
         "ex": "Causative 書かせる = to make someone write."
@@ -1839,7 +1839,7 @@
           "<ruby>拝見<rt>はいけん</rt></ruby>しました",
           "ご<ruby>覧<rt>らん</rt></ruby>になりました",
           "見られました",
-          "見せました"
+          "<ruby>見<rt>み</rt></ruby>せました"
         ],
         "a": 0,
         "ex": "<ruby>拝見<rt>はいけん</rt></ruby>する is the humble verb for looking at something belonging to a superior. ご<ruby>覧<rt>らん</rt></ruby>になる is honorific."
@@ -1877,7 +1877,7 @@
             "en": "When spring comes, the cherry blossoms bloom. (natural law)"
           },
           {
-            "jp": "このボタンを<ruby>押<rt>お</rt></ruby>すと、電気がつきます。",
+            "jp": "このボタンを<ruby>押<rt>お</rt></ruby>すと、<ruby>電気<rt>でんき</rt></ruby>がつきます。",
             "en": "If you press this button, the light turns on. (mechanical)"
           },
           {
@@ -1889,11 +1889,11 @@
             "en": "When winter comes, it snows."
           },
           {
-            "jp": "このスイッチを入れると、<ruby>機械<rt>きかい</rt></ruby>が<ruby>動<rt>うご</rt></ruby>きます。",
+            "jp": "このスイッチを<ruby>入<rt>い</rt></ruby>れると、<ruby>機械<rt>きかい</rt></ruby>が<ruby>動<rt>うご</rt></ruby>きます。",
             "en": "If you turn on this switch, the machine starts moving."
           },
           {
-            "jp": "このボタンを<ruby>押<rt>お</rt></ruby>すと、<ruby>切符<rt>きっぷ</rt></ruby>が出ます。",
+            "jp": "このボタンを<ruby>押<rt>お</rt></ruby>すと、<ruby>切符<rt>きっぷ</rt></ruby>が<ruby>出<rt>で</rt></ruby>ます。",
             "en": "If you press this button, the ticket comes out."
           },
           {
@@ -1924,7 +1924,7 @@
             "choices": [
               "<ruby>春<rt>はる</rt></ruby>になると<ruby>暖<rt>あたた</rt></ruby>かくなります",
               "<ruby>駅<rt>えき</rt></ruby>に<ruby>着<rt>き</rt></ruby>くと<ruby>電話<rt>でんわ</rt></ruby>してください",
-              "このボタンを<ruby>押<rt>お</rt></ruby>すと<ruby>音<rt>おと</rt></ruby>が出ます",
+              "このボタンを<ruby>押<rt>お</rt></ruby>すと<ruby>音<rt>おと</rt></ruby>が<ruby>出<rt>で</rt></ruby>ます",
               "冬になると<ruby>寒<rt>さむ</rt></ruby>くなります"
             ],
             "a": 1,
@@ -1957,8 +1957,8 @@
         "conjugation": [
           {
             "label": "Verb (plain non-past)",
-            "from": "書く",
-            "to": "書くと"
+            "from": "<ruby>書<rt>か</rt></ruby>く",
+            "to": "<ruby>書<rt>か</rt></ruby>くと"
           },
           {
             "label": "い-adjective",
@@ -2082,8 +2082,8 @@
         "conjugation": [
           {
             "label": "Group 1 verb",
-            "from": "書く",
-            "to": "書いたら"
+            "from": "<ruby>書<rt>か</rt></ruby>く",
+            "to": "<ruby>書<rt>か</rt></ruby>いたら"
           },
           {
             "label": "Group 2 verb",
@@ -2123,7 +2123,7 @@
         ],
         "explain": "ば conditions feel a bit more 'if, hypothetically' and are common in general statements, proverbs, and advice about tendencies, rather than one specific event. A well-known restriction: if the subject of both clauses is the same person and the second clause is a request or intention about a specific action, ば usually sounds unnatural and たら is preferred. ば shines in patterns like 〜すればするほど ('the more you do X, the more...') and general truths.",
         "formation": [
-          "Group 1: change u→e, add ば (話す→話せば) ・ Group 2: drop る, add れば (<ruby>食<rt>た</rt></ruby>べる→<ruby>食<rt>た</rt></ruby>べれば) ・ い-adjective: drop い, add ければ (<ruby>安<rt>やす</rt></ruby>い→<ruby>安<rt>やす</rt></ruby>ければ) ・ な-adj/noun: 〜であれば／なら"
+          "Group 1: change u→e, add ば (話す→<ruby>話<rt>はな</rt></ruby>せば) ・ Group 2: drop る, add れば (<ruby>食<rt>た</rt></ruby>べる→<ruby>食<rt>た</rt></ruby>べれば) ・ い-adjective: drop い, add ければ (<ruby>安<rt>やす</rt></ruby>い→<ruby>安<rt>やす</rt></ruby>ければ) ・ な-adj/noun: 〜であれば／なら"
         ],
         "examples": [
           {
@@ -2147,7 +2147,7 @@
             "en": "If you leave early, you'll make it in time for the train."
           },
           {
-            "jp": "<ruby>説明<rt>せつめい</rt></ruby>書を読めば、<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>がわかります。",
+            "jp": "<ruby>説明<rt>せつめい</rt></ruby>書を<ruby>読<rt>よ</rt></ruby>めば、<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>がわかります。",
             "en": "If you read the instructions, you'll understand how to use it."
           },
           {
@@ -2167,7 +2167,7 @@
           },
           {
             "who": "B",
-            "jp": "たくさん話せば、話すほど<ruby>上手<rt>じょうず</rt></ruby>になりますよ。",
+            "jp": "たくさん<ruby>話<rt>はな</rt></ruby>せば、話すほど<ruby>上手<rt>じょうず</rt></ruby>になりますよ。",
             "en": "The more you speak, the better you'll get."
           },
           {
@@ -2215,7 +2215,7 @@
         "conjugation": [
           {
             "label": "Group 1 verb",
-            "from": "書く",
+            "from": "<ruby>書<rt>か</rt></ruby>く",
             "to": "書けば"
           },
           {
@@ -2351,8 +2351,8 @@
         "conjugation": [
           {
             "label": "Verb (plain form)",
-            "from": "書く",
-            "to": "書くなら"
+            "from": "<ruby>書<rt>か</rt></ruby>く",
+            "to": "<ruby>書<rt>か</rt></ruby>くなら"
           },
           {
             "label": "い-adjective",
@@ -2440,7 +2440,7 @@
         "ex": "もし pairs most naturally with たら for a specific, one-off situation."
       },
       {
-        "q": "「<ruby>日本語<rt>にほんご</rt></ruby>が話せる＿＿、<ruby>仕事<rt>しごと</rt></ruby>が見つかりますよ。」 (a general truth)",
+        "q": "「<ruby>日本語<rt>にほんご</rt></ruby>が<ruby>話<rt>はな</rt></ruby>せる＿＿、<ruby>仕事<rt>しごと</rt></ruby>が見つかりますよ。」 (a general truth)",
         "choices": [
           "ようになれば",
           "ようになると",
@@ -2829,14 +2829,14 @@
             "en": "People are queuing in front of the shop, so it seems to be popular."
           },
           {
-            "jp": "電気がついていないので、<ruby>留守<rt>るす</rt></ruby>のようです。",
+            "jp": "<ruby>電気<rt>でんき</rt></ruby>がついていないので、<ruby>留守<rt>るす</rt></ruby>のようです。",
             "en": "The lights are off, so it seems nobody's home."
           }
         ],
         "dialogue": [
           {
             "who": "A",
-            "jp": "あれ、この<ruby>駅<rt>えき</rt></ruby>、さっき来ましたよね？",
+            "jp": "あれ、この<ruby>駅<rt>えき</rt></ruby>、さっき<ruby>来<rt>き</rt></ruby>ましたよね？",
             "en": "Wait, didn't we already pass this station?"
           },
           {
@@ -3069,7 +3069,7 @@
         "ex": "い-adjectives drop い before appearance そう: おいしい → おいしそう."
       },
       {
-        "q": "「電気がついています。だれか<ruby>家<rt>いえ</rt></ruby>に＿＿。」 (inference from evidence)",
+        "q": "「<ruby>電気<rt>でんき</rt></ruby>がついています。だれか<ruby>家<rt>いえ</rt></ruby>に＿＿。」 (inference from evidence)",
         "choices": [
           "いるようです",
           "いるそうです",
@@ -3168,7 +3168,7 @@
         "ex": "Plain form + そうです is hearsay. <ruby>忙<rt>いそが</rt></ruby>しそう (stem + そう) is what he looks like to you."
       },
       {
-        "q": "「この<ruby>料理<rt>りょうり</rt></ruby>は母が<ruby>作<rt>つく</rt></ruby>った＿＿です。」 (it seems so, from the taste)",
+        "q": "「この<ruby>料理<rt>りょうり</rt></ruby>は<ruby>母<rt>はは</rt></ruby>が<ruby>作<rt>つく</rt></ruby>った＿＿です。」 (it seems so, from the taste)",
         "choices": [
           "よう",
           "そう",
@@ -3303,8 +3303,8 @@
         "conjugation": [
           {
             "label": "Verb (plain form)",
-            "from": "書く",
-            "to": "書くんです"
+            "from": "<ruby>書<rt>か</rt></ruby>く",
+            "to": "<ruby>書<rt>か</rt></ruby>くんです"
           },
           {
             "label": "い-adjective",
@@ -3346,7 +3346,7 @@
             "en": "Even though I studied, my test score was bad."
           },
           {
-            "jp": "<ruby>約束<rt>やくそく</rt></ruby>したのに、<ruby>彼<rt>かれ</rt></ruby>は来ませんでした。",
+            "jp": "<ruby>約束<rt>やくそく</rt></ruby>したのに、<ruby>彼<rt>かれ</rt></ruby>は<ruby>来<rt>き</rt></ruby>ませんでした。",
             "en": "Even though we made plans, he didn't come."
           },
           {
@@ -3358,7 +3358,7 @@
             "en": "This room is bright, and it's quiet, so I like it."
           },
           {
-            "jp": "<ruby>電話<rt>でんわ</rt></ruby>したのに、<ruby>誰<rt>だれ</rt></ruby>も出ませんでした。",
+            "jp": "<ruby>電話<rt>でんわ</rt></ruby>したのに、<ruby>誰<rt>だれ</rt></ruby>も<ruby>出<rt>で</rt></ruby>ませんでした。",
             "en": "Even though I called, no one answered."
           },
           {
@@ -3366,7 +3366,7 @@
             "en": "It's pricey, and the taste is nothing special, so I don't really recommend it."
           },
           {
-            "jp": "たくさん<ruby>練習<rt>れんしゅう</rt></ruby>したのに、うまく話せませんでした。",
+            "jp": "たくさん<ruby>練習<rt>れんしゅう</rt></ruby>したのに、うまく<ruby>話<rt>はな</rt></ruby>せませんでした。",
             "en": "Even though I practised a lot, I couldn't speak well."
           }
         ],
@@ -3407,7 +3407,7 @@
             ]
           },
           {
-            "q": "「この<ruby>店<rt>みせ</rt></ruby>は<ruby>近<rt>ちか</rt></ruby>い＿＿、<ruby>静<rt>しず</rt></ruby>かだ＿＿、よく来ます。」 (listing reasons)",
+            "q": "「この<ruby>店<rt>みせ</rt></ruby>は<ruby>近<rt>ちか</rt></ruby>い＿＿、<ruby>静<rt>しず</rt></ruby>かだ＿＿、よく<ruby>来<rt>き</rt></ruby>ます。」 (listing reasons)",
             "choices": [
               "のに／のに",
               "し／し",
@@ -3427,8 +3427,8 @@
         "conjugation": [
           {
             "label": "Verb ＋し／のに",
-            "from": "書く",
-            "to": "書くし／書くのに"
+            "from": "<ruby>書<rt>か</rt></ruby>く",
+            "to": "<ruby>書<rt>か</rt></ruby>くし／<ruby>書<rt>か</rt></ruby>くのに"
           },
           {
             "label": "い-adjective",
@@ -3456,10 +3456,10 @@
           "Genki II Ch8",
           "Sou Matome Wk5"
         ],
-        "explain": "Both express purpose, but they split along a controllability line. ために attaches to verbs you can deliberately choose to do (volitional) — 'in order to [do something on purpose]'. ように attaches to situations that are NOT under your direct control — potential verbs, unintentional verbs (わかる, <ruby>見<rt>み</rt></ruby>える, できる), or someone else's action — 'so that [something happens/becomes possible]'. <ruby>日本語<rt>にほんご</rt></ruby>が話せるようになるために<ruby>練習<rt>れんしゅう</rt></ruby>する mixes both correctly: 話せるようになる (become able — not directly controllable, so ように) + ために<ruby>練習<rt>れんしゅう</rt></ruby>する (studying is your deliberate choice).",
+        "explain": "Both express purpose, but they split along a controllability line. ために attaches to verbs you can deliberately choose to do (volitional) — 'in order to [do something on purpose]'. ように attaches to situations that are NOT under your direct control — potential verbs, unintentional verbs (わかる, <ruby>見<rt>み</rt></ruby>える, できる), or someone else's action — 'so that [something happens/becomes possible]'. <ruby>日本語<rt>にほんご</rt></ruby>が<ruby>話<rt>はな</rt></ruby>せるようになるために<ruby>練習<rt>れんしゅう</rt></ruby>する mixes both correctly: <ruby>話<rt>はな</rt></ruby>せるようになる (become able — not directly controllable, so ように) + ために<ruby>練習<rt>れんしゅう</rt></ruby>する (studying is your deliberate choice).",
         "formation": [
           "Volitional verb (dictionary form) + ために ・ Potential/involuntary verb (dictionary form) + ように",
-          "N4に<ruby>合格<rt>ごうかく</rt></ruby>するために、毎日勉強します。／<ruby>日本語<rt>にほんご</rt></ruby>が話せるように、毎日練習します。"
+          "N4に<ruby>合格<rt>ごうかく</rt></ruby>するために、毎日勉強します。／<ruby>日本語<rt>にほんご</rt></ruby>が<ruby>話<rt>はな</rt></ruby>せるように、毎日練習します。"
         ],
         "examples": [
           {
@@ -3475,7 +3475,7 @@
             "en": "I'll wear warm clothes so that I don't catch a cold."
           },
           {
-            "jp": "<ruby>健康<rt>けんこう</rt></ruby>のために、毎日<ruby>歩<rt>ある</rt></ruby>いています。",
+            "jp": "<ruby>健康<rt>けんこう</rt></ruby>のために、<ruby>毎日<rt>まいにち</rt></ruby><ruby>歩<rt>ある</rt></ruby>いています。",
             "en": "I walk every day for my health."
           },
           {
@@ -3483,7 +3483,7 @@
             "en": "In order to stay healthy, I eat a lot of vegetables."
           },
           {
-            "jp": "<ruby>電車<rt>でんしゃ</rt></ruby>に間に<ruby>合<rt>あ</rt></ruby>うように、<ruby>早<rt>はや</rt></ruby>く<ruby>家<rt>いえ</rt></ruby>を出ます。",
+            "jp": "<ruby>電車<rt>でんしゃ</rt></ruby>に間に<ruby>合<rt>あ</rt></ruby>うように、<ruby>早<rt>はや</rt></ruby>く<ruby>家<rt>いえ</rt></ruby>を<ruby>出<rt>で</rt></ruby>ます。",
             "en": "I leave home early so that I'll make it in time for the train."
           },
           {
@@ -3498,12 +3498,12 @@
         "dialogue": [
           {
             "who": "A",
-            "jp": "どうして毎日、そんなに<ruby>勉強<rt>べんきょう</rt></ruby>しているんですか。",
+            "jp": "どうして<ruby>毎日<rt>まいにち</rt></ruby>、そんなに<ruby>勉強<rt>べんきょう</rt></ruby>しているんですか。",
             "en": "How come you're studying that much every day?"
           },
           {
             "who": "B",
-            "jp": "<ruby>日本語<rt>にほんご</rt></ruby>がもっと話せるようになるために、<ruby>頑張<rt>がんば</rt></ruby>っているんです。",
+            "jp": "<ruby>日本語<rt>にほんご</rt></ruby>がもっと<ruby>話<rt>はな</rt></ruby>せるようになるために、<ruby>頑張<rt>がんば</rt></ruby>っているんです。",
             "en": "I'm working hard so that I'll become able to speak Japanese better."
           },
           {
@@ -3514,7 +3514,7 @@
         ],
         "quiz": [
           {
-            "q": "「N4に<ruby>合格<rt>ごうかく</rt></ruby>する＿＿、毎日<ruby>勉強<rt>べんきょう</rt></ruby>します。」 (deliberate purpose)",
+            "q": "「N4に<ruby>合格<rt>ごうかく</rt></ruby>する＿＿、<ruby>毎日<rt>まいにち</rt></ruby><ruby>勉強<rt>べんきょう</rt></ruby>します。」 (deliberate purpose)",
             "choices": [
               "ように",
               "ために",
@@ -3551,8 +3551,8 @@
         "conjugation": [
           {
             "label": "〜ために (plain non-past)",
-            "from": "書く",
-            "to": "書くために"
+            "from": "<ruby>書<rt>か</rt></ruby>く",
+            "to": "<ruby>書<rt>か</rt></ruby>くために"
           },
           {
             "label": "〜ために ＋noun",
@@ -3676,8 +3676,8 @@
         "conjugation": [
           {
             "label": "Verb (plain non-past)",
-            "from": "書く",
-            "to": "書くことにする／なる"
+            "from": "<ruby>書<rt>か</rt></ruby>く",
+            "to": "<ruby>書<rt>か</rt></ruby>くことにする／なる"
           },
           {
             "label": "Verb (plain negative)",
@@ -3700,7 +3700,7 @@
         "ex": "んです gives the explanation behind a situation — the natural answer to a どうして question."
       },
       {
-        "q": "「この<ruby>店<rt>みせ</rt></ruby>は<ruby>安<rt>やす</rt></ruby>い＿＿、おいしい＿＿、よく来ます。」",
+        "q": "「この<ruby>店<rt>みせ</rt></ruby>は<ruby>安<rt>やす</rt></ruby>い＿＿、おいしい＿＿、よく<ruby>来<rt>き</rt></ruby>ます。」",
         "choices": [
           "し",
           "から",
@@ -3722,7 +3722,7 @@
         "ex": "のに marks an unexpected contrast — studying should have led to passing, but didn't."
       },
       {
-        "q": "「<ruby>日本語<rt>にほんご</rt></ruby>を<ruby>上手<rt>じょうず</rt></ruby>に話せる＿＿、毎日<ruby>練習<rt>れんしゅう</rt></ruby>しています。」",
+        "q": "「<ruby>日本語<rt>にほんご</rt></ruby>を<ruby>上手<rt>じょうず</rt></ruby>に<ruby>話<rt>はな</rt></ruby>せる＿＿、<ruby>毎日<rt>まいにち</rt></ruby><ruby>練習<rt>れんしゅう</rt></ruby>しています。」",
         "choices": [
           "ように",
           "ために",
@@ -3730,7 +3730,7 @@
           "ことに"
         ],
         "a": 0,
-        "ex": "With a potential verb (話せる), a desired state, ように is the fit — ために needs a volitional action."
+        "ex": "With a potential verb (<ruby>話<rt>はな</rt></ruby>せる), a desired state, ように is the fit — ために needs a volitional action."
       },
       {
         "q": "「<ruby>留学<rt>りゅうがく</rt></ruby>する＿＿、お金をためています。」 (a deliberate goal)",
@@ -3777,7 +3777,7 @@
         "ex": "ので states a straightforward reason in a slightly soft, polite way."
       },
       {
-        "q": "「<ruby>忘<rt>わす</rt></ruby>れない＿＿、<ruby>手帳<rt>てちょう</rt></ruby>に書いておきます。」",
+        "q": "「<ruby>忘<rt>わす</rt></ruby>れない＿＿、<ruby>手帳<rt>てちょう</rt></ruby>に<ruby>書<rt>か</rt></ruby>いておきます。」",
         "choices": [
           "ように",
           "ために",
@@ -3874,7 +3874,7 @@
             "en": "I've never eaten natto."
           },
           {
-            "jp": "<ruby>日本語<rt>にほんご</rt></ruby>で<ruby>手紙<rt>てがみ</rt></ruby>を書いたことがあります。",
+            "jp": "<ruby>日本語<rt>にほんご</rt></ruby>で<ruby>手紙<rt>てがみ</rt></ruby>を<ruby>書<rt>か</rt></ruby>いたことがあります。",
             "en": "I've written a letter in Japanese before."
           },
           {
@@ -3920,8 +3920,8 @@
         "conjugation": [
           {
             "label": "Group 1 verb",
-            "from": "書く",
-            "to": "書いたことがある"
+            "from": "<ruby>書<rt>か</rt></ruby>く",
+            "to": "<ruby>書<rt>か</rt></ruby>いたことがある"
           },
           {
             "label": "Group 2 verb",
@@ -3947,11 +3947,11 @@
         "explain": "Lists a few representative actions out of many possible ones — it implies 'among other things', rather than a complete, ordered list (that would just be て-form chaining). Great for describing a typical weekend or a trip: <ruby>泳<rt>およ</rt></ruby>いだり、<ruby>食<rt>た</rt></ruby>べたり、寝たりしました ('I swam, ate, napped — that sort of thing').",
         "formation": [
           "Verb (た-form) + り + Verb (た-form) + り + します",
-          "<ruby>週末<rt>しゅうまつ</rt></ruby>は本を読んだり、<ruby>映画<rt>えいが</rt></ruby>を見たりします。"
+          "<ruby>週末<rt>しゅうまつ</rt></ruby>は本を<ruby>読<rt>よ</rt></ruby>んだり、<ruby>映画<rt>えいが</rt></ruby>を見たりします。"
         ],
         "examples": [
           {
-            "jp": "<ruby>週末<rt>しゅうまつ</rt></ruby>は本を読んだり、<ruby>映画<rt>えいが</rt></ruby>を見たりします。",
+            "jp": "<ruby>週末<rt>しゅうまつ</rt></ruby>は本を<ruby>読<rt>よ</rt></ruby>んだり、<ruby>映画<rt>えいが</rt></ruby>を見たりします。",
             "en": "On weekends I do things like read books and watch movies."
           },
           {
@@ -3959,7 +3959,7 @@
             "en": "On the trip we did things like swim and eat good food."
           },
           {
-            "jp": "<ruby>休<rt>やす</rt></ruby>みの日は本を読んだり、<ruby>料理<rt>りょうり</rt></ruby>したりします。",
+            "jp": "<ruby>休<rt>やす</rt></ruby>みの日は本を<ruby>読<rt>よ</rt></ruby>んだり、<ruby>料理<rt>りょうり</rt></ruby>したりします。",
             "en": "On days off, I do things like read and cook."
           },
           {
@@ -3971,7 +3971,7 @@
             "en": "On days off I do things like clean and do laundry."
           },
           {
-            "jp": "<ruby>日曜日<rt>にちようび</rt></ruby>は本を読んだり、<ruby>散歩<rt>さんぽ</rt></ruby>したりします。",
+            "jp": "<ruby>日曜日<rt>にちようび</rt></ruby>は本を<ruby>読<rt>よ</rt></ruby>んだり、<ruby>散歩<rt>さんぽ</rt></ruby>したりします。",
             "en": "On Sundays I do things like read and go for walks."
           },
           {
@@ -3983,17 +3983,17 @@
           {
             "q": "Which best describes a weekend of 'reading, cooking, and that kind of thing' (a few examples, not a full list)?",
             "choices": [
-              "読んで、<ruby>料理<rt>りょうり</rt></ruby>して",
-              "読んだり、<ruby>料理<rt>りょうり</rt></ruby>したりします",
-              "読んだから<ruby>料理<rt>りょうり</rt></ruby>します",
+              "<ruby>読<rt>よ</rt></ruby>んで、<ruby>料理<rt>りょうり</rt></ruby>して",
+              "<ruby>読<rt>よ</rt></ruby>んだり、<ruby>料理<rt>りょうり</rt></ruby>したりします",
+              "<ruby>読<rt>よ</rt></ruby>んだから<ruby>料理<rt>りょうり</rt></ruby>します",
               "読むように<ruby>料理<rt>りょうり</rt></ruby>します"
             ],
             "a": 1,
             "ex": "〜たり〜たりする signals a few representative examples rather than an exhaustive, ordered list.",
             "why": [
-              "読んで、<ruby>料理<rt>りょうり</rt></ruby>して just chains two actions in sequence — it doesn't signal 'examples among other things'.",
+              "<ruby>読<rt>よ</rt></ruby>んで、<ruby>料理<rt>りょうり</rt></ruby>して just chains two actions in sequence — it doesn't signal 'examples among other things'.",
               null,
-              "読んだから<ruby>料理<rt>りょうり</rt></ruby>します claims reading CAUSED the cooking — an unrelated cause-effect meaning.",
+              "<ruby>読<rt>よ</rt></ruby>んだから<ruby>料理<rt>りょうり</rt></ruby>します claims reading CAUSED the cooking — an unrelated cause-effect meaning.",
               "読むように<ruby>料理<rt>りょうり</rt></ruby>します would mean cooking 'in the manner of' reading — nonsensical here."
             ]
           }
@@ -4001,8 +4001,8 @@
         "conjugation": [
           {
             "label": "Group 1 verb",
-            "from": "書く",
-            "to": "書いたり"
+            "from": "<ruby>書<rt>か</rt></ruby>く",
+            "to": "<ruby>書<rt>か</rt></ruby>いたり"
           },
           {
             "label": "Group 2 verb",
@@ -4165,19 +4165,19 @@
         ],
         "quiz": [
           {
-            "q": "'This pen is hard to write with' — 書く + にくい, correctly conjugated:",
+            "q": "'This pen is hard to write with' — <ruby>書<rt>か</rt></ruby>く + にくい, correctly conjugated:",
             "choices": [
-              "書くにくいです",
+              "<ruby>書<rt>か</rt></ruby>くにくいです",
               "書きにくいです",
-              "書いてにくいです",
+              "<ruby>書<rt>か</rt></ruby>いてにくいです",
               "書かにくいです"
             ],
             "a": 1,
             "ex": "Attach にくい to the ます-stem of the verb: 書き + にくい.",
             "why": [
-              "書くにくいです keeps the dictionary form — にくい attaches to the ます-stem (書き), not the dictionary form.",
+              "<ruby>書<rt>か</rt></ruby>くにくいです keeps the dictionary form — にくい attaches to the ます-stem (書き), not the dictionary form.",
               null,
-              "書いてにくいです wrongly uses the て-form — にくい doesn't attach there.",
+              "<ruby>書<rt>か</rt></ruby>いてにくいです wrongly uses the て-form — にくい doesn't attach there.",
               "書かにくいです wrongly uses the ない-stem (書か) — that's for negative forms, not にくい."
             ]
           }
@@ -4185,7 +4185,7 @@
         "conjugation": [
           {
             "label": "Group 1 verb",
-            "from": "書く",
+            "from": "<ruby>書<rt>か</rt></ruby>く",
             "to": "書きやすい／書きにくい"
           },
           {
@@ -4252,15 +4252,15 @@
           {
             "q": "「レポートを＿＿から、<ruby>遊<rt>あそ</rt></ruby>びに<ruby>行<rt>い</rt></ruby>きましょう。」 (Let's do our prep — finish the report in advance, THEN go play)",
             "choices": [
-              "書いてしまって",
-              "書いておいて",
+              "<ruby>書<rt>か</rt></ruby>いてしまって",
+              "<ruby>書<rt>か</rt></ruby>いておいて",
               "書かれて",
               "書かせて"
             ],
             "a": 1,
             "ex": "ておく = do it now for later convenience, matching 'get it done first, then go have fun'.",
             "why": [
-              "書いてしまって emphasizes finishing/completion (possibly with relief or regret) rather than 'doing it now for later benefit' — おく better captures the deliberate advance-prep framing here.",
+              "<ruby>書<rt>か</rt></ruby>いてしまって emphasizes finishing/completion (possibly with relief or regret) rather than 'doing it now for later benefit' — おく better captures the deliberate advance-prep framing here.",
               null,
               "書かれて is passive ('having been written [by someone]') — wrong voice for 'I'll write it'.",
               "書かせて is causative ('let/make [someone] write') — wrong meaning entirely."
@@ -4287,8 +4287,8 @@
         "conjugation": [
           {
             "label": "Group 1 verb",
-            "from": "書く",
-            "to": "書いてしまう／書いておく"
+            "from": "<ruby>書<rt>か</rt></ruby>く",
+            "to": "<ruby>書<rt>か</rt></ruby>いてしまう／<ruby>書<rt>か</rt></ruby>いておく"
           },
           {
             "label": "Group 2 verb",
@@ -4859,7 +4859,7 @@
         "ex": "〜たことがある is the fixed pattern for past experience."
       },
       {
-        "q": "「<ruby>休<rt>やす</rt></ruby>みの日は、本を読ん＿＿、<ruby>音楽<rt>おんがく</rt></ruby>を<ruby>聞<rt>き</rt></ruby>い＿＿します。」— pick the pair that fills both blanks",
+        "q": "「<ruby>休<rt>やす</rt></ruby>みの日は、本を<ruby>読<rt>よ</rt></ruby>ん＿＿、<ruby>音楽<rt>おんがく</rt></ruby>を<ruby>聞<rt>き</rt></ruby>い＿＿します。」— pick the pair that fills both blanks",
         "choices": [
           "だり／たり",
           "でから／てから",
@@ -4892,7 +4892,7 @@
         "ex": "ます-stem + やすい = easy to do."
       },
       {
-        "q": "「この<ruby>薬<rt>くすり</rt></ruby>は<ruby>苦<rt>にが</rt></ruby>くて飲み＿＿です。」",
+        "q": "「この<ruby>薬<rt>くすり</rt></ruby>は<ruby>苦<rt>にが</rt></ruby>くて<ruby>飲<rt>の</rt></ruby>み＿＿です。」",
         "choices": [
           "にくい",
           "やすい",
@@ -4914,7 +4914,7 @@
         "ex": "〜てしまう carries the sense of completing something fully."
       },
       {
-        "q": "「パーティーの前に、飲み<ruby>物<rt>もの</rt></ruby>を<ruby>買<rt>か</rt></ruby>っ＿＿。」 (in advance, for later)",
+        "q": "「パーティーの前に、<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>を<ruby>買<rt>か</rt></ruby>っ＿＿。」 (in advance, for later)",
         "choices": [
           "ておきます",
           "てしまいます",

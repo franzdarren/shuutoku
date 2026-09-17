@@ -1,8 +1,17 @@
+import { useEffect } from "react";
 import { readingPassages } from "../../data/index.js";
 import JpText from "../JpText.jsx";
 import Quiz from "../Quiz.jsx";
 
-export default function ReadingLab() {
+export default function ReadingLab({ jumpTarget }) {
+  // A search result lands here as {index} into the passage list.
+  useEffect(() => {
+    if (!jumpTarget) return;
+    requestAnimationFrame(() => {
+      document.getElementById("passage-" + jumpTarget.index)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }, [jumpTarget]);
+
   return (
     <>
       <div className="section-head">
@@ -12,7 +21,7 @@ export default function ReadingLab() {
       </div>
 
       {readingPassages.map((p, i) => (
-        <div key={i} className="passage-card">
+        <div key={i} id={"passage-" + i} className="passage-card">
           <JpText tag="div" className="ptitle" html={p.title} />
           <div className="ptitle-en">{p.titleEn}</div>
           <JpText tag="div" className="passage-text" html={p.text} />

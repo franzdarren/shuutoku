@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="96" fill="#29466F"/>
+  <!-- 習 drawn as paths rather than <text>, so the icon can't fall back to a
+       missing CJK font on a device that doesn't have one installed. -->
+  <g fill="none" stroke="#F7F6F2" stroke-width="26" stroke-linecap="round" stroke-linejoin="round">
+    <!-- 羽 upper left -->
+    <path d="M126 112h74v96h-74z"/>
+    <path d="M150 140v44"/>
+    <!-- 羽 upper right -->
+    <path d="M238 112h74v96h-74z"/>
+    <path d="M262 140v44"/>
+    <!-- 白 lower -->
+    <path d="M176 246h160v154H176z"/>
+    <path d="M176 318h160"/>
+    <path d="M256 214v32"/>
+  </g>
+</svg>

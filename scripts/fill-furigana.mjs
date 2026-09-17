@@ -26,7 +26,6 @@ const FILES = [
   "kaiwa-scenarios.json", "kaiwa-phrasebank.json", "quiz.json",
 ];
 const WRITE = process.argv.includes("--write");
-const KANJI_RUN = /[一-鿿]+/g;
 const RUN_WITH_OKURIGANA = /([一-鿿]+)([぀-ゟ]{0,2})/g;
 const RUBY_BLOCK = /<ruby>[^<]*<rt>[^<]*<\/rt><\/ruby>/g;
 
@@ -66,15 +65,22 @@ const SUPPLEMENT = {
   "電話中": "でんわちゅう",
 };
 
+/* Compounds with two common readings that the corpus only ever happens to
+ * gloss one way — the same trap as 間, one level up. 十分 is じゅっぷん as a
+ * duration but じゅうぶん as "enough", and this corpus contains both
+ * (このバスは十分おきに… vs もう十分です、ありがとうございます). A compound
+ * here is never auto-glossed; a human writes the ruby by hand. */
+const AMBIGUOUS_COMPOUNDS = new Set(["十分"]);
+
 // 2 · keep only unambiguous, multi-character, pure-kanji bases
 const map = new Map();
 for (const [base, reads] of readings) {
   if (reads.size !== 1) continue;
+  if (AMBIGUOUS_COMPOUNDS.has(base)) continue;
   if ([...base].length < 2) continue;
   if (!/^[一-鿿]+$/.test(base)) continue;
   map.set(base, [...reads][0]);
 }
-const harvested = new Set(map.keys());
 for (const [base, reading] of Object.entries(SUPPLEMENT)) {
   if (!map.has(base)) map.set(base, reading);
 }
@@ -173,6 +179,46 @@ for (const [file, text] of sources) {
     changedFiles++;
     if (WRITE) fs.writeFileSync(path.join(DATA, file), rebuilt);
   }
+}
+
+/* 4 · Some fields are rendered as plain text, never as HTML — a module title
+ * in a tab, a tip line, a scenario's role-play note. Ruby markup in those
+ * shows up verbatim on screen as "<ruby>...". The pass above works on raw
+ * file text and can't see field boundaries, so the markup is stripped back
+ * out here by field name. Without this step every run silently reintroduces
+ * the bug. The four files touched all re-serialise byte-identically, so
+ * nothing but these fields changes.
+ *
+ * Side effect worth knowing: because step 3 glosses those fields and step 4
+ * undoes it, the "glossed" count is inflated on re-runs and never settles at
+ * zero. The files themselves do converge — running twice in a row produces
+ * identical bytes — so it's noise in the report, not churn in the data. */
+const PLAIN_TEXT_FIELDS = new Set(["jpTitle", "reading", "enTitle", "tip", "label", "who", "setup", "roleplay", "cat", "catEn", "title", "body"]);
+const unruby = (s) => s.replace(/<ruby>([^<]*)<rt>[^<]*<\/rt><\/ruby>/g, "$1");
+
+function stripPlainFields(node) {
+  let n = 0;
+  if (Array.isArray(node)) { node.forEach((v) => { n += stripPlainFields(v); }); return n; }
+  if (!node || typeof node !== "object") return n;
+  for (const [key, value] of Object.entries(node)) {
+    if (typeof value === "string") {
+      if (PLAIN_TEXT_FIELDS.has(key) && value.includes("<ruby>")) { node[key] = unruby(value); n++; }
+    } else n += stripPlainFields(value);
+  }
+  return n;
+}
+
+if (WRITE) {
+  let stripped = 0;
+  // reading.json / quiz.json are excluded: they hold no plain-text fields and
+  // are the two files that would reformat on re-serialisation.
+  for (const file of ["grammar.json", "grammar-extra.json", "kaiwa-scenarios.json", "kaiwa-phrasebank.json"]) {
+    const p = path.join(DATA, file);
+    const data = JSON.parse(fs.readFileSync(p, "utf8"));
+    const n = stripPlainFields(data);
+    if (n) { fs.writeFileSync(p, JSON.stringify(data, null, 2) + "\n"); stripped += n; }
+  }
+  console.log(`plain-text fields un-rubied: ${stripped}`);
 }
 
 /* Multi-part segmentations are the only place this can go wrong: each piece

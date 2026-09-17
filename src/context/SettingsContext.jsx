@@ -13,7 +13,11 @@ function readStored(key, fallback) {
 
 export function SettingsProvider({ children }) {
   const [furigana, setFurigana] = useState(() => readStored("n4.furigana", true));
-  const [dark, setDark] = useState(() => readStored("n4.dark", false));
+  // First visit follows the OS setting; once you've used the toggle, your
+  // stored choice wins and the OS is ignored from then on.
+  const [dark, setDark] = useState(() =>
+    readStored("n4.dark", window.matchMedia?.("(prefers-color-scheme: dark)").matches ?? false)
+  );
   const [fontScale, setFontScale] = useState(() => readStored("n4.fontScale", 1));
   // Gothic is the default Japanese face everywhere — Mincho's thin strokes
   // are the harder of the two to read at small sizes, and this is a study

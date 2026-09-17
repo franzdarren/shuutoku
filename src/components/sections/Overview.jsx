@@ -4,20 +4,33 @@ import {
   countGrammarPoints, countPhrases, countQuizPool,
 } from "../../data/index.js";
 
-function OverviewCard({ mk, title, size, children }) {
+/* Each card is a shortcut into its section — the overview is the first thing
+   you see, so reading about Grammar Deep-Dive and then having to go find it in
+   the sidebar was a step that didn't need to exist. role="button" on a div
+   rather than a real <button> because the card wraps block content. */
+function OverviewCard({ mk, title, size, go, children }) {
   return (
-    <div className={"ovcard ovcard--" + size}>
+    <div
+      className={"ovcard ovcard--" + size}
+      role="button"
+      tabIndex={0}
+      onClick={go}
+      onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); go(); } }}
+      aria-label={"Go to " + title}
+    >
       <div className="ovtitle">
         <span className="ovmk">{mk}</span>
         <span className="ovname">{title}</span>
+        <span className="ovgo" aria-hidden="true">→</span>
       </div>
       <p>{children}</p>
     </div>
   );
 }
 
-export default function Overview() {
+export default function Overview({ onNavigate }) {
   const [open, setOpen] = useState(false);
+  const go = (id) => () => onNavigate(id);
   return (
     <>
       <div className="section-head section-head--lead">
@@ -26,20 +39,23 @@ export default function Overview() {
       </div>
 
       <div className="ovgrid">
-        <OverviewCard mk="文法" title="Grammar Deep-Dive" size="lg">
+        <OverviewCard mk="文法" title="Grammar Deep-Dive" size="lg" go={go("grammar")}>
           {countGrammarPoints()} grammar points across {grammarModules.length} modules — the four conditionals, passive/causative, giving &amp; receiving, hearsay &amp; appearance, and a round of extra N4 essentials. Grouped into tabs so you can work through one module at a time instead of one long scroll.
         </OverviewCard>
-        <OverviewCard mk="漢字" title="Kanji Focus" size="sm">
+        <OverviewCard mk="漢字" title="Kanji Focus" size="sm" go={go("kanji")}>
           All {kanjiFocus.length} N4 characters — both readings, core meaning, a common compound, plus a {kanjiQuiz.length}-question reading check.
         </OverviewCard>
-        <OverviewCard mk="読解" title="Reading Lab" size="half">
+        <OverviewCard mk="読解" title="Reading Lab" size="half" go={go("reading")}>
           {readingPassages.length} short passages in JLPT reading style — diary entries, notices, and emails — each with comprehension questions. Highlight any word to look it up instantly.
         </OverviewCard>
-        <OverviewCard mk="会話" title="Kaiwa Lab" size="half">
+        <OverviewCard mk="会話" title="Kaiwa Lab" size="half" go={go("kaiwa")}>
           {kaiwaScenarios.length} trip and daily-life scenarios with their key phrases pulled out, a {countPhrases()}-phrase bank grouped by situation, and role-play notes for both sides.
         </OverviewCard>
-        <OverviewCard mk="力" title="Quiz Center" size="full">
-          A mixed mock-test style review pulling grammar, kanji, reading and conversation together — {countQuizPool()} questions in the pool, 10 drawn at random each visit — plus your running score across the whole handbook.
+        <OverviewCard mk="力" title="Quiz Center" size="half" go={go("quiz")}>
+          A mixed review pulling grammar, kanji, reading and conversation together — {countQuizPool()} questions in the pool, 10 drawn at random each visit — plus your running score across the whole handbook.
+        </OverviewCard>
+        <OverviewCard mk="試" title="Mock Exam" size="half" go={go("exam")}>
+          A timed run shaped like the written half of a real N4 paper: 35 questions in 40 minutes, weighted the way the exam weights them, with no feedback until you finish.
         </OverviewCard>
       </div>
 

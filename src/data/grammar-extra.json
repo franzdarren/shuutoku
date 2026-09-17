@@ -92,8 +92,8 @@
         "conjugation": [
           {
             "label": "Group 1 verb",
-            "from": "書く",
-            "to": "書いてみる"
+            "from": "<ruby>書<rt>か</rt></ruby>く",
+            "to": "<ruby>書<rt>か</rt></ruby>いてみる"
           },
           {
             "label": "Group 2 verb",
@@ -108,7 +108,7 @@
         ]
       },
       {
-        "jp": "〜出す／〜<ruby>始<rt>はじ</rt></ruby>める／〜<ruby>続<rt>つづ</rt></ruby>ける／〜<ruby>終<rt>お</rt></ruby>わる",
+        "jp": "〜<ruby>出<rt>だ</rt></ruby>す／〜<ruby>始<rt>はじ</rt></ruby>める／〜<ruby>続<rt>つづ</rt></ruby>ける／〜<ruby>終<rt>お</rt></ruby>わる",
         "romaji": "~dasu / ~hajimeru / ~tsuzukeru / ~owaru",
         "fn": "Start suddenly, start, keep doing, finish doing",
         "sources": [
@@ -116,15 +116,15 @@
           "Genki II Ch17",
           "Sou Matome Wk4"
         ],
-        "explain": "Attach these to a verb's ます-stem to build a compound verb describing one phase of the action. <ruby>始<rt>はじ</rt></ruby>める (start), <ruby>続<rt>つづ</rt></ruby>ける (keep doing) and <ruby>終<rt>お</rt></ruby>わる (finish) are fairly neutral. 出す carries a nuance of suddenness or unexpectedness — <ruby>雨<rt>あめ</rt></ruby>が降り出した doesn't just mean 'it started raining', it means 'it suddenly started raining' (often catching you off guard).",
+        "explain": "Attach these to a verb's ます-stem to build a compound verb describing one phase of the action. <ruby>始<rt>はじ</rt></ruby>める (start), <ruby>続<rt>つづ</rt></ruby>ける (keep doing) and <ruby>終<rt>お</rt></ruby>わる (finish) are fairly neutral. <ruby>出<rt>だ</rt></ruby>す carries a nuance of suddenness or unexpectedness — <ruby>雨<rt>あめ</rt></ruby>が降り<ruby>出<rt>だ</rt></ruby>した doesn't just mean 'it started raining', it means 'it suddenly started raining' (often catching you off guard).",
         "formation": [
-          "Verb (ます-stem) + 出す／<ruby>始<rt>はじ</rt></ruby>める／<ruby>続<rt>つづ</rt></ruby>ける／<ruby>終<rt>お</rt></ruby>わる",
-          "<ruby>降<rt>ふ</rt></ruby>る → 降り + 出す → 降り出す",
+          "Verb (ます-stem) + <ruby>出<rt>だ</rt></ruby>す／<ruby>始<rt>はじ</rt></ruby>める／<ruby>続<rt>つづ</rt></ruby>ける／<ruby>終<rt>お</rt></ruby>わる",
+          "<ruby>降<rt>ふ</rt></ruby>る → 降り + <ruby>出<rt>だ</rt></ruby>す → 降り<ruby>出<rt>だ</rt></ruby>す",
           "話す → <ruby>話<rt>はな</rt></ruby>し + <ruby>続<rt>つづ</rt></ruby>ける → <ruby>話<rt>はな</rt></ruby>し<ruby>続<rt>つづ</rt></ruby>ける"
         ],
         "examples": [
           {
-            "jp": "<ruby>空<rt>そら</rt></ruby>が<ruby>暗<rt>くら</rt></ruby>くなって、きゅうに<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>り出した。",
+            "jp": "<ruby>空<rt>そら</rt></ruby>が<ruby>暗<rt>くら</rt></ruby>くなって、きゅうに<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>り<ruby>出<rt>だ</rt></ruby>した。",
             "en": "The sky went dark and it suddenly started raining."
           },
           {
@@ -158,7 +158,7 @@
           {
             "q": "「<ruby>話<rt>はな</rt></ruby>し＿＿」to mean 'kept on talking' — fill the blank.",
             "choices": [
-              "出した",
+              "<ruby>出<rt>だ</rt></ruby>した",
               "<ruby>始<rt>はじ</rt></ruby>めた",
               "<ruby>続<rt>つづ</rt></ruby>けた",
               "<ruby>終<rt>お</rt></ruby>わった"
@@ -166,14 +166,14 @@
             "a": 2,
             "ex": "<ruby>続<rt>つづ</rt></ruby>ける specifically means to continue/keep doing an action.",
             "why": [
-              "出した signals a sudden, often unexpected onset ('burst into talking') — not 'kept on'.",
+              "<ruby>出<rt>だ</rt></ruby>した signals a sudden, often unexpected onset ('burst into talking') — not 'kept on'.",
               "<ruby>始<rt>はじ</rt></ruby>めた means 'started' — a single moment, not ongoing continuation.",
               null,
               "<ruby>終<rt>お</rt></ruby>わった means 'finished' — the opposite of 'kept on'."
             ]
           },
           {
-            "q": "Which best captures the nuance of <ruby>泣<rt>な</rt></ruby>き出した (about a baby)?",
+            "q": "Which best captures the nuance of <ruby>泣<rt>な</rt></ruby>き<ruby>出<rt>だ</rt></ruby>した (about a baby)?",
             "choices": [
               "Was crying for a while, calmly",
               "Suddenly burst into tears",
@@ -181,19 +181,19 @@
               "Almost cried but didn't"
             ],
             "a": 1,
-            "ex": "出す after a verb often signals a sudden, somewhat unexpected onset — 'burst into tears' fits far better than a calm, ongoing cry.",
+            "ex": "<ruby>出<rt>だ</rt></ruby>す after a verb often signals a sudden, somewhat unexpected onset — 'burst into tears' fits far better than a calm, ongoing cry.",
             "why": [
-              "A calm, gradual cry wouldn't use 出す, which signals suddenness.",
+              "A calm, gradual cry wouldn't use <ruby>出<rt>だ</rt></ruby>す, which signals suddenness.",
               null,
-              "<ruby>終<rt>お</rt></ruby>わる, not 出す, would mark finishing — <ruby>泣<rt>な</rt></ruby>き出す is about the START, not the end.",
-              "出す means it DID happen (suddenly), not that it almost happened."
+              "<ruby>終<rt>お</rt></ruby>わる, not <ruby>出<rt>だ</rt></ruby>す, would mark finishing — <ruby>泣<rt>な</rt></ruby>き<ruby>出<rt>だ</rt></ruby>す is about the START, not the end.",
+              "<ruby>出<rt>だ</rt></ruby>す means it DID happen (suddenly), not that it almost happened."
             ]
           }
         ],
         "conjugation": [
           {
             "label": "Group 1 verb",
-            "from": "書く",
+            "from": "<ruby>書<rt>か</rt></ruby>く",
             "to": "書き<ruby>始<rt>はじ</rt></ruby>める／書き<ruby>終<rt>お</rt></ruby>わる"
           },
           {
@@ -204,7 +204,7 @@
           {
             "label": "suddenness",
             "from": "<ruby>降<rt>ふ</rt></ruby>る",
-            "to": "<ruby>降<rt>ふ</rt></ruby>り出す"
+            "to": "<ruby>降<rt>ふ</rt></ruby>り<ruby>出<rt>だ</rt></ruby>す"
           }
         ]
       },
@@ -217,15 +217,15 @@
           "Genki I Ch15",
           "Sou Matome Wk2"
         ],
-        "explain": "〜前に attaches to the plain dictionary form — even when the whole sentence is about the past! — to mean 'before doing X': <ruby>寝<rt>ね</rt></ruby>る前に<ruby>歯<rt>は</rt></ruby>を<ruby>磨<rt>みが</rt></ruby>きます (I brush my teeth before sleeping). 〜<ruby>間<rt>あいだ</rt></ruby>に marks a window of time during which something else happens once: 母がいる<ruby>間<rt>あいだ</rt></ruby>に、<ruby>宿題<rt>しゅくだい</rt></ruby>をしました (I did my homework while my mother was around). Without に, 〜間 alone describes something continuous through the *whole* period instead of a single event inside it.",
+        "explain": "〜前に attaches to the plain dictionary form — even when the whole sentence is about the past! — to mean 'before doing X': <ruby>寝<rt>ね</rt></ruby>る前に<ruby>歯<rt>は</rt></ruby>を<ruby>磨<rt>みが</rt></ruby>きます (I brush my teeth before sleeping). 〜<ruby>間<rt>あいだ</rt></ruby>に marks a window of time during which something else happens once: <ruby>母<rt>はは</rt></ruby>がいる<ruby>間<rt>あいだ</rt></ruby>に、<ruby>宿題<rt>しゅくだい</rt></ruby>をしました (I did my homework while my mother was around). Without に, 〜間 alone describes something continuous through the *whole* period instead of a single event inside it.",
         "formation": [
           "Verb (dictionary form) + 前に",
           "Verb (ている form) + <ruby>間<rt>あいだ</rt></ruby>に",
-          "<ruby>寝<rt>ね</rt></ruby>る前に／子どもが<ruby>寝<rt>ね</rt></ruby>ている<ruby>間<rt>あいだ</rt></ruby>に"
+          "<ruby>寝<rt>ね</rt></ruby>る前に／<ruby>子<rt>こ</rt></ruby>どもが<ruby>寝<rt>ね</rt></ruby>ている<ruby>間<rt>あいだ</rt></ruby>に"
         ],
         "examples": [
           {
-            "jp": "出かける前に、<ruby>窓<rt>まど</rt></ruby>を<ruby>閉<rt>し</rt></ruby>めておいてください。",
+            "jp": "<ruby>出<rt>で</rt></ruby>かける前に、<ruby>窓<rt>まど</rt></ruby>を<ruby>閉<rt>し</rt></ruby>めておいてください。",
             "en": "Please close the windows before you go out."
           },
           {
@@ -233,7 +233,7 @@
             "en": "Let's go shopping while it isn't raining."
           },
           {
-            "jp": "子どもが<ruby>寝<rt>ね</rt></ruby>ている<ruby>間<rt>あいだ</rt></ruby>に、<ruby>家事<rt>かじ</rt></ruby>をします。",
+            "jp": "<ruby>子<rt>こ</rt></ruby>どもが<ruby>寝<rt>ね</rt></ruby>ている<ruby>間<rt>あいだ</rt></ruby>に、<ruby>家事<rt>かじ</rt></ruby>をします。",
             "en": "I do the housework while my child is sleeping."
           }
         ],
@@ -352,7 +352,7 @@
         "tip": "食べながら話す (talking while eating) is a very natural phrase to describe casual meals with friends — a nice one to have ready for small talk about your day.",
         "quiz": [
           {
-            "q": "「コーヒーを飲み＿＿、<ruby>新聞<rt>しんぶん</rt></ruby>を読みます。」",
+            "q": "「コーヒーを<ruby>飲<rt>の</rt></ruby>み＿＿、<ruby>新聞<rt>しんぶん</rt></ruby>を読みます。」",
             "choices": [
               "ながら",
               "まえに",
@@ -389,7 +389,7 @@
         "conjugation": [
           {
             "label": "Group 1 verb",
-            "from": "書く",
+            "from": "<ruby>書<rt>か</rt></ruby>く",
             "to": "書きながら"
           },
           {
@@ -491,7 +491,7 @@
         "conjugation": [
           {
             "label": "Group 1 verb",
-            "from": "書く",
+            "from": "<ruby>書<rt>か</rt></ruby>く",
             "to": "書こう"
           },
           {
@@ -506,8 +506,8 @@
           },
           {
             "label": "〜つもり (plain form)",
-            "from": "書く",
-            "to": "書くつもり／書かないつもり"
+            "from": "<ruby>書<rt>か</rt></ruby>く",
+            "to": "<ruby>書<rt>か</rt></ruby>くつもり／書かないつもり"
           }
         ]
       },
@@ -562,10 +562,10 @@
           {
             "q": "'You'd better not go out today' (it's raining hard) — pick the correct form.",
             "choices": [
-              "出かけるほうがいいです",
-              "出かけたほうがいいです",
-              "出かけないほうがいいです",
-              "出かけてもいいです"
+              "<ruby>出<rt>で</rt></ruby>かけるほうがいいです",
+              "<ruby>出<rt>で</rt></ruby>かけたほうがいいです",
+              "<ruby>出<rt>で</rt></ruby>かけないほうがいいです",
+              "<ruby>出<rt>で</rt></ruby>かけてもいいです"
             ],
             "a": 2,
             "ex": "Negative advice uses the plain negative (ない) form + ほうがいいです.",
@@ -597,12 +597,12 @@
         "conjugation": [
           {
             "label": "positive (た-form)",
-            "from": "書く",
-            "to": "書いたほうがいい"
+            "from": "<ruby>書<rt>か</rt></ruby>く",
+            "to": "<ruby>書<rt>か</rt></ruby>いたほうがいい"
           },
           {
             "label": "negative (ない-form)",
-            "from": "書く",
+            "from": "<ruby>書<rt>か</rt></ruby>く",
             "to": "書かないほうがいい"
           }
         ]
@@ -624,7 +624,7 @@
         ],
         "examples": [
           {
-            "jp": "何か飲み<ruby>物<rt>もの</rt></ruby>はいかがですか。",
+            "jp": "何か<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>はいかがですか。",
             "en": "Would you like something to drink?"
           },
           {
@@ -668,7 +668,7 @@
             ]
           },
           {
-            "q": "「この<ruby>店<rt>みせ</rt></ruby>は＿＿入れます。」 meaning 'anyone can enter this shop' —",
+            "q": "「この<ruby>店<rt>みせ</rt></ruby>は＿＿<ruby>入<rt>い</rt></ruby>れます。」 meaning 'anyone can enter this shop' —",
             "choices": [
               "だれでも",
               "だれか",
@@ -695,7 +695,7 @@
           "Genki I Ch3-",
           "Sou Matome Wk1"
         ],
-        "explain": "は marks what the sentence is ABOUT — the topic, usually something already known or being set up for comment, and often implies a soft contrast ('as for X...'). が marks the grammatical SUBJECT, frequently introducing brand-new information or directly answering a who/what question. <ruby>私<rt>わたし</rt></ruby>は<ruby>学生<rt>がくせい</rt></ruby>です answers 'what about you?'; だれが来ましたか／<ruby>田中<rt>たなか</rt></ruby>さんが来ました uses が because the answer is new, focused information. This distinction quietly causes more subtly-off sentences at N4 than almost any single grammar point — it's rarely tested as a fill-in-the-blank, but it shows up constantly in reading comprehension nuance.",
+        "explain": "は marks what the sentence is ABOUT — the topic, usually something already known or being set up for comment, and often implies a soft contrast ('as for X...'). が marks the grammatical SUBJECT, frequently introducing brand-new information or directly answering a who/what question. <ruby>私<rt>わたし</rt></ruby>は<ruby>学生<rt>がくせい</rt></ruby>です answers 'what about you?'; だれが<ruby>来<rt>き</rt></ruby>ましたか／<ruby>田中<rt>たなか</rt></ruby>さんが<ruby>来<rt>き</rt></ruby>ました uses が because the answer is new, focused information. This distinction quietly causes more subtly-off sentences at N4 than almost any single grammar point — it's rarely tested as a fill-in-the-blank, but it shows up constantly in reading comprehension nuance.",
         "formation": [
           "は — topic, known info, contrast (<ruby>私<rt>わたし</rt></ruby>は<ruby>学生<rt>がくせい</rt></ruby>です)",
           "が — subject, new info, answers a question-word (だれが／何が)"
@@ -722,14 +722,14 @@
           },
           {
             "who": "B",
-            "jp": "いいえ、<ruby>山田<rt>やまだ</rt></ruby>さんは来ませんが、<ruby>鈴木<rt>すずき</rt></ruby>さんが来ます。",
+            "jp": "いいえ、<ruby>山田<rt>やまだ</rt></ruby>さんは<ruby>来<rt>き</rt></ruby>ませんが、<ruby>鈴木<rt>すずき</rt></ruby>さんが<ruby>来<rt>き</rt></ruby>ます。",
             "en": "No, Yamada-san isn't coming, but Suzuki-san is. (が — contrastive new info)"
           }
         ],
         "tip": "A fast rule of thumb: if you could answer the question 'who/what?' with the word, use が. If the word is what you're commenting ABOUT, use は. It won't cover every case, but it resolves most N4-level confusion.",
         "quiz": [
           {
-            "q": "「＿＿来ましたか」 answered by 「<ruby>田中<rt>たなか</rt></ruby>さんが来ました」 — which particle fits the question?",
+            "q": "「＿＿<ruby>来<rt>き</rt></ruby>ましたか」 answered by 「<ruby>田中<rt>たなか</rt></ruby>さんが<ruby>来<rt>き</rt></ruby>ました」 — which particle fits the question?",
             "choices": [
               "だれは",
               "だれが",
@@ -748,7 +748,7 @@
           {
             "q": "Which sentence introduces Tanaka as a brand-new topic being commented on afterward?",
             "choices": [
-              "<ruby>田中<rt>たなか</rt></ruby>さんが来ました。",
+              "<ruby>田中<rt>たなか</rt></ruby>さんが<ruby>来<rt>き</rt></ruby>ました。",
               "<ruby>田中<rt>たなか</rt></ruby>さんは<ruby>学生<rt>がくせい</rt></ruby>です。",
               "<ruby>田中<rt>たなか</rt></ruby>さんがいます。",
               "だれが<ruby>田中<rt>たなか</rt></ruby>さんですか。"
@@ -844,8 +844,8 @@
         "conjugation": [
           {
             "label": "Group 1 verb",
-            "from": "書く",
-            "to": "書いてくる／書いていく"
+            "from": "<ruby>書<rt>か</rt></ruby>く",
+            "to": "<ruby>書<rt>か</rt></ruby>いてくる／<ruby>書<rt>か</rt></ruby>いていく"
           },
           {
             "label": "Group 2 verb",
@@ -964,11 +964,11 @@
           "Genki II Ch16",
           "Sou Matome Wk4"
         ],
-        "explain": "A number/quantity + も (三時間も<ruby>待<rt>ま</rt></ruby>ちました — waited a whopping three hours) frames the amount as surprisingly large. A number/quantity + しか + a NEGATIVE verb (三時間しか<ruby>寝<rt>ね</rt></ruby>ませんでした — only slept three hours) frames it as surprisingly small — しか always needs a negative verb at the end, even though the overall meaning isn't negative in English. Mixing these up (しか with an affirmative verb, or も expecting a small amount) is a very common N4 mistake.",
+        "explain": "A number/quantity + も (<ruby>三時間<rt>さんじかん</rt></ruby>も<ruby>待<rt>ま</rt></ruby>ちました — waited a whopping three hours) frames the amount as surprisingly large. A number/quantity + しか + a NEGATIVE verb (<ruby>三時間<rt>さんじかん</rt></ruby>しか<ruby>寝<rt>ね</rt></ruby>ませんでした — only slept three hours) frames it as surprisingly small — しか always needs a negative verb at the end, even though the overall meaning isn't negative in English. Mixing these up (しか with an affirmative verb, or も expecting a small amount) is a very common N4 mistake.",
         "formation": [
           "数量 + も + affirmative verb — emphasizes 'as many/much as'",
           "数量 + しか + negative verb — emphasizes 'only'",
-          "三時間も／三時間しか〜ません"
+          "<ruby>三時間<rt>さんじかん</rt></ruby>も／<ruby>三時間<rt>さんじかん</rt></ruby>しか〜ません"
         ],
         "examples": [
           {
@@ -980,7 +980,7 @@
             "en": "I only have 500 yen in my wallet."
           },
           {
-            "jp": "<ruby>昨日<rt>きのう</rt></ruby>は三時間しか<ruby>寝<rt>ね</rt></ruby>ませんでした。",
+            "jp": "<ruby>昨日<rt>きのう</rt></ruby>は<ruby>三時間<rt>さんじかん</rt></ruby>しか<ruby>寝<rt>ね</rt></ruby>ませんでした。",
             "en": "I only slept three hours yesterday."
           }
         ],
@@ -1071,7 +1071,7 @@
           },
           {
             "who": "B",
-            "jp": "<ruby>忙<rt>いそが</rt></ruby>しいから来られないと<ruby>言<rt>い</rt></ruby>っていましたよ。",
+            "jp": "<ruby>忙<rt>いそが</rt></ruby>しいから<ruby>来<rt>こ</rt></ruby>られないと<ruby>言<rt>い</rt></ruby>っていましたよ。",
             "en": "He said he's busy so he can't come."
           },
           {
@@ -1120,8 +1120,8 @@
         "conjugation": [
           {
             "label": "Verb (plain form)",
-            "from": "書く",
-            "to": "書くと<ruby>思<rt>おも</rt></ruby>います"
+            "from": "<ruby>書<rt>か</rt></ruby>く",
+            "to": "<ruby>書<rt>か</rt></ruby>くと<ruby>思<rt>おも</rt></ruby>います"
           },
           {
             "label": "い-adjective",
@@ -1156,13 +1156,13 @@
       {
         "q": "「<ruby>空<rt>そら</rt></ruby>が<ruby>暗<rt>くら</rt></ruby>くなって、<ruby>急<rt>きゅう</rt></ruby>に<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>り＿＿。」 (suddenly started)",
         "choices": [
-          "出しました",
+          "<ruby>出<rt>だ</rt></ruby>しました",
           "<ruby>始<rt>はじ</rt></ruby>めました",
           "<ruby>続<rt>つづ</rt></ruby>けました",
           "<ruby>終<rt>お</rt></ruby>わりました"
         ],
         "a": 0,
-        "ex": "出す adds a nuance of suddenness that plain <ruby>始<rt>はじ</rt></ruby>める doesn't carry."
+        "ex": "<ruby>出<rt>だ</rt></ruby>す adds a nuance of suddenness that plain <ruby>始<rt>はじ</rt></ruby>める doesn't carry."
       },
       {
         "q": "「<ruby>寝<rt>ね</rt></ruby>る＿＿、<ruby>歯<rt>は</rt></ruby>を<ruby>磨<rt>みが</rt></ruby>きます。」",
@@ -1253,7 +1253,7 @@
         "ex": "何でも is the all-inclusive form: there's no restriction at all."
       },
       {
-        "q": "「だれ＿＿来ましたか。」「<ruby>田中<rt>たなか</rt></ruby>さんです。」",
+        "q": "「だれ＿＿<ruby>来<rt>き</rt></ruby>ましたか。」「<ruby>田中<rt>たなか</rt></ruby>さんです。」",
         "choices": [
           "が",
           "は",
@@ -1391,8 +1391,8 @@
         "conjugation": [
           {
             "label": "Verb ＋noun",
-            "from": "書く",
-            "to": "書く人／書いた人／書かない人"
+            "from": "<ruby>書<rt>か</rt></ruby>く",
+            "to": "<ruby>書<rt>か</rt></ruby>く人／<ruby>書<rt>か</rt></ruby>いた人／書かない人"
           },
           {
             "label": "い-adjective",
@@ -1443,7 +1443,7 @@
         "dialogue": [
           {
             "who": "A",
-            "jp": "<ruby>明日<rt>あした</rt></ruby>のパーティー、<ruby>山田<rt>やまだ</rt></ruby>さんも来ますか。",
+            "jp": "<ruby>明日<rt>あした</rt></ruby>のパーティー、<ruby>山田<rt>やまだ</rt></ruby>さんも<ruby>来<rt>き</rt></ruby>ますか。",
             "en": "Is Yamada-san also coming to tomorrow's party?"
           },
           {
@@ -1603,8 +1603,8 @@
         "conjugation": [
           {
             "label": "Group 1 verb",
-            "from": "書く",
-            "to": "書いたばかり"
+            "from": "<ruby>書<rt>か</rt></ruby>く",
+            "to": "<ruby>書<rt>か</rt></ruby>いたばかり"
           },
           {
             "label": "Group 2 verb",
@@ -1639,7 +1639,7 @@
             "en": "My little sister wants new shoes (you can tell)."
           },
           {
-            "jp": "子どもはお<ruby>化<rt>ば</rt></ruby>けの話を<ruby>怖<rt>こわ</rt></ruby>がります。",
+            "jp": "<ruby>子<rt>こ</rt></ruby>どもはお<ruby>化<rt>ば</rt></ruby>けの話を<ruby>怖<rt>こわ</rt></ruby>がります。",
             "en": "Children get scared of ghost stories."
           },
           {
@@ -1655,7 +1655,7 @@
           },
           {
             "who": "B",
-            "jp": "<ruby>新<rt>あたら</rt></ruby>しい<ruby>自転車<rt>じてんしゃ</rt></ruby>を<ruby>欲<rt>ほ</rt></ruby>しがっていて、毎日それしか話さないんです。",
+            "jp": "<ruby>新<rt>あたら</rt></ruby>しい<ruby>自転車<rt>じてんしゃ</rt></ruby>を<ruby>欲<rt>ほ</rt></ruby>しがっていて、<ruby>毎日<rt>まいにち</rt></ruby>それしか話さないんです。",
             "en": "He wants a new bicycle, and that's all he talks about every day."
           },
           {
@@ -1728,7 +1728,7 @@
           "Genki II Ch20",
           "Sou Matome Wk4"
         ],
-        "explain": "ところ pinpoints exactly where you are in an action's timeline. Dictionary form + ところ = right before it starts ('about to'): <ruby>今<rt>いま</rt></ruby>から出かけるところです. ている form + ところ = right in the middle of it ('in the middle of'): <ruby>今<rt>いま</rt></ruby>ご<ruby>飯<rt>はん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べているところです. た-form + ところ = the moment right after it finished ('just this instant'): <ruby>今<rt>いま</rt></ruby>ちょうど<ruby>終<rt>お</rt></ruby>わったところです. It's more precise and momentary than たばかり, which allows a looser, more subjective sense of recency.",
+        "explain": "ところ pinpoints exactly where you are in an action's timeline. Dictionary form + ところ = right before it starts ('about to'): <ruby>今<rt>いま</rt></ruby>から<ruby>出<rt>で</rt></ruby>かけるところです. ている form + ところ = right in the middle of it ('in the middle of'): <ruby>今<rt>いま</rt></ruby>ご<ruby>飯<rt>はん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べているところです. た-form + ところ = the moment right after it finished ('just this instant'): <ruby>今<rt>いま</rt></ruby>ちょうど<ruby>終<rt>お</rt></ruby>わったところです. It's more precise and momentary than たばかり, which allows a looser, more subjective sense of recency.",
         "formation": [
           "Verb (dictionary form) + ところ — about to",
           "Verb (ている form) + ところ — in the middle of",
@@ -1805,18 +1805,18 @@
         "conjugation": [
           {
             "label": "about to (plain non-past)",
-            "from": "書く",
-            "to": "書くところ"
+            "from": "<ruby>書<rt>か</rt></ruby>く",
+            "to": "<ruby>書<rt>か</rt></ruby>くところ"
           },
           {
             "label": "in the middle of (ている)",
-            "from": "書く",
-            "to": "書いているところ"
+            "from": "<ruby>書<rt>か</rt></ruby>く",
+            "to": "<ruby>書<rt>か</rt></ruby>いているところ"
           },
           {
             "label": "just finished (た-form)",
-            "from": "書く",
-            "to": "書いたところ"
+            "from": "<ruby>書<rt>か</rt></ruby>く",
+            "to": "<ruby>書<rt>か</rt></ruby>いたところ"
           }
         ]
       },
@@ -1829,7 +1829,7 @@
           "Genki II Ch23",
           "Sou Matome Wk5"
         ],
-        "explain": "The imperative is the bluntest, most direct way to tell someone to do something — used between close male friends, in sports coaching, on warning signs, and in quoted speech. It's rarely something you need to produce yourself in polite conversation, but recognizing it is essential for reading manga, signs, and quoted dialogue. Godan verbs change their final u-sound to an e-sound (<ruby>行<rt>い</rt></ruby>く→行け, 話す→話せ); ichidan verbs drop る and add ろ (<ruby>食<rt>た</rt></ruby>べる→<ruby>食<rt>た</rt></ruby>べろ, 見る→見ろ); する→しろ and <ruby>来<rt>く</rt></ruby>る→来い are irregular. Adding な to the plain dictionary form makes a blunt negative command: <ruby>行<rt>い</rt></ruby>くな ('don't go!').",
+        "explain": "The imperative is the bluntest, most direct way to tell someone to do something — used between close male friends, in sports coaching, on warning signs, and in quoted speech. It's rarely something you need to produce yourself in polite conversation, but recognizing it is essential for reading manga, signs, and quoted dialogue. Godan verbs change their final u-sound to an e-sound (<ruby>行<rt>い</rt></ruby>く→行け, 話す→<ruby>話<rt>はな</rt></ruby>せ); ichidan verbs drop る and add ろ (<ruby>食<rt>た</rt></ruby>べる→<ruby>食<rt>た</rt></ruby>べろ, 見る→見ろ); する→しろ and <ruby>来<rt>く</rt></ruby>る→来い are irregular. Adding な to the plain dictionary form makes a blunt negative command: <ruby>行<rt>い</rt></ruby>くな ('don't go!').",
         "formation": [
           "Godan: final -u → -e (<ruby>行<rt>い</rt></ruby>く→行け, <ruby>待<rt>ま</rt></ruby>つ→<ruby>待<rt>ま</rt></ruby>て)",
           "Ichidan: drop る, add ろ (<ruby>食<rt>た</rt></ruby>べる→<ruby>食<rt>た</rt></ruby>べろ, 見る→見ろ)",
@@ -1863,7 +1863,7 @@
           },
           {
             "who": "A",
-            "jp": "そうですね。読めるようになりたいです。",
+            "jp": "そうですね。<ruby>読<rt>よ</rt></ruby>めるようになりたいです。",
             "en": "Right. I want to be able to read it."
           }
         ],
@@ -1907,7 +1907,7 @@
         "conjugation": [
           {
             "label": "Group 1 verb",
-            "from": "書く",
+            "from": "<ruby>書<rt>か</rt></ruby>く",
             "to": "書け"
           },
           {
@@ -1922,8 +1922,8 @@
           },
           {
             "label": "negative command",
-            "from": "書く",
-            "to": "書くな"
+            "from": "<ruby>書<rt>か</rt></ruby>く",
+            "to": "<ruby>書<rt>か</rt></ruby>くな"
           }
         ]
       },
@@ -2013,7 +2013,7 @@
         "conjugation": [
           {
             "label": "Group 1 verb",
-            "from": "書く",
+            "from": "<ruby>書<rt>か</rt></ruby>く",
             "to": "書かせてください"
           },
           {
@@ -2137,7 +2137,7 @@
         "ex": "Inside a noun-modifying clause the subject takes が, and the verb takes a plain form."
       },
       {
-        "q": "「あそこで<ruby>新聞<rt>しんぶん</rt></ruby>を読んでいる人は父です。」— what does 読んでいる modify?",
+        "q": "「あそこで<ruby>新聞<rt>しんぶん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>んでいる人は父です。」— what does <ruby>読<rt>よ</rt></ruby>んでいる modify?",
         "choices": [
           "人",
           "<ruby>新聞<rt>しんぶん</rt></ruby>",
@@ -2203,7 +2203,7 @@
         "ex": "〜たい drops い and takes がる for a third person: <ruby>遊<rt>あそ</rt></ruby>びたがる."
       },
       {
-        "q": "「<ruby>今<rt>いま</rt></ruby>、ちょうど<ruby>家<rt>いえ</rt></ruby>を出る＿＿です。」 (about to leave)",
+        "q": "「<ruby>今<rt>いま</rt></ruby>、ちょうど<ruby>家<rt>いえ</rt></ruby>を<ruby>出<rt>で</rt></ruby>る＿＿です。」 (about to leave)",
         "choices": [
           "ところ",
           "ばかり",
@@ -2310,7 +2310,7 @@
             "en": "The company president has already gone home."
           },
           {
-            "jp": "<ruby>先生<rt>せんせい</rt></ruby>は何時に来られますか。",
+            "jp": "<ruby>先生<rt>せんせい</rt></ruby>は<ruby>何時<rt>なんじ</rt></ruby>に<ruby>来<rt>こ</rt></ruby>られますか。",
             "en": "What time is the teacher coming? (light honorific)"
           },
           {
@@ -2467,7 +2467,7 @@
               "<ruby>拝見<rt>はいけん</rt></ruby>しました",
               "ご<ruby>覧<rt>らん</rt></ruby>になりました",
               "見られました",
-              "お見せしました"
+              "お<ruby>見<rt>み</rt></ruby>せしました"
             ],
             "a": 0,
             "ex": "<ruby>拝見<rt>はいけん</rt></ruby>する is the humble verb for viewing something belonging to a superior. ご<ruby>覧<rt>らん</rt></ruby>になる is honorific."
@@ -2535,7 +2535,7 @@
             "en": "Welcome. How many in your party?"
           },
           {
-            "jp": "<ruby>恐<rt>おそ</rt></ruby>れ入りますが、こちらにお名前をお書きください。",
+            "jp": "<ruby>恐<rt>おそ</rt></ruby>れ入りますが、こちらにお<ruby>名前<rt>なまえ</rt></ruby>をお書きください。",
             "en": "Sorry to trouble you, but please write your name here."
           },
           {
@@ -2615,7 +2615,7 @@
         "ex": "お＋stem＋する lowers your own action."
       },
       {
-        "q": "「<ruby>先生<rt>せんせい</rt></ruby>は何時に＿＿か。」 (honorific for <ruby>来<rt>く</rt></ruby>る)",
+        "q": "「<ruby>先生<rt>せんせい</rt></ruby>は<ruby>何時<rt>なんじ</rt></ruby>に＿＿か。」 (honorific for <ruby>来<rt>く</rt></ruby>る)",
         "choices": [
           "いらっしゃいます",
           "<ruby>参<rt>まい</rt></ruby>ります",
@@ -2674,7 +2674,7 @@
         "choices": [
           "<ruby>拝見<rt>はいけん</rt></ruby>しました",
           "ご<ruby>覧<rt>らん</rt></ruby>になりました",
-          "お見せしました",
+          "お<ruby>見<rt>み</rt></ruby>せしました",
           "<ruby>見<rt>み</rt></ruby>えました"
         ],
         "a": 0,

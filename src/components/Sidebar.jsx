@@ -10,6 +10,7 @@ const NAV = [
   { id: "reading", mk: "読", label: "Reading Lab" },
   { id: "kaiwa", mk: "話", label: "Kaiwa Lab" },
   { id: "quiz", mk: "力", label: "Quiz Center" },
+  { id: "exam", mk: "試", label: "Mock Exam" },
   { id: "mistakes", mk: "直", label: "Review Mistakes" },
   { id: "ai", mk: "練", label: "Renshuu with AI", soon: true },
 ];

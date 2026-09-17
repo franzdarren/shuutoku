@@ -469,6 +469,7 @@ main.content{ margin-left:272px; flex:1; min-width:0; padding:48px 48px 100px; d
    running text sits at --measure inside it, and that difference is the
    page's rhythm. */
 .section-inner{ width:100%; max-width:980px; min-width:0; }
+.section-loading{ color:var(--ink-faint); font-size:var(--fs-sm); padding:40px 0; }
 
 /* Cards that carry running text are sized to their text. Cards that carry
    a grid, a table or a row of controls take the full column. The page
@@ -695,6 +696,13 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
 .qchoice.incorrect::after{ content:"✕"; color:var(--shu); }
 .qchoice.disabled{ pointer-events:none; }
 .qchoice.disabled:not(.correct):not(.incorrect){ opacity:.5; }
+/* Mock exam only: your selection before any verdict is known. Marked with a
+   filled dot as well as the border, so it doesn't rely on colour alone. */
+.qchoice.picked{ border-color:var(--indigo); background:var(--indigo-tint); color:var(--ink); }
+.qchoice.picked::after{
+  content:"●"; position:absolute; top:50%; right:12px; transform:translateY(-50%);
+  color:var(--indigo); font-size:var(--fs-2xs); line-height:1;
+}
 .qexplain{
   font-size:var(--fs-sm); color:var(--ink-soft); margin-top:10px; padding:10px 0 0;
   border-top:1px solid var(--line-soft);
@@ -796,12 +804,22 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
    aren't: Grammar is the bulk of the work, Settings is a footnote.
    ============================================================ */
 .ovgrid{ display:grid; grid-template-columns:repeat(6, minmax(0,1fr)); gap:14px; margin-bottom:18px; }
+/* Each card is a shortcut into its section. The arrow slides in on hover
+   rather than sitting there permanently, so the resting grid stays quiet. */
 .ovcard{
   background:var(--paper-2); border:1px solid var(--line); border-radius:var(--radius);
   padding:18px 20px; display:flex; flex-direction:column; gap:6px; min-width:0;
-  box-shadow:var(--elev-1);
+  box-shadow:var(--elev-1); cursor:pointer; text-align:left;
+  transition:border-color var(--t-fast), box-shadow var(--t-fast);
 }
+.ovcard:hover, .ovcard:focus-visible{ border-color:var(--indigo); box-shadow:var(--elev-2); }
 .ovtitle{ display:flex; align-items:baseline; gap:10px; color:var(--ink); min-width:0; }
+.ovgo{
+  margin-left:auto; flex-shrink:0; color:var(--indigo); font-size:var(--fs-md);
+  opacity:0; transform:translateX(-4px);
+  transition:opacity var(--t-fast), transform var(--t-fast);
+}
+.ovcard:hover .ovgo, .ovcard:focus-visible .ovgo{ opacity:1; transform:translateX(0); }
 .ovmk{ font-family:var(--serif); font-size:var(--fs-xl); color:var(--gold); line-height:1; flex-shrink:0; }
 .ovname{ font-weight:700; font-size:var(--fs-md); }
 .ovcard p{ font-size:var(--fs-sm); color:var(--ink-soft); margin:0; }
@@ -1081,6 +1099,74 @@ footer.pagefoot{ margin-top:60px; padding-top:20px; border-top:1px solid var(--l
 .kanji-modal-sample-word{ font-family:var(--serif); font-size:var(--fs-base); color:var(--ink); }
 .kanji-modal-sample-reading{ color:var(--ink-faint); }
 .kanji-modal-credit{ font-size:var(--fs-3xs); color:var(--ink-faint); margin-top:16px; }
+
+/* ============================================================
+   MOCK EXAM
+   ============================================================ */
+.exam-start{ max-width:var(--measure-card); }
+.exam-blueprint{ list-style:none; margin:0 0 22px; padding:0; border-top:1px solid var(--line); }
+.exam-blueprint li{
+  display:flex; justify-content:space-between; align-items:baseline; gap:16px;
+  padding:11px 0; border-bottom:1px solid var(--line-soft); font-size:var(--fs-sm);
+}
+.exam-blueprint .eb-label{ color:var(--ink-soft); }
+.exam-blueprint .eb-count{ font-family:var(--serif); font-size:var(--fs-lg); color:var(--ink); font-variant-numeric:tabular-nums; }
+.exam-blueprint .eb-total .eb-label{ color:var(--ink); font-weight:700; }
+.exam-blueprint .eb-total .eb-count{ color:var(--gold); }
+
+.exam-go{
+  font-family:var(--sans); font-size:var(--fs-sm); font-weight:700;
+  background:var(--indigo); color:var(--on-accent); border:1px solid var(--indigo);
+  border-radius:var(--radius-pill); padding:11px 26px; cursor:pointer;
+  transition:background var(--t-fast), border-color var(--t-fast);
+}
+.exam-go:hover{ background:var(--indigo-deep); border-color:var(--indigo-deep); }
+.exam-go.armed{ background:var(--shu); border-color:var(--shu); }
+
+/* The clock has to stay reachable while you scroll a 35-question paper. */
+.exam-bar{
+  position:sticky; top:0; z-index:20;
+  display:flex; align-items:center; gap:14px; flex-wrap:wrap;
+  background:var(--paper-2); border:1px solid var(--line); border-radius:var(--radius);
+  padding:12px 18px; margin-bottom:24px; box-shadow:var(--elev-1);
+}
+.exam-clock{ font-family:var(--serif); font-size:var(--fs-2xl); color:var(--ink); line-height:1; font-variant-numeric:tabular-nums; }
+.exam-bar.urgent .exam-clock{ color:var(--shu); }
+.exam-count{ font-size:var(--fs-xs); color:var(--ink-faint); }
+.exam-bar .qc-reset{ margin-left:auto; padding:6px 14px; }
+.exam-score{ font-family:var(--serif); font-size:var(--fs-2xl); color:var(--gold); line-height:1; font-variant-numeric:tabular-nums; }
+.exam-pct{ font-size:var(--fs-sm); color:var(--ink-soft); }
+.exam-bar.finished{ border-color:var(--gold); }
+
+.exam-result{ max-width:var(--measure-card); margin-bottom:30px; }
+.exam-result-head{
+  font-size:var(--fs-2xs); letter-spacing:.1em; text-transform:uppercase;
+  color:var(--ink-faint); margin-bottom:12px;
+}
+.exam-row{ display:flex; align-items:center; gap:12px; margin-bottom:9px; font-size:var(--fs-sm); }
+.exam-row-label{ flex:0 0 190px; color:var(--ink-soft); min-width:0; }
+.exam-row-track{ flex:1; height:7px; background:var(--paper-3); border-radius:var(--radius-pill); overflow:hidden; min-width:0; }
+.exam-row-fill{ display:block; height:100%; background:var(--gold); border-radius:inherit; transition:width var(--dur-slow) var(--ease-out); }
+.exam-row-num{ flex-shrink:0; color:var(--ink); font-variant-numeric:tabular-nums; }
+.exam-note{ font-size:var(--fs-sm); color:var(--ink-faint); margin-top:16px; }
+
+.exam-list{ list-style:none; margin:0; padding:0; max-width:var(--measure-card); }
+.exam-q{ padding:20px 0; border-top:1px solid var(--line-soft); }
+.exam-q:first-child{ border-top:none; padding-top:0; }
+.exam-q-head{ display:flex; align-items:baseline; gap:10px; margin-bottom:10px; }
+.exam-q-num{
+  flex-shrink:0; font-family:var(--serif); font-size:var(--fs-lg); color:var(--gold);
+  line-height:1; font-variant-numeric:tabular-nums;
+}
+.exam-q-from{ font-size:var(--fs-3xs); letter-spacing:.06em; text-transform:uppercase; color:var(--ink-faint); min-width:0; }
+
+.exam-submit{ max-width:var(--measure-card); margin-top:28px; padding-top:22px; border-top:1px solid var(--line); }
+.exam-warn{ font-size:var(--fs-sm); color:var(--shu); margin:0 0 12px; }
+
+@media (max-width: 560px){
+  .exam-row-label{ flex-basis:120px; }
+  .exam-go{ width:100%; }
+}
 
 /* ============================================================
    RENSHUU WITH AI — coming-soon preview

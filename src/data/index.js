@@ -41,6 +41,13 @@ function stripTags(html) {
   return (html || "").replace(/<[^>]+>/g, "");
 }
 
+/** Display text: drops the furigana reading, then the tags. stripTags alone
+ *  leaves the <rt> contents behind and yields 友達ともだち. Search haystacks
+ *  deliberately keep stripTags instead, so typing a reading finds the word. */
+function stripReadings(html) {
+  return (html || "").replace(/<rt>.*?<\/rt>/g, "").replace(/<[^>]+>/g, "");
+}
+
 /** Every quiz question in the whole handbook, each with a stable id and a
  *  human-readable label for where it lives — the shared lookup the Review
  *  Mistakes page uses to find your wrong answers regardless of section. */
@@ -83,7 +90,7 @@ export function buildSearchIndex() {
   const idx = [];
   grammarModules.forEach((m, mi) => {
     m.points.forEach((pt, pi) => {
-      const title = stripTags(pt.jp);
+      const title = stripReadings(pt.jp);
       const subtitle = pt.romaji || pt.fn || "";
       idx.push({
         type: "grammar",
@@ -91,7 +98,7 @@ export function buildSearchIndex() {
         pi,
         title,
         subtitle,
-        haystack: [title, pt.romaji, pt.fn, stripTags(pt.explain)].join(" ").toLowerCase(),
+        haystack: [stripTags(pt.jp), pt.romaji, pt.fn, stripTags(pt.explain)].join(" ").toLowerCase(),
       });
     });
   });
@@ -102,6 +109,43 @@ export function buildSearchIndex() {
       title: k.kj,
       subtitle: k.meaning,
       haystack: [k.kj, k.on, k.kun, k.meaning].join(" ").toLowerCase(),
+    });
+  });
+  // Scenario scripts and phrase-bank entries, so searching a phrase you half
+  // remember lands on the script it came from rather than finding nothing.
+  kaiwaScenarios.forEach((sc, index) => {
+    const title = stripReadings(sc.jp);
+    idx.push({
+      type: "kaiwa",
+      view: "scenarios",
+      index,
+      category: sc.category,
+      title,
+      subtitle: sc.en,
+      haystack: [title, sc.en, sc.setup, ...(sc.keyPhrases || []).flatMap((p) => [stripTags(p.jp), p.en])].join(" ").toLowerCase(),
+    });
+  });
+  phraseBank.forEach((g, group) => {
+    g.items.forEach((p) => {
+      const title = stripReadings(p.jp);
+      idx.push({
+        type: "kaiwa",
+        view: "phrases",
+        group,
+        title,
+        subtitle: p.en + " · " + g.catEn,
+        haystack: [title, p.en, g.cat, g.catEn].join(" ").toLowerCase(),
+      });
+    });
+  });
+  readingPassages.forEach((p, index) => {
+    const title = stripReadings(p.title);
+    idx.push({
+      type: "reading",
+      index,
+      title,
+      subtitle: p.titleEn,
+      haystack: [title, p.titleEn, stripTags(p.text), p.gloss].join(" ").toLowerCase(),
     });
   });
   return idx;

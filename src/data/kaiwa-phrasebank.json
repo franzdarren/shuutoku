@@ -36,11 +36,11 @@
         "en": "Sorry to intrude (entering someone's home)"
       },
       {
-        "jp": "お名前は何ですか",
+        "jp": "お<ruby>名前<rt>なまえ</rt></ruby>は何ですか",
         "en": "What's your name?"
       },
       {
-        "jp": "どちらから来ましたか",
+        "jp": "どちらから<ruby>来<rt>き</rt></ruby>ましたか",
         "en": "Where are you from?"
       }
     ]
@@ -170,7 +170,7 @@
         "en": "How do you say it in Japanese?"
       },
       {
-        "jp": "書いてもらえますか",
+        "jp": "<ruby>書<rt>か</rt></ruby>いてもらえますか",
         "en": "Could you write it down?"
       },
       {
@@ -388,11 +388,11 @@
     "catEn": "Time & plans",
     "items": [
       {
-        "jp": "何時からですか",
+        "jp": "<ruby>何時<rt>なんじ</rt></ruby>からですか",
         "en": "What time does it start?"
       },
       {
-        "jp": "何時までですか",
+        "jp": "<ruby>何時<rt>なんじ</rt></ruby>までですか",
         "en": "Until what time is it open?"
       },
       {
@@ -400,7 +400,7 @@
         "en": "When works for you?"
       },
       {
-        "jp": "何時に<ruby>会<rt>あ</rt></ruby>いましょうか",
+        "jp": "<ruby>何時<rt>なんじ</rt></ruby>に<ruby>会<rt>あ</rt></ruby>いましょうか",
         "en": "What time shall we meet?"
       },
       {
@@ -492,7 +492,7 @@
         "en": "The ~ won't work"
       },
       {
-        "jp": "お湯が出ません",
+        "jp": "お湯が<ruby>出<rt>で</rt></ruby>ません",
         "en": "There's no hot water"
       },
       {

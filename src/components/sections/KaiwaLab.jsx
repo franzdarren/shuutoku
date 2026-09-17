@@ -29,7 +29,7 @@ const scenariosWithIndex = kaiwaScenarios.map((sc, i) => ({ sc, i }));
 const NAV_ITEMS = CATEGORIES.map((c) => ({ label: c.jp }));
 const PB_NAV_ITEMS = phraseBank.map((g) => ({ label: g.cat }));
 
-export default function KaiwaLab({ isActive }) {
+export default function KaiwaLab({ isActive, jumpTarget }) {
   const [view, setView] = useState("phrases");
   const [activeCat, setActiveCat] = useState(CATEGORIES[0].id);
   const [activeGroup, setActiveGroup] = useState(0);
@@ -58,6 +58,20 @@ export default function KaiwaLab({ isActive }) {
     setActiveGroup(i);
     document.getElementById("pb-" + i)?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
+
+  /* A search result is either a scenario ({view:"scenarios", index, category})
+     or a phrase-bank entry ({view:"phrases", group}). Either way the view and
+     the category have to be switched before the anchor exists, so the scroll
+     waits a frame for the new view to render. */
+  useEffect(() => {
+    if (!jumpTarget) return;
+    setView(jumpTarget.view);
+    if (jumpTarget.view === "scenarios" && jumpTarget.category) setActiveCat(jumpTarget.category);
+    const id = jumpTarget.view === "phrases" ? "pb-" + jumpTarget.group : "sc-" + jumpTarget.index;
+    requestAnimationFrame(() => {
+      setTimeout(() => document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" }), 60);
+    });
+  }, [jumpTarget]);
 
   // Keeps the floating nav in step with the phrase group you've scrolled to.
   useEffect(() => {
