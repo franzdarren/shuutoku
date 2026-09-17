@@ -3910,8 +3910,8 @@
             "a": 1,
             "ex": "ことがある always attaches to the past/た-form of the verb, regardless of when you're asking.",
             "why": [
-              null,
               "ことがある always pairs with the past/た-form, regardless of the overall question's tense — plain <ruby>食<rt>た</rt></ruby>べる doesn't fit.",
+              null,
               "<ruby>食<rt>た</rt></ruby>べて (て-form) isn't the form ことがある attaches to.",
               "<ruby>食<rt>た</rt></ruby>べます (polite non-past) also doesn't fit — the fixed pattern needs plain past."
             ]
@@ -4119,10 +4119,11 @@
           "Genki II Ch1",
           "Sou Matome Wk2"
         ],
-        "explain": "Describes how easy or difficult an action is by nature, becoming a new い-adjective built onto the verb stem. This is genuinely useful for giving feedback and opinions — この<ruby>靴<rt>くつ</rt></ruby>は<ruby>歩<rt>ある</rt></ruby>きやすいです (these shoes are easy to walk in), この<ruby>漢字<rt>かんじ</rt></ruby>は<ruby>覚<rt>おぼ</rt></ruby>えにくいです (this kanji is hard to remember).",
+        "explain": "Describes how easy or difficult an action is by nature, becoming a new い-adjective built onto the verb stem. This is genuinely useful for giving feedback and opinions — この<ruby>靴<rt>くつ</rt></ruby>は<ruby>歩<rt>ある</rt></ruby>きやすいです (these shoes are easy to walk in), この<ruby>漢字<rt>かんじ</rt></ruby>は<ruby>覚<rt>おぼ</rt></ruby>えにくいです (this kanji is hard to remember). A third ending, 〜づらい, is close to 〜にくい but focuses on the difficulty being felt by the speaker — <ruby>言<rt>い</rt></ruby>いづらい is \"hard for me to bring myself to say\", where <ruby>言<rt>い</rt></ruby>いにくい is more neutrally \"hard to say\".",
         "formation": [
           "Verb (ます-stem) + やすいです／にくいです",
-          "<ruby>歩<rt>ある</rt></ruby>く → <ruby>歩<rt>ある</rt></ruby>きやすい／<ruby>歩<rt>ある</rt></ruby>きにくい"
+          "<ruby>歩<rt>ある</rt></ruby>く → <ruby>歩<rt>ある</rt></ruby>きやすい／<ruby>歩<rt>ある</rt></ruby>きにくい",
+          "Verb (ます-stem) + づらい <span class='arrow'>=</span> hard to bring yourself to do"
         ],
         "examples": [
           {
@@ -4156,6 +4157,10 @@
           {
             "jp": "この<ruby>説明<rt>せつめい</rt></ruby>は<ruby>分<rt>わ</rt></ruby>かりにくいです。",
             "en": "This explanation is hard to follow."
+          },
+          {
+            "jp": "それは<ruby>言<rt>い</rt></ruby>いづらいことですね。",
+            "en": "That's a hard thing to bring yourself to say."
           }
         ],
         "quiz": [
@@ -4379,6 +4384,464 @@
               null,
               "てもいい grants permission — unrelated to comparisons."
             ]
+          }
+        ]
+      },
+      {
+        "jp": "あまり〜ない／なかなか〜ない／<ruby>全然<rt>ぜんぜん</rt></ruby>〜ない",
+        "romaji": "amari ~nai / nakanaka ~nai / zenzen ~nai",
+        "fn": "Adverbs that must be finished with a negative",
+        "sources": [
+          "MNN Bk1 L8, Bk2 L35",
+          "Genki I Ch9",
+          "Sou Matome Wk6"
+        ],
+        "explain": "A small set of adverbs only works with a negative ending, and the exam likes checking whether you notice. あまり〜ない = not very, not much. なかなか〜ない = not easily, and it carries \"even though I'm trying\". <ruby>全然<rt>ぜんぜん</rt></ruby>〜ない = not at all. Leaving the verb positive is the classic slip: あまり<ruby>高<rt>たか</rt></ruby>いです is wrong, あまり<ruby>高<rt>たか</rt></ruby>くないです is right. Spot the adverb and the ending is already decided for you.",
+        "formation": [
+          "あまり + negative <span class='arrow'>=</span> not very, not much",
+          "なかなか + negative <span class='arrow'>=</span> not easily, despite the effort",
+          "<ruby>全然<rt>ぜんぜん</rt></ruby> + negative <span class='arrow'>=</span> not at all"
+        ],
+        "examples": [
+          {
+            "jp": "この<ruby>店<rt>みせ</rt></ruby>はあまり<ruby>高<rt>たか</rt></ruby>くないです。",
+            "en": "This shop isn't very expensive."
+          },
+          {
+            "jp": "<ruby>漢字<rt>かんじ</rt></ruby>がなかなか<ruby>覚<rt>おぼ</rt></ruby>えられません。",
+            "en": "I just can't seem to memorise kanji."
+          },
+          {
+            "jp": "その<ruby>話<rt>はなし</rt></ruby>は<ruby>全然<rt>ぜんぜん</rt></ruby><ruby>知<rt>し</rt></ruby>りませんでした。",
+            "en": "I didn't know about that at all."
+          },
+          {
+            "jp": "バスがなかなか<ruby>来<rt>き</rt></ruby>ませんね。",
+            "en": "The bus really isn't coming, is it."
+          },
+          {
+            "jp": "<ruby>昨日<rt>きのう</rt></ruby>はあまり<ruby>寝<rt>ね</rt></ruby>ていません。",
+            "en": "I didn't sleep much last night."
+          }
+        ],
+        "dialogue": [
+          {
+            "who": "A",
+            "jp": "<ruby>新<rt>あたら</rt></ruby>しい<ruby>仕事<rt>しごと</rt></ruby>はどうですか。",
+            "en": "How's the new job?"
+          },
+          {
+            "who": "B",
+            "jp": "<ruby>忙<rt>いそが</rt></ruby>しくて、なかなか<ruby>休<rt>やす</rt></ruby>めません。",
+            "en": "So busy I can hardly take a break."
+          },
+          {
+            "who": "A",
+            "jp": "<ruby>大変<rt>たいへん</rt></ruby>ですね。<ruby>日本語<rt>にほんご</rt></ruby>は<ruby>使<rt>つか</rt></ruby>いますか。",
+            "en": "That sounds tough. Do you use Japanese?"
+          },
+          {
+            "who": "B",
+            "jp": "いいえ、あまり<ruby>使<rt>つか</rt></ruby>いません。",
+            "en": "No, not much."
+          }
+        ],
+        "tip": "All three demand a negative ending. If the sentence finishes positive, the adverb is the wrong one.",
+        "quiz": [
+          {
+            "q": "「この<ruby>本<rt>ほん</rt></ruby>は＿＿おもしろくないです。」",
+            "choices": [
+              "あまり",
+              "とても",
+              "ぜひ",
+              "きっと"
+            ],
+            "a": 0,
+            "ex": "あまり pairs with a negative ending, which the sentence already has.",
+            "why": [
+              null,
+              "とても has to be followed by a positive — とてもおもしろいです.",
+              "ぜひ belongs with requests and invitations, not with describing a book.",
+              "きっと expresses confidence about something and takes a positive."
+            ]
+          },
+          {
+            "q": "「<ruby>毎日<rt>まいにち</rt></ruby><ruby>練習<rt>れんしゅう</rt></ruby>していますが、＿＿<ruby>上手<rt>じょうず</rt></ruby>になりません。」",
+            "choices": [
+              "なかなか",
+              "もう",
+              "すぐ",
+              "やっと"
+            ],
+            "a": 0,
+            "ex": "なかなか〜ない = no progress despite trying, which is exactly the situation described.",
+            "why": [
+              null,
+              "もう means 'already' and doesn't carry the 'despite trying' sense.",
+              "すぐ means 'immediately'.",
+              "やっと means 'finally' and needs a positive result after it."
+            ]
+          }
+        ],
+        "conjugation": [
+          {
+            "label": "not very",
+            "from": "<ruby>高<rt>たか</rt></ruby>いです",
+            "to": "あまり<ruby>高<rt>たか</rt></ruby>くないです"
+          },
+          {
+            "label": "not easily",
+            "from": "<ruby>覚<rt>おぼ</rt></ruby>えられます",
+            "to": "なかなか<ruby>覚<rt>おぼ</rt></ruby>えられません"
+          },
+          {
+            "label": "not at all",
+            "from": "<ruby>知<rt>し</rt></ruby>っています",
+            "to": "<ruby>全然<rt>ぜんぜん</rt></ruby><ruby>知<rt>し</rt></ruby>りません"
+          }
+        ]
+      },
+      {
+        "jp": "きっと・やっと・ぜひ・さすが",
+        "romaji": "kitto / yatto / zehi / sasuga",
+        "fn": "Stance adverbs that colour the whole sentence",
+        "sources": [
+          "MNN Bk2 L32, L44",
+          "Genki II Ch17",
+          "Sou Matome Wk6"
+        ],
+        "explain": "Four adverbs that turn up constantly and are tested on feel rather than form. きっと = surely, I'm confident it will happen. やっと = finally, after a long wait, with relief attached. ぜひ = by all means, and it belongs with invitations and requests rather than predictions. さすが = as you'd expect from someone that good, which makes it a compliment. Picking between them is about what the speaker is doing, not about conjugation.",
+        "formation": [
+          "きっと + a confident prediction ・ きっと<ruby>来<rt>き</rt></ruby>ます",
+          "やっと + something reached after effort ・ やっと<ruby>終<rt>お</rt></ruby>わりました",
+          "ぜひ + an invitation or request ・ ぜひ<ruby>来<rt>き</rt></ruby>てください",
+          "さすが + praise ・ さすがですね"
+        ],
+        "examples": [
+          {
+            "jp": "<ruby>彼<rt>かれ</rt></ruby>はきっと<ruby>来<rt>き</rt></ruby>ますよ。<ruby>約束<rt>やくそく</rt></ruby>しましたから。",
+            "en": "He'll definitely come — he promised."
+          },
+          {
+            "jp": "<ruby>長<rt>なが</rt></ruby>い<ruby>試験<rt>しけん</rt></ruby>がやっと<ruby>終<rt>お</rt></ruby>わりました。",
+            "en": "The long exam is finally over."
+          },
+          {
+            "jp": "ぜひ<ruby>一度<rt>いちど</rt></ruby>、<ruby>京都<rt>きょうと</rt></ruby>に<ruby>来<rt>き</rt></ruby>てください。",
+            "en": "Please do come to Kyoto sometime."
+          },
+          {
+            "jp": "さすが、プロは<ruby>違<rt>ちが</rt></ruby>いますね。",
+            "en": "Just as you'd expect — professionals really are different."
+          },
+          {
+            "jp": "やっと<ruby>日本語<rt>にほんご</rt></ruby>で<ruby>電話<rt>でんわ</rt></ruby>ができるようになりました。",
+            "en": "I've finally become able to make phone calls in Japanese."
+          }
+        ],
+        "dialogue": [
+          {
+            "who": "A",
+            "jp": "<ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>しの<ruby>準備<rt>じゅんび</rt></ruby>、<ruby>終<rt>お</rt></ruby>わりましたか。",
+            "en": "Have you finished getting ready for the move?"
+          },
+          {
+            "who": "B",
+            "jp": "ええ、やっと<ruby>終<rt>お</rt></ruby>わりました。",
+            "en": "Yes — finally done."
+          },
+          {
+            "who": "A",
+            "jp": "お<ruby>疲<rt>つか</rt></ruby>れさまでした。<ruby>新<rt>あたら</rt></ruby>しい<ruby>家<rt>いえ</rt></ruby>、ぜひ<ruby>見<rt>み</rt></ruby>せてください。",
+            "en": "Well done. Do show me the new place."
+          },
+          {
+            "who": "B",
+            "jp": "もちろん。きっと<ruby>気<rt>き</rt></ruby>に<ruby>入<rt>い</rt></ruby>ると<ruby>思<rt>おも</rt></ruby>いますよ。",
+            "en": "Of course. I'm sure you'll like it."
+          }
+        ],
+        "tip": "ぜひ goes with requests and invitations — it can't be used to predict what will happen. That's きっと's job.",
+        "quiz": [
+          {
+            "q": "「＿＿<ruby>一度<rt>いちど</rt></ruby>、うちに<ruby>遊<rt>あそ</rt></ruby>びに<ruby>来<rt>き</rt></ruby>てください。」",
+            "choices": [
+              "ぜひ",
+              "きっと",
+              "やっと",
+              "さすが"
+            ],
+            "a": 0,
+            "ex": "ぜひ is the adverb that strengthens an invitation or a request.",
+            "why": [
+              null,
+              "きっと predicts what will happen; it doesn't strengthen an invitation.",
+              "やっと means 'finally', which doesn't fit an invitation.",
+              "さすが is a compliment about someone's ability."
+            ]
+          },
+          {
+            "q": "「<ruby>三時間<rt>さんじかん</rt></ruby><ruby>待<rt>ま</rt></ruby>って、＿＿バスが<ruby>来<rt>き</rt></ruby>ました。」",
+            "choices": [
+              "やっと",
+              "きっと",
+              "ぜひ",
+              "あまり"
+            ],
+            "a": 0,
+            "ex": "やっと = at long last, after the wait — and it takes a positive result.",
+            "why": [
+              null,
+              "きっと is about confidence in a prediction, not relief that a wait has ended.",
+              "ぜひ belongs with requests and invitations.",
+              "あまり requires a negative ending."
+            ]
+          }
+        ],
+        "conjugation": [
+          {
+            "label": "confident",
+            "from": "surely",
+            "to": "きっと<ruby>来<rt>き</rt></ruby>ます"
+          },
+          {
+            "label": "at last",
+            "from": "finally",
+            "to": "やっと<ruby>終<rt>お</rt></ruby>わりました"
+          },
+          {
+            "label": "urging",
+            "from": "by all means",
+            "to": "ぜひ<ruby>来<rt>き</rt></ruby>てください"
+          }
+        ]
+      },
+      {
+        "jp": "〜<ruby>頃<rt>ころ</rt></ruby>／〜おきに",
+        "romaji": "~koro (goro) / ~oki ni",
+        "fn": "Approximate time vs. regular intervals",
+        "sources": [
+          "MNN Bk1 L5, Bk2 L40",
+          "Genki I Ch10",
+          "Sou Matome Wk6"
+        ],
+        "explain": "<ruby>頃<rt>ころ</rt></ruby> — read ごろ when it follows a clock time — means \"around, about then\": <ruby>三時<rt>さんじ</rt></ruby>ごろ, <ruby>子<rt>こ</rt></ruby>どもの<ruby>頃<rt>ころ</rt></ruby>. おきに means \"at intervals of\", with that gap between each one: <ruby>十分<rt>じゅっぷん</rt></ruby>おきに = every ten minutes. Two traps worth remembering: ごろ attaches to a point in time and takes no に after it, and ごろ is for points in time while ぐらい is for amounts and durations.",
+        "formation": [
+          "Time + ごろ <span class='arrow'>=</span> at about that time ・ <ruby>七時<rt>しちじ</rt></ruby>ごろ (no に)",
+          "Noun + の + <ruby>頃<rt>ころ</rt></ruby> ・ Verb (plain) + <ruby>頃<rt>ころ</rt></ruby> ・ <ruby>子<rt>こ</rt></ruby>どもの<ruby>頃<rt>ころ</rt></ruby>",
+          "Interval + おきに <span class='arrow'>=</span> every ~, with that gap ・ <ruby>五分<rt>ごふん</rt></ruby>おきに",
+          "ごろ = a point in time ・ ぐらい = an amount or a length"
+        ],
+        "examples": [
+          {
+            "jp": "<ruby>七時<rt>しちじ</rt></ruby>ごろ<ruby>駅<rt>えき</rt></ruby>で<ruby>会<rt>あ</rt></ruby>いましょう。",
+            "en": "Let's meet at the station around seven."
+          },
+          {
+            "jp": "<ruby>子<rt>こ</rt></ruby>どもの<ruby>頃<rt>ころ</rt></ruby>、よくこの<ruby>公園<rt>こうえん</rt></ruby>で<ruby>遊<rt>あそ</rt></ruby>びました。",
+            "en": "When I was a child I often played in this park."
+          },
+          {
+            "jp": "このバスは<ruby>十分<rt>じゅっぷん</rt></ruby>おきに<ruby>来<rt>き</rt></ruby>ます。",
+            "en": "This bus comes every ten minutes."
+          },
+          {
+            "jp": "<ruby>薬<rt>くすり</rt></ruby>は<ruby>六時間<rt>ろくじかん</rt></ruby>おきに<ruby>飲<rt>の</rt></ruby>んでください。",
+            "en": "Please take the medicine every six hours."
+          },
+          {
+            "jp": "<ruby>春<rt>はる</rt></ruby>になる<ruby>頃<rt>ころ</rt></ruby>、また<ruby>来<rt>き</rt></ruby>ます。",
+            "en": "I'll come again around the time spring arrives."
+          }
+        ],
+        "dialogue": [
+          {
+            "who": "A",
+            "jp": "<ruby>次<rt>つぎ</rt></ruby>のバスは<ruby>何時<rt>なんじ</rt></ruby>ごろ<ruby>来<rt>き</rt></ruby>ますか。",
+            "en": "About what time does the next bus come?"
+          },
+          {
+            "who": "B",
+            "jp": "<ruby>十五分<rt>じゅうごふん</rt></ruby>おきですから、もうすぐ<ruby>来<rt>き</rt></ruby>ますよ。",
+            "en": "They run every fifteen minutes, so it'll be along soon."
+          },
+          {
+            "who": "A",
+            "jp": "よかった。<ruby>急<rt>いそ</rt></ruby>いでいるんです。",
+            "en": "Good — I'm in a hurry."
+          },
+          {
+            "who": "B",
+            "jp": "<ruby>急<rt>いそ</rt></ruby>ぐなら、タクシーもありますよ。",
+            "en": "If you're in a hurry, there are taxis too."
+          }
+        ],
+        "tip": "ごろ goes with a point in time and takes no に. ぐらい goes with an amount or a length instead.",
+        "quiz": [
+          {
+            "q": "「<ruby>明日<rt>あした</rt></ruby>の<ruby>朝<rt>あさ</rt></ruby>、<ruby>八時<rt>はちじ</rt></ruby>＿＿<ruby>迎<rt>むか</rt></ruby>えに<ruby>行<rt>い</rt></ruby>きます。」",
+            "choices": [
+              "ごろ",
+              "ぐらい",
+              "おきに",
+              "までに"
+            ],
+            "a": 0,
+            "ex": "ごろ marks an approximate point on the clock.",
+            "why": [
+              null,
+              "ぐらい measures an amount or a length of time, not a point on the clock.",
+              "おきに means 'at intervals of', which doesn't fit a single pick-up time.",
+              "までに would turn it into a deadline rather than an approximate time."
+            ]
+          },
+          {
+            "q": "「この<ruby>電車<rt>でんしゃ</rt></ruby>は<ruby>五分<rt>ごふん</rt></ruby>＿＿<ruby>出<rt>で</rt></ruby>ます。」",
+            "choices": [
+              "おきに",
+              "ごろ",
+              "までに",
+              "ほど"
+            ],
+            "a": 0,
+            "ex": "おきに = at intervals of five minutes.",
+            "why": [
+              null,
+              "ごろ marks an approximate point in time, not a repeating interval.",
+              "までに sets a deadline.",
+              "ほど expresses extent or comparison."
+            ]
+          }
+        ],
+        "conjugation": [
+          {
+            "label": "clock time",
+            "from": "<ruby>七時<rt>しちじ</rt></ruby>",
+            "to": "<ruby>七時<rt>しちじ</rt></ruby>ごろ"
+          },
+          {
+            "label": "period",
+            "from": "<ruby>子<rt>こ</rt></ruby>ども",
+            "to": "<ruby>子<rt>こ</rt></ruby>どもの<ruby>頃<rt>ころ</rt></ruby>"
+          },
+          {
+            "label": "interval",
+            "from": "<ruby>十分<rt>じゅっぷん</rt></ruby>",
+            "to": "<ruby>十分<rt>じゅっぷん</rt></ruby>おきに"
+          }
+        ]
+      },
+      {
+        "jp": "〜がする／〜って",
+        "romaji": "~ga suru / ~tte",
+        "fn": "Sensing something / casual quotation",
+        "sources": [
+          "MNN Bk2 L41, L44",
+          "Genki II Ch20",
+          "Sou Matome Wk6"
+        ],
+        "explain": "がする is how Japanese reports something picked up through the senses: <ruby>音<rt>おと</rt></ruby>がする (there's a sound), においがする (there's a smell), <ruby>味<rt>あじ</rt></ruby>がする (it tastes of). The sound or smell is the subject doing する — you don't <ruby>聞<rt>き</rt></ruby>く it. Separately, って is the casual spoken stand-in for と and という: <ruby>明日<rt>あした</rt></ruby><ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>るって (I hear it'll rain), and it can replace は as a topic marker in speech. Keep って out of writing and polite conversation.",
+        "formation": [
+          "Noun + がする <span class='arrow'>=</span> there's a sound / smell / taste / feeling",
+          "Plain form + って <span class='arrow'>=</span> casual 〜と<ruby>言<rt>い</rt></ruby>っていた or 〜そうだ",
+          "Noun + って <span class='arrow'>=</span> casual replacement for は or という"
+        ],
+        "examples": [
+          {
+            "jp": "<ruby>台所<rt>だいどころ</rt></ruby>から<ruby>変<rt>へん</rt></ruby>な<ruby>音<rt>おと</rt></ruby>がします。",
+            "en": "There's a strange sound coming from the kitchen."
+          },
+          {
+            "jp": "このスープ、カレーの<ruby>味<rt>あじ</rt></ruby>がしますね。",
+            "en": "This soup tastes of curry, doesn't it."
+          },
+          {
+            "jp": "<ruby>何<rt>なに</rt></ruby>かが<ruby>焦<rt>こ</rt></ruby>げたにおいがする。",
+            "en": "There's a smell of something burnt."
+          },
+          {
+            "jp": "<ruby>明日<rt>あした</rt></ruby>は<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>るって。",
+            "en": "(I hear) it's going to rain tomorrow."
+          },
+          {
+            "jp": "<ruby>田中<rt>たなか</rt></ruby>さんって、<ruby>優<rt>やさ</rt></ruby>しい<ruby>人<rt>ひと</rt></ruby>ですね。",
+            "en": "Tanaka is a kind person, isn't he."
+          }
+        ],
+        "dialogue": [
+          {
+            "who": "A",
+            "jp": "ねえ、<ruby>何<rt>なに</rt></ruby>か<ruby>音<rt>おと</rt></ruby>がしない？",
+            "en": "Hey, don't you hear something?"
+          },
+          {
+            "who": "B",
+            "jp": "<ruby>本当<rt>ほんとう</rt></ruby>だ。<ruby>外<rt>そと</rt></ruby>からだね。",
+            "en": "You're right. It's from outside."
+          },
+          {
+            "who": "A",
+            "jp": "<ruby>隣<rt>となり</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>が<ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>すって<ruby>聞<rt>き</rt></ruby>いたよ。",
+            "en": "I heard the neighbour's moving out."
+          },
+          {
+            "who": "B",
+            "jp": "ああ、それかもしれない。",
+            "en": "Ah — that might be it."
+          }
+        ],
+        "tip": "って is casual speech only. In writing or polite conversation use と or という instead.",
+        "quiz": [
+          {
+            "q": "「<ruby>台所<rt>だいどころ</rt></ruby>から、いいにおい＿＿しますね。」",
+            "choices": [
+              "が",
+              "を",
+              "に",
+              "で"
+            ],
+            "a": 0,
+            "ex": "においがする — the smell is the subject doing する.",
+            "why": [
+              null,
+              "を would make the smell the object of an action, but する here isn't something you perform.",
+              "に marks a destination or a point in time.",
+              "で marks a means or the location of an activity."
+            ]
+          },
+          {
+            "q": "「<ruby>山田<rt>やまだ</rt></ruby>さん、<ruby>来<rt>こ</rt></ruby>られない＿＿<ruby>言<rt>い</rt></ruby>っていました。」",
+            "choices": [
+              "って",
+              "のに",
+              "ので",
+              "でも"
+            ],
+            "a": 0,
+            "ex": "って is the casual stand-in for と when quoting what somebody said.",
+            "why": [
+              null,
+              "のに marks an unexpected contrast, not a quotation.",
+              "ので gives a reason.",
+              "でも means 'even' or 'but' and can't introduce a quote."
+            ]
+          }
+        ],
+        "conjugation": [
+          {
+            "label": "sound",
+            "from": "<ruby>音<rt>おと</rt></ruby>",
+            "to": "<ruby>音<rt>おと</rt></ruby>がする"
+          },
+          {
+            "label": "smell",
+            "from": "におい",
+            "to": "においがする"
+          },
+          {
+            "label": "casual quote",
+            "from": "<ruby>降<rt>ふ</rt></ruby>ると<ruby>言<rt>い</rt></ruby>っていた",
+            "to": "<ruby>降<rt>ふ</rt></ruby>るって"
           }
         ]
       }

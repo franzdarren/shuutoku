@@ -15,7 +15,9 @@ const getCheckId = (item) => item._cid;
 // titles — 三 sits in a Mincho heading the way 3 never will. Display only;
 // the data keeps plain integers.
 const KANJI_NUM = ["〇", "一", "二", "三", "四", "五", "六", "七", "八", "九", "十"];
-const kanjiNum = (n) => KANJI_NUM[n] ?? String(n);
+// 11–19 are written 十 + the unit digit (十一, 十二 …), which is as far as the
+// module list is ever going to need to count.
+const kanjiNum = (n) => (n <= 10 ? KANJI_NUM[n] : n < 20 ? "十" + KANJI_NUM[n - 10] : String(n)) ?? String(n);
 
 function GrammarCard({ mod, mi, pt, pi }) {
   const accent = "var(--" + mod.accent + ")";
