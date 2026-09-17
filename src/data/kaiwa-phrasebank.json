@@ -146,7 +146,7 @@
     ]
   },
   {
-    "cat": "<ruby>聞<rt>き</rt></ruby>き<ruby>返<rt>かえ</rt></ruby>す",
+    "cat": "聞き返す",
     "catEn": "When you didn't catch it",
     "items": [
       {
@@ -158,7 +158,7 @@
         "en": "Please speak slowly"
       },
       {
-        "jp": "すみません、<ruby>聞<rt>き</rt></ruby>こえませんでした",
+        "jp": "すみません、聞こえませんでした",
         "en": "Sorry, I couldn't hear you"
       },
       {
@@ -166,7 +166,7 @@
         "en": "What does that mean?"
       },
       {
-        "jp": "<ruby>日本語<rt>にほんご</rt></ruby>で<ruby>何<rt>なん</rt></ruby>と<ruby>言<rt>い</rt></ruby>いますか",
+        "jp": "<ruby>日本語<rt>にほんご</rt></ruby>で何と<ruby>言<rt>い</rt></ruby>いますか",
         "en": "How do you say it in Japanese?"
       },
       {
@@ -192,7 +192,7 @@
     ]
   },
   {
-    "cat": "お<ruby>願<rt>ねが</rt></ruby>いする",
+    "cat": "お願いする",
     "catEn": "Making requests",
     "items": [
       {
@@ -284,7 +284,7 @@
     ]
   },
   {
-    "cat": "<ruby>店<rt>みせ</rt></ruby>・レストランで",
+    "cat": "店・レストランで",
     "catEn": "Shops & restaurants",
     "items": [
       {
@@ -312,7 +312,7 @@
         "en": "Can I pay by card?"
       },
       {
-        "jp": "<ruby>別<rt>べつ</rt></ruby>々でお<ruby>願<rt>ねが</rt></ruby>いします",
+        "jp": "別々でお<ruby>願<rt>ねが</rt></ruby>いします",
         "en": "Separate bills, please"
       },
       {
@@ -338,7 +338,7 @@
     ]
   },
   {
-    "cat": "移動・<ruby>道<rt>みち</rt></ruby>",
+    "cat": "移動・道",
     "catEn": "Getting around",
     "items": [
       {
@@ -374,7 +374,7 @@
         "en": "I'll get off here"
       },
       {
-        "jp": "<ruby>道<rt>みち</rt></ruby>に<ruby>迷<rt>まよ</rt></ruby>いました",
+        "jp": "<ruby>道<rt>みち</rt></ruby>に迷いました",
         "en": "I'm lost"
       },
       {
@@ -384,7 +384,7 @@
     ]
   },
   {
-    "cat": "<ruby>時間<rt>じかん</rt></ruby>・<ruby>予定<rt>よてい</rt></ruby>",
+    "cat": "時間・予定",
     "catEn": "Time & plans",
     "items": [
       {
@@ -408,7 +408,7 @@
         "en": "Do you have plans?"
       },
       {
-        "jp": "<ruby>今週末<rt>こんしゅうまつ</rt></ruby>は<ruby>空<rt>そら</rt></ruby>いています",
+        "jp": "<ruby>今週末<rt>こんしゅうまつ</rt></ruby>は空いています",
         "en": "I'm free this weekend"
       },
       {
@@ -416,7 +416,7 @@
         "en": "I'll be a little late"
       },
       {
-        "jp": "<ruby>間<rt>ま</rt></ruby>に<ruby>合<rt>あ</rt></ruby>いますか",
+        "jp": "間に<ruby>合<rt>あ</rt></ruby>いますか",
         "en": "Will we make it in time?"
       },
       {
@@ -430,7 +430,7 @@
     ]
   },
   {
-    "cat": "気持ちを<ruby>伝<rt>つた</rt></ruby>える",
+    "cat": "気持ちを伝える",
     "catEn": "Feelings & opinions",
     "items": [
       {
@@ -492,7 +492,7 @@
         "en": "The ~ won't work"
       },
       {
-        "jp": "お<ruby>湯<rt>ゆ</rt></ruby>が<ruby>出<rt>で</rt></ruby>ません",
+        "jp": "お湯が出ません",
         "en": "There's no hot water"
       },
       {
@@ -516,13 +516,13 @@
         "en": "Where is a hospital?"
       },
       {
-        "jp": "<ruby>助<rt>たす</rt></ruby>けてください",
+        "jp": "助けてください",
         "en": "Please help me"
       }
     ]
   },
   {
-    "cat": "あやまる・お<ruby>礼<rt>れい</rt></ruby>",
+    "cat": "あやまる・お礼",
     "catEn": "Apologies & thanks",
     "items": [
       {
@@ -534,7 +534,7 @@
         "en": "I'm sorry (personal, warmer)"
       },
       {
-        "jp": "<ruby>申<rt>もう</rt></ruby>し<ruby>訳<rt>わけ</rt></ruby>ありません",
+        "jp": "<ruby>申<rt>もう</rt></ruby>し訳ありません",
         "en": "I deeply apologise (formal)"
       },
       {
@@ -568,7 +568,7 @@
     ]
   },
   {
-    "cat": "<ruby>別<rt>べつ</rt></ruby>れのあいさつ",
+    "cat": "別れのあいさつ",
     "catEn": "Wrapping up & goodbyes",
     "items": [
       {
@@ -614,7 +614,7 @@
     ]
   },
   {
-    "cat": "<ruby>話<rt>はな</rt></ruby>を広げる",
+    "cat": "話を広げる",
     "catEn": "Steering & extending the conversation",
     "items": [
       {

@@ -169,8 +169,15 @@ function ModuleProgress({ mi }) {
 // module still shows all its points together on one page (that grouping
 // solves "too long to scroll"); the floating nav is a separate, finer-
 // grained way to jump straight to one specific point/lesson by name.
+/* The floating nav renders its labels as plain text, but a point's title
+   carries inline <ruby> furigana for the card — drop the reading, then the
+   tags, or the markup shows up verbatim in the nav. */
+function plainTitle(html) {
+  return (html || "").replace(/<rt>.*?<\/rt>/g, "").replace(/<[^>]+>/g, "");
+}
+
 const ALL_POINTS = grammarModules.flatMap((m, mi) =>
-  m.points.map((pt, pi) => ({ mi, pi, jp: pt.jp, group: m.num + ". " + m.jpTitle }))
+  m.points.map((pt, pi) => ({ mi, pi, jp: plainTitle(pt.jp), group: m.num + ". " + m.jpTitle }))
 );
 const NAV_ITEMS = ALL_POINTS.map((p) => ({ label: p.jp, group: p.group }));
 

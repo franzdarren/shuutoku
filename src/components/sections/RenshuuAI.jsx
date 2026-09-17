@@ -21,10 +21,29 @@ export default function RenshuuAI() {
           <div className="dline side-b">
             <div className="speaker">わたし</div>
             <div className="dtext">
-              <div className="jp-row"><span className="jp"><ruby>二人<rt>ふたり</rt></ruby>です。</span></div>
-              <div className="en">Two people.</div>
+              <div className="jp-row"><span className="jp"><ruby>二人<rt>ふたり</rt></ruby>です。<ruby>禁煙席<rt>きんえんせき</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いします。</span></div>
+              <div className="en">Two people. A non-smoking table, please.</div>
             </div>
           </div>
+
+          {/* Correction rides alongside the turn it's about rather than
+              waiting for a score at the end — the point is to notice the
+              fix while the sentence is still in your head. */}
+          <div className="dline side-b fb">
+            <div className="speaker">なおし · correction</div>
+            <div className="dtext">
+              <div className="fb-row">
+                <span className="fb-mark fb-was">was</span>
+                <span className="jp"><ruby>禁煙席<rt>きんえんせき</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いします</span>
+              </div>
+              <div className="fb-row">
+                <span className="fb-mark fb-try">try</span>
+                <span className="jp"><ruby>禁煙席<rt>きんえんせき</rt></ruby>はありますか</span>
+              </div>
+              <div className="en">Both are correct. But asking <i>is there one?</i> is what people actually say on the way in — お願いします assumes the answer is yes.</div>
+            </div>
+          </div>
+
           <div className="dline side-a">
             <div className="speaker">友達AI</div>
             <div className="dtext">

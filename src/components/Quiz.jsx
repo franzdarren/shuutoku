@@ -93,7 +93,10 @@ function QuizItem({ qid, item, contentId }) {
                 return (
                   <li key={idx}>
                     <span className="jp-lookup" dangerouslySetInnerHTML={{ __html: c }} />
-                    {" — " + item.why[idx]}
+                    {" — "}
+                    {/* why quotes Japanese inline, so it carries furigana
+                        markup like every other explanation field here. */}
+                    <span className="jp-lookup" dangerouslySetInnerHTML={{ __html: item.why[idx] }} />
                   </li>
                 );
               })}

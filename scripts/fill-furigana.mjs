@@ -80,15 +80,28 @@ for (const [base, reading] of Object.entries(SUPPLEMENT)) {
 }
 const bases = [...map.keys()].sort((a, b) => b.length - a.length);
 
+/* Kanji whose reading turns on what comes BEFORE them, which okurigana can't
+ * see. 間 is the cautionary case: the corpus only ever glossed it inside
+ * 間に合う(まにあう), so "one reading in the corpus" looked unambiguous and
+ * spread ま across every 〜間に, where it is あいだ. Counters and bound nouns
+ * have the same problem (人 ひと/にん/じん, 日 ひ/にち/か). None of these is
+ * ever auto-glossed as a lone character; only as part of a known compound. */
+const CONTEXT_BOUND = new Set([
+  ..."間人日中方目分生気時年月上下元手口家物事者心力水火木金土空田本回先後前内外大小多少何",
+  ..."一二三四五六七八九十百千万円個本冊枚台回番号点度才歳",
+]);
+
 /* A single kanji's reading is decided by the okurigana after it — 食べます is
  * た, 食事 is しょく. So single characters get a second map keyed by the kana
- * that follow them, harvested the same way and held to the same one-reading
- * rule: 降りそ is ふ 9 times and お once, so it stays out. Keys are stored at
- * 0, 1 and 2 kana of context independently and matched longest-first. */
+ * that follow them, held to the same one-reading rule: 降りそ is ふ 9 times
+ * and お once, so it stays out. At least one kana of context is required —
+ * a zero-context key is just "this kanji, anywhere", which is exactly the
+ * blunt instrument that mis-read 間. */
 const ctxReadings = new Map();
 for (const [, text] of sources) {
-  for (const m of text.matchAll(/<ruby>([一-鿿])<rt>([^<]*)<\/rt><\/ruby>([぀-ゟ]{0,2})/g)) {
-    for (let n = 0; n <= m[3].length; n++) {
+  for (const m of text.matchAll(/<ruby>([一-鿿])<rt>([^<]*)<\/rt><\/ruby>([぀-ゟ]{1,2})/g)) {
+    if (CONTEXT_BOUND.has(m[1])) continue;
+    for (let n = 1; n <= m[3].length; n++) {
       const key = m[1] + "|" + m[3].slice(0, n);
       if (!ctxReadings.has(key)) ctxReadings.set(key, new Set());
       ctxReadings.get(key).add(m[2]);
@@ -113,10 +126,11 @@ function segment(run, trailing = "") {
       }
     }
     // Only the run's last character is followed by the okurigana; anything
-    // earlier butts against the next kanji, so it gets no context.
+    // earlier butts against the next kanji, so it has no context and can't
+    // be resolved as a lone character at all.
     const okuri = i === run.length - 1 ? trailing : "";
     let reading;
-    for (let n = okuri.length; n >= 0 && reading === undefined; n--) {
+    for (let n = okuri.length; n >= 1 && reading === undefined; n--) {
       reading = ctxMap.get(run[i] + "|" + okuri.slice(0, n));
     }
     if (reading === undefined) return null;
@@ -127,6 +141,7 @@ function segment(run, trailing = "") {
 }
 
 const skipped = new Map();
+const applied = new Map();
 let glossed = 0;
 
 function fillSegment(text) {
@@ -141,6 +156,8 @@ function fillSegment(text) {
       return whole;
     }
     glossed += parts.length;
+    const key = parts[0].base + "｜" + parts[0].reading + (trailing ? "  (+" + trailing + ")" : "");
+    applied.set(key, (applied.get(key) || 0) + 1);
     return parts.map((p) => `<ruby>${p.base}<rt>${p.reading}</rt></ruby>`).join("") + trailing;
   });
 }
@@ -174,6 +191,19 @@ for (const [run, parts] of multi) {
   console.log(`   ${run.padEnd(10)} => ${parts.map((p) => p.base + "(" + p.reading + ")").join(" + ")}`);
 }
 console.log("");
+
+/* Every distinct word→reading this pass applies, for eyeballing. The point
+ * is that this list is short enough to actually read: the heuristic decides
+ * what to propose, a human still decides whether it's right. */
+if (process.argv.includes("--list")) {
+  const singles = [...applied].filter(([k]) => [...k.split("｜")[0]].length === 1).sort();
+  const compounds = [...applied].filter(([k]) => [...k.split("｜")[0]].length > 1).sort();
+  console.log(`single characters resolved by okurigana (${singles.length}):`);
+  singles.forEach(([k, n]) => console.log(`   ${k.padEnd(26)} ×${n}`));
+  console.log(`\ncompounds (${compounds.length}):`);
+  compounds.forEach(([k, n]) => console.log(`   ${k.padEnd(26)} ×${n}`));
+  console.log("");
+}
 
 const skippedList = [...skipped].sort((a, b) => b[1] - a[1]);
 console.log(`map: ${map.size} unambiguous compounds harvested from existing ruby`);

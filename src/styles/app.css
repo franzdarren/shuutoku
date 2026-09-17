@@ -7,9 +7,13 @@
   /* Surfaces & ink — warm washi paper, layered light → dark.
      OKLCH throughout: light and dark are the same hues at different
      lightness, so a tweak to one mode doesn't drift the other's hue. */
-  --paper: oklch(93.7% 0.014 89);
-  --paper-2: oklch(89.9% 0.019 86);
-  --paper-3: oklch(86.6% 0.025 86);
+  /* Chroma here was 0.014–0.025 at hue 86, which is far enough into yellow
+     that large areas of it read as tan rather than as paper. Roughly halved
+     and nudged toward 106, so the warmth survives as a tint on an off-white
+     instead of colouring the whole screen brown. */
+  --paper: oklch(96.8% 0.005 106);
+  --paper-2: oklch(94% 0.007 106);
+  --paper-3: oklch(90.5% 0.009 106);
   --ink: oklch(25% 0.009 75);
   --ink-soft: oklch(45.4% 0.023 91);
   --ink-faint: oklch(61.5% 0.025 87);
@@ -25,8 +29,8 @@
   --matcha: oklch(54.6% 0.065 139);
   --matcha-tint: oklch(93.1% 0.017 137);
 
-  --line: oklch(85.1% 0.026 85);
-  --line-soft: oklch(89% 0.022 86);
+  --line: oklch(87.5% 0.010 106);
+  --line-soft: oklch(91.5% 0.008 106);
 
   /* Text sitting on a filled accent (active tabs, speaker chips, the
      mobile menu button). Same value in both modes — the accents are
@@ -38,6 +42,7 @@
   /* The toggle knob rides both an unfilled (--line) and a filled
      (--indigo) track, so it can't reuse --on-accent in dark mode. */
   --switch-knob: oklch(98% 0.008 89);
+
   /* Stroke-order diagrams are sourced externally as black ink on a
      transparent background — fixed and NOT redefined in dark mode, since
      black strokes on the dark paper would disappear otherwise. */
@@ -51,6 +56,16 @@
   --elev-1: 0 1px 2px rgba(40,32,16,.05), 0 2px 5px rgba(40,32,16,.04);
   --elev-2: 0 2px 6px rgba(40,32,16,.07), 0 8px 20px rgba(40,32,16,.06);
   --elev-3: 0 12px 34px rgba(40,32,16,.16);
+
+  /* Washi texture, drawn not downloaded: one fine-grained turbulence for the
+     fibre tooth and one very low-frequency turbulence for the soft cloudy
+     mottle real paper has. Both are desaturated and sit at ~5% opacity, so
+     they read as surface rather than as a pattern — the flatness was what
+     made a large field of one colour feel dead. Greyscale noise averages to
+     mid-tone, so the same tile darkens light paper and lifts dark paper, and
+     one token serves both modes. Turn it off by setting this to `none`. */
+  --paper-texture:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Cfilter id='mottle'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.016' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='260' height='260' filter='url(%23mottle)' opacity='0.055'/%3E%3Crect width='260' height='260' filter='url(%23grain)' opacity='0.045'/%3E%3C/svg%3E");
 
   --serif: "Shippori Mincho", serif;
   --sans: "Zen Kaku Gothic New", sans-serif;
@@ -99,9 +114,9 @@
   --t: var(--dur) var(--ease-out);
 }
 body.dark{
-  --paper: oklch(22.4% 0.009 75);
-  --paper-2: oklch(25.6% 0.007 48);
-  --paper-3: oklch(30.1% 0.011 67);
+  --paper: oklch(20.5% 0.005 106);
+  --paper-2: oklch(24% 0.006 106);
+  --paper-3: oklch(28.5% 0.008 106);
   --ink: oklch(92.7% 0.02 85);
   --ink-soft: oklch(78.5% 0.027 85);
   --ink-faint: oklch(59.2% 0.027 86);
@@ -114,8 +129,8 @@ body.dark{
   --shu-tint: oklch(30.9% 0.036 41);
   --matcha: oklch(76.2% 0.062 141);
   --matcha-tint: oklch(30.4% 0.033 140);
-  --line: oklch(37.1% 0.016 75);
-  --line-soft: oklch(31.1% 0.015 63);
+  --line: oklch(36% 0.009 106);
+  --line-soft: oklch(30% 0.008 106);
   /* The accents lighten in dark mode, so text on them flips to the
      dark paper rather than staying white. */
   --on-accent: oklch(18% 0.008 75);
@@ -127,6 +142,29 @@ body.dark{
   --elev-2: 0 2px 6px rgba(0,0,0,.34), 0 8px 20px rgba(0,0,0,.26);
   --elev-3: 0 12px 34px rgba(0,0,0,.5);
 }
+/* The two voices in a dialogue are separated by HUE, not by two shades of the
+   same paper — on a warm palette, a lighter brown beside a darker brown reads
+   as one voice. Them is cool (indigo), you is green (matcha), mixed from the
+   palette so each mode derives its own.
+ *
+ * These MUST be declared on `body`, not on `:root`. A custom property's
+ * var()s are substituted against the element it is declared on, and the dark
+ * palette is declared on `body.dark` — so a copy of these living on :root
+ * would resolve against the LIGHT palette and stay light-on-light in dark
+ * mode, i.e. invisible text in a pale bubble. Declared here, they see
+ * body.dark's own --indigo / --matcha / --paper-2 and flip with them. */
+body{
+  --bubble-them:      color-mix(in oklab, var(--indigo) 14%, var(--paper-2));
+  --bubble-them-edge: color-mix(in oklab, var(--indigo) 26%, var(--paper-2));
+  --bubble-you:       color-mix(in oklab, var(--matcha) 20%, var(--paper-2));
+  --bubble-you-edge:  color-mix(in oklab, var(--matcha) 34%, var(--paper-2));
+  /* Label ink is pulled toward --ink so it clears contrast at 10px — --ink is
+     dark on light paper and light on dark, so this always moves toward
+     legible rather than toward black. */
+  --bubble-them-ink:  color-mix(in oklab, var(--indigo) 72%, var(--ink));
+  --bubble-you-ink:   color-mix(in oklab, var(--matcha) 62%, var(--ink));
+}
+
 /* Japanese text style — Mincho (serif, default) is elegant but can be hard
    to read at small sizes; Gothic swaps every Japanese-text element over to
    the clearer sans-serif face by redefining the one token they all share. */
@@ -140,13 +178,17 @@ html, body{ overflow-x:clip; }
 html{scroll-behavior:smooth; font-size:calc(16px * var(--fs-scale));}
 body{
   margin:0;
-  background:var(--paper);
+  /* Texture layer over the paper colour. Fixed so it behaves like the sheet
+     the page is printed on rather than something scrolling with the text. */
+  background-color:var(--paper);
+  background-image:var(--paper-texture);
+  background-attachment:fixed;
   color:var(--ink);
   font-family:var(--sans);
   font-size:var(--fs-base);
   line-height:1.7;
   -webkit-font-smoothing:antialiased;
-  transition:background var(--t), color var(--t);
+  transition:background-color var(--t), color var(--t);
 }
 
 /* ============================================================
@@ -582,26 +624,31 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
 .dline:last-child{ margin-bottom:0; }
 .dline .speaker{
   font-size:var(--fs-3xs); letter-spacing:.09em; text-transform:uppercase;
-  color:var(--ink-faint); padding:0 4px;
+  color:var(--bubble-them-ink); padding:0 4px; font-weight:500;
 }
-.dline.side-b .speaker{ color:var(--accent, var(--indigo)); }
+.dline.side-b .speaker{ color:var(--bubble-you-ink); }
 .dline .dtext{
-  background:var(--paper-3);
-  border:1px solid transparent;
+  background:var(--bubble-them);
+  border:1px solid var(--bubble-them-edge);
   border-radius:var(--radius-lg) var(--radius-lg) var(--radius-lg) 5px;
   padding:9px 14px; min-width:0;
-  transition:border-color var(--t-fast);
+  transition:box-shadow var(--t-fast);
 }
 .dline.side-b .dtext{
-  background:color-mix(in oklab, var(--accent, var(--indigo)) 15%, var(--paper-2));
+  background:var(--bubble-you);
+  border-color:var(--bubble-you-edge);
   border-radius:var(--radius-lg) var(--radius-lg) 5px var(--radius-lg);
 }
-/* Read-all highlights the turn being spoken by outlining its bubble —
-   a background swap would fight the side tint that encodes the speaker. */
-.dline.speaking .dtext{ border-color:var(--accent, var(--indigo)); }
+/* Read-all highlights the turn being spoken with a ring in the card's own
+   module accent — a background swap would fight the side tint that encodes
+   the speaker, and the accent keeps the dialogue tied to its module. */
+.dline.speaking .dtext{ box-shadow:0 0 0 2px var(--accent, var(--indigo)); }
 .jp-row{ display:flex; align-items:baseline; flex-wrap:wrap; gap:8px; }
 .dline .dtext .jp{ font-family:var(--serif); font-size:var(--fs-base); line-height:1.9; }
-.dline .dtext .en{ font-size:var(--fs-xs); color:var(--ink-faint); margin-top:2px; }
+/* --ink-faint is tuned for plain paper; on a tinted bubble it drops to about
+   2.3:1 and the translation disappears. --ink-soft clears 4.5:1 on both
+   tints in both modes. */
+.dline .dtext .en{ font-size:var(--fs-xs); color:var(--ink-soft); margin-top:2px; }
 
 .speak-btn{
   flex-shrink:0; width:24px; height:24px; border-radius:50%;
@@ -612,8 +659,8 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
 }
 .speak-btn:hover{ border-color:var(--indigo); background:var(--indigo-tint); }
 .speak-btn.playing{ transform:scale(.88); border-color:var(--indigo); background:var(--indigo-tint); }
-.kaiwa-tip{ font-size:var(--fs-sm); color:var(--matcha); margin-top:12px; padding-top:12px; border-top:1px dashed var(--line); }
-.kaiwa-tip b{ color:var(--matcha); }
+.kaiwa-tip{ font-size:var(--fs-sm); color:var(--ink-soft); margin-top:12px; padding-top:12px; border-top:1px dashed var(--line); }
+.kaiwa-tip b{ color:var(--bubble-you-ink); }
 
 /* ============================================================
    QUIZ WIDGET
@@ -1051,6 +1098,25 @@ footer.pagefoot{ margin-top:60px; padding-top:20px; border-top:1px solid var(--l
 .soon-spec{ margin-bottom:26px; }
 .soon-spec .dlabel{ margin-bottom:12px; }
 .soon-spec .dline{ margin-bottom:12px; }
+/* Correction attaches to the turn above it — same side as your own bubble,
+   dashed and gold so it reads as a margin note on what you just said rather
+   than as another person joining the conversation. */
+.dline.fb{ margin-top:-8px; }
+.dline.fb .speaker{ color:var(--gold); }
+.dline.fb .dtext{
+  background:var(--gold-tint); border:1px dashed var(--gold);
+  display:flex; flex-direction:column; gap:5px;
+}
+.fb-row{ display:flex; align-items:baseline; gap:9px; flex-wrap:wrap; min-width:0; }
+.fb-mark{
+  flex-shrink:0; font-size:var(--fs-3xs); letter-spacing:.08em; text-transform:uppercase;
+  border-radius:var(--radius-pill); padding:1px 8px; border:1px solid currentColor;
+}
+.fb-was{ color:var(--ink-faint); }
+.fb-try{ color:var(--matcha); }
+.dline.fb .fb-was ~ .jp{ color:var(--ink-soft); text-decoration:line-through; text-decoration-color:var(--gold); }
+.dline.fb .en{ margin-top:3px; }
+
 .soon-spec .ai-note{
   display:block; font-family:var(--sans); font-size:var(--fs-2xs);
   color:var(--ink-faint); margin-top:4px;

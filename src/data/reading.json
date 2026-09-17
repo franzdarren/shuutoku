@@ -3,7 +3,7 @@
     "title": "<ruby>日記<rt>にっき</rt></ruby> — <ruby>週末<rt>しゅうまつ</rt></ruby>の<ruby>旅行<rt>りょこう</rt></ruby>",
     "titleEn": "Diary — a weekend trip",
     "text": "<ruby>土曜日<rt>どようび</rt></ruby>に<ruby>友達<rt>ともだち</rt></ruby>と<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>京都<rt>きょうと</rt></ruby>に<ruby>旅行<rt>りょこう</rt></ruby>に<ruby>行<rt>い</rt></ruby>った。<ruby>朝<rt>あさ</rt></ruby><ruby>早<rt>はや</rt></ruby>く<ruby>起<rt>お</rt></ruby>きて、<ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>った。<ruby>京都<rt>きょうと</rt></ruby><ruby>駅<rt>えき</rt></ruby>に<ruby>着<rt>つ</rt></ruby>いたら、すごく<ruby>人<rt>ひと</rt></ruby>が<ruby>多<rt>おお</rt></ruby>かった。まず<ruby>清水寺<rt>きよみずでら</rt></ruby>に<ruby>行<rt>い</rt></ruby>くことにした。<ruby>坂<rt>さか</rt></ruby>を<ruby>歩<rt>ある</rt></ruby>いていたら、<ruby>小<rt>ちい</rt></ruby>さいお<ruby>店<rt>みせ</rt></ruby>がたくさんあって、お<ruby>土産<rt>みやげ</rt></ruby>を<ruby>買<rt>か</rt></ruby>った。\n\nお<ruby>昼<rt>ひる</rt></ruby>はうどんを<ruby>食<rt>た</rt></ruby>べた。とてもおいしかったので、また<ruby>来<rt>き</rt></ruby>たいと<ruby>思<rt>おも</rt></ruby>う。<ruby>午後<rt>ごご</rt></ruby>は<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>りそうだったので、<ruby>早<rt>はや</rt></ruby>めにホテルに<ruby>戻<rt>もど</rt></ruby>った。<ruby>友達<rt>ともだち</rt></ruby>は「<ruby>今度<rt>こんど</rt></ruby>は<ruby>紅葉<rt>こうよう</rt></ruby>の<ruby>季節<rt>きせつ</rt></ruby>に<ruby>行<rt>い</rt></ruby>ってみたい」と<ruby>言<rt>い</rt></ruby>っていた。わたしも<ruby>本当<rt>ほんとう</rt></ruby>にそう<ruby>思<rt>おも</rt></ruby>う。",
-    "gloss": "<ruby>旅行<rt>りょこう</rt></ruby> (りょこう) trip ・ <ruby>着<rt>き</rt></ruby>く (つく) to arrive ・ <ruby>清水寺<rt>きよみずでら</rt></ruby> (きよみずでら) Kiyomizu Temple ・ <ruby>坂<rt>さか</rt></ruby> (さか) slope ・ お<ruby>土産<rt>みやげ</rt></ruby> (おみやげ) souvenir ・ <ruby>早<rt>はや</rt></ruby>めに (はやめに) ahead of time, early ・ <ruby>戻<rt>もど</rt></ruby>る (もどる) to return ・ <ruby>紅葉<rt>こうよう</rt></ruby> (こうよう) autumn leaves ・ <ruby>季節<rt>きせつ</rt></ruby> (きせつ) season",
+    "gloss": "<ruby>旅行<rt>りょこう</rt></ruby> (りょこう) trip ・ <ruby>着<rt>き</rt></ruby>く (つく) to arrive ・ <ruby>清水寺<rt>きよみずでら</rt></ruby> (きよみずでら) Kiyomizu Temple ・ 坂 (さか) slope ・ お<ruby>土産<rt>みやげ</rt></ruby> (おみやげ) souvenir ・ <ruby>早<rt>はや</rt></ruby>めに (はやめに) ahead of time, early ・ 戻る (もどる) to return ・ <ruby>紅葉<rt>こうよう</rt></ruby> (こうよう) autumn leaves ・ <ruby>季節<rt>きせつ</rt></ruby> (きせつ) season",
     "quiz": [
       {
         "q": "なぜ<ruby>早<rt>はや</rt></ruby>めにホテルに<ruby>戻<rt>もど</rt></ruby>りましたか。",
@@ -43,10 +43,10 @@
       { "jp": "<ruby>旅行<rt>りょこう</rt></ruby>", "reading": "りょこう", "en": "trip" },
       { "jp": "<ruby>着<rt>き</rt></ruby>く", "reading": "つく", "en": "to arrive" },
       { "jp": "<ruby>清水寺<rt>きよみずでら</rt></ruby>", "reading": "きよみずでら", "en": "Kiyomizu Temple" },
-      { "jp": "<ruby>坂<rt>さか</rt></ruby>", "reading": "さか", "en": "slope" },
+      { "jp": "坂", "reading": "さか", "en": "slope" },
       { "jp": "お<ruby>土産<rt>みやげ</rt></ruby>", "reading": "おみやげ", "en": "souvenir" },
       { "jp": "<ruby>早<rt>はや</rt></ruby>めに", "reading": "はやめに", "en": "ahead of time, early" },
-      { "jp": "<ruby>戻<rt>もど</rt></ruby>る", "reading": "もどる", "en": "to return" },
+      { "jp": "戻る", "reading": "もどる", "en": "to return" },
       { "jp": "<ruby>紅葉<rt>こうよう</rt></ruby>", "reading": "こうよう", "en": "autumn leaves" },
       { "jp": "<ruby>季節<rt>きせつ</rt></ruby>", "reading": "きせつ", "en": "season" }
     ]
@@ -104,7 +104,7 @@
     "title": "メール — <ruby>週末<rt>しゅうまつ</rt></ruby>の<ruby>予定<rt>よてい</rt></ruby>",
     "titleEn": "Email — weekend plans",
     "text": "ゆきちゃんへ\n\n<ruby>元気<rt>げんき</rt></ruby>？<ruby>今週末<rt>こんしゅうまつ</rt></ruby>、<ruby>時間<rt>じかん</rt></ruby>があったら、<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>映画<rt>えいが</rt></ruby>を<ruby>見<rt>み</rt></ruby>に<ruby>行<rt>い</rt></ruby>かない？<ruby>新<rt>あたら</rt></ruby>しい<ruby>映画<rt>えいが</rt></ruby>がとても<ruby>面白<rt>おもしろ</rt></ruby>いらしいよ。もしゆきちゃんが<ruby>忙<rt>いそが</rt></ruby>しいなら、<ruby>来週<rt>らいしゅう</rt></ruby>でもいいよ。\n\nあ、それから、<ruby>前<rt>まえ</rt></ruby>に<ruby>話<rt>はな</rt></ruby>していたラーメン<ruby>屋<rt>や</rt></ruby>、<ruby>行<rt>い</rt></ruby>ってみたい。<ruby>友達<rt>ともだち</rt></ruby>が「あそこのラーメンはすごくおいしい」と<ruby>言<rt>い</rt></ruby>っていた。ゆきちゃんが<ruby>好<rt>す</rt></ruby>きなら、<ruby>映画<rt>えいが</rt></ruby>のあとで<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>行<rt>い</rt></ruby>こう。\n\n<ruby>返事<rt>へんじ</rt></ruby>、<ruby>待<rt>ま</rt></ruby>ってるね！\n\nみほ",
-    "gloss": "らしい apparently, I heard ・ なら if (reacting to a topic) ・ <ruby>前<rt>まえ</rt></ruby>に (まえに) previously, before ・ <ruby>返事<rt>へんじ</rt></ruby> (へんじ) reply",
+    "gloss": "らしい apparently, I heard ・ なら if (reacting to a topic) ・ 前に (まえに) previously, before ・ <ruby>返事<rt>へんじ</rt></ruby> (へんじ) reply",
     "quiz": [
       {
         "q": "<ruby>新<rt>あたら</rt></ruby>しい<ruby>映画<rt>えいが</rt></ruby>について、みほさんは<ruby>何<rt>なん</rt></ruby>と<ruby>言<rt>い</rt></ruby>っていますか。",
@@ -143,14 +143,14 @@
     "vocab": [
       { "jp": "らしい", "reading": "", "en": "apparently, I heard" },
       { "jp": "なら", "reading": "", "en": "if (reacting to a topic)" },
-      { "jp": "<ruby>前<rt>まえ</rt></ruby>に", "reading": "まえに", "en": "previously, before" },
+      { "jp": "前に", "reading": "まえに", "en": "previously, before" },
       { "jp": "<ruby>返事<rt>へんじ</rt></ruby>", "reading": "へんじ", "en": "reply" }
     ]
   },
   {
     "title": "お知らせ — <ruby>店<rt>みせ</rt></ruby>の<ruby>休<rt>やす</rt></ruby>みと<ruby>割引<rt>わりびき</rt></ruby>",
     "titleEn": "Notice — shop closure & discount",
-    "text": "お客様へ\n\nいつもご<ruby>利用<rt>りよう</rt></ruby>ありがとうございます。<ruby>店内<rt>てんない</rt></ruby>の<ruby>工事<rt>こうじ</rt></ruby>のため、<ruby>下記<rt>かき</rt></ruby>の<ruby>期間<rt>きかん</rt></ruby>はお<ruby>休<rt>やす</rt></ruby>みさせていただきます。\n\n<ruby>休<rt>やす</rt></ruby>み：12<ruby>月<rt>がつ</rt></ruby>3日（<ruby>水<rt>すい</rt></ruby>）〜12<ruby>月<rt>がつ</rt></ruby>5日（金）\n\n12<ruby>月<rt>がつ</rt></ruby>6日（土）から、<ruby>新<rt>あたら</rt></ruby>しくなった<ruby>店<rt>みせ</rt></ruby>でまたお<ruby>待<rt>ま</rt></ruby>ちしております。なお、<ruby>再開<rt>さいかい</rt></ruby>の<ruby>日<rt>にち</rt></ruby>から一<ruby>週間<rt>しゅうかん</rt></ruby>、すべての<ruby>商品<rt>しょうひん</rt></ruby>が10％<ruby>割引<rt>わりびき</rt></ruby>になります。カードをお<ruby>持<rt>も</rt></ruby>ちの<ruby>方<rt>かた</rt></ruby>は、さらに5％お<ruby>安<rt>やす</rt></ruby>くなります。\n\nご<ruby>不便<rt>ふべん</rt></ruby>をおかけしますが、よろしくお<ruby>願<rt>ねが</rt></ruby>いいたします。",
+    "text": "お客様へ\n\nいつもご<ruby>利用<rt>りよう</rt></ruby>ありがとうございます。<ruby>店内<rt>てんない</rt></ruby>の<ruby>工事<rt>こうじ</rt></ruby>のため、<ruby>下記<rt>かき</rt></ruby>の<ruby>期間<rt>きかん</rt></ruby>はお<ruby>休<rt>やす</rt></ruby>みさせていただきます。\n\n<ruby>休<rt>やす</rt></ruby>み：12月3日（水）〜12月5日（金）\n\n12月6日（土）から、<ruby>新<rt>あたら</rt></ruby>しくなった<ruby>店<rt>みせ</rt></ruby>でまたお<ruby>待<rt>ま</rt></ruby>ちしております。なお、<ruby>再開<rt>さいかい</rt></ruby>の日から一<ruby>週間<rt>しゅうかん</rt></ruby>、すべての<ruby>商品<rt>しょうひん</rt></ruby>が10％<ruby>割引<rt>わりびき</rt></ruby>になります。カードをお<ruby>持<rt>も</rt></ruby>ちの方は、さらに5％お<ruby>安<rt>やす</rt></ruby>くなります。\n\nご<ruby>不便<rt>ふべん</rt></ruby>をおかけしますが、よろしくお<ruby>願<rt>ねが</rt></ruby>いいたします。",
     "gloss": "<ruby>工事<rt>こうじ</rt></ruby> (こうじ) construction ・ <ruby>期間<rt>きかん</rt></ruby> (きかん) period ・ <ruby>再開<rt>さいかい</rt></ruby> (さいかい) reopening ・ <ruby>商品<rt>しょうひん</rt></ruby> (しょうひん) goods ・ <ruby>割引<rt>わりびき</rt></ruby> (わりびき) discount ・ なお moreover, in addition ・ さらに further, even more ・ <ruby>不便<rt>ふべん</rt></ruby> (ふべん) inconvenience",
     "quiz": [
       {
@@ -284,7 +284,7 @@
     "title": "<ruby>日記<rt>にっき</rt></ruby> — <ruby>初<rt>はじ</rt></ruby>めての<ruby>面接<rt>めんせつ</rt></ruby>",
     "titleEn": "Diary — a first interview",
     "text": "<ruby>今日<rt>きょう</rt></ruby>はアルバイトの<ruby>面接<rt>めんせつ</rt></ruby>だった。<ruby>朝<rt>あさ</rt></ruby>から<ruby>緊張<rt>きんちょう</rt></ruby>していて、ご<ruby>飯<rt>はん</rt></ruby>があまり<ruby>食<rt>た</rt></ruby>べられなかった。<ruby>早<rt>はや</rt></ruby>く<ruby>家<rt>いえ</rt></ruby>を<ruby>出<rt>で</rt></ruby>たのに、<ruby>電車<rt>でんしゃ</rt></ruby>が<ruby>遅<rt>おく</rt></ruby>れて、ぎりぎり<ruby>間<rt>ま</rt></ruby>に<ruby>合<rt>あ</rt></ruby>った。\n\n<ruby>店長<rt>てんちょう</rt></ruby>は<ruby>優<rt>やさ</rt></ruby>しい<ruby>人<rt>ひと</rt></ruby>で、ゆっくり<ruby>話<rt>はな</rt></ruby>してくれた。<ruby>週<rt>しゅう</rt></ruby>に<ruby>何日<rt>なんにち</rt></ruby><ruby>働<rt>はたら</rt></ruby>けるか<ruby>聞<rt>き</rt></ruby>かれたので、三日と<ruby>答<rt>こた</rt></ruby>えた。<ruby>敬語<rt>けいご</rt></ruby>を<ruby>使<rt>つか</rt></ruby>うのは<ruby>難<rt>むずか</rt></ruby>しかったが、<ruby>言<rt>い</rt></ruby>いたいことは<ruby>全部<rt>ぜんぶ</rt></ruby><ruby>言<rt>い</rt></ruby>えたと<ruby>思<rt>おも</rt></ruby>う。\n\n<ruby>来週<rt>らいしゅう</rt></ruby><ruby>連絡<rt>れんらく</rt></ruby>をくれるそうだ。だめだったら<ruby>残念<rt>ざんねん</rt></ruby>だけど、<ruby>今日<rt>きょう</rt></ruby>は<ruby>練習<rt>れんしゅう</rt></ruby>になったから、それだけでもよかったと<ruby>思<rt>おも</rt></ruby>う。",
-    "gloss": "<ruby>面接<rt>めんせつ</rt></ruby> (めんせつ) interview ・ <ruby>緊張<rt>きんちょう</rt></ruby>する (きんちょうする) to be nervous ・ ぎりぎり just barely ・ <ruby>間<rt>ま</rt></ruby>に<ruby>合<rt>あ</rt></ruby>う (まにあう) to make it in time ・ <ruby>店長<rt>てんちょう</rt></ruby> (てんちょう) shop manager ・ <ruby>敬語<rt>けいご</rt></ruby> (けいご) polite/honorific language ・ だめ no good ・ <ruby>残念<rt>ざんねん</rt></ruby> (ざんねん) a shame",
+    "gloss": "<ruby>面接<rt>めんせつ</rt></ruby> (めんせつ) interview ・ <ruby>緊張<rt>きんちょう</rt></ruby>する (きんちょうする) to be nervous ・ ぎりぎり just barely ・ 間に<ruby>合<rt>あ</rt></ruby>う (まにあう) to make it in time ・ <ruby>店長<rt>てんちょう</rt></ruby> (てんちょう) shop manager ・ <ruby>敬語<rt>けいご</rt></ruby> (けいご) polite/honorific language ・ だめ no good ・ <ruby>残念<rt>ざんねん</rt></ruby> (ざんねん) a shame",
     "quiz": [
       {
         "q": "なぜ<ruby>朝<rt>あさ</rt></ruby>ご<ruby>飯<rt>はん</rt></ruby>があまり<ruby>食<rt>た</rt></ruby>べられませんでしたか。",
@@ -346,7 +346,7 @@
       { "jp": "<ruby>面接<rt>めんせつ</rt></ruby>", "reading": "めんせつ", "en": "interview" },
       { "jp": "<ruby>緊張<rt>きんちょう</rt></ruby>する", "reading": "きんちょうする", "en": "to be nervous" },
       { "jp": "ぎりぎり", "reading": "", "en": "just barely" },
-      { "jp": "<ruby>間<rt>ま</rt></ruby>に<ruby>合<rt>あ</rt></ruby>う", "reading": "まにあう", "en": "to make it in time" },
+      { "jp": "間に<ruby>合<rt>あ</rt></ruby>う", "reading": "まにあう", "en": "to make it in time" },
       { "jp": "<ruby>店長<rt>てんちょう</rt></ruby>", "reading": "てんちょう", "en": "shop manager" },
       { "jp": "<ruby>敬語<rt>けいご</rt></ruby>", "reading": "けいご", "en": "polite/honorific language" },
       { "jp": "だめ", "reading": "", "en": "no good" },
