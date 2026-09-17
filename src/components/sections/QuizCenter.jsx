@@ -1,24 +1,16 @@
 import { useState } from "react";
 import { finalPool, countQuizPool } from "../../data/index.js";
 import { useQuiz } from "../../context/QuizContext.jsx";
-import { drawSample, shuffled } from "../../lib/quiz.js";
+import { drawFreshSample } from "../../lib/quiz.js";
 import Quiz from "../Quiz.jsx";
 
 const getPoolId = (item) => item._pid;
 
 /** Draws 10 questions you haven't already answered in Quiz Center before,
  *  so "New random set" never repeats something you've seen (right or
- *  wrong) until you reset progress. Only falls back to repeats once the
- *  pool of never-seen questions runs dry. */
+ *  wrong) until you reset progress. */
 function drawFreshSet(poolStats) {
-  const unseen = finalPool.filter((item) => !poolStats.has(getPoolId(item)));
-  if (unseen.length >= 10) return drawSample(unseen, 10);
-
-  const picked = drawSample(unseen, unseen.length);
-  const pickedIds = new Set(picked.map(getPoolId));
-  const filler = finalPool.filter((item) => !pickedIds.has(getPoolId(item)));
-  picked.push(...drawSample(filler, 10 - picked.length));
-  return shuffled(picked);
+  return drawFreshSample(finalPool, 10, poolStats, getPoolId);
 }
 
 export default function QuizCenter() {

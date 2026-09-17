@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useSettings } from "../context/SettingsContext.jsx";
 import { useQuiz } from "../context/QuizContext.jsx";
 import SearchBox from "./SearchBox.jsx";
@@ -26,8 +27,11 @@ const JP_FONTS = [
 
 export default function Sidebar({ active, onNavigate, mobileOpen, onCloseMobile, onSearchJump }) {
   const { furigana, setFurigana, dark, setDark, fontScale, setFontScale, jpFont, setJpFont } = useSettings();
-  const { stats } = useQuiz();
+  const { stats, resetAll } = useQuiz();
   const pct = stats.total ? Math.round((stats.answeredCount / stats.total) * 100) : 0;
+  // Wiping every score is destructive and can't be undone, so the button
+  // arms itself first rather than firing on a single stray click.
+  const [confirmReset, setConfirmReset] = useState(false);
 
   return (
     <>
@@ -84,6 +88,18 @@ export default function Sidebar({ active, onNavigate, mobileOpen, onCloseMobile,
             Quiz progress: <span>{stats.answeredCount} / {stats.total}</span>
             <div className="progress-bar-track"><div className="progress-bar-fill" style={{ width: pct + "%" }} /></div>
           </div>
+
+          <button
+            className={"reset-all" + (confirmReset ? " armed" : "")}
+            onClick={() => {
+              if (!confirmReset) { setConfirmReset(true); return; }
+              resetAll();
+              setConfirmReset(false);
+            }}
+            onBlur={() => setConfirmReset(false)}
+          >
+            {confirmReset ? "Tap again to erase everything" : "Reset all progress"}
+          </button>
         </div>
         <div className="sidebar-footer">
           © 2026 Shuutoku ・{" "}

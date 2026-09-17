@@ -22,6 +22,21 @@ export const finalPool = quizGroups.flatMap((g, gi) =>
   g.items.map((item, ii) => Object.assign(item, { _pid: "pool-" + gi + "-" + ii }))
 );
 
+// Each module's Module Check draws from its own bank of questions, kept
+// separate from the per-point quizzes shown in the cards above it so the
+// checkpoint tests the module rather than replaying what you just answered.
+// The stable id lets a redraw skip questions you've already been given.
+grammarModules.forEach((m, mi) => {
+  (m.check || []).forEach((item, ci) => { item._cid = "mcheck" + mi + "-" + ci; });
+});
+
+/** The pool a module's checkpoint draws from — its own bank, falling back
+ *  to that module's point quizzes if no bank has been written for it. */
+export function moduleCheckPool(mi) {
+  const m = grammarModules[mi];
+  return m.check?.length ? m.check : m.points.flatMap((p) => p.quiz || []);
+}
+
 function stripTags(html) {
   return (html || "").replace(/<[^>]+>/g, "");
 }
@@ -36,6 +51,9 @@ export function getAllQuizEntries() {
       (pt.quiz || []).forEach((item, qi) => {
         entries.push({ id: "g" + mi + "-" + pi + "-q" + qi, item, section: "grammar", sectionLabel: m.jpTitle + " — " + stripTags(pt.jp) });
       });
+    });
+    (m.check || []).forEach((item) => {
+      entries.push({ id: item._cid, item, section: "quiz", sectionLabel: m.jpTitle + " — Module Check" });
     });
   });
   kanjiQuiz.forEach((item, qi) => {

@@ -76,6 +76,14 @@ export function QuizProvider({ total, children }) {
     });
   }, []);
 
+  const clearPoolResults = useCallback((contentIds) => {
+    setPoolStats((prev) => {
+      const next = new Map(prev);
+      contentIds.forEach((id) => next.delete(id));
+      return next;
+    });
+  }, []);
+
   const resetAll = useCallback(() => { setAnswered(new Map()); setPoolStats(new Map()); }, []);
 
   const recordPoolResult = useCallback((contentId, isCorrect) => {
@@ -98,7 +106,7 @@ export function QuizProvider({ total, children }) {
     return { answeredCount: answered.size, correctCount: correct, total };
   }, [answered, total]);
 
-  const value = { answered, answerQuestion, clearQuestions, resetAll, stats, poolStats, recordPoolResult, weakPoolIds };
+  const value = { answered, answerQuestion, clearQuestions, clearPoolResults, resetAll, stats, poolStats, recordPoolResult, weakPoolIds };
   return <QuizContext.Provider value={value}>{children}</QuizContext.Provider>;
 }
 

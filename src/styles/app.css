@@ -279,6 +279,16 @@ nav.mainnav button.navlink.active::before{
 .fontsize-controls button{ flex:1; padding:6px 0; border-radius:var(--radius-sm); }
 .fontsize-controls button.active{ background:var(--indigo); color:#fff; border-color:var(--indigo); }
 
+.reset-all{
+  width:100%; margin-top:14px; padding:7px 10px;
+  font-family:var(--sans); font-size:var(--fs-2xs); letter-spacing:.04em;
+  background:none; border:1px solid var(--line); color:var(--ink-faint);
+  border-radius:var(--radius-sm); cursor:pointer;
+  transition:border-color var(--t-fast), color var(--t-fast), background var(--t-fast);
+}
+.reset-all:hover{ border-color:var(--shu); color:var(--shu); }
+.reset-all.armed{ border-color:var(--shu); background:var(--shu-tint); color:var(--shu); font-weight:700; }
+
 .progress-mini{ font-size:var(--fs-2xs); color:var(--ink-faint); margin-top:14px; }
 .progress-bar-track{ height:6px; background:var(--paper-3); border-radius:var(--radius-pill); margin-top:6px; overflow:hidden; }
 .progress-bar-fill{ height:100%; background:var(--gold); border-radius:inherit; width:0%; transition:width .35s ease; }
@@ -610,6 +620,16 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
   border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--elev-1);
 }
 .modcheck-head{ display:flex; justify-content:space-between; align-items:flex-start; gap:16px; flex-wrap:wrap; margin-bottom:16px; }
+.modcheck-actions{ display:flex; flex-direction:column; align-items:flex-end; gap:6px; flex-shrink:0; }
+/* Deliberately quieter than the pill next to it — restarting a module
+   throws away work, so it shouldn't compete for the same attention. */
+.linkbtn{
+  background:none; border:none; padding:2px 2px; cursor:pointer;
+  font-family:var(--sans); font-size:var(--fs-2xs); color:var(--ink-faint);
+  text-decoration:underline; text-underline-offset:3px;
+  transition:color var(--t-fast);
+}
+.linkbtn:hover{ color:var(--shu); }
 .modcheck-title{ font-family:var(--serif); font-size:var(--fs-lg); color:var(--gold); }
 .modcheck-sub{ font-size:var(--fs-xs); color:var(--ink-faint); max-width:52ch; margin-top:4px; }
 .modcheck-result{

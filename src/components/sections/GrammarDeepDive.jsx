@@ -1,11 +1,15 @@
 import { useEffect, useReducer, useRef, useState } from "react";
-import { grammarModules } from "../../data/index.js";
+import { grammarModules, moduleCheckPool } from "../../data/index.js";
 import { useQuiz } from "../../context/QuizContext.jsx";
-import { drawSample } from "../../lib/quiz.js";
+import { drawFreshSample } from "../../lib/quiz.js";
 import JpText from "../JpText.jsx";
 import Quiz from "../Quiz.jsx";
 import SpeakButton from "../SpeakButton.jsx";
 import FloatingNav from "../FloatingNav.jsx";
+
+// Checkpoint questions carry a stable id (see data/index.js) so a redraw
+// can tell which ones you've already been asked.
+const getCheckId = (item) => item._cid;
 
 function GrammarCard({ mod, mi, pt, pi }) {
   const accent = "var(--" + mod.accent + ")";
@@ -67,22 +71,24 @@ function GrammarCard({ mod, mi, pt, pi }) {
   );
 }
 
-/** A 10-question checkpoint drawn from this module's own point quizzes.
+/** A 10-question checkpoint drawn from this module's own question bank.
  *  80% is called a "pass", but it's purely a visual signal — there is no
  *  gate, you can move to any module regardless of the result. */
-function ModuleCheck({ mi, mod, sample, onNewSet }) {
-  const { answered } = useQuiz();
+function ModuleCheck({ mi, sample, onNewSet, onResetModule }) {
+  const { poolStats } = useQuiz();
   const total = sample.length;
   if (!total) return null;
 
+  // Scored against the questions actually on screen rather than the
+  // "modcheckN-qM" slots, which outlive a redraw — otherwise dealing a new
+  // set would leave the previous set's verdict sitting above fresh questions.
   let correct = 0, answeredCount = 0;
-  for (let i = 0; i < total; i++) {
-    const qid = "modcheck" + mi + "-q" + i;
-    if (answered.has(qid)) {
-      answeredCount++;
-      if (answered.get(qid)) correct++;
-    }
-  }
+  sample.forEach((item) => {
+    const result = poolStats.get(getCheckId(item));
+    if (result === undefined) return;
+    answeredCount++;
+    if (result) correct++;
+  });
   const done = answeredCount === total;
   const pct = done ? correct / total : null;
   const passed = pct !== null && pct >= 0.8;
@@ -92,16 +98,19 @@ function ModuleCheck({ mi, mod, sample, onNewSet }) {
       <div className="modcheck-head">
         <div>
           <div className="modcheck-title">Module Check</div>
-          <div className="modcheck-sub">{total} questions from this module — 80% is a "pass", but it's just a checkpoint. Move on to any module whenever you like, pass or not.</div>
+          <div className="modcheck-sub">{total} questions drawn from this module's own checkpoint bank — separate from the quizzes in the cards above, so this tests the module rather than replaying what you just answered. 80% is a "pass", but it's just a checkpoint: move on whenever you like.</div>
         </div>
-        <button className="qc-reset" onClick={onNewSet}>New random set</button>
+        <div className="modcheck-actions">
+          <button className="qc-reset" onClick={onNewSet}>New random set</button>
+          <button className="linkbtn" onClick={onResetModule}>Restart module</button>
+        </div>
       </div>
       {done && (
         <div className={"modcheck-result " + (passed ? "pass" : "retry")}>
           {passed ? "✓ Pass" : "Below 80%"} — {correct} / {total} correct ({Math.round(pct * 100)}%)
         </div>
       )}
-      <Quiz idPrefix={"modcheck" + mi} items={sample} label="MODULE CHECK" />
+      <Quiz idPrefix={"modcheck" + mi} items={sample} label="MODULE CHECK" getContentId={getCheckId} />
     </div>
   );
 }
@@ -124,21 +133,40 @@ export default function GrammarDeepDive({ jumpTarget }) {
   const [activePoint, setActivePoint] = useState(0);
   const activeMod = ALL_POINTS[activePoint].mi;
   const mod = grammarModules[activeMod];
-  const { clearQuestions } = useQuiz();
+  const { clearQuestions, clearPoolResults, poolStats } = useQuiz();
   const [, bump] = useReducer((c) => c + 1, 0);
   const sampleCache = useRef({});
   const pendingScrollId = useRef(null);
 
+  function drawCheckSet(mi, seen = poolStats) {
+    return drawFreshSample(moduleCheckPool(mi), 10, seen, getCheckId);
+  }
+
   if (!sampleCache.current[activeMod]) {
-    sampleCache.current[activeMod] = drawSample(mod.points.flatMap((p) => p.quiz || []));
+    sampleCache.current[activeMod] = drawCheckSet(activeMod);
   }
   const moduleSample = sampleCache.current[activeMod];
 
+  // Leaves your score alone and just deals a new hand, preferring
+  // checkpoint questions you haven't been given yet.
   function newModuleSet() {
-    const ids = Array.from({ length: moduleSample.length }, (_, i) => "modcheck" + activeMod + "-q" + i);
-    clearQuestions(ids);
-    sampleCache.current[activeMod] = drawSample(mod.points.flatMap((p) => p.quiz || []));
+    sampleCache.current[activeMod] = drawCheckSet(activeMod);
     bump();
+  }
+
+  // Wipes this module's progress — both the card quizzes and the
+  // checkpoint — so the whole module can be worked through from scratch.
+  function resetModule() {
+    const slotIds = [];
+    mod.points.forEach((pt, pi) => (pt.quiz || []).forEach((_, qi) => slotIds.push("g" + activeMod + "-" + pi + "-q" + qi)));
+    for (let i = 0; i < 10; i++) slotIds.push("modcheck" + activeMod + "-q" + i);
+    clearQuestions(slotIds);
+    clearPoolResults(moduleCheckPool(activeMod).map(getCheckId).filter(Boolean));
+    // Draws against an empty seen-set: the clear above hasn't landed in
+    // `poolStats` yet this render, and after it does nothing is "seen".
+    sampleCache.current[activeMod] = drawCheckSet(activeMod, new Map());
+    bump();
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   // Module-level navigation (top tabs, prev/next-module buttons): switches
@@ -204,7 +232,7 @@ export default function GrammarDeepDive({ jumpTarget }) {
         <GrammarCard key={pi} mod={mod} mi={activeMod} pt={pt} pi={pi} />
       ))}
 
-      <ModuleCheck mi={activeMod} mod={mod} sample={moduleSample} onNewSet={newModuleSet} />
+      <ModuleCheck mi={activeMod} sample={moduleSample} onNewSet={newModuleSet} onResetModule={resetModule} />
 
       <div className="modjump" style={{ marginTop: 12, justifyContent: "space-between" }}>
         <button disabled={activeMod === 0} style={{ visibility: activeMod === 0 ? "hidden" : "visible" }} onClick={() => goToModule(activeMod - 1)}>← Previous module</button>
