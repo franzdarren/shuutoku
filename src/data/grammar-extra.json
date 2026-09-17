@@ -2637,15 +2637,15 @@
         "ex": "Your own group takes humble forms when you speak to someone outside it."
       },
       {
-        "q": "「先生がそう＿＿。」 (honorific for <ruby>言<rt>い</rt></ruby>う)",
+        "q": "「<ruby>先生<rt>せんせい</rt></ruby>が<ruby>本<rt>ほん</rt></ruby>を＿＿。」 (honorific for くれる)",
         "choices": [
-          "おっしゃいました",
-          "<ruby>申<rt>もう</rt></ruby>しました",
-          "うかがいました",
-          "<ruby>言<rt>い</rt></ruby>わせました"
+          "くださいました",
+          "いただきました",
+          "さしあげました",
+          "もらわれました"
         ],
         "a": 0,
-        "ex": "おっしゃる is honorific; <ruby>申<rt>もう</rt></ruby>す is humble."
+        "ex": "くださる is honorific — someone above you giving something to you; いただく is humble, for your own receiving."
       },
       {
         "q": "「わたくしは<ruby>田中<rt>たなか</rt></ruby>と＿＿。」 (humble self-introduction)",
@@ -2725,15 +2725,15 @@
         "ex": "It's humble service language meaning 'certainly' — you hear it far more than you say it."
       },
       {
-        "q": "「<ruby>部長<rt>ぶちょう</rt></ruby>は<ruby>会議室<rt>かいぎしつ</rt></ruby>に＿＿。」 (honorific for いる)",
+        "q": "「<ruby>先生<rt>せんせい</rt></ruby>は<ruby>何<rt>なに</rt></ruby>を＿＿か。」 (honorific for する)",
         "choices": [
-          "いらっしゃいます",
-          "おります",
-          "ございます",
-          "いたします"
+          "なさいます",
+          "いたします",
+          "<ruby>参<rt>まい</rt></ruby>ります",
+          "おっしゃいます"
         ],
         "a": 0,
-        "ex": "いらっしゃる for someone else; おる is the humble equivalent for yourself."
+        "ex": "なさる is honorific 'to do'; いたす is the humble equivalent, used for your own actions."
       },
       {
         "q": "As a visitor in Japan, answering staff keigo with plain です／ます is:",

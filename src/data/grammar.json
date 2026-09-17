@@ -419,8 +419,8 @@
             "en": "Let's talk about our impressions after watching the movie."
           },
           {
-            "jp": "<ruby>手<rt>て</rt></ruby>を<ruby>洗<rt>あら</rt></ruby>ってから、ご<ruby>飯<rt>はん</rt></ruby>を食べます。",
-            "en": "I wash my hands and then eat."
+            "jp": "<ruby>歯<rt>は</rt></ruby>を<ruby>磨<rt>みが</rt></ruby>いてから、<ruby>寝<rt>ね</rt></ruby>ます。",
+            "en": "I brush my teeth and then go to bed."
           },
           {
             "jp": "<ruby>宿題<rt>しゅくだい</rt></ruby>をしたあとで、ゲームをします。",
@@ -839,8 +839,8 @@
             "en": "Excuse me, could you be a little quieter?"
           },
           {
-            "jp": "もう<ruby>少<rt>すこ</rt></ruby>しゆっくり話してほしいです。",
-            "en": "I'd like you to speak a little more slowly."
+            "jp": "もっと<ruby>早<rt>はや</rt></ruby>く<ruby>返事<rt>へんじ</rt></ruby>をしてほしいです。",
+            "en": "I want you to reply more quickly."
           }
         ],
         "dialogue": [
@@ -948,8 +948,8 @@
             "en": "Get up quickly! (parent to child)"
           },
           {
-            "jp": "先生は<ruby>宿題<rt>しゅくだい</rt></ruby>を<ruby>忘<rt>わす</rt></ruby>れないように<ruby>言<rt>い</rt></ruby>いました。",
-            "en": "The teacher told us not to forget our homework."
+            "jp": "<ruby>店長<rt>てんちょう</rt></ruby>は<ruby>時間<rt>じかん</rt></ruby>どおりに<ruby>来<rt>く</rt></ruby>るように<ruby>言<rt>い</rt></ruby>いました。",
+            "en": "The manager told me to come on time."
           },
           {
             "jp": "<ruby>医者<rt>いしゃ</rt></ruby>は<ruby>塩分<rt>えんぶん</rt></ruby>を<ruby>減<rt>へ</rt></ruby>らすように<ruby>言<rt>い</rt></ruby>いました。",
@@ -1608,8 +1608,8 @@
             "en": "Tanaka-san was made to speak for a long time at the meeting."
           },
           {
-            "jp": "<ruby>子供<rt>こども</rt></ruby>のとき、毎日ピアノを<ruby>練習<rt>れんしゅう</rt></ruby>させられました。",
-            "en": "When I was a child, I was made to practise the piano every day."
+            "jp": "<ruby>学生<rt>がくせい</rt></ruby>のとき、<ruby>毎朝<rt>まいあさ</rt></ruby><ruby>掃除<rt>そうじ</rt></ruby>させられました。",
+            "en": "As a student, I was made to clean every morning."
           },
           {
             "jp": "<ruby>新人<rt>しんじん</rt></ruby>のとき、毎日<ruby>残業<rt>ざんぎょう</rt></ruby>させられました。",
@@ -1881,8 +1881,8 @@
             "en": "If you press this button, the light turns on. (mechanical)"
           },
           {
-            "jp": "<ruby>春<rt>はる</rt></ruby>になると、<ruby>桜<rt>さくら</rt></ruby>が<ruby>咲<rt>さ</rt></ruby>きます。",
-            "en": "When spring comes, the cherry blossoms bloom."
+            "jp": "<ruby>夜<rt>よる</rt></ruby>になると、<ruby>星<rt>ほし</rt></ruby>が<ruby>見<rt>み</rt></ruby>えます。",
+            "en": "When night falls, you can see the stars."
           },
           {
             "jp": "冬になると、<ruby>雪<rt>ゆき</rt></ruby>が<ruby>降<rt>お</rt></ruby>ります。",
@@ -2017,8 +2017,8 @@
             "en": "If there's something you don't understand, please ask."
           },
           {
-            "jp": "雨が<ruby>降<rt>ふ</rt></ruby>ったら、<ruby>試合<rt>しあい</rt></ruby>は<ruby>中止<rt>ちゅうし</rt></ruby>です。",
-            "en": "If it rains, the match is cancelled."
+            "jp": "<ruby>安<rt>やす</rt></ruby>かったら、<ruby>買<rt>か</rt></ruby>います。",
+            "en": "If it's cheap, I'll buy it. (adjective + たら)"
           },
           {
             "jp": "もし時間があったら、<ruby>美術館<rt>びじゅつかん</rt></ruby>にも行きたいです。",
@@ -4150,8 +4150,8 @@
             "en": "These characters are small and hard to read."
           },
           {
-            "jp": "この<ruby>靴<rt>くつ</rt></ruby>は<ruby>歩<rt>ある</rt></ruby>きやすいです。",
-            "en": "These shoes are easy to walk in."
+            "jp": "この<ruby>問題<rt>もんだい</rt></ruby>は<ruby>解<rt>と</rt></ruby>きにくいです。",
+            "en": "This problem is hard to solve."
           },
           {
             "jp": "この<ruby>説明<rt>せつめい</rt></ruby>は<ruby>分<rt>わ</rt></ruby>かりにくいです。",
@@ -4223,8 +4223,8 @@
             "en": "I'll book the hotel in advance, before the trip."
           },
           {
-            "jp": "<ruby>旅行<rt>りょこう</rt></ruby>の前にホテルを<ruby>予約<rt>よやく</rt></ruby>しておきます。",
-            "en": "I will reserve the hotel in advance before the trip."
+            "jp": "<ruby>試験<rt>しけん</rt></ruby>の前に、<ruby>単語<rt>たんご</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えておきます。",
+            "en": "I'll memorize the vocabulary in advance, before the exam."
           },
           {
             "jp": "<ruby>大切<rt>たいせつ</rt></ruby>なメールを<ruby>消<rt>け</rt></ruby>してしまいました。",
@@ -4235,12 +4235,12 @@
             "en": "I'll prepare the materials in advance before the meeting."
           },
           {
-            "jp": "<ruby>旅行<rt>りょこう</rt></ruby>の前に、ホテルを<ruby>予約<rt>よやく</rt></ruby>しておきます。",
-            "en": "I'll book the hotel in advance, before the trip."
+            "jp": "お<ruby>客<rt>きゃく</rt></ruby>さんが<ruby>来<rt>く</rt></ruby>る前に、<ruby>部屋<rt>へや</rt></ruby>を<ruby>掃除<rt>そうじ</rt></ruby>しておきます。",
+            "en": "I'll clean the room in advance, before the guests arrive."
           },
           {
-            "jp": "出かける前に、<ruby>窓<rt>まど</rt></ruby>を<ruby>閉<rt>し</rt></ruby>めておいてください。",
-            "en": "Please close the windows before you go out."
+            "jp": "<ruby>出発<rt>しゅっぱつ</rt></ruby>の前に、パスポートを<ruby>確認<rt>かくにん</rt></ruby>しておきます。",
+            "en": "I'll check my passport in advance, before departure."
           }
         ],
         "quiz": [
