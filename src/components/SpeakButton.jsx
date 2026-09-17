@@ -5,7 +5,7 @@ import { canSpeak, speakJapanese, toPlainJapanese } from "../lib/speech.js";
  *  ruby-annotated markup JpText renders — this strips it down to plain
  *  text before handing it to the browser's speech synthesis. Renders
  *  nothing if the browser has no speech synthesis support at all. */
-export default function SpeakButton({ html, label = "Listen" }) {
+export default function SpeakButton({ html, who, label = "Listen" }) {
   const [playing, setPlaying] = useState(false);
   if (!canSpeak()) return null;
 
@@ -13,7 +13,7 @@ export default function SpeakButton({ html, label = "Listen" }) {
     e.stopPropagation();
     const text = toPlainJapanese(html);
     if (!text) return;
-    speakJapanese(text);
+    speakJapanese(text, { who });
     setPlaying(true);
     // speechSynthesis has no reliable duration up-front; a short pulse on
     // the icon is enough feedback that the click registered.

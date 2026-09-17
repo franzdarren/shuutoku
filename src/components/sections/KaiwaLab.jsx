@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { kaiwaTips, phraseBank, kaiwaScenarios, countPhrases } from "../../data/index.js";
 import JpText from "../JpText.jsx";
 import Quiz from "../Quiz.jsx";
 import SpeakButton from "../SpeakButton.jsx";
+import Dialogue from "../Dialogue.jsx";
 import FloatingNav from "../FloatingNav.jsx";
 
 // Scenario titles carry inline <ruby> furigana; for a plain-text nav label,
@@ -26,12 +27,20 @@ const CATEGORIES = [
 const scenariosWithIndex = kaiwaScenarios.map((sc, i) => ({ sc, i }));
 
 const NAV_ITEMS = CATEGORIES.map((c) => ({ label: c.jp }));
+const PB_NAV_ITEMS = phraseBank.map((g) => ({ label: g.cat }));
 
-export default function KaiwaLab() {
+export default function KaiwaLab({ isActive }) {
+  const [view, setView] = useState("phrases");
   const [activeCat, setActiveCat] = useState(CATEGORIES[0].id);
+  const [activeGroup, setActiveGroup] = useState(0);
   const activeCatIndex = CATEGORIES.findIndex((c) => c.id === activeCat);
   const cat = CATEGORIES[activeCatIndex];
   const scenariosInCat = scenariosWithIndex.filter(({ sc }) => sc.category === activeCat);
+
+  function switchView(v) {
+    setView(v);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
 
   function goToCategory(id) {
     setActiveCat(id);
@@ -41,6 +50,35 @@ export default function KaiwaLab() {
   function goToCategoryIndex(i) {
     goToCategory(CATEGORIES[i].id);
   }
+
+  function goToGroup(i) {
+    setActiveGroup(i);
+    document.getElementById("pb-" + i)?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  // Keeps the floating nav in step with the phrase group you've scrolled to.
+  useEffect(() => {
+    if (!isActive || view !== "phrases") return;
+    let queued = false;
+    function sync() {
+      queued = false;
+      const line = window.innerHeight / 3;
+      let best = 0;
+      phraseBank.forEach((_, gi) => {
+        const top = document.getElementById("pb-" + gi)?.getBoundingClientRect().top;
+        if (top !== undefined && top <= line) best = gi;
+      });
+      setActiveGroup((cur) => (cur === best ? cur : best));
+    }
+    function onScroll() {
+      if (queued) return;
+      queued = true;
+      requestAnimationFrame(sync);
+    }
+    window.addEventListener("scroll", onScroll, { passive: true });
+    sync();
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [isActive, view]);
 
   return (
     <>
@@ -59,12 +97,29 @@ export default function KaiwaLab() {
         ))}
       </div>
 
-      <h2 className="modtitle"><span className="modnum">フ</span> Phrase Bank</h2>
+      {/* Two big halves that were previously one very long scroll — the
+          phrase reference and the scripted scenarios are used at different
+          times, so they get their own views rather than stacking. */}
+      <div className="viewtabs" role="tablist">
+        <button role="tab" aria-selected={view === "phrases"} className={view === "phrases" ? "active" : ""} onClick={() => switchView("phrases")}>
+          <span className="vt-jp">フレーズ集</span>
+          <span className="vt-en">Phrase Bank · {countPhrases()}</span>
+        </button>
+        <button role="tab" aria-selected={view === "scenarios"} className={view === "scenarios" ? "active" : ""} onClick={() => switchView("scenarios")}>
+          <span className="vt-jp">場面別スクリプト</span>
+          <span className="vt-en">Scenario Scripts · {kaiwaScenarios.length}</span>
+        </button>
+      </div>
+
+      {view === "phrases" && <>
       <div className="modtitle-en">{countPhrases()} phrases in {phraseBank.length} groups — grouped by what the phrase does, because that is how you retrieve it mid-conversation</div>
 
       <div className="pb-nav">
         {phraseBank.map((g, gi) => (
-          <button key={gi} onClick={() => document.getElementById("pb-" + gi)?.scrollIntoView({ behavior: "smooth", block: "start" })}>{g.cat}</button>
+          <button key={gi} onClick={() => document.getElementById("pb-" + gi)?.scrollIntoView({ behavior: "smooth", block: "start" })}>
+            <span className="pbn-jp">{g.cat}</span>
+            <span className="pbn-en">{g.catEn}</span>
+          </button>
         ))}
       </div>
 
@@ -85,7 +140,9 @@ export default function KaiwaLab() {
         </div>
       ))}
 
-      <h2 className="modtitle"><span className="modnum">場</span> Scenario Scripts</h2>
+      </>}
+
+      {view === "scenarios" && <>
       <div className="modtitle-en">{kaiwaScenarios.length} scripts in {CATEGORIES.length} groups — pick a group below, then read both parts out loud and try to reconstruct the Japanese from the English</div>
 
       <div className="modjump modjump-rich">
@@ -113,20 +170,7 @@ export default function KaiwaLab() {
           </div>
           <div className="scenario-body">
             <div className="scenario-setup">{sc.setup}</div>
-            <div className="dialogue-box" style={{ marginBottom: 0 }}>
-              {sc.lines.map((d, li) => (
-                <div key={li} className="dline">
-                  <div className="speaker" style={{ background: "var(--indigo)" }}>{d.who}</div>
-                  <div className="dtext">
-                    <div className="jp-row">
-                      <JpText tag="span" className="jp" html={d.jp} />
-                      <SpeakButton html={d.jp} />
-                    </div>
-                    <div className="en">{d.en}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
+            <Dialogue lines={sc.lines} accent="var(--indigo)" style={{ marginBottom: 0 }} />
 
             {sc.keyPhrases?.length > 0 && (
               <div className="keyphrases">
@@ -146,8 +190,13 @@ export default function KaiwaLab() {
           </div>
         </div>
       ))}
+      </>}
 
-      <FloatingNav items={NAV_ITEMS} activeIndex={activeCatIndex} onGo={goToCategoryIndex} />
+      {/* The floating nav follows whichever half you're in: phrase groups
+          while browsing the bank, scenario categories while reading scripts. */}
+      {view === "phrases"
+        ? <FloatingNav items={PB_NAV_ITEMS} activeIndex={activeGroup} onGo={goToGroup} />
+        : <FloatingNav items={NAV_ITEMS} activeIndex={activeCatIndex} onGo={goToCategoryIndex} />}
     </>
   );
 }

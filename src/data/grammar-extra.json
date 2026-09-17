@@ -23,7 +23,7 @@
         ],
         "examples": [
           {
-            "jp": "この<ruby>料理<rt>りょうり</rt></ruby>、<ruby>辛<rt>から</rt></ruby>そうですね。<ruby>食<rt>た</rt></ruby>べてみます。",
+            "jp": "この<ruby>料理<rt>りょうり</rt></ruby>、<ruby>辛<rt>から</rt></ruby>そうですね。食べてみます。",
             "en": "This dish looks spicy. I'll try eating it."
           },
           {
@@ -38,17 +38,17 @@
         "dialogue": [
           {
             "who": "A",
-            "jp": "この<ruby>新<rt>あたら</rt></ruby>しいカフェ、まだ<ruby>行<rt>い</rt></ruby>ったことがないんです。",
+            "jp": "この<ruby>新<rt>あたら</rt></ruby>しいカフェ、まだ行ったことがないんです。",
             "en": "I haven't been to this new cafe yet."
           },
           {
             "who": "B",
-            "jp": "じゃあ、<ruby>今度<rt>こんど</rt></ruby><ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>行<rt>い</rt></ruby>ってみましょう。",
+            "jp": "じゃあ、<ruby>今度<rt>こんど</rt></ruby><ruby>一緒<rt>いっしょ</rt></ruby>に行ってみましょう。",
             "en": "Then let's try going together sometime."
           },
           {
             "who": "A",
-            "jp": "いいですね。<ruby>何<rt>なに</rt></ruby>がおすすめか、<ruby>聞<rt>き</rt></ruby>いてみます。",
+            "jp": "いいですね。何がおすすめか、聞いてみます。",
             "en": "Sounds good. I'll try asking what they recommend."
           }
         ],
@@ -88,6 +88,23 @@
               "There is a real, meaningful reason — it isn't free variation."
             ]
           }
+        ],
+        "conjugation": [
+          {
+            "label": "Group 1 verb",
+            "from": "書く",
+            "to": "書いてみる"
+          },
+          {
+            "label": "Group 2 verb",
+            "from": "食べる",
+            "to": "食べてみる"
+          },
+          {
+            "label": "Group 3 verb",
+            "from": "する／来る",
+            "to": "してみる／来てみる"
+          }
         ]
       },
       {
@@ -107,32 +124,32 @@
         ],
         "examples": [
           {
-            "jp": "<ruby>空<rt>そら</rt></ruby>が<ruby>暗<rt>くら</rt></ruby>くなって、きゅうに<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>り<ruby>出<rt>だ</rt></ruby>した。",
+            "jp": "<ruby>空<rt>そら</rt></ruby>が<ruby>暗<rt>くら</rt></ruby>くなって、きゅうに雨が<ruby>降<rt>ふ</rt></ruby>り出した。",
             "en": "The sky went dark and it suddenly started raining."
           },
           {
-            "jp": "この<ruby>本<rt>ほん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>み<ruby>始<rt>はじ</rt></ruby>めたら、<ruby>止<rt>と</rt></ruby>まらなくなりました。",
+            "jp": "この本を読み<ruby>始<rt>はじ</rt></ruby>めたら、<ruby>止<rt>と</rt></ruby>まらなくなりました。",
             "en": "Once I started reading this book, I couldn't stop."
           },
           {
-            "jp": "<ruby>宿題<rt>しゅくだい</rt></ruby>を<ruby>食<rt>た</rt></ruby>べ<ruby>終<rt>お</rt></ruby>わってから、テレビを<ruby>見<rt>み</rt></ruby>ます。",
+            "jp": "<ruby>宿題<rt>しゅくだい</rt></ruby>を食べ<ruby>終<rt>お</rt></ruby>わってから、テレビを見ます。",
             "en": "I'll watch TV after I finish eating."
           }
         ],
         "dialogue": [
           {
             "who": "A",
-            "jp": "レポート、もう<ruby>書<rt>か</rt></ruby>き<ruby>終<rt>お</rt></ruby>わりましたか。",
+            "jp": "レポート、もう書き<ruby>終<rt>お</rt></ruby>わりましたか。",
             "en": "Have you finished writing the report yet?"
           },
           {
             "who": "B",
-            "jp": "いいえ、まだです。<ruby>今朝<rt>けさ</rt></ruby>から<ruby>書<rt>か</rt></ruby>き<ruby>始<rt>はじ</rt></ruby>めたばかりです。",
+            "jp": "いいえ、まだです。<ruby>今朝<rt>けさ</rt></ruby>から書き<ruby>始<rt>はじ</rt></ruby>めたばかりです。",
             "en": "No, not yet. I only just started writing it this morning."
           },
           {
             "who": "A",
-            "jp": "<ruby>頑張<rt>がんば</rt></ruby>って<ruby>書<rt>か</rt></ruby>き<ruby>続<rt>つづ</rt></ruby>けてくださいね。",
+            "jp": "<ruby>頑張<rt>がんば</rt></ruby>って書き<ruby>続<rt>つづ</rt></ruby>けてくださいね。",
             "en": "Keep on writing, good luck!"
           }
         ],
@@ -172,6 +189,23 @@
               "出す means it DID happen (suddenly), not that it almost happened."
             ]
           }
+        ],
+        "conjugation": [
+          {
+            "label": "Group 1 verb",
+            "from": "書く",
+            "to": "書き<ruby>始<rt>はじ</rt></ruby>める／書き<ruby>終<rt>お</rt></ruby>わる"
+          },
+          {
+            "label": "Group 2 verb",
+            "from": "食べる",
+            "to": "食べ<ruby>始<rt>はじ</rt></ruby>める／食べ<ruby>終<rt>お</rt></ruby>わる"
+          },
+          {
+            "label": "suddenness",
+            "from": "<ruby>降<rt>ふ</rt></ruby>る",
+            "to": "<ruby>降<rt>ふ</rt></ruby>り出す"
+          }
         ]
       },
       {
@@ -191,22 +225,22 @@
         ],
         "examples": [
           {
-            "jp": "<ruby>出<rt>で</rt></ruby>かける<ruby>前<rt>まえ</rt></ruby>に、<ruby>窓<rt>まど</rt></ruby>を<ruby>閉<rt>し</rt></ruby>めておいてください。",
+            "jp": "出かける前に、<ruby>窓<rt>まど</rt></ruby>を<ruby>閉<rt>し</rt></ruby>めておいてください。",
             "en": "Please close the windows before you go out."
           },
           {
-            "jp": "<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>らない<ruby>間<rt>あいだ</rt></ruby>に、<ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>に<ruby>行<rt>い</rt></ruby>きましょう。",
+            "jp": "雨が<ruby>降<rt>ふ</rt></ruby>らない間に、買い<ruby>物<rt>もの</rt></ruby>に行きましょう。",
             "en": "Let's go shopping while it isn't raining."
           },
           {
-            "jp": "<ruby>子<rt>こ</rt></ruby>どもが<ruby>寝<rt>ね</rt></ruby>ている<ruby>間<rt>あいだ</rt></ruby>に、<ruby>家事<rt>かじ</rt></ruby>をします。",
+            "jp": "子どもが<ruby>寝<rt>ね</rt></ruby>ている間に、<ruby>家事<rt>かじ</rt></ruby>をします。",
             "en": "I do the housework while my child is sleeping."
           }
         ],
         "dialogue": [
           {
             "who": "A",
-            "jp": "<ruby>旅行<rt>りょこう</rt></ruby>に<ruby>行<rt>い</rt></ruby>く<ruby>前<rt>まえ</rt></ruby>に、<ruby>何<rt>なに</rt></ruby>をしておいたほうがいいですか。",
+            "jp": "<ruby>旅行<rt>りょこう</rt></ruby>に行く前に、何をしておいたほうがいいですか。",
             "en": "What should I do before going on the trip?"
           },
           {
@@ -216,7 +250,7 @@
           },
           {
             "who": "A",
-            "jp": "わかりました。<ruby>時間<rt>じかん</rt></ruby>がある<ruby>間<rt>あいだ</rt></ruby>に、やっておきます。",
+            "jp": "わかりました。時間がある間に、やっておきます。",
             "en": "Got it. I'll take care of it while I still have time."
           }
         ],
@@ -256,6 +290,23 @@
               "そう (appearance/hearsay) is unrelated to sequencing events in time."
             ]
           }
+        ],
+        "conjugation": [
+          {
+            "label": "〜前に (plain non-past)",
+            "from": "<ruby>寝<rt>ね</rt></ruby>る",
+            "to": "<ruby>寝<rt>ね</rt></ruby>る前に"
+          },
+          {
+            "label": "〜前に ＋noun",
+            "from": "食事",
+            "to": "食事の前に"
+          },
+          {
+            "label": "〜間に (ている form)",
+            "from": "<ruby>寝<rt>ね</rt></ruby>る",
+            "to": "<ruby>寝<rt>ね</rt></ruby>ている間に"
+          }
         ]
       },
       {
@@ -278,23 +329,23 @@
             "en": "I always study while listening to music."
           },
           {
-            "jp": "テレビを<ruby>見<rt>み</rt></ruby>ながら<ruby>晩<rt>ばん</rt></ruby>ご<ruby>飯<rt>はん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べました。",
+            "jp": "テレビを見ながら<ruby>晩<rt>ばん</rt></ruby>ご<ruby>飯<rt>はん</rt></ruby>を食べました。",
             "en": "I ate dinner while watching TV."
           },
           {
-            "jp": "アルバイトをしながら、<ruby>大学<rt>だいがく</rt></ruby>に<ruby>通<rt>かよ</rt></ruby>っています。",
+            "jp": "アルバイトをしながら、大学に<ruby>通<rt>かよ</rt></ruby>っています。",
             "en": "I'm attending university while working a part-time job."
           }
         ],
         "dialogue": [
           {
             "who": "A",
-            "jp": "いつも<ruby>歩<rt>ある</rt></ruby>きながらスマホを<ruby>見<rt>み</rt></ruby>ていますね。<ruby>危<rt>あぶ</rt></ruby>ないですよ。",
+            "jp": "いつも<ruby>歩<rt>ある</rt></ruby>きながらスマホを見ていますね。<ruby>危<rt>あぶ</rt></ruby>ないですよ。",
             "en": "You're always looking at your phone while walking. That's dangerous."
           },
           {
             "who": "B",
-            "jp": "すみません、<ruby>気<rt>き</rt></ruby>をつけます。",
+            "jp": "すみません、気をつけます。",
             "en": "Sorry, I'll be careful."
           }
         ],
@@ -334,6 +385,23 @@
               "It's not just 'background info' — listening is a real simultaneous action, just the secondary one."
             ]
           }
+        ],
+        "conjugation": [
+          {
+            "label": "Group 1 verb",
+            "from": "書く",
+            "to": "書きながら"
+          },
+          {
+            "label": "Group 2 verb",
+            "from": "食べる",
+            "to": "食べながら"
+          },
+          {
+            "label": "Group 3 verb",
+            "from": "する／来る",
+            "to": "しながら"
+          }
         ]
       },
       {
@@ -358,7 +426,7 @@
             "en": "Let's head home soon. / I think I'll head home."
           },
           {
-            "jp": "<ruby>来年<rt>らいねん</rt></ruby>、<ruby>日本<rt>にほん</rt></ruby>で<ruby>働<rt>はたら</rt></ruby>くつもりです。",
+            "jp": "来年、日本で<ruby>働<rt>はたら</rt></ruby>くつもりです。",
             "en": "I intend to work in Japan next year."
           },
           {
@@ -374,12 +442,12 @@
           },
           {
             "who": "B",
-            "jp": "<ruby>沖縄<rt>おきなわ</rt></ruby>に<ruby>行<rt>い</rt></ruby>こうと<ruby>思<rt>おも</rt></ruby>っています。",
+            "jp": "<ruby>沖縄<rt>おきなわ</rt></ruby>に行こうと<ruby>思<rt>おも</rt></ruby>っています。",
             "en": "I'm thinking of going to Okinawa."
           },
           {
             "who": "A",
-            "jp": "いいですね！わたしも<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>行<rt>い</rt></ruby>こうかな。",
+            "jp": "いいですね！わたしも<ruby>一緒<rt>いっしょ</rt></ruby>に行こうかな。",
             "en": "Nice! Maybe I'll come along too."
           }
         ],
@@ -419,6 +487,28 @@
               "行こうかな ('maybe I'll go') is tentative, thinking-out-loud — the least decided, not the most."
             ]
           }
+        ],
+        "conjugation": [
+          {
+            "label": "Group 1 verb",
+            "from": "書く",
+            "to": "書こう"
+          },
+          {
+            "label": "Group 2 verb",
+            "from": "食べる",
+            "to": "食べよう"
+          },
+          {
+            "label": "Group 3 verb",
+            "from": "する／来る",
+            "to": "しよう／来よう"
+          },
+          {
+            "label": "〜つもり (plain form)",
+            "from": "書く",
+            "to": "書くつもり／書かないつもり"
+          }
         ]
       },
       {
@@ -438,11 +528,11 @@
         ],
         "examples": [
           {
-            "jp": "<ruby>熱<rt>ねつ</rt></ruby>があるなら、<ruby>病院<rt>びょういん</rt></ruby>に<ruby>行<rt>い</rt></ruby>ったほうがいいですよ。",
+            "jp": "<ruby>熱<rt>ねつ</rt></ruby>があるなら、<ruby>病院<rt>びょういん</rt></ruby>に行ったほうがいいですよ。",
             "en": "If you have a fever, you'd better go to the hospital."
           },
           {
-            "jp": "<ruby>夜<rt>よる</rt></ruby>、あまり<ruby>甘<rt>あま</rt></ruby>いものを<ruby>食<rt>た</rt></ruby>べないほうがいいです。",
+            "jp": "<ruby>夜<rt>よる</rt></ruby>、あまり<ruby>甘<rt>あま</rt></ruby>いものを食べないほうがいいです。",
             "en": "You'd better not eat sweet things much at night."
           },
           {
@@ -458,12 +548,12 @@
           },
           {
             "who": "B",
-            "jp": "それなら、<ruby>早<rt>はや</rt></ruby>く<ruby>休<rt>やす</rt></ruby>んだほうがいいですよ。",
+            "jp": "それなら、<ruby>早<rt>はや</rt></ruby>く休んだほうがいいですよ。",
             "en": "In that case, you'd better rest soon."
           },
           {
             "who": "A",
-            "jp": "そうですね。<ruby>今日<rt>きょう</rt></ruby>は<ruby>無理<rt>むり</rt></ruby>しないほうがいいですね。",
+            "jp": "そうですね。今日は<ruby>無理<rt>むり</rt></ruby>しないほうがいいですね。",
             "en": "You're right — I'd better not push myself today."
           }
         ],
@@ -503,6 +593,18 @@
               "Politeness is handled separately (です/ます) — the た-form's role here is purely grammatical."
             ]
           }
+        ],
+        "conjugation": [
+          {
+            "label": "positive (た-form)",
+            "from": "書く",
+            "to": "書いたほうがいい"
+          },
+          {
+            "label": "negative (ない-form)",
+            "from": "書く",
+            "to": "書かないほうがいい"
+          }
         ]
       },
       {
@@ -522,22 +624,22 @@
         ],
         "examples": [
           {
-            "jp": "<ruby>何<rt>なに</rt></ruby>か<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>はいかがですか。",
+            "jp": "何か飲み<ruby>物<rt>もの</rt></ruby>はいかがですか。",
             "en": "Would you like something to drink?"
           },
           {
-            "jp": "アレルギーはないので、<ruby>何<rt>なん</rt></ruby>でも<ruby>食<rt>た</rt></ruby>べられます。",
+            "jp": "アレルギーはないので、何でも食べられます。",
             "en": "I don't have allergies, so I can eat anything at all."
           },
           {
-            "jp": "<ruby>質問<rt>しつもん</rt></ruby>があれば、いつでも<ruby>聞<rt>き</rt></ruby>いてください。",
+            "jp": "<ruby>質問<rt>しつもん</rt></ruby>があれば、いつでも聞いてください。",
             "en": "If you have questions, feel free to ask anytime."
           }
         ],
         "dialogue": [
           {
             "who": "A",
-            "jp": "どこか<ruby>行<rt>い</rt></ruby>きたいところはありますか。",
+            "jp": "どこか行きたいところはありますか。",
             "en": "Is there somewhere you'd like to go?"
           },
           {
@@ -604,7 +706,7 @@
             "en": "As for me, I'm an office worker. (topic)"
           },
           {
-            "jp": "だれが<ruby>電話<rt>でんわ</rt></ruby>をかけましたか。<ruby>田中<rt>たなか</rt></ruby>さんがかけました。",
+            "jp": "だれが電話をかけましたか。<ruby>田中<rt>たなか</rt></ruby>さんがかけました。",
             "en": "Who made the call? Tanaka-san did. (が — new/focused info)"
           },
           {
@@ -615,12 +717,12 @@
         "dialogue": [
           {
             "who": "A",
-            "jp": "<ruby>山田<rt>やまだ</rt></ruby>さんは<ruby>今日<rt>きょう</rt></ruby>来ますか。",
+            "jp": "<ruby>山田<rt>やまだ</rt></ruby>さんは今日来ますか。",
             "en": "Is Yamada-san coming today? (は — asking about a known topic)"
           },
           {
             "who": "B",
-            "jp": "いいえ、<ruby>山田<rt>やまだ</rt></ruby>さんは<ruby>来<rt>き</rt></ruby>ませんが、<ruby>鈴木<rt>すずき</rt></ruby>さんが<ruby>来<rt>き</rt></ruby>ます。",
+            "jp": "いいえ、<ruby>山田<rt>やまだ</rt></ruby>さんは来ませんが、<ruby>鈴木<rt>すずき</rt></ruby>さんが来ます。",
             "en": "No, Yamada-san isn't coming, but Suzuki-san is. (が — contrastive new info)"
           }
         ],
@@ -686,14 +788,14 @@
             "en": "It'll probably keep getting colder from here on."
           },
           {
-            "jp": "<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>ってきたので、<ruby>傘<rt>かさ</rt></ruby>を<ruby>持<rt>も</rt></ruby>ってきてください。",
+            "jp": "雨が<ruby>降<rt>ふ</rt></ruby>ってきたので、<ruby>傘<rt>かさ</rt></ruby>を<ruby>持<rt>も</rt></ruby>ってきてください。",
             "en": "It's started raining, so please bring an umbrella."
           }
         ],
         "dialogue": [
           {
             "who": "A",
-            "jp": "<ruby>日本語<rt>にほんご</rt></ruby>、だいぶ<ruby>上手<rt>じょうず</rt></ruby>になってきましたね。",
+            "jp": "日本語、だいぶ<ruby>上手<rt>じょうず</rt></ruby>になってきましたね。",
             "en": "Your Japanese has really been getting better."
           },
           {
@@ -738,6 +840,23 @@
               "なったばかり means 'just became' a moment ago — not a gradual trend over 'lately'."
             ]
           }
+        ],
+        "conjugation": [
+          {
+            "label": "Group 1 verb",
+            "from": "書く",
+            "to": "書いてくる／書いていく"
+          },
+          {
+            "label": "Group 2 verb",
+            "from": "食べる",
+            "to": "食べてくる／食べていく"
+          },
+          {
+            "label": "Group 3 verb",
+            "from": "する／来る",
+            "to": "してくる／していく"
+          }
         ]
       },
       {
@@ -757,7 +876,7 @@
         ],
         "examples": [
           {
-            "jp": "<ruby>今年<rt>ことし</rt></ruby>の<ruby>冬<rt>ふゆ</rt></ruby>は<ruby>去年<rt>きょねん</rt></ruby>より<ruby>寒<rt>さむ</rt></ruby>くなりました。",
+            "jp": "今年の冬は<ruby>去年<rt>きょねん</rt></ruby>より<ruby>寒<rt>さむ</rt></ruby>くなりました。",
             "en": "This winter got colder than last winter."
           },
           {
@@ -765,14 +884,14 @@
             "en": "I practiced and got good at tennis."
           },
           {
-            "jp": "<ruby>彼<rt>かれ</rt></ruby>は<ruby>来月<rt>らいげつ</rt></ruby>、<ruby>先生<rt>せんせい</rt></ruby>になります。",
+            "jp": "<ruby>彼<rt>かれ</rt></ruby>は来月、先生になります。",
             "en": "He's going to become a teacher next month."
           }
         ],
         "dialogue": [
           {
             "who": "A",
-            "jp": "<ruby>最近<rt>さいきん</rt></ruby>、<ruby>日本語<rt>にほんご</rt></ruby>の<ruby>ニュース<rt>にゅーす</rt></ruby>が<ruby>少<rt>すこ</rt></ruby>し<ruby>分<rt>わ</rt></ruby>かるようになりました。",
+            "jp": "<ruby>最近<rt>さいきん</rt></ruby>、日本語のニュースが<ruby>少<rt>すこ</rt></ruby>し<ruby>分<rt>わ</rt></ruby>かるようになりました。",
             "en": "Lately I've become able to understand Japanese news a little."
           },
           {
@@ -817,6 +936,23 @@
               "安くする is 'make cheap' (deliberate action by someone), not 'become cheap' on its own."
             ]
           }
+        ],
+        "conjugation": [
+          {
+            "label": "い-adjective (drop い)",
+            "from": "<ruby>安<rt>やす</rt></ruby>い",
+            "to": "<ruby>安<rt>やす</rt></ruby>くなる"
+          },
+          {
+            "label": "な-adjective",
+            "from": "<ruby>元気<rt>げんき</rt></ruby>",
+            "to": "<ruby>元気<rt>げんき</rt></ruby>になる"
+          },
+          {
+            "label": "Noun",
+            "from": "先生",
+            "to": "先生になる"
+          }
         ]
       },
       {
@@ -836,27 +972,27 @@
         ],
         "examples": [
           {
-            "jp": "この<ruby>本<rt>ほん</rt></ruby>は<ruby>1000<rt>せん</rt></ruby><ruby>円<rt>えん</rt></ruby>もしました。",
+            "jp": "この本は1000円もしました。",
             "en": "This book cost as much as 1000 yen!"
           },
           {
-            "jp": "<ruby>財布<rt>さいふ</rt></ruby>に500<ruby>円<rt>えん</rt></ruby>しかありません。",
+            "jp": "<ruby>財布<rt>さいふ</rt></ruby>に500円しかありません。",
             "en": "I only have 500 yen in my wallet."
           },
           {
-            "jp": "<ruby>昨日<rt>きのう</rt></ruby>は<ruby>三時間<rt>さんじかん</rt></ruby>しか<ruby>寝<rt>ね</rt></ruby>ませんでした。",
+            "jp": "<ruby>昨日<rt>きのう</rt></ruby>は三時間しか<ruby>寝<rt>ね</rt></ruby>ませんでした。",
             "en": "I only slept three hours yesterday."
           }
         ],
         "dialogue": [
           {
             "who": "A",
-            "jp": "<ruby>今日<rt>きょう</rt></ruby>のテスト、どうでしたか。",
+            "jp": "今日のテスト、どうでしたか。",
             "en": "How was today's test?"
           },
           {
             "who": "B",
-            "jp": "<ruby>難<rt>むずか</rt></ruby>しかったです。<ruby>時間<rt>じかん</rt></ruby>が10<ruby>分<rt>ぷん</rt></ruby>しかなかったので、<ruby>全部<rt>ぜんぶ</rt></ruby><ruby>終<rt>お</rt></ruby>わりませんでした。",
+            "jp": "<ruby>難<rt>むずか</rt></ruby>しかったです。時間が10<ruby>分<rt>ぷん</rt></ruby>しかなかったので、<ruby>全部<rt>ぜんぶ</rt></ruby><ruby>終<rt>お</rt></ruby>わりませんでした。",
             "en": "It was hard. There was only 10 minutes, so I didn't finish it all."
           }
         ],
@@ -919,23 +1055,23 @@
             "en": "I think this problem is difficult."
           },
           {
-            "jp": "<ruby>友達<rt>ともだち</rt></ruby>は<ruby>来週<rt>らいしゅう</rt></ruby><ruby>国<rt>くに</rt></ruby>に<ruby>帰<rt>かえ</rt></ruby>ると<ruby>言<rt>い</rt></ruby>っていました。",
+            "jp": "<ruby>友達<rt>ともだち</rt></ruby>は<ruby>来週<rt>らいしゅう</rt></ruby>国に<ruby>帰<rt>かえ</rt></ruby>ると<ruby>言<rt>い</rt></ruby>っていました。",
             "en": "My friend said she was going back to her country next week."
           },
           {
-            "jp": "<ruby>店員<rt>てんいん</rt></ruby>さんは、これが<ruby>一番<rt>いちばん</rt></ruby><ruby>人気<rt>にんき</rt></ruby>だと<ruby>言<rt>い</rt></ruby>っていました。",
+            "jp": "<ruby>店員<rt>てんいん</rt></ruby>さんは、これが<ruby>一番<rt>いちばん</rt></ruby>人気だと<ruby>言<rt>い</rt></ruby>っていました。",
             "en": "The shop clerk said this is the most popular."
           }
         ],
         "dialogue": [
           {
             "who": "A",
-            "jp": "<ruby>山田<rt>やまだ</rt></ruby>さんはパーティーに<ruby>来<rt>く</rt></ruby>るんですか。",
+            "jp": "<ruby>山田<rt>やまだ</rt></ruby>さんはパーティーに来るんですか。",
             "en": "Is Yamada-san coming to the party?"
           },
           {
             "who": "B",
-            "jp": "<ruby>忙<rt>いそが</rt></ruby>しいから<ruby>来<rt>こ</rt></ruby>られないと<ruby>言<rt>い</rt></ruby>っていましたよ。",
+            "jp": "<ruby>忙<rt>いそが</rt></ruby>しいから来られないと<ruby>言<rt>い</rt></ruby>っていましたよ。",
             "en": "He said he's busy so he can't come."
           },
           {
@@ -979,6 +1115,28 @@
               "が would mark who is speaking, not introduce the quoted content.",
               "は would mark a topic, not introduce quoted content before 言う."
             ]
+          }
+        ],
+        "conjugation": [
+          {
+            "label": "Verb (plain form)",
+            "from": "書く",
+            "to": "書くと<ruby>思<rt>おも</rt></ruby>います"
+          },
+          {
+            "label": "い-adjective",
+            "from": "<ruby>安<rt>やす</rt></ruby>い",
+            "to": "<ruby>安<rt>やす</rt></ruby>いと<ruby>思<rt>おも</rt></ruby>います"
+          },
+          {
+            "label": "な-adjective",
+            "from": "<ruby>元気<rt>げんき</rt></ruby>",
+            "to": "<ruby>元気<rt>げんき</rt></ruby>だと<ruby>思<rt>おも</rt></ruby>います"
+          },
+          {
+            "label": "Noun",
+            "from": "学生",
+            "to": "学生だと<ruby>思<rt>おも</rt></ruby>います"
           }
         ]
       }
@@ -1164,27 +1322,27 @@
         ],
         "examples": [
           {
-            "jp": "<ruby>昨日<rt>きのう</rt></ruby><ruby>私<rt>わたし</rt></ruby>が<ruby>買<rt>か</rt></ruby>った<ruby>本<rt>ほん</rt></ruby>はとても<ruby>面白<rt>おもしろ</rt></ruby>かったです。",
+            "jp": "<ruby>昨日<rt>きのう</rt></ruby><ruby>私<rt>わたし</rt></ruby>が買った本はとても<ruby>面白<rt>おもしろ</rt></ruby>かったです。",
             "en": "The book I bought yesterday was very interesting."
           },
           {
-            "jp": "<ruby>日本語<rt>にほんご</rt></ruby>を<ruby>話<rt>はな</rt></ruby>す<ruby>人<rt>ひと</rt></ruby>に<ruby>会<rt>あ</rt></ruby>いました。",
+            "jp": "日本語を話す人に<ruby>会<rt>あ</rt></ruby>いました。",
             "en": "I met a person who speaks Japanese."
           },
           {
-            "jp": "あそこに<ruby>立<rt>た</rt></ruby>っている<ruby>人<rt>ひと</rt></ruby>はだれですか。",
+            "jp": "あそこに<ruby>立<rt>た</rt></ruby>っている人はだれですか。",
             "en": "Who is that person standing over there?"
           }
         ],
         "dialogue": [
           {
             "who": "A",
-            "jp": "この<ruby>間<rt>あいだ</rt></ruby><ruby>貸<rt>か</rt></ruby>してくれた<ruby>本<rt>ほん</rt></ruby>、もう<ruby>読<rt>よ</rt></ruby>みましたか。",
+            "jp": "この間<ruby>貸<rt>か</rt></ruby>してくれた本、もう読みましたか。",
             "en": "Have you already read the book you lent me the other day?"
           },
           {
             "who": "B",
-            "jp": "いいえ、まだです。<ruby>今<rt>いま</rt></ruby><ruby>読<rt>よ</rt></ruby>んでいる<ruby>本<rt>ほん</rt></ruby>を<ruby>先<rt>さき</rt></ruby>に<ruby>終<rt>お</rt></ruby>わらせます。",
+            "jp": "いいえ、まだです。今読んでいる本を先に<ruby>終<rt>お</rt></ruby>わらせます。",
             "en": "No, not yet. I'll finish the book I'm currently reading first."
           },
           {
@@ -1229,6 +1387,28 @@
               "There's no mention of waiting anywhere in this sentence."
             ]
           }
+        ],
+        "conjugation": [
+          {
+            "label": "Verb ＋noun",
+            "from": "書く",
+            "to": "書く人／書いた人／書かない人"
+          },
+          {
+            "label": "い-adjective",
+            "from": "<ruby>安<rt>やす</rt></ruby>い",
+            "to": "<ruby>安<rt>やす</rt></ruby>い<ruby>店<rt>みせ</rt></ruby>"
+          },
+          {
+            "label": "な-adjective",
+            "from": "<ruby>元気<rt>げんき</rt></ruby>",
+            "to": "<ruby>元気<rt>げんき</rt></ruby>な人"
+          },
+          {
+            "label": "Noun",
+            "from": "学生",
+            "to": "学生の<ruby>友達<rt>ともだち</rt></ruby>"
+          }
         ]
       },
       {
@@ -1248,32 +1428,32 @@
         ],
         "examples": [
           {
-            "jp": "<ruby>彼<rt>かれ</rt></ruby>が<ruby>来<rt>く</rt></ruby>るかどうかまだわかりません。",
+            "jp": "<ruby>彼<rt>かれ</rt></ruby>が来るかどうかまだわかりません。",
             "en": "I still don't know whether he's coming or not."
           },
           {
-            "jp": "このレストランが<ruby>今日<rt>きょう</rt></ruby><ruby>開<rt>あ</rt></ruby>いているかどうか<ruby>電話<rt>でんわ</rt></ruby>で<ruby>聞<rt>き</rt></ruby>いてみます。",
+            "jp": "このレストランが今日<ruby>開<rt>あ</rt></ruby>いているかどうか電話で聞いてみます。",
             "en": "I'll call and ask whether this restaurant is open today or not."
           },
           {
-            "jp": "その<ruby>話<rt>はなし</rt></ruby>が<ruby>本当<rt>ほんとう</rt></ruby>かどうか、<ruby>確認<rt>かくにん</rt></ruby>したほうがいいです。",
+            "jp": "その話が<ruby>本当<rt>ほんとう</rt></ruby>かどうか、<ruby>確認<rt>かくにん</rt></ruby>したほうがいいです。",
             "en": "You should check whether that story is true or not."
           }
         ],
         "dialogue": [
           {
             "who": "A",
-            "jp": "<ruby>明日<rt>あした</rt></ruby>のパーティー、<ruby>山田<rt>やまだ</rt></ruby>さんも<ruby>来<rt>き</rt></ruby>ますか。",
+            "jp": "<ruby>明日<rt>あした</rt></ruby>のパーティー、<ruby>山田<rt>やまだ</rt></ruby>さんも来ますか。",
             "en": "Is Yamada-san also coming to tomorrow's party?"
           },
           {
             "who": "B",
-            "jp": "さあ、<ruby>来<rt>く</rt></ruby>るかどうかわかりません。<ruby>忙<rt>いそが</rt></ruby>しいと<ruby>言<rt>い</rt></ruby>っていましたから。",
+            "jp": "さあ、来るかどうかわかりません。<ruby>忙<rt>いそが</rt></ruby>しいと<ruby>言<rt>い</rt></ruby>っていましたから。",
             "en": "Hmm, I don't know whether he's coming or not. He said he was busy."
           },
           {
             "who": "A",
-            "jp": "そうですか。じゃあ、<ruby>後<rt>あと</rt></ruby>で<ruby>聞<rt>き</rt></ruby>いてみます。",
+            "jp": "そうですか。じゃあ、後で聞いてみます。",
             "en": "I see. Well, I'll ask him later then."
           }
         ],
@@ -1313,6 +1493,28 @@
               "かどうかだ reverses the correct order; だ never follows かどうか like this."
             ]
           }
+        ],
+        "conjugation": [
+          {
+            "label": "Verb (plain form)",
+            "from": "行く",
+            "to": "行くかどうか"
+          },
+          {
+            "label": "い-adjective",
+            "from": "<ruby>安<rt>やす</rt></ruby>い",
+            "to": "<ruby>安<rt>やす</rt></ruby>いかどうか"
+          },
+          {
+            "label": "な-adjective (drop だ)",
+            "from": "<ruby>元気<rt>げんき</rt></ruby>",
+            "to": "<ruby>元気<rt>げんき</rt></ruby>かどうか"
+          },
+          {
+            "label": "Noun (drop だ)",
+            "from": "学生",
+            "to": "学生かどうか"
+          }
         ]
       },
       {
@@ -1332,7 +1534,7 @@
         ],
         "examples": [
           {
-            "jp": "<ruby>日本<rt>にほん</rt></ruby>に<ruby>着<rt>つ</rt></ruby>いたばかりです。",
+            "jp": "日本に<ruby>着<rt>つ</rt></ruby>いたばかりです。",
             "en": "I just arrived in Japan."
           },
           {
@@ -1347,17 +1549,17 @@
         "dialogue": [
           {
             "who": "A",
-            "jp": "もうご<ruby>飯<rt>はん</rt></ruby><ruby>食<rt>た</rt></ruby>べましたか。",
+            "jp": "もうご<ruby>飯<rt>はん</rt></ruby>食べましたか。",
             "en": "Have you eaten yet?"
           },
           {
             "who": "B",
-            "jp": "いいえ、まだです。<ruby>今<rt>いま</rt></ruby><ruby>起<rt>お</rt></ruby>きたばかりなんです。",
+            "jp": "いいえ、まだです。今<ruby>起<rt>お</rt></ruby>きたばかりなんです。",
             "en": "No, not yet. I just woke up."
           },
           {
             "who": "A",
-            "jp": "じゃあ、<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>朝<rt>あさ</rt></ruby>ご<ruby>飯<rt>はん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べましょう。",
+            "jp": "じゃあ、<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>朝<rt>あさ</rt></ruby>ご<ruby>飯<rt>はん</rt></ruby>を食べましょう。",
             "en": "Then let's eat breakfast together."
           }
         ],
@@ -1397,6 +1599,23 @@
               "たばかり states a completed fact, not a possibility."
             ]
           }
+        ],
+        "conjugation": [
+          {
+            "label": "Group 1 verb",
+            "from": "書く",
+            "to": "書いたばかり"
+          },
+          {
+            "label": "Group 2 verb",
+            "from": "食べる",
+            "to": "食べたばかり"
+          },
+          {
+            "label": "Group 3 verb",
+            "from": "する／来る",
+            "to": "したばかり／来たばかり"
+          }
         ]
       },
       {
@@ -1420,11 +1639,11 @@
             "en": "My little sister wants new shoes (you can tell)."
           },
           {
-            "jp": "<ruby>子<rt>こ</rt></ruby>どもはお<ruby>化<rt>ば</rt></ruby>けの<ruby>話<rt>はなし</rt></ruby>を<ruby>怖<rt>こわ</rt></ruby>がります。",
+            "jp": "子どもはお<ruby>化<rt>ば</rt></ruby>けの話を<ruby>怖<rt>こわ</rt></ruby>がります。",
             "en": "Children get scared of ghost stories."
           },
           {
-            "jp": "<ruby>弟<rt>おとうと</rt></ruby>はいつも<ruby>外<rt>そと</rt></ruby>で<ruby>遊<rt>あそ</rt></ruby>びたがります。",
+            "jp": "<ruby>弟<rt>おとうと</rt></ruby>はいつも外で<ruby>遊<rt>あそ</rt></ruby>びたがります。",
             "en": "My little brother always wants to play outside."
           }
         ],
@@ -1436,7 +1655,7 @@
           },
           {
             "who": "B",
-            "jp": "<ruby>新<rt>あたら</rt></ruby>しい<ruby>自転車<rt>じてんしゃ</rt></ruby>を<ruby>欲<rt>ほ</rt></ruby>しがっていて、<ruby>毎日<rt>まいにち</rt></ruby>それしか<ruby>話<rt>はな</rt></ruby>さないんです。",
+            "jp": "<ruby>新<rt>あたら</rt></ruby>しい<ruby>自転車<rt>じてんしゃ</rt></ruby>を<ruby>欲<rt>ほ</rt></ruby>しがっていて、毎日それしか話さないんです。",
             "en": "He wants a new bicycle, and that's all he talks about every day."
           },
           {
@@ -1481,6 +1700,23 @@
               "らしい reports hearsay or inference from indirect evidence, not directly observed outward behavior — がって is the more direct match here."
             ]
           }
+        ],
+        "conjugation": [
+          {
+            "label": "い-adjective (drop い)",
+            "from": "<ruby>欲<rt>ほ</rt></ruby>しい",
+            "to": "<ruby>欲<rt>ほ</rt></ruby>しがる"
+          },
+          {
+            "label": "い-adjective (drop い)",
+            "from": "<ruby>怖<rt>こわ</rt></ruby>い",
+            "to": "<ruby>怖<rt>こわ</rt></ruby>がる"
+          },
+          {
+            "label": "〜たい (drop い)",
+            "from": "行きたい",
+            "to": "行きたがる"
+          }
         ]
       },
       {
@@ -1500,32 +1736,32 @@
         ],
         "examples": [
           {
-            "jp": "<ruby>今<rt>いま</rt></ruby>から<ruby>晩<rt>ばん</rt></ruby>ご<ruby>飯<rt>はん</rt></ruby>を<ruby>作<rt>つく</rt></ruby>るところです。",
+            "jp": "今から<ruby>晩<rt>ばん</rt></ruby>ご<ruby>飯<rt>はん</rt></ruby>を<ruby>作<rt>つく</rt></ruby>るところです。",
             "en": "I'm just about to make dinner."
           },
           {
-            "jp": "<ruby>今<rt>いま</rt></ruby>、<ruby>会議<rt>かいぎ</rt></ruby>をしているところです。",
+            "jp": "今、<ruby>会議<rt>かいぎ</rt></ruby>をしているところです。",
             "en": "We're in the middle of a meeting right now."
           },
           {
-            "jp": "ちょうど<ruby>今<rt>いま</rt></ruby>、レポートを<ruby>書<rt>か</rt></ruby>き<ruby>終<rt>お</rt></ruby>わったところです。",
+            "jp": "ちょうど今、レポートを書き<ruby>終<rt>お</rt></ruby>わったところです。",
             "en": "I just this instant finished writing the report."
           }
         ],
         "dialogue": [
           {
             "who": "A",
-            "jp": "もしもし、<ruby>今<rt>いま</rt></ruby><ruby>大丈夫<rt>だいじょうぶ</rt></ruby>ですか。",
+            "jp": "もしもし、今<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>ですか。",
             "en": "Hello, is now an okay time?"
           },
           {
             "who": "B",
-            "jp": "すみません、<ruby>今<rt>いま</rt></ruby><ruby>出<rt>で</rt></ruby>かけるところなんです。あとでかけ<ruby>直<rt>なお</rt></ruby>します。",
+            "jp": "すみません、今出かけるところなんです。あとでかけ<ruby>直<rt>なお</rt></ruby>します。",
             "en": "Sorry, I'm just about to head out. I'll call you back later."
           },
           {
             "who": "A",
-            "jp": "わかりました、じゃあまた<ruby>後<rt>あと</rt></ruby>で。",
+            "jp": "わかりました、じゃあまた後で。",
             "en": "Got it, talk later then."
           }
         ],
@@ -1565,6 +1801,23 @@
               "ところ is about a precise point in time, typically close to now, not specifically the distant past."
             ]
           }
+        ],
+        "conjugation": [
+          {
+            "label": "about to (plain non-past)",
+            "from": "書く",
+            "to": "書くところ"
+          },
+          {
+            "label": "in the middle of (ている)",
+            "from": "書く",
+            "to": "書いているところ"
+          },
+          {
+            "label": "just finished (た-form)",
+            "from": "書く",
+            "to": "書いたところ"
+          }
         ]
       },
       {
@@ -1589,28 +1842,28 @@
             "en": "\"Watch out! Stop!\""
           },
           {
-            "jp": "「<ruby>早<rt>はや</rt></ruby>く<ruby>食<rt>た</rt></ruby>べろ！」と<ruby>父<rt>ちち</rt></ruby>は<ruby>怒<rt>おこ</rt></ruby>って<ruby>言<rt>い</rt></ruby>いました。",
+            "jp": "「<ruby>早<rt>はや</rt></ruby>く食べろ！」と父は<ruby>怒<rt>おこ</rt></ruby>って<ruby>言<rt>い</rt></ruby>いました。",
             "en": "\"Eat quickly!\" my father said angrily."
           },
           {
-            "jp": "「ここに<ruby>入<rt>はい</rt></ruby>るな。」という<ruby>看板<rt>かんばん</rt></ruby>がありました。",
+            "jp": "「ここに入るな。」という<ruby>看板<rt>かんばん</rt></ruby>がありました。",
             "en": "There was a sign that said, \"Don't enter here.\""
           }
         ],
         "dialogue": [
           {
             "who": "A",
-            "jp": "<ruby>漫画<rt>まんが</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で、<ruby>先生<rt>せんせい</rt></ruby>が「もっと<ruby>頑張<rt>がんば</rt></ruby>れ！」と<ruby>言<rt>い</rt></ruby>っていました。",
+            "jp": "<ruby>漫画<rt>まんが</rt></ruby>の中で、先生が「もっと<ruby>頑張<rt>がんば</rt></ruby>れ！」と<ruby>言<rt>い</rt></ruby>っていました。",
             "en": "In the manga, the teacher said, \"Try harder!\""
           },
           {
             "who": "B",
-            "jp": "<ruby>命令形<rt>めいれいけい</rt></ruby>ですね。<ruby>普段<rt>ふだん</rt></ruby>は<ruby>使<rt>つか</rt></ruby>わない<ruby>言<rt>い</rt></ruby>い<ruby>方<rt>かた</rt></ruby>ですけど、こういう<ruby>場面<rt>ばめん</rt></ruby>ではよく<ruby>出<rt>で</rt></ruby>てきますね。",
+            "jp": "<ruby>命令形<rt>めいれいけい</rt></ruby>ですね。<ruby>普段<rt>ふだん</rt></ruby>は<ruby>使<rt>つか</rt></ruby>わない<ruby>言<rt>い</rt></ruby>い<ruby>方<rt>かた</rt></ruby>ですけど、こういう<ruby>場面<rt>ばめん</rt></ruby>ではよく出てきますね。",
             "en": "That's the imperative form. It's not something you'd normally use yourself, but it shows up a lot in scenes like this."
           },
           {
             "who": "A",
-            "jp": "そうですね。<ruby>読<rt>よ</rt></ruby>めるようになりたいです。",
+            "jp": "そうですね。読めるようになりたいです。",
             "en": "Right. I want to be able to read it."
           }
         ],
@@ -1650,6 +1903,28 @@
               "食べて is the て-form, used for polite requests (食べてください), not the blunt imperative."
             ]
           }
+        ],
+        "conjugation": [
+          {
+            "label": "Group 1 verb",
+            "from": "書く",
+            "to": "書け"
+          },
+          {
+            "label": "Group 2 verb",
+            "from": "食べる",
+            "to": "食べろ"
+          },
+          {
+            "label": "Group 3 verb",
+            "from": "する／来る",
+            "to": "しろ／来い"
+          },
+          {
+            "label": "negative command",
+            "from": "書く",
+            "to": "書くな"
+          }
         ]
       },
       {
@@ -1669,7 +1944,7 @@
         ],
         "examples": [
           {
-            "jp": "すみません、<ruby>少<rt>すこ</rt></ruby>し<ruby>休<rt>やす</rt></ruby>ませてください。",
+            "jp": "すみません、<ruby>少<rt>すこ</rt></ruby>し休ませてください。",
             "en": "Excuse me, please let me rest a little."
           },
           {
@@ -1734,6 +2009,23 @@
               "This just states your own wish without framing it as a request for permission."
             ]
           }
+        ],
+        "conjugation": [
+          {
+            "label": "Group 1 verb",
+            "from": "書く",
+            "to": "書かせてください"
+          },
+          {
+            "label": "Group 2 verb",
+            "from": "食べる",
+            "to": "食べさせてください"
+          },
+          {
+            "label": "Group 3 verb",
+            "from": "する／来る",
+            "to": "させてください／来させてください"
+          }
         ]
       },
       {
@@ -1752,15 +2044,15 @@
         ],
         "examples": [
           {
-            "jp": "<ruby>疲<rt>つか</rt></ruby>れているなら、<ruby>少<rt>すこ</rt></ruby>し<ruby>休<rt>やす</rt></ruby>んではどうですか。",
+            "jp": "<ruby>疲<rt>つか</rt></ruby>れているなら、<ruby>少<rt>すこ</rt></ruby>し休んではどうですか。",
             "en": "If you're tired, how about resting a little?"
           },
           {
-            "jp": "<ruby>一度<rt>いちど</rt></ruby>、<ruby>先生<rt>せんせい</rt></ruby>に<ruby>相談<rt>そうだん</rt></ruby>してはどうですか。",
+            "jp": "<ruby>一度<rt>いちど</rt></ruby>、先生に<ruby>相談<rt>そうだん</rt></ruby>してはどうですか。",
             "en": "How about consulting your teacher once?"
           },
           {
-            "jp": "（カジュアル）そんなに<ruby>悩<rt>なや</rt></ruby>んでるなら、<ruby>聞<rt>き</rt></ruby>いてみたらどう？",
+            "jp": "（カジュアル）そんなに<ruby>悩<rt>なや</rt></ruby>んでるなら、聞いてみたらどう？",
             "en": "(Casual) If you're worrying that much, how about just asking?"
           }
         ],
@@ -1772,7 +2064,7 @@
           },
           {
             "who": "B",
-            "jp": "それなら、<ruby>寝<rt>ね</rt></ruby>る<ruby>前<rt>まえ</rt></ruby>にスマホを<ruby>見<rt>み</rt></ruby>ないようにしてはどうですか。",
+            "jp": "それなら、<ruby>寝<rt>ね</rt></ruby>る前にスマホを見ないようにしてはどうですか。",
             "en": "In that case, how about trying not to look at your phone before bed?"
           },
           {
@@ -1816,6 +2108,18 @@
               "どうして means 'why' — unrelated to making a suggestion.",
               "なぜ also means 'why' — unrelated to making a suggestion."
             ]
+          }
+        ],
+        "conjugation": [
+          {
+            "label": "て-form ＋はどうですか",
+            "from": "休む",
+            "to": "休んではどうですか"
+          },
+          {
+            "label": "casual (た-form ＋らどう)",
+            "from": "休む",
+            "to": "休んだらどう？"
           }
         ]
       }
@@ -1974,6 +2278,473 @@
         ],
         "a": 0,
         "ex": "〜てはどうですか floats a suggestion more softly than a request or firm advice."
+      }
+    ]
+  },
+  {
+    "num": 10,
+    "jpTitle": "敬語（尊敬語・謙譲語）",
+    "reading": "けいご（そんけいご・けんじょうご）",
+    "enTitle": "Honorific & Humble Speech",
+    "accent": "indigo-deep",
+    "points": [
+      {
+        "jp": "<ruby>尊敬語<rt>そんけいご</rt></ruby>",
+        "romaji": "sonkeigo",
+        "fn": "Raising the other person's action",
+        "sources": [
+          "MNN Bk2 L49",
+          "Genki II Ch19",
+          "Sou Matome Wk6"
+        ],
+        "explain": "<ruby>尊敬語<rt>そんけいご</rt></ruby> lifts up the person you're talking about — a customer, a teacher, a superior, someone else's family. You never use it about yourself. Three shapes cover almost everything at N4: the regular お＋stem＋になる pattern, the passive-shaped 〜れる／られる (the lightest, most everyday honorific), and a short list of irregular verbs that replace the word entirely. Recognizing these matters long before you can produce them — every station announcement and shop greeting in Japan is built from them.",
+        "formation": [
+          "お＋Verb(ます-stem)＋になる — <ruby>待<rt>ま</rt></ruby>つ → お<ruby>待<rt>ま</rt></ruby>ちになる",
+          "ご＋する-noun＋になる — <ruby>利用<rt>りよう</rt></ruby>する → ご<ruby>利用<rt>りよう</rt></ruby>になる",
+          "Verb passive form 〜れる／られる — <ruby>帰<rt>かえ</rt></ruby>る → <ruby>帰<rt>かえ</rt></ruby>られる（lightest honorific）",
+          "irregular: 行く・来る・いる → いらっしゃる ／ 食べる・飲む → <ruby>召<rt>め</rt></ruby>し上がる ／ 見る → ご<ruby>覧<rt>らん</rt></ruby>になる ／ <ruby>言<rt>い</rt></ruby>う → おっしゃる ／ する → なさる"
+        ],
+        "examples": [
+          {
+            "jp": "<ruby>社長<rt>しゃちょう</rt></ruby>はもうお<ruby>帰<rt>かえ</rt></ruby>りになりました。",
+            "en": "The company president has already gone home."
+          },
+          {
+            "jp": "先生は何時に来られますか。",
+            "en": "What time is the teacher coming? (light honorific)"
+          },
+          {
+            "jp": "こちらのパンフレットをご<ruby>覧<rt>らん</rt></ruby>になりましたか。",
+            "en": "Have you looked at this pamphlet?"
+          },
+          {
+            "jp": "<ruby>部長<rt>ぶちょう</rt></ruby>は今、<ruby>会議室<rt>かいぎしつ</rt></ruby>にいらっしゃいます。",
+            "en": "The manager is in the meeting room right now."
+          }
+        ],
+        "dialogue": [
+          {
+            "who": "A",
+            "jp": "<ruby>山田<rt>やまだ</rt></ruby><ruby>部長<rt>ぶちょう</rt></ruby>はもういらっしゃいましたか。",
+            "en": "Has manager Yamada arrived yet?"
+          },
+          {
+            "who": "B",
+            "jp": "はい、先ほどお<ruby>着<rt>き</rt></ruby>きになりました。",
+            "en": "Yes, he arrived a little while ago."
+          },
+          {
+            "who": "A",
+            "jp": "では、ご<ruby>案内<rt>あんない</rt></ruby>します。",
+            "en": "Then I'll show you through."
+          }
+        ],
+        "tip": "〜れる／られる looks exactly like the passive, so context decides which one you're reading. If the subject is someone you'd be polite to, it's almost certainly honorific, not passive.",
+        "quiz": [
+          {
+            "q": "「<ruby>社長<rt>しゃちょう</rt></ruby>はもう＿＿。」 (honorific — the president went home)",
+            "choices": [
+              "お<ruby>帰<rt>かえ</rt></ruby>りになりました",
+              "お<ruby>帰<rt>かえ</rt></ruby>りしました",
+              "<ruby>帰<rt>かえ</rt></ruby>らせました",
+              "<ruby>帰<rt>かえ</rt></ruby>らされました"
+            ],
+            "a": 0,
+            "ex": "お＋stem＋になる raises the president's action. お<ruby>帰<rt>かえ</rt></ruby>りする would be humble, which wrongly lowers him."
+          },
+          {
+            "q": "「<ruby>部長<rt>ぶちょう</rt></ruby>は<ruby>会議室<rt>かいぎしつ</rt></ruby>に＿＿。」 (honorific for いる)",
+            "choices": [
+              "いらっしゃいます",
+              "おります",
+              "まいります",
+              "いたします"
+            ],
+            "a": 0,
+            "ex": "いらっしゃる is the honorific for いる／行く／来る. おる is the humble form, used about yourself."
+          },
+          {
+            "q": "「先生がそう＿＿。」 (honorific for <ruby>言<rt>い</rt></ruby>う)",
+            "choices": [
+              "おっしゃいました",
+              "<ruby>申<rt>もう</rt></ruby>しました",
+              "<ruby>言<rt>い</rt></ruby>わせました",
+              "うかがいました"
+            ],
+            "a": 0,
+            "ex": "おっしゃる is honorific 'to say'. <ruby>申<rt>もう</rt></ruby>す is the humble version for your own speech."
+          }
+        ],
+        "conjugation": [
+          {
+            "label": "お＋ます-stem＋になる",
+            "from": "<ruby>待<rt>ま</rt></ruby>つ",
+            "to": "お<ruby>待<rt>ま</rt></ruby>ちになる"
+          },
+          {
+            "label": "passive-shaped honorific",
+            "from": "<ruby>帰<rt>かえ</rt></ruby>る",
+            "to": "<ruby>帰<rt>かえ</rt></ruby>られる"
+          },
+          {
+            "label": "irregular",
+            "from": "行く／来る／いる",
+            "to": "いらっしゃる"
+          },
+          {
+            "label": "irregular",
+            "from": "食べる／飲む",
+            "to": "<ruby>召<rt>め</rt></ruby>し上がる"
+          }
+        ]
+      },
+      {
+        "jp": "<ruby>謙譲語<rt>けんじょうご</rt></ruby>",
+        "romaji": "kenjougo",
+        "fn": "Lowering your own action",
+        "sources": [
+          "MNN Bk2 L50",
+          "Genki II Ch20",
+          "Sou Matome Wk6"
+        ],
+        "explain": "<ruby>謙譲語<rt>けんじょうご</rt></ruby> works from the opposite direction: instead of raising the other person, you lower yourself, which has the same net effect of showing respect. Use it for your own actions — and for your own group's actions when speaking to an outsider, which is why staff say <ruby>担当<rt>たんとう</rt></ruby>の<ruby>者<rt>もの</rt></ruby>が<ruby>参<rt>まい</rt></ruby>ります ('our person will come') rather than raising their own colleague. The regular pattern is お＋stem＋する, plus a short irregular list.",
+        "formation": [
+          "お＋Verb(ます-stem)＋する — <ruby>持<rt>も</rt></ruby>つ → お<ruby>持<rt>も</rt></ruby>ちする",
+          "ご＋する-noun＋する — <ruby>案内<rt>あんない</rt></ruby>する → ご<ruby>案内<rt>あんない</rt></ruby>する",
+          "irregular: 行く・来る → <ruby>参<rt>まい</rt></ruby>る ／ いる → おる ／ <ruby>言<rt>い</rt></ruby>う → <ruby>申<rt>もう</rt></ruby>す ／ 見る → <ruby>拝見<rt>はいけん</rt></ruby>する ／ 聞く・<ruby>訪<rt>たず</rt></ruby>ねる → うかがう ／ する → いたす ／ もらう → いただく"
+        ],
+        "examples": [
+          {
+            "jp": "お<ruby>荷物<rt>にもつ</rt></ruby>をお<ruby>持<rt>も</rt></ruby>ちします。",
+            "en": "I'll carry your luggage."
+          },
+          {
+            "jp": "<ruby>担当<rt>たんとう</rt></ruby>の<ruby>者<rt>もの</rt></ruby>がすぐに<ruby>参<rt>まい</rt></ruby>ります。",
+            "en": "The person in charge will come right away."
+          },
+          {
+            "jp": "先生の<ruby>作品<rt>さくひん</rt></ruby>を<ruby>拝見<rt>はいけん</rt></ruby>しました。",
+            "en": "I looked at the teacher's work."
+          },
+          {
+            "jp": "<ruby>明日<rt>あした</rt></ruby>、先生のお<ruby>宅<rt>たく</rt></ruby>にうかがいます。",
+            "en": "I'll visit the teacher's home tomorrow."
+          }
+        ],
+        "dialogue": [
+          {
+            "who": "A",
+            "jp": "この<ruby>資料<rt>しりょう</rt></ruby>、だれが<ruby>説明<rt>せつめい</rt></ruby>しますか。",
+            "en": "Who will explain these materials?"
+          },
+          {
+            "who": "B",
+            "jp": "わたくしがご<ruby>説明<rt>せつめい</rt></ruby>いたします。",
+            "en": "I will explain them."
+          },
+          {
+            "who": "A",
+            "jp": "では、お<ruby>願<rt>ねが</rt></ruby>いします。",
+            "en": "Please go ahead, then."
+          }
+        ],
+        "tip": "The classic mistake is using お〜する about someone else — お待ちしてください is wrong. Requests to the other person take お待ちください (honorific); お待ちします is only ever about yourself.",
+        "quiz": [
+          {
+            "q": "「わたしが<ruby>資料<rt>しりょう</rt></ruby>を＿＿。」 (humble — I'll bring it)",
+            "choices": [
+              "お<ruby>持<rt>も</rt></ruby>ちします",
+              "お<ruby>持<rt>も</rt></ruby>ちになります",
+              "<ruby>持<rt>も</rt></ruby>たれます",
+              "お<ruby>持<rt>も</rt></ruby>ちください"
+            ],
+            "a": 0,
+            "ex": "お＋stem＋する lowers your own action. お<ruby>持<rt>も</rt></ruby>ちになる would raise it, which you never do about yourself."
+          },
+          {
+            "q": "「先生の<ruby>絵<rt>え</rt></ruby>を＿＿。」 (humble — I looked at it)",
+            "choices": [
+              "<ruby>拝見<rt>はいけん</rt></ruby>しました",
+              "ご<ruby>覧<rt>らん</rt></ruby>になりました",
+              "見られました",
+              "お見せしました"
+            ],
+            "a": 0,
+            "ex": "<ruby>拝見<rt>はいけん</rt></ruby>する is the humble verb for viewing something belonging to a superior. ご<ruby>覧<rt>らん</rt></ruby>になる is honorific."
+          },
+          {
+            "q": "「<ruby>担当<rt>たんとう</rt></ruby>の<ruby>者<rt>もの</rt></ruby>がすぐに＿＿。」 (humble — our staff will come)",
+            "choices": [
+              "<ruby>参<rt>まい</rt></ruby>ります",
+              "いらっしゃいます",
+              "おいでになります",
+              "見えます"
+            ],
+            "a": 0,
+            "ex": "Speaking to an outsider about your own side, even a colleague takes the humble <ruby>参<rt>まい</rt></ruby>る, not an honorific."
+          }
+        ],
+        "conjugation": [
+          {
+            "label": "お＋ます-stem＋する",
+            "from": "<ruby>持<rt>も</rt></ruby>つ",
+            "to": "お<ruby>持<rt>も</rt></ruby>ちする"
+          },
+          {
+            "label": "ご＋noun＋する",
+            "from": "<ruby>案内<rt>あんない</rt></ruby>する",
+            "to": "ご<ruby>案内<rt>あんない</rt></ruby>する"
+          },
+          {
+            "label": "irregular",
+            "from": "行く／来る",
+            "to": "<ruby>参<rt>まい</rt></ruby>る"
+          },
+          {
+            "label": "irregular",
+            "from": "<ruby>言<rt>い</rt></ruby>う",
+            "to": "<ruby>申<rt>もう</rt></ruby>す"
+          },
+          {
+            "label": "irregular",
+            "from": "見る",
+            "to": "<ruby>拝見<rt>はいけん</rt></ruby>する"
+          }
+        ]
+      },
+      {
+        "jp": "<ruby>接客<rt>せっきゃく</rt></ruby>の<ruby>敬語<rt>けいご</rt></ruby>を聞き<ruby>取<rt>と</rt></ruby>る",
+        "romaji": "sekkyaku no keigo wo kikitoru",
+        "fn": "Understanding the keigo staff use on you",
+        "sources": [
+          "MNN Bk2 L49-50",
+          "Genki II Ch19-20",
+          "Sou Matome Wk6"
+        ],
+        "explain": "As a visitor you are almost never required to produce keigo — です／ます is completely acceptable and expected. What you do need is to understand it instantly, because shop, station and hotel staff use it at speed. These set phrases are worth knowing as whole units rather than parsing them grammatically in the moment: you'll hear the same dozen lines everywhere you go.",
+        "formation": [
+          "いらっしゃいませ — welcome (said to you on entering)",
+          "かしこまりました／<ruby>承知<rt>しょうち</rt></ruby>しました — certainly, understood",
+          "<ruby>少<rt>すこ</rt></ruby>々お<ruby>待<rt>ま</rt></ruby>ちください — please wait a moment",
+          "お<ruby>決<rt>き</rt></ruby>まりでしょうか — have you decided?",
+          "<ruby>恐<rt>おそ</rt></ruby>れ入りますが〜 — I'm sorry to trouble you, but..."
+        ],
+        "examples": [
+          {
+            "jp": "いらっしゃいませ。<ruby>何名様<rt>なんめいさま</rt></ruby>でいらっしゃいますか。",
+            "en": "Welcome. How many in your party?"
+          },
+          {
+            "jp": "<ruby>恐<rt>おそ</rt></ruby>れ入りますが、こちらにお名前をお書きください。",
+            "en": "Sorry to trouble you, but please write your name here."
+          },
+          {
+            "jp": "ただいま<ruby>係<rt>かかり</rt></ruby>の<ruby>者<rt>もの</rt></ruby>が<ruby>参<rt>まい</rt></ruby>りますので、<ruby>少<rt>すこ</rt></ruby>々お<ruby>待<rt>ま</rt></ruby>ちください。",
+            "en": "Someone will be with you shortly, so please wait a moment."
+          },
+          {
+            "jp": "こちらのお<ruby>席<rt>せき</rt></ruby>にどうぞ。",
+            "en": "Please take this seat."
+          }
+        ],
+        "dialogue": [
+          {
+            "who": "Staff",
+            "jp": "いらっしゃいませ。ご<ruby>注文<rt>ちゅうもん</rt></ruby>はお<ruby>決<rt>き</rt></ruby>まりでしょうか。",
+            "en": "Welcome. Have you decided on your order?"
+          },
+          {
+            "who": "You",
+            "jp": "すみません、もう<ruby>少<rt>すこ</rt></ruby>し<ruby>待<rt>ま</rt></ruby>ってください。",
+            "en": "Sorry, could you give me a moment?"
+          },
+          {
+            "who": "Staff",
+            "jp": "かしこまりました。お<ruby>決<rt>き</rt></ruby>まりになりましたらお<ruby>呼<rt>よ</rt></ruby>びください。",
+            "en": "Certainly. Please call me when you've decided."
+          }
+        ],
+        "tip": "Answering keigo with plain です／ます is completely natural and not rude — staff do not expect keigo back from a customer. Trying to force it usually sounds stranger than just being clear and polite.",
+        "quiz": [
+          {
+            "q": "Staff say 「<ruby>少<rt>すこ</rt></ruby>々お<ruby>待<rt>ま</rt></ruby>ちください。」 You should:",
+            "choices": [
+              "wait a moment",
+              "leave",
+              "pay now",
+              "repeat your order"
+            ],
+            "a": 0,
+            "ex": "<ruby>少<rt>すこ</rt></ruby>々お<ruby>待<rt>ま</rt></ruby>ちください is the keigo form of ちょっと<ruby>待<rt>ま</rt></ruby>ってください."
+          },
+          {
+            "q": "「お<ruby>決<rt>き</rt></ruby>まりでしょうか。」 is asking:",
+            "choices": [
+              "whether you've decided",
+              "whether you're paying by card",
+              "whether you want a bag",
+              "whether you're finished eating"
+            ],
+            "a": 0,
+            "ex": "<ruby>決<rt>き</rt></ruby>まる ('to be decided') in honorific form — staff asking if you're ready to order."
+          }
+        ]
+      }
+    ],
+    "check": [
+      {
+        "q": "「<ruby>社長<rt>しゃちょう</rt></ruby>はもう＿＿。」 (honorific)",
+        "choices": [
+          "お<ruby>帰<rt>かえ</rt></ruby>りになりました",
+          "お<ruby>帰<rt>かえ</rt></ruby>りしました",
+          "<ruby>帰<rt>かえ</rt></ruby>らせました",
+          "お<ruby>帰<rt>かえ</rt></ruby>りします"
+        ],
+        "a": 0,
+        "ex": "お＋stem＋になる raises the other person's action."
+      },
+      {
+        "q": "「わたしが<ruby>荷物<rt>にもつ</rt></ruby>を＿＿。」 (humble)",
+        "choices": [
+          "お<ruby>持<rt>も</rt></ruby>ちします",
+          "お<ruby>持<rt>も</rt></ruby>ちになります",
+          "<ruby>持<rt>も</rt></ruby>たれます",
+          "お<ruby>持<rt>も</rt></ruby>ちください"
+        ],
+        "a": 0,
+        "ex": "お＋stem＋する lowers your own action."
+      },
+      {
+        "q": "「先生は何時に＿＿か。」 (honorific for 来る)",
+        "choices": [
+          "いらっしゃいます",
+          "<ruby>参<rt>まい</rt></ruby>ります",
+          "おります",
+          "いたします"
+        ],
+        "a": 0,
+        "ex": "いらっしゃる covers 行く・来る・いる in honorific speech."
+      },
+      {
+        "q": "「<ruby>担当<rt>たんとう</rt></ruby>の<ruby>者<rt>もの</rt></ruby>がすぐに＿＿。」 (your own side, to an outsider)",
+        "choices": [
+          "<ruby>参<rt>まい</rt></ruby>ります",
+          "いらっしゃいます",
+          "お<ruby>越<rt>こ</rt></ruby>しになります",
+          "見えます"
+        ],
+        "a": 0,
+        "ex": "Your own group takes humble forms when you speak to someone outside it."
+      },
+      {
+        "q": "「先生がそう＿＿。」 (honorific for <ruby>言<rt>い</rt></ruby>う)",
+        "choices": [
+          "おっしゃいました",
+          "<ruby>申<rt>もう</rt></ruby>しました",
+          "うかがいました",
+          "<ruby>言<rt>い</rt></ruby>わせました"
+        ],
+        "a": 0,
+        "ex": "おっしゃる is honorific; <ruby>申<rt>もう</rt></ruby>す is humble."
+      },
+      {
+        "q": "「わたくしは<ruby>田中<rt>たなか</rt></ruby>と＿＿。」 (humble self-introduction)",
+        "choices": [
+          "<ruby>申<rt>もう</rt></ruby>します",
+          "おっしゃいます",
+          "いらっしゃいます",
+          "なさいます"
+        ],
+        "a": 0,
+        "ex": "<ruby>申<rt>もう</rt></ruby>す is the humble verb for saying your own name."
+      },
+      {
+        "q": "「どうぞ＿＿ください。」 (honorific for 食べる)",
+        "choices": [
+          "<ruby>召<rt>め</rt></ruby>し上がって",
+          "いただいて",
+          "<ruby>拝見<rt>はいけん</rt></ruby>して",
+          "<ruby>参<rt>まい</rt></ruby>って"
+        ],
+        "a": 0,
+        "ex": "<ruby>召<rt>め</rt></ruby>し上がる is honorific 'to eat'; いただく is humble, for your own eating."
+      },
+      {
+        "q": "「先生の<ruby>絵<rt>え</rt></ruby>を＿＿。」 (humble)",
+        "choices": [
+          "<ruby>拝見<rt>はいけん</rt></ruby>しました",
+          "ご<ruby>覧<rt>らん</rt></ruby>になりました",
+          "お見せしました",
+          "見えました"
+        ],
+        "a": 0,
+        "ex": "<ruby>拝見<rt>はいけん</rt></ruby>する is humble viewing; ご<ruby>覧<rt>らん</rt></ruby>になる is honorific."
+      },
+      {
+        "q": "「<ruby>明日<rt>あした</rt></ruby>、先生のお<ruby>宅<rt>たく</rt></ruby>に＿＿。」 (humble visiting)",
+        "choices": [
+          "うかがいます",
+          "いらっしゃいます",
+          "お<ruby>越<rt>こ</rt></ruby>しになります",
+          "<ruby>参<rt>まい</rt></ruby>られます"
+        ],
+        "a": 0,
+        "ex": "うかがう is the humble verb for visiting a superior."
+      },
+      {
+        "q": "Which is WRONG when asking the other person to wait?",
+        "choices": [
+          "お<ruby>待<rt>ま</rt></ruby>ちします",
+          "お<ruby>待<rt>ま</rt></ruby>ちください",
+          "<ruby>少<rt>すこ</rt></ruby>々お<ruby>待<rt>ま</rt></ruby>ちください",
+          "お<ruby>待<rt>ま</rt></ruby>ちいただけますか"
+        ],
+        "a": 0,
+        "ex": "お<ruby>待<rt>ま</rt></ruby>ちします is humble — it describes YOUR waiting, so it can't be a request aimed at someone else."
+      },
+      {
+        "q": "「ご<ruby>利用<rt>りよう</rt></ruby>＿＿。」 (honorific: do you use it?)",
+        "choices": [
+          "になりますか",
+          "しますか",
+          "いたしますか",
+          "<ruby>申<rt>もう</rt></ruby>しますか"
+        ],
+        "a": 0,
+        "ex": "ご＋noun＋になる is the honorific pattern for する-nouns."
+      },
+      {
+        "q": "「かしこまりました」 is said by:",
+        "choices": [
+          "staff to a customer",
+          "a customer to staff",
+          "a child to a parent",
+          "friends to each other"
+        ],
+        "a": 0,
+        "ex": "It's humble service language meaning 'certainly' — you hear it far more than you say it."
+      },
+      {
+        "q": "「<ruby>部長<rt>ぶちょう</rt></ruby>は<ruby>会議室<rt>かいぎしつ</rt></ruby>に＿＿。」 (honorific for いる)",
+        "choices": [
+          "いらっしゃいます",
+          "おります",
+          "ございます",
+          "いたします"
+        ],
+        "a": 0,
+        "ex": "いらっしゃる for someone else; おる is the humble equivalent for yourself."
+      },
+      {
+        "q": "As a visitor in Japan, answering staff keigo with plain です／ます is:",
+        "choices": [
+          "completely fine and expected",
+          "considered rude",
+          "only acceptable for children",
+          "never done"
+        ],
+        "a": 0,
+        "ex": "Customers aren't expected to return keigo — clear, polite です／ます is entirely normal."
       }
     ]
   }

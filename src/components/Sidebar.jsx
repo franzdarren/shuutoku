@@ -14,12 +14,6 @@ const NAV = [
   { id: "ai", mk: "練", label: "Renshuu with AI", soon: true },
 ];
 
-const SIZES = [
-  { v: 0.9, label: "A-" },
-  { v: 1, label: "A" },
-  { v: 1.18, label: "A+" },
-];
-
 const JP_FONTS = [
   { v: "mincho", label: "明朝 Mincho" },
   { v: "gothic", label: "ゴシック Gothic" },
@@ -69,12 +63,22 @@ export default function Sidebar({ active, onNavigate, mobileOpen, onCloseMobile,
             <button className={"switch" + (dark ? " on" : "")} onClick={() => setDark(!dark)} aria-label="Toggle dark mode" />
           </div>
           <div className="setting-row" style={{ display: "block" }}>
-            <span style={{ display: "block", marginBottom: 6 }}>Text size</span>
-            <div className="fontsize-controls">
-              {SIZES.map((s) => (
-                <button key={s.v} className={fontScale === s.v ? "active" : ""} onClick={() => setFontScale(s.v)}>{s.label}</button>
-              ))}
+            <span style={{ display: "flex", justifyContent: "space-between", marginBottom: 6 }}>
+              Text size <span className="setting-value">{Math.round(fontScale * 100)}%</span>
+            </span>
+            <div className="slider-row">
+              <span className="slider-cap sm">A</span>
+              <input
+                className="slider"
+                type="range"
+                min="0.85" max="1.4" step="0.05"
+                value={fontScale}
+                onChange={(e) => setFontScale(Number(e.target.value))}
+                aria-label="Text size"
+              />
+              <span className="slider-cap lg">A</span>
             </div>
+            <button className="linkbtn slider-reset" onClick={() => setFontScale(1)}>Reset to 100%</button>
           </div>
           <div className="setting-row" style={{ display: "block" }}>
             <span style={{ display: "block", marginBottom: 6 }}>Japanese text style</span>

@@ -279,6 +279,27 @@ nav.mainnav button.navlink.active::before{
 .fontsize-controls button{ flex:1; padding:6px 0; border-radius:var(--radius-sm); }
 .fontsize-controls button.active{ background:var(--indigo); color:#fff; border-color:var(--indigo); }
 
+.setting-value{ color:var(--ink-faint); font-variant-numeric:tabular-nums; }
+.slider-row{ display:flex; align-items:center; gap:8px; }
+.slider-cap{ color:var(--ink-faint); font-family:var(--serif); line-height:1; flex-shrink:0; }
+.slider-cap.sm{ font-size:.7rem; }
+.slider-cap.lg{ font-size:1.05rem; }
+.slider{
+  flex:1; min-width:0; -webkit-appearance:none; appearance:none;
+  height:4px; border-radius:var(--radius-pill); background:var(--line);
+  outline:none; cursor:pointer; padding:0; margin:0;
+}
+.slider::-webkit-slider-thumb{
+  -webkit-appearance:none; appearance:none; width:15px; height:15px;
+  border-radius:50%; background:var(--indigo); border:2px solid var(--paper-2);
+  box-shadow:0 1px 3px var(--shadow); cursor:pointer;
+}
+.slider::-moz-range-thumb{
+  width:15px; height:15px; border-radius:50%; background:var(--indigo);
+  border:2px solid var(--paper-2); box-shadow:0 1px 3px var(--shadow); cursor:pointer;
+}
+.slider-reset{ margin-top:8px; font-size:.65rem; }
+
 .reset-all{
   width:100%; margin-top:14px; padding:7px 10px;
   font-family:var(--sans); font-size:var(--fs-2xs); letter-spacing:.04em;
@@ -320,9 +341,30 @@ main.content{ margin-left:272px; flex:1; min-width:0; padding:48px 48px 100px; d
    start ~130px in from the h1 on a wide screen. */
 .section-head p{ color:var(--ink-soft); max-width:var(--measure); margin:0; font-size:var(--fs-md); }
 
-h2.modtitle{ font-family:var(--serif); font-size:var(--fs-xl); margin:48px 0 6px; color:var(--ink); display:flex; align-items:baseline; gap:10px; }
+h2.modtitle{ font-family:var(--serif); font-size:var(--fs-xl); margin:48px 0 4px; color:var(--ink); display:flex; align-items:baseline; gap:10px; }
 h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
+/* Reading for the module title, matching the tabs above it. */
+.modtitle-reading{ font-size:var(--fs-2xs); color:var(--ink-faint); letter-spacing:.04em; margin-bottom:3px; }
 .modtitle-en{ font-size:var(--fs-xs); color:var(--ink-faint); font-weight:400; margin-bottom:22px; }
+
+.modhead{ display:flex; align-items:flex-end; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+.modhead-titles{ min-width:0; }
+.modhead-titles h2.modtitle{ margin-top:40px; }
+
+.modprogress{ flex-shrink:0; min-width:160px; margin-bottom:22px; text-align:right; }
+.modprogress-pct{ font-family:var(--serif); font-size:var(--fs-xl); color:var(--gold); line-height:1.1; }
+.modprogress-track{ height:5px; background:var(--paper-3); border-radius:var(--radius-pill); overflow:hidden; margin:5px 0 4px; }
+.modprogress-fill{ height:100%; background:var(--gold); border-radius:inherit; transition:width .35s ease; }
+.modprogress-sub{ font-size:var(--fs-2xs); color:var(--ink-faint); }
+
+/* Per-tab completion bar in the module switcher. */
+.mj-progress{ display:flex; align-items:center; gap:6px; width:100%; margin-top:6px; }
+.mj-progress-track{ flex:1; height:3px; background:var(--line); border-radius:var(--radius-pill); overflow:hidden; }
+.mj-progress-fill{ display:block; height:100%; background:var(--gold); border-radius:inherit; }
+.mj-progress-pct{ font-size:.62rem; color:var(--ink-faint); flex-shrink:0; }
+.modjump-rich button.active .mj-progress-track{ background:rgba(255,255,255,.3); }
+.modjump-rich button.active .mj-progress-fill{ background:#fff; }
+.modjump-rich button.active .mj-progress-pct{ color:rgba(255,255,255,.85); }
 
 .modjump{ display:flex; flex-wrap:wrap; gap:8px; margin-bottom:36px; }
 .modjump button{ padding:7px 14px; }
@@ -365,6 +407,25 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
 .formation-box .fline{ font-family:var(--serif); font-size:var(--fs-base); color:var(--ink); margin:4px 0; }
 .formation-box .fline .arrow{ color:var(--accent, var(--indigo)); margin:0 6px; }
 
+/* Per-part-of-speech conjugation rows under the formation notes — the
+   "which ending does a な-adjective take again?" lookup. */
+.conjtable{ margin-top:12px; padding-top:10px; border-top:1px dashed var(--line); display:flex; flex-direction:column; gap:1px; }
+.conjrow{
+  display:grid; grid-template-columns:minmax(96px,auto) minmax(0,1fr) auto minmax(0,1.3fr);
+  align-items:baseline; gap:4px 10px; padding:4px 0;
+}
+.conjrow + .conjrow{ border-top:1px solid var(--line-soft); }
+.conj-label{ font-size:var(--fs-2xs); color:var(--ink-faint); letter-spacing:.02em; }
+.conj-from{ font-family:var(--serif); font-size:var(--fs-sm); color:var(--ink-soft); }
+.conj-arrow{ color:var(--accent, var(--indigo)); font-size:var(--fs-xs); }
+.conj-to{ font-family:var(--serif); font-size:var(--fs-base); color:var(--ink); font-weight:500; }
+
+@media (max-width: 560px){
+  /* Label above, then base → result on one line. */
+  .conjrow{ grid-template-columns:auto auto minmax(0,1fr); }
+  .conj-label{ grid-column:1 / -1; }
+}
+
 .examples{ margin-bottom:16px; }
 .ex-item{ padding:10px 0; border-bottom:1px solid var(--line-soft); }
 .ex-item:last-child{ border-bottom:none; }
@@ -372,7 +433,19 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
 .ex-en{ font-size:var(--fs-sm); color:var(--ink-faint); margin-top:3px; }
 
 .dialogue-box{ background:var(--paper); border-radius:var(--radius); padding:16px 18px; margin-bottom:16px; border:1px solid var(--line-soft); }
-.dialogue-box .dlabel{ margin-bottom:12px; }
+.dialogue-head{ display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:12px; }
+.dialogue-head .dlabel{ margin-bottom:0; }
+.readall-btn{
+  flex-shrink:0; background:var(--paper-2); border:1px solid var(--line);
+  color:var(--accent, var(--indigo)); border-radius:var(--radius-pill);
+  padding:3px 12px; font-family:var(--sans); font-size:var(--fs-2xs);
+  cursor:pointer; transition:background var(--t-fast), border-color var(--t-fast);
+}
+.readall-btn:hover{ border-color:var(--accent, var(--indigo)); }
+.readall-btn.playing{ background:var(--accent, var(--indigo)); border-color:var(--accent, var(--indigo)); color:#fff; }
+/* The line currently being read aloud during "Read all". */
+.dline.speaking{ background:var(--indigo-tint); border-radius:var(--radius-sm); }
+.dline{ transition:background var(--t-fast); padding:2px 6px; margin-left:-6px; margin-right:-6px; }
 .dline{ display:flex; gap:10px; margin-bottom:10px; align-items:flex-start; }
 .dline:last-child{ margin-bottom:0; }
 .dline .speaker{ flex-shrink:0; width:60px; font-size:var(--fs-2xs); color:#fff; background:var(--accent, var(--indigo)); border-radius:var(--radius-sm); text-align:center; padding:3px 4px; height:fit-content; margin-top:4px; }
@@ -526,8 +599,29 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
 .phrase .pen{ font-size:var(--fs-xs); color:var(--ink-faint); margin-top:3px; }
 
 .pb-nav{ display:flex; flex-wrap:wrap; gap:7px; margin-bottom:26px; justify-content:center; }
-.pb-nav button{ font-family:var(--serif); font-size:var(--fs-sm); padding:6px 13px; }
+.pb-nav button{
+  display:flex; flex-direction:column; align-items:flex-start; gap:1px;
+  text-align:left; padding:7px 14px; border-radius:var(--radius);
+}
 .pb-nav button:hover{ border-color:var(--matcha); color:var(--matcha); }
+.pbn-jp{ font-family:var(--serif); font-size:var(--fs-sm); color:var(--ink); }
+.pb-nav button:hover .pbn-jp{ color:var(--matcha); }
+.pbn-en{ font-size:.62rem; color:var(--ink-faint); }
+
+/* Top-level split inside a long section (Kaiwa Lab's bank vs. scripts). */
+.viewtabs{ display:flex; gap:8px; margin:8px 0 22px; flex-wrap:wrap; }
+.viewtabs button{
+  display:flex; flex-direction:column; align-items:flex-start; gap:2px;
+  flex:1 1 200px; text-align:left; cursor:pointer;
+  background:var(--paper-2); border:1px solid var(--line); border-radius:var(--radius);
+  padding:12px 16px; font-family:var(--sans);
+  transition:border-color var(--t-fast), background var(--t-fast), box-shadow var(--t-fast);
+}
+.viewtabs button:hover{ border-color:var(--matcha); }
+.viewtabs button.active{ border-color:var(--matcha); box-shadow:inset 0 3px 0 var(--matcha); background:var(--matcha-tint); }
+.viewtabs .vt-jp{ font-family:var(--serif); font-size:var(--fs-lg); color:var(--ink); }
+.viewtabs .vt-en{ font-size:var(--fs-2xs); color:var(--ink-faint); letter-spacing:.04em; }
+.viewtabs button.active .vt-en{ color:var(--matcha); }
 .pb-group{ scroll-margin-top:20px; }
 .pb-cat{ display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; margin:0 0 12px; padding-bottom:7px; border-bottom:1px solid var(--line-soft); }
 .pb-cat .jp{ font-family:var(--serif); font-size:var(--fs-lg); color:var(--matcha); }
@@ -562,6 +656,32 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
 .qc-reset{ padding:8px 16px; }
 .qc-reset:hover{ border-color:var(--shu); color:var(--shu); }
 .qc-group-title{ font-family:var(--serif); font-size:var(--fs-lg); color:var(--gold); margin:28px 0 12px; }
+
+/* ============================================================
+   REVIEW MISTAKES
+   ============================================================ */
+.mistake-card{ padding-top:18px; }
+.mistake-recap{
+  background:var(--paper); border:1px solid var(--line-soft); border-radius:var(--radius-sm);
+  padding:10px 14px; margin-bottom:16px; display:flex; flex-direction:column; gap:6px;
+}
+.mistake-row{ display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; font-family:var(--serif); font-size:var(--fs-base); }
+.mistake-row .mistake-tag{
+  flex-shrink:0; font-family:var(--sans); font-size:var(--fs-2xs); letter-spacing:.06em;
+  text-transform:uppercase; padding:1px 8px; border-radius:var(--radius-pill);
+}
+.mistake-row.wrong .mistake-tag{ background:var(--shu-tint); color:var(--shu); }
+.mistake-row.wrong{ color:var(--ink-soft); text-decoration:line-through; text-decoration-color:var(--shu); }
+.mistake-row.right .mistake-tag{ background:var(--matcha-tint); color:var(--matcha); }
+.mistake-row.right{ color:var(--ink); font-weight:700; }
+.mistake-got-it{
+  margin-top:14px; width:100%; padding:9px 14px;
+  background:var(--matcha-tint); border:1px solid var(--matcha); color:var(--matcha);
+  border-radius:var(--radius-sm); cursor:pointer;
+  font-family:var(--sans); font-size:var(--fs-sm);
+  transition:background var(--t-fast), color var(--t-fast);
+}
+.mistake-got-it:hover{ background:var(--matcha); color:#fff; }
 
 /* ============================================================
    FLOATING MODULE NAV — Grammar Deep-Dive

@@ -28,7 +28,7 @@ export default function Quiz({ idPrefix, items, label = "CHECK YOUR UNDERSTANDIN
 }
 
 function QuizItem({ qid, item, contentId }) {
-  const { answered, poolStats, answerQuestion, recordPoolResult } = useQuiz();
+  const { answered, poolStats, answerQuestion, recordPoolResult, recordPick, wrongPicks } = useQuiz();
   const [lastIdx, setLastIdx] = useState(null);
   const [showWhy, setShowWhy] = useState(false);
   // Slot ids like "final-qN" / "modcheckN-qM" get reused for a different
@@ -37,7 +37,21 @@ function QuizItem({ qid, item, contentId }) {
   // carry a stable contentId instead — check that map for them so a fresh
   // question dropped into a previously-answered slot doesn't render as
   // already attempted.
-  const attempted = (contentId ? poolStats.has(contentId) : answered.has(qid)) || lastIdx !== null;
+  const pickKey = contentId || qid;
+  // Driven only by the global record, not local `lastIdx` — a click inside
+  // pick() always updates that global record in the same render pass, so
+  // there's no gap where only local state would know it's attempted. That
+  // matters because a QuizItem elsewhere on the page (e.g. the original
+  // grammar card behind a Review Mistakes entry) never remounts; if this
+  // were OR'd with `lastIdx !== null`, that instance's stale local state
+  // would keep it looking "attempted" forever, even after resetMistake
+  // wipes the global record clean.
+  const attempted = contentId ? poolStats.has(contentId) : answered.has(qid);
+  // Which choice you picked, for the red "wrong" highlight. `lastIdx` only
+  // covers this page load (it resets on refresh); wrongPicks is the
+  // persisted fallback, so a wrong answer still shows as wrong — not just
+  // "here's the right one" — after reloading the page.
+  const wrongIdx = lastIdx !== null ? lastIdx : wrongPicks.get(pickKey);
   const hasWhy = Array.isArray(item.why) && item.why.some(Boolean);
 
   function pick(idx) {
@@ -46,6 +60,7 @@ function QuizItem({ qid, item, contentId }) {
     setLastIdx(idx);
     answerQuestion(qid, isCorrect);
     if (contentId) recordPoolResult(contentId, isCorrect);
+    recordPick(pickKey, idx, isCorrect);
   }
 
   return (
@@ -56,7 +71,7 @@ function QuizItem({ qid, item, contentId }) {
       <div className="qchoices">
         {item.choices.map((c, idx) => {
           const isCorrectChoice = attempted && idx === item.a;
-          const isWrongPick = attempted && idx === lastIdx && idx !== item.a;
+          const isWrongPick = attempted && idx === wrongIdx && idx !== item.a;
           const cls = ["qchoice", isCorrectChoice && "correct", isWrongPick && "incorrect", attempted && "disabled"]
             .filter(Boolean).join(" ");
           return (

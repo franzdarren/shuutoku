@@ -118,9 +118,9 @@ export function countQuizPool() {
 }
 
 /** How many questions a module's "Module Check" draws — capped at 10, or
- *  the module's own quiz pool size if it has fewer than that. */
+ *  its bank size if the bank is smaller than that. */
 export function moduleCheckSize(mod) {
-  const pool = mod.points.reduce((n, p) => n + (p.quiz?.length || 0), 0);
+  const pool = mod.check?.length || mod.points.reduce((n, p) => n + (p.quiz?.length || 0), 0);
   return Math.min(10, pool);
 }
 

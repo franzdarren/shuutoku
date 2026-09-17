@@ -41,7 +41,7 @@
       },
       {
         "who": "You",
-        "jp": "（<ruby>食後<rt>しょくご</rt></ruby>）すみません、お<ruby>会計<rt>かいけい</rt></ruby>をお願いします。",
+        "jp": "（食後）すみません、お<ruby>会計<rt>かいけい</rt></ruby>をお願いします。",
         "en": "(after eating) Excuse me, could I get the bill please."
       },
       {
@@ -102,12 +102,12 @@
     "lines": [
       {
         "who": "You",
-        "jp": "すみません、<ruby>清水寺<rt>きよみずでら</rt></ruby>はどう<ruby>行<rt>い</rt></ruby>けばいいですか。",
+        "jp": "すみません、<ruby>清水寺<rt>きよみずでら</rt></ruby>はどう行けばいいですか。",
         "en": "Excuse me, how do I get to Kiyomizu-dera?"
       },
       {
         "who": "Passerby",
-        "jp": "ああ、この<ruby>道<rt>みち</rt></ruby>をまっすぐ<ruby>行<rt>い</rt></ruby>くと、<ruby>右側<rt>みぎがわ</rt></ruby>にありますよ。",
+        "jp": "ああ、この<ruby>道<rt>みち</rt></ruby>をまっすぐ行くと、<ruby>右側<rt>みぎがわ</rt></ruby>にありますよ。",
         "en": "Ah, if you go straight down this street, it'll be on your right."
       },
       {
@@ -127,7 +127,7 @@
       },
       {
         "who": "Passerby",
-        "jp": "<ruby>大<rt>おお</rt></ruby>きいコンビニがあるので、その<ruby>角<rt>かど</rt></ruby>を<ruby>左<rt>ひだり</rt></ruby>に<ruby>曲<rt>ま</rt></ruby>がってください。",
+        "jp": "大きいコンビニがあるので、その<ruby>角<rt>かど</rt></ruby>を左に<ruby>曲<rt>ま</rt></ruby>がってください。",
         "en": "There's a big convenience store, so turn left at that corner."
       },
       {
@@ -137,7 +137,7 @@
       },
       {
         "who": "Passerby",
-        "jp": "<ruby>気<rt>き</rt></ruby>をつけて。",
+        "jp": "気をつけて。",
         "en": "Take care."
       }
     ],
@@ -213,7 +213,7 @@
       },
       {
         "who": "You",
-        "jp": "<ruby>朝食<rt>ちょうしょく</rt></ruby>は<ruby>何時<rt>なんじ</rt></ruby>からですか。",
+        "jp": "<ruby>朝食<rt>ちょうしょく</rt></ruby>は何時からですか。",
         "en": "What time is breakfast from?"
       },
       {
@@ -309,12 +309,12 @@
       },
       {
         "who": "You",
-        "jp": "もう<ruby>少<rt>すこ</rt></ruby>し<ruby>大<rt>おお</rt></ruby>きいサイズはありますか。",
+        "jp": "もう<ruby>少<rt>すこ</rt></ruby>し大きいサイズはありますか。",
         "en": "Do you have it one size larger?"
       },
       {
         "who": "Staff",
-        "jp": "<ruby>在庫<rt>ざいこ</rt></ruby>を<ruby>見<rt>み</rt></ruby>てきますので、<ruby>少<rt>しょう</rt></ruby>々お<ruby>待<rt>ま</rt></ruby>ちください。",
+        "jp": "<ruby>在庫<rt>ざいこ</rt></ruby>を見てきますので、<ruby>少<rt>しょう</rt></ruby>々お<ruby>待<rt>ま</rt></ruby>ちください。",
         "en": "I'll go check the stock, so one moment please."
       },
       {
@@ -380,32 +380,32 @@
     "lines": [
       {
         "who": "A",
-        "jp": "<ruby>日本語<rt>にほんご</rt></ruby>、お<ruby>上手<rt>じょうず</rt></ruby>ですね！どのくらい<ruby>勉強<rt>べんきょう</rt></ruby>しているんですか。",
+        "jp": "日本語、お<ruby>上手<rt>じょうず</rt></ruby>ですね！どのくらい<ruby>勉強<rt>べんきょう</rt></ruby>しているんですか。",
         "en": "Your Japanese is great! How long have you been studying?"
       },
       {
         "who": "B",
-        "jp": "ありがとうございます。まだ一<ruby>年<rt>ねん</rt></ruby>ぐらいです。",
+        "jp": "ありがとうございます。まだ一年ぐらいです。",
         "en": "Thank you. About a year so far."
       },
       {
         "who": "A",
-        "jp": "すごいですね！<ruby>日本<rt>にほん</rt></ruby>に<ruby>来<rt>き</rt></ruby>たことがありますか。",
+        "jp": "すごいですね！日本に来たことがありますか。",
         "en": "That's impressive! Have you ever been to Japan?"
       },
       {
         "who": "B",
-        "jp": "いいえ、まだないんです。<ruby>今度<rt>こんど</rt></ruby>、<ruby>行<rt>い</rt></ruby>くことになりました。",
+        "jp": "いいえ、まだないんです。<ruby>今度<rt>こんど</rt></ruby>、行くことになりました。",
         "en": "No, not yet. It's actually just been decided that I'm going soon."
       },
       {
         "who": "A",
-        "jp": "それはいいですね！いつ<ruby>行<rt>い</rt></ruby>くんですか。",
+        "jp": "それはいいですね！いつ行くんですか。",
         "en": "That's great! When are you going?"
       },
       {
         "who": "B",
-        "jp": "十<ruby>二月<rt>にがつ</rt></ruby>に<ruby>行<rt>い</rt></ruby>く<ruby>予定<rt>よてい</rt></ruby>です。<ruby>Aさん<rt>エーさん</rt></ruby>はどこに<ruby>住<rt>す</rt></ruby>んでいるんですか。",
+        "jp": "十二月に行く<ruby>予定<rt>よてい</rt></ruby>です。Aさんはどこに<ruby>住<rt>す</rt></ruby>んでいるんですか。",
         "en": "I'm planning to go in December. Where do you live?"
       },
       {
@@ -465,18 +465,18 @@
     "category": "social"
   },
   {
-    "jp": "<ruby>電車<rt>でんしゃ</rt></ruby>の中で",
+    "jp": "電車の中で",
     "en": "On the train",
     "setup": "You are unsure whether you are on the right train and need to ask another passenger.",
     "lines": [
       {
         "who": "You",
-        "jp": "すみません、この<ruby>電車<rt>でんしゃ</rt></ruby>は<ruby>東京駅<rt>とうきょうえき</rt></ruby>に行きますか。",
+        "jp": "すみません、この電車は<ruby>東京駅<rt>とうきょうえき</rt></ruby>に行きますか。",
         "en": "Excuse me, does this train go to Tokyo Station?"
       },
       {
         "who": "Passenger",
-        "jp": "はい、行きます。三つ<ruby>目<rt>め</rt></ruby>の<ruby>駅<rt>えき</rt></ruby>ですよ。",
+        "jp": "はい、行きます。三つ<ruby>目<rt>め</rt></ruby>の駅ですよ。",
         "en": "Yes, it does. It is the third station."
       },
       {
@@ -496,7 +496,7 @@
       },
       {
         "who": "Passenger",
-        "jp": "いいえ、この<ruby>電車<rt>でんしゃ</rt></ruby>のままで<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>ですよ。",
+        "jp": "いいえ、この電車のままで<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>ですよ。",
         "en": "No, you can stay on this train."
       },
       {
@@ -582,12 +582,12 @@
       },
       {
         "who": "You",
-        "jp": "<ruby>薬<rt>くすり</rt></ruby>を<ruby>飲<rt>の</rt></ruby>んだら、<ruby>運動<rt>うんどう</rt></ruby>してもいいですか。",
+        "jp": "<ruby>薬<rt>くすり</rt></ruby>を飲んだら、<ruby>運動<rt>うんどう</rt></ruby>してもいいですか。",
         "en": "After I take the medicine, is it okay to exercise?"
       },
       {
         "who": "Doctor",
-        "jp": "今日はやめておいたほうがいいですね。<ruby>薬<rt>くすり</rt></ruby>を出します。ゆっくり<ruby>休<rt>やす</rt></ruby>んでください。",
+        "jp": "今日はやめておいたほうがいいですね。<ruby>薬<rt>くすり</rt></ruby>を出します。ゆっくり休んでください。",
         "en": "You'd better skip it today. I'll prescribe medicine. Please rest."
       },
       {
@@ -678,7 +678,7 @@
       },
       {
         "who": "Staff",
-        "jp": "三<ruby>百八十円<rt>ひゃくはちじゅうえん</rt></ruby>です。",
+        "jp": "三百八十円です。",
         "en": "That will be 380 yen."
       },
       {
@@ -749,12 +749,12 @@
       },
       {
         "who": "B",
-        "jp": "いいですね。<ruby>何時<rt>なんじ</rt></ruby>に会いましょうか。",
+        "jp": "いいですね。何時に会いましょうか。",
         "en": "Sounds good. What time shall we meet?"
       },
       {
         "who": "A",
-        "jp": "<ruby>駅<rt>えき</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>で二時に会いましょう。",
+        "jp": "駅の前で二時に会いましょう。",
         "en": "Let's meet in front of the station at two."
       },
       {
@@ -769,7 +769,7 @@
       },
       {
         "who": "B",
-        "jp": "<ruby>映画<rt>えいが</rt></ruby>のあとで、ごはんも<ruby>食<rt>た</rt></ruby>べに行きませんか。",
+        "jp": "<ruby>映画<rt>えいが</rt></ruby>のあとで、ごはんも食べに行きませんか。",
         "en": "After the movie, shall we go eat as well?"
       },
       {
@@ -845,7 +845,7 @@
       },
       {
         "who": "Visitor",
-        "jp": "わかりました。<ruby>後<rt>うし</rt></ruby>ろの<ruby>塔<rt>とう</rt></ruby>も<ruby>入<rt>い</rt></ruby>れますか。",
+        "jp": "わかりました。後ろの<ruby>塔<rt>とう</rt></ruby>も入れますか。",
         "en": "Okay. Shall I get the tower behind you in as well?"
       },
       {
@@ -916,7 +916,7 @@
     "lines": [
       {
         "who": "Officer",
-        "jp": "パスポートをお<ruby>願<rt>ねが</rt></ruby>いします。<ruby>旅行<rt>りょこう</rt></ruby>の<ruby>目的<rt>もくてき</rt></ruby>は<ruby>何<rt>なん</rt></ruby>ですか。",
+        "jp": "パスポートをお<ruby>願<rt>ねが</rt></ruby>いします。<ruby>旅行<rt>りょこう</rt></ruby>の<ruby>目的<rt>もくてき</rt></ruby>は何ですか。",
         "en": "Your passport, please. What is the purpose of your trip?"
       },
       {
@@ -931,7 +931,7 @@
       },
       {
         "who": "You",
-        "jp": "十<ruby>日間<rt>にちかん</rt></ruby>の<ruby>予定<rt>よてい</rt></ruby>です。",
+        "jp": "十日間の<ruby>予定<rt>よてい</rt></ruby>です。",
         "en": "Ten days, as planned."
       },
       {
@@ -941,7 +941,7 @@
       },
       {
         "who": "You",
-        "jp": "<ruby>大阪<rt>おおさか</rt></ruby>のホテルです。<ruby>予約表<rt>よやくひょう</rt></ruby>を<ruby>見<rt>み</rt></ruby>せましょうか。",
+        "jp": "<ruby>大阪<rt>おおさか</rt></ruby>のホテルです。<ruby>予約表<rt>よやくひょう</rt></ruby>を見せましょうか。",
         "en": "A hotel in Osaka. Shall I show you the booking?"
       },
       {
@@ -951,7 +951,7 @@
       },
       {
         "who": "You",
-        "jp": "すみません、<ruby>荷物<rt>にもつ</rt></ruby>が<ruby>出<rt>で</rt></ruby>てこないんですが…",
+        "jp": "すみません、<ruby>荷物<rt>にもつ</rt></ruby>が出てこないんですが…",
         "en": "Excuse me, my luggage hasn't come out..."
       },
       {
@@ -1006,13 +1006,13 @@
     "category": "arrival"
   },
   {
-    "jp": "<ruby>駅<rt>えき</rt></ruby>で<ruby>切符<rt>きっぷ</rt></ruby>を<ruby>買<rt>か</rt></ruby>う",
+    "jp": "駅で<ruby>切符<rt>きっぷ</rt></ruby>を買う",
     "en": "Buying a ticket at the station",
     "setup": "The ticket machine is confusing, so you ask at the window instead.",
     "lines": [
       {
         "who": "You",
-        "jp": "すみません、<ruby>京都<rt>きょうと</rt></ruby>までの<ruby>切符<rt>きっぷ</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたいんですが。",
+        "jp": "すみません、<ruby>京都<rt>きょうと</rt></ruby>までの<ruby>切符<rt>きっぷ</rt></ruby>を買いたいんですが。",
         "en": "Excuse me, I'd like to buy a ticket to Kyoto."
       },
       {
@@ -1027,7 +1027,7 @@
       },
       {
         "who": "Staff",
-        "jp": "二<ruby>千八百円<rt>せんはっぴゃくえん</rt></ruby>です。<ruby>指定席<rt>していせき</rt></ruby>にしますか。",
+        "jp": "二千八百円です。<ruby>指定席<rt>していせき</rt></ruby>にしますか。",
         "en": "2,800 yen. Would you like a reserved seat?"
       },
       {
@@ -1037,12 +1037,12 @@
       },
       {
         "who": "Staff",
-        "jp": "ございます。<ruby>次<rt>つぎ</rt></ruby>の<ruby>電車<rt>でんしゃ</rt></ruby>は十<ruby>時十五分発<rt>じじゅうごふんはつ</rt></ruby>、三<ruby>番線<rt>ばんせん</rt></ruby>です。",
+        "jp": "ございます。<ruby>次<rt>つぎ</rt></ruby>の電車は十<ruby>時十五分発<rt>じじゅうごふんはつ</rt></ruby>、三<ruby>番線<rt>ばんせん</rt></ruby>です。",
         "en": "We have one. The next train is at 10:15 from platform 3."
       },
       {
         "who": "You",
-        "jp": "<ruby>三番線<rt>さんばんせん</rt></ruby>ですね。ICカードもここで<ruby>買<rt>か</rt></ruby>えますか。",
+        "jp": "<ruby>三番線<rt>さんばんせん</rt></ruby>ですね。ICカードもここで買えますか。",
         "en": "Platform 3, right? Can I buy an IC card here too?"
       },
       {
@@ -1194,12 +1194,12 @@
     "lines": [
       {
         "who": "You",
-        "jp": "すみません、このバスは<ruby>駅<rt>えき</rt></ruby>に行きますか。",
+        "jp": "すみません、このバスは駅に行きますか。",
         "en": "Excuse me, does this bus go to the station?"
       },
       {
         "who": "Driver",
-        "jp": "はい、行きますよ。<ruby>後<rt>うし</rt></ruby>ろから<ruby>乗<rt>の</rt></ruby>ってください。",
+        "jp": "はい、行きますよ。後ろから<ruby>乗<rt>の</rt></ruby>ってください。",
         "en": "Yes, it does. Please board from the rear."
       },
       {
@@ -1214,7 +1214,7 @@
       },
       {
         "who": "You",
-        "jp": "わかりました。<ruby>駅<rt>えき</rt></ruby>に<ruby>着<rt>つ</rt></ruby>いたら、<ruby>教<rt>おし</rt></ruby>えてもらえますか。",
+        "jp": "わかりました。駅に<ruby>着<rt>つ</rt></ruby>いたら、<ruby>教<rt>おし</rt></ruby>えてもらえますか。",
         "en": "Understood. Could you let me know when we reach the station?"
       },
       {
@@ -1300,7 +1300,7 @@
       },
       {
         "who": "Staff",
-        "jp": "<ruby>店内<rt>てんない</rt></ruby>でお<ruby>召<rt>め</rt></ruby>し<ruby>上<rt>あ</rt></ruby>がりですか、お<ruby>持<rt>も</rt></ruby>ち<ruby>帰<rt>かえ</rt></ruby>りですか。",
+        "jp": "<ruby>店内<rt>てんない</rt></ruby>でお<ruby>召<rt>め</rt></ruby>し上がりですか、お<ruby>持<rt>も</rt></ruby>ち<ruby>帰<rt>かえ</rt></ruby>りですか。",
         "en": "Will you eat in, or take away?"
       },
       {
@@ -1376,22 +1376,22 @@
     "lines": [
       {
         "who": "Coworker",
-        "jp": "とりあえず、<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>を<ruby>頼<rt>たの</rt></ruby>みましょうか。<ruby>何<rt>なに</rt></ruby>にしますか。",
+        "jp": "とりあえず、飲み<ruby>物<rt>もの</rt></ruby>を<ruby>頼<rt>たの</rt></ruby>みましょうか。何にしますか。",
         "en": "Shall we order drinks first? What'll you have?"
       },
       {
         "who": "You",
-        "jp": "じゃあ、ウーロン<ruby>茶<rt>ちゃ</rt></ruby>にします。お<ruby>酒<rt>さけ</rt></ruby>はあまり<ruby>飲<rt>の</rt></ruby>めないんです。",
+        "jp": "じゃあ、ウーロン<ruby>茶<rt>ちゃ</rt></ruby>にします。お<ruby>酒<rt>さけ</rt></ruby>はあまり飲めないんです。",
         "en": "I'll have oolong tea, then. I can't really drink alcohol."
       },
       {
         "who": "Coworker",
-        "jp": "そうなんですね。じゃあ、<ruby>食<rt>た</rt></ruby>べ<ruby>物<rt>もの</rt></ruby>は<ruby>何<rt>なに</rt></ruby>か<ruby>苦手<rt>にがて</rt></ruby>なものはありますか。",
+        "jp": "そうなんですね。じゃあ、食べ<ruby>物<rt>もの</rt></ruby>は何か<ruby>苦手<rt>にがて</rt></ruby>なものはありますか。",
         "en": "Ah, I see. Is there any food you'd rather avoid?"
       },
       {
         "who": "You",
-        "jp": "<ruby>生<rt>なま</rt></ruby>の<ruby>魚<rt>さかな</rt></ruby>はちょっと…。<ruby>他<rt>ほか</rt></ruby>は<ruby>何<rt>なん</rt></ruby>でも<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です。",
+        "jp": "生の<ruby>魚<rt>さかな</rt></ruby>はちょっと…。<ruby>他<rt>ほか</rt></ruby>は何でも<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です。",
         "en": "Raw fish is a bit... Anything else is fine."
       },
       {
@@ -1406,7 +1406,7 @@
       },
       {
         "who": "Coworker",
-        "jp": "でしょう？よく<ruby>来<rt>き</rt></ruby>るんですよ。…そろそろ<ruby>帰<rt>かえ</rt></ruby>りましょうか。",
+        "jp": "でしょう？よく来るんですよ。…そろそろ<ruby>帰<rt>かえ</rt></ruby>りましょうか。",
         "en": "Right? I come here a lot. ...Shall we head off soon?"
       },
       {
@@ -1466,13 +1466,13 @@
     "category": "food"
   },
   {
-    "jp": "<ruby>電話<rt>でんわ</rt></ruby>で<ruby>予約<rt>よやく</rt></ruby>する",
+    "jp": "電話で<ruby>予約<rt>よやく</rt></ruby>する",
     "en": "Making a reservation by phone",
     "setup": "Phone calls are the hardest kaiwa situation — no gestures, no lip reading. Rehearse this one out loud twice.",
     "lines": [
       {
         "who": "Shop",
-        "jp": "はい、レストラン<ruby>さくら<rt>さくら</rt></ruby>でございます。",
+        "jp": "はい、レストランさくらでございます。",
         "en": "Hello, this is Restaurant Sakura."
       },
       {
@@ -1482,22 +1482,22 @@
       },
       {
         "who": "Shop",
-        "jp": "ありがとうございます。<ruby>何日<rt>なんにち</rt></ruby>の<ruby>何時<rt>なんじ</rt></ruby>ごろでしょうか。",
+        "jp": "ありがとうございます。何日の何時ごろでしょうか。",
         "en": "Thank you. For what date and time?"
       },
       {
         "who": "You",
-        "jp": "<ruby>今週<rt>こんしゅう</rt></ruby>の<ruby>金曜日<rt>きんようび</rt></ruby>、<ruby>七時<rt>しちじ</rt></ruby>から二人でお願いします。",
+        "jp": "<ruby>今週<rt>こんしゅう</rt></ruby>の<ruby>金曜日<rt>きんようび</rt></ruby>、七時から二人でお願いします。",
         "en": "This Friday at seven, for two people, please."
       },
       {
         "who": "Shop",
-        "jp": "<ruby>少<rt>しょう</rt></ruby>々お<ruby>待<rt>ま</rt></ruby>ちください。…はい、ご<ruby>用意<rt>ようい</rt></ruby>できます。お<ruby>名前<rt>なまえ</rt></ruby>をお願いします。",
+        "jp": "<ruby>少<rt>しょう</rt></ruby>々お<ruby>待<rt>ま</rt></ruby>ちください。…はい、ご<ruby>用意<rt>ようい</rt></ruby>できます。お名前をお願いします。",
         "en": "One moment please. ...Yes, we can accommodate that. May I have your name?"
       },
       {
         "who": "You",
-        "jp": "ダレンです。すみません、もう一<ruby>度<rt>ど</rt></ruby><ruby>確認<rt>かくにん</rt></ruby>させてください。<ruby>金曜日<rt>きんようび</rt></ruby>の<ruby>七時<rt>しちじ</rt></ruby>、二人ですね。",
+        "jp": "ダレンです。すみません、もう一<ruby>度<rt>ど</rt></ruby><ruby>確認<rt>かくにん</rt></ruby>させてください。<ruby>金曜日<rt>きんようび</rt></ruby>の七時、二人ですね。",
         "en": "It's Darren. Sorry, let me confirm once more — Friday at seven, two people, correct?"
       },
       {
@@ -1563,22 +1563,22 @@
     "lines": [
       {
         "who": "You",
-        "jp": "もしもし、すみません、<ruby>電車<rt>でんしゃ</rt></ruby>が<ruby>遅<rt>おく</rt></ruby>れていて、十五分ぐらい<ruby>遅<rt>おく</rt></ruby>れそうです。",
+        "jp": "もしもし、すみません、電車が<ruby>遅<rt>おく</rt></ruby>れていて、十五分ぐらい<ruby>遅<rt>おく</rt></ruby>れそうです。",
         "en": "Hello, sorry — the train is delayed, so I'll probably be about fifteen minutes late."
       },
       {
         "who": "Friend",
-        "jp": "あ、<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>ですよ。<ruby>気<rt>き</rt></ruby>をつけて<ruby>来<rt>き</rt></ruby>てください。",
+        "jp": "あ、<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>ですよ。気をつけて来てください。",
         "en": "Ah, no problem. Take care on the way."
       },
       {
         "who": "You",
-        "jp": "<ruby>本当<rt>ほんとう</rt></ruby>にすみません。<ruby>先<rt>さき</rt></ruby>に<ruby>注文<rt>ちゅうもん</rt></ruby>していてください。",
+        "jp": "<ruby>本当<rt>ほんとう</rt></ruby>にすみません。先に<ruby>注文<rt>ちゅうもん</rt></ruby>していてください。",
         "en": "I'm really sorry. Please go ahead and order without me."
       },
       {
         "who": "Friend",
-        "jp": "わかりました。じゃあ、<ruby>店<rt>みせ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で<ruby>待<rt>ま</rt></ruby>っています。",
+        "jp": "わかりました。じゃあ、<ruby>店<rt>みせ</rt></ruby>の中で<ruby>待<rt>ま</rt></ruby>っています。",
         "en": "Okay. I'll wait inside the restaurant then."
       },
       {
@@ -1593,7 +1593,7 @@
       },
       {
         "who": "You",
-        "jp": "よかった。<ruby>次<rt>つぎ</rt></ruby>はもっと<ruby>早<rt>はや</rt></ruby>く<ruby>出<rt>で</rt></ruby>るようにします。",
+        "jp": "よかった。<ruby>次<rt>つぎ</rt></ruby>はもっと<ruby>早<rt>はや</rt></ruby>く出るようにします。",
         "en": "Good. I'll make sure to leave earlier next time."
       }
     ],
@@ -1674,17 +1674,17 @@
       },
       {
         "who": "Passerby",
-        "jp": "あの<ruby>信号<rt>しんごう</rt></ruby>まで<ruby>戻<rt>もど</rt></ruby>って、<ruby>右<rt>みぎ</rt></ruby>に<ruby>曲<rt>ま</rt></ruby>がってください。五分ぐらいです。",
+        "jp": "あの<ruby>信号<rt>しんごう</rt></ruby>まで<ruby>戻<rt>もど</rt></ruby>って、右に<ruby>曲<rt>ま</rt></ruby>がってください。五分ぐらいです。",
         "en": "Go back to that traffic light and turn right. It's about five minutes."
       },
       {
         "who": "You",
-        "jp": "<ruby>信号<rt>しんごう</rt></ruby>まで<ruby>戻<rt>もど</rt></ruby>って、<ruby>右<rt>みぎ</rt></ruby>ですね。ありがとうございます、<ruby>助<rt>たす</rt></ruby>かりました。",
+        "jp": "<ruby>信号<rt>しんごう</rt></ruby>まで<ruby>戻<rt>もど</rt></ruby>って、右ですね。ありがとうございます、<ruby>助<rt>たす</rt></ruby>かりました。",
         "en": "Back to the light, then right. Thank you, that's a big help."
       },
       {
         "who": "Passerby",
-        "jp": "いえいえ。<ruby>気<rt>き</rt></ruby>をつけてくださいね。",
+        "jp": "いえいえ。気をつけてくださいね。",
         "en": "Not at all. Do take care."
       }
     ],
@@ -1740,27 +1740,27 @@
     "lines": [
       {
         "who": "You",
-        "jp": "すみません、<ruby>電車<rt>でんしゃ</rt></ruby>にかばんを<ruby>忘<rt>わす</rt></ruby>れてしまったんですが。",
+        "jp": "すみません、電車にかばんを<ruby>忘<rt>わす</rt></ruby>れてしまったんですが。",
         "en": "Excuse me, I left my bag on the train."
       },
       {
         "who": "Staff",
-        "jp": "どの<ruby>電車<rt>でんしゃ</rt></ruby>ですか。<ruby>時間<rt>じかん</rt></ruby>はわかりますか。",
+        "jp": "どの電車ですか。時間はわかりますか。",
         "en": "Which train? Do you know the time?"
       },
       {
         "who": "You",
-        "jp": "三十分ぐらい<ruby>前<rt>まえ</rt></ruby>の、<ruby>大阪行<rt>おおさかゆ</rt></ruby>きの<ruby>電車<rt>でんしゃ</rt></ruby>です。",
+        "jp": "三十分ぐらい前の、<ruby>大阪行<rt>おおさかゆ</rt></ruby>きの電車です。",
         "en": "About thirty minutes ago, the train bound for Osaka."
       },
       {
         "who": "Staff",
-        "jp": "どんなかばんですか。<ruby>色<rt>いろ</rt></ruby>や<ruby>大<rt>おお</rt></ruby>きさを<ruby>教<rt>おし</rt></ruby>えてください。",
+        "jp": "どんなかばんですか。<ruby>色<rt>いろ</rt></ruby>や大きさを<ruby>教<rt>おし</rt></ruby>えてください。",
         "en": "What kind of bag? Please tell me the colour and size."
       },
       {
         "who": "You",
-        "jp": "<ruby>黒<rt>くろ</rt></ruby>くて、<ruby>小<rt>ちい</rt></ruby>さいリュックです。<ruby>中<rt>なか</rt></ruby>にパスポートが<ruby>入<rt>はい</rt></ruby>っています。",
+        "jp": "<ruby>黒<rt>くろ</rt></ruby>くて、小さいリュックです。中にパスポートが入っています。",
         "en": "It's a small black backpack. My passport is inside."
       },
       {
@@ -1775,7 +1775,7 @@
       },
       {
         "who": "Staff",
-        "jp": "よかったですね。こちらに<ruby>名前<rt>なまえ</rt></ruby>をお<ruby>書<rt>か</rt></ruby>きください。",
+        "jp": "よかったですね。こちらに名前をお書きください。",
         "en": "I'm glad. Please write your name here."
       }
     ],
@@ -1836,12 +1836,12 @@
       },
       {
         "who": "Staff",
-        "jp": "<ruby>中身<rt>なかみ</rt></ruby>は<ruby>何<rt>なん</rt></ruby>ですか。",
+        "jp": "<ruby>中身<rt>なかみ</rt></ruby>は何ですか。",
         "en": "What are the contents?"
       },
       {
         "who": "You",
-        "jp": "お<ruby>土産<rt>みやげ</rt></ruby>です。お<ruby>菓子<rt>かし</rt></ruby>とTシャツが<ruby>入<rt>はい</rt></ruby>っています。",
+        "jp": "お<ruby>土産<rt>みやげ</rt></ruby>です。お<ruby>菓子<rt>かし</rt></ruby>とTシャツが入っています。",
         "en": "Souvenirs. There are sweets and a T-shirt inside."
       },
       {
@@ -1856,12 +1856,12 @@
       },
       {
         "who": "Staff",
-        "jp": "<ruby>航空便<rt>こうくうびん</rt></ruby>は<ruby>一週間<rt>いっしゅうかん</rt></ruby>ぐらいですが、<ruby>船便<rt>ふなびん</rt></ruby>より<ruby>高<rt>たか</rt></ruby>いです。",
+        "jp": "<ruby>航空便<rt>こうくうびん</rt></ruby>は<ruby>一週間<rt>いっしゅうかん</rt></ruby>ぐらいですが、<ruby>船便<rt>ふなびん</rt></ruby>より高いです。",
         "en": "Air mail takes about a week, but it's more expensive than sea mail."
       },
       {
         "who": "You",
-        "jp": "じゃあ、<ruby>航空便<rt>こうくうびん</rt></ruby>でお願いします。<ruby>箱<rt>はこ</rt></ruby>も<ruby>買<rt>か</rt></ruby>えますか。",
+        "jp": "じゃあ、<ruby>航空便<rt>こうくうびん</rt></ruby>でお願いします。<ruby>箱<rt>はこ</rt></ruby>も買えますか。",
         "en": "Air mail, then. Can I buy a box here too?"
       },
       {
@@ -1932,12 +1932,12 @@
       },
       {
         "who": "You",
-        "jp": "<ruby>熱<rt>ねつ</rt></ruby>はありませんが、<ruby>喉<rt>のど</rt></ruby>が<ruby>痛<rt>いた</rt></ruby>くて、<ruby>鼻水<rt>はなみず</rt></ruby>も<ruby>出<rt>で</rt></ruby>ます。",
+        "jp": "<ruby>熱<rt>ねつ</rt></ruby>はありませんが、<ruby>喉<rt>のど</rt></ruby>が<ruby>痛<rt>いた</rt></ruby>くて、<ruby>鼻水<rt>はなみず</rt></ruby>も出ます。",
         "en": "No fever, but my throat hurts and I have a runny nose."
       },
       {
         "who": "Pharmacist",
-        "jp": "では、こちらがいいと思います。一日三<ruby>回<rt>かい</rt></ruby>、<ruby>食後<rt>しょくご</rt></ruby>に<ruby>飲<rt>の</rt></ruby>んでください。",
+        "jp": "では、こちらがいいと思います。一日三<ruby>回<rt>かい</rt></ruby>、食後に飲んでください。",
         "en": "Then I'd recommend this one. Take it three times a day, after meals."
       },
       {
@@ -1952,12 +1952,12 @@
       },
       {
         "who": "You",
-        "jp": "じゃあ、それをください。<ruby>何日<rt>なんにち</rt></ruby>ぐらい<ruby>飲<rt>の</rt></ruby>めばいいですか。",
+        "jp": "じゃあ、それをください。何日ぐらい飲めばいいですか。",
         "en": "I'll take that, then. How many days should I take it for?"
       },
       {
         "who": "Pharmacist",
-        "jp": "三日<ruby>飲<rt>の</rt></ruby>んでも<ruby>良<rt>よ</rt></ruby>くならなかったら、<ruby>病院<rt>びょういん</rt></ruby>へ行ってください。",
+        "jp": "三日飲んでも<ruby>良<rt>よ</rt></ruby>くならなかったら、<ruby>病院<rt>びょういん</rt></ruby>へ行ってください。",
         "en": "If it hasn't improved after three days, please see a doctor."
       }
     ],
@@ -2018,7 +2018,7 @@
       },
       {
         "who": "Staff",
-        "jp": "こちらのお<ruby>菓子<rt>かし</rt></ruby>が<ruby>人気<rt>にんき</rt></ruby>ですよ。<ruby>味見<rt>あじみ</rt></ruby>もできます。",
+        "jp": "こちらのお<ruby>菓子<rt>かし</rt></ruby>が人気ですよ。<ruby>味見<rt>あじみ</rt></ruby>もできます。",
         "en": "These sweets are popular. You can try a sample too."
       },
       {
@@ -2033,7 +2033,7 @@
       },
       {
         "who": "You",
-        "jp": "じゃあ、これを三つください。<ruby>別々<rt>べつべつ</rt></ruby>の<ruby>袋<rt>ふくろ</rt></ruby>に<ruby>入<rt>い</rt></ruby>れてもらえますか。",
+        "jp": "じゃあ、これを三つください。<ruby>別々<rt>べつべつ</rt></ruby>の<ruby>袋<rt>ふくろ</rt></ruby>に入れてもらえますか。",
         "en": "I'll take three, then. Could you put them in separate bags?"
       },
       {
@@ -2048,7 +2048,7 @@
       },
       {
         "who": "Staff",
-        "jp": "どうぞ。<ruby>消費期限<rt>しょうひきげん</rt></ruby>は<ruby>箱<rt>はこ</rt></ruby>の<ruby>下<rt>した</rt></ruby>に<ruby>書<rt>か</rt></ruby>いてあります。",
+        "jp": "どうぞ。<ruby>消費期限<rt>しょうひきげん</rt></ruby>は<ruby>箱<rt>はこ</rt></ruby>の下に書いてあります。",
         "en": "Here you are. The expiry date is written on the bottom of the box."
       }
     ],
@@ -2109,37 +2109,37 @@
       },
       {
         "who": "Staff",
-        "jp": "はい、<ruby>三百円<rt>さんびゃくえん</rt></ruby>で<ruby>貸<rt>か</rt></ruby>し<ruby>出<rt>だ</rt></ruby>ししています。",
+        "jp": "はい、三百円で<ruby>貸<rt>か</rt></ruby>し出ししています。",
         "en": "Yes, we rent them for 300 yen."
       },
       {
         "who": "You",
-        "jp": "<ruby>入<rt>はい</rt></ruby>る<ruby>前<rt>まえ</rt></ruby>に、<ruby>体<rt>からだ</rt></ruby>を<ruby>洗<rt>あら</rt></ruby>わなければなりませんか。",
+        "jp": "入る前に、<ruby>体<rt>からだ</rt></ruby>を<ruby>洗<rt>あら</rt></ruby>わなければなりませんか。",
         "en": "Do I have to wash my body before getting in?"
       },
       {
         "who": "Staff",
-        "jp": "はい、まず<ruby>体<rt>からだ</rt></ruby>を<ruby>洗<rt>あら</rt></ruby>ってから、お<ruby>湯<rt>ゆ</rt></ruby>に<ruby>入<rt>はい</rt></ruby>ってください。",
+        "jp": "はい、まず<ruby>体<rt>からだ</rt></ruby>を<ruby>洗<rt>あら</rt></ruby>ってから、お<ruby>湯<rt>ゆ</rt></ruby>に入ってください。",
         "en": "Yes — please wash first, then enter the bath."
       },
       {
         "who": "You",
-        "jp": "タオルはお<ruby>湯<rt>ゆ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>に<ruby>入<rt>い</rt></ruby>れてもいいですか。",
+        "jp": "タオルはお<ruby>湯<rt>ゆ</rt></ruby>の中に入れてもいいですか。",
         "en": "Is it okay to put the towel in the water?"
       },
       {
         "who": "Staff",
-        "jp": "いえ、<ruby>入<rt>い</rt></ruby>れてはいけません。<ruby>頭<rt>あたま</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>か、<ruby>外<rt>そと</rt></ruby>に<ruby>置<rt>お</rt></ruby>いてください。",
+        "jp": "いえ、入れてはいけません。<ruby>頭<rt>あたま</rt></ruby>の上か、外に<ruby>置<rt>お</rt></ruby>いてください。",
         "en": "No, that's not allowed. Please put it on your head or leave it outside."
       },
       {
         "who": "You",
-        "jp": "わかりました。<ruby>入<rt>い</rt></ruby>れ<ruby>墨<rt>ずみ</rt></ruby>があるんですが、<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>ですか。",
+        "jp": "わかりました。入れ<ruby>墨<rt>ずみ</rt></ruby>があるんですが、<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>ですか。",
         "en": "Understood. I have a tattoo — is that okay?"
       },
       {
         "who": "Staff",
-        "jp": "<ruby>小<rt>ちい</rt></ruby>さければ、シールで<ruby>隠<rt>かく</rt></ruby>せば<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です。<ruby>受付<rt>うけつけ</rt></ruby>でお<ruby>渡<rt>わた</rt></ruby>しします。",
+        "jp": "小さければ、シールで<ruby>隠<rt>かく</rt></ruby>せば<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です。<ruby>受付<rt>うけつけ</rt></ruby>でお<ruby>渡<rt>わた</rt></ruby>しします。",
         "en": "If it's small, covering it with a patch is fine. We'll give you one at reception."
       }
     ],
@@ -2230,7 +2230,7 @@
       },
       {
         "who": "You",
-        "jp": "いいですね、ありがとうございます。<ruby>気<rt>き</rt></ruby>に<ruby>入<rt>い</rt></ruby>りました。",
+        "jp": "いいですね、ありがとうございます。気に入りました。",
         "en": "It looks great, thank you. I really like it."
       }
     ],
@@ -2291,17 +2291,17 @@
       },
       {
         "who": "Staff",
-        "jp": "<ruby>何日間<rt>なんにちかん</rt></ruby>ご<ruby>利用<rt>りよう</rt></ruby>ですか。",
+        "jp": "何日間ご<ruby>利用<rt>りよう</rt></ruby>ですか。",
         "en": "How many days will you be using it?"
       },
       {
         "who": "You",
-        "jp": "十<ruby>日間<rt>にちかん</rt></ruby>です。<ruby>一日<rt>いちにち</rt></ruby>いくらですか。",
+        "jp": "十日間です。一日いくらですか。",
         "en": "Ten days. How much per day?"
       },
       {
         "who": "Staff",
-        "jp": "<ruby>一日<rt>いちにち</rt></ruby><ruby>五百円<rt>ごひゃくえん</rt></ruby>です。データは<ruby>無制限<rt>むせいげん</rt></ruby>です。",
+        "jp": "一日五百円です。データは<ruby>無制限<rt>むせいげん</rt></ruby>です。",
         "en": "500 yen a day. The data is unlimited."
       },
       {
@@ -2311,7 +2311,7 @@
       },
       {
         "who": "Staff",
-        "jp": "<ruby>空港<rt>くうこう</rt></ruby>の<ruby>郵便<rt>ゆうびん</rt></ruby>ポストに<ruby>入<rt>い</rt></ruby>れていただければ<ruby>結構<rt>けっこう</rt></ruby>です。",
+        "jp": "<ruby>空港<rt>くうこう</rt></ruby>の<ruby>郵便<rt>ゆうびん</rt></ruby>ポストに入れていただければ<ruby>結構<rt>けっこう</rt></ruby>です。",
         "en": "Just dropping it in the postbox at the airport is fine."
       },
       {
@@ -2321,7 +2321,7 @@
       },
       {
         "who": "Staff",
-        "jp": "<ruby>保険<rt>ほけん</rt></ruby>に<ruby>入<rt>はい</rt></ruby>っていれば、お<ruby>金<rt>かね</rt></ruby>はかかりません。",
+        "jp": "<ruby>保険<rt>ほけん</rt></ruby>に入っていれば、お金はかかりません。",
         "en": "If you've taken the insurance, there's no charge."
       },
       {
@@ -2376,7 +2376,7 @@
     "category": "errands"
   },
   {
-    "jp": "<ruby>天気<rt>てんき</rt></ruby>・<ruby>季節<rt>きせつ</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>",
+    "jp": "天気・<ruby>季節<rt>きせつ</rt></ruby>の話",
     "en": "Weather & season small talk",
     "setup": "The safest conversation opener in Japan. Learn it well enough to run on autopilot.",
     "lines": [
@@ -2397,12 +2397,12 @@
       },
       {
         "who": "B",
-        "jp": "えっ、<ruby>本当<rt>ほんとう</rt></ruby>ですか。<ruby>電車<rt>でんしゃ</rt></ruby>が<ruby>止<rt>と</rt></ruby>まるかもしれませんね。",
+        "jp": "えっ、<ruby>本当<rt>ほんとう</rt></ruby>ですか。電車が<ruby>止<rt>と</rt></ruby>まるかもしれませんね。",
         "en": "Really? The trains might stop, then."
       },
       {
         "who": "A",
-        "jp": "<ruby>困<rt>こま</rt></ruby>りますね。<ruby>Bさん<rt>ビーさん</rt></ruby>はどの<ruby>季節<rt>きせつ</rt></ruby>が<ruby>一番<rt>いちばん</rt></ruby><ruby>好<rt>す</rt></ruby>きですか。",
+        "jp": "<ruby>困<rt>こま</rt></ruby>りますね。Bさんはどの<ruby>季節<rt>きせつ</rt></ruby>が<ruby>一番<rt>いちばん</rt></ruby><ruby>好<rt>す</rt></ruby>きですか。",
         "en": "That'd be a nuisance. Which season do you like best?"
       },
       {
@@ -2417,7 +2417,7 @@
       },
       {
         "who": "B",
-        "jp": "ですよね。<ruby>今年<rt>ことし</rt></ruby>の<ruby>夏<rt>なつ</rt></ruby>は<ruby>特<rt>とく</rt></ruby>に<ruby>暑<rt>あつ</rt></ruby>かったですね。",
+        "jp": "ですよね。今年の<ruby>夏<rt>なつ</rt></ruby>は<ruby>特<rt>とく</rt></ruby>に<ruby>暑<rt>あつ</rt></ruby>かったですね。",
         "en": "Right? This summer was especially hot."
       }
     ],
@@ -2467,18 +2467,18 @@
     "category": "social"
   },
   {
-    "jp": "<ruby>趣味<rt>しゅみ</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>",
+    "jp": "<ruby>趣味<rt>しゅみ</rt></ruby>の話",
     "en": "Talking about hobbies",
     "setup": "Getting past 趣味は何ですか into an actual conversation — and an invitation.",
     "lines": [
       {
         "who": "A",
-        "jp": "<ruby>休<rt>やす</rt></ruby>みの<ruby>日<rt>ひ</rt></ruby>は<ruby>何<rt>なに</rt></ruby>をしていますか。",
+        "jp": "休みの日は何をしていますか。",
         "en": "What do you do on your days off?"
       },
       {
         "who": "B",
-        "jp": "<ruby>映画<rt>えいが</rt></ruby>を<ruby>見<rt>み</rt></ruby>たり、<ruby>料理<rt>りょうり</rt></ruby>を<ruby>作<rt>つく</rt></ruby>ったりしています。",
+        "jp": "<ruby>映画<rt>えいが</rt></ruby>を見たり、<ruby>料理<rt>りょうり</rt></ruby>を<ruby>作<rt>つく</rt></ruby>ったりしています。",
         "en": "I do things like watch movies and cook."
       },
       {
@@ -2493,7 +2493,7 @@
       },
       {
         "who": "A",
-        "jp": "すごいですね。<ruby>何<rt>なに</rt></ruby>が<ruby>一番<rt>いちばん</rt></ruby><ruby>上手<rt>じょうず</rt></ruby>にできますか。",
+        "jp": "すごいですね。何が<ruby>一番<rt>いちばん</rt></ruby><ruby>上手<rt>じょうず</rt></ruby>にできますか。",
         "en": "That's impressive. What can you make best?"
       },
       {
@@ -2508,7 +2508,7 @@
       },
       {
         "who": "B",
-        "jp": "もちろんです！じゃあ、<ruby>材料<rt>ざいりょう</rt></ruby>を<ruby>買<rt>か</rt></ruby>いに行きましょう。",
+        "jp": "もちろんです！じゃあ、<ruby>材料<rt>ざいりょう</rt></ruby>を買いに行きましょう。",
         "en": "Of course! Let's go buy the ingredients, then."
       }
     ],
@@ -2558,7 +2558,7 @@
     "category": "social"
   },
   {
-    "jp": "<ruby>家族<rt>かぞく</rt></ruby>と<ruby>出身<rt>しゅっしん</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>",
+    "jp": "<ruby>家族<rt>かぞく</rt></ruby>と<ruby>出身<rt>しゅっしん</rt></ruby>の話",
     "en": "Family & where you're from",
     "setup": "The questions you will be asked in every first conversation in Japan. Have the answers ready.",
     "lines": [
@@ -2569,22 +2569,22 @@
       },
       {
         "who": "B",
-        "jp": "フィリピンのマニラです。<ruby>大<rt>おお</rt></ruby>きくて、にぎやかな<ruby>町<rt>まち</rt></ruby>です。",
+        "jp": "フィリピンのマニラです。大きくて、にぎやかな<ruby>町<rt>まち</rt></ruby>です。",
         "en": "Manila, in the Philippines. It's a big, lively city."
       },
       {
         "who": "A",
-        "jp": "<ruby>日本<rt>にほん</rt></ruby>とどこが<ruby>一番<rt>いちばん</rt></ruby><ruby>違<rt>ちが</rt></ruby>いますか。",
+        "jp": "日本とどこが<ruby>一番<rt>いちばん</rt></ruby><ruby>違<rt>ちが</rt></ruby>いますか。",
         "en": "What's the biggest difference from Japan?"
       },
       {
         "who": "B",
-        "jp": "<ruby>電車<rt>でんしゃ</rt></ruby>ですね。<ruby>日本<rt>にほん</rt></ruby>の<ruby>電車<rt>でんしゃ</rt></ruby>は<ruby>時間<rt>じかん</rt></ruby>に<ruby>正確<rt>せいかく</rt></ruby>で、びっくりしました。",
+        "jp": "電車ですね。日本の電車は時間に<ruby>正確<rt>せいかく</rt></ruby>で、びっくりしました。",
         "en": "The trains. Japanese trains are so punctual — it surprised me."
       },
       {
         "who": "A",
-        "jp": "ああ、よく<ruby>言<rt>い</rt></ruby>われます。ご<ruby>家族<rt>かぞく</rt></ruby>は<ruby>何人<rt>なんにん</rt></ruby>ですか。",
+        "jp": "ああ、よく<ruby>言<rt>い</rt></ruby>われます。ご<ruby>家族<rt>かぞく</rt></ruby>は何人ですか。",
         "en": "Ah, people often say that. How many are in your family?"
       },
       {
@@ -2594,12 +2594,12 @@
       },
       {
         "who": "A",
-        "jp": "にぎやかでしょうね。ご<ruby>家族<rt>かぞく</rt></ruby>は<ruby>日本<rt>にほん</rt></ruby>に<ruby>来<rt>き</rt></ruby>たことがありますか。",
+        "jp": "にぎやかでしょうね。ご<ruby>家族<rt>かぞく</rt></ruby>は日本に来たことがありますか。",
         "en": "That must be lively. Has your family ever been to Japan?"
       },
       {
         "who": "B",
-        "jp": "まだないんです。でも、<ruby>来年<rt>らいねん</rt></ruby><ruby>呼<rt>よ</rt></ruby>びたいと<ruby>思<rt>おも</rt></ruby>っています。",
+        "jp": "まだないんです。でも、来年<ruby>呼<rt>よ</rt></ruby>びたいと<ruby>思<rt>おも</rt></ruby>っています。",
         "en": "Not yet. But I'm hoping to invite them next year."
       }
     ],
@@ -2655,7 +2655,7 @@
     "lines": [
       {
         "who": "You",
-        "jp": "すみません、<ruby>今<rt>いま</rt></ruby>ちょっといいですか。",
+        "jp": "すみません、今ちょっといいですか。",
         "en": "Excuse me, do you have a moment?"
       },
       {
@@ -2665,17 +2665,17 @@
       },
       {
         "who": "You",
-        "jp": "この<ruby>書類<rt>しょるい</rt></ruby>の<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>が わからないんですが、<ruby>教<rt>おし</rt></ruby>えていただけませんか。",
+        "jp": "この<ruby>書類<rt>しょるい</rt></ruby>の書き<ruby>方<rt>かた</rt></ruby>が わからないんですが、<ruby>教<rt>おし</rt></ruby>えていただけませんか。",
         "en": "I don't know how to fill in this document — could you show me?"
       },
       {
         "who": "Coworker",
-        "jp": "いいですよ。ここに<ruby>名前<rt>なまえ</rt></ruby>と<ruby>日付<rt>ひづけ</rt></ruby>を<ruby>書<rt>か</rt></ruby>いてください。",
+        "jp": "いいですよ。ここに名前と<ruby>日付<rt>ひづけ</rt></ruby>を書いてください。",
         "en": "Sure. Write your name and the date here."
       },
       {
         "who": "You",
-        "jp": "ここですね。ありがとうございます。それから、これはいつまでに<ruby>出<rt>だ</rt></ruby>せばいいですか。",
+        "jp": "ここですね。ありがとうございます。それから、これはいつまでに出せばいいですか。",
         "en": "Here, right? Thank you. Also, by when should I submit it?"
       },
       {
@@ -2690,7 +2690,7 @@
       },
       {
         "who": "Coworker",
-        "jp": "いえいえ、<ruby>何<rt>なに</rt></ruby>かあったら、また<ruby>聞<rt>き</rt></ruby>いてください。",
+        "jp": "いえいえ、何かあったら、また聞いてください。",
         "en": "Not at all — if anything comes up, just ask again."
       }
     ],
@@ -2751,27 +2751,27 @@
       },
       {
         "who": "You",
-        "jp": "はじめまして、ダレンと<ruby>申<rt>もう</rt></ruby>します。フィリピンから<ruby>来<rt>き</rt></ruby>ました。よろしくお願いします。",
+        "jp": "はじめまして、ダレンと<ruby>申<rt>もう</rt></ruby>します。フィリピンから来ました。よろしくお願いします。",
         "en": "Nice to meet you, my name is Darren. I came from the Philippines. Pleased to meet you."
       },
       {
         "who": "Manager",
-        "jp": "<ruby>日本語<rt>にほんご</rt></ruby>はどのくらい<ruby>勉強<rt>べんきょう</rt></ruby>していますか。",
+        "jp": "日本語はどのくらい<ruby>勉強<rt>べんきょう</rt></ruby>していますか。",
         "en": "How long have you been studying Japanese?"
       },
       {
         "who": "You",
-        "jp": "二<ruby>年<rt>ねん</rt></ruby>ぐらいです。<ruby>会話<rt>かいわ</rt></ruby>はまだ<ruby>練習中<rt>れんしゅうちゅう</rt></ruby>ですが、<ruby>頑張<rt>がんば</rt></ruby>ります。",
+        "jp": "二年ぐらいです。<ruby>会話<rt>かいわ</rt></ruby>はまだ<ruby>練習中<rt>れんしゅうちゅう</rt></ruby>ですが、<ruby>頑張<rt>がんば</rt></ruby>ります。",
         "en": "About two years. My conversation is still a work in progress, but I'll do my best."
       },
       {
         "who": "Manager",
-        "jp": "<ruby>週<rt>しゅう</rt></ruby>に<ruby>何日<rt>なんにち</rt></ruby><ruby>働<rt>はたら</rt></ruby>けますか。",
+        "jp": "<ruby>週<rt>しゅう</rt></ruby>に何日<ruby>働<rt>はたら</rt></ruby>けますか。",
         "en": "How many days a week can you work?"
       },
       {
         "who": "You",
-        "jp": "<ruby>週<rt>しゅう</rt></ruby>に三日、<ruby>夕方<rt>ゆうがた</rt></ruby>から<ruby>働<rt>はたら</rt></ruby>けます。<ruby>土日<rt>どにち</rt></ruby>も<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です。",
+        "jp": "<ruby>週<rt>しゅう</rt></ruby>に三日、<ruby>夕方<rt>ゆうがた</rt></ruby>から<ruby>働<rt>はたら</rt></ruby>けます。土日も<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です。",
         "en": "Three days a week, from the evening. Weekends are fine too."
       },
       {
@@ -2842,7 +2842,7 @@
     "lines": [
       {
         "who": "Host",
-        "jp": "どうぞ、<ruby>入<rt>はい</rt></ruby>ってください。<ruby>疲<rt>つか</rt></ruby>れましたか。",
+        "jp": "どうぞ、入ってください。<ruby>疲<rt>つか</rt></ruby>れましたか。",
         "en": "Please come in. Are you tired?"
       },
       {
@@ -2857,12 +2857,12 @@
       },
       {
         "who": "You",
-        "jp": "<ruby>何<rt>なん</rt></ruby>でも<ruby>食<rt>た</rt></ruby>べられます。でも、<ruby>辛<rt>から</rt></ruby>いのはあまり<ruby>得意<rt>とくい</rt></ruby>じゃないんです。",
+        "jp": "何でも食べられます。でも、<ruby>辛<rt>から</rt></ruby>いのはあまり<ruby>得意<rt>とくい</rt></ruby>じゃないんです。",
         "en": "I can eat anything. Though I'm not great with spicy food."
       },
       {
         "who": "Host",
-        "jp": "わかりました。あ、お<ruby>風呂<rt>ふろ</rt></ruby>は<ruby>何時<rt>なんじ</rt></ruby>でもいいですが、十一時までにお願いします。",
+        "jp": "わかりました。あ、お<ruby>風呂<rt>ふろ</rt></ruby>は何時でもいいですが、十一時までにお願いします。",
         "en": "Got it. Oh, the bath is fine any time, but please use it before eleven."
       },
       {
@@ -2938,12 +2938,12 @@
     "lines": [
       {
         "who": "A",
-        "jp": "<ruby>今晩<rt>こんばん</rt></ruby>、みんなで<ruby>飲<rt>の</rt></ruby>みに行くんですが、<ruby>一緒<rt>いっしょ</rt></ruby>にどうですか。",
+        "jp": "<ruby>今晩<rt>こんばん</rt></ruby>、みんなで飲みに行くんですが、<ruby>一緒<rt>いっしょ</rt></ruby>にどうですか。",
         "en": "We're all going out for drinks tonight — how about joining us?"
       },
       {
         "who": "You",
-        "jp": "あ、<ruby>誘<rt>さそ</rt></ruby>ってくれてありがとうございます。<ruby>行<rt>い</rt></ruby>きたいんですが…",
+        "jp": "あ、<ruby>誘<rt>さそ</rt></ruby>ってくれてありがとうございます。行きたいんですが…",
         "en": "Ah, thank you for inviting me. I'd love to go, but..."
       },
       {
@@ -2953,7 +2953,7 @@
       },
       {
         "who": "You",
-        "jp": "<ruby>明日<rt>あした</rt></ruby>の<ruby>朝<rt>あさ</rt></ruby>、<ruby>早<rt>はや</rt></ruby>く<ruby>出<rt>で</rt></ruby>なければならないので、<ruby>今日<rt>きょう</rt></ruby>はちょっと…",
+        "jp": "<ruby>明日<rt>あした</rt></ruby>の<ruby>朝<rt>あさ</rt></ruby>、<ruby>早<rt>はや</rt></ruby>く出なければならないので、今日はちょっと…",
         "en": "I have to leave early tomorrow morning, so today is a bit difficult..."
       },
       {
@@ -3049,12 +3049,12 @@
       },
       {
         "who": "You",
-        "jp": "もちろん。<ruby>気<rt>き</rt></ruby>に<ruby>入<rt>い</rt></ruby>ってもらえるとうれしいです。",
+        "jp": "もちろん。気に入ってもらえるとうれしいです。",
         "en": "Of course. I'd be happy if you like it."
       },
       {
         "who": "Friend",
-        "jp": "わあ、<ruby>前<rt>まえ</rt></ruby>から<ruby>欲<rt>ほ</rt></ruby>しかったんです！<ruby>本当<rt>ほんとう</rt></ruby>にありがとう。",
+        "jp": "わあ、前から<ruby>欲<rt>ほ</rt></ruby>しかったんです！<ruby>本当<rt>ほんとう</rt></ruby>にありがとう。",
         "en": "Wow, I've wanted this for ages! Thank you so much."
       },
       {
