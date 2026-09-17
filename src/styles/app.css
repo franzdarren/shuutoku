@@ -240,6 +240,7 @@ body.no-furigana rt{ display:none; }
 .pb-nav button,
 .kanji-pager-btns button,
 .fontsize-controls button,
+.textsize-controls button,
 .qc-reset{
   font-family:var(--sans);
   font-size:var(--fs-xs);
@@ -253,11 +254,13 @@ body.no-furigana rt{ display:none; }
 .modjump button:hover,
 .kanji-pager-btns button:hover:not(:disabled),
 .fontsize-controls button:hover:not(.active),
+.textsize-controls button:hover:not(:disabled),
 .qc-reset:hover{ border-color:var(--indigo); color:var(--indigo); }
 .modjump button:active,
 .pb-nav button:active,
 .kanji-pager-btns button:active:not(:disabled),
 .fontsize-controls button:active,
+.textsize-controls button:active:not(:disabled),
 .qc-reset:active{ transform:translateY(1px); }
 
 /* ============================================================
@@ -360,25 +363,13 @@ nav.mainnav button.navlink.active::before{
 .fontsize-controls button.active{ background:var(--indigo); color:var(--on-accent); border-color:var(--indigo); }
 
 .setting-value{ color:var(--ink-faint); font-variant-numeric:tabular-nums; }
-.slider-row{ display:flex; align-items:center; gap:8px; }
-.slider-cap{ color:var(--ink-faint); font-family:var(--serif); line-height:1; flex-shrink:0; }
-.slider-cap.sm{ font-size:var(--fs-2xs); }
-.slider-cap.lg{ font-size:var(--fs-lg); }
-.slider{
-  flex:1; min-width:0; -webkit-appearance:none; appearance:none;
-  height:4px; border-radius:var(--radius-pill); background:var(--line);
-  outline:none; cursor:pointer; padding:0; margin:0;
-}
-.slider::-webkit-slider-thumb{
-  -webkit-appearance:none; appearance:none; width:15px; height:15px;
-  border-radius:50%; background:var(--indigo); border:2px solid var(--paper-2);
-  box-shadow:0 1px 3px var(--shadow); cursor:pointer;
-}
-.slider::-moz-range-thumb{
-  width:15px; height:15px; border-radius:50%; background:var(--indigo);
-  border:2px solid var(--paper-2); box-shadow:0 1px 3px var(--shadow); cursor:pointer;
-}
-.slider-reset{ margin-top:8px; font-size:var(--fs-3xs); }
+/* Stepped +/- rather than a drag-and-release slider — a slider needs a
+   pointer with fine control, a stepper just needs taps, and every step
+   already snaps to a fixed 5% increment underneath either way. */
+.textsize-controls{ display:flex; align-items:stretch; gap:6px; }
+.textsize-controls button{ flex:1; padding:6px 0; border-radius:var(--radius-sm); font-size:var(--fs-base); line-height:1; }
+.textsize-controls button:disabled{ opacity:.35; cursor:default; }
+.textsize-controls .ts-reset{ flex:1.4; font-family:var(--serif); font-size:var(--fs-sm); }
 
 .reset-all{
   width:100%; margin-top:14px; padding:7px 10px;
@@ -652,7 +643,16 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
   transition:border-color var(--t-fast), box-shadow var(--t-fast);
 }
 .kcard:hover{ border-color:var(--indigo); box-shadow:var(--elev-1); }
-.kcard .kj{ font-family:var(--serif); font-size:var(--fs-3xl); color:var(--ink); line-height:1; flex-shrink:0; }
+/* The character is a button (opens the stroke-order modal), styled to
+   read as text first — the hover/focus rule underneath is what signals
+   it's clickable, rather than looking like an icon-button. */
+.kcard .kj{
+  font-family:var(--serif); font-size:var(--fs-3xl); line-height:1; flex-shrink:0;
+  background:none; border:none; padding:0; margin:0; cursor:pointer;
+  color:var(--ink); border-bottom:1px solid transparent;
+  transition:color var(--t-fast), border-color var(--t-fast);
+}
+.kcard .kj:hover, .kcard .kj:focus-visible{ color:var(--indigo); border-bottom-color:var(--indigo); }
 .kcard .kmeta{ font-size:var(--fs-xs); min-width:0; }
 .kcard .kmeaning{ color:var(--ink); font-weight:700; margin-bottom:4px; font-size:var(--fs-sm); }
 .kcard .kreading{ color:var(--ink-soft); }
@@ -776,6 +776,10 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
 .viewtabs .vt-en{ font-size:var(--fs-2xs); color:var(--ink-faint); letter-spacing:.04em; }
 .viewtabs button.active .vt-en{ color:var(--matcha); }
 .pb-group{ scroll-margin-top:20px; }
+/* Anchors that module/category tab clicks scroll to (rather than the
+   document top) — a small offset so the target row doesn't land flush
+   against the viewport edge. */
+#grammar-tabs, #kaiwa-tabs, #kaiwa-cat-nav, #kanji-tabs{ scroll-margin-top:20px; }
 .pb-cat{ display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; margin:0 0 12px; padding-bottom:7px; border-bottom:1px solid var(--line-soft); }
 .pb-cat .jp{ font-family:var(--serif); font-size:var(--fs-lg); color:var(--matcha); }
 .pb-cat .en{ font-size:var(--fs-xs); color:var(--ink-faint); }
@@ -944,6 +948,31 @@ footer.pagefoot{ margin-top:60px; padding-top:20px; border-top:1px solid var(--l
 .lookup-pop .lp-empty{ color:var(--ink-soft); font-size:var(--fs-sm); }
 .lookup-pop .lp-close{ position:absolute; top:6px; right:8px; background:none; border:none; color:var(--ink-faint); cursor:pointer; font-size:var(--fs-md); line-height:1; padding:4px; }
 .lookup-pop .lp-close:hover{ color:var(--ink); }
+
+/* ============================================================
+   KANJI STROKE-ORDER MODAL
+   ============================================================ */
+.kanji-modal-scrim{
+  position:fixed; inset:0; z-index:210; background:var(--scrim);
+  display:flex; align-items:center; justify-content:center; padding:20px;
+  animation:fadein var(--dur-fast) var(--ease-out);
+}
+.kanji-modal{
+  position:relative; background:var(--paper-2); border:1px solid var(--line);
+  border-radius:var(--radius-lg); box-shadow:var(--elev-3);
+  padding:30px 28px 22px; max-width:300px; width:100%; text-align:center;
+  animation:popin var(--dur) var(--ease-out);
+}
+.kanji-modal-close{
+  position:absolute; top:10px; right:12px; background:none; border:none;
+  color:var(--ink-faint); cursor:pointer; font-size:var(--fs-md); line-height:1; padding:6px;
+}
+.kanji-modal-close:hover{ color:var(--ink); }
+.kanji-modal-kj{ font-family:var(--serif); font-size:3.4rem; line-height:1; color:var(--ink); margin-bottom:16px; }
+.kanji-modal-stroke{ width:100%; max-width:220px; margin:0 auto; display:block; }
+.kanji-modal-fallback{ font-size:var(--fs-sm); color:var(--ink-soft); max-width:220px; margin:0 auto; }
+.kanji-modal-fallback a{ color:var(--indigo); }
+.kanji-modal-credit{ font-size:var(--fs-3xs); color:var(--ink-faint); margin-top:16px; }
 
 /* ============================================================
    RENSHUU WITH AI — coming-soon preview

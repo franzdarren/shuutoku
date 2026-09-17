@@ -37,14 +37,17 @@ export default function KaiwaLab({ isActive }) {
   const cat = CATEGORIES[activeCatIndex];
   const scenariosInCat = scenariosWithIndex.filter(({ sc }) => sc.category === activeCat);
 
+  // Scrolls to the tabs themselves, not the very top of the page — jumping
+  // past the intro paragraph and tip cards on every click is what made
+  // switching views feel like it snapped "all the way to the top".
   function switchView(v) {
     setView(v);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    document.getElementById("kaiwa-tabs")?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   function goToCategory(id) {
     setActiveCat(id);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    document.getElementById("kaiwa-cat-nav")?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   function goToCategoryIndex(i) {
@@ -100,7 +103,7 @@ export default function KaiwaLab({ isActive }) {
       {/* Two big halves that were previously one very long scroll — the
           phrase reference and the scripted scenarios are used at different
           times, so they get their own views rather than stacking. */}
-      <div className="viewtabs" role="tablist">
+      <div className="viewtabs" role="tablist" id="kaiwa-tabs">
         <button role="tab" aria-selected={view === "phrases"} className={view === "phrases" ? "active" : ""} onClick={() => switchView("phrases")}>
           <span className="vt-jp">フレーズ集</span>
           <span className="vt-en">Phrase Bank · {countPhrases()}</span>
@@ -145,7 +148,7 @@ export default function KaiwaLab({ isActive }) {
       {view === "scenarios" && <>
       <div className="modtitle-en">{kaiwaScenarios.length} scripts in {CATEGORIES.length} groups — pick a group below, then read both parts out loud and try to reconstruct the Japanese from the English</div>
 
-      <div className="modjump modjump-rich">
+      <div className="modjump modjump-rich" id="kaiwa-cat-nav">
         {CATEGORIES.map((c) => (
           <button key={c.id} className={c.id === activeCat ? "active" : ""} onClick={() => goToCategory(c.id)}>
             <span className="mj-jp">{c.jp}</span>

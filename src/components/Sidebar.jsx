@@ -19,6 +19,11 @@ const JP_FONTS = [
   { v: "gothic", label: "ゴシック Gothic" },
 ];
 
+const FONT_SCALE_MIN = 0.85;
+const FONT_SCALE_MAX = 1.4;
+const FONT_SCALE_STEP = 0.05;
+const clampScale = (v) => Math.min(FONT_SCALE_MAX, Math.max(FONT_SCALE_MIN, Math.round(v * 100) / 100));
+
 export default function Sidebar({ active, onNavigate, mobileOpen, onCloseMobile, onSearchJump }) {
   const { furigana, setFurigana, dark, setDark, fontScale, setFontScale, jpFont, setJpFont } = useSettings();
   const { stats, resetAll } = useQuiz();
@@ -69,19 +74,19 @@ export default function Sidebar({ active, onNavigate, mobileOpen, onCloseMobile,
             <span style={{ display: "flex", justifyContent: "space-between", marginBottom: 6 }}>
               Text size <span className="setting-value">{Math.round(fontScale * 100)}%</span>
             </span>
-            <div className="slider-row">
-              <span className="slider-cap sm">A</span>
-              <input
-                className="slider"
-                type="range"
-                min="0.85" max="1.4" step="0.05"
-                value={fontScale}
-                onChange={(e) => setFontScale(Number(e.target.value))}
-                aria-label="Text size"
-              />
-              <span className="slider-cap lg">A</span>
+            <div className="textsize-controls">
+              <button
+                onClick={() => setFontScale(clampScale(fontScale - FONT_SCALE_STEP))}
+                disabled={fontScale <= FONT_SCALE_MIN}
+                aria-label="Decrease text size"
+              >−</button>
+              <button className="ts-reset" onClick={() => setFontScale(1)} aria-label="Reset text size to 100%">Aa</button>
+              <button
+                onClick={() => setFontScale(clampScale(fontScale + FONT_SCALE_STEP))}
+                disabled={fontScale >= FONT_SCALE_MAX}
+                aria-label="Increase text size"
+              >+</button>
             </div>
-            <button className="linkbtn slider-reset" onClick={() => setFontScale(1)}>Reset to 100%</button>
           </div>
           <div className="setting-row" style={{ display: "block" }}>
             <span style={{ display: "block", marginBottom: 6 }}>Japanese text style</span>

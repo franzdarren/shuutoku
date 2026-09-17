@@ -2525,7 +2525,7 @@
         "formation": [
           "いらっしゃいませ — welcome (said to you on entering)",
           "かしこまりました／<ruby>承知<rt>しょうち</rt></ruby>しました — certainly, understood",
-          "<ruby>少<rt>すこ</rt></ruby>々お<ruby>待<rt>ま</rt></ruby>ちください — please wait a moment",
+          "<ruby>少々<rt>しょうしょう</rt></ruby>お<ruby>待<rt>ま</rt></ruby>ちください — please wait a moment",
           "お<ruby>決<rt>き</rt></ruby>まりでしょうか — have you decided?",
           "<ruby>恐<rt>おそ</rt></ruby>れ入りますが〜 — I'm sorry to trouble you, but..."
         ],
@@ -2539,7 +2539,7 @@
             "en": "Sorry to trouble you, but please write your name here."
           },
           {
-            "jp": "ただいま<ruby>係<rt>かかり</rt></ruby>の<ruby>者<rt>もの</rt></ruby>が<ruby>参<rt>まい</rt></ruby>りますので、<ruby>少<rt>すこ</rt></ruby>々お<ruby>待<rt>ま</rt></ruby>ちください。",
+            "jp": "ただいま<ruby>係<rt>かかり</rt></ruby>の<ruby>者<rt>もの</rt></ruby>が<ruby>参<rt>まい</rt></ruby>りますので、<ruby>少々<rt>しょうしょう</rt></ruby>お<ruby>待<rt>ま</rt></ruby>ちください。",
             "en": "Someone will be with you shortly, so please wait a moment."
           },
           {
@@ -2567,7 +2567,7 @@
         "tip": "Answering keigo with plain です／ます is completely natural and not rude — staff do not expect keigo back from a customer. Trying to force it usually sounds stranger than just being clear and polite.",
         "quiz": [
           {
-            "q": "Staff say 「<ruby>少<rt>すこ</rt></ruby>々お<ruby>待<rt>ま</rt></ruby>ちください。」 You should:",
+            "q": "Staff say 「<ruby>少々<rt>しょうしょう</rt></ruby>お<ruby>待<rt>ま</rt></ruby>ちください。」 You should:",
             "choices": [
               "wait a moment",
               "leave",
@@ -2575,7 +2575,7 @@
               "repeat your order"
             ],
             "a": 0,
-            "ex": "<ruby>少<rt>すこ</rt></ruby>々お<ruby>待<rt>ま</rt></ruby>ちください is the keigo form of ちょっと<ruby>待<rt>ま</rt></ruby>ってください."
+            "ex": "<ruby>少々<rt>しょうしょう</rt></ruby>お<ruby>待<rt>ま</rt></ruby>ちください is the keigo form of ちょっと<ruby>待<rt>ま</rt></ruby>ってください."
           },
           {
             "q": "「お<ruby>決<rt>き</rt></ruby>まりでしょうか。」 is asking:",
@@ -2696,7 +2696,7 @@
         "choices": [
           "お<ruby>待<rt>ま</rt></ruby>ちします",
           "お<ruby>待<rt>ま</rt></ruby>ちください",
-          "<ruby>少<rt>すこ</rt></ruby>々お<ruby>待<rt>ま</rt></ruby>ちください",
+          "<ruby>少々<rt>しょうしょう</rt></ruby>お<ruby>待<rt>ま</rt></ruby>ちください",
           "お<ruby>待<rt>ま</rt></ruby>ちいただけますか"
         ],
         "a": 0,

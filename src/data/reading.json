@@ -1,8 +1,8 @@
 [
   {
-    "title": "日記 — 週末の旅行",
+    "title": "<ruby>日記<rt>にっき</rt></ruby> — <ruby>週末<rt>しゅうまつ</rt></ruby>の<ruby>旅行<rt>りょこう</rt></ruby>",
     "titleEn": "Diary — a weekend trip",
-    "text": "土曜日に友達と一緒に<ruby>京都<rt>きょうと</rt></ruby>に旅行に行った。朝早く起きて、電車に乗った。<ruby>京都<rt>きょうと</rt></ruby>駅に<ruby>着<rt>つ</rt></ruby>いたら、すごく人が多かった。まず<ruby>清水寺<rt>きよみずでら</rt></ruby>に行くことにした。坂を歩いていたら、小さいお店がたくさんあって、お<ruby>土産<rt>みやげ</rt></ruby>を買った。\n\nお昼はうどんを食べた。とてもおいしかったので、また来たいと思う。午後は雨が降りそうだったので、早めにホテルに戻った。友達は「今度は<ruby>紅葉<rt>こうよう</rt></ruby>の<ruby>季節<rt>きせつ</rt></ruby>に行ってみたい」と言っていた。わたしも本当にそう思う。",
+    "text": "<ruby>土曜日<rt>どようび</rt></ruby>に<ruby>友達<rt>ともだち</rt></ruby>と<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>京都<rt>きょうと</rt></ruby>に<ruby>旅行<rt>りょこう</rt></ruby>に<ruby>行<rt>い</rt></ruby>った。<ruby>朝<rt>あさ</rt></ruby><ruby>早<rt>はや</rt></ruby>く<ruby>起<rt>お</rt></ruby>きて、<ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>った。<ruby>京都<rt>きょうと</rt></ruby><ruby>駅<rt>えき</rt></ruby>に<ruby>着<rt>つ</rt></ruby>いたら、すごく<ruby>人<rt>ひと</rt></ruby>が<ruby>多<rt>おお</rt></ruby>かった。まず<ruby>清水寺<rt>きよみずでら</rt></ruby>に<ruby>行<rt>い</rt></ruby>くことにした。<ruby>坂<rt>さか</rt></ruby>を<ruby>歩<rt>ある</rt></ruby>いていたら、<ruby>小<rt>ちい</rt></ruby>さいお<ruby>店<rt>みせ</rt></ruby>がたくさんあって、お<ruby>土産<rt>みやげ</rt></ruby>を<ruby>買<rt>か</rt></ruby>った。\n\nお<ruby>昼<rt>ひる</rt></ruby>はうどんを<ruby>食<rt>た</rt></ruby>べた。とてもおいしかったので、また<ruby>来<rt>き</rt></ruby>たいと<ruby>思<rt>おも</rt></ruby>う。<ruby>午後<rt>ごご</rt></ruby>は<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>りそうだったので、<ruby>早<rt>はや</rt></ruby>めにホテルに<ruby>戻<rt>もど</rt></ruby>った。<ruby>友達<rt>ともだち</rt></ruby>は「<ruby>今度<rt>こんど</rt></ruby>は<ruby>紅葉<rt>こうよう</rt></ruby>の<ruby>季節<rt>きせつ</rt></ruby>に<ruby>行<rt>い</rt></ruby>ってみたい」と<ruby>言<rt>い</rt></ruby>っていた。わたしも<ruby>本当<rt>ほんとう</rt></ruby>にそう<ruby>思<rt>おも</rt></ruby>う。",
     "gloss": "旅行 (りょこう) trip ・ 着く (つく) to arrive ・ 清水寺 (きよみずでら) Kiyomizu Temple ・ 坂 (さか) slope ・ お土産 (おみやげ) souvenir ・ 早めに (はやめに) ahead of time, early ・ 戻る (もどる) to return ・ 紅葉 (こうよう) autumn leaves ・ 季節 (きせつ) season",
     "quiz": [
       {
@@ -52,7 +52,7 @@
     ]
   },
   {
-    "title": "お知らせ — エレベーター点検",
+    "title": "お知らせ — エレベーター<ruby>点検<rt>てんけん</rt></ruby>",
     "titleEn": "Notice — elevator inspection",
     "text": "エレベーター<ruby>点検<rt>てんけん</rt></ruby>のお知らせ\n\nいつも当マンションをご利用いただき、ありがとうございます。下記の<ruby>日程<rt>にってい</rt></ruby>でエレベーターの<ruby>点検<rt>てんけん</rt></ruby>を行うことになりました。<ruby>点検<rt>てんけん</rt></ruby>中はエレベーターが使えませんので、ご注意ください。\n\n日時：11月20日（金）午前9時〜午後3時\n場所：Aとうエレベーター\n\n<ruby>点検<rt>てんけん</rt></ruby>中、上の階にお住まいの方は<ruby>階段<rt>かいだん</rt></ruby>をご利用ください。ご<ruby>不便<rt>ふべん</rt></ruby>をおかけしますが、ご<ruby>協力<rt>きょうりょく</rt></ruby>をお願いいたします。ご質問がある方は、<ruby>管理事務所<rt>かんりじむしょ</rt></ruby>までご連絡ください。",
     "gloss": "点検 (てんけん) inspection ・ 日程 (にってい) schedule ・ 階段 (かいだん) stairs ・ 不便 (ふべん) inconvenient ・ 協力 (きょうりょく) cooperation ・ 管理事務所 (かんりじむしょ) management office",
@@ -101,7 +101,7 @@
     ]
   },
   {
-    "title": "メール — 週末の予定",
+    "title": "メール — <ruby>週末<rt>しゅうまつ</rt></ruby>の<ruby>予定<rt>よてい</rt></ruby>",
     "titleEn": "Email — weekend plans",
     "text": "ゆきちゃんへ\n\n元気？今週末、時間があったら、一緒に映画を見に行かない？新しい映画がとても面白いらしいよ。もしゆきちゃんが忙しいなら、来週でもいいよ。\n\nあ、それから、前に話していたラーメン屋、行ってみたい。友達が「あそこのラーメンはすごくおいしい」と言っていた。ゆきちゃんが好きなら、映画のあとで一緒に行こう。\n\n返事、待ってるね！\n\nみほ",
     "gloss": "らしい apparently, I heard ・ なら if (reacting to a topic) ・ 前に (まえに) previously, before ・ 返事 (へんじ) reply",

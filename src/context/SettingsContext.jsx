@@ -15,7 +15,10 @@ export function SettingsProvider({ children }) {
   const [furigana, setFurigana] = useState(() => readStored("n4.furigana", true));
   const [dark, setDark] = useState(() => readStored("n4.dark", false));
   const [fontScale, setFontScale] = useState(() => readStored("n4.fontScale", 1));
-  const [jpFont, setJpFont] = useState(() => readStored("n4.jpFont", "mincho"));
+  // Gothic is the default Japanese face everywhere — Mincho's thin strokes
+  // are the harder of the two to read at small sizes, and this is a study
+  // tool people will read on a phone.
+  const [jpFont, setJpFont] = useState(() => readStored("n4.jpFont", "gothic"));
 
   useEffect(() => {
     document.body.classList.toggle("no-furigana", !furigana);

@@ -3419,6 +3419,246 @@
           "type": "on"
         }
       ]
+    },
+    {
+      "kj": "旅",
+      "on": "リョ",
+      "kun": "たび",
+      "meaning": "travel, journey",
+      "examples": [
+        {
+          "word": "旅行",
+          "reading": "りょこう",
+          "meaning": "trip, travel",
+          "type": "on"
+        },
+        {
+          "word": "一人旅",
+          "reading": "ひとりたび",
+          "meaning": "solo trip",
+          "type": "kun"
+        }
+      ]
+    },
+    {
+      "kj": "行",
+      "on": "コウ・ギョウ",
+      "kun": "い(く)・おこな(う)",
+      "meaning": "go, carry out, line",
+      "examples": [
+        {
+          "word": "旅行",
+          "reading": "りょこう",
+          "meaning": "trip, travel",
+          "type": "on"
+        },
+        {
+          "word": "行く",
+          "reading": "いく",
+          "meaning": "to go",
+          "type": "kun"
+        }
+      ]
+    },
+    {
+      "kj": "度",
+      "on": "ド・ト",
+      "kun": "たび",
+      "meaning": "degree, occasion, time(s)",
+      "examples": [
+        {
+          "word": "一度",
+          "reading": "いちど",
+          "meaning": "once, one time",
+          "type": "on"
+        },
+        {
+          "word": "今度",
+          "reading": "こんど",
+          "meaning": "this time, next time",
+          "type": "on"
+        }
+      ]
+    },
+    {
+      "kj": "一",
+      "on": "イチ・イツ",
+      "kun": "ひと(つ)",
+      "meaning": "one",
+      "examples": [
+        {
+          "word": "一度",
+          "reading": "いちど",
+          "meaning": "once, one time",
+          "type": "on"
+        },
+        {
+          "word": "一つ",
+          "reading": "ひとつ",
+          "meaning": "one (thing)",
+          "type": "kun"
+        }
+      ]
+    },
+    {
+      "kj": "友",
+      "on": "ユウ",
+      "kun": "とも",
+      "meaning": "friend",
+      "examples": [
+        {
+          "word": "友達",
+          "reading": "ともだち",
+          "meaning": "friend",
+          "type": "kun"
+        },
+        {
+          "word": "友人",
+          "reading": "ゆうじん",
+          "meaning": "friend (formal)",
+          "type": "on"
+        }
+      ]
+    },
+    {
+      "kj": "達",
+      "on": "タツ",
+      "kun": "—",
+      "meaning": "reach, attain; (suffix) plural",
+      "examples": [
+        {
+          "word": "友達",
+          "reading": "ともだち",
+          "meaning": "friend",
+          "type": "kun"
+        },
+        {
+          "word": "発達",
+          "reading": "はったつ",
+          "meaning": "development, growth",
+          "type": "on"
+        }
+      ]
+    },
+    {
+      "kj": "起",
+      "on": "キ",
+      "kun": "お(きる)・お(こす)",
+      "meaning": "wake up, rise, occur",
+      "examples": [
+        {
+          "word": "起きる",
+          "reading": "おきる",
+          "meaning": "to get up, to wake up",
+          "type": "kun"
+        },
+        {
+          "word": "起立",
+          "reading": "きりつ",
+          "meaning": "standing up",
+          "type": "on"
+        }
+      ]
+    },
+    {
+      "kj": "早",
+      "on": "ソウ・サッ",
+      "kun": "はや(い)",
+      "meaning": "early, fast",
+      "examples": [
+        {
+          "word": "早く",
+          "reading": "はやく",
+          "meaning": "early, quickly",
+          "type": "kun"
+        },
+        {
+          "word": "早朝",
+          "reading": "そうちょう",
+          "meaning": "early morning",
+          "type": "on"
+        }
+      ]
+    },
+    {
+      "kj": "歩",
+      "on": "ホ・ブ",
+      "kun": "ある(く)",
+      "meaning": "walk",
+      "examples": [
+        {
+          "word": "歩く",
+          "reading": "あるく",
+          "meaning": "to walk",
+          "type": "kun"
+        },
+        {
+          "word": "散歩",
+          "reading": "さんぽ",
+          "meaning": "a walk, stroll",
+          "type": "on"
+        }
+      ]
+    },
+    {
+      "kj": "店",
+      "on": "テン",
+      "kun": "みせ",
+      "meaning": "shop, store",
+      "examples": [
+        {
+          "word": "お店",
+          "reading": "おみせ",
+          "meaning": "shop, store",
+          "type": "kun"
+        },
+        {
+          "word": "店員",
+          "reading": "てんいん",
+          "meaning": "store clerk",
+          "type": "on"
+        }
+      ]
+    },
+    {
+      "kj": "本",
+      "on": "ホン",
+      "kun": "もと",
+      "meaning": "book, origin, main",
+      "examples": [
+        {
+          "word": "本当",
+          "reading": "ほんとう",
+          "meaning": "really, truly",
+          "type": "on"
+        },
+        {
+          "word": "本",
+          "reading": "ほん",
+          "meaning": "book",
+          "type": "on"
+        }
+      ]
+    },
+    {
+      "kj": "当",
+      "on": "トウ",
+      "kun": "あ(たる)・あ(てる)",
+      "meaning": "hit, appropriate, this",
+      "examples": [
+        {
+          "word": "本当",
+          "reading": "ほんとう",
+          "meaning": "really, truly",
+          "type": "on"
+        },
+        {
+          "word": "当たる",
+          "reading": "あたる",
+          "meaning": "to hit, to win",
+          "type": "kun"
+        }
+      ]
     }
   ],
   "kanjiQuiz": [

@@ -1,13 +1,21 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { kanjiFocus, kanjiQuiz } from "../../data/index.js";
 import Quiz from "../Quiz.jsx";
+import KanjiStrokeModal from "../KanjiStrokeModal.jsx";
 
 const PAGE_SIZE = 30;
 
 export default function KanjiFocus({ jumpTarget }) {
+  const [view, setView] = useState("cards");
   const [filter, setFilter] = useState("");
   const [page, setPage] = useState(0);
+  const [strokeKj, setStrokeKj] = useState(null);
   const skipNextFilterReset = useRef(false);
+
+  function switchView(v) {
+    setView(v);
+    document.getElementById("kanji-tabs")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
 
   const filtered = useMemo(() => {
     const f = filter.trim().toLowerCase();
@@ -33,6 +41,7 @@ export default function KanjiFocus({ jumpTarget }) {
   // to its page, and scroll it into view.
   useEffect(() => {
     if (!jumpTarget) return;
+    setView("cards");
     skipNextFilterReset.current = true;
     setFilter("");
     setPage(Math.floor(jumpTarget.index / PAGE_SIZE));
@@ -48,7 +57,7 @@ export default function KanjiFocus({ jumpTarget }) {
 
   function goToPage(p) {
     setPage(p);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    document.getElementById("kanji-tabs")?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   return (
@@ -60,6 +69,22 @@ export default function KanjiFocus({ jumpTarget }) {
         <h1>Kanji Focus</h1>
       </div>
 
+      {/* Browsing the character set and testing yourself on it are
+          different activities at different points in a session — split
+          into tabs, same pattern as Kaiwa Lab's phrase bank vs. scripts,
+          rather than stacking the whole grid on top of a quiz. */}
+      <div className="viewtabs" role="tablist" id="kanji-tabs">
+        <button role="tab" aria-selected={view === "cards"} className={view === "cards" ? "active" : ""} onClick={() => switchView("cards")}>
+          <span className="vt-jp">漢字カード</span>
+          <span className="vt-en">Kanji Cards · {kanjiFocus.length}</span>
+        </button>
+        <button role="tab" aria-selected={view === "check"} className={view === "check" ? "active" : ""} onClick={() => switchView("check")}>
+          <span className="vt-jp">漢字チェック</span>
+          <span className="vt-en">Kanji Check · {kanjiQuiz.length}</span>
+        </button>
+      </div>
+
+      {view === "cards" && <>
       <div className="kanji-toolbar">
         <input className="kanji-search" placeholder="Search by kanji, reading, or meaning…" value={filter} onChange={(e) => setFilter(e.target.value)} />
         <span className="kanji-count">{filtered.length} / {kanjiFocus.length} shown</span>
@@ -83,7 +108,7 @@ export default function KanjiFocus({ jumpTarget }) {
       <div className="kgrid">
         {pageItems.map((k, i) => (
           <div key={i} id={filter ? undefined : "kcard-" + (page * PAGE_SIZE + i)} className="kcard">
-            <div className="kj">{k.kj}</div>
+            <button className="kj" onClick={() => setStrokeKj(k.kj)} aria-label={"Show stroke order for " + k.kj}>{k.kj}</button>
             <div className="kmeta">
               <div className="kmeaning">{k.meaning}</div>
               <div className="kreading"><span className="lbl">on—</span> {k.on} &nbsp; <span className="lbl">kun—</span> {k.kun}</div>
@@ -113,12 +138,16 @@ export default function KanjiFocus({ jumpTarget }) {
           </div>
         </div>
       )}
+      </>}
 
-      <h2 className="modtitle" style={{ marginTop: 44 }}><span className="modnum">商</span> Kanji Check</h2>
-      <div className="modtitle-en">Reading and meaning quiz built from your focus list</div>
+      {view === "check" && <>
+      <div className="modtitle-en" style={{ marginBottom: 12 }}>Reading and meaning quiz built from your focus list — {kanjiQuiz.length} questions</div>
       <div className="gcard" style={{ "--accent": "var(--gold)" }}>
         <Quiz idPrefix="kanji" items={kanjiQuiz} />
       </div>
+      </>}
+
+      <KanjiStrokeModal kj={strokeKj} onClose={() => setStrokeKj(null)} />
     </>
   );
 }

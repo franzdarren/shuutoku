@@ -215,14 +215,16 @@ export default function GrammarDeepDive({ jumpTarget, isActive }) {
     // `poolStats` yet this render, and after it does nothing is "seen".
     sampleCache.current[activeMod] = drawCheckSet(activeMod, new Map());
     bump();
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    document.getElementById("grammar-tabs")?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   // Module-level navigation (top tabs, prev/next-module buttons): switches
-  // the whole page to that module and scrolls to its top.
+  // to that module and scrolls to the module tabs, not the very top of the
+  // page — jumping past the intro paragraph every time you switch modules
+  // is what made this feel like it was "going to the top" on every click.
   function goToModule(i) {
     setActivePoint(firstPointIndexOfModule(i));
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    document.getElementById("grammar-tabs")?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   // Point-level navigation (the floating nav): jumps straight to one
@@ -295,7 +297,7 @@ export default function GrammarDeepDive({ jumpTarget, isActive }) {
         <p>{grammarModules.reduce((n, m) => n + m.points.length, 0)} points across {grammarModules.length} modules, organized by function rather than by textbook chapter — because that's how the JLPT actually tests you: it mixes lessons together and checks whether you can tell similar patterns apart. Pick a module below; each one stays on its own tab so a study session never turns into one giant scroll. Source tags point back to roughly where each point lives in Minna no Nihongo (MNN), Genki, and Sou Matome N4 — lesson numbers are approximate cross-references, not exact page citations.</p>
       </div>
 
-      <div className="modjump modjump-rich">
+      <div className="modjump modjump-rich" id="grammar-tabs">
         {grammarModules.map((m, i) => (
           <button key={i} className={i === activeMod ? "active" : ""} onClick={() => goToModule(i)}>
             <span className="mj-jp"><span className="mj-num">{kanjiNum(m.num)}</span>{m.jpTitle}</span>
