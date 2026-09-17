@@ -38,6 +38,12 @@
   /* The toggle knob rides both an unfilled (--line) and a filled
      (--indigo) track, so it can't reuse --on-accent in dark mode. */
   --switch-knob: oklch(98% 0.008 89);
+  /* Stroke-order diagrams are sourced externally as black ink on a
+     transparent background — fixed and NOT redefined in dark mode, since
+     black strokes on the dark paper would disappear otherwise. */
+  --stroke-bg: oklch(97% 0.006 89);
+  --stroke-fg: oklch(35% 0.012 75);
+  --stroke-link: oklch(39.2% 0.078 257);
 
   /* Elevation — two soft layers rather than one hard drop, so cards
      separate from the paper without looking like they float. */
@@ -637,22 +643,19 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
 .kanji-pager-btns button:disabled{ opacity:.4; cursor:default; }
 
 .kgrid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:12px; margin-bottom:14px; }
+/* The whole card opens the stroke-order modal — role="button" on a div
+   (not a real <button>) because it wraps block content (the meta column),
+   which <button> isn't supposed to contain. */
 .kcard{
   background:var(--paper-2); border:1px solid var(--line); border-radius:var(--radius);
   padding:15px 16px; display:flex; gap:14px; align-items:flex-start;
+  cursor:pointer; text-align:left; width:100%;
   transition:border-color var(--t-fast), box-shadow var(--t-fast);
 }
-.kcard:hover{ border-color:var(--indigo); box-shadow:var(--elev-1); }
-/* The character is a button (opens the stroke-order modal), styled to
-   read as text first — the hover/focus rule underneath is what signals
-   it's clickable, rather than looking like an icon-button. */
-.kcard .kj{
-  font-family:var(--serif); font-size:var(--fs-3xl); line-height:1; flex-shrink:0;
-  background:none; border:none; padding:0; margin:0; cursor:pointer;
-  color:var(--ink); border-bottom:1px solid transparent;
-  transition:color var(--t-fast), border-color var(--t-fast);
-}
-.kcard .kj:hover, .kcard .kj:focus-visible{ color:var(--indigo); border-bottom-color:var(--indigo); }
+.kcard:hover, .kcard:focus-visible{ border-color:var(--indigo); box-shadow:var(--elev-1); }
+/* The whole card is the control now (opens the stroke-order modal) — see
+   .kcard below — so the character itself is plain text again. */
+.kcard .kj{ font-family:var(--serif); font-size:var(--fs-3xl); color:var(--ink); line-height:1; flex-shrink:0; }
 .kcard .kmeta{ font-size:var(--fs-xs); min-width:0; }
 .kcard .kmeaning{ color:var(--ink); font-weight:700; margin-bottom:4px; font-size:var(--fs-sm); }
 .kcard .kreading{ color:var(--ink-soft); }
@@ -968,10 +971,24 @@ footer.pagefoot{ margin-top:60px; padding-top:20px; border-top:1px solid var(--l
   color:var(--ink-faint); cursor:pointer; font-size:var(--fs-md); line-height:1; padding:6px;
 }
 .kanji-modal-close:hover{ color:var(--ink); }
-.kanji-modal-kj{ font-family:var(--serif); font-size:3.4rem; line-height:1; color:var(--ink); margin-bottom:16px; }
-.kanji-modal-stroke{ width:100%; max-width:220px; margin:0 auto; display:block; }
-.kanji-modal-fallback{ font-size:var(--fs-sm); color:var(--ink-soft); max-width:220px; margin:0 auto; }
-.kanji-modal-fallback a{ color:var(--indigo); }
+/* Fixed light card behind the stroke image, independent of theme — see
+   the --stroke-bg token comment. */
+.kanji-modal-stroke-wrap{
+  background:var(--stroke-bg); border-radius:var(--radius); padding:14px;
+  margin-bottom:16px;
+}
+.kanji-modal-stroke{ width:100%; max-width:200px; margin:0 auto; display:block; }
+.kanji-modal-fallback{ font-size:var(--fs-sm); color:var(--stroke-fg); max-width:200px; margin:0 auto; }
+.kanji-modal-fallback a{ color:var(--stroke-link); }
+.kanji-modal-kj{ font-family:var(--serif); font-size:2.6rem; line-height:1; color:var(--ink); margin-bottom:6px; }
+.kanji-modal-meaning{ font-size:var(--fs-md); color:var(--ink); font-weight:700; margin-bottom:6px; }
+.kanji-modal-readings{ font-size:var(--fs-sm); color:var(--ink-soft); margin-bottom:16px; }
+.kanji-modal-sample{
+  font-size:var(--fs-sm); color:var(--ink-soft); padding-top:14px; border-top:1px solid var(--line-soft);
+  display:flex; flex-wrap:wrap; align-items:baseline; justify-content:center; gap:6px;
+}
+.kanji-modal-sample-word{ font-family:var(--serif); font-size:var(--fs-base); color:var(--ink); }
+.kanji-modal-sample-reading{ color:var(--ink-faint); }
 .kanji-modal-credit{ font-size:var(--fs-3xs); color:var(--ink-faint); margin-top:16px; }
 
 /* ============================================================

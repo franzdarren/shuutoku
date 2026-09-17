@@ -9,7 +9,7 @@ export default function KanjiFocus({ jumpTarget }) {
   const [view, setView] = useState("cards");
   const [filter, setFilter] = useState("");
   const [page, setPage] = useState(0);
-  const [strokeKj, setStrokeKj] = useState(null);
+  const [strokeEntry, setStrokeEntry] = useState(null);
   const skipNextFilterReset = useRef(false);
 
   function switchView(v) {
@@ -107,8 +107,17 @@ export default function KanjiFocus({ jumpTarget }) {
 
       <div className="kgrid">
         {pageItems.map((k, i) => (
-          <div key={i} id={filter ? undefined : "kcard-" + (page * PAGE_SIZE + i)} className="kcard">
-            <button className="kj" onClick={() => setStrokeKj(k.kj)} aria-label={"Show stroke order for " + k.kj}>{k.kj}</button>
+          <div
+            key={i}
+            id={filter ? undefined : "kcard-" + (page * PAGE_SIZE + i)}
+            className="kcard"
+            role="button"
+            tabIndex={0}
+            onClick={() => setStrokeEntry(k)}
+            onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setStrokeEntry(k); } }}
+            aria-label={"Kanji " + k.kj + ", " + k.meaning + " — show stroke order and details"}
+          >
+            <div className="kj">{k.kj}</div>
             <div className="kmeta">
               <div className="kmeaning">{k.meaning}</div>
               <div className="kreading"><span className="lbl">on—</span> {k.on} &nbsp; <span className="lbl">kun—</span> {k.kun}</div>
@@ -147,7 +156,7 @@ export default function KanjiFocus({ jumpTarget }) {
       </div>
       </>}
 
-      <KanjiStrokeModal kj={strokeKj} onClose={() => setStrokeKj(null)} />
+      <KanjiStrokeModal entry={strokeEntry} onClose={() => setStrokeEntry(null)} />
     </>
   );
 }
