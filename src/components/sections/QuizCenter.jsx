@@ -44,7 +44,7 @@ export default function QuizCenter() {
         <Quiz idPrefix="final" items={sample} label="MIXED REVIEW SET" getContentId={getPoolId} />
       </div>
 
-      <footer className="pagefoot">Built for your N4 review and travel prep. Lesson/chapter references are approximate cross-references between editions — use them to find more practice in your own books, not as exact page numbers. Kanji classification follows commonly used N4 study references; the JLPT itself does not publish an official kanji list.</footer>
+      <footer className="pagefoot">Built for N4 review and everyday practice in Japan. Lesson/chapter references are approximate cross-references between editions — use them to find more practice in your own books, not as exact page numbers. Kanji classification follows commonly used N4 study references; the JLPT itself does not publish an official kanji list.</footer>
     </>
   );
 }

@@ -11,25 +11,25 @@ export default function RenshuuAI() {
 
         <div className="soon-spec">
           <div className="dlabel">How an exchange would read — レストランで (at a restaurant)</div>
-          <div className="dline">
-            <div className="speaker">店員</div>
+          <div className="dline side-a">
+            <div className="speaker">友達AI</div>
             <div className="dtext">
-              <div className="jp-row"><span className="jp">いらっしゃいませ。何名様ですか。</span></div>
-              <div className="en">Welcome. How many people?</div>
+              <div className="jp-row"><span className="jp"><ruby>店員<rt>てんいん</rt></ruby>：いらっしゃいませ。<ruby>何名様<rt>なんめいさま</rt></ruby>ですか。</span></div>
+              <div className="en">Staff: Welcome. How many people?</div>
             </div>
           </div>
-          <div className="dline">
-            <div className="speaker" style={{ background: "var(--matcha)" }}>あなた</div>
+          <div className="dline side-b">
+            <div className="speaker">わたし</div>
             <div className="dtext">
-              <div className="jp-row"><span className="jp">二人です。</span></div>
+              <div className="jp-row"><span className="jp"><ruby>二人<rt>ふたり</rt></ruby>です。</span></div>
               <div className="en">Two people.</div>
             </div>
           </div>
-          <div className="dline">
-            <div className="speaker">店員</div>
+          <div className="dline side-a">
+            <div className="speaker">友達AI</div>
             <div className="dtext">
-              <div className="jp-row"><span className="jp">かしこまりました。こちらへどうぞ。</span></div>
-              <div className="en">Certainly. This way, please.</div>
+              <div className="jp-row"><span className="jp"><ruby>店員<rt>てんいん</rt></ruby>：かしこまりました。こちらへどうぞ。</span></div>
+              <div className="en">Staff: Certainly. This way, please.</div>
               <span className="ai-note">Nudge — try asking for a menu next.</span>
             </div>
           </div>

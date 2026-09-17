@@ -55,7 +55,10 @@ export default function App() {
     <SettingsProvider>
       <QuizProvider total={TOTAL_QUIZ_ITEMS}>
         <LookupProvider>
-          <button className="menubtn" onClick={() => setMobileOpen(true)} aria-label="Menu">☰</button>
+          <header className="mobilebar">
+            <button className="menubtn" onClick={() => setMobileOpen(true)} aria-label="Open menu" aria-expanded={mobileOpen}>☰</button>
+            <span className="mobilebar-brand">習得</span>
+          </header>
           <div className="shell">
             <Sidebar active={active} onNavigate={navigate} mobileOpen={mobileOpen} onCloseMobile={() => setMobileOpen(false)} onSearchJump={handleSearchJump} />
             <main className="content">

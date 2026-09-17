@@ -8,7 +8,7 @@
         "en": "Nice to meet you (first time only)"
       },
       {
-        "jp": "よろしくお願いします",
+        "jp": "よろしくお<ruby>願<rt>ねが</rt></ruby>いします",
         "en": "Please treat me well / looking forward to it"
       },
       {
@@ -20,19 +20,19 @@
         "en": "It's been a long time"
       },
       {
-        "jp": "お元気ですか",
+        "jp": "お<ruby>元気<rt>げんき</rt></ruby>ですか",
         "en": "How have you been?"
       },
       {
-        "jp": "おかげさまで元気です",
+        "jp": "おかげさまで<ruby>元気<rt>げんき</rt></ruby>です",
         "en": "I'm well, thanks for asking"
       },
       {
-        "jp": "失礼します",
+        "jp": "<ruby>失礼<rt>しつれい</rt></ruby>します",
         "en": "Excuse me (entering/leaving a room)"
       },
       {
-        "jp": "お邪魔します",
+        "jp": "お<ruby>邪魔<rt>じゃま</rt></ruby>します",
         "en": "Sorry to intrude (entering someone's home)"
       },
       {
@@ -66,11 +66,11 @@
         "en": "Well... (softening a statement)"
       },
       {
-        "jp": "なんと言うか…",
+        "jp": "なんと<ruby>言<rt>い</rt></ruby>うか…",
         "en": "How should I put it..."
       },
       {
-        "jp": "ちょっと考えさせてください",
+        "jp": "ちょっと<ruby>考<rt>かんが</rt></ruby>えさせてください",
         "en": "Let me think for a second"
       },
       {
@@ -78,7 +78,7 @@
         "en": "In other words..."
       },
       {
-        "jp": "実は…",
+        "jp": "<ruby>実<rt>じつ</rt></ruby>は…",
         "en": "Actually... (introducing the real point)"
       },
       {
@@ -112,7 +112,7 @@
         "en": "And then? / so?"
       },
       {
-        "jp": "本当ですか",
+        "jp": "<ruby>本当<rt>ほんとう</rt></ruby>ですか",
         "en": "Really?"
       },
       {
@@ -132,7 +132,7 @@
         "en": "I know what you mean"
       },
       {
-        "jp": "大変でしたね",
+        "jp": "<ruby>大変<rt>たいへん</rt></ruby>でしたね",
         "en": "That must have been rough"
       },
       {
@@ -146,27 +146,27 @@
     ]
   },
   {
-    "cat": "聞き返す",
+    "cat": "<ruby>聞<rt>き</rt></ruby>き<ruby>返<rt>かえ</rt></ruby>す",
     "catEn": "When you didn't catch it",
     "items": [
       {
-        "jp": "もう一度お願いします",
+        "jp": "もう<ruby>一度<rt>いちど</rt></ruby>お<ruby>願<rt>ねが</rt></ruby>いします",
         "en": "One more time, please"
       },
       {
-        "jp": "ゆっくり話してください",
+        "jp": "ゆっくり<ruby>話<rt>はな</rt></ruby>してください",
         "en": "Please speak slowly"
       },
       {
-        "jp": "すみません、聞こえませんでした",
+        "jp": "すみません、<ruby>聞<rt>き</rt></ruby>こえませんでした",
         "en": "Sorry, I couldn't hear you"
       },
       {
-        "jp": "どういう意味ですか",
+        "jp": "どういう<ruby>意味<rt>いみ</rt></ruby>ですか",
         "en": "What does that mean?"
       },
       {
-        "jp": "日本語で何と言いますか",
+        "jp": "<ruby>日本語<rt>にほんご</rt></ruby>で<ruby>何<rt>なん</rt></ruby>と<ruby>言<rt>い</rt></ruby>いますか",
         "en": "How do you say it in Japanese?"
       },
       {
@@ -178,11 +178,11 @@
         "en": "So you mean...?"
       },
       {
-        "jp": "すみません、まだ日本語が上手じゃないんです",
+        "jp": "すみません、まだ<ruby>日本語<rt>にほんご</rt></ruby>が<ruby>上手<rt>じょうず</rt></ruby>じゃないんです",
         "en": "Sorry, my Japanese isn't good yet"
       },
       {
-        "jp": "英語でもいいですか",
+        "jp": "<ruby>英語<rt>えいご</rt></ruby>でもいいですか",
         "en": "Would English be okay? (last resort)"
       },
       {
@@ -192,11 +192,11 @@
     ]
   },
   {
-    "cat": "お願いする",
+    "cat": "お<ruby>願<rt>ねが</rt></ruby>いする",
     "catEn": "Making requests",
     "items": [
       {
-        "jp": "お願いします",
+        "jp": "お<ruby>願<rt>ねが</rt></ruby>いします",
         "en": "Please (do it) / yes please"
       },
       {
@@ -216,19 +216,19 @@
         "en": "Could you kindly ~? (politer)"
       },
       {
-        "jp": "手伝ってもらえますか",
+        "jp": "<ruby>手伝<rt>てつだ</rt></ruby>ってもらえますか",
         "en": "Could you give me a hand?"
       },
       {
-        "jp": "ちょっと待ってください",
+        "jp": "ちょっと<ruby>待<rt>ま</rt></ruby>ってください",
         "en": "Please wait a moment"
       },
       {
-        "jp": "教えてください",
+        "jp": "<ruby>教<rt>おし</rt></ruby>えてください",
         "en": "Please tell me / show me"
       },
       {
-        "jp": "すみません、お願いがあるんですが",
+        "jp": "すみません、お<ruby>願<rt>ねが</rt></ruby>いがあるんですが",
         "en": "Excuse me, I have a favour to ask"
       },
       {
@@ -246,11 +246,11 @@
         "en": "That's a bit... (soft refusal — leave it unfinished)"
       },
       {
-        "jp": "すみません、今日はちょっと",
+        "jp": "すみません、<ruby>今日<rt>きょう</rt></ruby>はちょっと",
         "en": "Sorry, today is a little difficult"
       },
       {
-        "jp": "また今度お願いします",
+        "jp": "また<ruby>今度<rt>こんど</rt></ruby>お<ruby>願<rt>ねが</rt></ruby>いします",
         "en": "Another time, please"
       },
       {
@@ -258,11 +258,11 @@
         "en": "I appreciate it, but..."
       },
       {
-        "jp": "ちょっと難しいと思います",
+        "jp": "ちょっと<ruby>難<rt>むずか</rt></ruby>しいと<ruby>思<rt>おも</rt></ruby>います",
         "en": "I think that would be difficult"
       },
       {
-        "jp": "今はやめておきます",
+        "jp": "<ruby>今<rt>いま</rt></ruby>はやめておきます",
         "en": "I'll pass for now"
       },
       {
@@ -270,21 +270,21 @@
         "en": "No thank you (declining an offer)"
       },
       {
-        "jp": "大丈夫です",
+        "jp": "<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です",
         "en": "I'm fine / no need (very common polite decline)"
       },
       {
-        "jp": "考えておきます",
+        "jp": "<ruby>考<rt>かんが</rt></ruby>えておきます",
         "en": "I'll think about it"
       },
       {
-        "jp": "残念ですが、行けません",
+        "jp": "<ruby>残念<rt>ざんねん</rt></ruby>ですが、行けません",
         "en": "Unfortunately I can't go"
       }
     ]
   },
   {
-    "cat": "店・レストランで",
+    "cat": "<ruby>店<rt>みせ</rt></ruby>・レストランで",
     "catEn": "Shops & restaurants",
     "items": [
       {
@@ -296,27 +296,27 @@
         "en": "What is this?"
       },
       {
-        "jp": "辛くないものはありますか",
+        "jp": "<ruby>辛<rt>から</rt></ruby>くないものはありますか",
         "en": "Do you have anything not spicy?"
       },
       {
-        "jp": "これをお願いします",
+        "jp": "これをお<ruby>願<rt>ねが</rt></ruby>いします",
         "en": "I'll have this one, please"
       },
       {
-        "jp": "お会計をお願いします",
+        "jp": "お<ruby>会計<rt>かいけい</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いします",
         "en": "The bill, please"
       },
       {
-        "jp": "カードで払えますか",
+        "jp": "カードで<ruby>払<rt>はら</rt></ruby>えますか",
         "en": "Can I pay by card?"
       },
       {
-        "jp": "別々でお願いします",
+        "jp": "<ruby>別<rt>べつ</rt></ruby>々でお<ruby>願<rt>ねが</rt></ruby>いします",
         "en": "Separate bills, please"
       },
       {
-        "jp": "持ち帰りでお願いします",
+        "jp": "<ruby>持<rt>も</rt></ruby>ち<ruby>帰<rt>かえ</rt></ruby>りでお<ruby>願<rt>ねが</rt></ruby>いします",
         "en": "To take away, please"
       },
       {
@@ -324,21 +324,21 @@
         "en": "How much is it?"
       },
       {
-        "jp": "試着してもいいですか",
+        "jp": "<ruby>試着<rt>しちゃく</rt></ruby>してもいいですか",
         "en": "May I try this on?"
       },
       {
-        "jp": "もっと安いのはありますか",
+        "jp": "もっと<ruby>安<rt>やす</rt></ruby>いのはありますか",
         "en": "Do you have a cheaper one?"
       },
       {
-        "jp": "これで大丈夫です",
+        "jp": "これで<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です",
         "en": "This is fine"
       }
     ]
   },
   {
-    "cat": "移動・道",
+    "cat": "移動・<ruby>道<rt>みち</rt></ruby>",
     "catEn": "Getting around",
     "items": [
       {
@@ -346,7 +346,7 @@
         "en": "Where is ~?"
       },
       {
-        "jp": "どうやって行きますか",
+        "jp": "どうやって<ruby>行<rt>い</rt></ruby>きますか",
         "en": "How do I get there?"
       },
       {
@@ -354,37 +354,37 @@
         "en": "Is it far from here?"
       },
       {
-        "jp": "歩いて何分ぐらいですか",
+        "jp": "<ruby>歩<rt>ある</rt></ruby>いて<ruby>何分<rt>なんぷん</rt></ruby>ぐらいですか",
         "en": "About how many minutes on foot?"
       },
       {
-        "jp": "乗り換えが必要ですか",
+        "jp": "<ruby>乗<rt>の</rt></ruby>り<ruby>換<rt>か</rt></ruby>えが<ruby>必要<rt>ひつよう</rt></ruby>ですか",
         "en": "Do I need to change trains?"
       },
       {
-        "jp": "これは〜行きですか",
+        "jp": "これは〜<ruby>行<rt>い</rt></ruby>きですか",
         "en": "Does this go to ~?"
       },
       {
-        "jp": "次の駅で降ります",
+        "jp": "<ruby>次<rt>つぎ</rt></ruby>の<ruby>駅<rt>えき</rt></ruby>で<ruby>降<rt>お</rt></ruby>ります",
         "en": "I'm getting off at the next station"
       },
       {
-        "jp": "ここで降ります",
+        "jp": "ここで<ruby>降<rt>お</rt></ruby>ります",
         "en": "I'll get off here"
       },
       {
-        "jp": "道に迷いました",
+        "jp": "<ruby>道<rt>みち</rt></ruby>に<ruby>迷<rt>まよ</rt></ruby>いました",
         "en": "I'm lost"
       },
       {
-        "jp": "地図で教えてもらえますか",
+        "jp": "<ruby>地図<rt>ちず</rt></ruby>で<ruby>教<rt>おし</rt></ruby>えてもらえますか",
         "en": "Could you show me on the map?"
       }
     ]
   },
   {
-    "cat": "時間・予定",
+    "cat": "<ruby>時間<rt>じかん</rt></ruby>・<ruby>予定<rt>よてい</rt></ruby>",
     "catEn": "Time & plans",
     "items": [
       {
@@ -400,37 +400,37 @@
         "en": "When works for you?"
       },
       {
-        "jp": "何時に会いましょうか",
+        "jp": "何時に<ruby>会<rt>あ</rt></ruby>いましょうか",
         "en": "What time shall we meet?"
       },
       {
-        "jp": "予定がありますか",
+        "jp": "<ruby>予定<rt>よてい</rt></ruby>がありますか",
         "en": "Do you have plans?"
       },
       {
-        "jp": "今週末は空いています",
+        "jp": "<ruby>今週末<rt>こんしゅうまつ</rt></ruby>は<ruby>空<rt>そら</rt></ruby>いています",
         "en": "I'm free this weekend"
       },
       {
-        "jp": "ちょっと遅れます",
+        "jp": "ちょっと<ruby>遅<rt>おく</rt></ruby>れます",
         "en": "I'll be a little late"
       },
       {
-        "jp": "間に合いますか",
+        "jp": "<ruby>間<rt>ま</rt></ruby>に<ruby>合<rt>あ</rt></ruby>いますか",
         "en": "Will we make it in time?"
       },
       {
-        "jp": "時間を変えてもいいですか",
+        "jp": "<ruby>時間<rt>じかん</rt></ruby>を<ruby>変<rt>か</rt></ruby>えてもいいですか",
         "en": "Could we change the time?"
       },
       {
-        "jp": "楽しみにしています",
+        "jp": "<ruby>楽<rt>たの</rt></ruby>しみにしています",
         "en": "I'm looking forward to it"
       }
     ]
   },
   {
-    "cat": "気持ちを伝える",
+    "cat": "気持ちを<ruby>伝<rt>つた</rt></ruby>える",
     "catEn": "Feelings & opinions",
     "items": [
       {
@@ -438,7 +438,7 @@
         "en": "I'm happy"
       },
       {
-        "jp": "楽しかったです",
+        "jp": "<ruby>楽<rt>たの</rt></ruby>しかったです",
         "en": "It was fun"
       },
       {
@@ -446,7 +446,7 @@
         "en": "It was delicious"
       },
       {
-        "jp": "疲れました",
+        "jp": "<ruby>疲<rt>つか</rt></ruby>れました",
         "en": "I'm tired"
       },
       {
@@ -454,11 +454,11 @@
         "en": "I was surprised"
       },
       {
-        "jp": "心配しています",
+        "jp": "<ruby>心配<rt>しんぱい</rt></ruby>しています",
         "en": "I'm worried"
       },
       {
-        "jp": "〜と思います",
+        "jp": "〜と<ruby>思<rt>おも</rt></ruby>います",
         "en": "I think that ~ (softens any opinion)"
       },
       {
@@ -470,7 +470,7 @@
         "en": "Either is fine"
       },
       {
-        "jp": "私も同じです",
+        "jp": "<ruby>私<rt>わたし</rt></ruby>も<ruby>同<rt>おな</rt></ruby>じです",
         "en": "Same for me"
       }
     ]
@@ -480,7 +480,7 @@
     "catEn": "When something goes wrong",
     "items": [
       {
-        "jp": "すみません、困っているんですが",
+        "jp": "すみません、<ruby>困<rt>こま</rt></ruby>っているんですが",
         "en": "Excuse me, I'm having trouble"
       },
       {
@@ -488,11 +488,11 @@
         "en": "The ~ is broken"
       },
       {
-        "jp": "〜が動きません",
+        "jp": "〜が<ruby>動<rt>うご</rt></ruby>きません",
         "en": "The ~ won't work"
       },
       {
-        "jp": "お湯が出ません",
+        "jp": "お<ruby>湯<rt>ゆ</rt></ruby>が<ruby>出<rt>で</rt></ruby>ません",
         "en": "There's no hot water"
       },
       {
@@ -500,29 +500,29 @@
         "en": "The wifi won't connect"
       },
       {
-        "jp": "財布をなくしました",
+        "jp": "<ruby>財布<rt>さいふ</rt></ruby>をなくしました",
         "en": "I lost my wallet"
       },
       {
-        "jp": "電車に忘れました",
+        "jp": "<ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>忘<rt>わす</rt></ruby>れました",
         "en": "I left it on the train"
       },
       {
-        "jp": "気分が悪いです",
+        "jp": "気分が<ruby>悪<rt>わる</rt></ruby>いです",
         "en": "I feel unwell"
       },
       {
-        "jp": "病院はどこですか",
+        "jp": "<ruby>病院<rt>びょういん</rt></ruby>はどこですか",
         "en": "Where is a hospital?"
       },
       {
-        "jp": "助けてください",
+        "jp": "<ruby>助<rt>たす</rt></ruby>けてください",
         "en": "Please help me"
       }
     ]
   },
   {
-    "cat": "あやまる・お礼",
+    "cat": "あやまる・お<ruby>礼<rt>れい</rt></ruby>",
     "catEn": "Apologies & thanks",
     "items": [
       {
@@ -534,11 +534,11 @@
         "en": "I'm sorry (personal, warmer)"
       },
       {
-        "jp": "申し訳ありません",
+        "jp": "<ruby>申<rt>もう</rt></ruby>し<ruby>訳<rt>わけ</rt></ruby>ありません",
         "en": "I deeply apologise (formal)"
       },
       {
-        "jp": "お待たせしました",
+        "jp": "お<ruby>待<rt>ま</rt></ruby>たせしました",
         "en": "Sorry to keep you waiting"
       },
       {
@@ -554,7 +554,7 @@
         "en": "You're welcome"
       },
       {
-        "jp": "助かりました",
+        "jp": "<ruby>助<rt>たす</rt></ruby>かりました",
         "en": "That was a big help"
       },
       {
@@ -568,7 +568,7 @@
     ]
   },
   {
-    "cat": "別れのあいさつ",
+    "cat": "<ruby>別<rt>べつ</rt></ruby>れのあいさつ",
     "catEn": "Wrapping up & goodbyes",
     "items": [
       {
@@ -576,7 +576,7 @@
         "en": "See you then"
       },
       {
-        "jp": "また明日",
+        "jp": "また<ruby>明日<rt>あした</rt></ruby>",
         "en": "See you tomorrow"
       },
       {
@@ -584,23 +584,23 @@
         "en": "Take care (on your way)"
       },
       {
-        "jp": "お大事に",
+        "jp": "お<ruby>大事<rt>だいじ</rt></ruby>に",
         "en": "Take care (when someone is ill)"
       },
       {
-        "jp": "お先に失礼します",
+        "jp": "お先に<ruby>失礼<rt>しつれい</rt></ruby>します",
         "en": "Excuse me for leaving first (at work)"
       },
       {
-        "jp": "お疲れさまでした",
+        "jp": "お<ruby>疲<rt>つか</rt></ruby>れさまでした",
         "en": "Thanks for your hard work (leaving work)"
       },
       {
-        "jp": "また連絡します",
+        "jp": "また<ruby>連絡<rt>れんらく</rt></ruby>します",
         "en": "I'll be in touch"
       },
       {
-        "jp": "今日はありがとうございました",
+        "jp": "<ruby>今日<rt>きょう</rt></ruby>はありがとうございました",
         "en": "Thank you for today"
       },
       {
@@ -614,7 +614,7 @@
     ]
   },
   {
-    "cat": "話を広げる",
+    "cat": "<ruby>話<rt>はな</rt></ruby>を広げる",
     "catEn": "Steering & extending the conversation",
     "items": [
       {
@@ -622,7 +622,7 @@
         "en": "How about ~? (turning it back to them)"
       },
       {
-        "jp": "〜と言えば…",
+        "jp": "〜と<ruby>言<rt>い</rt></ruby>えば…",
         "en": "Speaking of ~..."
       },
       {

@@ -133,6 +133,10 @@ body.dark{
 body[data-jpfont="gothic"]{ --serif: var(--sans); }
 
 *{box-sizing:border-box;}
+/* clip, not hidden — hidden on the root turns position:sticky into dead
+   weight in some browsers, and this only exists to stop a stray wide child
+   from letting the page scroll sideways on a phone. */
+html, body{ overflow-x:clip; }
 html{scroll-behavior:smooth; font-size:calc(16px * var(--fs-scale));}
 body{
   margin:0;
@@ -391,12 +395,28 @@ nav.mainnav button.navlink.active::before{
 .progress-bar-track{ height:6px; background:var(--paper-3); border-radius:var(--radius-pill); margin-top:6px; overflow:hidden; }
 .progress-bar-fill{ height:100%; background:var(--gold); border-radius:inherit; width:0%; transition:width var(--dur-slow) var(--ease-out); }
 
-.menubtn{
-  display:none; position:fixed; top:14px; left:14px; z-index:60;
-  background:var(--indigo); color:var(--on-accent); border:none; border-radius:var(--radius);
-  width:40px; height:40px; font-size:var(--fs-lg); line-height:1; cursor:pointer;
-  box-shadow:var(--elev-2);
+/* Mobile top bar. The menu button used to be a lone floating square with
+   nothing anchoring it to the page; a real bar gives it a home. The bar
+   sits BELOW the scrim (z-index 30 vs 35) and below the sidebar (40), so
+   opening the menu covers the button instead of leaving it hovering on
+   top of the menu it just opened. */
+.mobilebar{
+  display:none; position:fixed; top:0; left:0; right:0; z-index:30;
+  height:56px; align-items:center; gap:12px; padding:0 14px;
+  background:var(--paper); border-bottom:1px solid var(--line);
 }
+.mobilebar-brand{
+  font-family:var(--serif); font-weight:700; font-size:var(--fs-lg);
+  letter-spacing:.08em; color:var(--ink);
+}
+.menubtn{
+  flex-shrink:0; display:grid; place-items:center;
+  background:none; border:1px solid var(--line); border-radius:var(--radius-sm);
+  color:var(--ink-soft); width:38px; height:38px; font-size:var(--fs-lg);
+  line-height:1; cursor:pointer;
+  transition:border-color var(--t-fast), color var(--t-fast);
+}
+.menubtn:hover{ border-color:var(--indigo); color:var(--indigo); }
 .scrim{ display:none; position:fixed; inset:0; background:var(--scrim); z-index:35; }
 .scrim.show{ display:block; animation:fadein var(--dur) var(--ease-out); }
 
@@ -550,11 +570,35 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
 .readall-btn:hover{ border-color:var(--accent, var(--indigo)); }
 .readall-btn.playing{ background:var(--accent, var(--indigo)); border-color:var(--accent, var(--indigo)); color:var(--on-accent); }
 /* The line currently being read aloud during "Read all". */
-.dline.speaking{ background:var(--indigo-tint); border-radius:var(--radius-sm); }
-.dline{ transition:background var(--t-fast); padding:2px 6px; margin-left:-6px; margin-right:-6px; }
-.dline{ display:flex; gap:10px; margin-bottom:10px; align-items:flex-start; }
+/* Dialogue reads as a conversation: each turn is a bubble, the two sides
+   sit on opposite edges, and the corner nearest the speaker is squared off
+   so who-said-what is legible before you've read a word. Two identical
+   chips stacked in one column made every exchange look like one voice. */
+.dline{
+  display:flex; flex-direction:column; gap:5px; align-items:flex-start;
+  max-width:82%; margin-bottom:14px;
+}
+.dline.side-b{ margin-left:auto; align-items:flex-end; }
 .dline:last-child{ margin-bottom:0; }
-.dline .speaker{ flex-shrink:0; width:60px; font-size:var(--fs-2xs); color:var(--on-accent); background:var(--accent, var(--indigo)); border-radius:var(--radius-sm); text-align:center; padding:3px 4px; height:fit-content; margin-top:4px; }
+.dline .speaker{
+  font-size:var(--fs-3xs); letter-spacing:.09em; text-transform:uppercase;
+  color:var(--ink-faint); padding:0 4px;
+}
+.dline.side-b .speaker{ color:var(--accent, var(--indigo)); }
+.dline .dtext{
+  background:var(--paper-3);
+  border:1px solid transparent;
+  border-radius:var(--radius-lg) var(--radius-lg) var(--radius-lg) 5px;
+  padding:9px 14px; min-width:0;
+  transition:border-color var(--t-fast);
+}
+.dline.side-b .dtext{
+  background:color-mix(in oklab, var(--accent, var(--indigo)) 15%, var(--paper-2));
+  border-radius:var(--radius-lg) var(--radius-lg) 5px var(--radius-lg);
+}
+/* Read-all highlights the turn being spoken by outlining its bubble —
+   a background swap would fight the side tint that encodes the speaker. */
+.dline.speaking .dtext{ border-color:var(--accent, var(--indigo)); }
 .jp-row{ display:flex; align-items:baseline; flex-wrap:wrap; gap:8px; }
 .dline .dtext .jp{ font-family:var(--serif); font-size:var(--fs-base); line-height:1.9; }
 .dline .dtext .en{ font-size:var(--fs-xs); color:var(--ink-faint); margin-top:2px; }
@@ -1030,8 +1074,8 @@ footer.pagefoot{ margin-top:60px; padding-top:20px; border-top:1px solid var(--l
 @media (max-width: 860px){
   .sidebar{ transform:translateX(-100%); box-shadow:var(--elev-3); }
   .sidebar.open{ transform:translateX(0); }
-  .menubtn{ display:block; }
-  main.content{ margin-left:0; padding:70px 18px 80px; }
+  .mobilebar{ display:flex; }
+  main.content{ margin-left:0; padding:76px 18px 80px; }
   .section-head h1,
   .section-head--lead h1{ font-size:var(--fs-3xl); }
 }
@@ -1051,6 +1095,7 @@ footer.pagefoot{ margin-top:60px; padding-top:20px; border-top:1px solid var(--l
   .gcard, .modcheck, .passage-card, .scenario-body{ padding-left:16px; padding-right:16px; }
   .gcard-head{ flex-direction:column; gap:10px; }
   .dialogue-box{ margin-left:0; }
+  .dline{ max-width:92%; }
   .gcard-title .jp{ font-size:var(--fs-xl); }
   .scenario-head{ flex-direction:column; align-items:flex-start; gap:4px; }
   .qc-score{ padding:16px 18px; }

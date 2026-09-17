@@ -7,6 +7,18 @@ import { canSpeak, speakDialogue } from "../lib/speech.js";
  *  Kaiwa Lab scenarios. Each line has its own listen button, and the header
  *  carries a "Read all" that plays the whole thing straight through,
  *  alternating voices between speakers and highlighting the current line. */
+/** The learner's own turn sits on the right, the way your own messages do
+ *  in any chat — everyone else is on the left. Dialogues that use neutral
+ *  A/B labels instead fall back to "whoever speaks first is on the left". */
+const YOU = ["You", "わたし", "あなた"];
+
+function sideResolver(lines) {
+  const speakers = [...new Set(lines.map((d) => d.who))];
+  const you = speakers.find((w) => YOU.includes(w));
+  if (you) return (who) => (who === you ? "b" : "a");
+  return (who) => (speakers.indexOf(who) === 0 ? "a" : "b");
+}
+
 export default function Dialogue({ lines, label, accent, tip, style }) {
   const [playingLine, setPlayingLine] = useState(-1);
   const cancelRef = useRef(null);
@@ -29,6 +41,7 @@ export default function Dialogue({ lines, label, accent, tip, style }) {
 
   if (!lines?.length) return null;
   const reading = playingLine >= 0;
+  const sideOf = sideResolver(lines);
 
   return (
     <div className="dialogue-box" style={style}>
@@ -41,8 +54,8 @@ export default function Dialogue({ lines, label, accent, tip, style }) {
         )}
       </div>
       {lines.map((d, i) => (
-        <div key={i} className={"dline" + (i === playingLine ? " speaking" : "")}>
-          <div className="speaker" style={accent ? { background: accent } : undefined}>{d.who}</div>
+        <div key={i} className={"dline side-" + sideOf(d.who) + (i === playingLine ? " speaking" : "")} style={accent ? { "--accent": accent } : undefined}>
+          <div className="speaker">{d.who}</div>
           <div className="dtext">
             <div className="jp-row">
               <JpText tag="span" className="jp" html={d.jp} />

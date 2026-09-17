@@ -22,7 +22,7 @@ export default function Overview() {
     <>
       <div className="section-head section-head--lead">
         <h1>Your N4 Review Handbook</h1>
-        <p>You have already been through the whole N4 syllabus — Minna no Nihongo up to Lesson 47, grammar, kanji, all of it. A 65% mock score at this stage almost never means "I don't know N4." It usually means a handful of specific points are shaky (the four conditionals, passive vs. causative, the そう family) and that speaking hasn't caught up with reading. This handbook is built to fix both: a precision grammar review with sources cross-referenced to Minna no Nihongo, Genki, and Sou Matome, the complete N4 kanji list with readings and compounds, reading practice in exam style, and a dedicated Kaiwa Lab for the conversation side.</p>
+        <p>Stalling in the 60s on N4 mock tests almost never means “I don't know N4.” If you've been through the syllabus once, it usually means a handful of specific points stay shaky — the four conditionals, passive vs. causative, the そう family — and that speaking hasn't caught up with reading. This handbook is built for that gap: a precision grammar review cross-referenced to Minna no Nihongo, Genki, and Sou Matome, the complete N4 kanji list with readings and compounds, reading practice in exam style, and a dedicated Kaiwa Lab for the conversation side.</p>
       </div>
 
       <div className="ovgrid">
