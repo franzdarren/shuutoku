@@ -4,27 +4,40 @@
 :root{
   --fs-scale: 1;
 
-  /* Surfaces & ink — warm washi paper, layered light → dark */
-  --paper: #EEEAE0;
-  --paper-2: #E3DDD0;
-  --paper-3: #DAD2C1;
-  --ink: #24211D;
-  --ink-soft: #5B5648;
-  --ink-faint: #8B8474;
+  /* Surfaces & ink — warm washi paper, layered light → dark.
+     OKLCH throughout: light and dark are the same hues at different
+     lightness, so a tweak to one mode doesn't drift the other's hue. */
+  --paper: oklch(93.7% 0.014 89);
+  --paper-2: oklch(89.9% 0.019 86);
+  --paper-3: oklch(86.6% 0.025 86);
+  --ink: oklch(25% 0.009 75);
+  --ink-soft: oklch(45.4% 0.023 91);
+  --ink-faint: oklch(61.5% 0.025 87);
 
   /* Accents — one per section, reused as --accent inside cards */
-  --indigo: #29466F;
-  --indigo-deep: #1B2F4C;
-  --indigo-tint: #DCE3EC;
-  --gold: #A67C2E;
-  --gold-tint: #F1E4C6;
-  --shu: #B5553A;
-  --shu-tint: #F4E1D9;
-  --matcha: #5D7A55;
-  --matcha-tint: #E3EBE0;
+  --indigo: oklch(39.2% 0.078 257);
+  --indigo-deep: oklch(30.4% 0.059 258);
+  --indigo-tint: oklch(91.3% 0.014 255);
+  --gold: oklch(61.3% 0.107 80);
+  --gold-tint: oklch(92.1% 0.042 87);
+  --shu: oklch(56.4% 0.132 37);
+  --shu-tint: oklch(92.3% 0.024 44);
+  --matcha: oklch(54.6% 0.065 139);
+  --matcha-tint: oklch(93.1% 0.017 137);
 
-  --line: #D6CDBB;
-  --line-soft: #E1DACB;
+  --line: oklch(85.1% 0.026 85);
+  --line-soft: oklch(89% 0.022 86);
+
+  /* Text sitting on a filled accent (active tabs, speaker chips, the
+     mobile menu button). Same value in both modes — the accents are
+     chosen dark enough in light mode and stay saturated in dark. */
+  --on-accent: oklch(98% 0.008 89);
+  --on-accent-soft: oklch(98% 0.008 89 / .8);
+  --on-accent-faint: oklch(98% 0.008 89 / .3);
+  --scrim: oklch(18% 0.01 75 / .5);
+  /* The toggle knob rides both an unfilled (--line) and a filled
+     (--indigo) track, so it can't reuse --on-accent in dark mode. */
+  --switch-knob: oklch(98% 0.008 89);
 
   /* Elevation — two soft layers rather than one hard drop, so cards
      separate from the paper without looking like they float. */
@@ -37,7 +50,11 @@
   --sans: "Zen Kaku Gothic New", sans-serif;
 
   /* Type scale — every size in the app comes from here, so headings,
-     body and micro-labels stay in a fixed relationship to each other. */
+     body and micro-labels stay in a fixed relationship to each other.
+     --fs-display is the only real peak: without it the largest thing on
+     a page sat 1.8x above body text and nothing commanded the eye. */
+  --fs-display: 3rem;
+  --fs-3xs: .62rem;
   --fs-2xs: .68rem;
   --fs-xs: .76rem;
   --fs-sm: .84rem;
@@ -52,29 +69,53 @@
   --radius: 10px;
   --radius-lg: 14px;
   --radius-pill: 999px;
-  --measure: 640px;
 
-  --t-fast: .15s ease;
-  --t: .22s ease;
+  /* Measure is tiered, not one global width. Latin prose, Japanese prose
+     and data grids want different line lengths, and the contrast between
+     a narrow column of text and a full-width grid is what gives the page
+     rhythm — a single 640px measure on everything flattened it.
+     Japanese is measured in full-width characters (em), not ch: at 36em a
+     line holds ~36 kanji, which is the range Japanese books set. Both
+     scale with the reader's text-size setting; a px measure would not. */
+  --measure: 68ch;
+  --measure-jp: 36em;
+  --measure-card: 760px;
+
+  /* Easing is asymmetric on purpose: things leave fast and arrive slow.
+     The bare `ease` keyword these replace is the browser default, which
+     is symmetric and reads as nothing having been chosen. */
+  --ease-out: cubic-bezier(.16, 1, .3, 1);
+  --ease-in-out: cubic-bezier(.65, 0, .35, 1);
+  --dur-fast: .15s;
+  --dur: .22s;
+  --dur-slow: .35s;
+  --t-fast: var(--dur-fast) var(--ease-out);
+  --t: var(--dur) var(--ease-out);
 }
 body.dark{
-  --paper: #1E1B17;
-  --paper-2: #262220;
-  --paper-3: #322D28;
-  --ink: #EDE6D8;
-  --ink-soft: #C1B8A6;
-  --ink-faint: #857D6C;
-  --indigo: #8FADD1;
-  --indigo-deep: #6C90BA;
-  --indigo-tint: #29354A;
-  --gold: #D8B25E;
-  --gold-tint: #3B3120;
-  --shu: #DD8265;
-  --shu-tint: #402A22;
-  --matcha: #9DBC97;
-  --matcha-tint: #263323;
-  --line: #453F37;
-  --line-soft: #362F29;
+  --paper: oklch(22.4% 0.009 75);
+  --paper-2: oklch(25.6% 0.007 48);
+  --paper-3: oklch(30.1% 0.011 67);
+  --ink: oklch(92.7% 0.02 85);
+  --ink-soft: oklch(78.5% 0.027 85);
+  --ink-faint: oklch(59.2% 0.027 86);
+  --indigo: oklch(73.8% 0.062 253);
+  --indigo-deep: oklch(64.3% 0.075 253);
+  --indigo-tint: oklch(32.8% 0.041 261);
+  --gold: oklch(78% 0.112 85);
+  --gold-tint: oklch(31.9% 0.031 80);
+  --shu: oklch(69.8% 0.12 38);
+  --shu-tint: oklch(30.9% 0.036 41);
+  --matcha: oklch(76.2% 0.062 141);
+  --matcha-tint: oklch(30.4% 0.033 140);
+  --line: oklch(37.1% 0.016 75);
+  --line-soft: oklch(31.1% 0.015 63);
+  /* The accents lighten in dark mode, so text on them flips to the
+     dark paper rather than staying white. */
+  --on-accent: oklch(18% 0.008 75);
+  --on-accent-soft: oklch(18% 0.008 75 / .78);
+  --on-accent-faint: oklch(18% 0.008 75 / .28);
+  --switch-knob: oklch(92.7% 0.02 85);
   --shadow: rgba(0,0,0,.35);
   --elev-1: 0 1px 2px rgba(0,0,0,.28), 0 2px 5px rgba(0,0,0,.2);
   --elev-2: 0 2px 6px rgba(0,0,0,.34), 0 8px 20px rgba(0,0,0,.26);
@@ -143,14 +184,43 @@ body{
    highlight-to-look-up tooltip gets clean base text).
    ============================================================ */
 ruby{ ruby-position: over; }
+/* Furigana is a reading aid, not an annotation to be read first. Half-size
+   in the same ink as the text is the ratio Japanese typesetting uses — the
+   eye lands on the kanji and the reading is there when it's wanted. It was
+   previously set in bright indigo at .62em, which made every gloss louder
+   than the sentence carrying it. Kana stays on the gothic face: mincho
+   kana at this size loses its thin strokes. */
 rt{
   font-family:var(--sans);
-  font-size:.62em;
-  color:var(--indigo);
-  font-weight:500;
+  font-size:.55em;
+  color:var(--ink-soft);
+  font-weight:400;
+  letter-spacing:.02em;
+  ruby-align:center;
   user-select:none;
 }
 body.no-furigana rt{ display:none; }
+
+/* ============================================================
+   JAPANESE TEXT SETTING
+   The app teaches Japanese, so the Japanese should be set the way
+   Japanese is set — not left to the browser's Latin defaults.
+   · palt closes the trailing half-width space that 、。「」 carry,
+     so punctuation doesn't punch holes in a line.
+   · line-break:strict stops a line breaking before small kana
+     (ゃゅょっ) or a long vowel mark, which reads as a typo.
+   · word-break:auto-phrase breaks at phrase boundaries instead of
+     between any two characters. It is the single biggest
+     readability difference here, and degrades to normal wrapping
+     where it isn't supported.
+   ============================================================ */
+.jp-set,
+.passage-text, .ex-jp, .qprompt, .gcard-title .jp,
+.dline .dtext .jp, .kpline .kpjp, .phrase .pjp{
+  font-feature-settings:"palt" 1;
+  line-break:strict;
+  word-break:auto-phrase;
+}
 
 /* ============================================================
    SHARED PRIMITIVES
@@ -205,9 +275,19 @@ body.no-furigana rt{ display:none; }
 }
 .sidebar-scroll{ flex:1; overflow-y:auto; padding:0 0 12px 0; }
 
-.brand{ padding:24px 20px 18px; border-bottom:1px solid var(--line); }
-.brand .jp{ font-family:var(--serif); font-weight:700; font-size:var(--fs-xl); color:var(--ink); letter-spacing:.02em; line-height:1.3; }
-.brand .en{ font-size:var(--fs-2xs); color:var(--ink-faint); margin-top:5px; letter-spacing:.06em; text-transform:uppercase; }
+/* The wordmark is set vertically, the way it would run on a book spine or
+   a shop noren. It's the only top-to-bottom text in the app, which is
+   what makes it read as a mark rather than a heading. */
+.brand{ padding:22px 20px 18px; border-bottom:1px solid var(--line); display:flex; align-items:stretch; gap:14px; }
+.brand-jp{
+  writing-mode:vertical-rl; text-orientation:upright;
+  font-family:var(--serif); font-weight:700; font-size:var(--fs-2xl);
+  line-height:1.04; letter-spacing:.1em; color:var(--ink);
+  border-right:1px solid var(--line); padding-right:13px; flex-shrink:0;
+}
+.brand-latin{ display:flex; flex-direction:column; justify-content:flex-end; gap:4px; min-width:0; padding-bottom:3px; }
+.brand-name{ font-size:var(--fs-md); font-weight:700; color:var(--ink); letter-spacing:.03em; line-height:1.2; }
+.brand-sub{ font-size:var(--fs-3xs); color:var(--ink-faint); letter-spacing:.1em; text-transform:uppercase; line-height:1.45; }
 
 .searchbox-wrap{ padding:14px 12px 0; position:relative; }
 .searchbox{ position:relative; }
@@ -259,7 +339,7 @@ nav.mainnav button.navlink.active::before{
   background:var(--indigo); border-radius:0 3px 3px 0;
 }
 .soon-badge{
-  margin-left:auto; font-size:.6rem; letter-spacing:.06em; color:var(--gold);
+  margin-left:auto; font-size:var(--fs-3xs); letter-spacing:.06em; color:var(--gold);
   border:1px solid var(--gold); border-radius:var(--radius-pill); padding:1px 7px; flex-shrink:0;
   font-weight:500;
 }
@@ -272,18 +352,18 @@ nav.mainnav button.navlink.active::before{
 .settings-panel .stitle{ margin-bottom:12px; }
 .setting-row{ display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:12px; font-size:var(--fs-sm); color:var(--ink-soft); }
 .switch{ position:relative; width:38px; height:21px; flex-shrink:0; background:var(--line); border-radius:var(--radius-pill); cursor:pointer; border:none; transition:background var(--t); padding:0; }
-.switch::after{ content:""; position:absolute; top:2px; left:2px; width:17px; height:17px; background:#fff; border-radius:50%; transition:left var(--t); box-shadow:0 1px 2px rgba(0,0,0,.3); }
+.switch::after{ content:""; position:absolute; top:2px; left:2px; width:17px; height:17px; background:var(--switch-knob); border-radius:50%; transition:left var(--t); box-shadow:var(--elev-1); }
 .switch.on{ background:var(--indigo); }
 .switch.on::after{ left:19px; }
 .fontsize-controls{ display:flex; gap:6px; }
 .fontsize-controls button{ flex:1; padding:6px 0; border-radius:var(--radius-sm); }
-.fontsize-controls button.active{ background:var(--indigo); color:#fff; border-color:var(--indigo); }
+.fontsize-controls button.active{ background:var(--indigo); color:var(--on-accent); border-color:var(--indigo); }
 
 .setting-value{ color:var(--ink-faint); font-variant-numeric:tabular-nums; }
 .slider-row{ display:flex; align-items:center; gap:8px; }
 .slider-cap{ color:var(--ink-faint); font-family:var(--serif); line-height:1; flex-shrink:0; }
-.slider-cap.sm{ font-size:.7rem; }
-.slider-cap.lg{ font-size:1.05rem; }
+.slider-cap.sm{ font-size:var(--fs-2xs); }
+.slider-cap.lg{ font-size:var(--fs-lg); }
 .slider{
   flex:1; min-width:0; -webkit-appearance:none; appearance:none;
   height:4px; border-radius:var(--radius-pill); background:var(--line);
@@ -298,7 +378,7 @@ nav.mainnav button.navlink.active::before{
   width:15px; height:15px; border-radius:50%; background:var(--indigo);
   border:2px solid var(--paper-2); box-shadow:0 1px 3px var(--shadow); cursor:pointer;
 }
-.slider-reset{ margin-top:8px; font-size:.65rem; }
+.slider-reset{ margin-top:8px; font-size:var(--fs-3xs); }
 
 .reset-all{
   width:100%; margin-top:14px; padding:7px 10px;
@@ -312,23 +392,34 @@ nav.mainnav button.navlink.active::before{
 
 .progress-mini{ font-size:var(--fs-2xs); color:var(--ink-faint); margin-top:14px; }
 .progress-bar-track{ height:6px; background:var(--paper-3); border-radius:var(--radius-pill); margin-top:6px; overflow:hidden; }
-.progress-bar-fill{ height:100%; background:var(--gold); border-radius:inherit; width:0%; transition:width .35s ease; }
+.progress-bar-fill{ height:100%; background:var(--gold); border-radius:inherit; width:0%; transition:width var(--dur-slow) var(--ease-out); }
 
 .menubtn{
   display:none; position:fixed; top:14px; left:14px; z-index:60;
-  background:var(--indigo); color:#fff; border:none; border-radius:var(--radius);
+  background:var(--indigo); color:var(--on-accent); border:none; border-radius:var(--radius);
   width:40px; height:40px; font-size:var(--fs-lg); line-height:1; cursor:pointer;
   box-shadow:var(--elev-2);
 }
-.scrim{ display:none; position:fixed; inset:0; background:rgba(0,0,0,.45); z-index:35; }
-.scrim.show{ display:block; animation:fadein .2s ease; }
+.scrim{ display:none; position:fixed; inset:0; background:var(--scrim); z-index:35; }
+.scrim.show{ display:block; animation:fadein var(--dur) var(--ease-out); }
 
 /* Content area — centered within the space to the right of the
    sidebar instead of hugging the left edge. */
 main.content{ margin-left:272px; flex:1; min-width:0; padding:48px 48px 100px; display:flex; justify-content:center; }
-.section-inner{ width:100%; max-width:900px; min-width:0; }
+/* Wider than the prose measure on purpose: grids and tables fill it,
+   running text sits at --measure inside it, and that difference is the
+   page's rhythm. */
+.section-inner{ width:100%; max-width:980px; min-width:0; }
+
+/* Cards that carry running text are sized to their text. Cards that carry
+   a grid, a table or a row of controls take the full column. The page
+   therefore has two left-to-right widths rather than one, which is what
+   stops eight sections of 980px-wide boxes reading as a template. */
+.gcard, .modcheck, .passage-card, .scenario-card, .qc-score{
+  max-width:var(--measure-card);
+}
 .section{ display:none; }
-.section.active{ display:block; animation:fadein .3s ease; }
+.section.active{ display:block; animation:fadein var(--dur-slow) var(--ease-out); }
 @keyframes fadein{ from{opacity:0; transform:translateY(6px);} to{opacity:1; transform:translateY(0);} }
 
 /* ============================================================
@@ -336,12 +427,24 @@ main.content{ margin-left:272px; flex:1; min-width:0; padding:48px 48px 100px; d
    ============================================================ */
 .section-head{ margin-bottom:32px; padding-bottom:22px; border-bottom:1px solid var(--line-soft); }
 .section-head .eyebrow-jp{ font-family:var(--serif); font-size:var(--fs-md); color:var(--gold); letter-spacing:.08em; margin-bottom:4px; }
-.section-head h1{ font-family:var(--serif); font-weight:700; font-size:var(--fs-3xl); margin:0 0 12px; color:var(--ink); line-height:1.25; letter-spacing:.01em; }
+.section-head h1{ font-family:var(--serif); font-weight:700; font-size:var(--fs-display); margin:0 0 12px; color:var(--ink); line-height:1.12; letter-spacing:-.01em; }
 /* Left-aligned with the heading above it — a centered block here would
    start ~130px in from the h1 on a wide screen. */
 .section-head p{ color:var(--ink-soft); max-width:var(--measure); margin:0; font-size:var(--fs-md); }
 
-h2.modtitle{ font-family:var(--serif); font-size:var(--fs-xl); margin:48px 0 4px; color:var(--ink); display:flex; align-items:baseline; gap:10px; }
+/* Sections don't all open the same way. The three lab sections take the
+   full head (rule + standing description); the tool sections drop the
+   rule and put the tool itself directly under the title, with the
+   description demoted to a note underneath it. */
+.section-head--bare{ padding-bottom:0; border-bottom:none; margin-bottom:20px; }
+.section-note{ color:var(--ink-soft); max-width:var(--measure); margin:0 0 30px; font-size:var(--fs-sm); }
+
+/* The landing section is the one place the display face gets room. */
+.section-head--lead{ padding-bottom:26px; }
+.section-head--lead h1{ font-size:calc(var(--fs-display) * 1.2); }
+.section-head--lead p{ font-size:var(--fs-base); max-width:58ch; }
+
+h2.modtitle{ font-family:var(--serif); font-size:var(--fs-2xl); margin:48px 0 4px; color:var(--ink); display:flex; align-items:baseline; gap:10px; }
 h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
 /* Reading for the module title, matching the tabs above it. */
 .modtitle-reading{ font-size:var(--fs-2xs); color:var(--ink-faint); letter-spacing:.04em; margin-bottom:3px; }
@@ -354,31 +457,33 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
 .modprogress{ flex-shrink:0; min-width:160px; margin-bottom:22px; text-align:right; }
 .modprogress-pct{ font-family:var(--serif); font-size:var(--fs-xl); color:var(--gold); line-height:1.1; }
 .modprogress-track{ height:5px; background:var(--paper-3); border-radius:var(--radius-pill); overflow:hidden; margin:5px 0 4px; }
-.modprogress-fill{ height:100%; background:var(--gold); border-radius:inherit; transition:width .35s ease; }
+.modprogress-fill{ height:100%; background:var(--gold); border-radius:inherit; transition:width var(--dur-slow) var(--ease-out); }
 .modprogress-sub{ font-size:var(--fs-2xs); color:var(--ink-faint); }
 
 /* Per-tab completion bar in the module switcher. */
 .mj-progress{ display:flex; align-items:center; gap:6px; width:100%; margin-top:6px; }
 .mj-progress-track{ flex:1; height:3px; background:var(--line); border-radius:var(--radius-pill); overflow:hidden; }
 .mj-progress-fill{ display:block; height:100%; background:var(--gold); border-radius:inherit; }
-.mj-progress-pct{ font-size:.62rem; color:var(--ink-faint); flex-shrink:0; }
-.modjump-rich button.active .mj-progress-track{ background:rgba(255,255,255,.3); }
-.modjump-rich button.active .mj-progress-fill{ background:#fff; }
-.modjump-rich button.active .mj-progress-pct{ color:rgba(255,255,255,.85); }
+.mj-progress-pct{ font-size:var(--fs-3xs); color:var(--ink-faint); flex-shrink:0; }
+.modjump-rich button.active .mj-progress-track{ background:var(--on-accent-faint); }
+.modjump-rich button.active .mj-progress-fill{ background:var(--on-accent); }
+.modjump-rich button.active .mj-progress-pct{ color:var(--on-accent-soft); }
 
 .modjump{ display:flex; flex-wrap:wrap; gap:8px; margin-bottom:36px; }
 .modjump button{ padding:7px 14px; }
-.modjump button.active{ background:var(--indigo); border-color:var(--indigo); color:#fff; }
+.modjump button.active{ background:var(--indigo); border-color:var(--indigo); color:var(--on-accent); }
 
 .modjump-rich button{
   display:flex; flex-direction:column; align-items:flex-start; gap:2px;
   text-align:left; border-radius:var(--radius); padding:9px 15px;
 }
 .modjump-rich .mj-jp{ font-family:var(--serif); font-size:var(--fs-md); }
-.modjump-rich .mj-reading{ font-size:.66rem; color:var(--ink-faint); }
+.modjump-rich .mj-num{ color:var(--gold); margin-right:.5em; }
+.modjump-rich button.active .mj-num{ color:var(--on-accent-soft); }
+.modjump-rich .mj-reading{ font-size:var(--fs-3xs); color:var(--ink-faint); }
 .modjump-rich .mj-en{ font-size:var(--fs-2xs); color:var(--ink-faint); }
 .modjump-rich button.active .mj-reading,
-.modjump-rich button.active .mj-en{ color:rgba(255,255,255,.78); }
+.modjump-rich button.active .mj-en{ color:var(--on-accent-soft); }
 
 /* ============================================================
    GRAMMAR CARD
@@ -402,7 +507,9 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
 .gcard .explain{ font-size:var(--fs-md); color:var(--ink-soft); margin:12px 0 16px; max-width:var(--measure); }
 .gcard .explain b{ color:var(--ink); }
 
-.formation-box{ background:var(--paper); border:1px dashed var(--line); border-radius:var(--radius); padding:13px 16px; margin-bottom:16px; font-size:var(--fs-sm); }
+/* Blocks inside a card are delimited by a rule and their label, not by a
+   second border + background + radius. One containment layer per card. */
+.formation-box{ border-top:1px solid var(--line); padding:14px 0 0; margin-bottom:16px; font-size:var(--fs-sm); }
 .formation-box .flabel{ margin-bottom:7px; }
 .formation-box .fline{ font-family:var(--serif); font-size:var(--fs-base); color:var(--ink); margin:4px 0; }
 .formation-box .fline .arrow{ color:var(--accent, var(--indigo)); margin:0 6px; }
@@ -429,10 +536,12 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
 .examples{ margin-bottom:16px; }
 .ex-item{ padding:10px 0; border-bottom:1px solid var(--line-soft); }
 .ex-item:last-child{ border-bottom:none; }
-.ex-jp{ font-family:var(--serif); font-size:var(--fs-lg); color:var(--ink); line-height:2.1; }
+.ex-jp{ font-family:var(--serif); font-size:var(--fs-lg); color:var(--ink); line-height:2.1; max-width:var(--measure-jp); }
 .ex-en{ font-size:var(--fs-sm); color:var(--ink-faint); margin-top:3px; }
 
-.dialogue-box{ background:var(--paper); border-radius:var(--radius); padding:16px 18px; margin-bottom:16px; border:1px solid var(--line-soft); }
+/* Dialogue is quoted speech, so it sits inset from the card's prose —
+   the page gets a second left edge instead of one flush column. */
+.dialogue-box{ border-top:1px solid var(--line); padding:14px 0 0; margin:0 0 16px 24px; }
 .dialogue-head{ display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:12px; }
 .dialogue-head .dlabel{ margin-bottom:0; }
 .readall-btn{
@@ -442,13 +551,13 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
   cursor:pointer; transition:background var(--t-fast), border-color var(--t-fast);
 }
 .readall-btn:hover{ border-color:var(--accent, var(--indigo)); }
-.readall-btn.playing{ background:var(--accent, var(--indigo)); border-color:var(--accent, var(--indigo)); color:#fff; }
+.readall-btn.playing{ background:var(--accent, var(--indigo)); border-color:var(--accent, var(--indigo)); color:var(--on-accent); }
 /* The line currently being read aloud during "Read all". */
 .dline.speaking{ background:var(--indigo-tint); border-radius:var(--radius-sm); }
 .dline{ transition:background var(--t-fast); padding:2px 6px; margin-left:-6px; margin-right:-6px; }
 .dline{ display:flex; gap:10px; margin-bottom:10px; align-items:flex-start; }
 .dline:last-child{ margin-bottom:0; }
-.dline .speaker{ flex-shrink:0; width:60px; font-size:var(--fs-2xs); color:#fff; background:var(--accent, var(--indigo)); border-radius:var(--radius-sm); text-align:center; padding:3px 4px; height:fit-content; margin-top:4px; }
+.dline .speaker{ flex-shrink:0; width:60px; font-size:var(--fs-2xs); color:var(--on-accent); background:var(--accent, var(--indigo)); border-radius:var(--radius-sm); text-align:center; padding:3px 4px; height:fit-content; margin-top:4px; }
 .jp-row{ display:flex; align-items:baseline; flex-wrap:wrap; gap:8px; }
 .dline .dtext .jp{ font-family:var(--serif); font-size:var(--fs-base); line-height:1.9; }
 .dline .dtext .en{ font-size:var(--fs-xs); color:var(--ink-faint); margin-top:2px; }
@@ -472,7 +581,7 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
 .quizbox .qlabel{ margin-bottom:10px; }
 .qitem{ margin-bottom:18px; }
 .qitem:last-child{ margin-bottom:0; }
-.qprompt{ font-size:var(--fs-base); color:var(--ink); margin-bottom:10px; font-family:var(--serif); line-height:1.8; }
+.qprompt{ font-size:var(--fs-base); color:var(--ink); margin-bottom:10px; font-family:var(--serif); line-height:1.8; max-width:var(--measure-jp); }
 .qchoices{ display:flex; flex-direction:column; gap:6px; }
 /* Choice text is injected as HTML and can contain several <ruby> elements,
    so this stays a normal text flow — a flex container would scatter each
@@ -499,12 +608,11 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
 .qchoice.disabled{ pointer-events:none; }
 .qchoice.disabled:not(.correct):not(.incorrect){ opacity:.5; }
 .qexplain{
-  font-size:var(--fs-sm); color:var(--ink-soft); margin-top:9px; padding:10px 14px;
-  background:var(--paper); border-radius:var(--radius-sm);
-  box-shadow:inset 3px 0 0 var(--accent, var(--indigo));
+  font-size:var(--fs-sm); color:var(--ink-soft); margin-top:10px; padding:10px 0 0;
+  border-top:1px solid var(--line-soft);
   display:none;
 }
-.qexplain.show{ display:block; animation:fadein .2s ease; }
+.qexplain.show{ display:block; animation:fadein var(--dur) var(--ease-out); }
 .qwhy-wrap{ margin-top:8px; }
 .qwhy-toggle{
   background:none; border:none; color:var(--indigo); font-size:var(--fs-xs);
@@ -534,7 +642,7 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
 .kanji-pager-range{ font-size:var(--fs-xs); color:var(--ink-faint); }
 .kanji-pager-btns{ display:flex; flex-wrap:wrap; gap:6px; }
 .kanji-pager-btns button{ padding:6px 12px; min-width:34px; }
-.kanji-pager-btns button.active{ background:var(--indigo); border-color:var(--indigo); color:#fff; }
+.kanji-pager-btns button.active{ background:var(--indigo); border-color:var(--indigo); color:var(--on-accent); }
 .kanji-pager-btns button:disabled{ opacity:.4; cursor:default; }
 
 .kgrid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:12px; margin-bottom:14px; }
@@ -544,7 +652,7 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
   transition:border-color var(--t-fast), box-shadow var(--t-fast);
 }
 .kcard:hover{ border-color:var(--indigo); box-shadow:var(--elev-1); }
-.kcard .kj{ font-family:var(--serif); font-size:2.1rem; color:var(--ink); line-height:1; flex-shrink:0; }
+.kcard .kj{ font-family:var(--serif); font-size:var(--fs-3xl); color:var(--ink); line-height:1; flex-shrink:0; }
 .kcard .kmeta{ font-size:var(--fs-xs); min-width:0; }
 .kcard .kmeaning{ color:var(--ink); font-weight:700; margin-bottom:4px; font-size:var(--fs-sm); }
 .kcard .kreading{ color:var(--ink-soft); }
@@ -555,13 +663,19 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
 .kexample-reading{ color:var(--ink-faint); font-size:.9em; }
 .kexample-meaning{ color:var(--ink-soft); }
 .ktype{
-  font-size:.6rem; letter-spacing:.04em; text-transform:uppercase;
+  font-size:var(--fs-3xs); letter-spacing:.04em; text-transform:uppercase;
   border-radius:var(--radius-pill); padding:0 6px; flex-shrink:0; line-height:1.5;
 }
 .ktype-on{ background:var(--indigo-tint); color:var(--indigo); }
 .ktype-kun{ background:var(--matcha-tint); color:var(--matcha); }
 
-.collapsible-head{ cursor:pointer; display:flex; align-items:center; gap:8px; margin:36px 0 12px; color:var(--ink-soft); font-size:var(--fs-sm); user-select:none; }
+.collapsible-head{
+  cursor:pointer; display:flex; align-items:center; gap:8px; margin:36px 0 12px;
+  color:var(--ink-soft); font-size:var(--fs-sm); user-select:none;
+  background:none; border:none; padding:0; width:100%; text-align:left;
+  font-family:var(--sans); line-height:inherit;
+  transition:color var(--t-fast);
+}
 .collapsible-head:hover{ color:var(--ink); }
 .collapsible-head .tri{ transition:transform var(--t); color:var(--gold); display:inline-block; }
 .collapsible-head.open .tri{ transform:rotate(90deg); }
@@ -574,9 +688,48 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
 .passage-card{ background:var(--paper-2); border-radius:var(--radius); padding:26px 28px; margin-bottom:16px; border:1px solid var(--line); box-shadow:var(--elev-1); }
 .passage-card .ptitle{ font-family:var(--serif); font-size:var(--fs-lg); color:var(--gold); margin-bottom:4px; }
 .passage-card .ptitle-en{ font-size:var(--fs-xs); color:var(--ink-faint); margin-bottom:18px; }
-.passage-text{ font-family:var(--serif); font-size:var(--fs-lg); line-height:2.3; color:var(--ink); max-width:var(--measure); margin:0 auto 8px; white-space:pre-line; }
-.passage-hint{ font-size:var(--fs-xs); color:var(--ink-faint); text-align:center; margin-bottom:18px; }
+/* Left-aligned with the title above it, and measured in Japanese
+   characters rather than pixels — it was centred, which put it out of
+   line with its own heading. */
+.passage-text{ font-family:var(--serif); font-size:var(--fs-lg); line-height:2.3; color:var(--ink); max-width:var(--measure-jp); margin:0 0 10px; white-space:pre-line; }
+.passage-hint{ font-size:var(--fs-xs); color:var(--ink-faint); margin-bottom:18px; }
 .passage-hint b{ color:var(--indigo); }
+
+/* ============================================================
+   OVERVIEW MAP
+   Deliberately irregular spans. Six equal cards in three equal
+   columns made the six sections look interchangeable, and they
+   aren't: Grammar is the bulk of the work, Settings is a footnote.
+   ============================================================ */
+.ovgrid{ display:grid; grid-template-columns:repeat(6, minmax(0,1fr)); gap:14px; margin-bottom:18px; }
+.ovcard{
+  background:var(--paper-2); border:1px solid var(--line); border-radius:var(--radius);
+  padding:18px 20px; display:flex; flex-direction:column; gap:6px; min-width:0;
+  box-shadow:var(--elev-1);
+}
+.ovtitle{ display:flex; align-items:baseline; gap:10px; color:var(--ink); min-width:0; }
+.ovmk{ font-family:var(--serif); font-size:var(--fs-xl); color:var(--gold); line-height:1; flex-shrink:0; }
+.ovname{ font-weight:700; font-size:var(--fs-md); }
+.ovcard p{ font-size:var(--fs-sm); color:var(--ink-soft); margin:0; }
+.ovcard--lg{ grid-column:span 4; }
+.ovcard--lg .ovmk{ font-size:var(--fs-2xl); }
+.ovcard--lg .ovname{ font-size:var(--fs-lg); }
+.ovcard--sm{ grid-column:span 2; }
+.ovcard--half{ grid-column:span 3; }
+.ovcard--full{ grid-column:span 6; }
+/* Settings is a pointer, not a destination — it doesn't earn a card. */
+.ovnote{ font-size:var(--fs-sm); color:var(--ink-faint); margin:0 0 34px; }
+.ovnote b{ color:var(--ink-soft); font-weight:500; }
+
+@media (max-width: 860px){
+  .ovgrid{ grid-template-columns:repeat(2, minmax(0,1fr)); }
+  .ovcard--lg, .ovcard--full{ grid-column:span 2; }
+  .ovcard--sm, .ovcard--half{ grid-column:span 1; }
+}
+@media (max-width: 560px){
+  .ovgrid{ grid-template-columns:minmax(0,1fr); }
+  .ovcard--lg, .ovcard--full, .ovcard--sm, .ovcard--half{ grid-column:span 1; }
+}
 
 /* ============================================================
    KAIWA LAB
@@ -584,7 +737,7 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
 .tipgrid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; margin-bottom:36px; }
 .tipcard{
   background:var(--paper-2); border:1px solid var(--line); border-radius:var(--radius);
-  padding:17px 18px; box-shadow:inset 0 3px 0 var(--gold), var(--elev-1);
+  padding:17px 18px; box-shadow:var(--elev-1);
 }
 .tipcard .ttitle{ font-weight:700; font-size:var(--fs-md); margin-bottom:7px; color:var(--ink); }
 .tipcard p{ font-size:var(--fs-sm); color:var(--ink-soft); margin:0; }
@@ -598,7 +751,7 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
 .phrase .pjp{ font-family:var(--serif); font-size:var(--fs-base); color:var(--ink); }
 .phrase .pen{ font-size:var(--fs-xs); color:var(--ink-faint); margin-top:3px; }
 
-.pb-nav{ display:flex; flex-wrap:wrap; gap:7px; margin-bottom:26px; justify-content:center; }
+.pb-nav{ display:flex; flex-wrap:wrap; gap:7px; margin-bottom:26px; }
 .pb-nav button{
   display:flex; flex-direction:column; align-items:flex-start; gap:1px;
   text-align:left; padding:7px 14px; border-radius:var(--radius);
@@ -606,7 +759,7 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
 .pb-nav button:hover{ border-color:var(--matcha); color:var(--matcha); }
 .pbn-jp{ font-family:var(--serif); font-size:var(--fs-sm); color:var(--ink); }
 .pb-nav button:hover .pbn-jp{ color:var(--matcha); }
-.pbn-en{ font-size:.62rem; color:var(--ink-faint); }
+.pbn-en{ font-size:var(--fs-3xs); color:var(--ink-faint); }
 
 /* Top-level split inside a long section (Kaiwa Lab's bank vs. scripts). */
 .viewtabs{ display:flex; gap:8px; margin:8px 0 22px; flex-wrap:wrap; }
@@ -627,7 +780,7 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
 .pb-cat .jp{ font-family:var(--serif); font-size:var(--fs-lg); color:var(--matcha); }
 .pb-cat .en{ font-size:var(--fs-xs); color:var(--ink-faint); }
 
-.keyphrases{ margin-top:14px; padding:14px 16px; border-radius:var(--radius); background:var(--gold-tint); border:1px solid var(--line-soft); }
+.keyphrases{ margin-top:16px; padding-top:14px; border-top:1px solid var(--line); }
 .keyphrases .kplabel{ color:var(--gold); margin-bottom:9px; font-weight:700; }
 .kpline{ display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; padding:5px 0; border-bottom:1px dotted var(--line); }
 .kpline:last-child{ border-bottom:none; }
@@ -635,7 +788,7 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
 .kpline .kpen{ font-size:var(--fs-xs); color:var(--ink-soft); }
 
 .scenario-card{ background:var(--paper-2); border-radius:var(--radius); margin-bottom:22px; overflow:hidden; border:1px solid var(--line); box-shadow:var(--elev-1); scroll-margin-top:20px; }
-.scenario-head{ background:var(--indigo); color:#fff; padding:13px 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:6px; }
+.scenario-head{ background:var(--indigo); color:var(--on-accent); padding:13px 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:6px; }
 .scenario-head .sjp{ font-family:var(--serif); font-size:var(--fs-lg); }
 .scenario-head .sen{ font-size:var(--fs-xs); opacity:.85; }
 .scenario-body{ padding:20px 22px; }
@@ -662,8 +815,8 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
    ============================================================ */
 .mistake-card{ padding-top:18px; }
 .mistake-recap{
-  background:var(--paper); border:1px solid var(--line-soft); border-radius:var(--radius-sm);
-  padding:10px 14px; margin-bottom:16px; display:flex; flex-direction:column; gap:6px;
+  padding:0 0 14px; margin-bottom:16px; border-bottom:1px solid var(--line-soft);
+  display:flex; flex-direction:column; gap:6px;
 }
 .mistake-row{ display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; font-family:var(--serif); font-size:var(--fs-base); }
 .mistake-row .mistake-tag{
@@ -681,7 +834,7 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
   font-family:var(--sans); font-size:var(--fs-sm);
   transition:background var(--t-fast), color var(--t-fast);
 }
-.mistake-got-it:hover{ background:var(--matcha); color:#fff; }
+.mistake-got-it:hover{ background:var(--matcha); color:var(--on-accent); }
 
 /* ============================================================
    FLOATING MODULE NAV — Grammar Deep-Dive
@@ -706,7 +859,7 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
   transition:background var(--t-fast);
 }
 .floatnav-label:hover{ background:var(--paper-3); }
-.floatnav-count{ font-size:.64rem; color:var(--ink-faint); letter-spacing:.05em; }
+.floatnav-count{ font-size:var(--fs-3xs); color:var(--ink-faint); letter-spacing:.05em; }
 .floatnav-title{ font-family:var(--serif); font-size:var(--fs-sm); color:var(--ink); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:100%; }
 .floatnav-menu{
   background:var(--paper-2); border:1px solid var(--line); border-radius:var(--radius);
@@ -723,8 +876,8 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
 }
 .floatnav-item-label{ white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
 .floatnav-item:hover{ background:var(--paper-3); color:var(--ink); }
-.floatnav-item.active{ background:var(--indigo); color:#fff; }
-.floatnav-item.active .floatnav-num{ color:#fff; }
+.floatnav-item.active{ background:var(--indigo); color:var(--on-accent); }
+.floatnav-item.active .floatnav-num{ color:var(--on-accent); }
 .floatnav-num{ color:var(--gold); font-size:var(--fs-xs); flex-shrink:0; }
 
 @media (max-width: 600px){
@@ -759,7 +912,7 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
 .modcheck-result.pass{ background:var(--matcha-tint); color:var(--matcha); }
 .modcheck-result.retry{ background:var(--shu-tint); color:var(--shu); }
 
-footer.pagefoot{ margin-top:60px; padding-top:20px; border-top:1px solid var(--line); font-size:var(--fs-2xs); color:var(--ink-faint); max-width:var(--measure); margin-left:auto; margin-right:auto; text-align:center; }
+footer.pagefoot{ margin-top:60px; padding-top:20px; border-top:1px solid var(--line); font-size:var(--fs-2xs); color:var(--ink-faint); max-width:var(--measure); }
 
 /* ============================================================
    VOCAB LOOKUP TOOLTIP
@@ -776,16 +929,16 @@ footer.pagefoot{ margin-top:60px; padding-top:20px; border-top:1px solid var(--l
   min-width:200px;
   background:var(--paper-2); border:1px solid var(--line); border-radius:var(--radius);
   box-shadow:var(--elev-3); padding:14px 16px; font-size:var(--fs-sm);
-  animation:popin .12s ease;
+  animation:popin var(--dur-fast) var(--ease-out);
 }
 @keyframes popin{ from{opacity:0; transform:translateY(4px) scale(.98);} to{opacity:1; transform:translateY(0) scale(1);} }
 .lookup-pop .lp-word{ font-family:var(--serif); font-size:var(--fs-xl); color:var(--ink); line-height:1.35; }
 .lookup-pop .lp-reading{ font-size:var(--fs-sm); color:var(--indigo); margin-top:2px; }
-.lookup-pop .lp-jlpt{ display:inline-block; font-size:.62rem; letter-spacing:.05em; color:var(--gold); border:1px solid var(--gold); border-radius:var(--radius-pill); padding:1px 8px; margin-top:7px; }
+.lookup-pop .lp-jlpt{ display:inline-block; font-size:var(--fs-3xs); letter-spacing:.05em; color:var(--gold); border:1px solid var(--gold); border-radius:var(--radius-pill); padding:1px 8px; margin-top:7px; }
 .lookup-pop .lp-sense{ font-size:var(--fs-sm); color:var(--ink-soft); margin-top:9px; padding-top:9px; border-top:1px solid var(--line-soft); }
 .lookup-pop .lp-sense:first-of-type{ border-top:none; padding-top:0; }
 .lookup-pop .lp-pos{ font-size:var(--fs-2xs); color:var(--ink-faint); font-style:italic; }
-.lookup-pop .lp-source{ font-size:.64rem; color:var(--ink-faint); margin-top:10px; letter-spacing:.03em; }
+.lookup-pop .lp-source{ font-size:var(--fs-3xs); color:var(--ink-faint); margin-top:10px; letter-spacing:.03em; }
 .lookup-pop .lp-jisho-link{ display:inline-block; margin-top:10px; font-size:var(--fs-xs); color:var(--indigo); border-bottom:1px dotted var(--indigo); }
 .lookup-pop .lp-loading{ color:var(--ink-faint); font-size:var(--fs-sm); }
 .lookup-pop .lp-empty{ color:var(--ink-soft); font-size:var(--fs-sm); }
@@ -795,41 +948,35 @@ footer.pagefoot{ margin-top:60px; padding-top:20px; border-top:1px solid var(--l
 /* ============================================================
    RENSHUU WITH AI — coming-soon preview
    ============================================================ */
-.soon-panel{ max-width:var(--measure); margin:0 auto; }
+.soon-panel{ max-width:var(--measure); }
 .soon-flag{
-  background:var(--gold-tint); border:1px dashed var(--gold); color:var(--gold);
-  border-radius:var(--radius); padding:11px 16px; font-size:var(--fs-sm); font-weight:700;
-  text-align:center; margin-bottom:22px; letter-spacing:.02em;
+  font-size:var(--fs-2xs); letter-spacing:.1em; text-transform:uppercase;
+  color:var(--gold); font-weight:500;
+  padding-bottom:8px; margin-bottom:20px; border-bottom:1px solid var(--gold);
 }
-.ai-mock{
-  background:var(--paper-2); border:1px solid var(--line); border-radius:var(--radius);
-  overflow:hidden; opacity:.85; filter:saturate(.85);
-  position:relative;
+/* A written spec for the planned feature, not a drawn one. The previous
+   version hand-built a fake chat window — title bar, status dot, dead
+   input, Send button — which is a UI that doesn't exist pretending it
+   does. Showing the exchange as dialogue says the same thing honestly. */
+.soon-spec{ margin-bottom:26px; }
+.soon-spec .dlabel{ margin-bottom:12px; }
+.soon-spec .dline{ margin-bottom:12px; }
+.soon-spec .ai-note{
+  display:block; font-family:var(--sans); font-size:var(--fs-2xs);
+  color:var(--ink-faint); margin-top:4px;
 }
-.ai-mock::after{
-  content:"PREVIEW"; position:absolute; top:10px; right:12px; font-size:.62rem;
-  letter-spacing:.1em; color:var(--ink-faint); border:1px solid var(--line); border-radius:var(--radius-pill); padding:2px 9px;
+.soon-list{ margin:0; padding:0; list-style:none; border-top:1px solid var(--line); }
+.soon-list li{
+  display:flex; gap:14px; align-items:baseline; flex-wrap:wrap;
+  padding:10px 0; border-bottom:1px solid var(--line-soft);
+  font-size:var(--fs-sm); color:var(--ink-soft);
 }
-.ai-mock-head{
-  display:flex; align-items:center; gap:8px; padding:12px 16px; border-bottom:1px solid var(--line);
-  font-size:var(--fs-sm); color:var(--ink-soft); background:var(--paper-3);
+.soon-list .sl-label{
+  flex:0 0 96px; font-size:var(--fs-2xs); letter-spacing:.08em;
+  text-transform:uppercase; color:var(--ink-faint);
 }
-.ai-mock-dot{ width:9px; height:9px; border-radius:50%; background:var(--matcha); flex-shrink:0; }
-.ai-mock-body{ padding:18px 16px; display:flex; flex-direction:column; gap:10px; }
-.ai-bubble{ max-width:78%; padding:10px 14px; border-radius:var(--radius-lg); font-family:var(--serif); font-size:var(--fs-base); line-height:1.6; }
-.ai-bubble-bot{ background:var(--paper); border:1px solid var(--line-soft); align-self:flex-start; border-bottom-left-radius:4px; }
-.ai-bubble-me{ background:var(--indigo-tint); align-self:flex-end; border-bottom-right-radius:4px; }
-.ai-note{ display:block; font-family:var(--sans); font-size:var(--fs-2xs); color:var(--ink-faint); margin-top:5px; }
-.ai-mock-input{ display:flex; gap:8px; padding:12px 16px; border-top:1px solid var(--line); background:var(--paper-3); }
-.ai-mock-input input{
-  flex:1; padding:8px 14px; border-radius:var(--radius-pill); border:1px solid var(--line);
-  background:var(--paper); color:var(--ink-faint); font-family:var(--sans); font-size:var(--fs-sm);
-}
-.ai-mock-input button{
-  padding:8px 18px; border-radius:var(--radius-pill); border:none; background:var(--line); color:var(--ink-faint);
-  font-family:var(--sans); font-size:var(--fs-sm); cursor:not-allowed;
-}
-.soon-note{ font-size:var(--fs-sm); color:var(--ink-faint); text-align:center; margin-top:18px; }
+.soon-list .sl-body{ flex:1 1 220px; min-width:0; }
+.soon-note{ font-size:var(--fs-sm); color:var(--ink-faint); margin-top:20px; }
 
 /* ============================================================
    RESPONSIVE
@@ -839,7 +986,8 @@ footer.pagefoot{ margin-top:60px; padding-top:20px; border-top:1px solid var(--l
   .sidebar.open{ transform:translateX(0); }
   .menubtn{ display:block; }
   main.content{ margin-left:0; padding:70px 18px 80px; }
-  .section-head h1{ font-size:var(--fs-2xl); }
+  .section-head h1,
+  .section-head--lead h1{ font-size:var(--fs-3xl); }
 }
 
 /* Flex children holding text need min-width:0 or they refuse to shrink
@@ -851,10 +999,12 @@ footer.pagefoot{ margin-top:60px; padding-top:20px; border-top:1px solid var(--l
 }
 
 @media (max-width: 520px){
-  .section-head h1{ font-size:var(--fs-xl); }
+  .section-head h1,
+  .section-head--lead h1{ font-size:var(--fs-2xl); }
   .section-head{ margin-bottom:26px; padding-bottom:18px; }
-  .gcard, .modcheck, .passage-card, .scenario-body, .dialogue-box{ padding-left:16px; padding-right:16px; }
+  .gcard, .modcheck, .passage-card, .scenario-body{ padding-left:16px; padding-right:16px; }
   .gcard-head{ flex-direction:column; gap:10px; }
+  .dialogue-box{ margin-left:0; }
   .gcard-title .jp{ font-size:var(--fs-xl); }
   .scenario-head{ flex-direction:column; align-items:flex-start; gap:4px; }
   .qc-score{ padding:16px 18px; }

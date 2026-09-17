@@ -23,10 +23,9 @@ export default function QuizCenter() {
 
   return (
     <>
-      <div className="section-head">
-        <div className="eyebrow-jp">総復習クイズ</div>
+      {/* Score first — it's what you come here to check. */}
+      <div className="section-head section-head--bare">
         <h1>Quiz Center</h1>
-        <p>A mixed-format mock review — fill-in-the-blank grammar, kanji reading, and short comprehension — modeled on how the actual N4 groups these together. Each visit draws 10 questions from a pool of {countQuizPool()}; once you've answered a question here it won't come up again until you reset your progress below. Your score below covers every quiz on this entire page, not just this section.</p>
       </div>
 
       <div className="qc-score">
@@ -37,6 +36,8 @@ export default function QuizCenter() {
         <button className="qc-reset" onClick={newSet}>New random set</button>
         <button className="qc-reset" onClick={resetAll}>Reset all quiz progress</button>
       </div>
+
+      <p className="section-note">A mixed-format mock review — fill-in-the-blank grammar, kanji reading, and short comprehension — modeled on how the actual N4 groups these together. Each visit draws 10 questions from a pool of {countQuizPool()}; once you've answered one it won't come up again until you reset. The score above covers every quiz in the handbook, not just this section.</p>
 
       <div className="qc-group-title">Random sample of 10</div>
       <div className="gcard" style={{ "--accent": "var(--gold)" }}>

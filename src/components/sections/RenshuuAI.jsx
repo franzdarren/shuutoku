@@ -1,32 +1,48 @@
 export default function RenshuuAI() {
   return (
     <>
-      <div className="section-head">
-        <div className="eyebrow-jp">練習 with AI</div>
+      <div className="section-head section-head--bare">
         <h1>Renshuu with AI</h1>
-        <p>A planned feature: a free-form conversation practice partner — you type (or eventually speak) in Japanese, it replies in character for a scenario, and corrects you gently along the way. The mock-up below is just to show the shape of it; nothing here is wired up yet.</p>
+        <p>A planned feature: a free-form conversation practice partner — you type (or eventually speak) in Japanese, it replies in character for a scenario, and corrects you gently along the way.</p>
       </div>
 
       <div className="soon-panel">
-        <div className="soon-flag">🚧 COMING SOON — preview only, not functional yet</div>
+        <div className="soon-flag">Not built yet — this is the plan, not a demo</div>
 
-        <div className="ai-mock">
-          <div className="ai-mock-head">
-            <span className="ai-mock-dot" />
-            <span>Kaiwa Partner — <i>レストランで (at a restaurant)</i></span>
+        <div className="soon-spec">
+          <div className="dlabel">How an exchange would read — レストランで (at a restaurant)</div>
+          <div className="dline">
+            <div className="speaker">店員</div>
+            <div className="dtext">
+              <div className="jp-row"><span className="jp">いらっしゃいませ。何名様ですか。</span></div>
+              <div className="en">Welcome. How many people?</div>
+            </div>
           </div>
-          <div className="ai-mock-body">
-            <div className="ai-bubble ai-bubble-bot">いらっしゃいませ。何名様ですか。</div>
-            <div className="ai-bubble ai-bubble-me">二人です。</div>
-            <div className="ai-bubble ai-bubble-bot">かしこまりました。こちらへどうぞ。<span className="ai-note">(nice — try asking for a menu next)</span></div>
+          <div className="dline">
+            <div className="speaker" style={{ background: "var(--matcha)" }}>あなた</div>
+            <div className="dtext">
+              <div className="jp-row"><span className="jp">二人です。</span></div>
+              <div className="en">Two people.</div>
+            </div>
           </div>
-          <div className="ai-mock-input">
-            <input disabled placeholder="Type your reply in Japanese… (disabled — preview only)" />
-            <button disabled>Send</button>
+          <div className="dline">
+            <div className="speaker">店員</div>
+            <div className="dtext">
+              <div className="jp-row"><span className="jp">かしこまりました。こちらへどうぞ。</span></div>
+              <div className="en">Certainly. This way, please.</div>
+              <span className="ai-note">Nudge — try asking for a menu next.</span>
+            </div>
           </div>
         </div>
 
-        <p className="soon-note">Once this ships, it'll live right here — separate from the scripted Kaiwa Lab scenarios, for open-ended practice instead of a fixed script.</p>
+        <ul className="soon-list">
+          <li><span className="sl-label">Scope</span><span className="sl-body">Open-ended practice, separate from the scripted Kaiwa Lab scenarios — you pick a situation, it stays in character.</span></li>
+          <li><span className="sl-label">Input</span><span className="sl-body">Typed Japanese first; speech input later, reusing the speech support already in the dialogues.</span></li>
+          <li><span className="sl-label">Correction</span><span className="sl-body">Gentle and inline, in the flow of the conversation, rather than a grade at the end.</span></li>
+          <li><span className="sl-label">Status</span><span className="sl-body">Nothing is wired up — no model, no input, no history.</span></li>
+        </ul>
+
+        <p className="soon-note">Once it ships, it will live right here.</p>
       </div>
     </>
   );

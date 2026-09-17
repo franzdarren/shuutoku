@@ -80,8 +80,7 @@ export default function ReviewMistakes({ isActive }) {
 
   return (
     <>
-      <div className="section-head">
-        <div className="eyebrow-jp">間違い直し</div>
+      <div className="section-head section-head--bare">
         <h1>Review Mistakes</h1>
         <p>Every question you've answered incorrectly so far, from any section, gathered in one place so you can drill just your weak spots. Getting one right here updates your progress everywhere else too — this page re-shows the same questions, it doesn't duplicate them.</p>
       </div>

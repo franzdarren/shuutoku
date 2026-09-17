@@ -31,8 +31,11 @@ export default function Sidebar({ active, onNavigate, mobileOpen, onCloseMobile,
     <>
       <aside className={"sidebar" + (mobileOpen ? " open" : "")}>
         <div className="brand">
-          <div className="jp">習得 Shuutoku</div>
-          <div className="en">Your N4 Review Handbook</div>
+          <span className="brand-jp">習得</span>
+          <span className="brand-latin">
+            <span className="brand-name">Shuutoku</span>
+            <span className="brand-sub">N4 Review Handbook</span>
+          </span>
         </div>
         <div className="sidebar-scroll">
           <div className="searchbox-wrap">

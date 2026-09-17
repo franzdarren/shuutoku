@@ -11,6 +11,12 @@ import FloatingNav from "../FloatingNav.jsx";
 // can tell which ones you've already been asked.
 const getCheckId = (item) => item._cid;
 
+// Module numbers are set as kanji numerals alongside their Japanese
+// titles — 三 sits in a Mincho heading the way 3 never will. Display only;
+// the data keeps plain integers.
+const KANJI_NUM = ["〇", "一", "二", "三", "四", "五", "六", "七", "八", "九", "十"];
+const kanjiNum = (n) => KANJI_NUM[n] ?? String(n);
+
 function GrammarCard({ mod, mi, pt, pi }) {
   const accent = "var(--" + mod.accent + ")";
   const pid = "g" + mi + "-" + pi;
@@ -292,7 +298,7 @@ export default function GrammarDeepDive({ jumpTarget, isActive }) {
       <div className="modjump modjump-rich">
         {grammarModules.map((m, i) => (
           <button key={i} className={i === activeMod ? "active" : ""} onClick={() => goToModule(i)}>
-            <span className="mj-jp">{m.num}. {m.jpTitle}</span>
+            <span className="mj-jp"><span className="mj-num">{kanjiNum(m.num)}</span>{m.jpTitle}</span>
             {m.reading && m.reading !== m.jpTitle && <span className="mj-reading">{m.reading}</span>}
             <span className="mj-en">{m.enTitle}</span>
             <ModuleTabPct mi={i} />
@@ -302,7 +308,7 @@ export default function GrammarDeepDive({ jumpTarget, isActive }) {
 
       <div className="modhead">
         <div className="modhead-titles">
-          <h2 className="modtitle"><span className="modnum">{mod.num}</span> {mod.jpTitle}</h2>
+          <h2 className="modtitle"><span className="modnum">{kanjiNum(mod.num)}</span> {mod.jpTitle}</h2>
           {mod.reading && mod.reading !== mod.jpTitle && <div className="modtitle-reading">{mod.reading}</div>}
           <div className="modtitle-en">{mod.enTitle}</div>
         </div>

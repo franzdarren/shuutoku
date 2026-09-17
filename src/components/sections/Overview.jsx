@@ -4,10 +4,13 @@ import {
   countGrammarPoints, countPhrases, countQuizPool,
 } from "../../data/index.js";
 
-function OverviewCard({ mk, title, children }) {
+function OverviewCard({ mk, title, size, children }) {
   return (
-    <div className="tipcard">
-      <div className="ttitle">{mk} — {title}</div>
+    <div className={"ovcard ovcard--" + size}>
+      <div className="ovtitle">
+        <span className="ovmk">{mk}</span>
+        <span className="ovname">{title}</span>
+      </div>
       <p>{children}</p>
     </div>
   );
@@ -17,36 +20,34 @@ export default function Overview() {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <div className="section-head">
-        <div className="eyebrow-jp">はじめに</div>
+      <div className="section-head section-head--lead">
         <h1>Your N4 Review Handbook</h1>
         <p>You have already been through the whole N4 syllabus — Minna no Nihongo up to Lesson 47, grammar, kanji, all of it. A 65% mock score at this stage almost never means "I don't know N4." It usually means a handful of specific points are shaky (the four conditionals, passive vs. causative, the そう family) and that speaking hasn't caught up with reading. This handbook is built to fix both: a precision grammar review with sources cross-referenced to Minna no Nihongo, Genki, and Sou Matome, the complete N4 kanji list with readings and compounds, reading practice in exam style, and a dedicated Kaiwa Lab for the conversation side.</p>
       </div>
 
-      <div className="tipgrid">
-        <OverviewCard mk="文法" title="Grammar Deep-Dive">
+      <div className="ovgrid">
+        <OverviewCard mk="文法" title="Grammar Deep-Dive" size="lg">
           {countGrammarPoints()} grammar points across {grammarModules.length} modules — the four conditionals, passive/causative, giving &amp; receiving, hearsay &amp; appearance, and a round of extra N4 essentials. Grouped into tabs so you can work through one module at a time instead of one long scroll.
         </OverviewCard>
-        <OverviewCard mk="漢字" title="Kanji Focus">
-          The full N4 kanji set, all {kanjiFocus.length} characters — nothing filtered out — each with both readings, the core meaning, and a common compound, plus a {kanjiQuiz.length}-question reading check.
+        <OverviewCard mk="漢字" title="Kanji Focus" size="sm">
+          All {kanjiFocus.length} N4 characters — both readings, core meaning, a common compound, plus a {kanjiQuiz.length}-question reading check.
         </OverviewCard>
-        <OverviewCard mk="読解" title="Reading Lab">
-          {readingPassages.length} short passages in JLPT reading style — diary entries, notices, and emails — each with comprehension questions. Highlight any word in the text to look up its meaning and reading instantly.
+        <OverviewCard mk="読解" title="Reading Lab" size="half">
+          {readingPassages.length} short passages in JLPT reading style — diary entries, notices, and emails — each with comprehension questions. Highlight any word to look it up instantly.
         </OverviewCard>
-        <OverviewCard mk="会話" title="Kaiwa Lab">
-          {kaiwaScenarios.length} real trip and daily-life scenarios with key phrases pulled out of each one, a {countPhrases()}-phrase bank grouped by situation, and role-play notes — with the same highlight-to-look-up dictionary as Reading Lab.
+        <OverviewCard mk="会話" title="Kaiwa Lab" size="half">
+          {kaiwaScenarios.length} trip and daily-life scenarios with their key phrases pulled out, a {countPhrases()}-phrase bank grouped by situation, and role-play notes for both sides.
         </OverviewCard>
-        <OverviewCard mk="力" title="Quiz Center">
+        <OverviewCard mk="力" title="Quiz Center" size="full">
           A mixed mock-test style review pulling grammar, kanji, reading and conversation together — {countQuizPool()} questions in the pool, 10 drawn at random each visit — plus your running score across the whole handbook.
-        </OverviewCard>
-        <OverviewCard mk="設定" title="Settings">
-          Furigana on/off, dark mode, and text size — in the sidebar, always available.
         </OverviewCard>
       </div>
 
-      <div className={"collapsible-head" + (open ? " open" : "")} onClick={() => setOpen(!open)}>
+      <p className="ovnote"><b>設定 — Settings</b> live in the sidebar and stay available everywhere: furigana on/off, dark mode, and text size.</p>
+
+      <button className={"collapsible-head" + (open ? " open" : "")} aria-expanded={open} onClick={() => setOpen(!open)}>
         <span className="tri">▸</span> How to actually use this before your mocks
-      </div>
+      </button>
       <div className={"collapsible-body" + (open ? " open" : "")}>
         <div className="gcard" style={{ "--accent": "var(--gold)" }}>
           <div className="explain" style={{ marginBottom: 0 }}>

@@ -53,16 +53,19 @@ export default function KanjiFocus({ jumpTarget }) {
 
   return (
     <>
-      <div className="section-head">
+      {/* This section is a lookup tool, so it opens with the tool: title,
+          search, then the standing description demoted to a note. */}
+      <div className="section-head section-head--bare">
         <div className="eyebrow-jp">漢字フォーカス</div>
         <h1>Kanji Focus</h1>
-        <p>The full N4-level kanji set — all {kanjiFocus.length} characters, nothing held back — with both readings, the core meaning, and example compounds for each. It won't match "official" N4 lists exactly (there is no official list — JLPT never publishes one), but it is grounded in the standard N4 study references. Search jumps straight to a character, reading, or meaning; browse a page at a time otherwise.</p>
       </div>
 
       <div className="kanji-toolbar">
         <input className="kanji-search" placeholder="Search by kanji, reading, or meaning…" value={filter} onChange={(e) => setFilter(e.target.value)} />
         <span className="kanji-count">{filtered.length} / {kanjiFocus.length} shown</span>
       </div>
+
+      <p className="section-note">All {kanjiFocus.length} N4-level characters, nothing held back — both readings, the core meaning, and example compounds for each. It won't match “official” N4 lists exactly (there is no official list — JLPT never publishes one), but it is grounded in the standard N4 study references.</p>
 
       {pageCount > 1 && (
         <div className="kanji-pager">
