@@ -5,43 +5,43 @@
       {
         "q": "「<ruby>駅<rt>えき</rt></ruby>に＿＿、<ruby>電話<rt>でんわ</rt></ruby>してください。」",
         "choices": [
-          "<ruby>着<rt>き</rt></ruby>くと",
-          "着いたら",
           "<ruby>着<rt>き</rt></ruby>くし",
-          "<ruby>着<rt>き</rt></ruby>くのに"
+          "<ruby>着<rt>き</rt></ruby>くのに",
+          "<ruby>着<rt>き</rt></ruby>くと",
+          "着いたら"
         ],
-        "a": 1,
+        "a": 3,
         "ex": "と cannot lead into a request/command clause, and のに would express an unexpected contrast that doesn't fit here. 着いたら ('once you arrive') is the natural choice before a request."
       },
       {
         "q": "「<ruby>友達<rt>ともだち</rt></ruby>の話によると、<ruby>彼<rt>かれ</rt></ruby>は<ruby>忙<rt>いそが</rt></ruby>しくてパーティーに<ruby>来<rt>こ</rt></ruby>られない＿＿。」",
         "choices": [
-          "そうです",
+          "ことになります",
           "ようです",
           "つもりです",
-          "ことになります"
+          "そうです"
         ],
-        "a": 0,
+        "a": 3,
         "ex": "〜によると explicitly marks secondhand information, matching hearsay そうです."
       },
       {
         "q": "「<ruby>息子<rt>むすこ</rt></ruby>に<ruby>野菜<rt>やさい</rt></ruby>を＿＿。」 (I made my son eat vegetables)",
         "choices": [
-          "<ruby>食<rt>た</rt></ruby>べさせました",
           "<ruby>食<rt>た</rt></ruby>べられました",
-          "<ruby>食<rt>た</rt></ruby>べてもらいました",
-          "<ruby>食<rt>た</rt></ruby>べさせられました"
+          "<ruby>食<rt>た</rt></ruby>べさせられました",
+          "<ruby>食<rt>た</rt></ruby>べさせました",
+          "<ruby>食<rt>た</rt></ruby>べてもらいました"
         ],
-        "a": 0,
+        "a": 2,
         "ex": "Causative <ruby>食<rt>た</rt></ruby>べさせる = 'make/let [someone] eat' — fits a parent making a child eat vegetables."
       },
       {
         "q": "「<ruby>彼女<rt>かのじょ</rt></ruby>は<ruby>先生<rt>せんせい</rt></ruby>に＿＿。」 (She was praised by the teacher)",
         "choices": [
-          "<ruby>褒<rt>ほ</rt></ruby>めました",
+          "<ruby>褒<rt>ほ</rt></ruby>めてあげました",
           "<ruby>褒<rt>ほ</rt></ruby>められました",
-          "<ruby>褒<rt>ほ</rt></ruby>めさせました",
-          "<ruby>褒<rt>ほ</rt></ruby>めてあげました"
+          "<ruby>褒<rt>ほ</rt></ruby>めました",
+          "<ruby>褒<rt>ほ</rt></ruby>めさせました"
         ],
         "a": 1,
         "ex": "Passive <ruby>褒<rt>ほ</rt></ruby>められる = 'be praised' — she is the one receiving the teacher's action."
@@ -49,54 +49,54 @@
       {
         "q": "「<ruby>日本<rt>にほん</rt></ruby>に＿＿、この本を<ruby>読<rt>よ</rt></ruby>んだほうがいいですよ。」 (reacting to a friend's mentioned plan)",
         "choices": [
-          "<ruby>行<rt>い</rt></ruby>くと",
+          "<ruby>行<rt>い</rt></ruby>くなら",
           "<ruby>行<rt>い</rt></ruby>ったら",
-          "行けば",
-          "<ruby>行<rt>い</rt></ruby>くなら"
+          "<ruby>行<rt>い</rt></ruby>くと",
+          "行けば"
         ],
-        "a": 3,
+        "a": 0,
         "ex": "なら reacts to a topic the other person just raised (going to Japan) with advice — the classic なら shape. <ruby>行<rt>い</rt></ruby>くと implies an automatic rule, and <ruby>行<rt>い</rt></ruby>ったら／行けば shift the focus onto after arriving or a general condition, neither of which fits reacting to someone's stated plan."
       },
       {
         "q": "「ここで<ruby>写真<rt>しゃしん</rt></ruby>を＿＿。」 (asking permission)",
         "choices": [
-          "<ruby>撮<rt>と</rt></ruby>ってもいいですか",
-          "<ruby>撮<rt>と</rt></ruby>ってはいけません",
+          "<ruby>撮<rt>と</rt></ruby>るらしいです",
           "<ruby>撮<rt>と</rt></ruby>らせられます",
-          "<ruby>撮<rt>と</rt></ruby>るらしいです"
+          "<ruby>撮<rt>と</rt></ruby>ってはいけません",
+          "<ruby>撮<rt>と</rt></ruby>ってもいいですか"
         ],
-        "a": 0,
+        "a": 3,
         "ex": "〜てもいいですか politely asks for permission."
       },
       {
         "q": "「N4に<ruby>合格<rt>ごうかく</rt></ruby>する＿＿、毎日勉強しています。」 (deliberate purpose)",
         "choices": [
-          "ように",
-          "ために",
           "のに",
-          "し"
+          "し",
+          "ために",
+          "ように"
         ],
-        "a": 1,
+        "a": 2,
         "ex": "<ruby>合格<rt>ごうかく</rt></ruby>する is a volitional action you choose to do, so ために fits."
       },
       {
         "q": "「<ruby>電車<rt>でんしゃ</rt></ruby>で<ruby>足<rt>あし</rt></ruby>を＿＿、痛かったです。」 (had your foot stepped on)",
         "choices": [
           "<ruby>踏<rt>ふ</rt></ruby>みました",
-          "<ruby>踏<rt>ふ</rt></ruby>まれました",
           "<ruby>踏<rt>ふ</rt></ruby>ませました",
+          "<ruby>踏<rt>ふ</rt></ruby>まれました",
           "<ruby>踏<rt>ふ</rt></ruby>んでいました"
         ],
-        "a": 1,
+        "a": 2,
         "ex": "Passive <ruby>踏<rt>ふ</rt></ruby>まれる — the speaker is on the receiving end of someone else's action."
       },
       {
         "q": "「<ruby>薬<rt>くすり</rt></ruby>を<ruby>飲<rt>の</rt></ruby>んだ＿＿、<ruby>寝<rt>ね</rt></ruby>てください。」",
         "choices": [
           "あとで",
-          "ながら",
           "までに",
-          "しか"
+          "しか",
+          "ながら"
         ],
         "a": 0,
         "ex": "あとで means 'after doing'; take the medicine first and then sleep."
@@ -104,21 +104,21 @@
       {
         "q": "「<ruby>日本語<rt>にほんご</rt></ruby>が＿＿ように、毎日音読します。」",
         "choices": [
-          "<ruby>話<rt>はな</rt></ruby>せる",
           "話す",
+          "話させる",
           "<ruby>話<rt>はな</rt></ruby>した",
-          "話させる"
+          "<ruby>話<rt>はな</rt></ruby>せる"
         ],
-        "a": 0,
+        "a": 3,
         "ex": "ように can express a desired ability or state: so that I can speak Japanese."
       },
       {
         "q": "「<ruby>来週<rt>らいしゅう</rt></ruby>の<ruby>試験<rt>しけん</rt></ruby>は<ruby>難<rt>むずか</rt></ruby>しい＿＿。」 (I hear it will be difficult)",
         "choices": [
           "そうです",
-          "ようです",
           "つもりです",
-          "はずです"
+          "はずです",
+          "ようです"
         ],
         "a": 0,
         "ex": "This is hearsay, so <ruby>伝聞<rt>でんぶん</rt></ruby>のそうです fits."
@@ -126,43 +126,43 @@
       {
         "q": "「この<ruby>漢字<rt>かんじ</rt></ruby>は＿＿にくいです。」 (difficult to read)",
         "choices": [
-          "読み",
-          "<ruby>読<rt>よ</rt></ruby>んで",
           "読む",
-          "<ruby>読<rt>よ</rt></ruby>める"
+          "<ruby>読<rt>よ</rt></ruby>める",
+          "読み",
+          "<ruby>読<rt>よ</rt></ruby>んで"
         ],
-        "a": 0,
+        "a": 2,
         "ex": "The stem 読み + にくい means difficult to read."
       },
       {
         "q": "「<ruby>忘<rt>わす</rt></ruby>れない＿＿、メモしてください。」",
         "choices": [
-          "ために",
           "ように",
           "そうに",
-          "らしく"
+          "らしく",
+          "ために"
         ],
-        "a": 1,
+        "a": 0,
         "ex": "ように is used for a desired outcome or prevention: so that you do not forget."
       },
       {
         "q": "「<ruby>先生<rt>せんせい</rt></ruby>が<ruby>学生<rt>がくせい</rt></ruby>に本を＿＿。」 (the teacher lent a book to the student)",
         "choices": [
-          "<ruby>貸<rt>か</rt></ruby>しました",
-          "<ruby>借<rt>か</rt></ruby>りました",
           "貸されました",
+          "<ruby>借<rt>か</rt></ruby>りました",
+          "<ruby>貸<rt>か</rt></ruby>しました",
           "<ruby>借<rt>か</rt></ruby>りさせました"
         ],
-        "a": 0,
+        "a": 2,
         "ex": "貸す means lend; <ruby>借<rt>か</rt></ruby>りる means borrow."
       },
       {
         "q": "「この<ruby>店<rt>みせ</rt></ruby>は<ruby>駅<rt>えき</rt></ruby>＿＿<ruby>近<rt>ちか</rt></ruby>いです。」",
         "choices": [
-          "を",
           "が",
+          "で",
           "に",
-          "で"
+          "を"
         ],
         "a": 2,
         "ex": "<ruby>駅<rt>えき</rt></ruby>に<ruby>近<rt>ちか</rt></ruby>い is the standard pattern for being close to a place."
@@ -170,21 +170,21 @@
       {
         "q": "「<ruby>荷物<rt>にもつ</rt></ruby>をここに<ruby>置<rt>お</rt></ruby>いて＿＿。」 (I'll leave the luggage here for now — stating your own plan)",
         "choices": [
-          "あります",
-          "おいてください",
           "おきます",
-          "しまいます"
+          "おいてください",
+          "しまいます",
+          "あります"
         ],
-        "a": 2,
+        "a": 0,
         "ex": "〜ておきます describes doing something in advance, as your own action: <ruby>置<rt>お</rt></ruby>いておきます = 'I'll leave it here (for later convenience)'. Note <ruby>置<rt>お</rt></ruby>いておいてください would also be valid Japanese, but for a different sentence — that's a REQUEST ('please leave it here'), not this one, which is the speaker stating their own plan."
       },
       {
         "q": "「<ruby>富士山<rt>ふじさん</rt></ruby>は<ruby>日本<rt>にほん</rt></ruby>で＿＿<ruby>高<rt>たか</rt></ruby>い山です。」",
         "choices": [
-          "もっと",
+          "しか",
           "いちばん",
           "より",
-          "しか"
+          "もっと"
         ],
         "a": 1,
         "ex": "いちばん expresses the superlative: the highest mountain in Japan."
@@ -192,45 +192,45 @@
       {
         "q": "「この本は＿＿やすいです。」 (easy to read)",
         "choices": [
-          "読み",
-          "<ruby>読<rt>よ</rt></ruby>んで",
+          "<ruby>読<rt>よ</rt></ruby>める",
           "読む",
-          "<ruby>読<rt>よ</rt></ruby>める"
+          "<ruby>読<rt>よ</rt></ruby>んで",
+          "読み"
         ],
-        "a": 0,
+        "a": 3,
         "ex": "Verb stem + やすい = easy to do. 読む → 読み + やすい."
       },
       {
         "q": "「<ruby>弟<rt>おとうと</rt></ruby>にケーキを<ruby>全部<rt>ぜんぶ</rt></ruby>＿＿。」 (my little brother ate it all on me — nuisance passive)",
         "choices": [
-          "<ruby>食<rt>た</rt></ruby>べました",
           "<ruby>食<rt>た</rt></ruby>べられました",
-          "<ruby>食<rt>た</rt></ruby>べさせました",
-          "<ruby>食<rt>た</rt></ruby>べておきました"
+          "<ruby>食<rt>た</rt></ruby>べました",
+          "<ruby>食<rt>た</rt></ruby>べておきました",
+          "<ruby>食<rt>た</rt></ruby>べさせました"
         ],
-        "a": 1,
+        "a": 0,
         "ex": "迷惑の受身: <ruby>食<rt>た</rt></ruby>べられました shows the speaker was adversely affected by someone else's action."
       },
       {
         "q": "「<ruby>窓<rt>まど</rt></ruby>が<ruby>開<rt>あ</rt></ruby>いて＿＿。」 (the window is open — a state someone left it in)",
         "choices": [
+          "しまいます",
           "います",
           "あります",
-          "おきます",
-          "しまいます"
+          "おきます"
         ],
-        "a": 0,
+        "a": 1,
         "ex": "<ruby>開<rt>あ</rt></ruby>く is intransitive, so <ruby>開<rt>あ</rt></ruby>いています describes the resulting state. <ruby>開<rt>あ</rt></ruby>けてあります would be the 〜てある version with a transitive verb."
       },
       {
         "q": "「明日雨が＿＿、ピクニックは<ruby>中止<rt>ちゅうし</rt></ruby>です。」",
         "choices": [
           "<ruby>降<rt>ふ</rt></ruby>ると",
-          "<ruby>降<rt>ふ</rt></ruby>ったら",
           "<ruby>降<rt>ふ</rt></ruby>れば",
-          "<ruby>降<rt>ふ</rt></ruby>るなら"
+          "<ruby>降<rt>ふ</rt></ruby>るなら",
+          "<ruby>降<rt>ふ</rt></ruby>ったら"
         ],
-        "a": 1,
+        "a": 3,
         "ex": "A specific one-time future condition with a consequence takes たら. と would imply an automatic general rule, which doesn't fit a single picnic."
       },
       {
@@ -238,8 +238,8 @@
         "choices": [
           "なる",
           "なって",
-          "なれる",
-          "なった"
+          "なった",
+          "なれる"
         ],
         "a": 0,
         "ex": "ように takes the plain non-past form: <ruby>上手<rt>じょうず</rt></ruby>になるように — 'so that I become good at it'."
@@ -247,10 +247,10 @@
       {
         "q": "「<ruby>先生<rt>せんせい</rt></ruby>に<ruby>漢字<rt>かんじ</rt></ruby>の読み方を＿＿。」 (the teacher kindly taught me)",
         "choices": [
-          "<ruby>教<rt>おし</rt></ruby>えてあげました",
-          "<ruby>教<rt>おし</rt></ruby>えてもらいました",
           "<ruby>教<rt>おし</rt></ruby>えてくれました",
-          "<ruby>教<rt>おし</rt></ruby>えさせました"
+          "<ruby>教<rt>おし</rt></ruby>えてもらいました",
+          "<ruby>教<rt>おし</rt></ruby>えさせました",
+          "<ruby>教<rt>おし</rt></ruby>えてあげました"
         ],
         "a": 1,
         "ex": "With <ruby>先生<rt>せんせい</rt></ruby>に marking the giver and you as the subject, <ruby>教<rt>おし</rt></ruby>えてもらいました is the natural choice. <ruby>先生<rt>せんせい</rt></ruby>が<ruby>教<rt>おし</rt></ruby>えてくれました would also be correct but needs が, not に."
@@ -258,43 +258,43 @@
       {
         "q": "「<ruby>電車<rt>でんしゃ</rt></ruby>が<ruby>遅<rt>おく</rt></ruby>れた＿＿、<ruby>会議<rt>かいぎ</rt></ruby>に間に<ruby>合<rt>あ</rt></ruby>いました。」",
         "choices": [
-          "ので",
-          "のに",
+          "し",
           "から",
-          "し"
+          "のに",
+          "ので"
         ],
-        "a": 1,
+        "a": 2,
         "ex": "のに marks an unexpected contrast: the train was late, yet you still made it. ので／から would imply the delay caused you to arrive on time, which makes no sense."
       },
       {
         "q": "「ちょっと<ruby>窓<rt>まど</rt></ruby>を<ruby>閉<rt>し</rt></ruby>め＿＿か。」 (asking someone to close it, politely)",
         "choices": [
-          "てくれません",
-          "ておきません",
           "てしまいません",
-          "させません"
+          "てくれません",
+          "させません",
+          "ておきません"
         ],
-        "a": 0,
+        "a": 1,
         "ex": "〜てくれませんか is the standard polite request for someone to do something for you."
       },
       {
         "q": "「<ruby>子供<rt>こども</rt></ruby>のとき、父に毎日漢字を＿＿。」 (I was made to write kanji every day)",
         "choices": [
-          "書かせました",
           "書かれました",
           "書かせられました",
+          "書かせました",
           "<ruby>書<rt>か</rt></ruby>いてもらいました"
         ],
-        "a": 2,
+        "a": 1,
         "ex": "Causative-passive 書かせられる = 'to be made to write' — the speaker did it unwillingly under someone else's will."
       },
       {
         "q": "「あの<ruby>店<rt>みせ</rt></ruby>はいつも人が多いです。＿＿、おいしいんでしょう。」",
         "choices": [
           "だから",
+          "のに",
           "でも",
-          "しかし",
-          "のに"
+          "しかし"
         ],
         "a": 0,
         "ex": "だから draws a conclusion from the previous sentence: it's always crowded, so it must be good."
@@ -302,56 +302,56 @@
       {
         "q": "「<ruby>宿題<rt>しゅくだい</rt></ruby>を＿＿しまいました。」 (I finished it — completion nuance)",
         "choices": [
+          "やり",
           "やって",
           "やった",
-          "やり",
           "やろう"
         ],
-        "a": 0,
+        "a": 1,
         "ex": "〜てしまう attaches to the て-form: やってしまいました. It can mean either 'finished it off' or 'did it, unfortunately', depending on context."
       },
       {
         "q": "「<ruby>田中<rt>たなか</rt></ruby>さんは<ruby>今<rt>いま</rt></ruby>、<ruby>電話中<rt>でんわちゅう</rt></ruby>の＿＿です。」 (it seems he's on the phone — you can hear him)",
         "choices": [
           "そう",
-          "よう",
           "らしい",
-          "つもり"
+          "つもり",
+          "よう"
         ],
-        "a": 1,
+        "a": 3,
         "ex": "よう(です) draws an inference from direct evidence you can perceive. Here it needs の before よう because <ruby>電話中<rt>でんわちゅう</rt></ruby> is a noun."
       },
       {
         "q": "「パーティーに<ruby>行<rt>い</rt></ruby>く＿＿ですが、まだ<ruby>決<rt>き</rt></ruby>めていません。」",
         "choices": [
-          "つもり",
-          "ように",
+          "ため",
           "そう",
-          "ため"
+          "つもり",
+          "ように"
         ],
-        "a": 0,
+        "a": 2,
         "ex": "〜つもり expresses your own intention. It fits a plan you're leaning toward but haven't settled."
       },
       {
         "q": "「<ruby>日本<rt>にほん</rt></ruby>へ<ruby>行<rt>い</rt></ruby>った＿＿がありますか。」",
         "choices": [
+          "ところ",
           "こと",
           "もの",
-          "とき",
-          "ところ"
+          "とき"
         ],
-        "a": 0,
+        "a": 1,
         "ex": "〜たことがある is the fixed pattern for past experience: have you ever been to Japan?"
       },
       {
         "q": "「この<ruby>漢字<rt>かんじ</rt></ruby>は<ruby>難<rt>むずか</rt></ruby>し＿＿て、<ruby>覚<rt>おぼ</rt></ruby>えられません。」",
         "choices": [
-          "すぎ",
-          "すぎる",
           "すぎた",
-          "すごい"
+          "すごい",
+          "すぎる",
+          "すぎ"
         ],
-        "a": 0,
+        "a": 3,
         "ex": "すぎる joins as <ruby>難<rt>むずか</rt></ruby>しすぎて (drop い from <ruby>難<rt>むずか</rt></ruby>しい, add すぎて) — 'too difficult, so I can't memorise it'."
       }
     ]
@@ -362,21 +362,21 @@
       {
         "q": "意味 is read:",
         "choices": [
-          "いみ",
+          "いめ",
           "いい",
           "いび",
-          "いめ"
+          "いみ"
         ],
-        "a": 0,
+        "a": 3,
         "ex": "<ruby>意味<rt>いみ</rt></ruby> (いみ) means 'meaning'."
       },
       {
         "q": "<ruby>悪<rt>わる</rt></ruby>い means:",
         "choices": [
-          "good",
-          "bad",
           "big",
-          "small"
+          "bad",
+          "small",
+          "good"
         ],
         "a": 1,
         "ex": "悪 = bad/evil. <ruby>悪<rt>わる</rt></ruby>い is the plain adjective 'bad'."
@@ -384,32 +384,32 @@
       {
         "q": "<ruby>銀行<rt>ぎんこう</rt></ruby> means:",
         "choices": [
-          "school",
           "bank",
+          "school",
           "hospital",
           "library"
         ],
-        "a": 1,
+        "a": 0,
         "ex": "銀 (silver) + 行 (go/institution) = <ruby>銀行<rt>ぎんこう</rt></ruby>, 'bank'."
       },
       {
         "q": "In 大声, how is the kanji 声 read on its own — and what does it mean?",
         "choices": [
           "おと (sound)",
-          "こえ (voice)",
           "いろ (color)",
-          "かみ (paper)"
+          "かみ (paper)",
+          "こえ (voice)"
         ],
-        "a": 1,
+        "a": 3,
         "ex": "声 = voice, read こえ on its own."
       },
       {
         "q": "<ruby>働<rt>はたら</rt></ruby>く means:",
         "choices": [
-          "to rest",
-          "to work",
           "to walk",
-          "to run"
+          "to work",
+          "to run",
+          "to rest"
         ],
         "a": 1,
         "ex": "働 = work. <ruby>働<rt>はたら</rt></ruby>く is the verb 'to work'."
@@ -417,12 +417,12 @@
       {
         "q": "<ruby>割引<rt>わりびき</rt></ruby> means:",
         "choices": [
-          "receipt",
-          "discount",
           "reservation",
-          "refund"
+          "receipt",
+          "refund",
+          "discount"
         ],
-        "a": 1,
+        "a": 3,
         "ex": "引 = pull; <ruby>割引<rt>わりびき</rt></ruby> (わりびき) is 'discount'."
       },
       {
@@ -430,8 +430,8 @@
         "choices": [
           "よてい",
           "よで",
-          "ようてい",
-          "よたい"
+          "よたい",
+          "ようてい"
         ],
         "a": 0,
         "ex": "<ruby>予定<rt>よてい</rt></ruby> (よてい) means plan or schedule."
@@ -440,75 +440,75 @@
         "q": "<ruby>病院<rt>びょういん</rt></ruby> means:",
         "choices": [
           "station",
-          "hospital",
           "post office",
-          "restaurant"
+          "restaurant",
+          "hospital"
         ],
-        "a": 1,
+        "a": 3,
         "ex": "<ruby>病院<rt>びょういん</rt></ruby> (びょういん) means hospital."
       },
       {
         "q": "<ruby>急<rt>いそ</rt></ruby>ぐ means:",
         "choices": [
-          "to hurry",
-          "to forget",
           "to borrow",
-          "to turn off"
+          "to forget",
+          "to turn off",
+          "to hurry"
         ],
-        "a": 0,
+        "a": 3,
         "ex": "<ruby>急<rt>いそ</rt></ruby>ぐ (いそぐ) means to hurry."
       },
       {
         "q": "受付 is read:",
         "choices": [
-          "うけつけ",
           "うけづけ",
           "うけとり",
+          "うけつけ",
           "うけたて"
         ],
-        "a": 0,
+        "a": 2,
         "ex": "<ruby>受付<rt>うけつけ</rt></ruby> (うけつけ) means reception or front desk."
       },
       {
         "q": "<ruby>必要<rt>ひつよう</rt></ruby> means:",
         "choices": [
-          "necessary",
           "dangerous",
-          "quiet",
-          "famous"
+          "famous",
+          "necessary",
+          "quiet"
         ],
-        "a": 0,
+        "a": 2,
         "ex": "<ruby>必要<rt>ひつよう</rt></ruby> (ひつよう) means necessary or needed."
       },
       {
         "q": "出発 is read:",
         "choices": [
-          "しゅっぱつ",
           "しゅつはつ",
-          "でぱつ",
-          "しゅっぽつ"
+          "しゅっぱつ",
+          "しゅっぽつ",
+          "でぱつ"
         ],
-        "a": 0,
+        "a": 1,
         "ex": "<ruby>出発<rt>しゅっぱつ</rt></ruby> (しゅっぱつ) means departure — note the doubled consonant."
       },
       {
         "q": "<ruby>地図<rt>ちず</rt></ruby> means:",
         "choices": [
-          "floor",
           "map",
+          "address",
           "ground",
-          "address"
+          "floor"
         ],
-        "a": 1,
+        "a": 0,
         "ex": "地 (ground) + 図 (diagram) = <ruby>地図<rt>ちず</rt></ruby> (ちず), 'map'."
       },
       {
         "q": "<ruby>不便<rt>ふべん</rt></ruby> means:",
         "choices": [
-          "convenient",
+          "far",
           "inconvenient",
-          "cheap",
-          "far"
+          "convenient",
+          "cheap"
         ],
         "a": 1,
         "ex": "不 negates: <ruby>便利<rt>べんり</rt></ruby> (convenient) → <ruby>不便<rt>ふべん</rt></ruby> (inconvenient)."
@@ -516,45 +516,45 @@
       {
         "q": "お土産 is read:",
         "choices": [
-          "おみやげ",
-          "おどさん",
           "おみあげ",
-          "おつちさん"
+          "おつちさん",
+          "おどさん",
+          "おみやげ"
         ],
-        "a": 0,
+        "a": 3,
         "ex": "お<ruby>土産<rt>みやげ</rt></ruby> (おみやげ) means souvenir — an irregular whole-word reading."
       },
       {
         "q": "交通 means:",
         "choices": [
-          "traffic, transport",
-          "exchange",
           "intersection",
-          "communication"
+          "communication",
+          "traffic, transport",
+          "exchange"
         ],
-        "a": 0,
+        "a": 2,
         "ex": "交通 (こうつう) means traffic or transport."
       },
       {
         "q": "説明 is read:",
         "choices": [
-          "せつめい",
           "せつみょう",
-          "せいめい",
-          "せつめん"
+          "せつめい",
+          "せつめん",
+          "せいめい"
         ],
-        "a": 0,
+        "a": 1,
         "ex": "<ruby>説明<rt>せつめい</rt></ruby> (せつめい) means explanation."
       },
       {
         "q": "<ruby>予約<rt>よやく</rt></ruby> means:",
         "choices": [
           "plan",
-          "reservation",
           "promise",
+          "reservation",
           "preparation"
         ],
-        "a": 1,
+        "a": 2,
         "ex": "<ruby>予約<rt>よやく</rt></ruby> (よやく) is a reservation or booking. <ruby>予定<rt>よてい</rt></ruby> (よてい) is a plan or schedule — keep the two apart."
       },
       {
@@ -571,10 +571,10 @@
       {
         "q": "足りる means:",
         "choices": [
-          "to walk",
+          "to stand",
           "to be enough",
-          "to add",
-          "to stand"
+          "to walk",
+          "to add"
         ],
         "a": 1,
         "ex": "足りる (たりる) = to be sufficient. 足 covers both 'foot' and 'sufficient'."
@@ -582,32 +582,32 @@
       {
         "q": "<ruby>心配<rt>しんぱい</rt></ruby> means:",
         "choices": [
-          "kindness",
           "worry",
-          "decision",
-          "delivery"
+          "delivery",
+          "kindness",
+          "decision"
         ],
-        "a": 1,
+        "a": 0,
         "ex": "<ruby>心配<rt>しんぱい</rt></ruby> (しんぱい) means worry or concern."
       },
       {
         "q": "Which kanji means 'to lend'?",
         "choices": [
-          "借",
-          "貸",
           "買",
-          "売"
+          "売",
+          "貸",
+          "借"
         ],
-        "a": 1,
+        "a": 2,
         "ex": "貸す (かす) = to lend; <ruby>借<rt>か</rt></ruby>りる (かりる) = to borrow. They look similar and point opposite ways."
       },
       {
         "q": "<ruby>到着<rt>とうちゃく</rt></ruby> means:",
         "choices": [
-          "departure",
+          "transfer",
           "arrival",
-          "delay",
-          "transfer"
+          "departure",
+          "delay"
         ],
         "a": 1,
         "ex": "<ruby>到着<rt>とうちゃく</rt></ruby> (とうちゃく) = arrival. 着 also appears in 着る (to wear) with a completely different meaning."
@@ -615,23 +615,23 @@
       {
         "q": "特別 means:",
         "choices": [
-          "ordinary",
           "special",
+          "ordinary",
           "separate",
           "difficult"
         ],
-        "a": 1,
+        "a": 0,
         "ex": "特別 (とくべつ) means special."
       },
       {
         "q": "世界 is read:",
         "choices": [
-          "せかい",
-          "せいかい",
+          "よかい",
           "せがい",
-          "よかい"
+          "せかい",
+          "せいかい"
         ],
-        "a": 0,
+        "a": 2,
         "ex": "世界 (せかい) means world."
       }
     ]
@@ -655,8 +655,8 @@
         "choices": [
           "<ruby>財布<rt>さいふ</rt></ruby>",
           "<ruby>資料<rt>しりょう</rt></ruby>",
-          "<ruby>傘<rt>かさ</rt></ruby>",
-          "携帯"
+          "携帯",
+          "<ruby>傘<rt>かさ</rt></ruby>"
         ],
         "a": 1,
         "ex": "<ruby>資料<rt>しりょう</rt></ruby>を<ruby>忘<rt>わす</rt></ruby>れないようにしてください — 'please make sure not to forget the materials/documents.'"
@@ -664,111 +664,111 @@
       {
         "q": "メール：「<ruby>明日<rt>あした</rt></ruby>の<ruby>午後<rt>ごご</rt></ruby>ならいつでも<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です。」— いつ会えますか。",
         "choices": [
-          "<ruby>明日<rt>あした</rt></ruby>の<ruby>午前<rt>ごぜん</rt></ruby>だけ",
           "<ruby>明日<rt>あした</rt></ruby>の<ruby>午後<rt>ごご</rt></ruby>ならいつでも",
-          "<ruby>今日<rt>きょう</rt></ruby>の夜だけ",
-          "<ruby>来週<rt>らいしゅう</rt></ruby>だけ"
+          "<ruby>来週<rt>らいしゅう</rt></ruby>だけ",
+          "<ruby>明日<rt>あした</rt></ruby>の<ruby>午前<rt>ごぜん</rt></ruby>だけ",
+          "<ruby>今日<rt>きょう</rt></ruby>の夜だけ"
         ],
-        "a": 1,
+        "a": 0,
         "ex": "<ruby>午後<rt>ごご</rt></ruby>ならいつでも means any time tomorrow afternoon is okay."
       },
       {
-        "q": "お知らせ：「<ruby>雨<rt>あめ</rt></ruby>の場合は、イベントを体育館で行います。」— <ruby>雨<rt>あめ</rt></ruby>のとき、どこで行いますか。",
+        "q": "お知らせ：「<ruby>雨<rt>あめ</rt></ruby>の<ruby>場合<rt>ばあい</rt></ruby>は、イベントを<ruby>体育館<rt>たいいくかん</rt></ruby>で<ruby>行<rt>おこな</rt></ruby>います。」— <ruby>雨<rt>あめ</rt></ruby>のとき、どこで<ruby>行<rt>おこな</rt></ruby>いますか。",
         "choices": [
+          "教室",
           "<ruby>公園<rt>こうえん</rt></ruby>",
           "<ruby>駅<rt>えき</rt></ruby>",
-          "体育館",
-          "教室"
+          "<ruby>体育館<rt>たいいくかん</rt></ruby>"
         ],
-        "a": 2,
-        "ex": "The notice says <ruby>雨<rt>あめ</rt></ruby>の<ruby>場合<rt>ばあい</rt></ruby>は<ruby>体育館<rt>たいいくかん</rt></ruby>で<ruby>行<rt>おこな</rt></ruby>います — if it rains, the event is held in the gym. 〜の場合は marks the circumstance."
+        "a": 3,
+        "ex": "The notice says <ruby>雨<rt>あめ</rt></ruby>の<ruby>場合<rt>ばあい</rt></ruby>は<ruby>体育館<rt>たいいくかん</rt></ruby>で<ruby>行<rt>おこな</rt></ruby>います — if it rains, the event is held in the gym. 〜の<ruby>場合<rt>ばあい</rt></ruby>は marks the circumstance."
       },
       {
         "q": "<ruby>日記<rt>にっき</rt></ruby>：「朝は<ruby>忙<rt>いそが</rt></ruby>しかったですが、<ruby>午後<rt>ごご</rt></ruby>はゆっくりできました。」— <ruby>午後<rt>ごご</rt></ruby>はどうでしたか。",
         "choices": [
           "<ruby>忙<rt>いそが</rt></ruby>しかった",
-          "<ruby>休<rt>やす</rt></ruby>めなかった",
           "ゆっくりできた",
+          "<ruby>休<rt>やす</rt></ruby>めなかった",
           "<ruby>出<rt>で</rt></ruby>かけた"
         ],
-        "a": 2,
+        "a": 1,
         "ex": "<ruby>午後<rt>ごご</rt></ruby>はゆっくりできました means the writer could relax in the afternoon."
       },
       {
         "q": "お知らせ：「エレベーターは<ruby>点検中<rt>てんけんちゅう</rt></ruby>ですので、<ruby>階段<rt>かいだん</rt></ruby>をご<ruby>利用<rt>りよう</rt></ruby>ください。」— どうすればいいですか。",
         "choices": [
-          "エレベーターを<ruby>待<rt>ま</rt></ruby>つ",
-          "<ruby>階段<rt>かいだん</rt></ruby>を<ruby>使<rt>つか</rt></ruby>う",
           "<ruby>帰<rt>かえ</rt></ruby>る",
-          "管理人を<ruby>呼<rt>よ</rt></ruby>ぶ"
+          "管理人を<ruby>呼<rt>よ</rt></ruby>ぶ",
+          "<ruby>階段<rt>かいだん</rt></ruby>を<ruby>使<rt>つか</rt></ruby>う",
+          "エレベーターを<ruby>待<rt>ま</rt></ruby>つ"
         ],
-        "a": 1,
+        "a": 2,
         "ex": "<ruby>階段<rt>かいだん</rt></ruby>をご<ruby>利用<rt>りよう</rt></ruby>ください — please use the stairs. ご<ruby>利用<rt>りよう</rt></ruby>ください is polite service language for 'please use'."
       },
       {
         "q": "メモ：「先に<ruby>注文<rt>ちゅうもん</rt></ruby>しておいてください。少し<ruby>遅<rt>おく</rt></ruby>れます。」— <ruby>書<rt>か</rt></ruby>いた人はどうなりますか。",
         "choices": [
-          "来ない",
           "少し<ruby>遅<rt>おく</rt></ruby>れて<ruby>来<rt>く</rt></ruby>る",
           "<ruby>早<rt>はや</rt></ruby>く<ruby>来<rt>く</rt></ruby>る",
+          "来ない",
           "<ruby>注文<rt>ちゅうもん</rt></ruby>しない"
         ],
-        "a": 1,
+        "a": 0,
         "ex": "少し<ruby>遅<rt>おく</rt></ruby>れます — they'll be slightly late, and are asking you to order in advance (<ruby>注文<rt>ちゅうもん</rt></ruby>しておいて)."
       },
       {
         "q": "<ruby>店<rt>みせ</rt></ruby>の紙：「この<ruby>商品<rt>しょうひん</rt></ruby>は本日のみ20％<ruby>割引<rt>わりびき</rt></ruby>です。」— いつ<ruby>安<rt>やす</rt></ruby>いですか。",
         "choices": [
-          "<ruby>今日<rt>きょう</rt></ruby>だけ",
           "<ruby>明日<rt>あした</rt></ruby>だけ",
-          "<ruby>一週間<rt>いっしゅうかん</rt></ruby>",
-          "<ruby>毎日<rt>まいにち</rt></ruby>"
+          "<ruby>毎日<rt>まいにち</rt></ruby>",
+          "<ruby>今日<rt>きょう</rt></ruby>だけ",
+          "<ruby>一週間<rt>いっしゅうかん</rt></ruby>"
         ],
-        "a": 0,
+        "a": 2,
         "ex": "本日のみ (ほんじつのみ) = today only. のみ is a formal written equivalent of だけ."
       },
       {
-        "q": "メール：「<ruby>雨<rt>あめ</rt></ruby>なら<ruby>中止<rt>ちゅうし</rt></ruby>ですが、くもりなら行います。」— くもりの日はどうなりますか。",
+        "q": "メール：「<ruby>雨<rt>あめ</rt></ruby>なら<ruby>中止<rt>ちゅうし</rt></ruby>ですが、くもりなら<ruby>行<rt>おこな</rt></ruby>います。」— くもりの日はどうなりますか。",
         "choices": [
           "<ruby>中止<rt>ちゅうし</rt></ruby>になる",
-          "<ruby>行<rt>おこな</rt></ruby>う",
           "わからない",
-          "<ruby>雨<rt>あめ</rt></ruby>を<ruby>待<rt>ま</rt></ruby>つ"
+          "<ruby>雨<rt>あめ</rt></ruby>を<ruby>待<rt>ま</rt></ruby>つ",
+          "<ruby>行<rt>おこな</rt></ruby>う"
         ],
-        "a": 1,
-        "ex": "くもりなら行います — if it's cloudy, it goes ahead. Only rain cancels it."
+        "a": 3,
+        "ex": "くもりなら<ruby>行<rt>おこな</rt></ruby>います — if it's cloudy, it goes ahead. Only rain cancels it."
       },
       {
         "q": "<ruby>案内<rt>あんない</rt></ruby>：「二階は<ruby>靴<rt>くつ</rt></ruby>を<ruby>脱<rt>ぬ</rt></ruby>いでお上がりください。」— 二階に<ruby>行<rt>い</rt></ruby>くとき、何をしますか。",
         "choices": [
-          "<ruby>靴<rt>くつ</rt></ruby>を脱ぐ",
-          "<ruby>靴<rt>くつ</rt></ruby>を買う",
           "<ruby>靴<rt>くつ</rt></ruby>を履く",
-          "何もしない"
+          "<ruby>靴<rt>くつ</rt></ruby>を買う",
+          "何もしない",
+          "<ruby>靴<rt>くつ</rt></ruby>を脱ぐ"
         ],
-        "a": 0,
+        "a": 3,
         "ex": "<ruby>靴<rt>くつ</rt></ruby>を<ruby>脱<rt>ぬ</rt></ruby>いで (take off your shoes) + お上がりください (please come up). Standard for tatami floors and many homes."
       },
       {
         "q": "<ruby>日記<rt>にっき</rt></ruby>：「<ruby>試験<rt>しけん</rt></ruby>は<ruby>思<rt>おも</rt></ruby>ったより<ruby>簡単<rt>かんたん</rt></ruby>だった。でも、<ruby>時間<rt>じかん</rt></ruby>が足りなかった。」— <ruby>試験<rt>しけん</rt></ruby>はどうでしたか。",
         "choices": [
+          "<ruby>簡単<rt>かんたん</rt></ruby>で<ruby>時間<rt>じかん</rt></ruby>も余った",
           "<ruby>難<rt>むずか</rt></ruby>しくて<ruby>時間<rt>じかん</rt></ruby>も足りた",
           "<ruby>簡単<rt>かんたん</rt></ruby>だったが<ruby>時間<rt>じかん</rt></ruby>が足りなかった",
-          "<ruby>簡単<rt>かんたん</rt></ruby>で<ruby>時間<rt>じかん</rt></ruby>も余った",
           "<ruby>難<rt>むずか</rt></ruby>しくて<ruby>時間<rt>じかん</rt></ruby>も足りなかった"
         ],
-        "a": 1,
+        "a": 2,
         "ex": "<ruby>思<rt>おも</rt></ruby>ったより<ruby>簡単<rt>かんたん</rt></ruby> (easier than expected) but <ruby>時間<rt>じかん</rt></ruby>が足りなかった (not enough time) — the でも flags the contrast."
       },
       {
         "q": "<ruby>手紙<rt>てがみ</rt></ruby>：「お体に気をつけて、ゆっくり休んでください。」— この<ruby>手紙<rt>てがみ</rt></ruby>はどんな人に書きましたか。",
         "choices": [
-          "<ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>す人",
           "病気の人",
+          "<ruby>旅行<rt>りょこう</rt></ruby>する人",
           "<ruby>結婚<rt>けっこん</rt></ruby>する人",
-          "<ruby>旅行<rt>りょこう</rt></ruby>する人"
+          "<ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>す人"
         ],
-        "a": 1,
+        "a": 0,
         "ex": "お体に気をつけて and ゆっくり休んでください are what you write to someone who is unwell."
       }
     ]
@@ -779,10 +779,10 @@
       {
         "q": "Staff ask 「<ruby>袋<rt>ふくろ</rt></ruby>はご<ruby>利用<rt>りよう</rt></ruby>ですか。」What are they asking?",
         "choices": [
-          "Do you have a point card?",
+          "Are you paying by card?",
           "Would you like a bag?",
           "Shall I heat it up?",
-          "Are you paying by card?"
+          "Do you have a point card?"
         ],
         "a": 1,
         "ex": "ご<ruby>利用<rt>りよう</rt></ruby>ですか is polite for 'will you use one?'. This exact line comes at almost every Japanese register."
@@ -801,12 +801,12 @@
       {
         "q": "A friend invites you out and you can't go. The most natural reply is:",
         "choices": [
-          "<ruby>行<rt>い</rt></ruby>きません",
-          "<ruby>今日<rt>きょう</rt></ruby>はちょっと…",
           "だめです",
-          "<ruby>行<rt>い</rt></ruby>きたくないです"
+          "<ruby>行<rt>い</rt></ruby>きません",
+          "<ruby>行<rt>い</rt></ruby>きたくないです",
+          "<ruby>今日<rt>きょう</rt></ruby>はちょっと…"
         ],
-        "a": 1,
+        "a": 3,
         "ex": "Trailing off with 〜はちょっと… is the standard polite refusal. The flat alternatives all sound blunt or cold."
       },
       {
@@ -814,8 +814,8 @@
         "choices": [
           "order food",
           "ask for the bill",
-          "complain",
-          "book a table"
+          "book a table",
+          "complain"
         ],
         "a": 1,
         "ex": "お<ruby>会計<rt>かいけい</rt></ruby> is the bill. お<ruby>願<rt>ねが</rt></ruby>いします turns it into a polite request."
@@ -823,32 +823,32 @@
       {
         "q": "You didn't catch what someone said. Say:",
         "choices": [
-          "もう<ruby>一度<rt>いちど</rt></ruby>お<ruby>願<rt>ねが</rt></ruby>いします",
+          "けっこうです",
           "もういいです",
           "そうですね",
-          "けっこうです"
+          "もう<ruby>一度<rt>いちど</rt></ruby>お<ruby>願<rt>ねが</rt></ruby>いします"
         ],
-        "a": 0,
+        "a": 3,
         "ex": "もう<ruby>一度<rt>いちど</rt></ruby>お<ruby>願<rt>ねが</rt></ruby>いします asks for a repeat. けっこうです would decline something, and もういいです can sound like 'forget it'."
       },
       {
         "q": "「かしこまりました」is said by:",
         "choices": [
-          "a customer to staff",
           "staff to a customer",
+          "a customer to staff",
           "a child to a parent",
           "friends to each other"
         ],
-        "a": 1,
+        "a": 0,
         "ex": "かしこまりました is humble service language meaning 'certainly'. You hear it; you rarely say it."
       },
       {
         "q": "Someone helped you a lot. The warmest short reply is:",
         "choices": [
           "<ruby>助<rt>たす</rt></ruby>かりました",
-          "<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です",
+          "<ruby>失礼<rt>しつれい</rt></ruby>します",
           "どうも",
-          "<ruby>失礼<rt>しつれい</rt></ruby>します"
+          "<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です"
         ],
         "a": 0,
         "ex": "<ruby>助<rt>たす</rt></ruby>かりました ('that saved me') is a genuine, natural thank-you for real help."
@@ -857,55 +857,55 @@
         "q": "At an izakaya, 「別々でお<ruby>願<rt>ねが</rt></ruby>いします」means:",
         "choices": [
           "split the bill evenly",
-          "separate bills, each pays their own",
           "one person pays",
+          "separate bills, each pays their own",
           "pay next time"
         ],
-        "a": 1,
+        "a": 2,
         "ex": "別々 = separately, per person's order. <ruby>割<rt>わ</rt></ruby>り勘 (わりかん) is the even split."
       },
       {
         "q": "「お先に<ruby>失礼<rt>しつれい</rt></ruby>します」is said when:",
         "choices": [
+          "answering the phone",
           "arriving at work",
           "leaving work before others",
-          "apologising for a mistake",
-          "answering the phone"
+          "apologising for a mistake"
         ],
-        "a": 1,
+        "a": 2,
         "ex": "It's the standard line for leaving the office before your colleagues; they answer お<ruby>疲<rt>つか</rt></ruby>れさまでした."
       },
       {
         "q": "「つまらない物ですが」when handing over a gift means:",
         "choices": [
+          "you don't want to give it",
           "the gift is bad",
-          "it's a humble set phrase",
           "the gift was cheap",
-          "you don't want to give it"
+          "it's a humble set phrase"
         ],
-        "a": 1,
+        "a": 3,
         "ex": "Downplaying your own gift is the convention. Never take it literally — and never say it about someone else's gift."
       },
       {
         "q": "A café asks 「<ruby>店内<rt>てんない</rt></ruby>でお<ruby>召<rt>め</rt></ruby>し上がりですか。」They want to know:",
         "choices": [
-          "what you'll order",
           "whether you'll eat in",
-          "whether you have a card",
-          "whether you want it hot"
+          "what you'll order",
+          "whether you want it hot",
+          "whether you have a card"
         ],
-        "a": 1,
+        "a": 0,
         "ex": "<ruby>召<rt>め</rt></ruby>し上がる is honorific 'to eat/drink'. <ruby>店内<rt>てんない</rt></ruby>で〜 asks eat-in versus takeaway."
       },
       {
         "q": "Which one softens a request the most?",
         "choices": [
           "<ruby>教<rt>おし</rt></ruby>えて",
-          "<ruby>教<rt>おし</rt></ruby>えてください",
           "<ruby>教<rt>おし</rt></ruby>えてくれない？",
-          "<ruby>教<rt>おし</rt></ruby>えていただけませんか"
+          "<ruby>教<rt>おし</rt></ruby>えていただけませんか",
+          "<ruby>教<rt>おし</rt></ruby>えてください"
         ],
-        "a": 3,
+        "a": 2,
         "ex": "〜ていただけませんか is the politest of the four — humble receiving plus a negative question. Use it with strangers and at work."
       }
     ]

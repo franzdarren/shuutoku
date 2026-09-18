@@ -3666,42 +3666,42 @@
       "q": "What is the reading of 質問?",
       "choices": [
         "しつぎ",
-        "しつもん",
         "しちもん",
-        "しちぎ"
+        "しちぎ",
+        "しつもん"
       ],
-      "a": 1,
+      "a": 3,
       "ex": "質問 (しつもん) means 'question' — 質 (quality/substance) + 問 (ask, which you already know)."
     },
     {
       "q": "死ぬ means:",
       "choices": [
         "to live",
-        "to die",
         "to run",
+        "to die",
         "to build"
       ],
-      "a": 1,
+      "a": 2,
       "ex": "死 = death/die. 死ぬ is the dictionary form of 'to die'."
     },
     {
       "q": "Which kanji means 'silver', as in ぎんこう (bank)?",
       "choices": [
-        "金",
         "銀",
-        "色",
-        "黒"
+        "黒",
+        "金",
+        "色"
       ],
-      "a": 1,
+      "a": 0,
       "ex": "銀 = silver. 銀行 literally means 'silver institution' — a bank."
     },
     {
       "q": "急に means:",
       "choices": [
-        "slowly",
+        "rarely",
         "suddenly",
         "carefully",
-        "rarely"
+        "slowly"
       ],
       "a": 1,
       "ex": "急 = hurry/sudden. 急に is the adverb form, 'suddenly'."
@@ -3710,20 +3710,20 @@
       "q": "What does 割引 mean?",
       "choices": [
         "appointment",
+        "receipt",
         "discount",
-        "reservation",
-        "receipt"
+        "reservation"
       ],
-      "a": 1,
+      "a": 2,
       "ex": "引 = pull. 割引 (わりびき) literally 'divide-and-pull' → a discount."
     },
     {
       "q": "働く means:",
       "choices": [
-        "to rest",
+        "to wait",
         "to work",
         "to walk",
-        "to wait"
+        "to rest"
       ],
       "a": 1,
       "ex": "働 = work. 働く is the verb 'to work'."
@@ -3732,9 +3732,9 @@
       "q": "Which pair of kanji, read けんきゅう, means 'research'?",
       "choices": [
         "研＋究",
-        "計＋画",
         "以＋上",
-        "声＋試"
+        "声＋試",
+        "計＋画"
       ],
       "a": 0,
       "ex": "研 (polish/study) + 究 (research) together form 研究, 'research'."
@@ -3742,76 +3742,76 @@
     {
       "q": "曜日 refers to:",
       "choices": [
-        "a season",
-        "a day of the week",
         "a time of day",
-        "a holiday"
+        "a holiday",
+        "a season",
+        "a day of the week"
       ],
-      "a": 1,
+      "a": 3,
       "ex": "曜 is specifically the kanji used for naming days of the week (月曜日, 火曜日, etc.)."
     },
     {
       "q": "会社員 means:",
       "choices": [
-        "company president",
         "company employee",
         "classroom",
-        "shop owner"
+        "shop owner",
+        "company president"
       ],
-      "a": 1,
+      "a": 0,
       "ex": "会社 (company) + 員 (member/staff) = 会社員, 'company employee'."
     },
     {
       "q": "Which kanji means 'borrow', as in かりる?",
       "choices": [
         "貸",
-        "借",
         "貯",
-        "賃"
+        "賃",
+        "借"
       ],
-      "a": 1,
+      "a": 3,
       "ex": "借 = borrow (借りる). Don't confuse it with 貸 (lend, 貸す) — they look similar but point in opposite directions."
     },
     {
       "q": "びょういん (hospital) and びょうき (illness) share which kanji, and what does it mean?",
       "choices": [
-        "院 — institution",
         "病 — sickness",
+        "者 — person",
         "気 — spirit",
-        "者 — person"
+        "院 — institution"
       ],
-      "a": 1,
+      "a": 0,
       "ex": "病 = sickness/disease. 病院 (hospital) and 病気 (illness) both use it."
     },
     {
       "q": "What does 有名 mean?",
       "choices": [
-        "famous",
+        "dangerous",
         "useful",
-        "expensive",
-        "dangerous"
+        "famous",
+        "expensive"
       ],
-      "a": 0,
+      "a": 2,
       "ex": "有 (exist/have) + 名 (name) = 有名, 'famous' — literally 'having a name'."
     },
     {
       "q": "知る means:",
       "choices": [
-        "to make",
         "to know",
-        "to sell",
-        "to send"
+        "to make",
+        "to send",
+        "to sell"
       ],
-      "a": 1,
+      "a": 0,
       "ex": "知 = know. 知る is the dictionary form of 'to know'."
     },
     {
       "q": "Which kanji is read あたま and means 'head'?",
       "choices": [
-        "顔",
+        "目",
         "頭",
         "首",
-        "目"
+        "顔"
       ],
       "a": 1,
       "ex": "頭 (あたま) = head. 顔 (かお) is 'face', a different body part kanji covered elsewhere on this list."
@@ -3819,199 +3819,199 @@
     {
       "q": "広い means:",
       "choices": [
-        "narrow",
-        "wide, spacious",
+        "far",
         "heavy",
-        "far"
+        "narrow",
+        "wide, spacious"
       ],
-      "a": 1,
+      "a": 3,
       "ex": "広 = wide/spacious. 広い is the い-adjective form."
     },
     {
       "q": "住む means:",
       "choices": [
-        "to live/reside",
-        "to visit",
         "to build",
-        "to leave"
+        "to leave",
+        "to live/reside",
+        "to visit"
       ],
-      "a": 0,
+      "a": 2,
       "ex": "住 = live/reside. 住む is the dictionary form of 'to live (somewhere)'."
     },
     {
       "q": "Which kanji pair, read うんどう, means 'exercise'?",
       "choices": [
-        "運＋動",
         "動＋業",
         "運＋転",
+        "運＋動",
         "力＋動"
       ],
-      "a": 0,
+      "a": 2,
       "ex": "運 (carry/luck) + 動 (move) = 運動, 'exercise' — literally 'moving [your body] around'."
     },
     {
       "q": "軽い is the opposite of which word on this list?",
       "choices": [
+        "弱い (weak)",
         "重い (heavy)",
         "安い (cheap)",
-        "早い (early)",
-        "弱い (weak)"
+        "早い (early)"
       ],
-      "a": 0,
+      "a": 1,
       "ex": "軽い (かるい, light in weight) is the opposite of 重い (おもい, heavy) — both are common N4 body/luggage-description adjectives."
     },
     {
       "q": "出発 is read, and means:",
       "choices": [
-        "しゅっぱつ — departure",
-        "でぱつ — display",
         "しゅつはつ — exit",
-        "しゅっぱい — failure"
+        "しゅっぱつ — departure",
+        "しゅっぱい — failure",
+        "でぱつ — display"
       ],
-      "a": 0,
+      "a": 1,
       "ex": "出発 (しゅっぱつ) = departure. Note the small っ that appears when 出 meets 発 — a very common sound change."
     },
     {
       "q": "地図 is read:",
       "choices": [
-        "ちず",
         "じず",
-        "ちと",
-        "ちどう"
+        "ちどう",
+        "ちず",
+        "ちと"
       ],
-      "a": 0,
+      "a": 2,
       "ex": "地図 (ちず) = map. 地 is チ here, and 図 is ズ — not the ト reading it has in 図書館 (としょかん)."
     },
     {
       "q": "心配 means:",
       "choices": [
-        "kindness",
         "worry, anxiety",
         "decision",
-        "distribution"
+        "distribution",
+        "kindness"
       ],
-      "a": 1,
+      "a": 0,
       "ex": "心 (heart) + 配 (distribute) = 心配, 'worry'. 心配しないでください — 'please don't worry' — is worth knowing as a set phrase."
     },
     {
       "q": "世界 is read:",
       "choices": [
+        "よかい",
         "せかい",
         "せいかい",
-        "よかい",
         "せがい"
       ],
-      "a": 0,
+      "a": 1,
       "ex": "世界 (せかい) = world. Both kanji drop their other readings in this very common compound."
     },
     {
       "q": "特別 means:",
       "choices": [
-        "ordinary",
         "special",
-        "separate seat",
-        "difficult"
+        "ordinary",
+        "difficult",
+        "separate seat"
       ],
-      "a": 1,
+      "a": 0,
       "ex": "特 (special) + 別 (separate) = 特別, 'special'. You'll see it on menus and train tickets constantly."
     },
     {
       "q": "Which kanji means 'to stop', as in とまる?",
       "choices": [
+        "歩",
         "正",
-        "止",
         "上",
-        "歩"
+        "止"
       ],
-      "a": 1,
+      "a": 3,
       "ex": "止 = stop. Watch out for 正 (correct) and 上 (up) — they're visually close but unrelated."
     },
     {
       "q": "お土産 is read:",
       "choices": [
-        "おみやげ",
-        "おどさん",
+        "おみあげ",
         "おつちさん",
-        "おみあげ"
+        "おどさん",
+        "おみやげ"
       ],
-      "a": 0,
+      "a": 3,
       "ex": "お土産 (おみやげ) = souvenir. It's an irregular reading you simply have to memorise as a whole word."
     },
     {
       "q": "交通 means:",
       "choices": [
-        "exchange",
         "traffic, transport",
+        "intersection",
         "communication",
-        "intersection"
+        "exchange"
       ],
-      "a": 1,
+      "a": 0,
       "ex": "交 (exchange/cross) + 通 (pass through) = 交通, 'traffic/transport'. 交通費 (こうつうひ) is travel expenses."
     },
     {
       "q": "言葉 is read, and means:",
       "choices": [
+        "ことは — this",
         "ことば — word, language",
-        "げんば — site",
         "いば — reason",
-        "ことは — this"
+        "げんば — site"
       ],
-      "a": 0,
+      "a": 1,
       "ex": "言葉 (ことば) = word/language. 言 is こと here rather than its usual い(う) or ゲン."
     },
     {
       "q": "説明 means:",
       "choices": [
+        "light",
         "explanation",
         "invitation",
-        "light",
         "opinion"
       ],
-      "a": 0,
+      "a": 1,
       "ex": "説 (theory/explain) + 明 (clear) = 説明, 'explanation'. 説明書 (せつめいしょ) is an instruction manual."
     },
     {
       "q": "Which is the correct reading of 映画?",
       "choices": [
-        "えいが",
-        "えいかく",
         "ようが",
+        "えいかく",
+        "えいが",
         "えいき"
       ],
-      "a": 0,
+      "a": 2,
       "ex": "映画 (えいが) = film. 画 is ガ here; in 画面 (がめん, screen) it's also ガ, but in 計画 (けいかく, plan) it's カク."
     },
     {
       "q": "到着 and 着る share 着. What does 着 cover?",
       "choices": [
+        "only arriving",
         "only clothing",
         "arriving and wearing",
-        "only arriving",
         "only starting"
       ],
-      "a": 1,
+      "a": 2,
       "ex": "着 spans both senses: 到着 (とうちゃく, arrival) / 着く (つく, to arrive) and 着る (きる, to wear). Same kanji, two jobs — a classic N4 trap."
     },
     {
       "q": "予定 vs 予約 — which one means 'reservation'?",
       "choices": [
+        "neither",
         "予定",
-        "予約",
         "both",
-        "neither"
+        "予約"
       ],
-      "a": 1,
+      "a": 3,
       "ex": "予約 (よやく) = reservation/booking; 予定 (よてい) = plan/schedule. 予 ('in advance') is shared, so keep the second kanji in mind."
     },
     {
       "q": "足りる means:",
       "choices": [
-        "to walk",
-        "to be enough",
+        "to stand",
         "to add",
-        "to stand"
+        "to walk",
+        "to be enough"
       ],
-      "a": 1,
+      "a": 3,
       "ex": "足 is 'foot' but also 'sufficient'. 足りる (たりる) = to be enough; お金が足りません is 'I don't have enough money'."
     }
   ]

@@ -221,6 +221,47 @@ if (WRITE) {
   console.log(`plain-text fields un-rubied: ${stripped}`);
 }
 
+/* 5 · A question that ASKS for a reading must not print that reading above the
+ * kanji it is asking about. Furigana is on by default, so "意味 is read:" with
+ * ruby renders as "いみ is read:" and hands over the answer. Step 3 works on
+ * raw file text and cannot tell a question stem from prose, so — exactly like
+ * step 4 — the markup is taken back out here. Without this, every run silently
+ * re-leaks six answers in quiz.json. kanjiQuiz asks the same kind of question
+ * with bare kanji and is the model being matched.
+ *
+ * Only the STEM is cleared; choices and explanation keep their furigana. */
+const ASKS_FOR_READING = /\bis read\b|\breading of\b|\bread\b\s*[,:]/i;
+
+function stripReadingStems(node) {
+  let n = 0;
+  if (Array.isArray(node)) { for (const v of node) n += stripReadingStems(v); return n; }
+  if (!node || typeof node !== "object") return 0;
+  for (const [key, value] of Object.entries(node)) {
+    if (key === "q" && typeof value === "string" && value.includes("<ruby>") && ASKS_FOR_READING.test(value)) {
+      node[key] = unruby(value); n++;
+    } else n += stripReadingStems(value);
+  }
+  return n;
+}
+
+if (WRITE) {
+  let leaks = 0;
+  for (const file of ["quiz.json", "kanji.json", "reading.json", "grammar.json", "grammar-extra.json", "kaiwa-scenarios.json"]) {
+    const p = path.join(DATA, file);
+    const raw = fs.readFileSync(p, "utf8");
+    const data = JSON.parse(raw);
+    const n = stripReadingStems(data);
+    if (n) {
+      let out = JSON.stringify(data, null, 2);
+      if (/\n$/.test(raw)) out += "\n";
+      if (raw.includes("\r\n")) out = out.replace(/\n/g, "\r\n");
+      fs.writeFileSync(p, out);
+      leaks += n;
+    }
+  }
+  console.log(`reading-question stems un-rubied (answer would otherwise be visible): ${leaks}`);
+}
+
 /* Multi-part segmentations are the only place this can go wrong: each piece
  * may be individually right while the compound has its own reading (三人 is
  * さんにん, never さん + ひと). Every one is printed so a human can check. */

@@ -100,6 +100,27 @@ const clock = (s) => Math.floor(Math.max(0, s) / 60) + ":" + String(Math.max(0, 
 /** Real N4 prints an A/B/C band per knowledge sub-section alongside the score. */
 const band = (right, total) => (!total ? "—" : right / total >= 0.67 ? "A" : right / total >= 0.34 ? "B" : "C");
 
+/* The official "認定結果及び成績に関する証明書" carries a パーセンタイル順位 — the share of
+ * examinees who scored below you — so the mock sheet carries one too.
+ *
+ * There is no cohort here to rank against: one person sits this paper. So the
+ * rank is read off a MODELLED distribution, not measured. It is a normal curve
+ * placed so that the pass mark falls near the published real-world N4 pass rate
+ * (which runs roughly 35–50% depending on the sitting); with mean 55 and sd 20,
+ * P(score >= 60) ≈ 0.40. That makes the number a fair indication of how a score
+ * sits against a realistic spread, and nothing more — the sheet says as much.
+ *
+ * Abramowitz & Stegun 7.1.26 for erf; plenty for two significant figures. */
+function percentileFor(total, max) {
+  const mean = max * 0.458, sd = max * 0.167; // 55 and 20 on the 120-point scale
+  const z = (total - mean) / sd;
+  const t = 1 / (1 + 0.3275911 * Math.abs(z) / Math.SQRT2);
+  const y = 1 - (((((1.061405429 * t - 1.453152027) * t) + 1.421413741) * t - 0.284496736) * t + 0.254829592) * t
+    * Math.exp(-(z * z) / 2);
+  const cdf = 0.5 * (1 + (z >= 0 ? y : -y));
+  return Math.min(99, Math.max(1, Math.round(cdf * 100)));
+}
+
 export default function MockExam() {
   const { answerQuestion, recordPoolResult, recordPick } = useQuiz();
   const [saved] = useState(loadSaved);
@@ -393,7 +414,14 @@ export default function MockExam() {
               onClick={() => { if (!confirmSubmit) { setConfirmSubmit(true); return; } submit(picks); }}
               onBlur={() => setConfirmSubmit(false)}
             >
-              {confirmSubmit ? "Tap again to finish" : "Finish and score"}
+              {/* The blank count goes on the button, not just in the note below
+                  it — this is the moment you decide, and unanswered questions
+                  are scored wrong. */}
+              {confirmSubmit
+                ? (flat.length - answeredCount > 0
+                    ? `Tap again — ${flat.length - answeredCount} still blank`
+                    : "Tap again to finish")
+                : "Finish and score"}
             </button>
           )}
         </div>
@@ -462,6 +490,10 @@ export default function MockExam() {
                     <td colSpan={2}>参考情報 · Reference information</td>
                   </tr>
                   <tr>
+                    <td>パーセンタイル順位<span>Percentile rank (estimated)</span></td>
+                    <td className="cert-band">{percentileFor(result.total, SECTION_MAX * 2)}</td>
+                  </tr>
+                  <tr>
                     <td>文字・語彙<span>Script &amp; vocabulary</span></td>
                     <td className="cert-band">{band(result.moji.right, result.moji.total)}</td>
                   </tr>
@@ -471,7 +503,11 @@ export default function MockExam() {
                   </tr>
                 </tbody>
               </table>
-              <div className="cert-refnote">A … 正答率67%以上　B … 34%以上67%未満　C … 34%未満</div>
+              <div className="cert-refnote">
+                A … 正答率67%以上　B … 34%以上67%未満　C … 34%未満<br />
+                パーセンタイル順位は実際の受験者データではなく、推定分布に基づく参考値です。
+                Percentile is estimated against a modelled score distribution, not real examinee data.
+              </div>
 
               <div className={"cert-verdict " + (result.passed ? "pass" : "fail")}>
                 <div className="cert-verdict-label">判定 Result</div>

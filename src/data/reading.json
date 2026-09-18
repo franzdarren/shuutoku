@@ -9,46 +9,82 @@
         "q": "なぜ<ruby>早<rt>はや</rt></ruby>めにホテルに<ruby>戻<rt>もど</rt></ruby>りましたか。",
         "choices": [
           "<ruby>疲<rt>つか</rt></ruby>れたから",
-          "<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>りそうだったから",
+          "<ruby>友達<rt>ともだち</rt></ruby>が<ruby>呼<rt>よ</rt></ruby>んだから",
           "お<ruby>店<rt>みせ</rt></ruby>が<ruby>閉<rt>し</rt></ruby>まるから",
-          "<ruby>友達<rt>ともだち</rt></ruby>が<ruby>呼<rt>よ</rt></ruby>んだから"
+          "<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>りそうだったから"
         ],
-        "a": 1,
+        "a": 3,
         "ex": "Text: <ruby>午後<rt>ごご</rt></ruby>は<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>りそうだったので、<ruby>早<rt>はや</rt></ruby>めにホテルに<ruby>戻<rt>もど</rt></ruby>った — 'since it looked like it would rain in the afternoon, we returned to the hotel early.'"
       },
       {
         "q": "お<ruby>昼<rt>ひる</rt></ruby>に<ruby>何<rt>なに</rt></ruby>を<ruby>食<rt>た</rt></ruby>べましたか。",
         "choices": [
-          "すし",
-          "うどん",
+          "お<ruby>好<rt>この</rt></ruby>み<ruby>焼<rt>や</rt></ruby>き",
           "ラーメン",
-          "お<ruby>好<rt>この</rt></ruby>み<ruby>焼<rt>や</rt></ruby>き"
+          "うどん",
+          "すし"
         ],
-        "a": 1,
+        "a": 2,
         "ex": "Text: お<ruby>昼<rt>ひる</rt></ruby>はうどんを<ruby>食<rt>た</rt></ruby>べた — 'we ate udon for lunch.'"
       },
       {
         "q": "<ruby>友達<rt>ともだち</rt></ruby>は<ruby>次<rt>つぎ</rt></ruby>、いつ<ruby>京都<rt>きょうと</rt></ruby>に<ruby>行<rt>い</rt></ruby>きたいと<ruby>言<rt>い</rt></ruby>っていましたか。",
         "choices": [
-          "<ruby>来年<rt>らいねん</rt></ruby>の<ruby>夏<rt>なつ</rt></ruby>",
           "<ruby>紅葉<rt>こうよう</rt></ruby>の<ruby>季節<rt>きせつ</rt></ruby>",
-          "お<ruby>正月<rt>しょうがつ</rt></ruby>",
-          "<ruby>来週<rt>らいしゅう</rt></ruby>"
+          "<ruby>来週<rt>らいしゅう</rt></ruby>",
+          "<ruby>来年<rt>らいねん</rt></ruby>の<ruby>夏<rt>なつ</rt></ruby>",
+          "お<ruby>正月<rt>しょうがつ</rt></ruby>"
         ],
-        "a": 1,
+        "a": 0,
         "ex": "Text: 「<ruby>今度<rt>こんど</rt></ruby>は<ruby>紅葉<rt>こうよう</rt></ruby>の<ruby>季節<rt>きせつ</rt></ruby>に<ruby>行<rt>い</rt></ruby>ってみたい」— the friend wants to visit during the autumn-leaves season."
       }
     ],
     "vocab": [
-      { "jp": "<ruby>旅行<rt>りょこう</rt></ruby>", "reading": "りょこう", "en": "trip" },
-      { "jp": "<ruby>着<rt>き</rt></ruby>く", "reading": "つく", "en": "to arrive" },
-      { "jp": "<ruby>清水寺<rt>きよみずでら</rt></ruby>", "reading": "きよみずでら", "en": "Kiyomizu Temple" },
-      { "jp": "坂", "reading": "さか", "en": "slope" },
-      { "jp": "お<ruby>土産<rt>みやげ</rt></ruby>", "reading": "おみやげ", "en": "souvenir" },
-      { "jp": "<ruby>早<rt>はや</rt></ruby>めに", "reading": "はやめに", "en": "ahead of time, early" },
-      { "jp": "戻る", "reading": "もどる", "en": "to return" },
-      { "jp": "<ruby>紅葉<rt>こうよう</rt></ruby>", "reading": "こうよう", "en": "autumn leaves" },
-      { "jp": "<ruby>季節<rt>きせつ</rt></ruby>", "reading": "きせつ", "en": "season" }
+      {
+        "jp": "<ruby>旅行<rt>りょこう</rt></ruby>",
+        "reading": "りょこう",
+        "en": "trip"
+      },
+      {
+        "jp": "<ruby>着<rt>き</rt></ruby>く",
+        "reading": "つく",
+        "en": "to arrive"
+      },
+      {
+        "jp": "<ruby>清水寺<rt>きよみずでら</rt></ruby>",
+        "reading": "きよみずでら",
+        "en": "Kiyomizu Temple"
+      },
+      {
+        "jp": "坂",
+        "reading": "さか",
+        "en": "slope"
+      },
+      {
+        "jp": "お<ruby>土産<rt>みやげ</rt></ruby>",
+        "reading": "おみやげ",
+        "en": "souvenir"
+      },
+      {
+        "jp": "<ruby>早<rt>はや</rt></ruby>めに",
+        "reading": "はやめに",
+        "en": "ahead of time, early"
+      },
+      {
+        "jp": "戻る",
+        "reading": "もどる",
+        "en": "to return"
+      },
+      {
+        "jp": "<ruby>紅葉<rt>こうよう</rt></ruby>",
+        "reading": "こうよう",
+        "en": "autumn leaves"
+      },
+      {
+        "jp": "<ruby>季節<rt>きせつ</rt></ruby>",
+        "reading": "きせつ",
+        "en": "season"
+      }
     ]
   },
   {
@@ -60,44 +96,68 @@
       {
         "q": "<ruby>点検中<rt>てんけんちゅう</rt></ruby>、エレベーターはどうなりますか。",
         "choices": [
+          "きれいになる",
           "<ruby>遅<rt>おそ</rt></ruby>くなる",
           "<ruby>使<rt>つか</rt></ruby>えなくなる",
-          "<ruby>安<rt>やす</rt></ruby>くなる",
-          "きれいになる"
+          "<ruby>安<rt>やす</rt></ruby>くなる"
         ],
-        "a": 1,
+        "a": 2,
         "ex": "Text: <ruby>点検中<rt>てんけんちゅう</rt></ruby>はエレベーターが<ruby>使<rt>つか</rt></ruby>えません — during the inspection, the elevator can't be used."
       },
       {
         "q": "<ruby>上<rt>うえ</rt></ruby>の<ruby>階<rt>かい</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでいる<ruby>人<rt>ひと</rt></ruby>は、<ruby>点検中<rt>てんけんちゅう</rt></ruby>どうすればいいですか。",
         "choices": [
           "エレベーターを<ruby>待<rt>ま</rt></ruby>つ",
-          "<ruby>階段<rt>かいだん</rt></ruby>を<ruby>使<rt>つか</rt></ruby>う",
           "<ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>す",
-          "<ruby>管理事務所<rt>かんりじむしょ</rt></ruby>に<ruby>行<rt>い</rt></ruby>く"
+          "<ruby>管理事務所<rt>かんりじむしょ</rt></ruby>に<ruby>行<rt>い</rt></ruby>く",
+          "<ruby>階段<rt>かいだん</rt></ruby>を<ruby>使<rt>つか</rt></ruby>う"
         ],
-        "a": 1,
+        "a": 3,
         "ex": "Text: <ruby>上<rt>うえ</rt></ruby>の<ruby>階<rt>かい</rt></ruby>にお<ruby>住<rt>す</rt></ruby>まいの<ruby>方<rt>かた</rt></ruby>は<ruby>階段<rt>かいだん</rt></ruby>をご<ruby>利用<rt>りよう</rt></ruby>ください — residents on upper floors should use the stairs."
       },
       {
         "q": "<ruby>質問<rt>しつもん</rt></ruby>がある<ruby>人<rt>ひと</rt></ruby>はどうすればいいですか。",
         "choices": [
-          "メールを<ruby>送<rt>おく</rt></ruby>る",
+          "<ruby>何<rt>なに</rt></ruby>もしなくていい",
           "<ruby>管理事務所<rt>かんりじむしょ</rt></ruby>に<ruby>連絡<rt>れんらく</rt></ruby>する",
           "エレベーターの<ruby>中<rt>なか</rt></ruby>で<ruby>待<rt>ま</rt></ruby>つ",
-          "<ruby>何<rt>なに</rt></ruby>もしなくていい"
+          "メールを<ruby>送<rt>おく</rt></ruby>る"
         ],
         "a": 1,
         "ex": "Text: ご<ruby>質問<rt>しつもん</rt></ruby>がある<ruby>方<rt>かた</rt></ruby>は、<ruby>管理事務所<rt>かんりじむしょ</rt></ruby>までご<ruby>連絡<rt>れんらく</rt></ruby>ください — contact the management office with questions."
       }
     ],
     "vocab": [
-      { "jp": "<ruby>点検<rt>てんけん</rt></ruby>", "reading": "てんけん", "en": "inspection" },
-      { "jp": "<ruby>日程<rt>にってい</rt></ruby>", "reading": "にってい", "en": "schedule" },
-      { "jp": "<ruby>階段<rt>かいだん</rt></ruby>", "reading": "かいだん", "en": "stairs" },
-      { "jp": "<ruby>不便<rt>ふべん</rt></ruby>", "reading": "ふべん", "en": "inconvenient" },
-      { "jp": "<ruby>協力<rt>きょうりょく</rt></ruby>", "reading": "きょうりょく", "en": "cooperation" },
-      { "jp": "<ruby>管理事務所<rt>かんりじむしょ</rt></ruby>", "reading": "かんりじむしょ", "en": "management office" }
+      {
+        "jp": "<ruby>点検<rt>てんけん</rt></ruby>",
+        "reading": "てんけん",
+        "en": "inspection"
+      },
+      {
+        "jp": "<ruby>日程<rt>にってい</rt></ruby>",
+        "reading": "にってい",
+        "en": "schedule"
+      },
+      {
+        "jp": "<ruby>階段<rt>かいだん</rt></ruby>",
+        "reading": "かいだん",
+        "en": "stairs"
+      },
+      {
+        "jp": "<ruby>不便<rt>ふべん</rt></ruby>",
+        "reading": "ふべん",
+        "en": "inconvenient"
+      },
+      {
+        "jp": "<ruby>協力<rt>きょうりょく</rt></ruby>",
+        "reading": "きょうりょく",
+        "en": "cooperation"
+      },
+      {
+        "jp": "<ruby>管理事務所<rt>かんりじむしょ</rt></ruby>",
+        "reading": "かんりじむしょ",
+        "en": "management office"
+      }
     ]
   },
   {
@@ -109,31 +169,31 @@
       {
         "q": "<ruby>新<rt>あたら</rt></ruby>しい<ruby>映画<rt>えいが</rt></ruby>について、みほさんは<ruby>何<rt>なん</rt></ruby>と<ruby>言<rt>い</rt></ruby>っていますか。",
         "choices": [
-          "つまらないらしい",
           "<ruby>面白<rt>おもしろ</rt></ruby>いらしい",
           "もう<ruby>終<rt>お</rt></ruby>わったらしい",
+          "つまらないらしい",
           "<ruby>高<rt>たか</rt></ruby>いらしい"
         ],
-        "a": 1,
+        "a": 0,
         "ex": "Text: <ruby>新<rt>あたら</rt></ruby>しい<ruby>映画<rt>えいが</rt></ruby>がとても<ruby>面白<rt>おもしろ</rt></ruby>いらしいよ — 'apparently the new movie is really interesting.'"
       },
       {
         "q": "ゆきちゃんが<ruby>今週<rt>こんしゅう</rt></ruby><ruby>忙<rt>いそが</rt></ruby>しかったら、どうする<ruby>予定<rt>よてい</rt></ruby>ですか。",
         "choices": [
           "<ruby>映画<rt>えいが</rt></ruby>をあきらめる",
+          "<ruby>電話<rt>でんわ</rt></ruby>する",
           "<ruby>来週<rt>らいしゅう</rt></ruby><ruby>行<rt>い</rt></ruby>く",
-          "<ruby>一人<rt>ひとり</rt></ruby>で<ruby>行<rt>い</rt></ruby>く",
-          "<ruby>電話<rt>でんわ</rt></ruby>する"
+          "<ruby>一人<rt>ひとり</rt></ruby>で<ruby>行<rt>い</rt></ruby>く"
         ],
-        "a": 1,
+        "a": 2,
         "ex": "Text: もしゆきちゃんが<ruby>忙<rt>いそが</rt></ruby>しいなら、<ruby>来週<rt>らいしゅう</rt></ruby>でもいいよ — 'if you're busy, next week is fine too.'"
       },
       {
         "q": "ラーメン<ruby>屋<rt>や</rt></ruby>について、みほさんはどう<ruby>思<rt>おも</rt></ruby>っていますか。",
         "choices": [
-          "あまり<ruby>行<rt>い</rt></ruby>きたくない",
-          "<ruby>前<rt>まえ</rt></ruby>から<ruby>行<rt>い</rt></ruby>ってみたい",
           "もう<ruby>行<rt>い</rt></ruby>ったことがある",
+          "<ruby>前<rt>まえ</rt></ruby>から<ruby>行<rt>い</rt></ruby>ってみたい",
+          "あまり<ruby>行<rt>い</rt></ruby>きたくない",
           "<ruby>高<rt>たか</rt></ruby>そうだから<ruby>行<rt>い</rt></ruby>かない"
         ],
         "a": 1,
@@ -141,10 +201,26 @@
       }
     ],
     "vocab": [
-      { "jp": "らしい", "reading": "", "en": "apparently, I heard" },
-      { "jp": "なら", "reading": "", "en": "if (reacting to a topic)" },
-      { "jp": "前に", "reading": "まえに", "en": "previously, before" },
-      { "jp": "<ruby>返事<rt>へんじ</rt></ruby>", "reading": "へんじ", "en": "reply" }
+      {
+        "jp": "らしい",
+        "reading": "",
+        "en": "apparently, I heard"
+      },
+      {
+        "jp": "なら",
+        "reading": "",
+        "en": "if (reacting to a topic)"
+      },
+      {
+        "jp": "前に",
+        "reading": "まえに",
+        "en": "previously, before"
+      },
+      {
+        "jp": "<ruby>返事<rt>へんじ</rt></ruby>",
+        "reading": "へんじ",
+        "en": "reply"
+      }
     ]
   },
   {
@@ -156,57 +232,89 @@
       {
         "q": "<ruby>店<rt>みせ</rt></ruby>はいつ<ruby>休<rt>やす</rt></ruby>みますか。",
         "choices": [
-          "12<ruby>月<rt>がつ</rt></ruby>3<ruby>日<rt>にち</rt></ruby>から5<ruby>日<rt>にち</rt></ruby>まで",
-          "12<ruby>月<rt>がつ</rt></ruby>5<ruby>日<rt>にち</rt></ruby>だけ",
           "12<ruby>月<rt>がつ</rt></ruby>6<ruby>日<rt>にち</rt></ruby>から",
-          "<ruby>一週間<rt>いっしゅうかん</rt></ruby>ずっと"
+          "12<ruby>月<rt>がつ</rt></ruby>3<ruby>日<rt>にち</rt></ruby>から5<ruby>日<rt>にち</rt></ruby>まで",
+          "<ruby>一週間<rt>いっしゅうかん</rt></ruby>ずっと",
+          "12<ruby>月<rt>がつ</rt></ruby>5<ruby>日<rt>にち</rt></ruby>だけ"
         ],
-        "a": 0,
+        "a": 1,
         "ex": "The notice lists <ruby>休<rt>やす</rt></ruby>み：12<ruby>月<rt>がつ</rt></ruby>3<ruby>日<rt>にち</rt></ruby>（<ruby>水<rt>すい</rt></ruby>）〜12<ruby>月<rt>がつ</rt></ruby>5<ruby>日<rt>にち</rt></ruby>（<ruby>金<rt>きん</rt></ruby>） — closed from the 3rd through the 5th."
       },
       {
         "q": "12<ruby>月<rt>がつ</rt></ruby>8<ruby>日<rt>にち</rt></ruby>に<ruby>行<rt>い</rt></ruby>ったら、<ruby>商品<rt>しょうひん</rt></ruby>はどうなりますか。",
         "choices": [
           "<ruby>普通<rt>ふつう</rt></ruby>の<ruby>値段<rt>ねだん</rt></ruby>",
+          "<ruby>買<rt>か</rt></ruby>えない",
           "10％<ruby>安<rt>やす</rt></ruby>い",
-          "15％<ruby>安<rt>やす</rt></ruby>い",
-          "<ruby>買<rt>か</rt></ruby>えない"
+          "15％<ruby>安<rt>やす</rt></ruby>い"
         ],
-        "a": 1,
+        "a": 2,
         "ex": "The discount runs one week from 12/6, so the 8th is inside it: everything is 10% off. The extra 5% only applies to cardholders."
       },
       {
         "q": "カードを<ruby>持<rt>も</rt></ruby>っている<ruby>人<rt>ひと</rt></ruby>は、<ruby>全部<rt>ぜんぶ</rt></ruby>で<ruby>何<rt>なん</rt></ruby>％<ruby>安<rt>やす</rt></ruby>くなりますか。",
         "choices": [
-          "5％",
-          "10％",
           "15％",
+          "10％",
+          "5％",
           "<ruby>割引<rt>わりびき</rt></ruby>なし"
         ],
-        "a": 2,
+        "a": 0,
         "ex": "10% for everyone, plus さらに5％ for cardholders — 15% in total. さらに ('further') is the key word."
       },
       {
         "q": "なぜ<ruby>店<rt>みせ</rt></ruby>は<ruby>休<rt>やす</rt></ruby>みますか。",
         "choices": [
           "<ruby>店員<rt>てんいん</rt></ruby>が<ruby>少<rt>すく</rt></ruby>ないから",
-          "<ruby>店内<rt>てんない</rt></ruby>の<ruby>工事<rt>こうじ</rt></ruby>のため",
+          "<ruby>商品<rt>しょうひん</rt></ruby>がないから",
           "お<ruby>正月<rt>しょうがつ</rt></ruby>だから",
-          "<ruby>商品<rt>しょうひん</rt></ruby>がないから"
+          "<ruby>店内<rt>てんない</rt></ruby>の<ruby>工事<rt>こうじ</rt></ruby>のため"
         ],
-        "a": 1,
+        "a": 3,
         "ex": "<ruby>店内<rt>てんない</rt></ruby>の<ruby>工事<rt>こうじ</rt></ruby>のため — 'due to construction inside the shop'. 〜のため here marks a reason, not a purpose."
       }
     ],
     "vocab": [
-      { "jp": "<ruby>工事<rt>こうじ</rt></ruby>", "reading": "こうじ", "en": "construction" },
-      { "jp": "<ruby>期間<rt>きかん</rt></ruby>", "reading": "きかん", "en": "period" },
-      { "jp": "<ruby>再開<rt>さいかい</rt></ruby>", "reading": "さいかい", "en": "reopening" },
-      { "jp": "<ruby>商品<rt>しょうひん</rt></ruby>", "reading": "しょうひん", "en": "goods" },
-      { "jp": "<ruby>割引<rt>わりびき</rt></ruby>", "reading": "わりびき", "en": "discount" },
-      { "jp": "なお", "reading": "", "en": "moreover, in addition" },
-      { "jp": "さらに", "reading": "", "en": "further, even more" },
-      { "jp": "<ruby>不便<rt>ふべん</rt></ruby>", "reading": "ふべん", "en": "inconvenience" }
+      {
+        "jp": "<ruby>工事<rt>こうじ</rt></ruby>",
+        "reading": "こうじ",
+        "en": "construction"
+      },
+      {
+        "jp": "<ruby>期間<rt>きかん</rt></ruby>",
+        "reading": "きかん",
+        "en": "period"
+      },
+      {
+        "jp": "<ruby>再開<rt>さいかい</rt></ruby>",
+        "reading": "さいかい",
+        "en": "reopening"
+      },
+      {
+        "jp": "<ruby>商品<rt>しょうひん</rt></ruby>",
+        "reading": "しょうひん",
+        "en": "goods"
+      },
+      {
+        "jp": "<ruby>割引<rt>わりびき</rt></ruby>",
+        "reading": "わりびき",
+        "en": "discount"
+      },
+      {
+        "jp": "なお",
+        "reading": "",
+        "en": "moreover, in addition"
+      },
+      {
+        "jp": "さらに",
+        "reading": "",
+        "en": "further, even more"
+      },
+      {
+        "jp": "<ruby>不便<rt>ふべん</rt></ruby>",
+        "reading": "ふべん",
+        "en": "inconvenience"
+      }
     ]
   },
   {
@@ -218,45 +326,45 @@
       {
         "q": "1<ruby>日目<rt>にちめ</rt></ruby>、<ruby>空港<rt>くうこう</rt></ruby>からホテルまでどうやって<ruby>行<rt>い</rt></ruby>きますか。",
         "choices": [
-          "バス",
           "<ruby>電車<rt>でんしゃ</rt></ruby>",
-          "タクシー",
-          "<ruby>歩<rt>ある</rt></ruby>いて"
+          "バス",
+          "<ruby>歩<rt>ある</rt></ruby>いて",
+          "タクシー"
         ],
-        "a": 1,
+        "a": 0,
         "ex": "<ruby>電車<rt>でんしゃ</rt></ruby>でホテルまで<ruby>来<rt>き</rt></ruby>てください — she asks him to come by train."
       },
       {
         "q": "2<ruby>日目<rt>にちめ</rt></ruby>に<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>ったら、どうしますか。",
         "choices": [
-          "<ruby>京都<rt>きょうと</rt></ruby>へ<ruby>行<rt>い</rt></ruby>く",
-          "<ruby>美術館<rt>びじゅつかん</rt></ruby>へ<ruby>行<rt>い</rt></ruby>く",
           "ホテルで<ruby>休<rt>やす</rt></ruby>む",
-          "<ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>をする"
+          "<ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>をする",
+          "<ruby>京都<rt>きょうと</rt></ruby>へ<ruby>行<rt>い</rt></ruby>く",
+          "<ruby>美術館<rt>びじゅつかん</rt></ruby>へ<ruby>行<rt>い</rt></ruby>く"
         ],
-        "a": 1,
+        "a": 3,
         "ex": "<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>ったら、<ruby>美術館<rt>びじゅつかん</rt></ruby>に<ruby>変<rt>か</rt></ruby>えます — the plan switches to the art museum if it rains."
       },
       {
         "q": "ゆかさんは<ruby>何<rt>なに</rt></ruby>を<ruby>持<rt>も</rt></ruby>ってきたほうがいいと<ruby>言<rt>い</rt></ruby>っていますか。",
         "choices": [
           "<ruby>傘<rt>かさ</rt></ruby>と<ruby>地図<rt>ちず</rt></ruby>",
-          "<ruby>歩<rt>ある</rt></ruby>きやすい<ruby>靴<rt>くつ</rt></ruby>と<ruby>上着<rt>うわぎ</rt></ruby>",
           "カメラ",
+          "<ruby>歩<rt>ある</rt></ruby>きやすい<ruby>靴<rt>くつ</rt></ruby>と<ruby>上着<rt>うわぎ</rt></ruby>",
           "お<ruby>土産<rt>みやげ</rt></ruby>"
         ],
-        "a": 1,
+        "a": 2,
         "ex": "<ruby>歩<rt>ある</rt></ruby>きやすい<ruby>靴<rt>くつ</rt></ruby> plus <ruby>上着<rt>うわぎ</rt></ruby> — comfortable shoes because of all the walking, and a jacket because it's supposed to get cold."
       },
       {
         "q": "3<ruby>日目<rt>にちめ</rt></ruby>はどんな<ruby>日<rt>ひ</rt></ruby>ですか。",
         "choices": [
-          "<ruby>朝<rt>あさ</rt></ruby>から<ruby>京都<rt>きょうと</rt></ruby>へ<ruby>行<rt>い</rt></ruby>く<ruby>日<rt>ひ</rt></ruby>",
-          "<ruby>自由<rt>じゆう</rt></ruby>に<ruby>行動<rt>こうどう</rt></ruby>する<ruby>日<rt>ひ</rt></ruby>",
           "<ruby>空港<rt>くうこう</rt></ruby>に<ruby>行<rt>い</rt></ruby>く<ruby>日<rt>ひ</rt></ruby>",
-          "<ruby>仕事<rt>しごと</rt></ruby>の<ruby>日<rt>ひ</rt></ruby>"
+          "<ruby>朝<rt>あさ</rt></ruby>から<ruby>京都<rt>きょうと</rt></ruby>へ<ruby>行<rt>い</rt></ruby>く<ruby>日<rt>ひ</rt></ruby>",
+          "<ruby>仕事<rt>しごと</rt></ruby>の<ruby>日<rt>ひ</rt></ruby>",
+          "<ruby>自由<rt>じゆう</rt></ruby>に<ruby>行動<rt>こうどう</rt></ruby>する<ruby>日<rt>ひ</rt></ruby>"
         ],
-        "a": 1,
+        "a": 3,
         "ex": "3<ruby>日目<rt>にちめ</rt></ruby>：<ruby>自由行動<rt>じゆうこうどう</rt></ruby>です — it's a free day. <ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>がしたいなら<ruby>案内<rt>あんない</rt></ruby>します offers to show him around if he wants to shop."
       },
       {
@@ -272,12 +380,36 @@
       }
     ],
     "vocab": [
-      { "jp": "〜<ruby>日目<rt>にちめ</rt></ruby>", "reading": "にちめ", "en": "the ~th day" },
-      { "jp": "<ruby>自由行動<rt>じゆうこうどう</rt></ruby>", "reading": "じゆうこうどう", "en": "free time, own schedule" },
-      { "jp": "<ruby>案内<rt>あんない</rt></ruby>する", "reading": "あんないする", "en": "to show around" },
-      { "jp": "<ruby>上着<rt>うわぎ</rt></ruby>", "reading": "うわぎ", "en": "jacket" },
-      { "jp": "〜たほうがいい", "reading": "", "en": "had better" },
-      { "jp": "〜ないようにする", "reading": "", "en": "make sure not to" }
+      {
+        "jp": "〜<ruby>日目<rt>にちめ</rt></ruby>",
+        "reading": "にちめ",
+        "en": "the ~th day"
+      },
+      {
+        "jp": "<ruby>自由行動<rt>じゆうこうどう</rt></ruby>",
+        "reading": "じゆうこうどう",
+        "en": "free time, own schedule"
+      },
+      {
+        "jp": "<ruby>案内<rt>あんない</rt></ruby>する",
+        "reading": "あんないする",
+        "en": "to show around"
+      },
+      {
+        "jp": "<ruby>上着<rt>うわぎ</rt></ruby>",
+        "reading": "うわぎ",
+        "en": "jacket"
+      },
+      {
+        "jp": "〜たほうがいい",
+        "reading": "",
+        "en": "had better"
+      },
+      {
+        "jp": "〜ないようにする",
+        "reading": "",
+        "en": "make sure not to"
+      }
     ]
   },
   {
@@ -289,68 +421,574 @@
       {
         "q": "なぜ<ruby>朝<rt>あさ</rt></ruby>ご<ruby>飯<rt>はん</rt></ruby>があまり<ruby>食<rt>た</rt></ruby>べられませんでしたか。",
         "choices": [
-          "<ruby>時間<rt>じかん</rt></ruby>がなかったから",
           "<ruby>緊張<rt>きんちょう</rt></ruby>していたから",
+          "<ruby>時間<rt>じかん</rt></ruby>がなかったから",
           "おいしくなかったから",
           "お<ruby>金<rt>かね</rt></ruby>がなかったから"
         ],
-        "a": 1,
+        "a": 0,
         "ex": "<ruby>朝<rt>あさ</rt></ruby>から<ruby>緊張<rt>きんちょう</rt></ruby>していて、ご<ruby>飯<rt>はん</rt></ruby>があまり<ruby>食<rt>た</rt></ruby>べられなかった — nerves, not time. Note <ruby>食<rt>た</rt></ruby>べられなかった is the potential, 'couldn't eat'."
       },
       {
         "q": "<ruby>面接<rt>めんせつ</rt></ruby>に<ruby>遅<rt>おく</rt></ruby>れましたか。",
         "choices": [
-          "<ruby>遅<rt>おく</rt></ruby>れた",
           "ぎりぎり<ruby>間<rt>ま</rt></ruby>に<ruby>合<rt>あ</rt></ruby>った",
-          "<ruby>行<rt>い</rt></ruby>かなかった",
-          "<ruby>早<rt>はや</rt></ruby>く<ruby>着<rt>つ</rt></ruby>いた"
+          "<ruby>遅<rt>おく</rt></ruby>れた",
+          "<ruby>早<rt>はや</rt></ruby>く<ruby>着<rt>つ</rt></ruby>いた",
+          "<ruby>行<rt>い</rt></ruby>かなかった"
         ],
-        "a": 1,
+        "a": 0,
         "ex": "<ruby>早<rt>はや</rt></ruby>く<ruby>家<rt>いえ</rt></ruby>を<ruby>出<rt>で</rt></ruby>たのに、<ruby>電車<rt>でんしゃ</rt></ruby>が<ruby>遅<rt>おく</rt></ruby>れて、ぎりぎり<ruby>間<rt>ま</rt></ruby>に<ruby>合<rt>あ</rt></ruby>った — they only just made it. のに signals the unexpected contrast."
       },
       {
         "q": "<ruby>店長<rt>てんちょう</rt></ruby>について、この<ruby>人<rt>ひと</rt></ruby>はどう<ruby>思<rt>おも</rt></ruby>いましたか。",
         "choices": [
-          "こわい<ruby>人<rt>ひと</rt></ruby>だ",
-          "<ruby>優<rt>やさ</rt></ruby>しい<ruby>人<rt>ひと</rt></ruby>だ",
           "いそがしい<ruby>人<rt>ひと</rt></ruby>だ",
-          "<ruby>若<rt>わか</rt></ruby>い<ruby>人<rt>ひと</rt></ruby>だ"
+          "こわい<ruby>人<rt>ひと</rt></ruby>だ",
+          "<ruby>若<rt>わか</rt></ruby>い<ruby>人<rt>ひと</rt></ruby>だ",
+          "<ruby>優<rt>やさ</rt></ruby>しい<ruby>人<rt>ひと</rt></ruby>だ"
         ],
-        "a": 1,
+        "a": 3,
         "ex": "<ruby>店長<rt>てんちょう</rt></ruby>は<ruby>優<rt>やさ</rt></ruby>しい<ruby>人<rt>ひと</rt></ruby>で、ゆっくり<ruby>話<rt>はな</rt></ruby>してくれた — kind, and spoke slowly for them (〜てくれた marks the favour)."
       },
       {
         "q": "<ruby>何<rt>なに</rt></ruby>が<ruby>難<rt>むずか</rt></ruby>しかったですか。",
         "choices": [
-          "<ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>ること",
-          "<ruby>敬語<rt>けいご</rt></ruby>を<ruby>使<rt>つか</rt></ruby>うこと",
           "<ruby>店<rt>みせ</rt></ruby>に<ruby>行<rt>い</rt></ruby>くこと",
-          "<ruby>答<rt>こた</rt></ruby>えを<ruby>聞<rt>き</rt></ruby>くこと"
+          "<ruby>答<rt>こた</rt></ruby>えを<ruby>聞<rt>き</rt></ruby>くこと",
+          "<ruby>敬語<rt>けいご</rt></ruby>を<ruby>使<rt>つか</rt></ruby>うこと",
+          "<ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>ること"
         ],
-        "a": 1,
+        "a": 2,
         "ex": "<ruby>敬語<rt>けいご</rt></ruby>を<ruby>使<rt>つか</rt></ruby>うのは<ruby>難<rt>むずか</rt></ruby>しかった — using polite language was the hard part, though they still said everything they wanted to."
       },
       {
         "q": "<ruby>最後<rt>さいご</rt></ruby>に、この<ruby>人<rt>ひと</rt></ruby>はどう<ruby>考<rt>かんが</rt></ruby>えていますか。",
         "choices": [
-          "もう<ruby>面接<rt>めんせつ</rt></ruby>をしたくない",
-          "だめでも<ruby>練習<rt>れんしゅう</rt></ruby>になったからよかった",
           "<ruby>絶対<rt>ぜったい</rt></ruby>に<ruby>合格<rt>ごうかく</rt></ruby>すると<ruby>思<rt>おも</rt></ruby>う",
-          "<ruby>来週<rt>らいしゅう</rt></ruby>まで<ruby>心配<rt>しんぱい</rt></ruby>で<ruby>眠<rt>ねむ</rt></ruby>れない"
+          "だめでも<ruby>練習<rt>れんしゅう</rt></ruby>になったからよかった",
+          "<ruby>来週<rt>らいしゅう</rt></ruby>まで<ruby>心配<rt>しんぱい</rt></ruby>で<ruby>眠<rt>ねむ</rt></ruby>れない",
+          "もう<ruby>面接<rt>めんせつ</rt></ruby>をしたくない"
         ],
         "a": 1,
         "ex": "だめだったら<ruby>残念<rt>ざんねん</rt></ruby>だけど、<ruby>今日<rt>きょう</rt></ruby>は<ruby>練習<rt>れんしゅう</rt></ruby>になったから、それだけでもよかった — even if it doesn't work out, the practice was worth it."
       }
     ],
     "vocab": [
-      { "jp": "<ruby>面接<rt>めんせつ</rt></ruby>", "reading": "めんせつ", "en": "interview" },
-      { "jp": "<ruby>緊張<rt>きんちょう</rt></ruby>する", "reading": "きんちょうする", "en": "to be nervous" },
-      { "jp": "ぎりぎり", "reading": "", "en": "just barely" },
-      { "jp": "間に<ruby>合<rt>あ</rt></ruby>う", "reading": "まにあう", "en": "to make it in time" },
-      { "jp": "<ruby>店長<rt>てんちょう</rt></ruby>", "reading": "てんちょう", "en": "shop manager" },
-      { "jp": "<ruby>敬語<rt>けいご</rt></ruby>", "reading": "けいご", "en": "polite/honorific language" },
-      { "jp": "だめ", "reading": "", "en": "no good" },
-      { "jp": "<ruby>残念<rt>ざんねん</rt></ruby>", "reading": "ざんねん", "en": "a shame" }
+      {
+        "jp": "<ruby>面接<rt>めんせつ</rt></ruby>",
+        "reading": "めんせつ",
+        "en": "interview"
+      },
+      {
+        "jp": "<ruby>緊張<rt>きんちょう</rt></ruby>する",
+        "reading": "きんちょうする",
+        "en": "to be nervous"
+      },
+      {
+        "jp": "ぎりぎり",
+        "reading": "",
+        "en": "just barely"
+      },
+      {
+        "jp": "間に<ruby>合<rt>あ</rt></ruby>う",
+        "reading": "まにあう",
+        "en": "to make it in time"
+      },
+      {
+        "jp": "<ruby>店長<rt>てんちょう</rt></ruby>",
+        "reading": "てんちょう",
+        "en": "shop manager"
+      },
+      {
+        "jp": "<ruby>敬語<rt>けいご</rt></ruby>",
+        "reading": "けいご",
+        "en": "polite/honorific language"
+      },
+      {
+        "jp": "だめ",
+        "reading": "",
+        "en": "no good"
+      },
+      {
+        "jp": "<ruby>残念<rt>ざんねん</rt></ruby>",
+        "reading": "ざんねん",
+        "en": "a shame"
+      }
+    ]
+  },
+  {
+    "title": "お<ruby>知<rt>し</rt></ruby>らせ — <ruby>図書館<rt>としょかん</rt></ruby>の<ruby>利用<rt>りよう</rt></ruby><ruby>案内<rt>あんない</rt></ruby>",
+    "titleEn": "Notice — library guide",
+    "text": "<ruby>市立<rt>しりつ</rt></ruby><ruby>図書館<rt>としょかん</rt></ruby>のご<ruby>案内<rt>あんない</rt></ruby>\n\n<ruby>開館時間<rt>かいかんじかん</rt></ruby>：<ruby>午前<rt>ごぜん</rt></ruby>9<ruby>時<rt>じ</rt></ruby>〜<ruby>午後<rt>ごご</rt></ruby>7<ruby>時<rt>じ</rt></ruby>（<ruby>土曜<rt>どよう</rt></ruby>・<ruby>日曜<rt>にちよう</rt></ruby>は<ruby>午後<rt>ごご</rt></ruby>5<ruby>時<rt>じ</rt></ruby>まで）\n<ruby>休館日<rt>きゅうかんび</rt></ruby>：<ruby>毎週<rt>まいしゅう</rt></ruby><ruby>月曜日<rt>げつようび</rt></ruby>\n\n<ruby>本<rt>ほん</rt></ruby>は<ruby>一人<rt>ひとり</rt></ruby>10<ruby>冊<rt>さつ</rt></ruby>まで、2<ruby>週間<rt>しゅうかん</rt></ruby><ruby>借<rt>か</rt></ruby>りることができます。<ruby>返<rt>かえ</rt></ruby>すのが<ruby>遅<rt>おく</rt></ruby>れた<ruby>場合<rt>ばあい</rt></ruby>、<ruby>次<rt>つぎ</rt></ruby>に<ruby>借<rt>か</rt></ruby>りられるようになるまで1<ruby>週間<rt>しゅうかん</rt></ruby>かかりますので、<ruby>気<rt>き</rt></ruby>をつけてください。\n\n2<ruby>階<rt>かい</rt></ruby>には<ruby>勉強<rt>べんきょう</rt></ruby>できる<ruby>部屋<rt>へや</rt></ruby>があります。<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>は、<ruby>蓋<rt>ふた</rt></ruby>のあるものだけ<ruby>持<rt>も</rt></ruby>って<ruby>入<rt>はい</rt></ruby>ることができます。",
+    "gloss": "市立 (しりつ) municipal, city-run ・ 開館時間 (かいかんじかん) opening hours ・ 休館日 (きゅうかんび) closed day ・ 冊 (さつ) counter for books ・ 蓋 (ふた) lid",
+    "quiz": [
+      {
+        "q": "<ruby>日曜日<rt>にちようび</rt></ruby>、<ruby>図書館<rt>としょかん</rt></ruby>は<ruby>何時<rt>なんじ</rt></ruby>までですか。",
+        "choices": [
+          "<ruby>午後<rt>ごご</rt></ruby>7<ruby>時<rt>じ</rt></ruby>まで",
+          "<ruby>午後<rt>ごご</rt></ruby>5<ruby>時<rt>じ</rt></ruby>まで",
+          "<ruby>午前<rt>ごぜん</rt></ruby>9<ruby>時<rt>じ</rt></ruby>まで",
+          "<ruby>休<rt>やす</rt></ruby>みです"
+        ],
+        "a": 1,
+        "ex": "<ruby>土曜<rt>どよう</rt></ruby>・<ruby>日曜<rt>にちよう</rt></ruby>は<ruby>午後<rt>ごご</rt></ruby>5<ruby>時<rt>じ</rt></ruby>まで — weekends close at 5pm, two hours earlier than weekdays."
+      },
+      {
+        "q": "<ruby>本<rt>ほん</rt></ruby>は<ruby>一人<rt>ひとり</rt></ruby><ruby>何冊<rt>なんさつ</rt></ruby>まで<ruby>借<rt>か</rt></ruby>りられますか。",
+        "choices": [
+          "2<ruby>冊<rt>さつ</rt></ruby>",
+          "5<ruby>冊<rt>さつ</rt></ruby>",
+          "10<ruby>冊<rt>さつ</rt></ruby>",
+          "<ruby>制限<rt>せいげん</rt></ruby>なし"
+        ],
+        "a": 2,
+        "ex": "<ruby>本<rt>ほん</rt></ruby>は<ruby>一人<rt>ひとり</rt></ruby>10<ruby>冊<rt>さつ</rt></ruby>まで — up to ten books per person, for two weeks."
+      },
+      {
+        "q": "<ruby>返<rt>かえ</rt></ruby>すのが<ruby>遅<rt>おく</rt></ruby>れたら、どうなりますか。",
+        "choices": [
+          "お<ruby>金<rt>かね</rt></ruby>を<ruby>払<rt>はら</rt></ruby>う",
+          "<ruby>本<rt>ほん</rt></ruby>が<ruby>買<rt>か</rt></ruby>えなくなる",
+          "<ruby>図書館<rt>としょかん</rt></ruby>に<ruby>入<rt>い</rt></ruby>れない",
+          "1<ruby>週間<rt>しゅうかん</rt></ruby><ruby>借<rt>か</rt></ruby>りられない"
+        ],
+        "a": 3,
+        "ex": "<ruby>次<rt>つぎ</rt></ruby>に<ruby>借<rt>か</rt></ruby>りられるようになるまで1<ruby>週間<rt>しゅうかん</rt></ruby>かかります — you simply have to wait a week before borrowing again."
+      },
+      {
+        "q": "2<ruby>階<rt>かい</rt></ruby>の<ruby>部屋<rt>へや</rt></ruby>に<ruby>持<rt>も</rt></ruby>って<ruby>入<rt>い</rt></ruby>れる<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>はどれですか。",
+        "choices": [
+          "<ruby>蓋<rt>ふた</rt></ruby>のある<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>",
+          "<ruby>温<rt>あたた</rt></ruby>かい<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>",
+          "<ruby>水<rt>みず</rt></ruby>だけ",
+          "<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>は<ruby>全部<rt>ぜんぶ</rt></ruby>だめ"
+        ],
+        "a": 0,
+        "ex": "<ruby>蓋<rt>ふた</rt></ruby>のあるものだけ — only drinks with a lid. 〜だけ marks the single exception to the rule."
+      }
+    ],
+    "vocab": [
+      {
+        "jp": "市立",
+        "reading": "しりつ",
+        "en": "municipal, city-run"
+      },
+      {
+        "jp": "開館時間",
+        "reading": "かいかんじかん",
+        "en": "opening hours"
+      },
+      {
+        "jp": "休館日",
+        "reading": "きゅうかんび",
+        "en": "closed day"
+      },
+      {
+        "jp": "冊",
+        "reading": "さつ",
+        "en": "counter for books"
+      },
+      {
+        "jp": "蓋",
+        "reading": "ふた",
+        "en": "lid"
+      }
+    ]
+  },
+  {
+    "title": "メール — アルバイトのシフト",
+    "titleEn": "Email — a shift change request",
+    "text": "<ruby>店長<rt>てんちょう</rt></ruby>へ\n\nお<ruby>疲<rt>つか</rt></ruby>れさまです。<ruby>田中<rt>たなか</rt></ruby>です。\n\n<ruby>来週<rt>らいしゅう</rt></ruby>の<ruby>金曜日<rt>きんようび</rt></ruby>ですが、<ruby>大学<rt>だいがく</rt></ruby>の<ruby>試験<rt>しけん</rt></ruby>が<ruby>入<rt>はい</rt></ruby>ってしまいました。<ruby>申<rt>もう</rt></ruby>し<ruby>訳<rt>わけ</rt></ruby>ありませんが、シフトを<ruby>変<rt>か</rt></ruby>えていただけないでしょうか。\n\n<ruby>木曜日<rt>もくようび</rt></ruby>か<ruby>土曜日<rt>どようび</rt></ruby>なら、<ruby>一日中<rt>いちにちじゅう</rt></ruby><ruby>働<rt>はたら</rt></ruby>けます。<ruby>山田<rt>やまだ</rt></ruby>さんに<ruby>聞<rt>き</rt></ruby>いたところ、<ruby>金曜日<rt>きんようび</rt></ruby>なら<ruby>代<rt>か</rt></ruby>わってもいいと<ruby>言<rt>い</rt></ruby>っていました。\n\nご<ruby>迷惑<rt>めいわく</rt></ruby>をおかけしますが、よろしくお<ruby>願<rt>ねが</rt></ruby>いいたします。\n\n<ruby>田中<rt>たなか</rt></ruby>",
+    "gloss": "<ruby>店長<rt>てんちょう</rt></ruby> (てんちょう) shop manager ・ 一日中 (いちにちじゅう) all day long ・ 代わる (かわる) to take someone's place ・ 迷惑 (めいわく) trouble, inconvenience",
+    "quiz": [
+      {
+        "q": "<ruby>田中<rt>たなか</rt></ruby>さんはどうしてシフトを<ruby>変<rt>か</rt></ruby>えたいのですか。",
+        "choices": [
+          "<ruby>旅行<rt>りょこう</rt></ruby>に<ruby>行<rt>い</rt></ruby>くから",
+          "<ruby>体<rt>からだ</rt></ruby>の<ruby>調子<rt>ちょうし</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>いから",
+          "<ruby>大学<rt>だいがく</rt></ruby>の<ruby>試験<rt>しけん</rt></ruby>があるから",
+          "<ruby>山田<rt>やまだ</rt></ruby>さんに<ruby>頼<rt>たの</rt></ruby>まれたから"
+        ],
+        "a": 2,
+        "ex": "<ruby>大学<rt>だいがく</rt></ruby>の<ruby>試験<rt>しけん</rt></ruby>が<ruby>入<rt>はい</rt></ruby>ってしまいました — an exam came up. 〜てしまう here marks it as something that happened to him, not something he chose."
+      },
+      {
+        "q": "<ruby>田中<rt>たなか</rt></ruby>さんはいつなら<ruby>働<rt>はたら</rt></ruby>けますか。",
+        "choices": [
+          "<ruby>木曜日<rt>もくようび</rt></ruby>か<ruby>土曜日<rt>どようび</rt></ruby>",
+          "<ruby>金曜日<rt>きんようび</rt></ruby>だけ",
+          "<ruby>日曜日<rt>にちようび</rt></ruby>だけ",
+          "<ruby>来週<rt>らいしゅう</rt></ruby>は<ruby>働<rt>はたら</rt></ruby>けません"
+        ],
+        "a": 0,
+        "ex": "<ruby>木曜日<rt>もくようび</rt></ruby>か<ruby>土曜日<rt>どようび</rt></ruby>なら、<ruby>一日中<rt>いちにちじゅう</rt></ruby><ruby>働<rt>はたら</rt></ruby>けます — either Thursday or Saturday, all day."
+      },
+      {
+        "q": "<ruby>山田<rt>やまだ</rt></ruby>さんは<ruby>何<rt>なん</rt></ruby>と<ruby>言<rt>い</rt></ruby>っていましたか。",
+        "choices": [
+          "<ruby>休<rt>やす</rt></ruby>みたい",
+          "<ruby>金曜日<rt>きんようび</rt></ruby>なら<ruby>代<rt>か</rt></ruby>わってもいい",
+          "<ruby>土曜日<rt>どようび</rt></ruby>に<ruby>働<rt>はたら</rt></ruby>きたい",
+          "<ruby>何<rt>なに</rt></ruby>も<ruby>言<rt>い</rt></ruby>っていません"
+        ],
+        "a": 1,
+        "ex": "<ruby>金曜日<rt>きんようび</rt></ruby>なら<ruby>代<rt>か</rt></ruby>わってもいいと<ruby>言<rt>い</rt></ruby>っていました — Yamada said he'd be willing to cover the Friday."
+      },
+      {
+        "q": "このメールは<ruby>何<rt>なん</rt></ruby>のために<ruby>書<rt>か</rt></ruby>かれましたか。",
+        "choices": [
+          "<ruby>仕事<rt>しごと</rt></ruby>を<ruby>辞<rt>や</rt></ruby>めるため",
+          "<ruby>給料<rt>きゅうりょう</rt></ruby>について<ruby>聞<rt>き</rt></ruby>くため",
+          "<ruby>遅刻<rt>ちこく</rt></ruby>を<ruby>謝<rt>あやま</rt></ruby>るため",
+          "シフトを<ruby>変<rt>か</rt></ruby>えてもらうため"
+        ],
+        "a": 3,
+        "ex": "シフトを<ruby>変<rt>か</rt></ruby>えていただけないでしょうか is the request the whole mail is built around — 〜ていただけないでしょうか is about as polite as a request gets."
+      }
+    ],
+    "vocab": [
+      {
+        "jp": "<ruby>店長<rt>てんちょう</rt></ruby>",
+        "reading": "てんちょう",
+        "en": "shop manager"
+      },
+      {
+        "jp": "一日中",
+        "reading": "いちにちじゅう",
+        "en": "all day long"
+      },
+      {
+        "jp": "代わる",
+        "reading": "かわる",
+        "en": "to take someone's place"
+      },
+      {
+        "jp": "迷惑",
+        "reading": "めいわく",
+        "en": "trouble, inconvenience"
+      }
+    ]
+  },
+  {
+    "title": "<ruby>日記<rt>にっき</rt></ruby> — <ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>し",
+    "titleEn": "Diary — moving house",
+    "text": "<ruby>先週<rt>せんしゅう</rt></ruby>、<ruby>新<rt>あたら</rt></ruby>しいアパートに<ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>した。<ruby>前<rt>まえ</rt></ruby>の<ruby>部屋<rt>へや</rt></ruby>より<ruby>少<rt>すこ</rt></ruby>し<ruby>狭<rt>せま</rt></ruby>いけれど、<ruby>駅<rt>えき</rt></ruby>から<ruby>歩<rt>ある</rt></ruby>いて5<ruby>分<rt>ふん</rt></ruby>なので、とても<ruby>便利<rt>べんり</rt></ruby>だ。\n\n<ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>しの<ruby>日<rt>ひ</rt></ruby>は<ruby>朝<rt>あさ</rt></ruby>から<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>っていて<ruby>大変<rt>たいへん</rt></ruby>だった。<ruby>友達<rt>ともだち</rt></ruby>が<ruby>二人<rt>ふたり</rt></ruby><ruby>手伝<rt>てつだ</rt></ruby>いに<ruby>来<rt>き</rt></ruby>てくれたので、<ruby>思<rt>おも</rt></ruby>ったより<ruby>早<rt>はや</rt></ruby>く<ruby>終<rt>お</rt></ruby>わった。お<ruby>礼<rt>れい</rt></ruby>に<ruby>近<rt>ちか</rt></ruby>くの<ruby>店<rt>みせ</rt></ruby>でラーメンをごちそうした。\n\n<ruby>荷物<rt>にもつ</rt></ruby>はまだ<ruby>全部<rt>ぜんぶ</rt></ruby><ruby>片付<rt>かたづ</rt></ruby>いていない。<ruby>今週末<rt>こんしゅうまつ</rt></ruby>までに<ruby>何<rt>なん</rt></ruby>とかしたいと<ruby>思<rt>おも</rt></ruby>っている。",
+    "gloss": "<ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>す (ひっこす) to move house ・ 狭い (せまい) narrow, cramped ・ <ruby>手伝<rt>てつだ</rt></ruby>い (てつだい) help ・ お礼 (おれい) thanks, a thank-you ・ <ruby>片付<rt>かたづ</rt></ruby>く (かたづく) to get tidied away",
+    "quiz": [
+      {
+        "q": "<ruby>新<rt>あたら</rt></ruby>しい<ruby>部屋<rt>へや</rt></ruby>について、<ruby>正<rt>ただ</rt></ruby>しいものはどれですか。",
+        "choices": [
+          "<ruby>前<rt>まえ</rt></ruby>より<ruby>広<rt>ひろ</rt></ruby>くて<ruby>便利<rt>べんり</rt></ruby>だ",
+          "<ruby>前<rt>まえ</rt></ruby>より<ruby>狭<rt>せま</rt></ruby>いが<ruby>駅<rt>えき</rt></ruby>に<ruby>近<rt>ちか</rt></ruby>い",
+          "<ruby>駅<rt>えき</rt></ruby>から<ruby>遠<rt>とお</rt></ruby>いが<ruby>広<rt>ひろ</rt></ruby>い",
+          "<ruby>前<rt>まえ</rt></ruby>の<ruby>部屋<rt>へや</rt></ruby>と<ruby>同<rt>おな</rt></ruby>じだ"
+        ],
+        "a": 1,
+        "ex": "<ruby>前<rt>まえ</rt></ruby>の<ruby>部屋<rt>へや</rt></ruby>より<ruby>少<rt>すこ</rt></ruby>し<ruby>狭<rt>せま</rt></ruby>いけれど、<ruby>駅<rt>えき</rt></ruby>から<ruby>歩<rt>ある</rt></ruby>いて5<ruby>分<rt>ふん</rt></ruby> — smaller, but a five-minute walk from the station."
+      },
+      {
+        "q": "<ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>しの<ruby>日<rt>ひ</rt></ruby>の<ruby>天気<rt>てんき</rt></ruby>はどうでしたか。",
+        "choices": [
+          "<ruby>晴<rt>は</rt></ruby>れだった",
+          "<ruby>雪<rt>ゆき</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>っていた",
+          "くもりだった",
+          "<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>っていた"
+        ],
+        "a": 3,
+        "ex": "<ruby>朝<rt>あさ</rt></ruby>から<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>っていて<ruby>大変<rt>たいへん</rt></ruby>だった — it rained from the morning."
+      },
+      {
+        "q": "どうして<ruby>思<rt>おも</rt></ruby>ったより<ruby>早<rt>はや</rt></ruby>く<ruby>終<rt>お</rt></ruby>わりましたか。",
+        "choices": [
+          "<ruby>友達<rt>ともだち</rt></ruby>が<ruby>手伝<rt>てつだ</rt></ruby>ってくれたから",
+          "<ruby>荷物<rt>にもつ</rt></ruby>が<ruby>少<rt>すく</rt></ruby>なかったから",
+          "<ruby>雨<rt>あめ</rt></ruby>がやんだから",
+          "<ruby>前<rt>まえ</rt></ruby>の<ruby>日<rt>ひ</rt></ruby>に<ruby>準備<rt>じゅんび</rt></ruby>したから"
+        ],
+        "a": 0,
+        "ex": "<ruby>友達<rt>ともだち</rt></ruby>が<ruby>二人<rt>ふたり</rt></ruby><ruby>手伝<rt>てつだ</rt></ruby>いに<ruby>来<rt>き</rt></ruby>てくれたので — 〜てくれた marks the help as a favour done for the writer."
+      },
+      {
+        "q": "<ruby>荷物<rt>にもつ</rt></ruby>は<ruby>今<rt>いま</rt></ruby>どうなっていますか。",
+        "choices": [
+          "<ruby>全部<rt>ぜんぶ</rt></ruby><ruby>片付<rt>かたづ</rt></ruby>いた",
+          "<ruby>店<rt>みせ</rt></ruby>に<ruby>置<rt>お</rt></ruby>いてある",
+          "まだ<ruby>片付<rt>かたづ</rt></ruby>いていない",
+          "<ruby>友達<rt>ともだち</rt></ruby>の<ruby>家<rt>いえ</rt></ruby>にある"
+        ],
+        "a": 2,
+        "ex": "<ruby>荷物<rt>にもつ</rt></ruby>はまだ<ruby>全部<rt>ぜんぶ</rt></ruby><ruby>片付<rt>かたづ</rt></ruby>いていない — まだ＋〜ていない is the fixed way to say it hasn't happened yet."
+      }
+    ],
+    "vocab": [
+      {
+        "jp": "<ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>す",
+        "reading": "ひっこす",
+        "en": "to move house"
+      },
+      {
+        "jp": "狭い",
+        "reading": "せまい",
+        "en": "narrow, cramped"
+      },
+      {
+        "jp": "<ruby>手伝<rt>てつだ</rt></ruby>い",
+        "reading": "てつだい",
+        "en": "help"
+      },
+      {
+        "jp": "お礼",
+        "reading": "おれい",
+        "en": "thanks, a thank-you"
+      },
+      {
+        "jp": "<ruby>片付<rt>かたづ</rt></ruby>く",
+        "reading": "かたづく",
+        "en": "to get tidied away"
+      }
+    ]
+  },
+  {
+    "title": "<ruby>案内<rt>あんない</rt></ruby> — <ruby>料理<rt>りょうり</rt></ruby><ruby>教室<rt>きょうしつ</rt></ruby>のお<ruby>知<rt>し</rt></ruby>らせ",
+    "titleEn": "Advertisement — a cooking class",
+    "text": "はじめての<ruby>和食<rt>わしょく</rt></ruby><ruby>教室<rt>きょうしつ</rt></ruby>\n\n<ruby>日時<rt>にちじ</rt></ruby>：<ruby>毎月<rt>まいつき</rt></ruby><ruby>第<rt>だい</rt></ruby>2<ruby>土曜日<rt>どようび</rt></ruby>　<ruby>午後<rt>ごご</rt></ruby>1<ruby>時<rt>じ</rt></ruby>〜4<ruby>時<rt>じ</rt></ruby>\n<ruby>場所<rt>ばしょ</rt></ruby>：みどり<ruby>市民<rt>しみん</rt></ruby>センター 3<ruby>階<rt>かい</rt></ruby>\n<ruby>参加費<rt>さんかひ</rt></ruby>：1<ruby>回<rt>かい</rt></ruby> 2,000<ruby>円<rt>えん</rt></ruby>（<ruby>材料費<rt>ざいりょうひ</rt></ruby>を<ruby>含<rt>ふく</rt></ruby>む）\n\nエプロンとタオルをお<ruby>持<rt>も</rt></ruby>ちください。<ruby>包丁<rt>ほうちょう</rt></ruby>やお<ruby>皿<rt>さら</rt></ruby>は<ruby>教室<rt>きょうしつ</rt></ruby>にあります。\n\nお<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>みは、<ruby>前<rt>まえ</rt></ruby>の<ruby>週<rt>しゅう</rt></ruby>の<ruby>水曜日<rt>すいようび</rt></ruby>までに<ruby>電話<rt>でんわ</rt></ruby>かホームページからお<ruby>願<rt>ねが</rt></ruby>いします。<ruby>定員<rt>ていいん</rt></ruby>は12<ruby>名<rt>めい</rt></ruby>です。<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>みが<ruby>多<rt>おお</rt></ruby>い<ruby>場合<rt>ばあい</rt></ruby>は、<ruby>初<rt>はじ</rt></ruby>めての<ruby>方<rt>かた</rt></ruby>を<ruby>優先<rt>ゆうせん</rt></ruby>します。",
+    "gloss": "和食 (わしょく) Japanese food ・ 参加費 (さんかひ) participation fee ・ 材料費 (ざいりょうひ) cost of ingredients ・ 包丁 (ほうちょう) kitchen knife ・ 定員 (ていいん) capacity, number of places ・ 優先 (ゆうせん) priority",
+    "quiz": [
+      {
+        "q": "この<ruby>教室<rt>きょうしつ</rt></ruby>はいつありますか。",
+        "choices": [
+          "<ruby>毎週<rt>まいしゅう</rt></ruby><ruby>土曜日<rt>どようび</rt></ruby>",
+          "<ruby>毎月<rt>まいつき</rt></ruby><ruby>第<rt>だい</rt></ruby>2<ruby>土曜日<rt>どようび</rt></ruby>",
+          "<ruby>毎月<rt>まいつき</rt></ruby><ruby>第<rt>だい</rt></ruby>2<ruby>水曜日<rt>すいようび</rt></ruby>",
+          "<ruby>毎日<rt>まいにち</rt></ruby>"
+        ],
+        "a": 1,
+        "ex": "<ruby>日時<rt>にちじ</rt></ruby>：<ruby>毎月<rt>まいつき</rt></ruby><ruby>第<rt>だい</rt></ruby>2<ruby>土曜日<rt>どようび</rt></ruby> — the second Saturday of each month, not every Saturday."
+      },
+      {
+        "q": "<ruby>参加<rt>さんか</rt></ruby>する<ruby>人<rt>ひと</rt></ruby>は<ruby>何<rt>なに</rt></ruby>を<ruby>持<rt>も</rt></ruby>っていきますか。",
+        "choices": [
+          "<ruby>包丁<rt>ほうちょう</rt></ruby>とお<ruby>皿<rt>さら</rt></ruby>",
+          "<ruby>材料費<rt>ざいりょうひ</rt></ruby>だけ",
+          "エプロンとタオル",
+          "<ruby>何<rt>なに</rt></ruby>もいりません"
+        ],
+        "a": 2,
+        "ex": "エプロンとタオルをお<ruby>持<rt>も</rt></ruby>ちください — knives and plates are provided (<ruby>包丁<rt>ほうちょう</rt></ruby>やお<ruby>皿<rt>さら</rt></ruby>は<ruby>教室<rt>きょうしつ</rt></ruby>にあります)."
+      },
+      {
+        "q": "いつまでに<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>みますか。",
+        "choices": [
+          "<ruby>前<rt>まえ</rt></ruby>の<ruby>週<rt>しゅう</rt></ruby>の<ruby>水曜日<rt>すいようび</rt></ruby>まで",
+          "<ruby>当日<rt>とうじつ</rt></ruby>まで",
+          "<ruby>前<rt>まえ</rt></ruby>の<ruby>日<rt>ひ</rt></ruby>まで",
+          "<ruby>毎月<rt>まいつき</rt></ruby>1<ruby>日<rt>ひ</rt></ruby>まで"
+        ],
+        "a": 0,
+        "ex": "<ruby>前<rt>まえ</rt></ruby>の<ruby>週<rt>しゅう</rt></ruby>の<ruby>水曜日<rt>すいようび</rt></ruby>までに — 〜までに marks a deadline, not a stretch of time."
+      },
+      {
+        "q": "<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>みが<ruby>多<rt>おお</rt></ruby>いとき、だれが<ruby>先<rt>さき</rt></ruby>に<ruby>入<rt>い</rt></ruby>れますか。",
+        "choices": [
+          "<ruby>早<rt>はや</rt></ruby>く<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>んだ<ruby>人<rt>ひと</rt></ruby>",
+          "<ruby>近<rt>ちか</rt></ruby>くに<ruby>住<rt>す</rt></ruby>んでいる<ruby>人<rt>ひと</rt></ruby>",
+          "お<ruby>金<rt>かね</rt></ruby>を<ruby>先<rt>さき</rt></ruby>に<ruby>払<rt>はら</rt></ruby>った<ruby>人<rt>ひと</rt></ruby>",
+          "<ruby>初<rt>はじ</rt></ruby>めての<ruby>人<rt>ひと</rt></ruby>"
+        ],
+        "a": 3,
+        "ex": "<ruby>初<rt>はじ</rt></ruby>めての<ruby>方<rt>かた</rt></ruby>を<ruby>優先<rt>ゆうせん</rt></ruby>します — first-timers get priority."
+      }
+    ],
+    "vocab": [
+      {
+        "jp": "和食",
+        "reading": "わしょく",
+        "en": "Japanese food"
+      },
+      {
+        "jp": "参加費",
+        "reading": "さんかひ",
+        "en": "participation fee"
+      },
+      {
+        "jp": "材料費",
+        "reading": "ざいりょうひ",
+        "en": "cost of ingredients"
+      },
+      {
+        "jp": "包丁",
+        "reading": "ほうちょう",
+        "en": "kitchen knife"
+      },
+      {
+        "jp": "定員",
+        "reading": "ていいん",
+        "en": "capacity, number of places"
+      },
+      {
+        "jp": "優先",
+        "reading": "ゆうせん",
+        "en": "priority"
+      }
+    ]
+  },
+  {
+    "title": "ブログ — <ruby>日本<rt>にほん</rt></ruby>の<ruby>夏<rt>なつ</rt></ruby>",
+    "titleEn": "Blog — summer in Japan",
+    "text": "<ruby>日本<rt>にほん</rt></ruby>の<ruby>夏<rt>なつ</rt></ruby>は、<ruby>思<rt>おも</rt></ruby>っていたよりずっと<ruby>暑<rt>あつ</rt></ruby>い。<ruby>私<rt>わたし</rt></ruby>の<ruby>国<rt>くに</rt></ruby>も<ruby>暑<rt>あつ</rt></ruby>いが、<ruby>日本<rt>にほん</rt></ruby>は<ruby>湿気<rt>しっけ</rt></ruby>が<ruby>多<rt>おお</rt></ruby>いので、<ruby>外<rt>そと</rt></ruby>に<ruby>出<rt>で</rt></ruby>るとすぐに<ruby>汗<rt>あせ</rt></ruby>が<ruby>出<rt>で</rt></ruby>る。\n\nでも、<ruby>夏<rt>なつ</rt></ruby>にしかできないことがたくさんある。<ruby>花火大会<rt>はなびたいかい</rt></ruby>、お<ruby>祭<rt>まつ</rt></ruby>り、かき<ruby>氷<rt>ごおり</rt></ruby>。<ruby>去年<rt>きょねん</rt></ruby>、<ruby>初<rt>はじ</rt></ruby>めて<ruby>浴衣<rt>ゆかた</rt></ruby>を<ruby>着<rt>き</rt></ruby>て<ruby>花火<rt>はなび</rt></ruby>を<ruby>見<rt>み</rt></ruby>に<ruby>行<rt>い</rt></ruby>った。<ruby>人<rt>ひと</rt></ruby>がとても<ruby>多<rt>おお</rt></ruby>くて、<ruby>駅<rt>えき</rt></ruby>から<ruby>会場<rt>かいじょう</rt></ruby>まで30<ruby>分<rt>ぷん</rt></ruby>もかかったが、<ruby>空<rt>そら</rt></ruby>に<ruby>大<rt>おお</rt></ruby>きな<ruby>花火<rt>はなび</rt></ruby>が<ruby>上<rt>あ</rt></ruby>がったときは、<ruby>来<rt>き</rt></ruby>てよかったと<ruby>思<rt>おも</rt></ruby>った。\n\n<ruby>今年<rt>ことし</rt></ruby>も<ruby>行<rt>い</rt></ruby>くつもりだ。<ruby>今度<rt>こんど</rt></ruby>はもっと<ruby>早<rt>はや</rt></ruby>めに<ruby>家<rt>いえ</rt></ruby>を<ruby>出<rt>で</rt></ruby>ようと<ruby>思<rt>おも</rt></ruby>う。",
+    "gloss": "湿気 (しっけ) humidity ・ 汗 (あせ) sweat ・ 花火大会 (はなびたいかい) fireworks festival ・ 浴衣 (ゆかた) summer kimono ・ 会場 (かいじょう) venue",
+    "quiz": [
+      {
+        "q": "<ruby>日本<rt>にほん</rt></ruby>の<ruby>夏<rt>なつ</rt></ruby>について、この<ruby>人<rt>ひと</rt></ruby>は<ruby>何<rt>なん</rt></ruby>と<ruby>言<rt>い</rt></ruby>っていますか。",
+        "choices": [
+          "<ruby>国<rt>くに</rt></ruby>より<ruby>涼<rt>すず</rt></ruby>しい",
+          "<ruby>湿気<rt>しっけ</rt></ruby>が<ruby>多<rt>おお</rt></ruby>くて<ruby>暑<rt>あつ</rt></ruby>い",
+          "<ruby>雨<rt>あめ</rt></ruby>が<ruby>少<rt>すく</rt></ruby>ない",
+          "<ruby>短<rt>みじか</rt></ruby>くてつまらない"
+        ],
+        "a": 1,
+        "ex": "<ruby>日本<rt>にほん</rt></ruby>は<ruby>湿気<rt>しっけ</rt></ruby>が<ruby>多<rt>おお</rt></ruby>いので、<ruby>外<rt>そと</rt></ruby>に<ruby>出<rt>で</rt></ruby>るとすぐに<ruby>汗<rt>あせ</rt></ruby>が<ruby>出<rt>で</rt></ruby>る — it's the humidity, not just the heat."
+      },
+      {
+        "q": "<ruby>去年<rt>きょねん</rt></ruby>、この<ruby>人<rt>ひと</rt></ruby>は<ruby>何<rt>なに</rt></ruby>を<ruby>着<rt>き</rt></ruby>て<ruby>行<rt>い</rt></ruby>きましたか。",
+        "choices": [
+          "<ruby>着物<rt>きもの</rt></ruby>",
+          "セーター",
+          "<ruby>浴衣<rt>ゆかた</rt></ruby>",
+          "<ruby>普通<rt>ふつう</rt></ruby>の<ruby>服<rt>ふく</rt></ruby>"
+        ],
+        "a": 2,
+        "ex": "<ruby>初<rt>はじ</rt></ruby>めて<ruby>浴衣<rt>ゆかた</rt></ruby>を<ruby>着<rt>き</rt></ruby>て<ruby>花火<rt>はなび</rt></ruby>を<ruby>見<rt>み</rt></ruby>に<ruby>行<rt>い</rt></ruby>った — a <ruby>浴衣<rt>ゆかた</rt></ruby> is the light summer garment worn to festivals."
+      },
+      {
+        "q": "<ruby>駅<rt>えき</rt></ruby>から<ruby>会場<rt>かいじょう</rt></ruby>までどのくらいかかりましたか。",
+        "choices": [
+          "5<ruby>分<rt>ふん</rt></ruby>",
+          "15<ruby>分<rt>ふん</rt></ruby>",
+          "1<ruby>時間<rt>じかん</rt></ruby>",
+          "30<ruby>分<rt>ぷん</rt></ruby>"
+        ],
+        "a": 3,
+        "ex": "<ruby>駅<rt>えき</rt></ruby>から<ruby>会場<rt>かいじょう</rt></ruby>まで30<ruby>分<rt>ぷん</rt></ruby>もかかった — the も stresses that thirty minutes was longer than expected."
+      },
+      {
+        "q": "<ruby>今年<rt>ことし</rt></ruby>、この<ruby>人<rt>ひと</rt></ruby>はどうするつもりですか。",
+        "choices": [
+          "<ruby>早<rt>はや</rt></ruby>めに<ruby>家<rt>いえ</rt></ruby>を<ruby>出<rt>で</rt></ruby>る",
+          "<ruby>行<rt>い</rt></ruby>かないことにする",
+          "<ruby>浴衣<rt>ゆかた</rt></ruby>を<ruby>買<rt>か</rt></ruby>う",
+          "<ruby>別<rt>べつ</rt></ruby>の<ruby>祭<rt>まつ</rt></ruby>りに<ruby>行<rt>い</rt></ruby>く"
+        ],
+        "a": 0,
+        "ex": "<ruby>今度<rt>こんど</rt></ruby>はもっと<ruby>早<rt>はや</rt></ruby>めに<ruby>家<rt>いえ</rt></ruby>を<ruby>出<rt>で</rt></ruby>ようと<ruby>思<rt>おも</rt></ruby>う — leaving earlier is the lesson taken from last year's crowds."
+      }
+    ],
+    "vocab": [
+      {
+        "jp": "湿気",
+        "reading": "しっけ",
+        "en": "humidity"
+      },
+      {
+        "jp": "汗",
+        "reading": "あせ",
+        "en": "sweat"
+      },
+      {
+        "jp": "花火大会",
+        "reading": "はなびたいかい",
+        "en": "fireworks festival"
+      },
+      {
+        "jp": "浴衣",
+        "reading": "ゆかた",
+        "en": "summer kimono"
+      },
+      {
+        "jp": "会場",
+        "reading": "かいじょう",
+        "en": "venue"
+      }
+    ]
+  },
+  {
+    "title": "お<ruby>知<rt>し</rt></ruby>らせ — <ruby>病院<rt>びょういん</rt></ruby>のご<ruby>案内<rt>あんない</rt></ruby>",
+    "titleEn": "Notice — at the clinic",
+    "text": "はじめて<ruby>来<rt>こ</rt></ruby>られた<ruby>方<rt>かた</rt></ruby>へ\n\n<ruby>受付<rt>うけつけ</rt></ruby>で<ruby>保険証<rt>ほけんしょう</rt></ruby>をお<ruby>出<rt>だ</rt></ruby>しください。<ruby>保険証<rt>ほけんしょう</rt></ruby>がない<ruby>場合<rt>ばあい</rt></ruby>は、その<ruby>日<rt>ひ</rt></ruby>は<ruby>全額<rt>ぜんがく</rt></ruby>お<ruby>支払<rt>しはら</rt></ruby>いいただくことになります。\n\n<ruby>熱<rt>ねつ</rt></ruby>が37.5<ruby>度<rt>ど</rt></ruby><ruby>以上<rt>いじょう</rt></ruby>ある<ruby>方<rt>かた</rt></ruby>は、<ruby>中<rt>なか</rt></ruby>に<ruby>入<rt>はい</rt></ruby>らずに、<ruby>入口<rt>いりぐち</rt></ruby>の<ruby>電話<rt>でんわ</rt></ruby>で<ruby>受付<rt>うけつけ</rt></ruby>にお<ruby>知<rt>し</rt></ruby>らせください。<ruby>別<rt>べつ</rt></ruby>の<ruby>部屋<rt>へや</rt></ruby>にご<ruby>案内<rt>あんない</rt></ruby>します。\n\n<ruby>薬<rt>くすり</rt></ruby>は<ruby>病院<rt>びょういん</rt></ruby>の<ruby>中<rt>なか</rt></ruby>では<ruby>出<rt>だ</rt></ruby>していません。<ruby>会計<rt>かいけい</rt></ruby>のあとで<ruby>紙<rt>かみ</rt></ruby>をお<ruby>渡<rt>わた</rt></ruby>ししますので、<ruby>外<rt>そと</rt></ruby>の<ruby>薬局<rt>やっきょく</rt></ruby>へお<ruby>持<rt>も</rt></ruby>ちください。",
+    "gloss": "<ruby>受付<rt>うけつけ</rt></ruby> (うけつけ) reception desk ・ 保険証 (ほけんしょう) health insurance card ・ 全額 (ぜんがく) the full amount ・ <ruby>会計<rt>かいけい</rt></ruby> (かいけい) payment, the bill ・ <ruby>薬局<rt>やっきょく</rt></ruby> (やっきょく) pharmacy",
+    "quiz": [
+      {
+        "q": "はじめての<ruby>人<rt>ひと</rt></ruby>は、<ruby>受付<rt>うけつけ</rt></ruby>で<ruby>何<rt>なに</rt></ruby>を<ruby>出<rt>だ</rt></ruby>しますか。",
+        "choices": [
+          "<ruby>紙<rt>かみ</rt></ruby>",
+          "<ruby>保険証<rt>ほけんしょう</rt></ruby>",
+          "お<ruby>金<rt>かね</rt></ruby>",
+          "<ruby>電話番号<rt>でんわばんごう</rt></ruby>"
+        ],
+        "a": 1,
+        "ex": "<ruby>受付<rt>うけつけ</rt></ruby>で<ruby>保険証<rt>ほけんしょう</rt></ruby>をお<ruby>出<rt>だ</rt></ruby>しください — the insurance card is the first thing asked for."
+      },
+      {
+        "q": "<ruby>保険証<rt>ほけんしょう</rt></ruby>がない<ruby>場合<rt>ばあい</rt></ruby>、どうなりますか。",
+        "choices": [
+          "<ruby>次<rt>つぎ</rt></ruby>の<ruby>日<rt>ひ</rt></ruby>に<ruby>来<rt>く</rt></ruby>る",
+          "<ruby>半分<rt>はんぶん</rt></ruby>だけ<ruby>払<rt>はら</rt></ruby>う",
+          "<ruby>診<rt>み</rt></ruby>てもらえない",
+          "その<ruby>日<rt>ひ</rt></ruby>は<ruby>全額<rt>ぜんがく</rt></ruby><ruby>払<rt>はら</rt></ruby>う"
+        ],
+        "a": 3,
+        "ex": "その<ruby>日<rt>ひ</rt></ruby>は<ruby>全額<rt>ぜんがく</rt></ruby>お<ruby>支払<rt>しはら</rt></ruby>いいただくことになります — you pay the full amount that day. 〜ことになる reports it as the rule, not someone's choice."
+      },
+      {
+        "q": "<ruby>熱<rt>ねつ</rt></ruby>が<ruby>高<rt>たか</rt></ruby>い<ruby>人<rt>ひと</rt></ruby>は、まず<ruby>何<rt>なに</rt></ruby>をしますか。",
+        "choices": [
+          "<ruby>入口<rt>いりぐち</rt></ruby>の<ruby>電話<rt>でんわ</rt></ruby>で<ruby>知<rt>し</rt></ruby>らせる",
+          "<ruby>受付<rt>うけつけ</rt></ruby>まで<ruby>歩<rt>ある</rt></ruby>いて<ruby>行<rt>い</rt></ruby>く",
+          "<ruby>別<rt>べつ</rt></ruby>の<ruby>病院<rt>びょういん</rt></ruby>へ<ruby>行<rt>い</rt></ruby>く",
+          "<ruby>薬局<rt>やっきょく</rt></ruby>で<ruby>薬<rt>くすり</rt></ruby>を<ruby>買<rt>か</rt></ruby>う"
+        ],
+        "a": 0,
+        "ex": "<ruby>中<rt>なか</rt></ruby>に<ruby>入<rt>はい</rt></ruby>らずに、<ruby>入口<rt>いりぐち</rt></ruby>の<ruby>電話<rt>でんわ</rt></ruby>で<ruby>受付<rt>うけつけ</rt></ruby>にお<ruby>知<rt>し</rt></ruby>らせください — 〜ずに means 'without doing', so you must not go inside first."
+      },
+      {
+        "q": "<ruby>薬<rt>くすり</rt></ruby>はどこでもらいますか。",
+        "choices": [
+          "<ruby>病院<rt>びょういん</rt></ruby>の<ruby>受付<rt>うけつけ</rt></ruby>",
+          "<ruby>会計<rt>かいけい</rt></ruby>の<ruby>窓口<rt>まどぐち</rt></ruby>",
+          "<ruby>外<rt>そと</rt></ruby>の<ruby>薬局<rt>やっきょく</rt></ruby>",
+          "<ruby>別<rt>べつ</rt></ruby>の<ruby>部屋<rt>へや</rt></ruby>"
+        ],
+        "a": 2,
+        "ex": "<ruby>薬<rt>くすり</rt></ruby>は<ruby>病院<rt>びょういん</rt></ruby>の<ruby>中<rt>なか</rt></ruby>では<ruby>出<rt>だ</rt></ruby>していません — the clinic hands you a slip and you take it to a pharmacy outside."
+      }
+    ],
+    "vocab": [
+      {
+        "jp": "<ruby>受付<rt>うけつけ</rt></ruby>",
+        "reading": "うけつけ",
+        "en": "reception desk"
+      },
+      {
+        "jp": "保険証",
+        "reading": "ほけんしょう",
+        "en": "health insurance card"
+      },
+      {
+        "jp": "全額",
+        "reading": "ぜんがく",
+        "en": "the full amount"
+      },
+      {
+        "jp": "<ruby>会計<rt>かいけい</rt></ruby>",
+        "reading": "かいけい",
+        "en": "payment, the bill"
+      },
+      {
+        "jp": "<ruby>薬局<rt>やっきょく</rt></ruby>",
+        "reading": "やっきょく",
+        "en": "pharmacy"
+      }
     ]
   }
 ]

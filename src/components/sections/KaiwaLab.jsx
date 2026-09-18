@@ -105,15 +105,6 @@ export default function KaiwaLab({ isActive, jumpTarget }) {
         <p>Grammar accuracy and conversation fluency are genuinely different skills — it is completely normal to be strong in one and shaky in the other. This section is built around what you'll actually need in Japan: {kaiwaScenarios.length} real scenarios covering arrival, getting around, shops, food, health, work and small talk; {countPhrases()} phrases grouped by the job they do; and role-play notes for both sides of every conversation. Highlight any word in a script to look up its meaning and reading.</p>
       </div>
 
-      <div className="tipgrid">
-        {kaiwaTips.map((t, i) => (
-          <div key={i} className="tipcard">
-            <div className="ttitle">{t.title}</div>
-            <p>{t.body}</p>
-          </div>
-        ))}
-      </div>
-
       {/* Two big halves that were previously one very long scroll — the
           phrase reference and the scripted scenarios are used at different
           times, so they get their own views rather than stacking. */}
@@ -208,6 +199,21 @@ export default function KaiwaLab({ isActive, jumpTarget }) {
         </div>
       ))}
       </>}
+
+      {/* Advice, not reference. It used to sit between the intro and the tabs,
+          which put twelve cards of prose in front of the phrases and scripts
+          you actually came for; it reads better as a closing note. */}
+      <div className="tipsection">
+        <div className="stitle">上達のコツ ・ Getting better at this</div>
+        <div className="tipgrid">
+          {kaiwaTips.map((t, i) => (
+            <div key={i} className="tipcard">
+              <div className="ttitle">{t.title}</div>
+              <p>{t.body}</p>
+            </div>
+          ))}
+        </div>
+      </div>
 
       {/* The floating nav follows whichever half you're in: phrase groups
           while browsing the bank, scenario categories while reading scripts. */}
