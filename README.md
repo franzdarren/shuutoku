@@ -1,137 +1,162 @@
-# N4総復習 — N4 Review Handbook
+# 習得 Shuutoku
 
-A React rewrite of the original single-file HTML study handbook: grammar
-deep-dive, kanji focus, reading lab, kaiwa (conversation) lab, and a mixed
-quiz center for N4-level Japanese review.
+> # ⚠️ READ THIS FIRST
+>
+> ## **ABSOLUTELY ZERO TESTING HAS BEEN DONE ON THIS MATERIAL.**
+>
+> Nobody has sat the JLPT using this and reported back. None of the content has
+> been reviewed by a teacher, a native speaker, or anyone qualified. The grammar
+> explanations, the furigana, the kanji readings, the quiz answers and the mock
+> exam scoring are all unverified. Some of it is definitely wrong. I just don't
+> know which parts yet.
+>
+> ### **Use official materials as your primary source. Not this.**
+>
+> This is a supplement at best. If you are actually sitting N4, buy the real thing:
+>
+> - **[Official JLPT practice workbooks](https://www.jlpt.jp/e/reference/books.html)**
+>   — 公式問題集, published by Bonjinsha, roughly ¥700 per level. Real past-style
+>   papers written by the people who write the exam. Buy links are on that page.
+> - **[Free official sample questions](https://www.jlpt.jp/e/samples/sampleindex.html)**
+>   — every level, straight from the JLPT site, costs nothing.
+> - **[jlpt.jp](https://www.jlpt.jp/e/)** — the actual test site. Registration
+>   dates, format, scoring rules.
+>
+> Also worth owning: Minna no Nihongo, Genki II, Sou Matome N4, Shin Kanzen
+> Master N4. Widely available from Amazon, Kinokuniya, OMG Japan and White Rabbit.
+>
+> JLPT publishes no official grammar or kanji list, so *every* third-party study
+> list, this one included, is reverse-engineered guesswork. Treat it that way.
 
-## Running it
+A JLPT N4 review handbook. Grammar deep-dive, the full N4 kanji set, reading
+passages, a conversation lab, and a timed mock exam. No account, no backend,
+no tracking.
 
-Requires [Node.js](https://nodejs.org) (any recent LTS).
+Built because I was stuck in the 60s on N4 mocks and got tired of flipping
+between Minna no Nihongo, Genki and Sou Matome to chase the same handful of
+weak points.
+
+**Stack:** Claude Pro, Monster Energy, React19.
+
+**Contents:** 11 modules / 63 grammar points, 183 kanji, 6 reading passages,
+34 conversation scenarios, 142 phrases, ~480 quiz questions.
+
+## Run it
 
 ```bash
 npm install
-npm run dev      # starts a local dev server, prints a URL like http://localhost:5173
+npm run dev       # http://localhost:5173
+npm run build     # -> dist/
+npm run preview   # serve the build locally
+npm run lint      # oxlint
 ```
 
-Open the printed URL in a browser. There is no way to just double-click
-`index.html` — the app needs a real dev/preview server so it can load its
-JSON data files (browsers block that over `file://` for security reasons).
+Needs a server. Opening `dist/index.html` over `file://` won't work: ES modules
+and the service worker both require http.
 
-To build a static, deployable version:
-
-```bash
-npm run build     # outputs to dist/
-npm run preview   # serves that build locally so you can check it
-```
-
-## Project layout
+## Layout
 
 ```
 src/
-  data/                   All content, as plain JSON — edit these to add
-    grammar.json          material, no code changes needed.
-    grammar-extra.json    (an extra "N4 essentials" module, kept separate
-                           from the migrated original set)
-    kanji.json
-    reading.json
-    kaiwa-tips.json
-    kaiwa-phrasebank.json
-    kaiwa-scenarios.json
-    quiz.json
-    index.js              Loads + merges the JSON files, small helpers.
-
+  data/*.json        All content. Edit these to add material, no code needed.
+  data/index.js      Merges the JSON, assigns stable quiz ids, derived helpers.
   components/
-    sections/             One component per sidebar section.
-    Quiz.jsx               Shared multiple-choice quiz widget.
-    JpText.jsx              Renders Japanese text (with <ruby> furigana)
-                            and marks it as a highlight-to-look-up zone.
-    VocabTooltip.jsx        The floating definition popup.
-    Sidebar.jsx
-
+    sections/        One component per sidebar entry, lazy-loaded.
+    Quiz.jsx         Shared multiple-choice widget. Scoring is global.
+    JpText.jsx       Renders ruby furigana AND marks text as lookup-able.
+    Dialogue.jsx     Chat-bubble conversation renderer.
   context/
-    SettingsContext.jsx    Furigana / dark mode / text size (persisted).
-    QuizContext.jsx        Shared quiz progress + score, across all sections.
-    LookupContext.jsx      Global text-selection listener + tooltip state.
-
+    SettingsContext  Furigana, dark mode, text size, JP font. Persisted.
+    QuizContext      Progress and scores across every section. Persisted.
+    LookupContext    Text-selection listener behind the vocab tooltip.
   lib/
-    dictionary.js          Vocab lookup: local glossary first, then
-                            Jisho.org (via our own dev-server proxy — see below).
-
-vite.config.js             Proxies /api/jisho -> jisho.org (see below).
+    dictionary.js    Local glossary first, then Jisho.
+    speech.js        Web Speech API wrapper for the dialogues.
+api/jisho.js         Vercel Edge function proxying Jisho in production.
+scripts/             One-off data maintenance. See below.
 ```
 
-### Adding content
+### Content format
 
-Every grammar point, kanji entry, reading passage, kaiwa scenario, and quiz
-question lives in `src/data/*.json`. Open the relevant file, copy an
-existing entry's shape, and edit it — no JavaScript required. Furigana is
-written inline as `<ruby>漢字<rt>かんじ</rt></ruby>`.
+Everything lives in `src/data/*.json`. Copy the shape of an existing entry.
+Furigana is inline: `<ruby>漢字<rt>かんじ</rt></ruby>`.
 
-### The highlight-to-look-up tooltip
+The one rule worth knowing: **some fields render as HTML and some as plain
+text.** Ruby markup in a plain-text field shows up on screen as literal
+`<ruby>` tags. Plain-text fields are `jpTitle`, `reading`, `enTitle`, `tip`,
+`label`, `who`, `setup`, `roleplay`, `cat`, `catEn`. Everything else
+(`explain`, `formation`, `examples[].jp`, `quiz[].q`, `choices`, `ex`, `why`)
+is rendered as HTML and should carry furigana.
 
-In Reading Lab and Kaiwa Lab, highlighting any Japanese text shows a
-floating popup with its reading and meaning:
+Quiz items are `{ q, choices[4], a, ex, why[] }` where `a` is the index of the
+correct choice and `why[a]` must be `null`.
 
-1. First it checks this app's own glossary (built from the reading
-   passages' vocab lists and the N4 kanji list) — instant, offline.
-2. Otherwise it queries [Jisho.org](https://jisho.org)'s public API.
-   Jisho's API does **not** send CORS headers, so a direct browser request
-   from this app's origin is always blocked (confirmed by hand — you'll
-   see a CORS error logged in the browser console the first time this path
-   is hit; it's expected and harmless, not a sign anything is broken).
-   Since this app is always served through Vite, `vite.config.js` proxies
-   `/api/jisho` to `jisho.org` server-side, where CORS doesn't apply — that
-   same-origin request is the primary, reliable path (works in both
-   `npm run dev` and `npm run preview`). If this build is ever hosted
-   somewhere without that proxy (e.g. deployed as a bare static site), it
-   falls back to a direct cross-origin call and then a public CORS relay
-   (`api.allorigins.win`) as a last resort — best-effort only, since that's
-   a third-party service outside our control.
-3. If every path fails (offline, etc.), the popup shows a
-   "Search on Jisho ↗" link instead of an inline definition.
+### Scripts
 
-## Deploying (Vercel, free)
+`scripts/fill-furigana.mjs` is the one you'll actually use. It adds missing
+furigana without guessing: it harvests every reading already present in the
+corpus, keeps only the ones that are unambiguous, and applies those. Run it
+dry first.
 
-`api/jisho.js` is the production equivalent of the dev-only Vite proxy —
-same `/api/jisho` path, same job (fetch Jisho.org server-side so CORS
-doesn't apply), just running as a Vercel function instead of a Vite
-dev-server proxy. `src/lib/dictionary.js` calls that same path either way,
-so nothing else needs to change between dev and production.
+```bash
+node scripts/fill-furigana.mjs           # dry run + report
+node scripts/fill-furigana.mjs --list    # every reading it would apply
+node scripts/fill-furigana.mjs --write   # apply
+```
 
-It specifically runs on Vercel's **Edge Runtime** (`export const config =
-{ runtime: "edge" }`), not the default regional Node.js runtime — found by
-hand while deploying this: Jisho.org's own WAF returns a 403 to Vercel's
-regional Node function IP ranges (consistently reproducible), but not to
-the Edge Runtime's network. If lookups ever start failing again in
-production, that block resurfacing (on a different IP range) is the first
-thing to check.
+It refuses to guess in three situations, all of which exist because guessing
+produced wrong readings: a kanji with more than one reading in the corpus
+(降 is both ふ and お), a kanji whose reading depends on what precedes it
+(間 is ま in 間に合う but あいだ in この間), and any run it can't segment
+completely. Those are left for a human. The other scripts are historical
+one-offs.
 
-Vercel auto-detects this as a Vite project (build command `npm run build`,
-output `dist/`) and auto-detects `api/*.js` as serverless functions — no
-`vercel.json` needed. Two ways to ship it, both free for a personal
-project:
+## Deploy
 
-- **Dashboard (no CLI):** push this repo to GitHub, go to
-  [vercel.com/new](https://vercel.com/new), sign in with GitHub, and import
-  the repo. Deploys automatically on every push after that.
-- **CLI:** `npx vercel --prod` from this folder (prompts a one-time login
-  the first time).
+Static build, host it anywhere. Vercel needs no config: it detects Vite and
+picks up `api/jisho.js` automatically.
 
-## Where the original version went
+That function exists because Jisho's API sends no CORS headers, so the browser
+can't call it directly. It runs on the Edge runtime specifically, because
+Jisho's WAF 403s Vercel's regional Node IP ranges but not Edge. If lookups
+break in production, check that first. Without the proxy the app still works;
+the tooltip just falls back to the local glossary and a "search on Jisho" link.
 
-The original single-file `index.html` + `data/*.js` version is kept in
-`legacy/` for reference. `scripts/migrate-data.mjs` is the one-off script
-that converted it into the JSON files under `src/data/` — re-run it if you
-ever need to regenerate from `legacy/` again (it will overwrite
-`grammar.json`, `kanji.json`, `reading.json`, `kaiwa-*.json`, and
-`quiz.json`; `grammar-extra.json` is hand-written and untouched by it).
+## A caveat worth stating
 
-`scripts/add-furigana-to-grammar.mjs` is another one-off: it auto-generates
-`<ruby>` furigana (via `kuroshiro` + `kuroshiro-analyzer-kuromoji`, a
-morphological analyzer) for any grammar example sentence that doesn't have
-any yet. It's already been run once — most examples now have furigana
-throughout, not just the first few per point — but if you add new example
-sentences without furigana, install those two packages
-(`npm install --no-save kuroshiro kuroshiro-analyzer-kuromoji`) and re-run
-it. Auto-generated readings are usually right but not guaranteed — spot
-check anything added this way.
+This is a static site, so every quiz answer ships to the browser in plain
+JSON. `"a": 1` next to a question is the correct choice. You cannot fix that
+client-side, and obfuscating it would just bloat the bundle for no benefit.
+If you fork this to run a class or produce scores anyone else relies on,
+you need server-side grading. For solo study it doesn't matter, and the mock
+exam certificate is labelled 模擬 for the same reason.
+
+## Credits
+
+Everything external this thing touches, and what it's used for:
+
+- **[Jisho.org](https://jisho.org)** ([API](https://jisho.org/api/v1/search/words?keyword=%E6%97%A5%E6%9C%AC%E8%AA%9E))
+  — the highlight-a-word-to-look-it-up tooltip, whenever the word isn't in the
+  local glossary. Unofficial and undocumented but long-standing. Called through
+  `api/jisho.js` because it sends no CORS headers. Please don't hammer it.
+- **[KanjiVG](https://kanjivg.tagaini.net/)**
+  ([repo](https://github.com/KanjiVG/kanjivg)) — the stroke-order diagrams in
+  the kanji modal. Licensed **CC BY-SA 3.0**, which means attribution is
+  required, not optional. Credit is shown in the modal itself as well as here.
+  Copyright © Ulrich Apel.
+  SVGs straight from GitHub.
+- **[Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API)**
+  — read-aloud on the dialogues. Browser built-in, so voice quality depends
+  entirely on the user's OS.
+
+Reference lists used while deciding grammar coverage:
+[jlptsensei.com](https://jlptsensei.com/jlpt-n4-grammar-list/) and
+[game-gengo.com](https://www.game-gengo.com/pages/jlpt-n4-grammar-list). Lesson
+cross-references point at Minna no Nihongo, Genki and Sou Matome; no text from
+any of them is reproduced here.
+
+No API keys anywhere. Nothing needs an account.
+
+## License
+
+Do whatever you want with it.
