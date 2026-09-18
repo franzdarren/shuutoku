@@ -471,7 +471,7 @@
             ]
           },
           {
-            "q": "Which sounds like the most firmly decided plan?",
+            "q": "Which states your own personal intention most directly?",
             "choices": [
               "<ruby>日本<rt>にほん</rt></ruby>に<ruby>行<rt>い</rt></ruby>きたいです",
               "<ruby>日本<rt>にほん</rt></ruby>に<ruby>行<rt>い</rt></ruby>く<ruby>予定<rt>よてい</rt></ruby>です",
@@ -3200,7 +3200,7 @@
             "q": "「ドアが＿＿。だれかが<ruby>開<rt>あ</rt></ruby>けたんでしょう。」",
             "choices": [
               "<ruby>開<rt>あ</rt></ruby>けてあります",
-              "<ruby>開<rt>あ</rt></ruby>いています",
+              "<ruby>開<rt>あ</rt></ruby>けています",
               "<ruby>開<rt>あ</rt></ruby>けます",
               "<ruby>開<rt>あ</rt></ruby>かれます"
             ],

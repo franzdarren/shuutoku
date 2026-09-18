@@ -360,7 +360,7 @@
     "title": "<ruby>漢字<rt>かんじ</rt></ruby>・語彙 — Kanji & vocabulary",
     "items": [
       {
-        "q": "<ruby>意味<rt>いみ</rt></ruby> is read:",
+        "q": "意味 is read:",
         "choices": [
           "いみ",
           "いい",
@@ -393,7 +393,7 @@
         "ex": "銀 (silver) + 行 (go/institution) = <ruby>銀行<rt>ぎんこう</rt></ruby>, 'bank'."
       },
       {
-        "q": "大声 is read, and 声 alone means:",
+        "q": "In 大声, how is the kanji 声 read on its own — and what does it mean?",
         "choices": [
           "おと (sound)",
           "こえ (voice)",
@@ -426,7 +426,7 @@
         "ex": "引 = pull; <ruby>割引<rt>わりびき</rt></ruby> (わりびき) is 'discount'."
       },
       {
-        "q": "<ruby>予定<rt>よてい</rt></ruby> is read:",
+        "q": "予定 is read:",
         "choices": [
           "よてい",
           "よで",
@@ -459,7 +459,7 @@
         "ex": "<ruby>急<rt>いそ</rt></ruby>ぐ (いそぐ) means to hurry."
       },
       {
-        "q": "<ruby>受付<rt>うけつけ</rt></ruby> is read:",
+        "q": "受付 is read:",
         "choices": [
           "うけつけ",
           "うけづけ",
@@ -481,7 +481,7 @@
         "ex": "<ruby>必要<rt>ひつよう</rt></ruby> (ひつよう) means necessary or needed."
       },
       {
-        "q": "<ruby>出発<rt>しゅっぱつ</rt></ruby> is read:",
+        "q": "出発 is read:",
         "choices": [
           "しゅっぱつ",
           "しゅつはつ",
@@ -514,7 +514,7 @@
         "ex": "不 negates: <ruby>便利<rt>べんり</rt></ruby> (convenient) → <ruby>不便<rt>ふべん</rt></ruby> (inconvenient)."
       },
       {
-        "q": "お<ruby>土産<rt>みやげ</rt></ruby> is read:",
+        "q": "お土産 is read:",
         "choices": [
           "おみやげ",
           "おどさん",
@@ -536,7 +536,7 @@
         "ex": "交通 (こうつう) means traffic or transport."
       },
       {
-        "q": "<ruby>説明<rt>せつめい</rt></ruby> is read:",
+        "q": "説明 is read:",
         "choices": [
           "せつめい",
           "せつみょう",
@@ -681,7 +681,7 @@
           "教室"
         ],
         "a": 2,
-        "ex": "<ruby>雨<rt>あめ</rt></ruby>の場合は体育館で<ruby>行<rt>おこな</rt></ruby>うと notice says."
+        "ex": "The notice says <ruby>雨<rt>あめ</rt></ruby>の<ruby>場合<rt>ばあい</rt></ruby>は<ruby>体育館<rt>たいいくかん</rt></ruby>で<ruby>行<rt>おこな</rt></ruby>います — if it rains, the event is held in the gym. 〜の場合は marks the circumstance."
       },
       {
         "q": "<ruby>日記<rt>にっき</rt></ruby>：「朝は<ruby>忙<rt>いそが</rt></ruby>しかったですが、<ruby>午後<rt>ごご</rt></ruby>はゆっくりできました。」— <ruby>午後<rt>ごご</rt></ruby>はどうでしたか。",

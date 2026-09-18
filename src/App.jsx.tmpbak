@@ -23,15 +23,14 @@ const SECTIONS = [
 ];
 
 export default function App() {
-  const _s = new URLSearchParams(location.search).get("s") || "overview"; // TEMP-SHOT
-  const [active, setActive] = useState(_s);
+  const [active, setActive] = useState("overview");
   const [mobileOpen, setMobileOpen] = useState(false);
   const [searchTarget, setSearchTarget] = useState(null);
   /* Once a section has been opened it stays mounted, so its scroll position,
      open module and filters survive tab switches — Review Mistakes in
      particular relies on siblings staying alive. Sections you've never
      opened simply aren't rendered yet. */
-  const [visited, setVisited] = useState(() => new Set(["overview", _s])); // TEMP-SHOT
+  const [visited, setVisited] = useState(() => new Set(["overview"]));
   const [totalQuizItems, setTotalQuizItems] = useState(0);
 
   /* The lesson content is ~570 kB, and nothing on the first screen needs it —

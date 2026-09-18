@@ -528,10 +528,10 @@
       {
         "q": "How do you ask whether a train goes to a destination?",
         "choices": [
-          "この<ruby>電車<rt>でんしゃ</rt></ruby>は<ruby>行<rt>い</rt></ruby>きますか",
-          "この<ruby>電車<rt>でんしゃ</rt></ruby>は<ruby>行<rt>い</rt></ruby>きますね",
-          "この<ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>行<rt>い</rt></ruby>きました",
-          "この<ruby>電車<rt>でんしゃ</rt></ruby>を<ruby>行<rt>い</rt></ruby>きますか"
+          "この<ruby>電車<rt>でんしゃ</rt></ruby>は<ruby>東京駅<rt>とうきょうえき</rt></ruby>に<ruby>行<rt>い</rt></ruby>きますか",
+          "この<ruby>電車<rt>でんしゃ</rt></ruby>は<ruby>東京駅<rt>とうきょうえき</rt></ruby>に<ruby>行<rt>い</rt></ruby>きますね",
+          "この<ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>東京駅<rt>とうきょうえき</rt></ruby>を<ruby>行<rt>い</rt></ruby>きました",
+          "この<ruby>電車<rt>でんしゃ</rt></ruby>を<ruby>東京駅<rt>とうきょうえき</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きますか"
         ],
         "a": 0,
         "ex": "この<ruby>電車<rt>でんしゃ</rt></ruby>は<ruby>東京駅<rt>とうきょうえき</rt></ruby>に<ruby>行<rt>い</rt></ruby>きますか uses は for the train as the topic and に for the destination."

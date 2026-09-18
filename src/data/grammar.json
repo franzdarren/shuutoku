@@ -1735,37 +1735,37 @@
         "ex": "Causative-passive <ruby>食<rt>た</rt></ruby>べさせられる = to be made to eat — the speaker had no choice."
       },
       {
-        "q": "「<ruby>部長<rt>ぶちょう</rt></ruby>は<ruby>今<rt>いま</rt></ruby>、<ruby>会議室<rt>かいぎしつ</rt></ruby>に＿＿。」 (honorific for いる)",
+        "q": "「となりの<ruby>人<rt>ひと</rt></ruby>にたばこを＿＿、<ruby>気分<rt>きぶん</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>くなりました。」 (someone smoked and it affected me)",
         "choices": [
-          "いらっしゃいます",
-          "おります",
-          "まいります",
-          "いたします"
+          "<ruby>吸<rt>す</rt></ruby>われて",
+          "<ruby>吸<rt>す</rt></ruby>って",
+          "<ruby>吸<rt>す</rt></ruby>わせて",
+          "<ruby>吸<rt>す</rt></ruby>えて"
         ],
         "a": 0,
-        "ex": "いらっしゃる is the honorific form used to elevate someone else. おる is humble, for yourself."
+        "ex": "The suffering passive <ruby>吸<rt>す</rt></ruby>われる marks you as adversely affected by what somebody else did."
       },
       {
-        "q": "「<ruby>私<rt>わたし</rt></ruby>が<ruby>資料<rt>しりょう</rt></ruby>をお<ruby>持<rt>も</rt></ruby>ち＿＿。」 (humble — I'll bring it)",
+        "q": "「<ruby>母<rt>はは</rt></ruby>は<ruby>妹<rt>いもうと</rt></ruby>に<ruby>部屋<rt>へや</rt></ruby>を＿＿。」 (the mother made her clean it)",
         "choices": [
-          "します",
-          "になります",
-          "です",
-          "ください"
+          "<ruby>掃除<rt>そうじ</rt></ruby>させました",
+          "<ruby>掃除<rt>そうじ</rt></ruby>されました",
+          "<ruby>掃除<rt>そうじ</rt></ruby>させられました",
+          "<ruby>掃除<rt>そうじ</rt></ruby>してもらいました"
         ],
         "a": 0,
-        "ex": "お＋stem＋する is the humble pattern used to lower your own action toward a superior."
+        "ex": "Causative 〜させる: the mother is the subject, making somebody else do the cleaning."
       },
       {
-        "q": "「<ruby>社長<rt>しゃちょう</rt></ruby>はもう＿＿か。」 (honorific for <ruby>帰<rt>かえ</rt></ruby>る)",
+        "q": "「<ruby>私<rt>わたし</rt></ruby>の<ruby>自転車<rt>じてんしゃ</rt></ruby>が＿＿。」 (it got stolen)",
         "choices": [
-          "お<ruby>帰<rt>かえ</rt></ruby>りになりました",
-          "お<ruby>帰<rt>かえ</rt></ruby>りしました",
-          "<ruby>帰<rt>かえ</rt></ruby>らせました",
-          "<ruby>帰<rt>かえ</rt></ruby>られてあげました"
+          "<ruby>盗<rt>ぬす</rt></ruby>まれました",
+          "<ruby>盗<rt>ぬす</rt></ruby>みました",
+          "<ruby>盗<rt>ぬす</rt></ruby>ませました",
+          "<ruby>盗<rt>ぬす</rt></ruby>んでいました"
         ],
         "a": 0,
-        "ex": "お＋stem＋になる is the honorific pattern. お<ruby>帰<rt>かえ</rt></ruby>りする would humble the president, which is wrong."
+        "ex": "Passive <ruby>盗<rt>ぬす</rt></ruby>まれる — the bike is the subject, and the thief is left unmentioned."
       },
       {
         "q": "「<ruby>雨<rt>あめ</rt></ruby>に＿＿、<ruby>服<rt>ふく</rt></ruby>がぬれました。」",
@@ -1801,26 +1801,26 @@
         "ex": "Causative <ruby>取<rt>と</rt></ruby>らせる — the manager, as subject, made the speaker take the copies."
       },
       {
-        "q": "「<ruby>明日<rt>あした</rt></ruby>、<ruby>先生<rt>せんせい</rt></ruby>のお<ruby>宅<rt>たく</rt></ruby>に＿＿。」 (humble — I will go)",
+        "q": "「<ruby>子供<rt>こども</rt></ruby>のとき、<ruby>毎日<rt>まいにち</rt></ruby>ピアノを＿＿。」 (I was made to practise)",
         "choices": [
-          "うかがいます",
-          "いらっしゃいます",
-          "おいでになります",
-          "<ruby>見<rt>み</rt></ruby>えます"
+          "<ruby>練習<rt>れんしゅう</rt></ruby>させられました",
+          "<ruby>練習<rt>れんしゅう</rt></ruby>させました",
+          "<ruby>練習<rt>れんしゅう</rt></ruby>されました",
+          "<ruby>練習<rt>れんしゅう</rt></ruby>してもらいました"
         ],
         "a": 0,
-        "ex": "うかがう is the humble verb for going or visiting a superior's place."
+        "ex": "Causative-passive 〜させられる: you did it under somebody else's will, not by choice."
       },
       {
-        "q": "「どうぞ、たくさん＿＿ください。」 (honorific for <ruby>食<rt>た</rt></ruby>べる)",
+        "q": "「<ruby>暑<rt>あつ</rt></ruby>いので、<ruby>窓<rt>まど</rt></ruby>を<ruby>開<rt>あ</rt></ruby>け＿＿ください。」 (please let me open it)",
         "choices": [
-          "<ruby>召<rt>め</rt></ruby>し上がって",
-          "いただいて",
-          "<ruby>食<rt>た</rt></ruby>べさせて",
-          "<ruby>拝見<rt>はいけん</rt></ruby>して"
+          "させて",
+          "られて",
+          "させられて",
+          "てあげて"
         ],
         "a": 0,
-        "ex": "<ruby>召<rt>め</rt></ruby>し上がる is honorific 'to eat'. いただく is humble, used for your own eating."
+        "ex": "Causative + てください is how you ask to be ALLOWED to do something yourself: <ruby>開<rt>あ</rt></ruby>けさせてください."
       },
       {
         "q": "「<ruby>弟<rt>おとうと</rt></ruby>にケーキを＿＿。」 (I let my little brother eat it)",
@@ -1834,15 +1834,15 @@
         "ex": "The causative covers both 'make' and 'let' — context decides which. Here it's permission."
       },
       {
-        "q": "「<ruby>先生<rt>せんせい</rt></ruby>の<ruby>絵<rt>え</rt></ruby>を＿＿。」 (humble — I looked at it)",
+        "q": "「<ruby>朝<rt>あさ</rt></ruby>、<ruby>母<rt>はは</rt></ruby>に＿＿。」 (my mother woke me up)",
         "choices": [
-          "<ruby>拝見<rt>はいけん</rt></ruby>しました",
-          "ご<ruby>覧<rt>らん</rt></ruby>になりました",
-          "見られました",
-          "<ruby>見<rt>み</rt></ruby>せました"
+          "<ruby>起<rt>お</rt></ruby>こされました",
+          "<ruby>起<rt>お</rt></ruby>こしました",
+          "<ruby>起<rt>お</rt></ruby>こさせました",
+          "<ruby>起<rt>お</rt></ruby>きました"
         ],
         "a": 0,
-        "ex": "<ruby>拝見<rt>はいけん</rt></ruby>する is the humble verb for looking at something belonging to a superior. ご<ruby>覧<rt>らん</rt></ruby>になる is honorific."
+        "ex": "Passive <ruby>起<rt>お</rt></ruby>こされる — your mother did the waking, and you are the one it happened to."
       }
     ]
   },
@@ -2385,7 +2385,7 @@
         "ex": "と states an automatic, unchanging consequence — the natural choice for how a machine works."
       },
       {
-        "q": "「<ruby>安<rt>やす</rt></ruby>く＿＿、<ruby>買<rt>か</rt></ruby>います。」 (a general condition)",
+        "q": "「この<ruby>本<rt>ほん</rt></ruby>が＿＿、<ruby>買<rt>か</rt></ruby>います。」 (a general condition)",
         "choices": [
           "<ruby>安<rt>やす</rt></ruby>ければ",
           "<ruby>安<rt>やす</rt></ruby>いと",
@@ -2433,11 +2433,11 @@
         "choices": [
           "あったら",
           "あると",
-          "あるなら",
-          "あれば"
+          "あるのに",
+          "あって"
         ],
         "a": 0,
-        "ex": "もし pairs most naturally with たら for a specific, one-off situation."
+        "ex": "と cannot lead into a request, which rules it out before 手伝ってください。あったら is the one form here that a request can follow."
       },
       {
         "q": "「<ruby>日本語<rt>にほんご</rt></ruby>が<ruby>話<rt>はな</rt></ruby>せる＿＿、<ruby>仕事<rt>しごと</rt></ruby>が見つかりますよ。」 (a general truth)",
@@ -2510,8 +2510,8 @@
         "choices": [
           "あったら",
           "あると",
-          "あれば",
-          "あるなら"
+          "あって",
+          "あるだろう"
         ],
         "a": 0,
         "ex": "たら handles a hypothetical situation and the question that follows from it."
@@ -3770,8 +3770,8 @@
         "choices": [
           "ので",
           "のに",
-          "し",
-          "ため"
+          "のを",
+          "ように"
         ],
         "a": 0,
         "ex": "ので states a straightforward reason in a slightly soft, polite way."
@@ -4679,12 +4679,12 @@
         "tip": "ごろ goes with a point in time and takes no に. ぐらい goes with an amount or a length instead.",
         "quiz": [
           {
-            "q": "「<ruby>明日<rt>あした</rt></ruby>の<ruby>朝<rt>あさ</rt></ruby>、<ruby>八時<rt>はちじ</rt></ruby>＿＿<ruby>迎<rt>むか</rt></ruby>えに<ruby>行<rt>い</rt></ruby>きます。」",
+            "q": "「<ruby>明日<rt>あした</rt></ruby>の<ruby>朝<rt>あさ</rt></ruby>、<ruby>八時<rt>はちじ</rt></ruby>＿＿<ruby>迎<rt>むか</rt></ruby>えに<ruby>行<rt>い</rt></ruby>きます。」 (at approximately eight)",
             "choices": [
               "ごろ",
               "ぐらい",
               "おきに",
-              "までに"
+              "まで"
             ],
             "a": 0,
             "ex": "ごろ marks an approximate point on the clock.",
