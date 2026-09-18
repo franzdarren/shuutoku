@@ -948,6 +948,8 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
 /* ============================================================
    KAIWA LAB
    ============================================================ */
+/* Closing advice block, set off from the reference material above it. */
+.tipsection{ margin-top:52px; padding-top:26px; border-top:1px solid var(--line-soft); }
 .tipgrid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; margin-bottom:36px; }
 .tipcard{
   background:var(--paper-2); border:1px solid var(--line); border-radius:var(--radius);
