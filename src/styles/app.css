@@ -1330,8 +1330,12 @@ footer.pagefoot{ margin-top:60px; padding-top:20px; border-top:1px solid var(--l
 .cert-num i{ font-style:normal; font-size:var(--fs-2xs); opacity:.55; }
 .cert-table .cert-total td{ border-top:1px solid var(--stroke-fg); border-bottom:3px double var(--stroke-fg); font-weight:700; }
 .cert-band{ font-family:var(--serif); font-size:var(--fs-xl); letter-spacing:.1em; }
-.cert-ref{ margin-bottom:6px; }
-.cert-refnote{ font-size:var(--fs-3xs); opacity:.55; margin-bottom:22px; }
+/* 参考情報 heading, folded into the score table as its own row. */
+.cert-table .cert-refhead td{
+  padding:14px 0 5px; border-bottom:none;
+  font-size:var(--fs-3xs); letter-spacing:.14em; opacity:.7;
+}
+.cert-refnote{ font-size:var(--fs-3xs); opacity:.55; margin:6px 0 18px; }
 
 .cert-verdict{
   text-align:center; margin:0 0 18px; padding:20px;
@@ -1362,12 +1366,53 @@ footer.pagefoot{ margin-top:60px; padding-top:20px; border-top:1px solid var(--l
 
 /* Printing gives you the "Save as PDF" destination for free, so the print
    sheet is just the certificate on its own — no app chrome, no scrim. */
+/* Modest page margins, so the sheet gets as much of the paper as possible
+   rather than the browser's fairly generous default. */
+@page{ size:auto; margin:10mm; }
+
+/* The screen certificate has room to breathe; a sheet of paper doesn't. Every
+   vertical measurement is cut here so the whole thing clears one page with
+   headroom, including on A4 (shorter than Letter) and at a bumped-up text
+   size. It also goes full width, which shortens it further: fewer wrapped
+   lines means less height. */
 @media print{
   body{ background:none; }
   .shell, .mobilebar, .cert-actions, .lookup-pop{ display:none !important; }
   .cert-scrim{ position:static; padding:0; background:none; display:block; overflow:visible; }
   .cert-wrap{ max-width:none; }
-  .cert-sheet{ border:1px solid #999; box-shadow:none; animation:none; }
+  .cert-sheet{
+    border:1px solid #999; box-shadow:none; animation:none;
+    padding:16px 22px; break-inside:avoid; page-break-inside:avoid;
+  }
+  .cert-rule-top{ margin-bottom:10px; }
+  .cert-rule-bottom{ margin-top:10px; }
+
+  .cert-head{ padding-bottom:8px; }
+  .cert-org{ font-size:.72rem; }
+  .cert-title{ font-size:1.3rem; margin-top:5px; }
+  .cert-sub{ margin-top:4px; }
+  .cert-mockmark{ margin-top:6px; padding:1px 10px; }
+
+  .cert-meta{ padding:8px 0; margin-bottom:10px; gap:6px; }
+  .cert-meta b{ font-size:.82rem; }
+
+  .cert-section-label{ margin-bottom:4px; }
+  .cert-table{ margin-bottom:8px; }
+  .cert-table td{ padding:5px 0; }
+  .cert-table td span{ margin-top:1px; }
+  .cert-num{ font-size:1rem; }
+  .cert-band{ font-size:1rem; }
+  .cert-refnote{ margin-bottom:10px; }
+
+  .cert-verdict{ margin:0 0 8px; padding:10px; }
+  .cert-verdict-label{ margin-bottom:6px; }
+  .cert-seal{ width:64px; height:64px; border-width:2px; font-size:1.05rem; }
+  .cert-verdict-en{ margin-top:6px; }
+
+  .cert-foot{ line-height:1.5; }
+  .cert-disclaimer{ margin-top:4px; }
+  /* Decorative, and the heaviest thing on the page for a printer to render. */
+  .cert-watermark{ display:none; }
 }
 
 /* ============================================================

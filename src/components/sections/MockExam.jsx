@@ -415,7 +415,6 @@ export default function MockExam() {
               <div className="cert-head">
                 <div className="cert-org">日 本 語 能 力 試 験</div>
                 <div className="cert-title">合 否 結 果 通 知 書</div>
-                <div className="cert-sub">Japanese-Language Proficiency Test · Result Notice</div>
                 <div className="cert-mockmark">模擬 · PRACTICE</div>
               </div>
 
@@ -425,7 +424,9 @@ export default function MockExam() {
                 <div><span>試験日 Test date</span><b>{new Date().toLocaleDateString("ja-JP")}</b></div>
               </div>
 
-              <div className="cert-section-label">得点区分別得点 · Scores by section</div>
+              {/* Scores and the 参考情報 bands share one table. Two separate
+                  tables each with their own heading was a lot of vertical
+                  space for five rows, and the sheet has to fit on one page. */}
               <table className="cert-table">
                 <tbody>
                   <tr>
@@ -440,12 +441,9 @@ export default function MockExam() {
                     <td>総合得点<span>Total score</span></td>
                     <td className="cert-num">{result.total}<i> / {SECTION_MAX * 2}</i></td>
                   </tr>
-                </tbody>
-              </table>
-
-              <div className="cert-section-label">参考情報 · Reference information</div>
-              <table className="cert-table cert-ref">
-                <tbody>
+                  <tr className="cert-refhead">
+                    <td colSpan={2}>参考情報 · Reference information</td>
+                  </tr>
                   <tr>
                     <td>文字・語彙<span>Script &amp; vocabulary</span></td>
                     <td className="cert-band">{band(result.moji.right, result.moji.total)}</td>
