@@ -2,6 +2,14 @@ import { useEffect, useMemo, useState } from "react";
 import { readingPassages } from "../../data/index.js";
 import JpText from "../JpText.jsx";
 import Quiz from "../Quiz.jsx";
+import FloatingNav from "../FloatingNav.jsx";
+
+/** Passage titles carry ruby; the floating nav renders plain text, so the
+ *  reading has to come out or the label shows "日記にっき — ...". */
+const stripReadings = (html) =>
+  String(html || "").replace(/<rt>.*?<\/rt>/g, "").replace(/<[^>]+>/g, "");
+
+const NAV_ITEMS = readingPassages.map((p) => ({ label: stripReadings(p.title) }));
 
 /* Four to a page. A passage plus its questions is a long block, and twelve of
    them in one scroll buries the later ones — the same reason Kanji Focus and
@@ -10,6 +18,7 @@ const PAGE_SIZE = 4;
 
 export default function ReadingLab({ jumpTarget }) {
   const [page, setPage] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(0);
   const pageCount = Math.ceil(readingPassages.length / PAGE_SIZE);
 
   const pageItems = useMemo(() => {
@@ -24,7 +33,7 @@ export default function ReadingLab({ jumpTarget }) {
   useEffect(() => {
     if (!jumpTarget) return;
     const target = jumpTarget.index;
-    if (typeof target === "number") setPage(Math.floor(target / PAGE_SIZE));
+    if (typeof target === "number") { setPage(Math.floor(target / PAGE_SIZE)); setActiveIndex(target); }
     requestAnimationFrame(() => {
       document.getElementById("passage-" + target)?.scrollIntoView({ behavior: "smooth", block: "start" });
     });
@@ -32,7 +41,19 @@ export default function ReadingLab({ jumpTarget }) {
 
   function goToPage(p) {
     setPage(p);
+    setActiveIndex(p * PAGE_SIZE);
     window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  /* Jumping to a passage may mean changing page first, so the scroll waits a
+     frame for that passage to actually exist in the DOM. */
+  function goToPassage(i) {
+    const clamped = Math.max(0, Math.min(readingPassages.length - 1, i));
+    setActiveIndex(clamped);
+    setPage(Math.floor(clamped / PAGE_SIZE));
+    requestAnimationFrame(() => {
+      document.getElementById("passage-" + clamped)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
   }
 
   const rangeStart = page * PAGE_SIZE + 1;
@@ -72,6 +93,8 @@ export default function ReadingLab({ jumpTarget }) {
       ))}
 
       {pageCount > 1 && pager}
+
+      <FloatingNav items={NAV_ITEMS} activeIndex={activeIndex} onGo={goToPassage} />
     </>
   );
 }

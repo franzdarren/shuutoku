@@ -88,9 +88,9 @@
     ]
   },
   {
-    "title": "お知らせ — エレベーター<ruby>点検<rt>てんけん</rt></ruby>",
+    "title": "お<ruby>知<rt>し</rt></ruby>らせ — エレベーター<ruby>点検<rt>てんけん</rt></ruby>",
     "titleEn": "Notice — elevator inspection",
-    "text": "エレベーター<ruby>点検<rt>てんけん</rt></ruby>のお知らせ\n\nいつも<ruby>当<rt>とう</rt></ruby>マンションをご<ruby>利用<rt>りよう</rt></ruby>いただき、ありがとうございます。<ruby>下記<rt>かき</rt></ruby>の<ruby>日程<rt>にってい</rt></ruby>でエレベーターの<ruby>点検<rt>てんけん</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>うことになりました。<ruby>点検中<rt>てんけんちゅう</rt></ruby>はエレベーターが<ruby>使<rt>つか</rt></ruby>えませんので、ご<ruby>注意<rt>ちゅうい</rt></ruby>ください。\n\n<ruby>日時<rt>にちじ</rt></ruby>：11<ruby>月<rt>がつ</rt></ruby>20<ruby>日<rt>にち</rt></ruby>（<ruby>金<rt>きん</rt></ruby>）<ruby>午前<rt>ごぜん</rt></ruby>9<ruby>時<rt>じ</rt></ruby>〜<ruby>午後<rt>ごご</rt></ruby>3<ruby>時<rt>じ</rt></ruby>\n<ruby>場所<rt>ばしょ</rt></ruby>：Aとうエレベーター\n\n<ruby>点検中<rt>てんけんちゅう</rt></ruby>、<ruby>上<rt>うえ</rt></ruby>の<ruby>階<rt>かい</rt></ruby>にお<ruby>住<rt>す</rt></ruby>まいの<ruby>方<rt>かた</rt></ruby>は<ruby>階段<rt>かいだん</rt></ruby>をご<ruby>利用<rt>りよう</rt></ruby>ください。ご<ruby>不便<rt>ふべん</rt></ruby>をおかけしますが、ご<ruby>協力<rt>きょうりょく</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いいたします。ご<ruby>質問<rt>しつもん</rt></ruby>がある<ruby>方<rt>かた</rt></ruby>は、<ruby>管理事務所<rt>かんりじむしょ</rt></ruby>までご<ruby>連絡<rt>れんらく</rt></ruby>ください。",
+    "text": "エレベーター<ruby>点検<rt>てんけん</rt></ruby>のお<ruby>知<rt>し</rt></ruby>らせ\n\nいつも<ruby>当<rt>とう</rt></ruby>マンションをご<ruby>利用<rt>りよう</rt></ruby>いただき、ありがとうございます。<ruby>下記<rt>かき</rt></ruby>の<ruby>日程<rt>にってい</rt></ruby>でエレベーターの<ruby>点検<rt>てんけん</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>うことになりました。<ruby>点検中<rt>てんけんちゅう</rt></ruby>はエレベーターが<ruby>使<rt>つか</rt></ruby>えませんので、ご<ruby>注意<rt>ちゅうい</rt></ruby>ください。\n\n<ruby>日時<rt>にちじ</rt></ruby>：11<ruby>月<rt>がつ</rt></ruby>20<ruby>日<rt>にち</rt></ruby>（<ruby>金<rt>きん</rt></ruby>）<ruby>午前<rt>ごぜん</rt></ruby>9<ruby>時<rt>じ</rt></ruby>〜<ruby>午後<rt>ごご</rt></ruby>3<ruby>時<rt>じ</rt></ruby>\n<ruby>場所<rt>ばしょ</rt></ruby>：Aとうエレベーター\n\n<ruby>点検中<rt>てんけんちゅう</rt></ruby>、<ruby>上<rt>うえ</rt></ruby>の<ruby>階<rt>かい</rt></ruby>にお<ruby>住<rt>す</rt></ruby>まいの<ruby>方<rt>かた</rt></ruby>は<ruby>階段<rt>かいだん</rt></ruby>をご<ruby>利用<rt>りよう</rt></ruby>ください。ご<ruby>不便<rt>ふべん</rt></ruby>をおかけしますが、ご<ruby>協力<rt>きょうりょく</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いいたします。ご<ruby>質問<rt>しつもん</rt></ruby>がある<ruby>方<rt>かた</rt></ruby>は、<ruby>管理事務所<rt>かんりじむしょ</rt></ruby>までご<ruby>連絡<rt>れんらく</rt></ruby>ください。",
     "gloss": "<ruby>点検<rt>てんけん</rt></ruby> (てんけん) inspection ・ <ruby>日程<rt>にってい</rt></ruby> (にってい) schedule ・ <ruby>階段<rt>かいだん</rt></ruby> (かいだん) stairs ・ <ruby>不便<rt>ふべん</rt></ruby> (ふべん) inconvenient ・ <ruby>協力<rt>きょうりょく</rt></ruby> (きょうりょく) cooperation ・ <ruby>管理事務所<rt>かんりじむしょ</rt></ruby> (かんりじむしょ) management office",
     "quiz": [
       {
@@ -224,7 +224,7 @@
     ]
   },
   {
-    "title": "お知らせ — <ruby>店<rt>みせ</rt></ruby>の<ruby>休<rt>やす</rt></ruby>みと<ruby>割引<rt>わりびき</rt></ruby>",
+    "title": "お<ruby>知<rt>し</rt></ruby>らせ — <ruby>店<rt>みせ</rt></ruby>の<ruby>休<rt>やす</rt></ruby>みと<ruby>割引<rt>わりびき</rt></ruby>",
     "titleEn": "Notice — shop closure & discount",
     "text": "お客様へ\n\nいつもご<ruby>利用<rt>りよう</rt></ruby>ありがとうございます。<ruby>店内<rt>てんない</rt></ruby>の<ruby>工事<rt>こうじ</rt></ruby>のため、<ruby>下記<rt>かき</rt></ruby>の<ruby>期間<rt>きかん</rt></ruby>はお<ruby>休<rt>やす</rt></ruby>みさせていただきます。\n\n<ruby>休<rt>やす</rt></ruby>み：12月3日（水）〜12月5日（金）\n\n12月6日（土）から、<ruby>新<rt>あたら</rt></ruby>しくなった<ruby>店<rt>みせ</rt></ruby>でまたお<ruby>待<rt>ま</rt></ruby>ちしております。なお、<ruby>再開<rt>さいかい</rt></ruby>の日から一<ruby>週間<rt>しゅうかん</rt></ruby>、すべての<ruby>商品<rt>しょうひん</rt></ruby>が10％<ruby>割引<rt>わりびき</rt></ruby>になります。カードをお<ruby>持<rt>も</rt></ruby>ちの方は、さらに5％お<ruby>安<rt>やす</rt></ruby>くなります。\n\nご<ruby>不便<rt>ふべん</rt></ruby>をおかけしますが、よろしくお<ruby>願<rt>ねが</rt></ruby>いいたします。",
     "gloss": "<ruby>工事<rt>こうじ</rt></ruby> (こうじ) construction ・ <ruby>期間<rt>きかん</rt></ruby> (きかん) period ・ <ruby>再開<rt>さいかい</rt></ruby> (さいかい) reopening ・ <ruby>商品<rt>しょうひん</rt></ruby> (しょうひん) goods ・ <ruby>割引<rt>わりびき</rt></ruby> (わりびき) discount ・ なお moreover, in addition ・ さらに further, even more ・ <ruby>不便<rt>ふべん</rt></ruby> (ふべん) inconvenience",
@@ -521,7 +521,7 @@
     "title": "お<ruby>知<rt>し</rt></ruby>らせ — <ruby>図書館<rt>としょかん</rt></ruby>の<ruby>利用<rt>りよう</rt></ruby><ruby>案内<rt>あんない</rt></ruby>",
     "titleEn": "Notice — library guide",
     "text": "<ruby>市立<rt>しりつ</rt></ruby><ruby>図書館<rt>としょかん</rt></ruby>のご<ruby>案内<rt>あんない</rt></ruby>\n\n<ruby>開館時間<rt>かいかんじかん</rt></ruby>：<ruby>午前<rt>ごぜん</rt></ruby>9<ruby>時<rt>じ</rt></ruby>〜<ruby>午後<rt>ごご</rt></ruby>7<ruby>時<rt>じ</rt></ruby>（<ruby>土曜<rt>どよう</rt></ruby>・<ruby>日曜<rt>にちよう</rt></ruby>は<ruby>午後<rt>ごご</rt></ruby>5<ruby>時<rt>じ</rt></ruby>まで）\n<ruby>休館日<rt>きゅうかんび</rt></ruby>：<ruby>毎週<rt>まいしゅう</rt></ruby><ruby>月曜日<rt>げつようび</rt></ruby>\n\n<ruby>本<rt>ほん</rt></ruby>は<ruby>一人<rt>ひとり</rt></ruby>10<ruby>冊<rt>さつ</rt></ruby>まで、2<ruby>週間<rt>しゅうかん</rt></ruby><ruby>借<rt>か</rt></ruby>りることができます。<ruby>返<rt>かえ</rt></ruby>すのが<ruby>遅<rt>おく</rt></ruby>れた<ruby>場合<rt>ばあい</rt></ruby>、<ruby>次<rt>つぎ</rt></ruby>に<ruby>借<rt>か</rt></ruby>りられるようになるまで1<ruby>週間<rt>しゅうかん</rt></ruby>かかりますので、<ruby>気<rt>き</rt></ruby>をつけてください。\n\n2<ruby>階<rt>かい</rt></ruby>には<ruby>勉強<rt>べんきょう</rt></ruby>できる<ruby>部屋<rt>へや</rt></ruby>があります。<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>は、<ruby>蓋<rt>ふた</rt></ruby>のあるものだけ<ruby>持<rt>も</rt></ruby>って<ruby>入<rt>はい</rt></ruby>ることができます。",
-    "gloss": "市立 (しりつ) municipal, city-run ・ 開館時間 (かいかんじかん) opening hours ・ 休館日 (きゅうかんび) closed day ・ 冊 (さつ) counter for books ・ 蓋 (ふた) lid",
+    "gloss": "<ruby>市立<rt>しりつ</rt></ruby> (しりつ) municipal, city-run ・ <ruby>開館時間<rt>かいかんじかん</rt></ruby> (かいかんじかん) opening hours ・ <ruby>休館日<rt>きゅうかんび</rt></ruby> (きゅうかんび) closed day ・ 冊 (さつ) counter for books ・ 蓋 (ふた) lid",
     "quiz": [
       {
         "q": "<ruby>日曜日<rt>にちようび</rt></ruby>、<ruby>図書館<rt>としょかん</rt></ruby>は<ruby>何時<rt>なんじ</rt></ruby>までですか。",
@@ -570,17 +570,17 @@
     ],
     "vocab": [
       {
-        "jp": "市立",
+        "jp": "<ruby>市立<rt>しりつ</rt></ruby>",
         "reading": "しりつ",
         "en": "municipal, city-run"
       },
       {
-        "jp": "開館時間",
+        "jp": "<ruby>開館時間<rt>かいかんじかん</rt></ruby>",
         "reading": "かいかんじかん",
         "en": "opening hours"
       },
       {
-        "jp": "休館日",
+        "jp": "<ruby>休館日<rt>きゅうかんび</rt></ruby>",
         "reading": "きゅうかんび",
         "en": "closed day"
       },
@@ -600,7 +600,7 @@
     "title": "メール — アルバイトのシフト",
     "titleEn": "Email — a shift change request",
     "text": "<ruby>店長<rt>てんちょう</rt></ruby>へ\n\nお<ruby>疲<rt>つか</rt></ruby>れさまです。<ruby>田中<rt>たなか</rt></ruby>です。\n\n<ruby>来週<rt>らいしゅう</rt></ruby>の<ruby>金曜日<rt>きんようび</rt></ruby>ですが、<ruby>大学<rt>だいがく</rt></ruby>の<ruby>試験<rt>しけん</rt></ruby>が<ruby>入<rt>はい</rt></ruby>ってしまいました。<ruby>申<rt>もう</rt></ruby>し<ruby>訳<rt>わけ</rt></ruby>ありませんが、シフトを<ruby>変<rt>か</rt></ruby>えていただけないでしょうか。\n\n<ruby>木曜日<rt>もくようび</rt></ruby>か<ruby>土曜日<rt>どようび</rt></ruby>なら、<ruby>一日中<rt>いちにちじゅう</rt></ruby><ruby>働<rt>はたら</rt></ruby>けます。<ruby>山田<rt>やまだ</rt></ruby>さんに<ruby>聞<rt>き</rt></ruby>いたところ、<ruby>金曜日<rt>きんようび</rt></ruby>なら<ruby>代<rt>か</rt></ruby>わってもいいと<ruby>言<rt>い</rt></ruby>っていました。\n\nご<ruby>迷惑<rt>めいわく</rt></ruby>をおかけしますが、よろしくお<ruby>願<rt>ねが</rt></ruby>いいたします。\n\n<ruby>田中<rt>たなか</rt></ruby>",
-    "gloss": "<ruby>店長<rt>てんちょう</rt></ruby> (てんちょう) shop manager ・ 一日中 (いちにちじゅう) all day long ・ 代わる (かわる) to take someone's place ・ 迷惑 (めいわく) trouble, inconvenience",
+    "gloss": "<ruby>店長<rt>てんちょう</rt></ruby> (てんちょう) shop manager ・ <ruby>一日中<rt>いちにちじゅう</rt></ruby> (いちにちじゅう) all day long ・ <ruby>代<rt>か</rt></ruby>わる (かわる) to take someone's place ・ <ruby>迷惑<rt>めいわく</rt></ruby> (めいわく) trouble, inconvenience",
     "quiz": [
       {
         "q": "<ruby>田中<rt>たなか</rt></ruby>さんはどうしてシフトを<ruby>変<rt>か</rt></ruby>えたいのですか。",
@@ -654,17 +654,17 @@
         "en": "shop manager"
       },
       {
-        "jp": "一日中",
+        "jp": "<ruby>一日中<rt>いちにちじゅう</rt></ruby>",
         "reading": "いちにちじゅう",
         "en": "all day long"
       },
       {
-        "jp": "代わる",
+        "jp": "<ruby>代<rt>か</rt></ruby>わる",
         "reading": "かわる",
         "en": "to take someone's place"
       },
       {
-        "jp": "迷惑",
+        "jp": "<ruby>迷惑<rt>めいわく</rt></ruby>",
         "reading": "めいわく",
         "en": "trouble, inconvenience"
       }
@@ -674,7 +674,7 @@
     "title": "<ruby>日記<rt>にっき</rt></ruby> — <ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>し",
     "titleEn": "Diary — moving house",
     "text": "<ruby>先週<rt>せんしゅう</rt></ruby>、<ruby>新<rt>あたら</rt></ruby>しいアパートに<ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>した。<ruby>前<rt>まえ</rt></ruby>の<ruby>部屋<rt>へや</rt></ruby>より<ruby>少<rt>すこ</rt></ruby>し<ruby>狭<rt>せま</rt></ruby>いけれど、<ruby>駅<rt>えき</rt></ruby>から<ruby>歩<rt>ある</rt></ruby>いて5<ruby>分<rt>ふん</rt></ruby>なので、とても<ruby>便利<rt>べんり</rt></ruby>だ。\n\n<ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>しの<ruby>日<rt>ひ</rt></ruby>は<ruby>朝<rt>あさ</rt></ruby>から<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>っていて<ruby>大変<rt>たいへん</rt></ruby>だった。<ruby>友達<rt>ともだち</rt></ruby>が<ruby>二人<rt>ふたり</rt></ruby><ruby>手伝<rt>てつだ</rt></ruby>いに<ruby>来<rt>き</rt></ruby>てくれたので、<ruby>思<rt>おも</rt></ruby>ったより<ruby>早<rt>はや</rt></ruby>く<ruby>終<rt>お</rt></ruby>わった。お<ruby>礼<rt>れい</rt></ruby>に<ruby>近<rt>ちか</rt></ruby>くの<ruby>店<rt>みせ</rt></ruby>でラーメンをごちそうした。\n\n<ruby>荷物<rt>にもつ</rt></ruby>はまだ<ruby>全部<rt>ぜんぶ</rt></ruby><ruby>片付<rt>かたづ</rt></ruby>いていない。<ruby>今週末<rt>こんしゅうまつ</rt></ruby>までに<ruby>何<rt>なん</rt></ruby>とかしたいと<ruby>思<rt>おも</rt></ruby>っている。",
-    "gloss": "<ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>す (ひっこす) to move house ・ 狭い (せまい) narrow, cramped ・ <ruby>手伝<rt>てつだ</rt></ruby>い (てつだい) help ・ お礼 (おれい) thanks, a thank-you ・ <ruby>片付<rt>かたづ</rt></ruby>く (かたづく) to get tidied away",
+    "gloss": "<ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>す (ひっこす) to move house ・ <ruby>狭<rt>せま</rt></ruby>い (せまい) narrow, cramped ・ <ruby>手伝<rt>てつだ</rt></ruby>い (てつだい) help ・ お礼 (おれい) thanks, a thank-you ・ <ruby>片付<rt>かたづ</rt></ruby>く (かたづく) to get tidied away",
     "quiz": [
       {
         "q": "<ruby>新<rt>あたら</rt></ruby>しい<ruby>部屋<rt>へや</rt></ruby>について、<ruby>正<rt>ただ</rt></ruby>しいものはどれですか。",
@@ -728,7 +728,7 @@
         "en": "to move house"
       },
       {
-        "jp": "狭い",
+        "jp": "<ruby>狭<rt>せま</rt></ruby>い",
         "reading": "せまい",
         "en": "narrow, cramped"
       },
@@ -753,7 +753,7 @@
     "title": "<ruby>案内<rt>あんない</rt></ruby> — <ruby>料理<rt>りょうり</rt></ruby><ruby>教室<rt>きょうしつ</rt></ruby>のお<ruby>知<rt>し</rt></ruby>らせ",
     "titleEn": "Advertisement — a cooking class",
     "text": "はじめての<ruby>和食<rt>わしょく</rt></ruby><ruby>教室<rt>きょうしつ</rt></ruby>\n\n<ruby>日時<rt>にちじ</rt></ruby>：<ruby>毎月<rt>まいつき</rt></ruby><ruby>第<rt>だい</rt></ruby>2<ruby>土曜日<rt>どようび</rt></ruby>　<ruby>午後<rt>ごご</rt></ruby>1<ruby>時<rt>じ</rt></ruby>〜4<ruby>時<rt>じ</rt></ruby>\n<ruby>場所<rt>ばしょ</rt></ruby>：みどり<ruby>市民<rt>しみん</rt></ruby>センター 3<ruby>階<rt>かい</rt></ruby>\n<ruby>参加費<rt>さんかひ</rt></ruby>：1<ruby>回<rt>かい</rt></ruby> 2,000<ruby>円<rt>えん</rt></ruby>（<ruby>材料費<rt>ざいりょうひ</rt></ruby>を<ruby>含<rt>ふく</rt></ruby>む）\n\nエプロンとタオルをお<ruby>持<rt>も</rt></ruby>ちください。<ruby>包丁<rt>ほうちょう</rt></ruby>やお<ruby>皿<rt>さら</rt></ruby>は<ruby>教室<rt>きょうしつ</rt></ruby>にあります。\n\nお<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>みは、<ruby>前<rt>まえ</rt></ruby>の<ruby>週<rt>しゅう</rt></ruby>の<ruby>水曜日<rt>すいようび</rt></ruby>までに<ruby>電話<rt>でんわ</rt></ruby>かホームページからお<ruby>願<rt>ねが</rt></ruby>いします。<ruby>定員<rt>ていいん</rt></ruby>は12<ruby>名<rt>めい</rt></ruby>です。<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>みが<ruby>多<rt>おお</rt></ruby>い<ruby>場合<rt>ばあい</rt></ruby>は、<ruby>初<rt>はじ</rt></ruby>めての<ruby>方<rt>かた</rt></ruby>を<ruby>優先<rt>ゆうせん</rt></ruby>します。",
-    "gloss": "和食 (わしょく) Japanese food ・ 参加費 (さんかひ) participation fee ・ 材料費 (ざいりょうひ) cost of ingredients ・ 包丁 (ほうちょう) kitchen knife ・ 定員 (ていいん) capacity, number of places ・ 優先 (ゆうせん) priority",
+    "gloss": "<ruby>和食<rt>わしょく</rt></ruby> (わしょく) Japanese food ・ <ruby>参加費<rt>さんかひ</rt></ruby> (さんかひ) participation fee ・ <ruby>材料費<rt>ざいりょうひ</rt></ruby> (ざいりょうひ) cost of ingredients ・ <ruby>包丁<rt>ほうちょう</rt></ruby> (ほうちょう) kitchen knife ・ <ruby>定員<rt>ていいん</rt></ruby> (ていいん) capacity, number of places ・ <ruby>優先<rt>ゆうせん</rt></ruby> (ゆうせん) priority",
     "quiz": [
       {
         "q": "この<ruby>教室<rt>きょうしつ</rt></ruby>はいつありますか。",
@@ -802,32 +802,32 @@
     ],
     "vocab": [
       {
-        "jp": "和食",
+        "jp": "<ruby>和食<rt>わしょく</rt></ruby>",
         "reading": "わしょく",
         "en": "Japanese food"
       },
       {
-        "jp": "参加費",
+        "jp": "<ruby>参加費<rt>さんかひ</rt></ruby>",
         "reading": "さんかひ",
         "en": "participation fee"
       },
       {
-        "jp": "材料費",
+        "jp": "<ruby>材料費<rt>ざいりょうひ</rt></ruby>",
         "reading": "ざいりょうひ",
         "en": "cost of ingredients"
       },
       {
-        "jp": "包丁",
+        "jp": "<ruby>包丁<rt>ほうちょう</rt></ruby>",
         "reading": "ほうちょう",
         "en": "kitchen knife"
       },
       {
-        "jp": "定員",
+        "jp": "<ruby>定員<rt>ていいん</rt></ruby>",
         "reading": "ていいん",
         "en": "capacity, number of places"
       },
       {
-        "jp": "優先",
+        "jp": "<ruby>優先<rt>ゆうせん</rt></ruby>",
         "reading": "ゆうせん",
         "en": "priority"
       }
@@ -837,7 +837,7 @@
     "title": "ブログ — <ruby>日本<rt>にほん</rt></ruby>の<ruby>夏<rt>なつ</rt></ruby>",
     "titleEn": "Blog — summer in Japan",
     "text": "<ruby>日本<rt>にほん</rt></ruby>の<ruby>夏<rt>なつ</rt></ruby>は、<ruby>思<rt>おも</rt></ruby>っていたよりずっと<ruby>暑<rt>あつ</rt></ruby>い。<ruby>私<rt>わたし</rt></ruby>の<ruby>国<rt>くに</rt></ruby>も<ruby>暑<rt>あつ</rt></ruby>いが、<ruby>日本<rt>にほん</rt></ruby>は<ruby>湿気<rt>しっけ</rt></ruby>が<ruby>多<rt>おお</rt></ruby>いので、<ruby>外<rt>そと</rt></ruby>に<ruby>出<rt>で</rt></ruby>るとすぐに<ruby>汗<rt>あせ</rt></ruby>が<ruby>出<rt>で</rt></ruby>る。\n\nでも、<ruby>夏<rt>なつ</rt></ruby>にしかできないことがたくさんある。<ruby>花火大会<rt>はなびたいかい</rt></ruby>、お<ruby>祭<rt>まつ</rt></ruby>り、かき<ruby>氷<rt>ごおり</rt></ruby>。<ruby>去年<rt>きょねん</rt></ruby>、<ruby>初<rt>はじ</rt></ruby>めて<ruby>浴衣<rt>ゆかた</rt></ruby>を<ruby>着<rt>き</rt></ruby>て<ruby>花火<rt>はなび</rt></ruby>を<ruby>見<rt>み</rt></ruby>に<ruby>行<rt>い</rt></ruby>った。<ruby>人<rt>ひと</rt></ruby>がとても<ruby>多<rt>おお</rt></ruby>くて、<ruby>駅<rt>えき</rt></ruby>から<ruby>会場<rt>かいじょう</rt></ruby>まで30<ruby>分<rt>ぷん</rt></ruby>もかかったが、<ruby>空<rt>そら</rt></ruby>に<ruby>大<rt>おお</rt></ruby>きな<ruby>花火<rt>はなび</rt></ruby>が<ruby>上<rt>あ</rt></ruby>がったときは、<ruby>来<rt>き</rt></ruby>てよかったと<ruby>思<rt>おも</rt></ruby>った。\n\n<ruby>今年<rt>ことし</rt></ruby>も<ruby>行<rt>い</rt></ruby>くつもりだ。<ruby>今度<rt>こんど</rt></ruby>はもっと<ruby>早<rt>はや</rt></ruby>めに<ruby>家<rt>いえ</rt></ruby>を<ruby>出<rt>で</rt></ruby>ようと<ruby>思<rt>おも</rt></ruby>う。",
-    "gloss": "湿気 (しっけ) humidity ・ 汗 (あせ) sweat ・ 花火大会 (はなびたいかい) fireworks festival ・ 浴衣 (ゆかた) summer kimono ・ 会場 (かいじょう) venue",
+    "gloss": "<ruby>湿気<rt>しっけ</rt></ruby> (しっけ) humidity ・ 汗 (あせ) sweat ・ <ruby>花火大会<rt>はなびたいかい</rt></ruby> (はなびたいかい) fireworks festival ・ <ruby>浴衣<rt>ゆかた</rt></ruby> (ゆかた) summer kimono ・ <ruby>会場<rt>かいじょう</rt></ruby> (かいじょう) venue",
     "quiz": [
       {
         "q": "<ruby>日本<rt>にほん</rt></ruby>の<ruby>夏<rt>なつ</rt></ruby>について、この<ruby>人<rt>ひと</rt></ruby>は<ruby>何<rt>なん</rt></ruby>と<ruby>言<rt>い</rt></ruby>っていますか。",
@@ -886,7 +886,7 @@
     ],
     "vocab": [
       {
-        "jp": "湿気",
+        "jp": "<ruby>湿気<rt>しっけ</rt></ruby>",
         "reading": "しっけ",
         "en": "humidity"
       },
@@ -896,17 +896,17 @@
         "en": "sweat"
       },
       {
-        "jp": "花火大会",
+        "jp": "<ruby>花火大会<rt>はなびたいかい</rt></ruby>",
         "reading": "はなびたいかい",
         "en": "fireworks festival"
       },
       {
-        "jp": "浴衣",
+        "jp": "<ruby>浴衣<rt>ゆかた</rt></ruby>",
         "reading": "ゆかた",
         "en": "summer kimono"
       },
       {
-        "jp": "会場",
+        "jp": "<ruby>会場<rt>かいじょう</rt></ruby>",
         "reading": "かいじょう",
         "en": "venue"
       }
@@ -916,7 +916,7 @@
     "title": "お<ruby>知<rt>し</rt></ruby>らせ — <ruby>病院<rt>びょういん</rt></ruby>のご<ruby>案内<rt>あんない</rt></ruby>",
     "titleEn": "Notice — at the clinic",
     "text": "はじめて<ruby>来<rt>こ</rt></ruby>られた<ruby>方<rt>かた</rt></ruby>へ\n\n<ruby>受付<rt>うけつけ</rt></ruby>で<ruby>保険証<rt>ほけんしょう</rt></ruby>をお<ruby>出<rt>だ</rt></ruby>しください。<ruby>保険証<rt>ほけんしょう</rt></ruby>がない<ruby>場合<rt>ばあい</rt></ruby>は、その<ruby>日<rt>ひ</rt></ruby>は<ruby>全額<rt>ぜんがく</rt></ruby>お<ruby>支払<rt>しはら</rt></ruby>いいただくことになります。\n\n<ruby>熱<rt>ねつ</rt></ruby>が37.5<ruby>度<rt>ど</rt></ruby><ruby>以上<rt>いじょう</rt></ruby>ある<ruby>方<rt>かた</rt></ruby>は、<ruby>中<rt>なか</rt></ruby>に<ruby>入<rt>はい</rt></ruby>らずに、<ruby>入口<rt>いりぐち</rt></ruby>の<ruby>電話<rt>でんわ</rt></ruby>で<ruby>受付<rt>うけつけ</rt></ruby>にお<ruby>知<rt>し</rt></ruby>らせください。<ruby>別<rt>べつ</rt></ruby>の<ruby>部屋<rt>へや</rt></ruby>にご<ruby>案内<rt>あんない</rt></ruby>します。\n\n<ruby>薬<rt>くすり</rt></ruby>は<ruby>病院<rt>びょういん</rt></ruby>の<ruby>中<rt>なか</rt></ruby>では<ruby>出<rt>だ</rt></ruby>していません。<ruby>会計<rt>かいけい</rt></ruby>のあとで<ruby>紙<rt>かみ</rt></ruby>をお<ruby>渡<rt>わた</rt></ruby>ししますので、<ruby>外<rt>そと</rt></ruby>の<ruby>薬局<rt>やっきょく</rt></ruby>へお<ruby>持<rt>も</rt></ruby>ちください。",
-    "gloss": "<ruby>受付<rt>うけつけ</rt></ruby> (うけつけ) reception desk ・ 保険証 (ほけんしょう) health insurance card ・ 全額 (ぜんがく) the full amount ・ <ruby>会計<rt>かいけい</rt></ruby> (かいけい) payment, the bill ・ <ruby>薬局<rt>やっきょく</rt></ruby> (やっきょく) pharmacy",
+    "gloss": "<ruby>受付<rt>うけつけ</rt></ruby> (うけつけ) reception desk ・ <ruby>保険証<rt>ほけんしょう</rt></ruby> (ほけんしょう) health insurance card ・ <ruby>全額<rt>ぜんがく</rt></ruby> (ぜんがく) the full amount ・ <ruby>会計<rt>かいけい</rt></ruby> (かいけい) payment, the bill ・ <ruby>薬局<rt>やっきょく</rt></ruby> (やっきょく) pharmacy",
     "quiz": [
       {
         "q": "はじめての<ruby>人<rt>ひと</rt></ruby>は、<ruby>受付<rt>うけつけ</rt></ruby>で<ruby>何<rt>なに</rt></ruby>を<ruby>出<rt>だ</rt></ruby>しますか。",
@@ -970,12 +970,12 @@
         "en": "reception desk"
       },
       {
-        "jp": "保険証",
+        "jp": "<ruby>保険証<rt>ほけんしょう</rt></ruby>",
         "reading": "ほけんしょう",
         "en": "health insurance card"
       },
       {
-        "jp": "全額",
+        "jp": "<ruby>全額<rt>ぜんがく</rt></ruby>",
         "reading": "ぜんがく",
         "en": "the full amount"
       },

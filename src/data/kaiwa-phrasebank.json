@@ -12,11 +12,11 @@
         "en": "Please treat me well / looking forward to it"
       },
       {
-        "jp": "お世話になります",
+        "jp": "お<ruby>世話<rt>せわ</rt></ruby>になります",
         "en": "Thank you in advance for your help"
       },
       {
-        "jp": "お久しぶりです",
+        "jp": "お<ruby>久<rt>ひさ</rt></ruby>しぶりです",
         "en": "It's been a long time"
       },
       {
@@ -36,12 +36,106 @@
         "en": "Sorry to intrude (entering someone's home)"
       },
       {
-        "jp": "お<ruby>名前<rt>なまえ</rt></ruby>は何ですか",
+        "jp": "お<ruby>名前<rt>なまえ</rt></ruby>は<ruby>何<rt>なん</rt></ruby>ですか",
         "en": "What's your name?"
       },
       {
         "jp": "どちらから<ruby>来<rt>き</rt></ruby>ましたか",
         "en": "Where are you from?"
+      },
+      {
+        "jp": "お<ruby>疲<rt>つか</rt></ruby>れさまです",
+        "en": "The all-purpose workplace greeting — hello, goodbye and thank-you at once"
+      },
+      {
+        "jp": "いってきます / いってらっしゃい",
+        "en": "Leaving home / seeing someone off — always used as a pair"
+      },
+      {
+        "jp": "ただいま / おかえりなさい",
+        "en": "I'm home / welcome back — the other half of the same pair"
+      },
+      {
+        "jp": "ご<ruby>無沙汰<rt>ぶさた</rt></ruby>しております",
+        "en": "It's been a long while — the formal version of お久しぶりです"
+      }
+    ]
+  },
+  {
+    "cat": "タメ口・友達と",
+    "catEn": "Casual plain form — with friends, never with staff or a boss",
+    "items": [
+      {
+        "jp": "ありがとう",
+        "en": "Thanks — plain form of ありがとうございます"
+      },
+      {
+        "jp": "ごめん",
+        "en": "Sorry — plain form of ごめんなさい／すみません"
+      },
+      {
+        "jp": "うん / ううん",
+        "en": "Yeah / nope — the casual はい and いいえ"
+      },
+      {
+        "jp": "そうなんだ",
+        "en": "Oh really, I see — casual そうなんですか"
+      },
+      {
+        "jp": "だよね",
+        "en": "Right? I know — casual ですよね, agreeing warmly"
+      },
+      {
+        "jp": "ほんと？",
+        "en": "Really? — casual ほんとうですか"
+      },
+      {
+        "jp": "わかった",
+        "en": "Got it — casual わかりました"
+      },
+      {
+        "jp": "<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>？",
+        "en": "You okay? — casual 大丈夫ですか"
+      },
+      {
+        "jp": "ちょっと<ruby>待<rt>ま</rt></ruby>って",
+        "en": "Hang on a sec — casual ちょっと待ってください"
+      },
+      {
+        "jp": "いいよ",
+        "en": "Sure, go ahead — casual いいですよ"
+      },
+      {
+        "jp": "<ruby>知<rt>し</rt></ruby>らない",
+        "en": "I dunno — casual 知りません"
+      },
+      {
+        "jp": "<ruby>何<rt>なに</rt></ruby>してるの？",
+        "en": "What are you up to? — casual 何をしていますか"
+      },
+      {
+        "jp": "<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>行<rt>い</rt></ruby>かない？",
+        "en": "Wanna come along? — casual 一緒に行きませんか"
+      },
+      {
+        "jp": "そろそろ<ruby>行<rt>い</rt></ruby>こう",
+        "en": "Let's get going — casual 行きましょう"
+      },
+      {
+        "jp": "<ruby>疲<rt>つか</rt></ruby>れた",
+        "en": "I'm beat — casual 疲れました"
+      },
+      {
+        "jp": "また<ruby>今度<rt>こんど</rt></ruby>ね",
+        "en": "Another time, then — casual また今度にしましょう"
+      },
+      {
+        "jp": "<ruby>元気<rt>げんき</rt></ruby>だった？",
+        "en": "How've you been? — casual 元気でしたか"
+      },
+      {
+        "jp": "<ruby>気<rt>き</rt></ruby>をつけてね",
+        "en": "Take care — the ね softens it between friends"
       }
     ]
   },
@@ -86,7 +180,7 @@
         "en": "And so... (continuing your own story)"
       },
       {
-        "jp": "何だっけ…",
+        "jp": "<ruby>何<rt>なん</rt></ruby>だっけ…",
         "en": "What was it again... (casual, to yourself)"
       }
     ]
@@ -142,6 +236,18 @@
       {
         "jp": "ですよね",
         "en": "Right? / exactly (agreeing warmly)"
+      },
+      {
+        "jp": "たしかに",
+        "en": "True, you've got a point — agreeing with the reasoning, not just the fact"
+      },
+      {
+        "jp": "それで？",
+        "en": "And then? — casual, keeps the other person talking"
+      },
+      {
+        "jp": "なるほどね",
+        "en": "Ah, I see — the casual なるほど, with ね"
       }
     ]
   },
@@ -158,7 +264,7 @@
         "en": "Please speak slowly"
       },
       {
-        "jp": "すみません、聞こえませんでした",
+        "jp": "すみません、<ruby>聞<rt>き</rt></ruby>こえませんでした",
         "en": "Sorry, I couldn't hear you"
       },
       {
@@ -166,7 +272,7 @@
         "en": "What does that mean?"
       },
       {
-        "jp": "<ruby>日本語<rt>にほんご</rt></ruby>で何と<ruby>言<rt>い</rt></ruby>いますか",
+        "jp": "<ruby>日本語<rt>にほんご</rt></ruby>で<ruby>何<rt>なん</rt></ruby>と<ruby>言<rt>い</rt></ruby>いますか",
         "en": "How do you say it in Japanese?"
       },
       {
@@ -278,8 +384,16 @@
         "en": "I'll think about it"
       },
       {
-        "jp": "<ruby>残念<rt>ざんねん</rt></ruby>ですが、行けません",
+        "jp": "<ruby>残念<rt>ざんねん</rt></ruby>ですが、<ruby>行<rt>い</rt></ruby>けません",
         "en": "Unfortunately I can't go"
+      },
+      {
+        "jp": "ごめん、その<ruby>日<rt>ひ</rt></ruby>はちょっと",
+        "en": "Sorry, that day's a bit… — the casual trailing-off refusal"
+      },
+      {
+        "jp": "<ruby>行<rt>い</rt></ruby>きたいんだけど…",
+        "en": "I'd like to go, but… — casual 行きたいんですが, declining gently"
       }
     ]
   },
@@ -288,11 +402,11 @@
     "catEn": "Shops & restaurants",
     "items": [
       {
-        "jp": "おすすめは何ですか",
+        "jp": "おすすめは<ruby>何<rt>なん</rt></ruby>ですか",
         "en": "What do you recommend?"
       },
       {
-        "jp": "これは何ですか",
+        "jp": "これは<ruby>何<rt>なん</rt></ruby>ですか",
         "en": "What is this?"
       },
       {
@@ -312,7 +426,7 @@
         "en": "Can I pay by card?"
       },
       {
-        "jp": "別々でお<ruby>願<rt>ねが</rt></ruby>いします",
+        "jp": "<ruby>別々<rt>べつべつ</rt></ruby>でお<ruby>願<rt>ねが</rt></ruby>いします",
         "en": "Separate bills, please"
       },
       {
@@ -350,7 +464,7 @@
         "en": "How do I get there?"
       },
       {
-        "jp": "ここから遠いですか",
+        "jp": "ここから<ruby>遠<rt>とお</rt></ruby>いですか",
         "en": "Is it far from here?"
       },
       {
@@ -374,7 +488,7 @@
         "en": "I'll get off here"
       },
       {
-        "jp": "<ruby>道<rt>みち</rt></ruby>に迷いました",
+        "jp": "<ruby>道<rt>みち</rt></ruby>に<ruby>迷<rt>まよ</rt></ruby>いました",
         "en": "I'm lost"
       },
       {
@@ -408,7 +522,7 @@
         "en": "Do you have plans?"
       },
       {
-        "jp": "<ruby>今週末<rt>こんしゅうまつ</rt></ruby>は空いています",
+        "jp": "<ruby>今週末<rt>こんしゅうまつ</rt></ruby>は<ruby>空<rt>あ</rt></ruby>いています",
         "en": "I'm free this weekend"
       },
       {
@@ -416,7 +530,7 @@
         "en": "I'll be a little late"
       },
       {
-        "jp": "間に<ruby>合<rt>あ</rt></ruby>いますか",
+        "jp": "<ruby>間<rt>ま</rt></ruby>に<ruby>合<rt>あ</rt></ruby>いますか",
         "en": "Will we make it in time?"
       },
       {
@@ -426,6 +540,14 @@
       {
         "jp": "<ruby>楽<rt>たの</rt></ruby>しみにしています",
         "en": "I'm looking forward to it"
+      },
+      {
+        "jp": "<ruby>何時<rt>なんじ</rt></ruby>でもいいよ",
+        "en": "Any time works — casual 何時でもいいですよ"
+      },
+      {
+        "jp": "<ruby>予定<rt>よてい</rt></ruby>が<ruby>入<rt>はい</rt></ruby>っちゃった",
+        "en": "Something's come up — casual, with 〜ちゃう for 〜てしまう"
       }
     ]
   },
@@ -472,6 +594,18 @@
       {
         "jp": "<ruby>私<rt>わたし</rt></ruby>も<ruby>同<rt>おな</rt></ruby>じです",
         "en": "Same for me"
+      },
+      {
+        "jp": "<ruby>楽<rt>たの</rt></ruby>しみ",
+        "en": "Looking forward to it — casual 楽しみです"
+      },
+      {
+        "jp": "びっくりした",
+        "en": "That surprised me — casual びっくりしました"
+      },
+      {
+        "jp": "よかった",
+        "en": "Oh good, what a relief — casual よかったです"
       }
     ]
   },
@@ -492,7 +626,7 @@
         "en": "The ~ won't work"
       },
       {
-        "jp": "お湯が<ruby>出<rt>で</rt></ruby>ません",
+        "jp": "お<ruby>湯<rt>ゆ</rt></ruby>が<ruby>出<rt>で</rt></ruby>ません",
         "en": "There's no hot water"
       },
       {
@@ -516,7 +650,7 @@
         "en": "Where is a hospital?"
       },
       {
-        "jp": "助けてください",
+        "jp": "<ruby>助<rt>たす</rt></ruby>けてください",
         "en": "Please help me"
       }
     ]
@@ -534,7 +668,7 @@
         "en": "I'm sorry (personal, warmer)"
       },
       {
-        "jp": "<ruby>申<rt>もう</rt></ruby>し訳ありません",
+        "jp": "<ruby>申<rt>もう</rt></ruby>し<ruby>訳<rt>わけ</rt></ruby>ありません",
         "en": "I deeply apologise (formal)"
       },
       {
@@ -542,7 +676,7 @@
         "en": "Sorry to keep you waiting"
       },
       {
-        "jp": "ご迷惑をかけました",
+        "jp": "ご<ruby>迷惑<rt>めいわく</rt></ruby>をかけました",
         "en": "I caused you trouble"
       },
       {
@@ -564,6 +698,14 @@
       {
         "jp": "わざわざありがとうございます",
         "en": "Thank you for going out of your way"
+      },
+      {
+        "jp": "<ruby>助<rt>たす</rt></ruby>かった",
+        "en": "That saved me — casual 助かりました"
+      },
+      {
+        "jp": "<ruby>悪<rt>わる</rt></ruby>いね",
+        "en": "Sorry about this / thanks — casual, said while accepting a favour"
       }
     ]
   },
@@ -580,7 +722,7 @@
         "en": "See you tomorrow"
       },
       {
-        "jp": "気をつけて",
+        "jp": "<ruby>気<rt>き</rt></ruby>をつけて",
         "en": "Take care (on your way)"
       },
       {
@@ -588,7 +730,7 @@
         "en": "Take care (when someone is ill)"
       },
       {
-        "jp": "お先に<ruby>失礼<rt>しつれい</rt></ruby>します",
+        "jp": "お<ruby>先<rt>さき</rt></ruby>に<ruby>失礼<rt>しつれい</rt></ruby>します",
         "en": "Excuse me for leaving first (at work)"
       },
       {
@@ -604,11 +746,11 @@
         "en": "Thank you for today"
       },
       {
-        "jp": "よい一日を",
+        "jp": "よい<ruby>一日<rt>いちにち</rt></ruby>を",
         "en": "Have a good day"
       },
       {
-        "jp": "お先にどうぞ",
+        "jp": "お<ruby>先<rt>さき</rt></ruby>にどうぞ",
         "en": "After you / go ahead"
       }
     ]
@@ -634,7 +776,7 @@
         "en": "Incidentally..."
       },
       {
-        "jp": "例えば？",
+        "jp": "<ruby>例<rt>たと</rt></ruby>えば？",
         "en": "For example?"
       },
       {

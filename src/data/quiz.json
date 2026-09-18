@@ -52,10 +52,10 @@
           "<ruby>行<rt>い</rt></ruby>くなら",
           "<ruby>行<rt>い</rt></ruby>ったら",
           "<ruby>行<rt>い</rt></ruby>くと",
-          "行けば"
+          "<ruby>行<rt>い</rt></ruby>けば"
         ],
         "a": 0,
-        "ex": "なら reacts to a topic the other person just raised (going to Japan) with advice — the classic なら shape. <ruby>行<rt>い</rt></ruby>くと implies an automatic rule, and <ruby>行<rt>い</rt></ruby>ったら／行けば shift the focus onto after arriving or a general condition, neither of which fits reacting to someone's stated plan."
+        "ex": "なら reacts to a topic the other person just raised (going to Japan) with advice — the classic なら shape. <ruby>行<rt>い</rt></ruby>くと implies an automatic rule, and <ruby>行<rt>い</rt></ruby>ったら／<ruby>行<rt>い</rt></ruby>けば shift the focus onto after arriving or a general condition, neither of which fits reacting to someone's stated plan."
       },
       {
         "q": "「ここで<ruby>写真<rt>しゃしん</rt></ruby>を＿＿。」 (asking permission)",
@@ -209,7 +209,7 @@
           "<ruby>食<rt>た</rt></ruby>べさせました"
         ],
         "a": 0,
-        "ex": "迷惑の受身: <ruby>食<rt>た</rt></ruby>べられました shows the speaker was adversely affected by someone else's action."
+        "ex": "<ruby>迷惑<rt>めいわく</rt></ruby>の受身: <ruby>食<rt>た</rt></ruby>べられました shows the speaker was adversely affected by someone else's action."
       },
       {
         "q": "「<ruby>窓<rt>まど</rt></ruby>が<ruby>開<rt>あ</rt></ruby>いて＿＿。」 (the window is open — a state someone left it in)",
@@ -280,13 +280,13 @@
       {
         "q": "「<ruby>子供<rt>こども</rt></ruby>のとき、父に毎日漢字を＿＿。」 (I was made to write kanji every day)",
         "choices": [
-          "書かれました",
-          "書かせられました",
-          "書かせました",
+          "<ruby>書<rt>か</rt></ruby>かれました",
+          "<ruby>書<rt>か</rt></ruby>かせられました",
+          "<ruby>書<rt>か</rt></ruby>かせました",
           "<ruby>書<rt>か</rt></ruby>いてもらいました"
         ],
         "a": 1,
-        "ex": "Causative-passive 書かせられる = 'to be made to write' — the speaker did it unwillingly under someone else's will."
+        "ex": "Causative-passive <ruby>書<rt>か</rt></ruby>かせられる = 'to be made to write' — the speaker did it unwillingly under someone else's will."
       },
       {
         "q": "「あの<ruby>店<rt>みせ</rt></ruby>はいつも人が多いです。＿＿、おいしいんでしょう。」",
@@ -673,9 +673,9 @@
         "ex": "<ruby>午後<rt>ごご</rt></ruby>ならいつでも means any time tomorrow afternoon is okay."
       },
       {
-        "q": "お知らせ：「<ruby>雨<rt>あめ</rt></ruby>の<ruby>場合<rt>ばあい</rt></ruby>は、イベントを<ruby>体育館<rt>たいいくかん</rt></ruby>で<ruby>行<rt>おこな</rt></ruby>います。」— <ruby>雨<rt>あめ</rt></ruby>のとき、どこで<ruby>行<rt>おこな</rt></ruby>いますか。",
+        "q": "お<ruby>知<rt>し</rt></ruby>らせ：「<ruby>雨<rt>あめ</rt></ruby>の<ruby>場合<rt>ばあい</rt></ruby>は、イベントを<ruby>体育館<rt>たいいくかん</rt></ruby>で<ruby>行<rt>おこな</rt></ruby>います。」— <ruby>雨<rt>あめ</rt></ruby>のとき、どこで<ruby>行<rt>おこな</rt></ruby>いますか。",
         "choices": [
-          "教室",
+          "<ruby>教室<rt>きょうしつ</rt></ruby>",
           "<ruby>公園<rt>こうえん</rt></ruby>",
           "<ruby>駅<rt>えき</rt></ruby>",
           "<ruby>体育館<rt>たいいくかん</rt></ruby>"
@@ -695,7 +695,7 @@
         "ex": "<ruby>午後<rt>ごご</rt></ruby>はゆっくりできました means the writer could relax in the afternoon."
       },
       {
-        "q": "お知らせ：「エレベーターは<ruby>点検中<rt>てんけんちゅう</rt></ruby>ですので、<ruby>階段<rt>かいだん</rt></ruby>をご<ruby>利用<rt>りよう</rt></ruby>ください。」— どうすればいいですか。",
+        "q": "お<ruby>知<rt>し</rt></ruby>らせ：「エレベーターは<ruby>点検中<rt>てんけんちゅう</rt></ruby>ですので、<ruby>階段<rt>かいだん</rt></ruby>をご<ruby>利用<rt>りよう</rt></ruby>ください。」— どうすればいいですか。",
         "choices": [
           "<ruby>帰<rt>かえ</rt></ruby>る",
           "管理人を<ruby>呼<rt>よ</rt></ruby>ぶ",
@@ -742,7 +742,7 @@
         "q": "<ruby>案内<rt>あんない</rt></ruby>：「二階は<ruby>靴<rt>くつ</rt></ruby>を<ruby>脱<rt>ぬ</rt></ruby>いでお上がりください。」— 二階に<ruby>行<rt>い</rt></ruby>くとき、何をしますか。",
         "choices": [
           "<ruby>靴<rt>くつ</rt></ruby>を履く",
-          "<ruby>靴<rt>くつ</rt></ruby>を買う",
+          "<ruby>靴<rt>くつ</rt></ruby>を<ruby>買<rt>か</rt></ruby>う",
           "何もしない",
           "<ruby>靴<rt>くつ</rt></ruby>を脱ぐ"
         ],

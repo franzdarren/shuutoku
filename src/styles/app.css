@@ -32,6 +32,14 @@
   --line: oklch(87.5% 0.010 106);
   --line-soft: oklch(91.5% 0.008 106);
 
+  /* A written document — a letter, a notice, a passage — sits on its own
+     sheet rather than on the card behind it. Hue 250 instead of the paper's
+     106: cool rather than warm, so it separates by temperature and not just
+     by lightness, and reads as a different piece of paper rather than as
+     more of the same brown. */
+  --sheet: oklch(98.2% 0.005 250);
+  --sheet-line: oklch(88% 0.016 250);
+
   /* Text sitting on a filled accent (active tabs, speaker chips, the
      mobile menu button). Same value in both modes — the accents are
      chosen dark enough in light mode and stay saturated in dark. */
@@ -57,24 +65,22 @@
   --elev-2: 0 2px 6px rgba(40,32,16,.07), 0 8px 20px rgba(40,32,16,.06);
   --elev-3: 0 12px 34px rgba(40,32,16,.16);
 
-  /* Paper pattern — 七宝 shippou, a traditional interlocking-circle wagara,
-     drawn not downloaded. This replaces a pair of feTurbulence layers: the
-     fine one was fibre tooth, but the low-frequency one produced soft random
-     clouding that read as a smear rather than as a surface. A geometric tile
-     repeats exactly, so it reads as a deliberate pattern at any scale.
+  /* Paper pattern — 菱格子 hishi-goushi, a diamond lattice, drawn not
+     downloaded. One tile holds a single diamond touching all four edge
+     midpoints, so tiling it joins the diagonals into a continuous grid; move
+     a vertex off a midpoint and the lattice breaks at every tile seam.
 
-     Circle centres sit on a half-drop grid — the four tile corners plus the
-     middle — so nearest centres are 14√2 ≈ 19.8px apart; radius 10 is just
-     over half that, which is what makes the circles interlock into the
-     petal shapes shippou is recognised by instead of floating as separate
-     rings. Changing the radius without changing the tile breaks that.
+     Two earlier attempts are worth not repeating: paired feTurbulence layers
+     (the low-frequency one clouded into a smear rather than reading as a
+     surface) and interlocking circles. A geometric tile repeats exactly and
+     reads as deliberate at any zoom.
 
      Unlike greyscale noise (which averages to mid-tone and so serves both
      modes from one token) a stroked pattern has to pick a colour, so the
-     dark palette overrides this with a light stroke. Set to `none` to
+     dark palette overrides this with a light stroke. Set it to "none" to
      remove the texture entirely. */
   --paper-texture:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28'%3E%3Cg fill='none' stroke='%23000000' stroke-opacity='0.055' stroke-width='1'%3E%3Ccircle cx='0' cy='0' r='10'/%3E%3Ccircle cx='28' cy='0' r='10'/%3E%3Ccircle cx='0' cy='28' r='10'/%3E%3Ccircle cx='28' cy='28' r='10'/%3E%3Ccircle cx='14' cy='14' r='10'/%3E%3C/g%3E%3C/svg%3E");
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M0 12L12 0L24 12L12 24Z' fill='none' stroke='%23000000' stroke-opacity='0.05' stroke-width='1'/%3E%3C/svg%3E");
 
   --serif: "Shippori Mincho", serif;
   --sans: "Zen Kaku Gothic New", sans-serif;
@@ -140,15 +146,19 @@ body.dark{
   --matcha-tint: oklch(30.4% 0.033 140);
   --line: oklch(36% 0.009 106);
   --line-soft: oklch(30% 0.008 106);
+  /* Cooler and a step lighter than --paper-2, so the sheet lifts off the
+     card behind it in dark mode the same way it does in light. */
+  --sheet: oklch(27.5% 0.010 250);
+  --sheet-line: oklch(38% 0.020 250);
   /* The accents lighten in dark mode, so text on them flips to the
      dark paper rather than staying white. */
   --on-accent: oklch(18% 0.008 75);
   --on-accent-soft: oklch(18% 0.008 75 / .78);
   --on-accent-faint: oklch(18% 0.008 75 / .28);
   --switch-knob: oklch(92.7% 0.02 85);
-  /* Same shippou tile, stroked light — a black stroke would vanish here. */
+  /* Same diamond tile, stroked light — a black stroke would vanish here. */
   --paper-texture:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='0.05' stroke-width='1'%3E%3Ccircle cx='0' cy='0' r='10'/%3E%3Ccircle cx='28' cy='0' r='10'/%3E%3Ccircle cx='0' cy='28' r='10'/%3E%3Ccircle cx='28' cy='28' r='10'/%3E%3Ccircle cx='14' cy='14' r='10'/%3E%3C/g%3E%3C/svg%3E");
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M0 12L12 0L24 12L12 24Z' fill='none' stroke='%23ffffff' stroke-opacity='0.05' stroke-width='1'/%3E%3C/svg%3E");
   --shadow: rgba(0,0,0,.35);
   --elev-1: 0 1px 2px rgba(0,0,0,.28), 0 2px 5px rgba(0,0,0,.2);
   --elev-2: 0 2px 6px rgba(0,0,0,.34), 0 8px 20px rgba(0,0,0,.26);
@@ -671,9 +681,16 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
 .ex-jp{ font-family:var(--serif); font-size:var(--fs-lg); color:var(--ink); line-height:2.1; max-width:var(--measure-jp); }
 .ex-en{ font-size:var(--fs-sm); color:var(--ink-faint); margin-top:3px; }
 
-/* Dialogue is quoted speech, so it sits inset from the card's prose —
-   the page gets a second left edge instead of one flush column. */
-.dialogue-box{ border-top:1px solid var(--line); padding:14px 0 0; margin:0 0 16px 24px; }
+/* Dialogue is quoted speech, so it sits inset from the card's prose — the
+   page gets a second left edge instead of one flush column. It also gets its
+   own surface: a hairline alone left the sample running straight on from the
+   example sentences above it, with nothing to say where the conversation
+   started and stopped. */
+.dialogue-box{
+  padding:14px 18px 16px; margin:0 0 16px 24px;
+  background:var(--sheet); border:1px solid var(--sheet-line);
+  border-radius:var(--radius);
+}
 .dialogue-head{ display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:12px; }
 .dialogue-head .dlabel{ margin-bottom:0; }
 .readall-btn{
@@ -896,6 +913,21 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
    characters rather than pixels — it was centred, which put it out of
    line with its own heading. */
 .passage-text{ font-family:var(--serif); font-size:var(--fs-lg); line-height:2.3; color:var(--ink); max-width:var(--measure-jp); margin:0 0 10px; white-space:pre-line; }
+
+/* In Reading Lab the passage IS the object of study, so it gets its own
+   sheet — a cool surface inside the warm card, which is what stops a letter
+   or a notice reading as more body copy. Scoped to .passage-card on purpose:
+   the Mock Exam prints the same markup inside .exam-source, which is already
+   a container, and nesting two would just look heavy. */
+.passage-card .passage-text{
+  background:var(--sheet);
+  border:1px solid var(--sheet-line);
+  border-radius:var(--radius);
+  padding:22px 26px;
+  margin-bottom:14px;
+  max-width:none;
+  box-shadow:var(--elev-1);
+}
 .passage-hint{ font-size:var(--fs-xs); color:var(--ink-faint); margin-bottom:18px; }
 .passage-hint b{ color:var(--indigo); }
 
@@ -1315,7 +1347,14 @@ footer.pagefoot{ margin-top:60px; padding-top:20px; border-top:1px solid var(--l
 }
 .exam-pager .exam-go{ margin-left:auto; }
 
-.exam-list{ list-style:none; margin:0; padding:0; max-width:var(--measure-card); }
+/* The questions sat directly on the page, so on a patterned background they
+   read as floating rather than as a block of paper you work down. Same
+   surface as the passage box above them. */
+.exam-list{
+  list-style:none; margin:0; padding:6px 22px; max-width:var(--measure-card);
+  background:var(--paper-2); border:1px solid var(--line);
+  border-radius:var(--radius); box-shadow:var(--elev-1);
+}
 .exam-q{ padding:20px 0; border-top:1px solid var(--line-soft); }
 .exam-q:first-child{ border-top:none; padding-top:0; }
 .exam-q-head{ display:flex; align-items:baseline; gap:10px; margin-bottom:10px; }

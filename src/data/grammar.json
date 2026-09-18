@@ -43,7 +43,7 @@
             "en": "The children are playing in the park."
           },
           {
-            "jp": "<ruby>彼女<rt>かのじょ</rt></ruby>は<ruby>東京<rt>とうきょう</rt></ruby>の大学で<ruby>勉強<rt>べんきょう</rt></ruby>しています。",
+            "jp": "<ruby>彼女<rt>かのじょ</rt></ruby>は<ruby>東京<rt>とうきょう</rt></ruby>の<ruby>大学<rt>だいがく</rt></ruby>で<ruby>勉強<rt>べんきょう</rt></ruby>しています。",
             "en": "She is studying at a university in Tokyo."
           },
           {
@@ -152,7 +152,7 @@
             "en": "Is it okay to take photos here?"
           },
           {
-            "jp": "この<ruby>部屋<rt>へや</rt></ruby>に入ってはいけません。",
+            "jp": "この<ruby>部屋<rt>へや</rt></ruby>に<ruby>入<rt>はい</rt></ruby>ってはいけません。",
             "en": "You must not enter this room."
           },
           {
@@ -364,7 +364,7 @@
           {
             "label": "Group 1 verb",
             "from": "<ruby>書<rt>か</rt></ruby>く",
-            "to": "書かなければならない"
+            "to": "<ruby>書<rt>か</rt></ruby>かなければならない"
           },
           {
             "label": "Group 2 verb",
@@ -584,7 +584,7 @@
         "ex": "<ruby>住<rt>す</rt></ruby>んでいる describes an ongoing state — where someone lives now, not a one-time action."
       },
       {
-        "q": "「すみません、この<ruby>部屋<rt>へや</rt></ruby>に入っ＿＿か。」 (asking permission)",
+        "q": "「すみません、この<ruby>部屋<rt>へや</rt></ruby>に<ruby>入<rt>はい</rt></ruby>っ＿＿か。」 (asking permission)",
         "choices": [
           "てもいいです",
           "てはいけません",
@@ -1341,7 +1341,7 @@
         ],
         "explain": "The passive turns 'X did Y' into 'Y was done (to me/something), by X'. Direct passive works like English (<ruby>褒<rt>ほ</rt></ruby>められた — I was praised). N4 also has the 迷惑受身 ('suffering passive'), which has no English equivalent: it's used when someone else's action negatively affects you, even for intransitive verbs — <ruby>雨<rt>あめ</rt></ruby>に<ruby>降<rt>ふ</rt></ruby>られた doesn't mean 'I was rained on' literally, it means 'it rained (on me), and that was annoying/inconvenient for me'. This nuance shows up a lot in reading passages about someone's bad day.",
         "formation": [
-          "Group 1: change u→a, add れる (<ruby>書<rt>か</rt></ruby>く→書かれる) ・ Group 2: drop る, add られる (見る→見られる) ・ irregular: する→される, <ruby>来<rt>く</rt></ruby>る→<ruby>来<rt>こ</rt></ruby>られる",
+          "Group 1: change u→a, add れる (<ruby>書<rt>か</rt></ruby>く→<ruby>書<rt>か</rt></ruby>かれる) ・ Group 2: drop る, add られる (見る→見られる) ・ irregular: する→される, <ruby>来<rt>く</rt></ruby>る→<ruby>来<rt>こ</rt></ruby>られる",
           "Person/thing acted upon が／は ＋ 〜(ら)れる ＋ に (agent)"
         ],
         "examples": [
@@ -1436,7 +1436,7 @@
           {
             "label": "Group 1 verb",
             "from": "<ruby>書<rt>か</rt></ruby>く",
-            "to": "書かれる"
+            "to": "<ruby>書<rt>か</rt></ruby>かれる"
           },
           {
             "label": "Group 2 verb",
@@ -1537,7 +1537,7 @@
             "q": "「<ruby>子供<rt>こども</rt></ruby>を<ruby>一人<rt>ひとり</rt></ruby>で外に＿＿のは<ruby>心配<rt>しんぱい</rt></ruby>です。」 (Letting a child go outside alone is worrying)",
             "choices": [
               "<ruby>行<rt>い</rt></ruby>っている",
-              "行ける",
+              "<ruby>行<rt>い</rt></ruby>ける",
               "<ruby>行<rt>い</rt></ruby>かせる",
               "<ruby>行<rt>い</rt></ruby>かれる"
             ],
@@ -1545,7 +1545,7 @@
             "ex": "<ruby>行<rt>い</rt></ruby>かせる = 'let/make [someone] go' — the causative fits 'letting a child go out alone'.",
             "why": [
               "<ruby>行<rt>い</rt></ruby>っている is progressive/state ('is going') — unrelated to letting someone do something.",
-              "行ける is potential ('can go') — the sentence is about letting/permission, not ability.",
+              "<ruby>行<rt>い</rt></ruby>ける is potential ('can go') — the sentence is about letting/permission, not ability.",
               null,
               "<ruby>行<rt>い</rt></ruby>かれる (passive) doesn't fit — nobody is 'having the going done to them' here."
             ]
@@ -1555,7 +1555,7 @@
           {
             "label": "Group 1 verb",
             "from": "<ruby>書<rt>か</rt></ruby>く",
-            "to": "書かせる"
+            "to": "<ruby>書<rt>か</rt></ruby>かせる"
           },
           {
             "label": "Group 2 verb",
@@ -1600,7 +1600,7 @@
             "en": "I was made to eat vegetables every day."
           },
           {
-            "jp": "<ruby>上司<rt>じょうし</rt></ruby>に<ruby>毎週<rt>まいしゅう</rt></ruby>レポートを書かせられました。",
+            "jp": "<ruby>上司<rt>じょうし</rt></ruby>に<ruby>毎週<rt>まいしゅう</rt></ruby>レポートを<ruby>書<rt>か</rt></ruby>かせられました。",
             "en": "I was made to write a report every week by my boss."
           },
           {
@@ -1674,7 +1674,7 @@
           {
             "label": "Group 1 verb",
             "from": "<ruby>書<rt>か</rt></ruby>く",
-            "to": "書かされる／書かせられる"
+            "to": "<ruby>書<rt>か</rt></ruby>かされる／<ruby>書<rt>か</rt></ruby>かせられる"
           },
           {
             "label": "Group 2 verb",
@@ -1715,13 +1715,13 @@
       {
         "q": "「<ruby>先生<rt>せんせい</rt></ruby>は<ruby>学生<rt>がくせい</rt></ruby>に<ruby>作文<rt>さくぶん</rt></ruby>を＿＿。」 (the teacher made the students write it)",
         "choices": [
-          "書かせました",
+          "<ruby>書<rt>か</rt></ruby>かせました",
           "<ruby>書<rt>か</rt></ruby>いてもらいました",
-          "書かれました",
-          "書かせられました"
+          "<ruby>書<rt>か</rt></ruby>かれました",
+          "<ruby>書<rt>か</rt></ruby>かせられました"
         ],
         "a": 0,
-        "ex": "Causative 書かせる = to make someone write."
+        "ex": "Causative <ruby>書<rt>か</rt></ruby>かせる = to make someone write."
       },
       {
         "q": "「<ruby>子供<rt>こども</rt></ruby>のとき、<ruby>母<rt>はは</rt></ruby>に<ruby>野菜<rt>やさい</rt></ruby>を＿＿。」 (I was made to eat them, unwillingly)",
@@ -1904,7 +1904,7 @@
         "dialogue": [
           {
             "who": "A",
-            "jp": "すみません、<ruby>駅<rt>えき</rt></ruby>まではどう行けばいいですか。",
+            "jp": "すみません、<ruby>駅<rt>えき</rt></ruby>まではどう<ruby>行<rt>い</rt></ruby>けばいいですか。",
             "en": "Excuse me, how do I get to the station?"
           },
           {
@@ -2278,7 +2278,7 @@
             "en": "If you are going to Kyoto, autumn is good."
           },
           {
-            "jp": "スマホを買うなら、この<ruby>店<rt>みせ</rt></ruby>が<ruby>安<rt>やす</rt></ruby>いですよ。",
+            "jp": "スマホを<ruby>買<rt>か</rt></ruby>うなら、この<ruby>店<rt>みせ</rt></ruby>が<ruby>安<rt>やす</rt></ruby>いですよ。",
             "en": "If you're buying a smartphone, this shop is cheap."
           },
           {
@@ -2318,15 +2318,15 @@
             "choices": [
               "<ruby>買<rt>か</rt></ruby>えばよかった",
               "<ruby>買<rt>か</rt></ruby>ったら、<ruby>買<rt>か</rt></ruby>います",
-              "買うと",
-              "買うなら、これがいいですよ"
+              "<ruby>買<rt>か</rt></ruby>うと",
+              "<ruby>買<rt>か</rt></ruby>うなら、これがいいですよ"
             ],
             "a": 3,
             "ex": "なら reacts directly to the topic your friend just raised (buying a laptop) with advice — the classic なら use case.",
             "why": [
               "<ruby>買<rt>か</rt></ruby>えばよかった means 'I should have bought it' — regret about the past, not advice about their plan.",
               "<ruby>買<rt>か</rt></ruby>ったら、<ruby>買<rt>か</rt></ruby>います just echoes their statement back oddly ('if you buy it, I'll buy it') — doesn't fit as advice.",
-              "買うと alone doesn't form a complete natural reply, and と can't easily lead into a recommendation like this.",
+              "<ruby>買<rt>か</rt></ruby>うと alone doesn't form a complete natural reply, and と can't easily lead into a recommendation like this.",
               null
             ]
           },
@@ -2400,7 +2400,7 @@
         "choices": [
           "<ruby>行<rt>い</rt></ruby>ったら",
           "<ruby>行<rt>い</rt></ruby>くと",
-          "行けば",
+          "<ruby>行<rt>い</rt></ruby>けば",
           "<ruby>行<rt>い</rt></ruby>くなら"
         ],
         "a": 3,
@@ -2498,7 +2498,7 @@
         "q": "「この<ruby>道<rt>みち</rt></ruby>をまっすぐ＿＿、右に<ruby>銀行<rt>ぎんこう</rt></ruby>があります。」",
         "choices": [
           "<ruby>行<rt>い</rt></ruby>ったら",
-          "行けば",
+          "<ruby>行<rt>い</rt></ruby>けば",
           "<ruby>行<rt>い</rt></ruby>くと",
           "<ruby>行<rt>い</rt></ruby>くなら"
         ],
@@ -2564,7 +2564,7 @@
             "en": "I heard that Tanaka-san is getting married next month."
           },
           {
-            "jp": "天気<ruby>予報<rt>よほう</rt></ruby>によると、<ruby>明日<rt>あした</rt></ruby>は<ruby>雪<rt>ゆき</rt></ruby>だそうです。",
+            "jp": "<ruby>天気<rt>てんき</rt></ruby><ruby>予報<rt>よほう</rt></ruby>によると、<ruby>明日<rt>あした</rt></ruby>は<ruby>雪<rt>ゆき</rt></ruby>だそうです。",
             "en": "According to the forecast, I hear it will snow tomorrow."
           },
           {
@@ -2576,7 +2576,7 @@
             "en": "According to my friend, that movie is very moving."
           },
           {
-            "jp": "天気<ruby>予報<rt>よほう</rt></ruby>によると、<ruby>週末<rt>しゅうまつ</rt></ruby>は<ruby>晴<rt>は</rt></ruby>れるそうです。",
+            "jp": "<ruby>天気<rt>てんき</rt></ruby><ruby>予報<rt>よほう</rt></ruby>によると、<ruby>週末<rt>しゅうまつ</rt></ruby>は<ruby>晴<rt>は</rt></ruby>れるそうです。",
             "en": "According to the forecast, it will be clear at the weekend."
           },
           {
@@ -2587,7 +2587,7 @@
         "dialogue": [
           {
             "who": "A",
-            "jp": "<ruby>明日<rt>あした</rt></ruby>の天気、どうですか。",
+            "jp": "<ruby>明日<rt>あした</rt></ruby>の<ruby>天気<rt>てんき</rt></ruby>、どうですか。",
             "en": "How's tomorrow's weather?"
           },
           {
@@ -2869,7 +2869,7 @@
             ]
           },
           {
-            "q": "「あの二人は<ruby>付<rt>つ</rt></ruby>き<ruby>合<rt>あ</rt></ruby>っている＿＿。」 ('It seems those two are dating', based on how they act)",
+            "q": "「あの<ruby>二人<rt>ふたり</rt></ruby>は<ruby>付<rt>つ</rt></ruby>き<ruby>合<rt>あ</rt></ruby>っている＿＿。」 ('It seems those two are dating', based on how they act)",
             "choices": [
               "そうです（<ruby>伝聞<rt>でんぶん</rt></ruby>）",
               "なさい",
@@ -3102,7 +3102,7 @@
         "ex": "らしい reports information picked up indirectly — less committed than ようです."
       },
       {
-        "q": "「<ruby>明日<rt>あした</rt></ruby>は<ruby>忙<rt>いそが</rt></ruby>しい＿＿、行けないかもしれません。」",
+        "q": "「<ruby>明日<rt>あした</rt></ruby>は<ruby>忙<rt>いそが</rt></ruby>しい＿＿、<ruby>行<rt>い</rt></ruby>けないかもしれません。」",
         "choices": [
           "ようで",
           "らしく",
@@ -3354,7 +3354,7 @@
             "en": "This shop is cheap, and it is close to the station."
           },
           {
-            "jp": "この<ruby>部屋<rt>へや</rt></ruby>は<ruby>明<rt>あか</rt></ruby>るいし、<ruby>静<rt>しず</rt></ruby>かだし、気に入っています。",
+            "jp": "この<ruby>部屋<rt>へや</rt></ruby>は<ruby>明<rt>あか</rt></ruby>るいし、<ruby>静<rt>しず</rt></ruby>かだし、気に<ruby>入<rt>はい</rt></ruby>っています。",
             "en": "This room is bright, and it's quiet, so I like it."
           },
           {
@@ -3611,7 +3611,7 @@
             "en": "It's been decided that the meeting will be held next Monday."
           },
           {
-            "jp": "今年から<ruby>自転車<rt>じてんしゃ</rt></ruby>で<ruby>通<rt>かよ</rt></ruby>うことにしました。",
+            "jp": "<ruby>今年<rt>ことし</rt></ruby>から<ruby>自転車<rt>じてんしゃ</rt></ruby>で<ruby>通<rt>かよ</rt></ruby>うことにしました。",
             "en": "I've decided to commute by bicycle from this year."
           },
           {
@@ -3622,7 +3622,7 @@
         "dialogue": [
           {
             "who": "A",
-            "jp": "今年の冬、どうするか<ruby>決<rt>き</rt></ruby>めましたか。",
+            "jp": "<ruby>今年<rt>ことし</rt></ruby>の冬、どうするか<ruby>決<rt>き</rt></ruby>めましたか。",
             "en": "Have you decided what you're doing this winter?"
           },
           {
@@ -3681,8 +3681,8 @@
           },
           {
             "label": "Verb (plain negative)",
-            "from": "書かない",
-            "to": "書かないことにする／なる"
+            "from": "<ruby>書<rt>か</rt></ruby>かない",
+            "to": "<ruby>書<rt>か</rt></ruby>かないことにする／なる"
           }
         ]
       }
@@ -3890,7 +3890,7 @@
             "en": "I've met a famous singer before."
           },
           {
-            "jp": "<ruby>温泉<rt>おんせん</rt></ruby>に入ったことがありますか。",
+            "jp": "<ruby>温泉<rt>おんせん</rt></ruby>に<ruby>入<rt>はい</rt></ruby>ったことがありますか。",
             "en": "Have you ever been into an onsen?"
           },
           {
@@ -4169,7 +4169,7 @@
             "choices": [
               "<ruby>書<rt>か</rt></ruby>いてにくいです",
               "書きにくいです",
-              "書かにくいです",
+              "<ruby>書<rt>か</rt></ruby>かにくいです",
               "<ruby>書<rt>か</rt></ruby>くにくいです"
             ],
             "a": 1,
@@ -4177,7 +4177,7 @@
             "why": [
               "<ruby>書<rt>か</rt></ruby>いてにくいです wrongly uses the て-form — にくい doesn't attach there.",
               null,
-              "書かにくいです wrongly uses the ない-stem (書か) — that's for negative forms, not にくい.",
+              "<ruby>書<rt>か</rt></ruby>かにくいです wrongly uses the ない-stem (<ruby>書<rt>か</rt></ruby>か) — that's for negative forms, not にくい.",
               "<ruby>書<rt>か</rt></ruby>くにくいです keeps the dictionary form — にくい attaches to the ます-stem (書き), not the dictionary form."
             ]
           }
@@ -4253,16 +4253,16 @@
             "q": "「レポートを＿＿から、<ruby>遊<rt>あそ</rt></ruby>びに<ruby>行<rt>い</rt></ruby>きましょう。」 (Let's do our prep — finish the report in advance, THEN go play)",
             "choices": [
               "<ruby>書<rt>か</rt></ruby>いてしまって",
-              "書かせて",
-              "書かれて",
+              "<ruby>書<rt>か</rt></ruby>かせて",
+              "<ruby>書<rt>か</rt></ruby>かれて",
               "<ruby>書<rt>か</rt></ruby>いておいて"
             ],
             "a": 3,
             "ex": "ておく = do it now for later convenience, matching 'get it done first, then go have fun'.",
             "why": [
               "<ruby>書<rt>か</rt></ruby>いてしまって emphasizes finishing/completion (possibly with relief or regret) rather than 'doing it now for later benefit' — おく better captures the deliberate advance-prep framing here.",
-              "書かせて is causative ('let/make [someone] write') — wrong meaning entirely.",
-              "書かれて is passive ('having been written [by someone]') — wrong voice for 'I'll write it'.",
+              "<ruby>書<rt>か</rt></ruby>かせて is causative ('let/make [someone] write') — wrong meaning entirely.",
+              "<ruby>書<rt>か</rt></ruby>かれて is passive ('having been written [by someone]') — wrong voice for 'I'll write it'.",
               null
             ]
           },

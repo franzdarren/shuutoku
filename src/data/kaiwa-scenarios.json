@@ -11,7 +11,7 @@
       },
       {
         "who": "You",
-        "jp": "二人です。",
+        "jp": "<ruby>二人<rt>ふたり</rt></ruby>です。",
         "en": "Two people."
       },
       {
@@ -102,7 +102,7 @@
     "lines": [
       {
         "who": "You",
-        "jp": "すみません、<ruby>清水寺<rt>きよみずでら</rt></ruby>はどう行けばいいですか。",
+        "jp": "すみません、<ruby>清水寺<rt>きよみずでら</rt></ruby>はどう<ruby>行<rt>い</rt></ruby>けばいいですか。",
         "en": "Excuse me, how do I get to Kiyomizu-dera?"
       },
       {
@@ -143,7 +143,7 @@
     ],
     "keyPhrases": [
       {
-        "jp": "〜はどう行けばいいですか",
+        "jp": "〜はどう<ruby>行<rt>い</rt></ruby>けばいいですか",
         "en": "How should I get to ~?"
       },
       {
@@ -1006,7 +1006,7 @@
     "category": "arrival"
   },
   {
-    "jp": "<ruby>駅<rt>えき</rt></ruby>で<ruby>切符<rt>きっぷ</rt></ruby>を買う",
+    "jp": "<ruby>駅<rt>えき</rt></ruby>で<ruby>切符<rt>きっぷ</rt></ruby>を<ruby>買<rt>か</rt></ruby>う",
     "en": "Buying a ticket at the station",
     "setup": "The ticket machine is confusing, so you ask at the window instead.",
     "lines": [
@@ -1487,7 +1487,7 @@
       },
       {
         "who": "You",
-        "jp": "<ruby>今週<rt>こんしゅう</rt></ruby>の<ruby>金曜日<rt>きんようび</rt></ruby>、<ruby>七時<rt>しちじ</rt></ruby>から二人でお<ruby>願<rt>ねが</rt></ruby>いします。",
+        "jp": "<ruby>今週<rt>こんしゅう</rt></ruby>の<ruby>金曜日<rt>きんようび</rt></ruby>、<ruby>七時<rt>しちじ</rt></ruby>から<ruby>二人<rt>ふたり</rt></ruby>でお<ruby>願<rt>ねが</rt></ruby>いします。",
         "en": "This Friday at seven, for two people, please."
       },
       {
@@ -1497,7 +1497,7 @@
       },
       {
         "who": "You",
-        "jp": "ミラーです。すみません、もう一<ruby>度<rt>ど</rt></ruby><ruby>確認<rt>かくにん</rt></ruby>させてください。<ruby>金曜日<rt>きんようび</rt></ruby>の<ruby>七時<rt>しちじ</rt></ruby>、二人ですね。",
+        "jp": "ミラーです。すみません、もう一<ruby>度<rt>ど</rt></ruby><ruby>確認<rt>かくにん</rt></ruby>させてください。<ruby>金曜日<rt>きんようび</rt></ruby>の<ruby>七時<rt>しちじ</rt></ruby>、<ruby>二人<rt>ふたり</rt></ruby>ですね。",
         "en": "It's Miller. Sorry, let me confirm once more — Friday at seven, two people, correct?"
       },
       {
@@ -1517,7 +1517,7 @@
         "en": "I'd like to make a reservation"
       },
       {
-        "jp": "<ruby>金曜日<rt>きんようび</rt></ruby>の<ruby>七時<rt>しちじ</rt></ruby>から二人でお<ruby>願<rt>ねが</rt></ruby>いします",
+        "jp": "<ruby>金曜日<rt>きんようび</rt></ruby>の<ruby>七時<rt>しちじ</rt></ruby>から<ruby>二人<rt>ふたり</rt></ruby>でお<ruby>願<rt>ねが</rt></ruby>いします",
         "en": "Friday at seven, for two, please"
       },
       {
@@ -1669,7 +1669,7 @@
       },
       {
         "who": "You",
-        "jp": "えっ、<ruby>本当<rt>ほんとう</rt></ruby>ですか。じゃあ、どう行けばいいですか。",
+        "jp": "えっ、<ruby>本当<rt>ほんとう</rt></ruby>ですか。じゃあ、どう<ruby>行<rt>い</rt></ruby>けばいいですか。",
         "en": "Oh no, really? So how should I go?"
       },
       {
@@ -1698,7 +1698,7 @@
         "en": "Could you show me on the map?"
       },
       {
-        "jp": "どう行けばいいですか",
+        "jp": "どう<ruby>行<rt>い</rt></ruby>けばいいですか",
         "en": "How should I go?"
       },
       {
@@ -1760,7 +1760,7 @@
       },
       {
         "who": "You",
-        "jp": "<ruby>黒<rt>くろ</rt></ruby>くて、小さいリュックです。中にパスポートが入っています。",
+        "jp": "<ruby>黒<rt>くろ</rt></ruby>くて、小さいリュックです。中にパスポートが<ruby>入<rt>はい</rt></ruby>っています。",
         "en": "It's a small black backpack. My passport is inside."
       },
       {
@@ -1789,7 +1789,7 @@
         "en": "It's a small black backpack"
       },
       {
-        "jp": "中に〜が入っています",
+        "jp": "中に〜が<ruby>入<rt>はい</rt></ruby>っています",
         "en": "My ~ is inside it"
       },
       {
@@ -1811,7 +1811,7 @@
         "ex": "To stack adjectives you use the て-form: 黒い → <ruby>黒<rt>くろ</rt></ruby>くて. と linking is for nouns/lists of things, not for chaining adjectives."
       },
       {
-        "q": "入っています here describes:",
+        "q": "<ruby>入<rt>はい</rt></ruby>っています here describes:",
         "choices": [
           "a habit",
           "an action happening now",
@@ -1819,7 +1819,7 @@
           "a continuing state — it's in there"
         ],
         "a": 3,
-        "ex": "入る is a change-of-state verb, so 入っています = 'is (currently) inside' — the same state meaning as <ruby>住<rt>す</rt></ruby>んでいます or <ruby>結婚<rt>けっこん</rt></ruby>しています."
+        "ex": "入る is a change-of-state verb, so <ruby>入<rt>はい</rt></ruby>っています = 'is (currently) inside' — the same state meaning as <ruby>住<rt>す</rt></ruby>んでいます or <ruby>結婚<rt>けっこん</rt></ruby>しています."
       }
     ],
     "category": "trouble"
@@ -1841,7 +1841,7 @@
       },
       {
         "who": "You",
-        "jp": "お<ruby>土産<rt>みやげ</rt></ruby>です。お<ruby>菓子<rt>かし</rt></ruby>とTシャツが入っています。",
+        "jp": "お<ruby>土産<rt>みやげ</rt></ruby>です。お<ruby>菓子<rt>かし</rt></ruby>とTシャツが<ruby>入<rt>はい</rt></ruby>っています。",
         "en": "Souvenirs. There are sweets and a T-shirt inside."
       },
       {
@@ -2119,7 +2119,7 @@
       },
       {
         "who": "Staff",
-        "jp": "はい、まず<ruby>体<rt>からだ</rt></ruby>を<ruby>洗<rt>あら</rt></ruby>ってから、お<ruby>湯<rt>ゆ</rt></ruby>に入ってください。",
+        "jp": "はい、まず<ruby>体<rt>からだ</rt></ruby>を<ruby>洗<rt>あら</rt></ruby>ってから、お<ruby>湯<rt>ゆ</rt></ruby>に<ruby>入<rt>はい</rt></ruby>ってください。",
         "en": "Yes — please wash first, then enter the bath."
       },
       {
@@ -2164,7 +2164,7 @@
     "roleplay": "This scenario is a permission-and-prohibition drill in disguise. Ask five more questions using 〜てもいいですか and answer them yourself with either はい、どうぞ or いえ、〜てはいけません。",
     "quiz": [
       {
-        "q": "「<ruby>体<rt>からだ</rt></ruby>を<ruby>洗<rt>あら</rt></ruby>ってから、お<ruby>湯<rt>ゆ</rt></ruby>に入ってください」makes the order clear because 〜てから means:",
+        "q": "「<ruby>体<rt>からだ</rt></ruby>を<ruby>洗<rt>あら</rt></ruby>ってから、お<ruby>湯<rt>ゆ</rt></ruby>に<ruby>入<rt>はい</rt></ruby>ってください」makes the order clear because 〜てから means:",
         "choices": [
           "before doing",
           "while doing",
@@ -2296,7 +2296,7 @@
       },
       {
         "who": "You",
-        "jp": "十日間です。一日いくらですか。",
+        "jp": "十日間です。<ruby>一日<rt>いちにち</rt></ruby>いくらですか。",
         "en": "Ten days. How much per day?"
       },
       {
@@ -2321,7 +2321,7 @@
       },
       {
         "who": "Staff",
-        "jp": "<ruby>保険<rt>ほけん</rt></ruby>に入っていれば、お金はかかりません。",
+        "jp": "<ruby>保険<rt>ほけん</rt></ruby>に<ruby>入<rt>はい</rt></ruby>っていれば、お金はかかりません。",
         "en": "If you've taken the insurance, there's no charge."
       },
       {
@@ -2336,7 +2336,7 @@
         "en": "I'd like to rent ~"
       },
       {
-        "jp": "一日いくらですか",
+        "jp": "<ruby>一日<rt>いちにち</rt></ruby>いくらですか",
         "en": "How much per day?"
       },
       {
@@ -2351,7 +2351,7 @@
     "roleplay": "Change the item to a bicycle, a suitcase locker, or a rental car and keep the same four questions — they transfer to any rental counter.",
     "quiz": [
       {
-        "q": "「<ruby>保険<rt>ほけん</rt></ruby>に入っていれば」means:",
+        "q": "「<ruby>保険<rt>ほけん</rt></ruby>に<ruby>入<rt>はい</rt></ruby>っていれば」means:",
         "choices": [
           "after you get insurance",
           "even though you have insurance",
@@ -2376,7 +2376,7 @@
     "category": "errands"
   },
   {
-    "jp": "天気・<ruby>季節<rt>きせつ</rt></ruby>の話",
+    "jp": "<ruby>天気<rt>てんき</rt></ruby>・<ruby>季節<rt>きせつ</rt></ruby>の話",
     "en": "Weather & season small talk",
     "setup": "The safest conversation opener in Japan. Learn it well enough to run on autopilot.",
     "lines": [
@@ -2417,7 +2417,7 @@
       },
       {
         "who": "B",
-        "jp": "ですよね。今年の<ruby>夏<rt>なつ</rt></ruby>は<ruby>特<rt>とく</rt></ruby>に<ruby>暑<rt>あつ</rt></ruby>かったですね。",
+        "jp": "ですよね。<ruby>今年<rt>ことし</rt></ruby>の<ruby>夏<rt>なつ</rt></ruby>は<ruby>特<rt>とく</rt></ruby>に<ruby>暑<rt>あつ</rt></ruby>かったですね。",
         "en": "Right? This summer was especially hot."
       }
     ],
@@ -2589,7 +2589,7 @@
       },
       {
         "who": "B",
-        "jp": "五人<ruby>家族<rt>かぞく</rt></ruby>です。<ruby>両親<rt>りょうしん</rt></ruby>と<ruby>姉<rt>あね</rt></ruby>が二人います。",
+        "jp": "五人<ruby>家族<rt>かぞく</rt></ruby>です。<ruby>両親<rt>りょうしん</rt></ruby>と<ruby>姉<rt>あね</rt></ruby>が<ruby>二人<rt>ふたり</rt></ruby>います。",
         "en": "Five. My parents and two older sisters."
       },
       {
@@ -2842,7 +2842,7 @@
     "lines": [
       {
         "who": "Host",
-        "jp": "どうぞ、入ってください。<ruby>疲<rt>つか</rt></ruby>れましたか。",
+        "jp": "どうぞ、<ruby>入<rt>はい</rt></ruby>ってください。<ruby>疲<rt>つか</rt></ruby>れましたか。",
         "en": "Please come in. Are you tired?"
       },
       {
@@ -3017,7 +3017,7 @@
           "It's grammatically required"
         ],
         "a": 2,
-        "ex": "Leaving the refusal unsaid is the politeness. Finishing the sentence with a blunt 行けません would be noticeably harder-edged."
+        "ex": "Leaving the refusal unsaid is the politeness. Finishing the sentence with a blunt <ruby>行<rt>い</rt></ruby>けません would be noticeably harder-edged."
       }
     ],
     "category": "social"
@@ -3049,7 +3049,7 @@
       },
       {
         "who": "You",
-        "jp": "もちろん。気に入ってもらえるとうれしいです。",
+        "jp": "もちろん。気に<ruby>入<rt>はい</rt></ruby>ってもらえるとうれしいです。",
         "en": "Of course. I'd be happy if you like it."
       },
       {
@@ -3078,7 +3078,7 @@
         "en": "It's nothing much, but please take it"
       },
       {
-        "jp": "気に入ってもらえるとうれしいです",
+        "jp": "気に<ruby>入<rt>はい</rt></ruby>ってもらえるとうれしいです",
         "en": "I hope you like it"
       },
       {
@@ -3100,7 +3100,7 @@
         "ex": "Downplaying your own gift is the polite convention. Taking it literally is the classic learner mistake — the giver doesn't think it's boring at all."
       },
       {
-        "q": "「気に入ってもらえるとうれしいです」combines:",
+        "q": "「気に<ruby>入<rt>はい</rt></ruby>ってもらえるとうれしいです」combines:",
         "choices": [
           "potential + conditional と + feeling",
           "obligation + negative",

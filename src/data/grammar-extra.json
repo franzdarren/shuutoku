@@ -333,7 +333,7 @@
             "en": "I ate dinner while watching TV."
           },
           {
-            "jp": "アルバイトをしながら、大学に<ruby>通<rt>かよ</rt></ruby>っています。",
+            "jp": "アルバイトをしながら、<ruby>大学<rt>だいがく</rt></ruby>に<ruby>通<rt>かよ</rt></ruby>っています。",
             "en": "I'm attending university while working a part-time job."
           }
         ],
@@ -507,7 +507,7 @@
           {
             "label": "〜つもり (plain form)",
             "from": "<ruby>書<rt>か</rt></ruby>く",
-            "to": "<ruby>書<rt>か</rt></ruby>くつもり／書かないつもり"
+            "to": "<ruby>書<rt>か</rt></ruby>くつもり／<ruby>書<rt>か</rt></ruby>かないつもり"
           }
         ]
       },
@@ -603,7 +603,7 @@
           {
             "label": "negative (ない-form)",
             "from": "<ruby>書<rt>か</rt></ruby>く",
-            "to": "書かないほうがいい"
+            "to": "<ruby>書<rt>か</rt></ruby>かないほうがいい"
           }
         ]
       },
@@ -876,7 +876,7 @@
         ],
         "examples": [
           {
-            "jp": "今年の冬は<ruby>去年<rt>きょねん</rt></ruby>より<ruby>寒<rt>さむ</rt></ruby>くなりました。",
+            "jp": "<ruby>今年<rt>ことし</rt></ruby>の冬は<ruby>去年<rt>きょねん</rt></ruby>より<ruby>寒<rt>さむ</rt></ruby>くなりました。",
             "en": "This winter got colder than last winter."
           },
           {
@@ -1364,7 +1364,7 @@
             "a": 2,
             "ex": "Inside a noun-modifying clause the subject is usually marked with が, not は, and the verb takes a plain form — here plain past <ruby>買<rt>か</rt></ruby>った, since it's something already bought.",
             "why": [
-              "買くて isn't a valid conjugation of 買う at all.",
+              "買くて isn't a valid conjugation of <ruby>買<rt>か</rt></ruby>う at all.",
               "は can mark the subject of a stand-alone sentence, but が is the natural choice for the subject inside a clause modifying a noun.",
               null,
               "Modifying clauses need the PLAIN form, not the polite ます form (<ruby>買<rt>か</rt></ruby>います)."
@@ -1392,7 +1392,7 @@
           {
             "label": "Verb ＋noun",
             "from": "<ruby>書<rt>か</rt></ruby>く",
-            "to": "<ruby>書<rt>か</rt></ruby>く人／<ruby>書<rt>か</rt></ruby>いた人／書かない人"
+            "to": "<ruby>書<rt>か</rt></ruby>く人／<ruby>書<rt>か</rt></ruby>いた人／<ruby>書<rt>か</rt></ruby>かない人"
           },
           {
             "label": "い-adjective",
@@ -1420,7 +1420,7 @@
           "Genki II Ch20",
           "Sou Matome Wk2"
         ],
-        "explain": "Attach かどうか to a plain-form clause to embed an unsure yes/no question inside a bigger sentence — 明日晴れるかどうかわかりません (I don't know whether it'll be sunny tomorrow or not). This differs from plain 〜か alone, which usually pairs with a question word to embed an open question (何を買うか<ruby>教<rt>おし</rt></ruby>えてください). With na-adjectives and nouns, だ is dropped before か: <ruby>便利<rt>べんり</rt></ruby>かどうか, not <ruby>便利<rt>べんり</rt></ruby>だかどうか.",
+        "explain": "Attach かどうか to a plain-form clause to embed an unsure yes/no question inside a bigger sentence — 明日晴れるかどうかわかりません (I don't know whether it'll be sunny tomorrow or not). This differs from plain 〜か alone, which usually pairs with a question word to embed an open question (何を<ruby>買<rt>か</rt></ruby>うか<ruby>教<rt>おし</rt></ruby>えてください). With na-adjectives and nouns, だ is dropped before か: <ruby>便利<rt>べんり</rt></ruby>かどうか, not <ruby>便利<rt>べんり</rt></ruby>だかどうか.",
         "formation": [
           "Plain form + かどうか (+ わかりません／<ruby>教<rt>おし</rt></ruby>えてください／<ruby>確認<rt>かくにん</rt></ruby>します, etc.)",
           "<ruby>行<rt>い</rt></ruby>く → <ruby>行<rt>い</rt></ruby>くかどうか",
@@ -1568,7 +1568,7 @@
           {
             "q": "「このパソコンは<ruby>先週<rt>せんしゅう</rt></ruby>＿＿ので、まだ<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>がよくわかりません。」",
             "choices": [
-              "買うばかりな",
+              "<ruby>買<rt>か</rt></ruby>うばかりな",
               "<ruby>買<rt>か</rt></ruby>ったばかりの",
               "<ruby>買<rt>か</rt></ruby>っているばかりな",
               "<ruby>買<rt>か</rt></ruby>ったばかりな"
@@ -1576,7 +1576,7 @@
             "a": 3,
             "ex": "たばかり requires the plain PAST (た) form, and behaves like a na-noun before ので, so な is inserted: <ruby>買<rt>か</rt></ruby>ったばかりなので.",
             "why": [
-              "ばかり (just did) attaches to the PAST た-form, not the plain non-past 買う.",
+              "ばかり (just did) attaches to the PAST た-form, not the plain non-past <ruby>買<rt>か</rt></ruby>う.",
               "ばかり acts like a noun/na-adjective before ので, so な must appear between them — ばかりの is the wrong connector here.",
               "ている describes an ongoing state, not a just-completed action — ばかり pairs with the plain past た-form instead.",
               null
@@ -1829,9 +1829,9 @@
           "Genki II Ch23",
           "Sou Matome Wk5"
         ],
-        "explain": "The imperative is the bluntest, most direct way to tell someone to do something — used between close male friends, in sports coaching, on warning signs, and in quoted speech. It's rarely something you need to produce yourself in polite conversation, but recognizing it is essential for reading manga, signs, and quoted dialogue. Godan verbs change their final u-sound to an e-sound (<ruby>行<rt>い</rt></ruby>く→行け, 話す→<ruby>話<rt>はな</rt></ruby>せ); ichidan verbs drop る and add ろ (<ruby>食<rt>た</rt></ruby>べる→<ruby>食<rt>た</rt></ruby>べろ, 見る→見ろ); する→しろ and <ruby>来<rt>く</rt></ruby>る→来い are irregular. Adding な to the plain dictionary form makes a blunt negative command: <ruby>行<rt>い</rt></ruby>くな ('don't go!').",
+        "explain": "The imperative is the bluntest, most direct way to tell someone to do something — used between close male friends, in sports coaching, on warning signs, and in quoted speech. It's rarely something you need to produce yourself in polite conversation, but recognizing it is essential for reading manga, signs, and quoted dialogue. Godan verbs change their final u-sound to an e-sound (<ruby>行<rt>い</rt></ruby>く→<ruby>行<rt>い</rt></ruby>け, 話す→<ruby>話<rt>はな</rt></ruby>せ); ichidan verbs drop る and add ろ (<ruby>食<rt>た</rt></ruby>べる→<ruby>食<rt>た</rt></ruby>べろ, 見る→見ろ); する→しろ and <ruby>来<rt>く</rt></ruby>る→来い are irregular. Adding な to the plain dictionary form makes a blunt negative command: <ruby>行<rt>い</rt></ruby>くな ('don't go!').",
         "formation": [
-          "Godan: final -u → -e (<ruby>行<rt>い</rt></ruby>く→行け, <ruby>待<rt>ま</rt></ruby>つ→<ruby>待<rt>ま</rt></ruby>て)",
+          "Godan: final -u → -e (<ruby>行<rt>い</rt></ruby>く→<ruby>行<rt>い</rt></ruby>け, <ruby>待<rt>ま</rt></ruby>つ→<ruby>待<rt>ま</rt></ruby>て)",
           "Ichidan: drop る, add ろ (<ruby>食<rt>た</rt></ruby>べる→<ruby>食<rt>た</rt></ruby>べろ, 見る→見ろ)",
           "irregular: する→しろ／<ruby>来<rt>く</rt></ruby>る→来い",
           "negative command: dictionary form + な (<ruby>行<rt>い</rt></ruby>くな)"
@@ -1873,12 +1873,12 @@
             "q": "「<ruby>行<rt>い</rt></ruby>く」の<ruby>命令形<rt>めいれいけい</rt></ruby>は？",
             "choices": [
               "<ruby>行<rt>い</rt></ruby>って",
-              "行け",
+              "<ruby>行<rt>い</rt></ruby>け",
               "<ruby>行<rt>い</rt></ruby>くな",
               "<ruby>行<rt>い</rt></ruby>こう"
             ],
             "a": 1,
-            "ex": "Godan verbs shift their final -u sound to -e for the imperative: <ruby>行<rt>い</rt></ruby>く→行け.",
+            "ex": "Godan verbs shift their final -u sound to -e for the imperative: <ruby>行<rt>い</rt></ruby>く→<ruby>行<rt>い</rt></ruby>け.",
             "why": [
               "<ruby>行<rt>い</rt></ruby>って is the て-form, used for requests like <ruby>行<rt>い</rt></ruby>ってください — not the bare imperative.",
               null,
@@ -2014,7 +2014,7 @@
           {
             "label": "Group 1 verb",
             "from": "<ruby>書<rt>か</rt></ruby>く",
-            "to": "書かせてください"
+            "to": "<ruby>書<rt>か</rt></ruby>かせてください"
           },
           {
             "label": "Group 2 verb",

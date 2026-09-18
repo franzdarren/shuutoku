@@ -193,7 +193,11 @@ for (const [file, text] of sources) {
  * undoes it, the "glossed" count is inflated on re-runs and never settles at
  * zero. The files themselves do converge — running twice in a row produces
  * identical bytes — so it's noise in the report, not churn in the data. */
-const PLAIN_TEXT_FIELDS = new Set(["jpTitle", "reading", "enTitle", "tip", "label", "who", "setup", "roleplay", "cat", "catEn", "title", "body"]);
+/* `en` is the English gloss beside a phrase. It is rendered as plain text at
+ * every one of its call sites, so a Japanese word quoted inside it — "casual
+ * 大丈夫ですか" — gets glossed by step 3 and then shows the tags verbatim.
+ * Same failure as the rest of this list, one field further in. */
+const PLAIN_TEXT_FIELDS = new Set(["jpTitle", "reading", "enTitle", "tip", "label", "who", "setup", "roleplay", "cat", "catEn", "title", "body", "en"]);
 const unruby = (s) => s.replace(/<ruby>([^<]*)<rt>[^<]*<\/rt><\/ruby>/g, "$1");
 
 function stripPlainFields(node) {
