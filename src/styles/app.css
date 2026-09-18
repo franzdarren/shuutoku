@@ -11,9 +11,9 @@
      that large areas of it read as tan rather than as paper. Roughly halved
      and nudged toward 106, so the warmth survives as a tint on an off-white
      instead of colouring the whole screen brown. */
-  --paper: oklch(96.8% 0.005 106);
-  --paper-2: oklch(94% 0.007 106);
-  --paper-3: oklch(90.5% 0.009 106);
+  --paper: oklch(96.8% 0.0022 106);
+  --paper-2: oklch(94% 0.003 106);
+  --paper-3: oklch(90.5% 0.0038 106);
   --ink: oklch(25% 0.009 75);
   --ink-soft: oklch(45.4% 0.023 91);
   --ink-faint: oklch(61.5% 0.025 87);
@@ -57,15 +57,24 @@
   --elev-2: 0 2px 6px rgba(40,32,16,.07), 0 8px 20px rgba(40,32,16,.06);
   --elev-3: 0 12px 34px rgba(40,32,16,.16);
 
-  /* Washi texture, drawn not downloaded: one fine-grained turbulence for the
-     fibre tooth and one very low-frequency turbulence for the soft cloudy
-     mottle real paper has. Both are desaturated and sit at ~5% opacity, so
-     they read as surface rather than as a pattern — the flatness was what
-     made a large field of one colour feel dead. Greyscale noise averages to
-     mid-tone, so the same tile darkens light paper and lifts dark paper, and
-     one token serves both modes. Turn it off by setting this to `none`. */
+  /* Paper pattern — 七宝 shippou, a traditional interlocking-circle wagara,
+     drawn not downloaded. This replaces a pair of feTurbulence layers: the
+     fine one was fibre tooth, but the low-frequency one produced soft random
+     clouding that read as a smear rather than as a surface. A geometric tile
+     repeats exactly, so it reads as a deliberate pattern at any scale.
+
+     Circle centres sit on a half-drop grid — the four tile corners plus the
+     middle — so nearest centres are 14√2 ≈ 19.8px apart; radius 10 is just
+     over half that, which is what makes the circles interlock into the
+     petal shapes shippou is recognised by instead of floating as separate
+     rings. Changing the radius without changing the tile breaks that.
+
+     Unlike greyscale noise (which averages to mid-tone and so serves both
+     modes from one token) a stroked pattern has to pick a colour, so the
+     dark palette overrides this with a light stroke. Set to `none` to
+     remove the texture entirely. */
   --paper-texture:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Cfilter id='mottle'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.016' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='260' height='260' filter='url(%23mottle)' opacity='0.055'/%3E%3Crect width='260' height='260' filter='url(%23grain)' opacity='0.045'/%3E%3C/svg%3E");
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28'%3E%3Cg fill='none' stroke='%23000000' stroke-opacity='0.055' stroke-width='1'%3E%3Ccircle cx='0' cy='0' r='10'/%3E%3Ccircle cx='28' cy='0' r='10'/%3E%3Ccircle cx='0' cy='28' r='10'/%3E%3Ccircle cx='28' cy='28' r='10'/%3E%3Ccircle cx='14' cy='14' r='10'/%3E%3C/g%3E%3C/svg%3E");
 
   --serif: "Shippori Mincho", serif;
   --sans: "Zen Kaku Gothic New", sans-serif;
@@ -114,9 +123,9 @@
   --t: var(--dur) var(--ease-out);
 }
 body.dark{
-  --paper: oklch(20.5% 0.005 106);
-  --paper-2: oklch(24% 0.006 106);
-  --paper-3: oklch(28.5% 0.008 106);
+  --paper: oklch(20.5% 0.0022 106);
+  --paper-2: oklch(24% 0.0026 106);
+  --paper-3: oklch(28.5% 0.0034 106);
   --ink: oklch(92.7% 0.02 85);
   --ink-soft: oklch(78.5% 0.027 85);
   --ink-faint: oklch(59.2% 0.027 86);
@@ -137,6 +146,9 @@ body.dark{
   --on-accent-soft: oklch(18% 0.008 75 / .78);
   --on-accent-faint: oklch(18% 0.008 75 / .28);
   --switch-knob: oklch(92.7% 0.02 85);
+  /* Same shippou tile, stroked light — a black stroke would vanish here. */
+  --paper-texture:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='0.05' stroke-width='1'%3E%3Ccircle cx='0' cy='0' r='10'/%3E%3Ccircle cx='28' cy='0' r='10'/%3E%3Ccircle cx='0' cy='28' r='10'/%3E%3Ccircle cx='28' cy='28' r='10'/%3E%3Ccircle cx='14' cy='14' r='10'/%3E%3C/g%3E%3C/svg%3E");
   --shadow: rgba(0,0,0,.35);
   --elev-1: 0 1px 2px rgba(0,0,0,.28), 0 2px 5px rgba(0,0,0,.2);
   --elev-2: 0 2px 6px rgba(0,0,0,.34), 0 8px 20px rgba(0,0,0,.26);
@@ -1212,6 +1224,8 @@ footer.pagefoot{ margin-top:60px; padding-top:20px; border-top:1px solid var(--l
 }
 .exam-go:hover{ background:var(--indigo-deep); border-color:var(--indigo-deep); }
 .exam-go.armed{ background:var(--shu); border-color:var(--shu); }
+/* Armed "Quit" — same warning treatment as "Reset all progress". */
+.exam-restart.armed{ border-color:var(--shu); background:var(--shu-tint); color:var(--shu); font-weight:700; }
 
 /* The clock has to stay reachable while you scroll a 35-question paper. */
 .exam-bar{

@@ -112,6 +112,7 @@ export default function MockExam() {
   const [done, setDone] = useState(() => saved?.done ?? false);
   const [showCert, setShowCert] = useState(false);
   const [confirmSubmit, setConfirmSubmit] = useState(false);
+  const [confirmQuit, setConfirmQuit] = useState(false);
   const [copied, setCopied] = useState(false);
 
   const pages = useMemo(() => (draw ? paperFromDraw(draw) : null), [draw]);
@@ -174,6 +175,7 @@ export default function MockExam() {
     setDone(false);
     setShowCert(false);
     setConfirmSubmit(false);
+    setConfirmQuit(false);
   }
 
   function pause() {
@@ -191,6 +193,7 @@ export default function MockExam() {
   }
 
   function discard() {
+    setConfirmQuit(false);
     setDraw(null);
     setDone(false);
     setPaused(false);
@@ -290,7 +293,21 @@ export default function MockExam() {
             <button className="qc-reset" onClick={paused ? resume : pause}>{paused ? "▶ Resume" : "❚❚ Pause"}</button>
           </>
         )}
-        <button className="qc-reset exam-restart" onClick={done ? start : discard}>{done ? "New paper" : "Quit"}</button>
+        {/* Quitting throws away a part-finished paper and the clock with it,
+            so it arms first and acts on the second tap — the same gesture as
+            "Finish and score" and "Reset all progress". "New paper" after
+            you've been scored costs nothing, so it still goes on one tap. */}
+        <button
+          className={"qc-reset exam-restart" + (!done && confirmQuit ? " armed" : "")}
+          onClick={() => {
+            if (done) { start(); return; }
+            if (!confirmQuit) { setConfirmQuit(true); return; }
+            discard();
+          }}
+          onBlur={() => setConfirmQuit(false)}
+        >
+          {done ? "New paper" : confirmQuit ? "Tap again to quit" : "Quit"}
+        </button>
       </div>
 
       {/* The paper itself is blurred while paused; the sidebar and every other
