@@ -5,6 +5,13 @@ import KanjiStrokeModal from "../KanjiStrokeModal.jsx";
 
 const PAGE_SIZE = 30;
 
+/** A character with no on- or kun-reading carries "—" in the data. Render it
+ *  muted so it reads as "there isn't one" rather than as a missing value. */
+function readingOrNone(v) {
+  const empty = !v || !v.trim() || v.trim() === "—" || v.trim() === "-";
+  return empty ? <span className="kreading-none">—</span> : v;
+}
+
 export default function KanjiFocus({ jumpTarget }) {
   const [view, setView] = useState("cards");
   const [filter, setFilter] = useState("");
@@ -120,7 +127,15 @@ export default function KanjiFocus({ jumpTarget }) {
             <div className="kj">{k.kj}</div>
             <div className="kmeta">
               <div className="kmeaning">{k.meaning}</div>
-              <div className="kreading"><span className="lbl">on—</span> {k.on} &nbsp; <span className="lbl">kun—</span> {k.kun}</div>
+              {/* The labels used to carry a trailing dash ("kun—"), and the data
+                  writes a missing reading as "—", so 37 of the 183 characters
+                  rendered "kun— —" and read like a rendering fault. The label
+                  sets itself apart by case and colour instead, leaving the dash
+                  to mean only one thing: this character has no such reading. */}
+              <div className="kreading">
+                <span className="kreading-part"><span className="lbl">on</span> {readingOrNone(k.on)}</span>
+                <span className="kreading-part"><span className="lbl">kun</span> {readingOrNone(k.kun)}</span>
+              </div>
               <div className="kexamples">
                 {(k.examples || []).map((ex, ei) => (
                   <div key={ei} className="kexample">

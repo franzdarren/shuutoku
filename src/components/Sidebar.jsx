@@ -61,16 +61,20 @@ export default function Sidebar({ active, onNavigate, mobileOpen, onCloseMobile,
               </button>
             ))}
           </nav>
-        </div>
-        {/* Progress is status, not a setting, so it stays out on its own and
-            visible. Everything you actually toggle folds away behind one row,
-            which is what gives the nav the room to be the main thing here. */}
-        <div className="progress-mini progress-standalone">
-          Quiz progress: <span>{stats.answeredCount} / {stats.total}</span>
-          <div className="progress-bar-track"><div className="progress-bar-fill" style={{ width: pct + "%" }} /></div>
-        </div>
+          {/* Progress is status, not a setting, so it stays out on its own and
+              visible. Everything you actually toggle folds away behind one row,
+              which is what gives the nav the room to be the main thing here.
+              Both sit inside the scroller — pinned below it they ate a fixed
+              slice of a fixed-height column and clipped the nav on a laptop
+              screen. .sidebar-bottom's auto margin still parks them at the
+              foot whenever there's room. */}
+          <div className="sidebar-bottom">
+            <div className="progress-mini progress-standalone">
+              Quiz progress: <span>{stats.answeredCount} / {stats.total}</span>
+              <div className="progress-bar-track"><div className="progress-bar-fill" style={{ width: pct + "%" }} /></div>
+            </div>
 
-        <div className={"settings-panel" + (settingsOpen ? " open" : "")}>
+            <div className={"settings-panel" + (settingsOpen ? " open" : "")}>
           <button
             className="settings-toggle"
             onClick={() => setSettingsOpen(!settingsOpen)}
@@ -126,6 +130,8 @@ export default function Sidebar({ active, onNavigate, mobileOpen, onCloseMobile,
           >
             {confirmReset ? "Tap again to erase everything" : "Reset all progress"}
           </button>
+          </div>
+            </div>
           </div>
         </div>
         <div className="sidebar-footer">

@@ -328,7 +328,29 @@ body.no-furigana rt{ display:none; }
   z-index:40;
   transition:transform var(--t), background var(--t), border-color var(--t);
 }
-.sidebar-scroll{ flex:1; overflow-y:auto; padding:0 0 12px 0; }
+/* Progress and settings live INSIDE this scroller rather than pinned below
+   it. Pinned, they took a fixed bite out of a fixed-height column, so at
+   laptop heights (~1000px) the nav was squeezed until it clipped mid-row —
+   Mock Exam, Review Mistakes and Renshuu sat under a cut edge that didn't
+   look scrollable. `margin-top:auto` on .sidebar-bottom keeps them sitting
+   at the foot of a tall sidebar exactly as before, and lets them scroll up
+   with the nav when there isn't room. */
+.sidebar-scroll{
+  flex:1; overflow-y:auto; padding:0 0 12px 0; display:flex; flex-direction:column;
+  /* Scroll shadows that appear only when there IS more to scroll. The two
+     `local` gradients scroll with the content and mask the shadow once you
+     reach that end; the two `scroll` gradients are painted against the
+     scrollport and show through whenever content runs past it. No JS and no
+     scroll-timeline, so it behaves the same in Safari.
+     Needs the children to be transparent — see .settings-panel below. */
+  background:
+    linear-gradient(var(--paper-2) 30%, transparent) top    /100% 26px no-repeat local,
+    linear-gradient(transparent, var(--paper-2) 70%) bottom /100% 26px no-repeat local,
+    radial-gradient(farthest-side at 50% 0,   var(--shadow), transparent) top    /100% 11px no-repeat scroll,
+    radial-gradient(farthest-side at 50% 100%, var(--shadow), transparent) bottom /100% 11px no-repeat scroll;
+  background-color:var(--paper-2);
+}
+.sidebar-bottom{ margin-top:auto; }
 
 /* The wordmark is set vertically, the way it would run on a book spine or
    a shop noren. It's the only top-to-bottom text in the app, which is
@@ -382,7 +404,10 @@ nav.mainnav button.navlink{
   padding:11px 12px; border-radius:var(--radius-sm); margin-bottom:3px;
   transition:background var(--t-fast), color var(--t-fast);
 }
-nav.mainnav button.navlink .mk{ font-family:var(--serif); font-size:var(--fs-xl); width:1.4em; text-align:center; color:var(--ink-faint); transition:color var(--t-fast); }
+/* line-height:1 so the oversized kanji marker sets its own tight box. At the
+   inherited 1.5 it was the tallest thing in the row and added ~8px of leading
+   to all nine rows for nothing visible. */
+nav.mainnav button.navlink .mk{ font-family:var(--serif); font-size:var(--fs-xl); line-height:1; width:1.4em; text-align:center; color:var(--ink-faint); transition:color var(--t-fast); }
 nav.mainnav button.navlink:hover{ background:var(--paper-3); color:var(--ink); }
 nav.mainnav button.navlink:hover .mk{ color:var(--indigo); }
 /* Active state is a tinted row with an accent rule rather than a solid
@@ -409,7 +434,10 @@ nav.mainnav button.navlink.active::before{
    roughly the bottom third of the sidebar for four toggles you set once and
    never touch again, which left the nav — the thing you use constantly —
    competing for space with it. */
-.settings-panel{ border-top:1px solid var(--line); background:var(--paper-2); margin-top:12px; }
+/* Background intentionally omitted: it repainted the sidebar's own --paper-2
+   over the scroll shadow behind it, which hid the one cue that there was
+   more of this panel below the fold. */
+.settings-panel{ border-top:1px solid var(--line); margin-top:12px; }
 .settings-toggle{
   display:flex; align-items:center; justify-content:space-between; gap:10px;
   width:100%; padding:12px 18px; background:none; border:none; cursor:pointer;
@@ -543,7 +571,9 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
 .modprogress-sub{ font-size:var(--fs-2xs); color:var(--ink-faint); }
 
 /* Per-tab completion bar in the module switcher. */
-.mj-progress{ display:flex; align-items:center; gap:6px; width:100%; margin-top:6px; }
+/* margin-top:auto pins the bar to the bottom of the (stretched) tab, so every
+   bar in a row sits on one line whether its title ran to one line or two. */
+.mj-progress{ display:flex; align-items:center; gap:6px; width:100%; margin-top:auto; padding-top:8px; }
 .mj-progress-track{ flex:1; height:3px; background:var(--line); border-radius:var(--radius-pill); overflow:hidden; }
 .mj-progress-fill{ display:block; height:100%; background:var(--gold); border-radius:inherit; }
 .mj-progress-pct{ font-size:var(--fs-3xs); color:var(--ink-faint); flex-shrink:0; }
@@ -555,6 +585,14 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
 .modjump button{ padding:7px 14px; }
 .modjump button.active{ background:var(--indigo); border-color:var(--indigo); color:var(--on-accent); }
 
+/* Grid, not wrapped flex. Content-sized flex items left each row ending at
+   a different x — eleven tabs of eleven different widths, so the block had
+   a ragged right edge on every row and read as unresolved rather than
+   deliberate. auto-fit columns share one edge and stay equal-height. */
+.modjump-rich{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(228px, 1fr));
+}
 .modjump-rich button{
   display:flex; flex-direction:column; align-items:flex-start; gap:2px;
   text-align:left; border-radius:var(--radius); padding:9px 15px;
@@ -688,12 +726,37 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
 /* ============================================================
    QUIZ WIDGET
    ============================================================ */
-.quizbox{ margin-top:6px; }
+.quizbox{ margin-top:6px; counter-reset:qnum; }
 .quizbox .qlabel{ margin-bottom:10px; }
-.qitem{ margin-bottom:18px; }
-.qitem:last-child{ margin-bottom:0; }
+
+/* A ten-question set used to be ten prompts and forty buttons in one
+   undifferentiated stack — nothing said where one question stopped and the
+   next began, so the last choice of Q1 and the prompt of Q2 sat 18px apart
+   and read as one block. A hairline does the separating and a hanging
+   number in the gutter does the counting.
+   Scoped to .quizbox on purpose: the Mock Exam reuses .qprompt/.qchoice but
+   numbers its questions itself, continuously across sections. */
+.qitem{ counter-increment:qnum; position:relative; padding-left:1.9em; }
+.qitem + .qitem{ margin-top:20px; padding-top:20px; border-top:1px solid var(--line-soft); }
+.qitem::before{
+  content:counter(qnum);
+  position:absolute; left:0; width:1.3em; text-align:right;
+  font-family:var(--serif); font-size:var(--fs-base); line-height:1.8;
+  color:var(--ink-faint); font-variant-numeric:tabular-nums;
+}
+.qitem + .qitem::before{ top:20px; }
+/* A lone question — the usual case under a grammar card — needs no number. */
+.qitem:only-child{ padding-left:0; }
+.qitem:only-child::before{ content:none; }
 .qprompt{ font-size:var(--fs-base); color:var(--ink); margin-bottom:10px; font-family:var(--serif); line-height:1.8; max-width:var(--measure-jp); }
-.qchoices{ display:flex; flex-direction:column; gap:6px; }
+/* Two columns. Four stacked full-width rows made the eye travel the whole
+   measure to read the word "discount", and pushed a ten-question set to
+   roughly twice the scroll it needs. Explicit 2-up rather than auto-fit,
+   which would find room for three columns at this width and leave a 3+1
+   orphan row. Collapses to one column where half a column stops being a
+   sensible line length. */
+.qchoices{ display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:8px; }
+@media (max-width: 720px){ .qchoices{ grid-template-columns:minmax(0,1fr); } }
 /* Choice text is injected as HTML and can contain several <ruby> elements,
    so this stays a normal text flow — a flex container would scatter each
    ruby into its own flex item. The result mark is positioned instead. */
@@ -779,8 +842,13 @@ h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
 .kcard .kj{ font-family:var(--serif); font-size:var(--fs-3xl); color:var(--ink); line-height:1; flex-shrink:0; }
 .kcard .kmeta{ font-size:var(--fs-xs); min-width:0; }
 .kcard .kmeaning{ color:var(--ink); font-weight:700; margin-bottom:4px; font-size:var(--fs-sm); }
-.kcard .kreading{ color:var(--ink-soft); }
-.kcard .kreading .lbl{ color:var(--ink-faint); }
+.kcard .kreading{ color:var(--ink-soft); display:flex; flex-wrap:wrap; gap:2px 14px; }
+.kcard .kreading .kreading-part{ white-space:nowrap; }
+.kcard .kreading .lbl{
+  color:var(--ink-faint); text-transform:uppercase;
+  font-size:.82em; letter-spacing:.07em; margin-right:.2em;
+}
+.kcard .kreading-none{ color:var(--ink-faint); }
 .kexamples{ margin-top:7px; display:flex; flex-direction:column; gap:3px; }
 .kexample{ display:flex; flex-wrap:wrap; align-items:baseline; gap:5px; color:var(--gold); }
 .kexample-word{ font-family:var(--serif); }
