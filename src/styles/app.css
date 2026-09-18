@@ -378,11 +378,11 @@ nav.mainnav button.navlink{
   position:relative;
   display:flex; align-items:center; gap:10px; width:100%;
   text-align:left; background:none; border:none; cursor:pointer;
-  color:var(--ink-soft); font-family:var(--sans); font-size:var(--fs-md);
-  padding:9px 12px; border-radius:var(--radius-sm); margin-bottom:2px;
+  color:var(--ink); font-family:var(--sans); font-size:var(--fs-base);
+  padding:11px 12px; border-radius:var(--radius-sm); margin-bottom:3px;
   transition:background var(--t-fast), color var(--t-fast);
 }
-nav.mainnav button.navlink .mk{ font-family:var(--serif); font-size:var(--fs-lg); width:1.4em; text-align:center; color:var(--ink-faint); transition:color var(--t-fast); }
+nav.mainnav button.navlink .mk{ font-family:var(--serif); font-size:var(--fs-xl); width:1.4em; text-align:center; color:var(--ink-faint); transition:color var(--t-fast); }
 nav.mainnav button.navlink:hover{ background:var(--paper-3); color:var(--ink); }
 nav.mainnav button.navlink:hover .mk{ color:var(--indigo); }
 /* Active state is a tinted row with an accent rule rather than a solid
@@ -403,8 +403,27 @@ nav.mainnav button.navlink.active::before{
 .sidebar-footer a{ color:var(--ink-faint); text-decoration:underline; text-underline-offset:2px; }
 .sidebar-footer a:hover{ color:var(--indigo); }
 
-.settings-panel{ border-top:1px solid var(--line); padding:16px 18px 18px; background:var(--paper-2); }
-.settings-panel .stitle{ margin-bottom:12px; }
+.progress-standalone{ padding:12px 18px 0; margin-top:0; }
+
+/* Collapsed to a single row by default. The settings block used to occupy
+   roughly the bottom third of the sidebar for four toggles you set once and
+   never touch again, which left the nav — the thing you use constantly —
+   competing for space with it. */
+.settings-panel{ border-top:1px solid var(--line); background:var(--paper-2); margin-top:12px; }
+.settings-toggle{
+  display:flex; align-items:center; justify-content:space-between; gap:10px;
+  width:100%; padding:12px 18px; background:none; border:none; cursor:pointer;
+  font-family:var(--sans); text-align:left;
+  transition:background var(--t-fast);
+}
+.settings-toggle:hover{ background:var(--paper-3); }
+.settings-toggle .stitle{ margin-bottom:0; }
+.settings-chevron{
+  color:var(--ink-faint); font-size:var(--fs-xs); line-height:1; flex-shrink:0;
+  transition:transform var(--t-fast);
+}
+.settings-panel.open .settings-chevron{ transform:rotate(90deg); }
+.settings-body{ padding:4px 18px 18px; animation:fadein var(--dur-fast) var(--ease-out); }
 .setting-row{ display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:12px; font-size:var(--fs-sm); color:var(--ink-soft); }
 .switch{ position:relative; width:38px; height:21px; flex-shrink:0; background:var(--line); border-radius:var(--radius-pill); cursor:pointer; border:none; transition:background var(--t); padding:0; }
 .switch::after{ content:""; position:absolute; top:2px; left:2px; width:17px; height:17px; background:var(--switch-knob); border-radius:50%; transition:left var(--t); box-shadow:var(--elev-1); }
@@ -499,10 +518,13 @@ main.content{ margin-left:272px; flex:1; min-width:0; padding:48px 48px 100px; d
 .section-head--bare{ padding-bottom:0; border-bottom:none; margin-bottom:20px; }
 .section-note{ color:var(--ink-soft); max-width:var(--measure); margin:0 0 30px; font-size:var(--fs-sm); }
 
-/* The landing section is the one place the display face gets room. */
+/* The landing section is the one place the display face gets room. Its
+   paragraph runs wider than --measure: at 58ch under a 3.6rem headline the
+   text hugged the left edge with half the column empty beside it, which read
+   as a mistake rather than as a margin. */
 .section-head--lead{ padding-bottom:26px; }
 .section-head--lead h1{ font-size:calc(var(--fs-display) * 1.2); }
-.section-head--lead p{ font-size:var(--fs-base); max-width:58ch; }
+.section-head--lead p{ font-size:var(--fs-base); max-width:82ch; }
 
 h2.modtitle{ font-family:var(--serif); font-size:var(--fs-2xl); margin:48px 0 4px; color:var(--ink); display:flex; align-items:baseline; gap:10px; }
 h2.modtitle .modnum{ color:var(--gold); font-size:var(--fs-lg); }
@@ -1244,11 +1266,31 @@ footer.pagefoot{ margin-top:60px; padding-top:20px; border-top:1px solid var(--l
 }
 .cert-wrap{ width:100%; max-width:520px; margin:auto; }
 .cert-sheet{
+  position:relative; overflow:hidden;
   background:var(--stroke-bg); color:var(--stroke-fg);
   border:1px solid var(--line); border-radius:var(--radius);
   padding:34px 32px; box-shadow:var(--elev-3);
   animation:popin var(--dur) var(--ease-out);
 }
+/* Security-print watermark: a big rotated seal with rows of repeated text
+   behind it, both faint enough to read straight through. */
+.cert-watermark{
+  position:absolute; inset:0; pointer-events:none; user-select:none;
+  display:flex; flex-direction:column; justify-content:space-around;
+  overflow:hidden; opacity:.055;
+}
+.cert-watermark-row{
+  white-space:nowrap; font-family:var(--serif); font-size:var(--fs-lg);
+  letter-spacing:.3em; transform:rotate(-24deg) translateX(-8%);
+}
+.cert-watermark-seal{
+  position:absolute; top:50%; left:50%; transform:translate(-50%,-50%) rotate(-14deg);
+  display:grid; place-items:center; width:62%; aspect-ratio:1; border-radius:50%;
+  border:9px solid currentColor; font-family:var(--serif);
+  font-size:clamp(3rem, 18vw, 6.5rem); letter-spacing:.1em; line-height:1;
+}
+/* Sits above the watermark without needing a z-index on every child. */
+.cert-body{ position:relative; }
 /* Double rules top and bottom are what make an official Japanese form read
    as a form rather than as a card. */
 .cert-rule-top, .cert-rule-bottom{ border-top:3px double var(--stroke-fg); }
@@ -1307,11 +1349,6 @@ footer.pagefoot{ margin-top:60px; padding-top:20px; border-top:1px solid var(--l
 .cert-verdict.fail{ color:var(--ink-faint); }
 .cert-verdict-en{ font-size:var(--fs-2xs); letter-spacing:.14em; text-transform:uppercase; margin-top:12px; color:var(--stroke-fg); opacity:.7; }
 
-.cert-forced{
-  font-size:var(--fs-2xs); text-align:center; color:var(--shu);
-  border:1px dashed var(--shu); border-radius:var(--radius-sm); padding:8px 12px; margin-bottom:16px;
-}
-
 .cert-foot{ font-size:var(--fs-3xs); line-height:1.9; opacity:.75; text-align:center; }
 .cert-disclaimer{ margin-top:8px; opacity:.85; }
 
@@ -1336,7 +1373,7 @@ footer.pagefoot{ margin-top:60px; padding-top:20px; border-top:1px solid var(--l
 /* ============================================================
    RENSHUU WITH AI — coming-soon preview
    ============================================================ */
-.soon-panel{ max-width:var(--measure); }
+.soon-panel{ max-width:var(--measure-card); }
 .soon-flag{
   font-size:var(--fs-2xs); letter-spacing:.1em; text-transform:uppercase;
   color:var(--gold); font-weight:500;
@@ -1346,9 +1383,39 @@ footer.pagefoot{ margin-top:60px; padding-top:20px; border-top:1px solid var(--l
    version hand-built a fake chat window — title bar, status dot, dead
    input, Send button — which is a UI that doesn't exist pretending it
    does. Showing the exchange as dialogue says the same thing honestly. */
-.soon-spec{ margin-bottom:26px; }
-.soon-spec .dlabel{ margin-bottom:12px; }
-.soon-spec .dline{ margin-bottom:12px; }
+/* The conversation gets its own centred surface so the section reads as
+   "here is the thing" rather than as another column of notes. It is a framed
+   panel, not a simulated app window — no title bar, no traffic lights, no
+   live-looking input. */
+.renshuu-stage{ max-width:560px; margin:0 auto 32px; }
+.chatbox{
+  background:var(--paper); border:1px solid var(--line); border-radius:var(--radius-lg);
+  box-shadow:var(--elev-2); overflow:hidden;
+}
+.chatbox-head{
+  display:flex; align-items:center; justify-content:space-between; gap:12px;
+  padding:14px 18px; background:var(--paper-2); border-bottom:1px solid var(--line);
+}
+.chatbox-scene{ display:flex; flex-direction:column; gap:2px; min-width:0; }
+.chatbox-scene-jp{ font-family:var(--serif); font-size:var(--fs-md); color:var(--ink); }
+.chatbox-scene-en{ font-size:var(--fs-3xs); letter-spacing:.08em; text-transform:uppercase; color:var(--ink-faint); }
+/* Says what this is. A status dot here would be pretending something is
+   running, which is the tell this whole section exists to avoid. */
+.chatbox-tag{
+  flex-shrink:0; font-size:var(--fs-3xs); letter-spacing:.12em; text-transform:uppercase;
+  color:var(--gold); border:1px solid var(--gold); border-radius:var(--radius-pill); padding:2px 10px;
+}
+.chatbox-body{ padding:20px 18px; }
+.chatbox-body .dline{ margin-bottom:16px; }
+.chatbox-body .dline:last-child{ margin-bottom:0; }
+.chatbox-foot{
+  display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;
+  padding:14px 18px; border-top:1px dashed var(--line);
+  background:var(--paper-2);
+}
+.chatbox-foot-jp{ font-family:var(--serif); font-size:var(--fs-sm); color:var(--ink-faint); flex-shrink:0; }
+.chatbox-foot-en{ font-size:var(--fs-2xs); color:var(--ink-faint); min-width:0; }
+
 /* Correction attaches to the turn above it — same side as your own bubble,
    dashed and gold so it reads as a margin note on what you just said rather
    than as another person joining the conversation. */
@@ -1368,9 +1435,12 @@ footer.pagefoot{ margin-top:60px; padding-top:20px; border-top:1px solid var(--l
 .dline.fb .fb-was ~ .jp{ color:var(--ink-soft); text-decoration:line-through; text-decoration-color:var(--gold); }
 .dline.fb .en{ margin-top:3px; }
 
-.soon-spec .ai-note{
+/* The partner's suggestion for your next turn. Unscoped so it travels with
+   whatever bubble it sits in rather than depending on an ancestor wrapper. */
+.ai-note{
   display:block; font-family:var(--sans); font-size:var(--fs-2xs);
-  color:var(--ink-faint); margin-top:4px;
+  color:var(--ink-faint); margin-top:5px; padding-top:5px;
+  border-top:1px dashed var(--line);
 }
 .soon-list{ margin:0; padding:0; list-style:none; border-top:1px solid var(--line); }
 .soon-list li{

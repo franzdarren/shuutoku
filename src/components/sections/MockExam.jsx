@@ -4,10 +4,6 @@ import { getAllQuizEntries, readingPassages, kaiwaScenarios } from "../../data/i
 import { useQuiz } from "../../context/QuizContext.jsx";
 import JpText from "../JpText.jsx";
 
-/* ⚠ TEMPORARY — forces every paper to come out 合格 so the pass certificate
- * can be looked at without sitting a real exam. Set back to false (and delete
- * the banner it switches on) before this is used for anything real. */
-const FORCE_PASS = true;
 
 /* Shaped like the written half of a real N4 paper. Page 1 is 言語知識
  * (script/vocab then grammar), page 2 is 読解 — and reading questions are
@@ -215,14 +211,12 @@ export default function MockExam() {
     const kScore = scale(knowledge);
     const rScore = scale(reading);
     const total = kScore + rScore;
-    const reallyPassed = total >= PASS_TOTAL && kScore >= PASS_SECTION && rScore >= PASS_SECTION;
     return {
       moji, bunpou,
       knowledge: { ...knowledge, score: kScore },
       reading: { ...reading, score: rScore },
       total,
-      passed: FORCE_PASS ? true : reallyPassed,
-      reallyPassed,
+      passed: total >= PASS_TOTAL && kScore >= PASS_SECTION && rScore >= PASS_SECTION,
       rightCount: knowledge.right + reading.right,
       questionCount: knowledge.total + reading.total,
     };
@@ -395,7 +389,7 @@ export default function MockExam() {
       {paused && (
         <div className="exam-pause-note">
           <div className="exam-pause-jp">一時停止中</div>
-          <div className="exam-pause-en">Paused · {clock(left)} remaining. Move around the handbook freely; the clock is stopped.</div>
+          <div className="exam-pause-en">Paused · {clock(left)} remaining</div>
           <button className="exam-go" onClick={resume}>▶ Resume exam</button>
         </div>
       )}
@@ -406,6 +400,17 @@ export default function MockExam() {
         <div className="cert-scrim" onClick={() => setShowCert(false)}>
           <div className="cert-wrap" onClick={(e) => e.stopPropagation()}>
             <div className="cert-sheet" role="document">
+              {/* The faint repeated mark official documents carry. Drawn as
+                  real DOM text rather than an SVG background so it renders
+                  with the page's own CJK font instead of hoping one exists
+                  inside the image. */}
+              <div className="cert-watermark" aria-hidden="true">
+                <div className="cert-watermark-seal">模擬</div>
+                {Array.from({ length: 7 }, (_, i) => (
+                  <div key={i} className="cert-watermark-row">模擬試験　模擬試験　模擬試験　模擬試験</div>
+                ))}
+              </div>
+              <div className="cert-body">
               <div className="cert-rule-top" />
               <div className="cert-head">
                 <div className="cert-org">日 本 語 能 力 試 験</div>
@@ -459,10 +464,6 @@ export default function MockExam() {
                 <div className="cert-verdict-en">{result.passed ? "Passed" : "Not passed"}</div>
               </div>
 
-              {FORCE_PASS && !result.reallyPassed && (
-                <div className="cert-forced">⚠ Pass is forced for UI preview — your actual result was 不合格.</div>
-              )}
-
               <div className="cert-foot">
                 <div>正答 {result.rightCount} / {result.questionCount}　·　合格点 {PASS_TOTAL} / {SECTION_MAX * 2}　·　各区分の基準点 {PASS_SECTION}</div>
                 <div className="cert-disclaimer">
@@ -471,6 +472,7 @@ export default function MockExam() {
                 </div>
               </div>
               <div className="cert-rule-bottom" />
+              </div>
             </div>
 
             <div className="cert-actions">

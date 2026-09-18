@@ -32,6 +32,7 @@ export default function Sidebar({ active, onNavigate, mobileOpen, onCloseMobile,
   // Wiping every score is destructive and can't be undone, so the button
   // arms itself first rather than firing on a single stray click.
   const [confirmReset, setConfirmReset] = useState(false);
+  const [settingsOpen, setSettingsOpen] = useState(true);
 
   return (
     <>
@@ -61,8 +62,25 @@ export default function Sidebar({ active, onNavigate, mobileOpen, onCloseMobile,
             ))}
           </nav>
         </div>
-        <div className="settings-panel">
-          <div className="stitle">SETTINGS ・ 設定</div>
+        {/* Progress is status, not a setting, so it stays out on its own and
+            visible. Everything you actually toggle folds away behind one row,
+            which is what gives the nav the room to be the main thing here. */}
+        <div className="progress-mini progress-standalone">
+          Quiz progress: <span>{stats.answeredCount} / {stats.total}</span>
+          <div className="progress-bar-track"><div className="progress-bar-fill" style={{ width: pct + "%" }} /></div>
+        </div>
+
+        <div className={"settings-panel" + (settingsOpen ? " open" : "")}>
+          <button
+            className="settings-toggle"
+            onClick={() => setSettingsOpen(!settingsOpen)}
+            aria-expanded={settingsOpen}
+          >
+            <span className="stitle">設定 ・ Settings</span>
+            <span className="settings-chevron" aria-hidden="true">▸</span>
+          </button>
+
+          <div className="settings-body" hidden={!settingsOpen}>
           <div className="setting-row">
             <span>Furigana ふりがな</span>
             <button className={"switch" + (furigana ? " on" : "")} onClick={() => setFurigana(!furigana)} aria-label="Toggle furigana" />
@@ -97,11 +115,6 @@ export default function Sidebar({ active, onNavigate, mobileOpen, onCloseMobile,
               ))}
             </div>
           </div>
-          <div className="progress-mini">
-            Quiz progress: <span>{stats.answeredCount} / {stats.total}</span>
-            <div className="progress-bar-track"><div className="progress-bar-fill" style={{ width: pct + "%" }} /></div>
-          </div>
-
           <button
             className={"reset-all" + (confirmReset ? " armed" : "")}
             onClick={() => {
@@ -113,6 +126,7 @@ export default function Sidebar({ active, onNavigate, mobileOpen, onCloseMobile,
           >
             {confirmReset ? "Tap again to erase everything" : "Reset all progress"}
           </button>
+          </div>
         </div>
         <div className="sidebar-footer">
           © 2026 Shuutoku ・{" "}

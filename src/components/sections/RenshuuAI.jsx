@@ -9,8 +9,22 @@ export default function RenshuuAI() {
       <div className="soon-panel">
         <div className="soon-flag">Not built yet — this is the plan, not a demo</div>
 
-        <div className="soon-spec">
-          <div className="dlabel">How an exchange would read — レストランで (at a restaurant)</div>
+        {/* A framed conversation surface — not a re-drawn app window. There's
+            deliberately no mock input box or Send button: nothing is wired up,
+            and a dead control that looks live is the exact thing that made the
+            first version of this section read as a fake screenshot. The footer
+            marks where input will go instead of pretending it already does. */}
+        <div className="renshuu-stage">
+          <div className="chatbox">
+            <div className="chatbox-head">
+              <div className="chatbox-scene">
+                <span className="chatbox-scene-jp">レストランで</span>
+                <span className="chatbox-scene-en">at a restaurant</span>
+              </div>
+              <span className="chatbox-tag">sketch</span>
+            </div>
+
+            <div className="chatbox-body">
           <div className="dline side-a">
             <div className="speaker">友達AI</div>
             <div className="dtext">
@@ -50,6 +64,13 @@ export default function RenshuuAI() {
               <div className="jp-row"><span className="jp"><ruby>店員<rt>てんいん</rt></ruby>：かしこまりました。こちらへどうぞ。</span></div>
               <div className="en">Staff: Certainly. This way, please.</div>
               <span className="ai-note">Nudge — try asking for a menu next.</span>
+            </div>
+          </div>
+            </div>
+
+            <div className="chatbox-foot">
+              <span className="chatbox-foot-jp">入力欄</span>
+              <span className="chatbox-foot-en">where you'll type your reply, once this is built</span>
             </div>
           </div>
         </div>
