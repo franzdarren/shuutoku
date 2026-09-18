@@ -1150,6 +1150,65 @@ footer.pagefoot{ margin-top:60px; padding-top:20px; border-top:1px solid var(--l
 .exam-row-num{ flex-shrink:0; color:var(--ink); font-variant-numeric:tabular-nums; }
 .exam-note{ font-size:var(--fs-sm); color:var(--ink-faint); margin-top:16px; }
 
+.exam-verdict{ font-family:var(--serif); font-size:var(--fs-lg); line-height:1; }
+.exam-verdict.pass{ color:var(--matcha); }
+.exam-verdict.fail{ color:var(--shu); }
+.exam-bar .exam-restart{ margin-left:auto; }
+
+.exam-pagehead{
+  display:flex; align-items:baseline; gap:12px; flex-wrap:wrap;
+  padding-bottom:12px; margin-bottom:26px; border-bottom:2px solid var(--ink);
+  max-width:var(--measure-card);
+}
+.exam-pagenum{ font-family:var(--serif); font-size:var(--fs-sm); color:var(--ink-faint); font-variant-numeric:tabular-nums; }
+.exam-pagetitle{ font-family:var(--serif); font-size:var(--fs-xl); color:var(--ink); }
+.exam-pagesub{ font-size:var(--fs-2xs); letter-spacing:.08em; text-transform:uppercase; color:var(--ink-faint); }
+
+.exam-block{ margin-bottom:34px; max-width:var(--measure-card); }
+.exam-block-head{
+  font-family:var(--serif); font-size:var(--fs-lg); color:var(--ink);
+  padding-bottom:8px; margin-bottom:18px; border-bottom:1px solid var(--line);
+}
+.exam-block-head span{ font-family:var(--sans); font-size:var(--fs-2xs); letter-spacing:.08em; text-transform:uppercase; color:var(--ink-faint); margin-left:8px; }
+
+/* The passage or script a block's questions are about, printed above them
+   the way an exam booklet does. */
+.exam-source{
+  background:var(--paper-2); border:1px solid var(--line); border-radius:var(--radius);
+  padding:20px 22px; margin-bottom:20px;
+}
+.exam-source-label{ font-size:var(--fs-2xs); color:var(--ink-faint); margin-bottom:12px; }
+.exam-source-title{ font-family:var(--serif); font-size:var(--fs-lg); color:var(--ink); margin-bottom:2px; }
+.exam-source-titleen{ font-size:var(--fs-xs); color:var(--ink-faint); margin-bottom:14px; }
+.exam-script{ margin-top:6px; }
+.exam-script-line{ display:flex; gap:12px; align-items:baseline; margin-bottom:9px; }
+.exam-script-who{
+  flex:0 0 62px; font-size:var(--fs-3xs); letter-spacing:.06em; text-transform:uppercase;
+  color:var(--ink-faint); padding-top:2px;
+}
+.exam-script-jp{ font-family:var(--serif); font-size:var(--fs-base); line-height:1.9; min-width:0; }
+
+/* Pausing blurs only the paper. The sidebar and the other sections stay
+   sharp and usable — stopping the clock is meant to let you go and look
+   something up, so long as it's a deliberate, visible act. */
+.exam-paper{ transition:filter var(--dur-slow) var(--ease-out); }
+.exam-paper.paused{ filter:blur(7px); pointer-events:none; user-select:none; }
+
+.exam-pause-note{
+  position:fixed; z-index:22; left:50%; top:50%; transform:translate(-50%, -50%);
+  width:min(420px, calc(100vw - 40px));
+  background:var(--paper-2); border:1px solid var(--indigo); border-radius:var(--radius);
+  box-shadow:var(--elev-3); padding:24px 26px; text-align:center;
+}
+.exam-pause-jp{ font-family:var(--serif); font-size:var(--fs-2xl); color:var(--ink); line-height:1; margin-bottom:8px; }
+.exam-pause-en{ font-size:var(--fs-sm); color:var(--ink-soft); margin-bottom:16px; }
+
+.exam-pager{
+  display:flex; align-items:center; gap:12px; flex-wrap:wrap;
+  max-width:var(--measure-card); margin-top:28px; padding-top:22px; border-top:1px solid var(--line);
+}
+.exam-pager .exam-go{ margin-left:auto; }
+
 .exam-list{ list-style:none; margin:0; padding:0; max-width:var(--measure-card); }
 .exam-q{ padding:20px 0; border-top:1px solid var(--line-soft); }
 .exam-q:first-child{ border-top:none; padding-top:0; }
@@ -1166,6 +1225,112 @@ footer.pagefoot{ margin-top:60px; padding-top:20px; border-top:1px solid var(--l
 @media (max-width: 560px){
   .exam-row-label{ flex-basis:120px; }
   .exam-go{ width:100%; }
+  .exam-pager{ flex-direction:column; align-items:stretch; }
+  .exam-pager .exam-go{ margin-left:0; }
+}
+
+/* ============================================================
+   RESULT CERTIFICATE
+   Laid out after the JLPT 合否結果通知書: organisation line, level,
+   a scoring-section table, then the verdict. Deliberately plainer
+   than the rest of the app — an official notice is a form, not a
+   designed page.
+   ============================================================ */
+.cert-scrim{
+  position:fixed; inset:0; z-index:220; background:var(--scrim);
+  display:flex; align-items:flex-start; justify-content:center;
+  padding:24px 20px; overflow-y:auto;
+  animation:fadein var(--dur-fast) var(--ease-out);
+}
+.cert-wrap{ width:100%; max-width:520px; margin:auto; }
+.cert-sheet{
+  background:var(--stroke-bg); color:var(--stroke-fg);
+  border:1px solid var(--line); border-radius:var(--radius);
+  padding:34px 32px; box-shadow:var(--elev-3);
+  animation:popin var(--dur) var(--ease-out);
+}
+/* Double rules top and bottom are what make an official Japanese form read
+   as a form rather than as a card. */
+.cert-rule-top, .cert-rule-bottom{ border-top:3px double var(--stroke-fg); }
+.cert-rule-top{ margin-bottom:22px; }
+.cert-rule-bottom{ margin-top:20px; }
+
+.cert-head{ text-align:center; position:relative; padding-bottom:18px; }
+.cert-org{ font-family:var(--serif); font-size:var(--fs-sm); letter-spacing:.3em; opacity:.85; }
+.cert-title{ font-family:var(--serif); font-size:var(--fs-2xl); letter-spacing:.2em; margin-top:10px; }
+.cert-sub{ font-size:var(--fs-3xs); letter-spacing:.08em; opacity:.6; margin-top:8px; }
+/* Unmistakably a practice sheet — it should never be able to pass for the
+   real notice, so this sits in the header rather than buried in a footnote. */
+.cert-mockmark{
+  display:inline-block; margin-top:12px; padding:3px 14px;
+  font-size:var(--fs-3xs); letter-spacing:.2em;
+  border:1px solid currentColor; border-radius:var(--radius-pill); opacity:.75;
+}
+
+.cert-meta{
+  display:grid; grid-template-columns:repeat(3, 1fr); gap:10px;
+  padding:16px 0; margin-bottom:22px;
+  border-top:1px solid var(--stroke-fg); border-bottom:1px solid var(--stroke-fg);
+}
+.cert-meta div{ display:flex; flex-direction:column; gap:4px; min-width:0; }
+.cert-meta span{ font-size:var(--fs-3xs); opacity:.6; }
+.cert-meta b{ font-family:var(--serif); font-size:var(--fs-md); font-variant-numeric:tabular-nums; }
+
+.cert-section-label{
+  font-size:var(--fs-3xs); letter-spacing:.14em; opacity:.7;
+  margin-bottom:8px; padding-left:9px; border-left:3px solid var(--stroke-fg);
+}
+.cert-table{ width:100%; border-collapse:collapse; font-size:var(--fs-sm); margin-bottom:18px; }
+.cert-table td{ padding:11px 0; border-bottom:1px solid var(--line); vertical-align:baseline; }
+.cert-table td span{ display:block; font-size:var(--fs-3xs); opacity:.55; margin-top:3px; }
+.cert-table td:last-child{ text-align:right; white-space:nowrap; }
+.cert-num{ font-family:var(--serif); font-size:var(--fs-xl); font-variant-numeric:tabular-nums; }
+.cert-num i{ font-style:normal; font-size:var(--fs-2xs); opacity:.55; }
+.cert-table .cert-total td{ border-top:1px solid var(--stroke-fg); border-bottom:3px double var(--stroke-fg); font-weight:700; }
+.cert-band{ font-family:var(--serif); font-size:var(--fs-xl); letter-spacing:.1em; }
+.cert-ref{ margin-bottom:6px; }
+.cert-refnote{ font-size:var(--fs-3xs); opacity:.55; margin-bottom:22px; }
+
+.cert-verdict{
+  text-align:center; margin:0 0 18px; padding:20px;
+  border:1px solid var(--stroke-fg); border-radius:var(--radius-sm);
+}
+.cert-verdict-label{ font-size:var(--fs-3xs); letter-spacing:.16em; opacity:.6; margin-bottom:12px; }
+/* A round vermilion seal is the single most recognisable mark on a Japanese
+   official document; the verdict is set inside one. */
+.cert-seal{
+  display:inline-grid; place-items:center; width:104px; height:104px; border-radius:50%;
+  border:3px solid currentColor; font-family:var(--serif); font-size:var(--fs-2xl);
+  letter-spacing:.08em; line-height:1.1; transform:rotate(-7deg);
+}
+.cert-verdict.pass{ color:var(--shu); }
+.cert-verdict.fail{ color:var(--ink-faint); }
+.cert-verdict-en{ font-size:var(--fs-2xs); letter-spacing:.14em; text-transform:uppercase; margin-top:12px; color:var(--stroke-fg); opacity:.7; }
+
+.cert-forced{
+  font-size:var(--fs-2xs); text-align:center; color:var(--shu);
+  border:1px dashed var(--shu); border-radius:var(--radius-sm); padding:8px 12px; margin-bottom:16px;
+}
+
+.cert-foot{ font-size:var(--fs-3xs); line-height:1.9; opacity:.75; text-align:center; }
+.cert-disclaimer{ margin-top:8px; opacity:.85; }
+
+@media (max-width: 520px){
+  .cert-sheet{ padding:24px 20px; }
+  .cert-meta{ grid-template-columns:1fr; gap:12px; }
+  .cert-meta div{ flex-direction:row; justify-content:space-between; align-items:baseline; }
+}
+
+.cert-actions{ display:flex; gap:10px; flex-wrap:wrap; justify-content:center; margin-top:18px; }
+
+/* Printing gives you the "Save as PDF" destination for free, so the print
+   sheet is just the certificate on its own — no app chrome, no scrim. */
+@media print{
+  body{ background:none; }
+  .shell, .mobilebar, .cert-actions, .lookup-pop{ display:none !important; }
+  .cert-scrim{ position:static; padding:0; background:none; display:block; overflow:visible; }
+  .cert-wrap{ max-width:none; }
+  .cert-sheet{ border:1px solid #999; box-shadow:none; animation:none; }
 }
 
 /* ============================================================
