@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useSettings } from "../context/SettingsContext.jsx";
 import { useQuiz } from "../context/QuizContext.jsx";
 import SearchBox from "./SearchBox.jsx";
@@ -25,6 +25,52 @@ const FONT_SCALE_MIN = 0.85;
 const FONT_SCALE_MAX = 1.4;
 const FONT_SCALE_STEP = 0.05;
 const clampScale = (v) => Math.min(FONT_SCALE_MAX, Math.max(FONT_SCALE_MIN, Math.round(v * 100) / 100));
+
+/** Whether the offline copy is in place, so "can I close this and get on
+ *  the train?" has an answer. The service worker's `ready` only resolves
+ *  once it has installed, and installing is what precaches the app, so
+ *  ready means everything is on the device. In dev there's no service
+ *  worker and this stays silent. */
+function OfflineStatus() {
+  const [ready, setReady] = useState(false);
+  const [online, setOnline] = useState(() => navigator.onLine);
+
+  useEffect(() => {
+    let cancelled = false;
+    navigator.serviceWorker?.ready.then(() => { if (!cancelled) setReady(true); });
+    // Quiz progress lives in localStorage, which a browser may clear under
+    // storage pressure. As an installed app, ask for it to be kept. Only
+    // then, because some browsers turn this into a permission prompt, and
+    // a prompt on a plain page visit would be out of nowhere.
+    const installed = window.matchMedia?.("(display-mode: standalone)").matches || navigator.standalone;
+    if (installed) navigator.storage?.persist?.().catch(() => {});
+    const on = () => setOnline(true);
+    const off = () => setOnline(false);
+    window.addEventListener("online", on);
+    window.addEventListener("offline", off);
+    return () => {
+      cancelled = true;
+      window.removeEventListener("online", on);
+      window.removeEventListener("offline", off);
+    };
+  }, []);
+
+  if (!online) {
+    return (
+      <div className="offline-status off" role="status">
+        <span className="offline-dot" aria-hidden="true" />
+        Offline. Everything works except online dictionary lookups.
+      </div>
+    );
+  }
+  if (!ready) return null;
+  return (
+    <div className="offline-status" role="status">
+      <span className="offline-dot" aria-hidden="true" />
+      Saved for offline use
+    </div>
+  );
+}
 
 export default function Sidebar({ active, onNavigate, mobileOpen, onCloseMobile, onSearchJump }) {
   const { furigana, setFurigana, dark, setDark, fontScale, setFontScale, jpFont, setJpFont } = useSettings();
@@ -70,6 +116,7 @@ export default function Sidebar({ active, onNavigate, mobileOpen, onCloseMobile,
               screen. .sidebar-bottom's auto margin still parks them at the
               foot whenever there's room. */}
           <div className="sidebar-bottom">
+            <OfflineStatus />
             <div className="progress-mini progress-standalone">
               Quiz progress: <span>{stats.answeredCount} / {stats.total}</span>
               <div className="progress-bar-track"><div className="progress-bar-fill" style={{ width: pct + "%" }} /></div>

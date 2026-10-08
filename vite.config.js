@@ -25,15 +25,40 @@ export default defineConfig({
        the ~570 kB content chunk is cached there's nothing left to fetch. */
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['app-icon.svg', 'icons.svg'],
+      // The glob below already precaches everything in public/ (icons
+      // included); listing them here as well put each one in twice.
+      includeManifestIcons: false,
       workbox: {
         // The content chunk is over Workbox's 2 MiB default, and it's the one
         // file most worth having offline.
         maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
-        globPatterns: ['**/*.{js,css,html,svg,woff2}'],
+        globPatterns: ['**/*.{js,css,html,svg,png,woff2}'],
         // Jisho lookups are a live third-party call — never serve them stale,
         // just fall back to the local glossary when offline.
         navigateFallbackDenylist: [/^\/api\//],
+        /* The fonts come from Google Fonts, which the precache can't see.
+           Without these, the app works offline but the Japanese drops to
+           whatever system font the phone has. Japanese webfonts are served as
+           ~100 small unicode-range slices per weight, and a browser only
+           downloads the slices for characters it actually renders, so these
+           cache whatever you've seen while online. That covers every page
+           you've opened once. */
+        runtimeCaching: [
+          {
+            urlPattern: ({ url }) => url.origin === 'https://fonts.googleapis.com',
+            handler: 'StaleWhileRevalidate',
+            options: { cacheName: 'google-fonts-css' },
+          },
+          {
+            urlPattern: ({ url }) => url.origin === 'https://fonts.gstatic.com',
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'google-fonts-files',
+              cacheableResponse: { statuses: [0, 200] },
+              expiration: { maxEntries: 400, maxAgeSeconds: 60 * 60 * 24 * 365 },
+            },
+          },
+        ],
       },
       manifest: {
         name: 'Shuutoku — N4 Review Handbook',
@@ -44,9 +69,15 @@ export default defineConfig({
         display: 'standalone',
         background_color: '#f7f6f2',
         theme_color: '#f7f6f2',
+        /* PNGs alongside the SVG because not every install path accepts SVG
+           icons. The maskable one is full-bleed with the glyph pulled in, so
+           Android's circle or squircle crop doesn't clip the strokes. The
+           PNGs are rendered from app-icon.svg; regenerate them if that changes. */
         icons: [
           { src: 'app-icon.svg', sizes: 'any', type: 'image/svg+xml', purpose: 'any' },
-          { src: 'app-icon.svg', sizes: 'any', type: 'image/svg+xml', purpose: 'maskable' },
+          { src: 'pwa-192.png', sizes: '192x192', type: 'image/png', purpose: 'any' },
+          { src: 'pwa-512.png', sizes: '512x512', type: 'image/png', purpose: 'any' },
+          { src: 'pwa-maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
         ],
       },
     }),

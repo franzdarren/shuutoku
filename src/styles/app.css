@@ -451,6 +451,13 @@ nav.mainnav button.navlink.active::before{
 .sidebar-footer a:hover{ color:var(--indigo); }
 
 .progress-standalone{ padding:12px 18px 0; margin-top:0; }
+.offline-status{
+  display:flex; align-items:baseline; gap:7px; padding:12px 18px 0;
+  font-size:var(--fs-2xs); color:var(--ink-faint); line-height:1.4;
+}
+.offline-dot{ flex:0 0 7px; width:7px; height:7px; border-radius:50%; background:var(--matcha); transform:translateY(-1px); }
+.offline-status.off{ color:var(--ink-soft); }
+.offline-status.off .offline-dot{ background:var(--gold); }
 
 /* Collapsed to a single row by default. The settings block used to occupy
    roughly the bottom third of the sidebar for four toggles you set once and
