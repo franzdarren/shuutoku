@@ -1,0 +1,1993 @@
+[
+  {
+    "num": 12,
+    "jpTitle": "紛らわしい文法",
+    "reading": "まぎらわしいぶんぽう",
+    "enTitle": "Look-Alike Grammar, Side by Side",
+    "accent": "indigo",
+    "points": [
+      {
+        "jp": "〜そうです：<ruby>伝聞<rt>でんぶん</rt></ruby> vs <ruby>様態<rt>ようたい</rt></ruby>",
+        "romaji": "furu sou desu vs furi sou desu",
+        "fn": "'I heard' vs 'looks like': telling the two そう apart by their form",
+        "sources": [
+          "MNN Bk2 L43, L47",
+          "Genki II Ch13, Ch17",
+          "Sou Matome Wk6"
+        ],
+        "explain": "Both are written そうです, but they attach differently and mean different things. <b>Hearsay そう</b> attaches to a full plain form, so you'll see <ruby>降<rt>ふ</rt></ruby>るそう, おいしいそう, <ruby>元気<rt>げんき</rt></ruby>だそう, <ruby>学生<rt>がくせい</rt></ruby>だそう. It means 'I heard that…': you're passing on information someone else gave you. <b>Appearance そう</b> attaches to a chopped-off stem: the verb's ます-stem (<ruby>降<rt>ふ</rt></ruby>りそう) or the adjective without い/だ (おいしそう, <ruby>元気<rt>げんき</rt></ruby>そう). It means 'looks like / seems about to', based on what you can see right now.<br><br><b>Quick test:</b> if the full dictionary form (or だ) sits right before そう, it's hearsay. If the word is cut short, it's appearance.<br><br>Traps: いい → <b>よ</b>さそう and ない → <b>な</b>さそう (appearance). Nouns can't take appearance そう (<ruby>学生<rt>がくせい</rt></ruby>そう ✗ → <ruby>学生<rt>がくせい</rt></ruby>のようです／みたいです). かわいそう means 'pitiful, poor thing', not 'looks cute'. For that, say かわいく<ruby>見<rt>み</rt></ruby>える. Only appearance そう can modify a noun: おいしそうなケーキ ✓, but おいしいそうなケーキ ✗.",
+        "formation": [
+          "<b>Hearsay</b>: plain form (any tense) + そうです: <ruby>降<rt>ふ</rt></ruby>る／<ruby>降<rt>ふ</rt></ruby>った／<ruby>降<rt>ふ</rt></ruby>らない＋そうです · <ruby>高<rt>たか</rt></ruby>い＋そうです · <ruby>静<rt>しず</rt></ruby>かだ＋そうです · <ruby>雨<rt>あめ</rt></ruby>だ＋そうです",
+          "<b>Appearance</b>: ます-stem / い-adj stem / な-adj stem + そうです: <ruby>降<rt>ふ</rt></ruby>り＋そう · <ruby>高<rt>たか</rt></ruby>＋そう · <ruby>静<rt>しず</rt></ruby>か＋そう",
+          "Each row below reads <b>hearsay → appearance</b> for the same word."
+        ],
+        "conjugation": [
+          {
+            "label": "Verb 降る",
+            "from": "<ruby>降<rt>ふ</rt></ruby>るそうです",
+            "to": "<ruby>降<rt>ふ</rt></ruby>りそうです"
+          },
+          {
+            "label": "い-adj 高い",
+            "from": "<ruby>高<rt>たか</rt></ruby>いそうです",
+            "to": "<ruby>高<rt>たか</rt></ruby>そうです"
+          },
+          {
+            "label": "いい (exception)",
+            "from": "いいそうです",
+            "to": "よさそうです"
+          },
+          {
+            "label": "ない (exception)",
+            "from": "<ruby>時間<rt>じかん</rt></ruby>がないそうです",
+            "to": "<ruby>時間<rt>じかん</rt></ruby>がなさそうです"
+          },
+          {
+            "label": "な-adj 元気",
+            "from": "<ruby>元気<rt>げんき</rt></ruby>だそうです",
+            "to": "<ruby>元気<rt>げんき</rt></ruby>そうです"
+          },
+          {
+            "label": "Noun 学生",
+            "from": "<ruby>学生<rt>がくせい</rt></ruby>だそうです",
+            "to": "✗ → <ruby>学生<rt>がくせい</rt></ruby>のようです"
+          }
+        ],
+        "examples": [
+          {
+            "jp": "<ruby>天気予報<rt>てんきよほう</rt></ruby>によると、<ruby>明日<rt>あした</rt></ruby>は<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>るそうです。",
+            "en": "According to the forecast, it's going to rain tomorrow. (hearsay: the forecast told you)"
+          },
+          {
+            "jp": "<ruby>空<rt>そら</rt></ruby>が<ruby>暗<rt>くら</rt></ruby>いですね。<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>りそうです。",
+            "en": "The sky's dark. Looks like it's going to rain. (appearance: you can see it)"
+          },
+          {
+            "jp": "あの<ruby>店<rt>みせ</rt></ruby>のケーキはおいしいそうです。",
+            "en": "I hear that shop's cakes are delicious."
+          },
+          {
+            "jp": "わあ、このケーキ、おいしそう！",
+            "en": "Wow, this cake looks delicious!"
+          },
+          {
+            "jp": "<ruby>山田<rt>やまだ</rt></ruby>さんは<ruby>来月<rt>らいげつ</rt></ruby><ruby>結婚<rt>けっこん</rt></ruby>するそうです。",
+            "en": "I heard Yamada-san is getting married next month."
+          },
+          {
+            "jp": "<ruby>棚<rt>たな</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>の<ruby>箱<rt>はこ</rt></ruby>が<ruby>落<rt>お</rt></ruby>ちそうです。",
+            "en": "The box on the shelf looks like it's about to fall."
+          },
+          {
+            "jp": "<ruby>久<rt>ひさ</rt></ruby>しぶりに<ruby>会<rt>あ</rt></ruby>ったけど、<ruby>彼<rt>かれ</rt></ruby>は<ruby>元気<rt>げんき</rt></ruby>そうでした。",
+            "en": "I saw him for the first time in a while, and he looked well."
+          },
+          {
+            "jp": "この<ruby>仕事<rt>しごと</rt></ruby>は<ruby>今日<rt>きょう</rt></ruby>は<ruby>終<rt>お</rt></ruby>わりそうにありません。",
+            "en": "This work doesn't look like it'll be finished today. (negative of appearance そう)"
+          }
+        ],
+        "dialogue": [
+          {
+            "who": "A",
+            "jp": "わあ、このラーメン、おいしそうですね。",
+            "en": "Wow, this ramen looks delicious."
+          },
+          {
+            "who": "B",
+            "jp": "ええ。テレビで<ruby>紹介<rt>しょうかい</rt></ruby>されて、とても<ruby>人気<rt>にんき</rt></ruby>があるそうですよ。",
+            "en": "Yeah. Apparently it was featured on TV, and it's really popular."
+          },
+          {
+            "who": "A",
+            "jp": "じゃあ、<ruby>早<rt>はや</rt></ruby>く<ruby>並<rt>なら</rt></ruby>びましょう。すぐ<ruby>売<rt>う</rt></ruby>り<ruby>切<rt>き</rt></ruby>れそうですから。",
+            "en": "Then let's get in line quick. It looks like it'll sell out soon."
+          }
+        ],
+        "tip": "Look at what comes right before そう. Full form (降る, おいしい, 元気だ) = I heard. Chopped stem (降り, おいし, 元気) = it looks like. And かわいそう means 'pitiful', not 'looks cute'.",
+        "quiz": [
+          {
+            "q": "「（シャツを<ruby>見<rt>み</rt></ruby>て）あ、ボタンが＿＿ですよ。」",
+            "choices": [
+              "<ruby>取<rt>と</rt></ruby>れるそう",
+              "<ruby>取<rt>と</rt></ruby>れそう",
+              "<ruby>取<rt>と</rt></ruby>れたそう",
+              "<ruby>取<rt>と</rt></ruby>れるなら"
+            ],
+            "a": 1,
+            "ex": "You're looking at the loose button right now, so this is appearance そう: ます-stem <ruby>取<rt>と</rt></ruby>れ + そう, 'looks like it's about to come off'.",
+            "why": [
+              "<ruby>取<rt>と</rt></ruby>れるそう is hearsay: 'I heard the button will come off'. Nobody told you anything; you can see it.",
+              null,
+              "<ruby>取<rt>と</rt></ruby>れたそう is hearsay about the past: 'I heard it came off'.",
+              "なら is a conditional ('if it's going to come off…'), not 'looks like'."
+            ]
+          },
+          {
+            "q": "「ニュースによると、<ruby>来週<rt>らいしゅう</rt></ruby>から<ruby>電車<rt>でんしゃ</rt></ruby>の<ruby>料金<rt>りょうきん</rt></ruby>が＿＿。」",
+            "choices": [
+              "<ruby>上<rt>あ</rt></ruby>がりそうです",
+              "<ruby>上<rt>あ</rt></ruby>がるそうです",
+              "<ruby>上<rt>あ</rt></ruby>がりようです",
+              "<ruby>上<rt>あ</rt></ruby>がるそうな"
+            ],
+            "a": 1,
+            "ex": "「〜によると」 (according to…) marks information you were given, so this is hearsay: plain form <ruby>上<rt>あ</rt></ruby>がる + そうです.",
+            "why": [
+              "<ruby>上<rt>あ</rt></ruby>がりそう = 'looks like it'll go up', judged from what you see. 'According to the news' means you were told, so hearsay fits.",
+              null,
+              "よう never attaches to the ます-stem. It would be <ruby>上<rt>あ</rt></ruby>がるようです.",
+              "Hearsay そう has no な-form. It can't end a sentence like this or modify a noun."
+            ]
+          },
+          {
+            "q": "Which is the natural way to say 'He looks like a student'?",
+            "choices": [
+              "<ruby>学生<rt>がくせい</rt></ruby>そうです",
+              "<ruby>学生<rt>がくせい</rt></ruby>だそうです",
+              "<ruby>学生<rt>がくせい</rt></ruby>のようです",
+              "<ruby>学生<rt>がくせい</rt></ruby>そうなです"
+            ],
+            "a": 2,
+            "ex": "Appearance そう can't attach to nouns. Use <ruby>学生<rt>がくせい</rt></ruby>のようです (or casual <ruby>学生<rt>がくせい</rt></ruby>みたいです) instead.",
+            "why": [
+              "Appearance そう doesn't attach to nouns, so <ruby>学生<rt>がくせい</rt></ruby>そう isn't a word.",
+              "<ruby>学生<rt>がくせい</rt></ruby>だそうです is hearsay: 'I heard he's a student.'",
+              null,
+              "Not a real form. そうな only appears before a noun, and never after a noun."
+            ]
+          }
+        ]
+      },
+      {
+        "jp": "ようだ・みたいだ・らしい・っぽい",
+        "romaji": "you da / mitai da / rashii / ppoi",
+        "fn": "The 'seems' family: where did your information come from?",
+        "sources": [
+          "MNN Bk2 L47",
+          "Genki II Ch17",
+          "Sou Matome Wk6",
+          "っぽい: N3 preview"
+        ],
+        "explain": "All four can translate as 'seems', which is why they blur together. Sort them by <b>where your information comes from</b> and <b>how casual you're being</b>.<br><br><b>ようです</b>: your own judgement from evidence you noticed (a sound, a smell, symptoms, wet streets). Neutral and fine in writing.<br><b>みたいです</b>: the same meaning as ようです, just conversational. It attaches straight to nouns and な-adjectives (<ruby>雨<rt>あめ</rt></ruby>みたい, <ruby>静<rt>しず</rt></ruby>かみたい), where ようです needs の/な (<ruby>雨<rt>あめ</rt></ruby>のよう, <ruby>静<rt>しず</rt></ruby>かなよう).<br><b>らしいです</b>: information from outside: something you heard, read, or picked up around you. A bit detached, like 'apparently, from what I gather'. After a noun it has a <i>second</i> meaning, 'typical of, everything X should be': <ruby>男<rt>おとこ</rt></ruby>らしい (manly), <ruby>春<rt>はる</rt></ruby>らしい<ruby>天気<rt>てんき</rt></ruby> (proper spring weather), <ruby>彼<rt>かれ</rt></ruby>らしい (so like him).<br><b>っぽい</b>: casual '-ish / kind of / tends to'. Noun + っぽい (<ruby>子<rt>こ</rt></ruby>どもっぽい childish, <ruby>白<rt>しろ</rt></ruby>っぽい whitish). Verb stem + っぽい (<ruby>忘<rt>わす</rt></ruby>れっぽい forgetful, <ruby>怒<rt>おこ</rt></ruby>りっぽい short-tempered). It's also a casual 'seems' (<ruby>風邪<rt>かぜ</rt></ruby>っぽい, 'feels like a cold coming on'). Strictly N3, but you'll hear it constantly.<br><br>Bonus: ような／みたいな make comparisons, as in <ruby>夢<rt>ゆめ</rt></ruby>のような<ruby>一日<rt>いちにち</rt></ruby>／<ruby>夢<rt>ゆめ</rt></ruby>みたいな<ruby>一日<rt>いちにち</rt></ruby> (a day like a dream).",
+        "formation": [
+          "ようです: verb / い-adj plain form + ようです · な-adj + <b>な</b> + ようです · noun + <b>の</b> + ようです",
+          "みたいです: plain form + みたいです (な-adj and nouns drop だ: <ruby>静<rt>しず</rt></ruby>かみたい, <ruby>雨<rt>あめ</rt></ruby>みたい)",
+          "らしいです: plain form + らしいです (な-adj and nouns drop だ: <ruby>静<rt>しず</rt></ruby>からしい, <ruby>雨<rt>あめ</rt></ruby>らしい)",
+          "っぽい: noun / verb ます-stem / い-adj stem + っぽい. It then conjugates like an い-adjective (っぽくない, っぽかった).",
+          "Each row below reads <b>ようです → casual / hearsay versions</b>."
+        ],
+        "conjugation": [
+          {
+            "label": "Verb 降る",
+            "from": "<ruby>降<rt>ふ</rt></ruby>るようです",
+            "to": "<ruby>降<rt>ふ</rt></ruby>るみたい · <ruby>降<rt>ふ</rt></ruby>るらしい"
+          },
+          {
+            "label": "い-adj 高い",
+            "from": "<ruby>高<rt>たか</rt></ruby>いようです",
+            "to": "<ruby>高<rt>たか</rt></ruby>いみたい · <ruby>高<rt>たか</rt></ruby>いらしい"
+          },
+          {
+            "label": "な-adj 静か",
+            "from": "<ruby>静<rt>しず</rt></ruby>かなようです",
+            "to": "<ruby>静<rt>しず</rt></ruby>かみたい · <ruby>静<rt>しず</rt></ruby>からしい"
+          },
+          {
+            "label": "Noun 雨",
+            "from": "<ruby>雨<rt>あめ</rt></ruby>のようです",
+            "to": "<ruby>雨<rt>あめ</rt></ruby>みたい · <ruby>雨<rt>あめ</rt></ruby>らしい"
+          }
+        ],
+        "examples": [
+          {
+            "jp": "<ruby>隣<rt>となり</rt></ruby>の<ruby>部屋<rt>へや</rt></ruby>から<ruby>音<rt>おと</rt></ruby>がしますね。<ruby>誰<rt>だれ</rt></ruby>かいるようです。",
+            "en": "There are sounds coming from the next room. Someone seems to be in there. (your own evidence)"
+          },
+          {
+            "jp": "<ruby>道<rt>みち</rt></ruby>がぬれている。<ruby>夜<rt>よる</rt></ruby>、<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>ったみたいだね。",
+            "en": "The road's wet. Looks like it rained last night. (casual, own evidence)"
+          },
+          {
+            "jp": "<ruby>部長<rt>ぶちょう</rt></ruby>は<ruby>来月<rt>らいげつ</rt></ruby>、<ruby>大阪<rt>おおさか</rt></ruby>に<ruby>転勤<rt>てんきん</rt></ruby>するらしいです。",
+            "en": "Apparently the department head is being transferred to Osaka next month. (heard it around)"
+          },
+          {
+            "jp": "<ruby>今日<rt>きょう</rt></ruby>は<ruby>暖<rt>あたた</rt></ruby>かくて、<ruby>春<rt>はる</rt></ruby>らしい<ruby>天気<rt>てんき</rt></ruby>ですね。",
+            "en": "It's warm today. Proper spring weather. (らしい = typical of)"
+          },
+          {
+            "jp": "<ruby>約束<rt>やくそく</rt></ruby>の<ruby>時間<rt>じかん</rt></ruby>を<ruby>忘<rt>わす</rt></ruby>れるなんて、<ruby>彼<rt>かれ</rt></ruby>らしくないね。",
+            "en": "Forgetting the meeting time? That's not like him."
+          },
+          {
+            "jp": "<ruby>最近<rt>さいきん</rt></ruby>、<ruby>忘<rt>わす</rt></ruby>れっぽくなりました。",
+            "en": "I've gotten forgetful lately."
+          },
+          {
+            "jp": "ちょっと<ruby>風邪<rt>かぜ</rt></ruby>っぽいので、<ruby>今日<rt>きょう</rt></ruby>は<ruby>早<rt>はや</rt></ruby>く<ruby>寝<rt>ね</rt></ruby>ます。",
+            "en": "I feel like I'm coming down with a cold, so I'll go to bed early tonight."
+          },
+          {
+            "jp": "<ruby>夢<rt>ゆめ</rt></ruby>みたいな<ruby>一日<rt>いちにち</rt></ruby>だった。",
+            "en": "It was a day like a dream."
+          }
+        ],
+        "dialogue": [
+          {
+            "who": "A",
+            "jp": "<ruby>佐藤<rt>さとう</rt></ruby>さん、<ruby>今日<rt>きょう</rt></ruby>は<ruby>休<rt>やす</rt></ruby>みですか。",
+            "en": "Is Sato-san off today?"
+          },
+          {
+            "who": "B",
+            "jp": "ええ、<ruby>熱<rt>ねつ</rt></ruby>があるらしいですよ。<ruby>課長<rt>かちょう</rt></ruby>が<ruby>言<rt>い</rt></ruby>っていました。",
+            "en": "Yeah, apparently she has a fever. The section chief said so."
+          },
+          {
+            "who": "A",
+            "jp": "そうですか。<ruby>昨日<rt>きのう</rt></ruby>もせきをしていたし、<ruby>風邪<rt>かぜ</rt></ruby>のようでしたね。",
+            "en": "I see. She was coughing yesterday too. It did seem like a cold."
+          },
+          {
+            "who": "B",
+            "jp": "<ruby>最近<rt>さいきん</rt></ruby>、<ruby>寒<rt>さむ</rt></ruby>かったですからね。",
+            "en": "It has been cold lately."
+          }
+        ],
+        "tip": "Saw, heard or smelled it yourself: ようです (polite) or みたい (casual). Someone told you or you read it: らしい. Casual '-ish' or 'kind of': っぽい. If you'd say 'apparently' in English, reach for らしい.",
+        "quiz": [
+          {
+            "q": "「<ruby>彼<rt>かれ</rt></ruby>は<ruby>本当<rt>ほんとう</rt></ruby>に<ruby>男<rt>おとこ</rt></ruby>＿＿<ruby>人<rt>ひと</rt></ruby>ですね。いつも<ruby>強<rt>つよ</rt></ruby>くて、<ruby>優<rt>やさ</rt></ruby>しい。」 (praise: 'a real man')",
+            "choices": [
+              "らしい",
+              "みたいな",
+              "そうな",
+              "っぽさの"
+            ],
+            "a": 0,
+            "ex": "Noun + らしい = 'everything an X should be'. <ruby>男<rt>おとこ</rt></ruby>らしい<ruby>人<rt>ひと</rt></ruby> is praise: manly, a real man.",
+            "why": [
+              null,
+              "<ruby>男<rt>おとこ</rt></ruby>みたいな<ruby>人<rt>ひと</rt></ruby> means 'a person who's like a man', which implies they aren't one. That's not praise for a man.",
+              "Appearance そう can't attach to a noun.",
+              "っぽさ is a noun ('-ishness') and doesn't fit before の<ruby>人<rt>ひと</rt></ruby> here."
+            ]
+          },
+          {
+            "q": "Which word means 'forgetful (tends to forget)'?",
+            "choices": [
+              "<ruby>忘<rt>わす</rt></ruby>れらしい",
+              "<ruby>忘<rt>わす</rt></ruby>れっぽい",
+              "<ruby>忘<rt>わす</rt></ruby>れそうだ",
+              "<ruby>忘<rt>わす</rt></ruby>れるみたい"
+            ],
+            "a": 1,
+            "ex": "Verb stem + っぽい = 'tends to': <ruby>忘<rt>わす</rt></ruby>れっぽい (forgetful), <ruby>怒<rt>おこ</rt></ruby>りっぽい (quick to anger).",
+            "why": [
+              "らしい doesn't attach to a verb stem.",
+              null,
+              "<ruby>忘<rt>わす</rt></ruby>れそう = 'looks like I'm about to forget (this one thing)', not a personality trait.",
+              "<ruby>忘<rt>わす</rt></ruby>れるみたい = 'seems like (someone) will forget', a one-off guess rather than a habit."
+            ]
+          },
+          {
+            "q": "Fill in with ようです: 「この<ruby>町<rt>まち</rt></ruby>は<ruby>夜<rt>よる</rt></ruby>になると＿＿。」 (it seems quiet)",
+            "choices": [
+              "<ruby>静<rt>しず</rt></ruby>かようです",
+              "<ruby>静<rt>しず</rt></ruby>かなようです",
+              "<ruby>静<rt>しず</rt></ruby>かのようです",
+              "<ruby>静<rt>しず</rt></ruby>かだようです"
+            ],
+            "a": 1,
+            "ex": "な-adjectives need な before ようです: <ruby>静<rt>しず</rt></ruby>か<b>な</b>ようです. (Nouns take の: <ruby>雨<rt>あめ</rt></ruby>のようです.)",
+            "why": [
+              "ようです can't attach directly to a な-adjective stem. That's the みたい rule (<ruby>静<rt>しず</rt></ruby>かみたい).",
+              null,
+              "の is for nouns (<ruby>雨<rt>あめ</rt></ruby>のよう). <ruby>静<rt>しず</rt></ruby>か is a な-adjective.",
+              "だ never comes before ようです."
+            ]
+          }
+        ]
+      },
+      {
+        "jp": "<ruby>一<rt>ひと</rt></ruby>つの<ruby>場面<rt>ばめん</rt></ruby>、<ruby>色々<rt>いろいろ</rt></ruby>な<ruby>言<rt>い</rt></ruby>い<ruby>方<rt>かた</rt></ruby>",
+        "romaji": "hitotsu no bamen, iroiro na iikata",
+        "fn": "One situation, many sentences: what each one tells your listener",
+        "sources": [
+          "Review of Module 5",
+          "Sou Matome Wk6"
+        ],
+        "explain": "This is a cheat sheet more than a new point. Take a single fact, <i>Tanaka is sick</i>, and look at what each ending signals about <b>how you know</b> and <b>how sure you are</b>. The JLPT loves asking exactly this: four grammatical sentences, but only one matches the situation described.<br><br>Ask yourself two questions:<br>1. <b>Where did I get this?</b> Told (そうです, らしい) · my own evidence (ようです, みたい, っぽい) · I'm looking at it right now (stem + そう) · just my guess (かもしれない, でしょう, はず).<br>2. <b>How sure am I?</b> かもしれません (maybe) < でしょう (probably) < はずです (should be, logically) < plain statement (fact).",
+        "formation": [
+          "Told by someone: plain + そうです (neutral report) · plain + らしいです (apparently, from what I gather)",
+          "Own evidence: plain + ようです (polite) · みたいです (casual) · っぽい (very casual)",
+          "Seeing it right now: stem + そうです (looks like)",
+          "Pure guess: かもしれません (maybe) < でしょう (probably) < はずです (should be, by logic)"
+        ],
+        "examples": [
+          {
+            "jp": "<ruby>田中<rt>たなか</rt></ruby>さんは<ruby>病気<rt>びょうき</rt></ruby>です。",
+            "en": "Tanaka-san is sick. (You know it as a fact.)"
+          },
+          {
+            "jp": "<ruby>田中<rt>たなか</rt></ruby>さんは<ruby>病気<rt>びょうき</rt></ruby>だそうです。",
+            "en": "I heard Tanaka-san is sick. (Someone told you; you're passing it on.)"
+          },
+          {
+            "jp": "<ruby>田中<rt>たなか</rt></ruby>さんは<ruby>病気<rt>びょうき</rt></ruby>らしいです。",
+            "en": "Apparently Tanaka-san is sick. (Picked up secondhand, a bit detached.)"
+          },
+          {
+            "jp": "<ruby>田中<rt>たなか</rt></ruby>さんは<ruby>病気<rt>びょうき</rt></ruby>のようです。",
+            "en": "Tanaka-san seems to be sick. (Your judgement: empty desk, cough medicine on it.)"
+          },
+          {
+            "jp": "<ruby>田中<rt>たなか</rt></ruby>さん、<ruby>病気<rt>びょうき</rt></ruby>みたいだよ。",
+            "en": "Looks like Tanaka-san's sick. (Same as above, casual.)"
+          },
+          {
+            "jp": "<ruby>田中<rt>たなか</rt></ruby>さんは<ruby>具合<rt>ぐあい</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>そうです。",
+            "en": "Tanaka-san looks unwell. (You're looking at their face. 病気 is a noun, so it can't take this そう.)"
+          },
+          {
+            "jp": "<ruby>田中<rt>たなか</rt></ruby>さんは<ruby>病気<rt>びょうき</rt></ruby>かもしれません。",
+            "en": "Tanaka-san might be sick. (Just a possibility.)"
+          },
+          {
+            "jp": "<ruby>田中<rt>たなか</rt></ruby>さんは<ruby>病気<rt>びょうき</rt></ruby>でしょう。",
+            "en": "Tanaka-san is probably sick. (A fairly confident guess.)"
+          },
+          {
+            "jp": "<ruby>田中<rt>たなか</rt></ruby>さんは<ruby>今日<rt>きょう</rt></ruby><ruby>病院<rt>びょういん</rt></ruby>に<ruby>行<rt>い</rt></ruby>くと<ruby>言<rt>い</rt></ruby>っていたから、<ruby>休<rt>やす</rt></ruby>みのはずです。",
+            "en": "Tanaka-san said they were going to the hospital today, so they should be off. (Logical expectation.)"
+          }
+        ],
+        "dialogue": [
+          {
+            "who": "A",
+            "jp": "<ruby>山本<rt>やまもと</rt></ruby>さん、<ruby>今日<rt>きょう</rt></ruby>は<ruby>来<rt>こ</rt></ruby>ないんですか。",
+            "en": "Isn't Yamamoto-san coming today?"
+          },
+          {
+            "who": "B",
+            "jp": "さっき<ruby>電話<rt>でんわ</rt></ruby>があって、<ruby>熱<rt>ねつ</rt></ruby>があるそうです。",
+            "en": "They called a moment ago. Apparently they have a fever."
+          },
+          {
+            "who": "A",
+            "jp": "<ruby>昨日<rt>きのう</rt></ruby>、<ruby>顔色<rt>かおいろ</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>そうでしたからね。",
+            "en": "They did look pale yesterday."
+          },
+          {
+            "who": "B",
+            "jp": "ええ。<ruby>最近<rt>さいきん</rt></ruby>、インフルエンザがはやっているらしいですし、<ruby>気<rt>き</rt></ruby>をつけましょう。",
+            "en": "Yeah. And apparently the flu is going around, so let's be careful."
+          }
+        ],
+        "tip": "On the test, read the situation in brackets first: '(heard from a friend)' points to そうです, '(looking at it)' to stem + そう, '(based on what I noticed)' to ようです or みたい.",
+        "quiz": [
+          {
+            "q": "Your friend's face is pale right now. 「<ruby>顔色<rt>かおいろ</rt></ruby>が＿＿ですね。<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>ですか。」",
+            "choices": [
+              "<ruby>悪<rt>わる</rt></ruby>そう",
+              "<ruby>悪<rt>わる</rt></ruby>いそう",
+              "<ruby>悪<rt>わる</rt></ruby>いらしい",
+              "<ruby>悪<rt>わる</rt></ruby>いはず"
+            ],
+            "a": 0,
+            "ex": "You're looking straight at them, so it's appearance そう on the adjective stem: <ruby>悪<rt>わる</rt></ruby>そう.",
+            "why": [
+              null,
+              "<ruby>悪<rt>わる</rt></ruby>いそう is hearsay ('I heard you look pale'), which is strange when they're standing in front of you.",
+              "らしい is secondhand ('apparently'). Saying that to someone's face is odd.",
+              "はず is logical expectation, not what you can see."
+            ]
+          },
+          {
+            "q": "A friend told you this. 「<ruby>田中<rt>たなか</rt></ruby>さんは<ruby>来月<rt>らいげつ</rt></ruby>、<ruby>国<rt>くに</rt></ruby>へ＿＿。」",
+            "choices": [
+              "<ruby>帰<rt>かえ</rt></ruby>りそうです",
+              "<ruby>帰<rt>かえ</rt></ruby>るそうです",
+              "<ruby>帰<rt>かえ</rt></ruby>るようです",
+              "<ruby>帰<rt>かえ</rt></ruby>りっぽいです"
+            ],
+            "a": 1,
+            "ex": "Information a friend gave you is hearsay: plain form + そうです.",
+            "why": [
+              "<ruby>帰<rt>かえ</rt></ruby>りそう = 'looks like (they're) about to go home', judged by sight. You were told, not shown.",
+              null,
+              "ようです is your own inference from evidence. Here someone told you directly.",
+              "っぽい doesn't attach to this verb in this meaning, and it's far too casual for passing on news."
+            ]
+          },
+          {
+            "q": "Your coworker's desk is empty, their coat is gone and their PC is off. 「もう<ruby>帰<rt>かえ</rt></ruby>った＿＿ね。」",
+            "choices": [
+              "そうです",
+              "ようです",
+              "はずがありません",
+              "ことにします"
+            ],
+            "a": 1,
+            "ex": "You're inferring from evidence you noticed yourself, so ようです (or casual みたい).",
+            "why": [
+              "<ruby>帰<rt>かえ</rt></ruby>ったそうです = 'I heard they left'. Nobody told you; you worked it out.",
+              null,
+              "はずがありません means 'there's no way they left', the opposite of what the evidence says.",
+              "ことにする is a decision ('decided to'), unrelated to guessing."
+            ]
+          }
+        ]
+      },
+      {
+        "jp": "<ruby>行<rt>い</rt></ruby>くなら vs <ruby>行<rt>い</rt></ruby>ったら",
+        "romaji": "iku nara vs ittara",
+        "fn": "Which happens first? なら vs たら by timeline",
+        "sources": [
+          "MNN Bk1 L25, L35",
+          "Genki II Ch13, Ch17",
+          "Sou Matome Wk3"
+        ],
+        "explain": "Both translate as 'if', but they put events in <b>opposite orders</b>.<br><br><b>XたらY</b>: X finishes first, <i>then</i> Y happens. <ruby>日本<rt>にほん</rt></ruby>へ<ruby>行<rt>い</rt></ruby>ったら、ラーメンを<ruby>食<rt>た</rt></ruby>べたい: once I'm in Japan, I want to eat ramen.<br><b>XならY</b>: 'given that X is the plan / the topic', here's Y. Y can (and often does) happen <i>before</i> X. <ruby>日本<rt>にほん</rt></ruby>へ<ruby>行<rt>い</rt></ruby>くなら、JRパスを<ruby>買<rt>か</rt></ruby>っておいたほうがいい: if you're going to Japan, buy a JR Pass (before you leave).<br><br>Draw a timeline. If the advice has to be acted on <b>before</b> the trip (pack, book, buy, save money), use 〜るなら. If it happens <b>after</b> you arrive (eat, see, call me), use 〜たら.<br><br>なら also reacts to what the other person just said. Noun + なら means 'if it's X you're after…': A：<ruby>駅<rt>えき</rt></ruby>に<ruby>行<rt>い</rt></ruby>きたいんですが。 B：<ruby>駅<rt>えき</rt></ruby>なら、あの<ruby>角<rt>かど</rt></ruby>を<ruby>右<rt>みぎ</rt></ruby>ですよ。たら can't attach to a bare noun like that.<br><br>The famous Japanese road-safety slogan uses both: <b><ruby>飲<rt>の</rt></ruby>んだら<ruby>乗<rt>の</rt></ruby>るな、<ruby>乗<rt>の</rt></ruby>るなら<ruby>飲<rt>の</rt></ruby>むな</b>. 'If you've drunk, don't drive; if you're going to drive, don't drink.'",
+        "formation": [
+          "Plain form + なら · noun / な-adj + なら (<ruby>駅<rt>えき</rt></ruby>なら, <ruby>静<rt>しず</rt></ruby>かなら)",
+          "た-form + ら (<ruby>行<rt>い</rt></ruby>った → <ruby>行<rt>い</rt></ruby>ったら)",
+          "なら: main clause can come <b>before</b> the condition · たら: condition is <b>complete</b> before the main clause"
+        ],
+        "examples": [
+          {
+            "jp": "<ruby>日本<rt>にほん</rt></ruby>へ<ruby>行<rt>い</rt></ruby>くなら、JRパスを<ruby>買<rt>か</rt></ruby>っておいたほうがいいですよ。",
+            "en": "If you're going to Japan, you'd better buy a JR Pass beforehand. (buy → go)"
+          },
+          {
+            "jp": "<ruby>日本<rt>にほん</rt></ruby>へ<ruby>行<rt>い</rt></ruby>ったら、<ruby>本物<rt>ほんもの</rt></ruby>のラーメンを<ruby>食<rt>た</rt></ruby>べたいです。",
+            "en": "When I get to Japan, I want to eat real ramen. (go → eat)"
+          },
+          {
+            "jp": "<ruby>京都<rt>きょうと</rt></ruby>へ<ruby>行<rt>い</rt></ruby>くなら、<ruby>新幹線<rt>しんかんせん</rt></ruby>が<ruby>便利<rt>べんり</rt></ruby>ですよ。",
+            "en": "If you're going to Kyoto, the shinkansen is convenient. (how to get there = before)"
+          },
+          {
+            "jp": "<ruby>京都<rt>きょうと</rt></ruby>へ<ruby>行<rt>い</rt></ruby>ったら、ぜひお<ruby>寺<rt>てら</rt></ruby>を<ruby>見<rt>み</rt></ruby>てください。",
+            "en": "When you're in Kyoto, be sure to see the temples. (after arriving)"
+          },
+          {
+            "jp": "パソコンを<ruby>買<rt>か</rt></ruby>うなら、セールの<ruby>時<rt>とき</rt></ruby>がいいですよ。",
+            "en": "If you're going to buy a computer, a sale is the time to do it."
+          },
+          {
+            "jp": "パソコンを<ruby>買<rt>か</rt></ruby>ったら、<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えてあげます。",
+            "en": "Once you've bought the computer, I'll show you how to use it."
+          },
+          {
+            "jp": "<ruby>飲<rt>の</rt></ruby>んだら<ruby>乗<rt>の</rt></ruby>るな、<ruby>乗<rt>の</rt></ruby>るなら<ruby>飲<rt>の</rt></ruby>むな。",
+            "en": "If you've drunk, don't drive. If you're going to drive, don't drink."
+          },
+          {
+            "jp": "A：<ruby>駅<rt>えき</rt></ruby>に<ruby>行<rt>い</rt></ruby>きたいんですが…　B：<ruby>駅<rt>えき</rt></ruby>なら、あの<ruby>角<rt>かど</rt></ruby>を<ruby>右<rt>みぎ</rt></ruby>ですよ。",
+            "en": "A: I'd like to get to the station… B: The station? It's right at that corner."
+          }
+        ],
+        "dialogue": [
+          {
+            "who": "A",
+            "jp": "<ruby>来月<rt>らいげつ</rt></ruby>、<ruby>北海道<rt>ほっかいどう</rt></ruby>へ<ruby>旅行<rt>りょこう</rt></ruby>するんです。",
+            "en": "I'm going on a trip to Hokkaido next month."
+          },
+          {
+            "who": "B",
+            "jp": "<ruby>北海道<rt>ほっかいどう</rt></ruby>へ<ruby>行<rt>い</rt></ruby>くなら、<ruby>暖<rt>あたた</rt></ruby>かいコートを<ruby>持<rt>も</rt></ruby>って<ruby>行<rt>い</rt></ruby>ったほうがいいですよ。",
+            "en": "If you're going to Hokkaido, you'd better take a warm coat."
+          },
+          {
+            "who": "A",
+            "jp": "そうですね。<ruby>何<rt>なに</rt></ruby>かおすすめの<ruby>食<rt>た</rt></ruby>べ<ruby>物<rt>もの</rt></ruby>はありますか。",
+            "en": "Good point. Any food you'd recommend?"
+          },
+          {
+            "who": "B",
+            "jp": "<ruby>北海道<rt>ほっかいどう</rt></ruby>に<ruby>着<rt>つ</rt></ruby>いたら、まず<ruby>海鮮丼<rt>かいせんどん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べてみてください。",
+            "en": "Once you get there, try a seafood rice bowl first."
+          }
+        ],
+        "tip": "Timeline test: does the advice happen BEFORE the condition (pack, book, buy tickets)? Then 行くなら. AFTER it (eat, see, call me)? Then 行ったら. Remember the slogan 飲んだら乗るな、乗るなら飲むな.",
+        "quiz": [
+          {
+            "q": "「<ruby>海外<rt>かいがい</rt></ruby>へ＿＿、パスポートを<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>んでおいてください。」",
+            "choices": [
+              "<ruby>行<rt>い</rt></ruby>ったら",
+              "<ruby>行<rt>い</rt></ruby>くなら",
+              "<ruby>行<rt>い</rt></ruby>くと",
+              "<ruby>行<rt>い</rt></ruby>けば"
+            ],
+            "a": 1,
+            "ex": "You must apply for the passport <i>before</i> going abroad. The main action comes first, so 〜るなら.",
+            "why": [
+              "<ruby>行<rt>い</rt></ruby>ったら = 'once you've gone abroad, apply'. Too late by then.",
+              null,
+              "と can't be followed by a request (〜てください).",
+              "ば after an action verb sounds wrong before a request. Use たら, or なら here for the timing."
+            ]
+          },
+          {
+            "q": "「<ruby>家<rt>いえ</rt></ruby>に＿＿、すぐ<ruby>手<rt>て</rt></ruby>を<ruby>洗<rt>あら</rt></ruby>いなさい。」",
+            "choices": [
+              "<ruby>帰<rt>かえ</rt></ruby>るなら",
+              "<ruby>帰<rt>かえ</rt></ruby>ったら",
+              "<ruby>帰<rt>かえ</rt></ruby>ると",
+              "<ruby>帰<rt>かえ</rt></ruby>れば"
+            ],
+            "a": 1,
+            "ex": "Get home first, <i>then</i> wash your hands. The condition is complete before the command, so たら.",
+            "why": [
+              "<ruby>帰<rt>かえ</rt></ruby>るなら would mean 'wash your hands before you head home'. The order is backwards.",
+              null,
+              "と can't be followed by a command (〜なさい).",
+              "ば after an action verb is unnatural before a command. たら is the natural choice."
+            ]
+          },
+          {
+            "q": "A：「パソコンを<ruby>買<rt>か</rt></ruby>いたいんですけど…」　B：「パソコン＿＿、<ruby>駅前<rt>えきまえ</rt></ruby>の<ruby>店<rt>みせ</rt></ruby>が<ruby>安<rt>やす</rt></ruby>いですよ。」",
+            "choices": [
+              "なら",
+              "たら",
+              "と",
+              "ば"
+            ],
+            "a": 0,
+            "ex": "Picking up what the other person just mentioned, with a noun, is classic なら: 'If it's a computer you want…'.",
+            "why": [
+              null,
+              "たら needs a た-form (パソコンだったら). It can't attach to a bare noun.",
+              "と after a bare noun means 'and/with', not 'if'.",
+              "ば doesn't attach to a bare noun."
+            ]
+          }
+        ]
+      },
+      {
+        "jp": "〜ば vs 〜たら",
+        "romaji": "~ba vs ~tara",
+        "fn": "When ば doesn't work, and the phrases that belong to ば",
+        "sources": [
+          "MNN Bk2 L35",
+          "Genki II Ch22",
+          "Sou Matome Wk3"
+        ],
+        "explain": "For a general 'if', ば and たら overlap a lot: <ruby>安<rt>やす</rt></ruby>ければ<ruby>買<rt>か</rt></ruby>います and <ruby>安<rt>やす</rt></ruby>かったら<ruby>買<rt>か</rt></ruby>います are both fine. The difference that gets tested is one <b>restriction on ば</b>:<br><br>If the ば-clause is an <b>action</b> (<ruby>着<rt>つ</rt></ruby>く, <ruby>行<rt>い</rt></ruby>く, <ruby>食<rt>た</rt></ruby>べる, <ruby>終<rt>お</rt></ruby>わる…) <i>and</i> the second half is a <b>request, command, invitation, intention or wish</b> (〜てください, 〜ましょう, 〜たい, 〜つもり), ば sounds wrong. Use たら.<br><ruby>駅<rt>えき</rt></ruby>に<ruby>着<rt>つ</rt></ruby>いたら、<ruby>電話<rt>でんわ</rt></ruby>してください ✓ · <ruby>駅<rt>えき</rt></ruby>に<ruby>着<rt>つ</rt></ruby>けば、<ruby>電話<rt>でんわ</rt></ruby>してください ✗<br><br>If the ば-clause is a <b>state</b> (ある, いる, できる, adjectives, ない-forms, nouns), ば is fine even before a request:<br><ruby>時間<rt>じかん</rt></ruby>があれば、<ruby>来<rt>き</rt></ruby>てください ✓ · <ruby>分<rt>わ</rt></ruby>からなければ、<ruby>聞<rt>き</rt></ruby>いてください ✓ · <ruby>安<rt>やす</rt></ruby>ければ、<ruby>買<rt>か</rt></ruby>いたい ✓<br><br><b>Phrases that belong to ば</b>: どうすればいいですか (what should I do?), 〜ばいい (all you have to do is…), 〜ばよかった (I should have…, regret), 〜ば〜ほど (the more…the more, an N3 preview).<br><b>What only たら can do</b>: past discovery, 'when I did X, I found Y': <ruby>家<rt>いえ</rt></ruby>に<ruby>帰<rt>かえ</rt></ruby>ったら、<ruby>手紙<rt>てがみ</rt></ruby>が<ruby>来<rt>き</rt></ruby>ていた (と works here too; ば doesn't). Plus the suggestion 〜たらどうですか.<br><br>Nuance: ば puts the weight on the condition, 'as long as / if only': この<ruby>薬<rt>くすり</rt></ruby>を<ruby>飲<rt>の</rt></ruby>めば<ruby>治<rt>なお</rt></ruby>ります (just take this and you'll get better).",
+        "formation": [
+          "Group 1: う-row → え-row + ば (<ruby>行<rt>い</rt></ruby>く → <ruby>行<rt>い</rt></ruby>けば, <ruby>待<rt>ま</rt></ruby>つ → <ruby>待<rt>ま</rt></ruby>てば)",
+          "Group 2: る → れば (<ruby>食<rt>た</rt></ruby>べる → <ruby>食<rt>た</rt></ruby>べれば) · する → すれば · <ruby>来<rt>く</rt></ruby>る → <ruby>来<rt>く</rt></ruby>れば",
+          "い-adj: い → ければ (<ruby>安<rt>やす</rt></ruby>い → <ruby>安<rt>やす</rt></ruby>ければ, いい → <b>よ</b>ければ) · ない → なければ",
+          "な-adj / noun: + なら(ば) (<ruby>元気<rt>げんき</rt></ruby>なら, <ruby>学生<rt>がくせい</rt></ruby>なら)"
+        ],
+        "conjugation": [
+          {
+            "label": "Group 1",
+            "from": "<ruby>行<rt>い</rt></ruby>く",
+            "to": "<ruby>行<rt>い</rt></ruby>けば"
+          },
+          {
+            "label": "Group 2",
+            "from": "<ruby>食<rt>た</rt></ruby>べる",
+            "to": "<ruby>食<rt>た</rt></ruby>べれば"
+          },
+          {
+            "label": "Group 3",
+            "from": "する／<ruby>来<rt>く</rt></ruby>る",
+            "to": "すれば／<ruby>来<rt>く</rt></ruby>れば"
+          },
+          {
+            "label": "い-adj",
+            "from": "<ruby>安<rt>やす</rt></ruby>い",
+            "to": "<ruby>安<rt>やす</rt></ruby>ければ"
+          },
+          {
+            "label": "いい",
+            "from": "いい",
+            "to": "よければ"
+          },
+          {
+            "label": "Negative",
+            "from": "<ruby>行<rt>い</rt></ruby>かない",
+            "to": "<ruby>行<rt>い</rt></ruby>かなければ"
+          },
+          {
+            "label": "な-adj / noun",
+            "from": "<ruby>元気<rt>げんき</rt></ruby>",
+            "to": "<ruby>元気<rt>げんき</rt></ruby>なら(ば)"
+          }
+        ],
+        "examples": [
+          {
+            "jp": "<ruby>時間<rt>じかん</rt></ruby>があれば、<ruby>手伝<rt>てつだ</rt></ruby>ってください。",
+            "en": "If you have time, please help. (state + request: ば is fine)"
+          },
+          {
+            "jp": "<ruby>駅<rt>えき</rt></ruby>に<ruby>着<rt>つ</rt></ruby>いたら、<ruby>電話<rt>でんわ</rt></ruby>してください。",
+            "en": "When you get to the station, please call. (action + request: たら, not ば)"
+          },
+          {
+            "jp": "この<ruby>薬<rt>くすり</rt></ruby>を<ruby>飲<rt>の</rt></ruby>めば、すぐ<ruby>治<rt>なお</rt></ruby>りますよ。",
+            "en": "Just take this medicine and you'll get better soon."
+          },
+          {
+            "jp": "どうすれば、<ruby>日本語<rt>にほんご</rt></ruby>が<ruby>上手<rt>じょうず</rt></ruby>になりますか。",
+            "en": "What should I do to get good at Japanese?"
+          },
+          {
+            "jp": "<ruby>傘<rt>かさ</rt></ruby>を<ruby>持<rt>も</rt></ruby>ってくればよかった。",
+            "en": "I should have brought an umbrella."
+          },
+          {
+            "jp": "<ruby>分<rt>わ</rt></ruby>からなければ、<ruby>先生<rt>せんせい</rt></ruby>に<ruby>聞<rt>き</rt></ruby>いてください。",
+            "en": "If you don't understand, ask the teacher. (ない-form = state: ば is fine)"
+          },
+          {
+            "jp": "<ruby>家<rt>いえ</rt></ruby>に<ruby>帰<rt>かえ</rt></ruby>ったら、<ruby>母<rt>はは</rt></ruby>から<ruby>手紙<rt>てがみ</rt></ruby>が<ruby>来<rt>き</rt></ruby>ていた。",
+            "en": "When I got home, I found a letter had come from my mother. (past discovery: たら, never ば)"
+          },
+          {
+            "jp": "<ruby>安<rt>やす</rt></ruby>ければ<ruby>安<rt>やす</rt></ruby>いほどいいです。",
+            "en": "The cheaper the better."
+          }
+        ],
+        "dialogue": [
+          {
+            "who": "A",
+            "jp": "すみません、この<ruby>機械<rt>きかい</rt></ruby>の<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>が<ruby>分<rt>わ</rt></ruby>からないんですが…",
+            "en": "Excuse me, I can't work out how to use this machine…"
+          },
+          {
+            "who": "B",
+            "jp": "ここにカードを<ruby>入<rt>い</rt></ruby>れれば、<ruby>使<rt>つか</rt></ruby>えますよ。",
+            "en": "Just put your card in here and it'll work."
+          },
+          {
+            "who": "A",
+            "jp": "あ、<ruby>本当<rt>ほんとう</rt></ruby>だ。また<ruby>分<rt>わ</rt></ruby>からなかったら、<ruby>聞<rt>き</rt></ruby>いてもいいですか。",
+            "en": "Oh, you're right. If I get stuck again, can I ask you?"
+          },
+          {
+            "who": "B",
+            "jp": "もちろんです。",
+            "en": "Of course."
+          }
+        ],
+        "tip": "Stuck between ば and たら? Pick たら. It's almost never wrong. Only reach for ば with states (ある, いる, adjectives, ない) or in its own set phrases: どうすれば, 〜ばいい, 〜ばよかった.",
+        "quiz": [
+          {
+            "q": "「<ruby>仕事<rt>しごと</rt></ruby>が＿＿、<ruby>飲<rt>の</rt></ruby>みに<ruby>行<rt>い</rt></ruby>きましょう。」",
+            "choices": [
+              "<ruby>終<rt>お</rt></ruby>われば",
+              "<ruby>終<rt>お</rt></ruby>わったら",
+              "<ruby>終<rt>お</rt></ruby>わると",
+              "<ruby>終<rt>お</rt></ruby>わるなら"
+            ],
+            "a": 1,
+            "ex": "Once work is over, then we go drinking: a one-time sequence followed by an invitation (〜ましょう), so たら.",
+            "why": [
+              "ば after an action, followed by an invitation, sounds unnatural. たら is the safe choice.",
+              null,
+              "と can't be followed by an invitation.",
+              "<ruby>終<rt>お</rt></ruby>わるなら would put the drinking before work ends. Wrong order."
+            ]
+          },
+          {
+            "q": "Which sentence is unnatural?",
+            "choices": [
+              "お<ruby>金<rt>かね</rt></ruby>があれば、<ruby>旅行<rt>りょこう</rt></ruby>したいです。",
+              "<ruby>時間<rt>じかん</rt></ruby>があったら、<ruby>来<rt>き</rt></ruby>てください。",
+              "<ruby>駅<rt>えき</rt></ruby>に<ruby>着<rt>つ</rt></ruby>けば、<ruby>電話<rt>でんわ</rt></ruby>してください。",
+              "<ruby>分<rt>わ</rt></ruby>からなければ、<ruby>聞<rt>き</rt></ruby>いてください。"
+            ],
+            "a": 2,
+            "ex": "<ruby>着<rt>つ</rt></ruby>く is an action, and it's followed by a request, which is exactly where ば breaks. Say <ruby>駅<rt>えき</rt></ruby>に<ruby>着<rt>つ</rt></ruby>いたら、<ruby>電話<rt>でんわ</rt></ruby>してください.",
+            "why": [
+              "Fine: ある is a state, so ば works even before a wish.",
+              "Fine: たら works before requests.",
+              null,
+              "Fine: a ない-form is a state, so ば works before a request."
+            ]
+          },
+          {
+            "q": "「<ruby>昨日<rt>きのう</rt></ruby>は<ruby>眠<rt>ねむ</rt></ruby>くて<ruby>大変<rt>たいへん</rt></ruby>だった。もっと<ruby>早<rt>はや</rt></ruby>く＿＿よかった。」",
+            "choices": [
+              "<ruby>寝<rt>ね</rt></ruby>れば",
+              "<ruby>寝<rt>ね</rt></ruby>ると",
+              "<ruby>寝<rt>ね</rt></ruby>るなら",
+              "<ruby>寝<rt>ね</rt></ruby>ても"
+            ],
+            "a": 0,
+            "ex": "〜ばよかった is the set phrase for regret: 'I should have gone to bed earlier.'",
+            "why": [
+              null,
+              "と doesn't combine with よかった for regret.",
+              "なら doesn't make the regret pattern.",
+              "〜てもよかった means 'it would have been OK to…', not regret."
+            ]
+          }
+        ]
+      },
+      {
+        "jp": "と・たら・ば・なら の<ruby>選<rt>えら</rt></ruby>び<ruby>方<rt>かた</rt></ruby>",
+        "romaji": "to / tara / ba / nara no erabikata",
+        "fn": "Picking between the four conditionals: a decision path",
+        "sources": [
+          "Review of Module 4",
+          "MNN Bk1 L23, L25 / Bk2 L35",
+          "Sou Matome Wk3"
+        ],
+        "explain": "Run through these questions in order and stop at the first 'yes':<br><br><b>1. Is the second half a request, invitation, command, wish or 'I will'?</b> → たら. (ば only if the first half is a state. <b>Never と.</b>)<br><b>2. Is it advice about a plan, or a reaction to what someone just said?</b> → なら (and remember: the advice can happen first).<br><b>3. Is it automatic, every time: machines, nature, directions, habits, math?</b> → と (ば also works).<br><b>4. Past tense, 'when I did X, I found Y'?</b> → たら or と. Never ば or なら.<br><b>5. One specific future event, 'once X happens'?</b> → たら.<br><b>6. Set phrases</b>: どうすれば・〜ばよかった → ば; 〜たらどうですか → たら.<br><br>On strictness: <b>と</b> is the strictest (only natural, automatic results). <b>たら</b> is the most forgiving. When in doubt, たら.",
+        "formation": [
+          "と: plain non-past + と (<ruby>押<rt>お</rt></ruby>すと, <ruby>安<rt>やす</rt></ruby>いと, <ruby>静<rt>しず</rt></ruby>かだと)",
+          "たら: た-form + ら (<ruby>押<rt>お</rt></ruby>したら)",
+          "ば: え-row + ば (<ruby>押<rt>お</rt></ruby>せば) · い → ければ",
+          "なら: plain form / noun + なら (<ruby>押<rt>お</rt></ruby>すなら, <ruby>駅<rt>えき</rt></ruby>なら)"
+        ],
+        "examples": [
+          {
+            "jp": "このボタンを<ruby>押<rt>お</rt></ruby>すと、お<ruby>湯<rt>ゆ</rt></ruby>が<ruby>出<rt>で</rt></ruby>ます。",
+            "en": "Press this button and hot water comes out. (automatic: と)"
+          },
+          {
+            "jp": "<ruby>右<rt>みぎ</rt></ruby>に<ruby>曲<rt>ま</rt></ruby>がると、<ruby>銀行<rt>ぎんこう</rt></ruby>があります。",
+            "en": "Turn right and there's a bank. (directions: と)"
+          },
+          {
+            "jp": "<ruby>春<rt>はる</rt></ruby>になると、<ruby>桜<rt>さくら</rt></ruby>が<ruby>咲<rt>さ</rt></ruby>きます。",
+            "en": "When spring comes, the cherry blossoms bloom. (nature: と)"
+          },
+          {
+            "jp": "ドアを<ruby>開<rt>あ</rt></ruby>けたら、<ruby>猫<rt>ねこ</rt></ruby>がいた。",
+            "en": "When I opened the door, there was a cat. (past discovery: たら or と)"
+          },
+          {
+            "jp": "<ruby>疲<rt>つか</rt></ruby>れたら、<ruby>休<rt>やす</rt></ruby>んでください。",
+            "en": "If you get tired, please rest. (request: たら)"
+          },
+          {
+            "jp": "<ruby>東京<rt>とうきょう</rt></ruby>へ<ruby>行<rt>い</rt></ruby>くなら、スカイツリーがおすすめです。",
+            "en": "If you're going to Tokyo, I recommend the Skytree. (advice about a plan: なら)"
+          },
+          {
+            "jp": "<ruby>天気<rt>てんき</rt></ruby>がよければ、ここから<ruby>富士山<rt>ふじさん</rt></ruby>が<ruby>見<rt>み</rt></ruby>えます。",
+            "en": "If the weather's good, you can see Mt. Fuji from here. (general condition: ば)"
+          },
+          {
+            "jp": "<ruby>風邪<rt>かぜ</rt></ruby>なら、<ruby>早<rt>はや</rt></ruby>く<ruby>寝<rt>ね</rt></ruby>たほうがいいですよ。",
+            "en": "If it's a cold, you'd better go to bed early. (reacting to what was said: なら)"
+          }
+        ],
+        "dialogue": [
+          {
+            "who": "A",
+            "jp": "すみません、<ruby>郵便局<rt>ゆうびんきょく</rt></ruby>はどこですか。",
+            "en": "Excuse me, where's the post office?"
+          },
+          {
+            "who": "B",
+            "jp": "この<ruby>道<rt>みち</rt></ruby>をまっすぐ<ruby>行<rt>い</rt></ruby>くと、<ruby>信号<rt>しんごう</rt></ruby>があります。そこを<ruby>左<rt>ひだり</rt></ruby>に<ruby>曲<rt>ま</rt></ruby>がると、<ruby>右側<rt>みぎがわ</rt></ruby>にありますよ。",
+            "en": "Go straight along this road and you'll come to a traffic light. Turn left there and it's on your right."
+          },
+          {
+            "who": "A",
+            "jp": "ありがとうございます。もし<ruby>分<rt>わ</rt></ruby>からなかったら、また<ruby>聞<rt>き</rt></ruby>きます。",
+            "en": "Thank you. If I can't find it, I'll ask again."
+          }
+        ],
+        "tip": "と is the strictest: never put a request, invitation, or 'I want to' after it. たら is the most forgiving, so when in doubt, たら.",
+        "quiz": [
+          {
+            "q": "「<ruby>部屋<rt>へや</rt></ruby>に＿＿、<ruby>誰<rt>だれ</rt></ruby>もいなかった。」",
+            "choices": [
+              "<ruby>入<rt>はい</rt></ruby>れば",
+              "<ruby>入<rt>はい</rt></ruby>るなら",
+              "<ruby>入<rt>はい</rt></ruby>ったら",
+              "<ruby>入<rt>はい</rt></ruby>っても"
+            ],
+            "a": 2,
+            "ex": "Past discovery ('when I went in, I found…') takes たら (or と).",
+            "why": [
+              "ば can't describe a one-time discovery in the past.",
+              "なら would put the result before entering. It doesn't work for discoveries.",
+              null,
+              "ても = 'even if', the wrong meaning."
+            ]
+          },
+          {
+            "q": "「<ruby>疲<rt>つか</rt></ruby>れ＿＿、<ruby>少<rt>すこ</rt></ruby>し<ruby>休<rt>やす</rt></ruby>んでください。」",
+            "choices": [
+              "ると",
+              "たら",
+              "るなら",
+              "るのに"
+            ],
+            "a": 1,
+            "ex": "A request (〜てください) follows, and <ruby>疲<rt>つか</rt></ruby>れる is something that happens to you, so たら.",
+            "why": [
+              "と can't be followed by a request.",
+              null,
+              "<ruby>疲<rt>つか</rt></ruby>れるなら would mean 'rest before you get tired'. Wrong order.",
+              "のに is an unexpected contrast ('even though'), not a condition."
+            ]
+          },
+          {
+            "q": "「この<ruby>道<rt>みち</rt></ruby>をまっすぐ＿＿、<ruby>駅<rt>えき</rt></ruby>があります。」 (giving directions)",
+            "choices": [
+              "<ruby>行<rt>い</rt></ruby>くと",
+              "<ruby>行<rt>い</rt></ruby>くなら",
+              "<ruby>行<rt>い</rt></ruby>って",
+              "<ruby>行<rt>い</rt></ruby>くのに"
+            ],
+            "a": 0,
+            "ex": "Directions are the textbook case for と: do X and Y is (always) there.",
+            "why": [
+              null,
+              "なら gives advice about someone's plan. It doesn't state what's physically there.",
+              "<ruby>行<rt>い</rt></ruby>って just links actions ('go and…'). It doesn't set up 'if you go…, you'll find'.",
+              "のに expresses an unexpected contrast."
+            ]
+          }
+        ]
+      }
+    ],
+    "check": [
+      {
+        "q": "「<ruby>明日<rt>あした</rt></ruby>は<ruby>雪<rt>ゆき</rt></ruby>が＿＿。<ruby>天気予報<rt>てんきよほう</rt></ruby>で<ruby>言<rt>い</rt></ruby>っていました。」",
+        "choices": [
+          "<ruby>降<rt>ふ</rt></ruby>るそうです",
+          "<ruby>降<rt>ふ</rt></ruby>りそうです",
+          "<ruby>降<rt>ふ</rt></ruby>るようです",
+          "<ruby>降<rt>ふ</rt></ruby>りっぽいです"
+        ],
+        "a": 0,
+        "ex": "The forecast said it, so it's hearsay: plain form <ruby>降<rt>ふ</rt></ruby>る + そうです."
+      },
+      {
+        "q": "「（<ruby>空<rt>そら</rt></ruby>を<ruby>見<rt>み</rt></ruby>て）<ruby>今<rt>いま</rt></ruby>にも<ruby>雨<rt>あめ</rt></ruby>が＿＿ですね。」",
+        "choices": [
+          "<ruby>降<rt>ふ</rt></ruby>るそう",
+          "<ruby>降<rt>ふ</rt></ruby>りそう",
+          "<ruby>降<rt>ふ</rt></ruby>ったらしい",
+          "<ruby>降<rt>ふ</rt></ruby>るなら"
+        ],
+        "a": 1,
+        "ex": "Looking at the sky right now means appearance そう on the ます-stem: <ruby>降<rt>ふ</rt></ruby>りそう. <ruby>今<rt>いま</rt></ruby>にも ('any moment now') goes with it naturally."
+      },
+      {
+        "q": "「このかばん、＿＿ですね。いくらでしたか。」 (it looks expensive)",
+        "choices": [
+          "<ruby>高<rt>たか</rt></ruby>そう",
+          "<ruby>高<rt>たか</rt></ruby>いそう",
+          "<ruby>高<rt>たか</rt></ruby>いらしい",
+          "<ruby>高<rt>たか</rt></ruby>かったら"
+        ],
+        "a": 0,
+        "ex": "Appearance: drop the い. <ruby>高<rt>たか</rt></ruby>い → <ruby>高<rt>たか</rt></ruby>そう. <ruby>高<rt>たか</rt></ruby>いそう would be 'I heard it's expensive'."
+      },
+      {
+        "q": "「（<ruby>店<rt>みせ</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>にたくさん<ruby>人<rt>ひと</rt></ruby>が<ruby>並<rt>なら</rt></ruby>んでいる）あの<ruby>店<rt>みせ</rt></ruby>は<ruby>人気<rt>にんき</rt></ruby>がある＿＿。」",
+        "choices": [
+          "ようです",
+          "そうです",
+          "ことです",
+          "ばかりです"
+        ],
+        "a": 0,
+        "ex": "You're inferring from the queue you can see, so ようです. <ruby>人気<rt>にんき</rt></ruby>があるそうです would mean someone told you."
+      },
+      {
+        "q": "「<ruby>彼<rt>かれ</rt></ruby>は＿＿<ruby>人<rt>ひと</rt></ruby>だ。いつも<ruby>強<rt>つよ</rt></ruby>くて、<ruby>頼<rt>たよ</rt></ruby>りになる。」 (praise: everything a man should be)",
+        "choices": [
+          "<ruby>男<rt>おとこ</rt></ruby>っぽい",
+          "<ruby>男<rt>おとこ</rt></ruby>らしい",
+          "<ruby>男<rt>おとこ</rt></ruby>みたいな",
+          "<ruby>男<rt>おとこ</rt></ruby>そうな"
+        ],
+        "a": 1,
+        "ex": "Noun + らしい = befitting, a model of X. っぽい is just '-ish' (often said of someone who isn't X), and みたいな means 'like a man'."
+      },
+      {
+        "q": "「ここに<ruby>傘<rt>かさ</rt></ruby>を<ruby>置<rt>お</rt></ruby>いたのに、ない。<ruby>誰<rt>だれ</rt></ruby>かが<ruby>持<rt>も</rt></ruby>って<ruby>行<rt>い</rt></ruby>った＿＿。」 (casual)",
+        "choices": [
+          "みたい",
+          "そう",
+          "なら",
+          "ば"
+        ],
+        "a": 0,
+        "ex": "Your own inference from evidence, in casual speech: みたい. 〜<ruby>行<rt>い</rt></ruby>ったそう would mean someone told you."
+      },
+      {
+        "q": "「お<ruby>酒<rt>さけ</rt></ruby>を＿＿、<ruby>車<rt>くるま</rt></ruby>を<ruby>運転<rt>うんてん</rt></ruby>してはいけません。」",
+        "choices": [
+          "<ruby>飲<rt>の</rt></ruby>んだら",
+          "<ruby>飲<rt>の</rt></ruby>むと",
+          "<ruby>飲<rt>の</rt></ruby>めば",
+          "<ruby>飲<rt>の</rt></ruby>んでも"
+        ],
+        "a": 0,
+        "ex": "Once you've drunk, no driving. たら handles a prohibition after a completed action. と can't be followed by a prohibition, and ば after an action verb sounds off here."
+      },
+      {
+        "q": "「<ruby>車<rt>くるま</rt></ruby>を＿＿、お<ruby>酒<rt>さけ</rt></ruby>を<ruby>飲<rt>の</rt></ruby>まないでください。」",
+        "choices": [
+          "<ruby>運転<rt>うんてん</rt></ruby>するなら",
+          "<ruby>運転<rt>うんてん</rt></ruby>したら",
+          "<ruby>運転<rt>うんてん</rt></ruby>すると",
+          "<ruby>運転<rt>うんてん</rt></ruby>すれば"
+        ],
+        "a": 0,
+        "ex": "Not drinking has to come <i>before</i> the driving, so なら. (<ruby>乗<rt>の</rt></ruby>るなら<ruby>飲<rt>の</rt></ruby>むな.)"
+      },
+      {
+        "q": "A：「<ruby>週末<rt>しゅうまつ</rt></ruby>、<ruby>京都<rt>きょうと</rt></ruby>に<ruby>行<rt>い</rt></ruby>くんです。」　B：「<ruby>京都<rt>きょうと</rt></ruby>＿＿、<ruby>金閣寺<rt>きんかくじ</rt></ruby>がおすすめですよ。」",
+        "choices": [
+          "なら",
+          "たら",
+          "と",
+          "ば"
+        ],
+        "a": 0,
+        "ex": "Picking up the topic the other person just raised, with a noun: なら."
+      },
+      {
+        "q": "「すみません、この<ruby>漢字<rt>かんじ</rt></ruby>はどう<ruby>読<rt>よ</rt></ruby>め＿＿いいですか。」",
+        "choices": [
+          "ば",
+          "たら",
+          "と",
+          "なら"
+        ],
+        "a": 0,
+        "ex": "どう〜ばいいですか is the set phrase for 'how should I…?'. <ruby>読<rt>よ</rt></ruby>め + ば = <ruby>読<rt>よ</rt></ruby>めば."
+      },
+      {
+        "q": "「もっと<ruby>早<rt>はや</rt></ruby>く<ruby>家<rt>いえ</rt></ruby>を＿＿よかった。<ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>間<rt>ま</rt></ruby>に<ruby>合<rt>あ</rt></ruby>わなかった。」",
+        "choices": [
+          "<ruby>出<rt>で</rt></ruby>れば",
+          "<ruby>出<rt>で</rt></ruby>ると",
+          "<ruby>出<rt>で</rt></ruby>るなら",
+          "<ruby>出<rt>で</rt></ruby>ても"
+        ],
+        "a": 0,
+        "ex": "〜ばよかった = 'I should have…'. Regret belongs to ば."
+      },
+      {
+        "q": "「<ruby>冷蔵庫<rt>れいぞうこ</rt></ruby>を＿＿、<ruby>何<rt>なに</rt></ruby>も<ruby>入<rt>はい</rt></ruby>っていなかった。」",
+        "choices": [
+          "<ruby>開<rt>あ</rt></ruby>けたら",
+          "<ruby>開<rt>あ</rt></ruby>ければ",
+          "<ruby>開<rt>あ</rt></ruby>けるなら",
+          "<ruby>開<rt>あ</rt></ruby>けても"
+        ],
+        "a": 0,
+        "ex": "Past discovery ('when I opened it, I found…') takes たら. ば and なら can't do this."
+      },
+      {
+        "q": "「<ruby>時間<rt>じかん</rt></ruby>が＿＿、うちに<ruby>遊<rt>あそ</rt></ruby>びに<ruby>来<rt>き</rt></ruby>てください。」 Which one does NOT fit?",
+        "choices": [
+          "あれば",
+          "あったら",
+          "あるなら",
+          "あると"
+        ],
+        "a": 3,
+        "ex": "と can never be followed by a request. あれば works because ある is a state, and あったら and あるなら both work too."
+      },
+      {
+        "q": "「（<ruby>友達<rt>ともだち</rt></ruby>の<ruby>顔<rt>かお</rt></ruby>を<ruby>見<rt>み</rt></ruby>て）<ruby>眠<rt>ねむ</rt></ruby>＿＿だね。<ruby>昨日<rt>きのう</rt></ruby><ruby>寝<rt>ね</rt></ruby>なかったの？」",
+        "choices": [
+          "そう",
+          "いそう",
+          "いらしい",
+          "いのよう"
+        ],
+        "a": 0,
+        "ex": "Looking at their face, so appearance そう on the stem: <ruby>眠<rt>ねむ</rt></ruby>い → <ruby>眠<rt>ねむ</rt></ruby>そう. <ruby>眠<rt>ねむ</rt></ruby>いそう would be hearsay."
+      }
+    ]
+  },
+  {
+    "num": 13,
+    "jpTitle": "助詞の使い分け",
+    "reading": "じょしのつかいわけ",
+    "enTitle": "Particle Showdowns",
+    "accent": "matcha",
+    "points": [
+      {
+        "jp": "に vs へ",
+        "romaji": "ni vs e",
+        "fn": "Arrival point vs direction",
+        "sources": [
+          "MNN Bk1 L5, L13",
+          "Genki I Ch3",
+          "Sou Matome Wk1"
+        ],
+        "explain": "With <ruby>行<rt>い</rt></ruby>く・<ruby>来<rt>く</rt></ruby>る・<ruby>帰<rt>かえ</rt></ruby>る, に and へ are interchangeable in everyday speech: <ruby>東京<rt>とうきょう</rt></ruby>に<ruby>行<rt>い</rt></ruby>きます = <ruby>東京<rt>とうきょう</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きます. The difference is focus. <b>に</b> points at the <b>arrival point</b>, the spot you end up at. <b>へ</b> (pronounced え) points in a <b>direction</b>, 'toward'.<br><br>Where they split:<br>• Verbs of arriving or getting into something want <b>に</b>: <ruby>駅<rt>えき</rt></ruby>に<ruby>着<rt>つ</rt></ruby>く, <ruby>部屋<rt>へや</rt></ruby>に<ruby>入<rt>はい</rt></ruby>る, <ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>る.<br>• 'Heading toward' verbs lean <b>へ</b>: <ruby>北<rt>きた</rt></ruby>へ<ruby>向<rt>む</rt></ruby>かう, <ruby>前<rt>まえ</rt></ruby>へ<ruby>進<rt>すす</rt></ruby>む.<br>• Only <b>へ</b> can take の to modify a noun: <ruby>母<rt>はは</rt></ruby><b>への</b><ruby>手紙<rt>てがみ</rt></ruby> (a letter to Mom). <ruby>母<rt>はは</rt></ruby>にの<ruby>手紙<rt>てがみ</rt></ruby> ✗.<br>• Only <b>に</b> does all its other jobs: time (<ruby>七時<rt>しちじ</rt></ruby>に), where something exists (<ruby>机<rt>つくえ</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>にある), the person you give to or ask (<ruby>友達<rt>ともだち</rt></ruby>にあげる), purpose (<ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>に<ruby>行<rt>い</rt></ruby>く).",
+        "formation": [
+          "Place + に／へ + <ruby>行<rt>い</rt></ruby>く・<ruby>来<rt>く</rt></ruby>る・<ruby>帰<rt>かえ</rt></ruby>る (both fine)",
+          "Place + に + <ruby>着<rt>つ</rt></ruby>く・<ruby>入<rt>はい</rt></ruby>る・<ruby>乗<rt>の</rt></ruby>る (arrival / getting in)",
+          "Noun + への + noun (only へ can take の)"
+        ],
+        "examples": [
+          {
+            "jp": "<ruby>来週<rt>らいしゅう</rt></ruby>、<ruby>大阪<rt>おおさか</rt></ruby>に<ruby>行<rt>い</rt></ruby>きます。／<ruby>大阪<rt>おおさか</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きます。",
+            "en": "I'm going to Osaka next week. (both fine)"
+          },
+          {
+            "jp": "<ruby>九時<rt>くじ</rt></ruby>に<ruby>駅<rt>えき</rt></ruby>に<ruby>着<rt>つ</rt></ruby>きました。",
+            "en": "I arrived at the station at nine. (に for time and for arrival)"
+          },
+          {
+            "jp": "<ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>って、<ruby>会社<rt>かいしゃ</rt></ruby>へ<ruby>向<rt>む</rt></ruby>かいます。",
+            "en": "I get on the train and head for the office."
+          },
+          {
+            "jp": "これは<ruby>母<rt>はは</rt></ruby>への<ruby>手紙<rt>てがみ</rt></ruby>です。",
+            "en": "This is a letter to my mother. (only への works)"
+          },
+          {
+            "jp": "<ruby>友達<rt>ともだち</rt></ruby>へのプレゼントを<ruby>買<rt>か</rt></ruby>いに<ruby>行<rt>い</rt></ruby>きます。",
+            "en": "I'm going to buy a present for a friend. (への + purpose に)"
+          },
+          {
+            "jp": "<ruby>日本<rt>にほん</rt></ruby>へようこそ。",
+            "en": "Welcome to Japan."
+          },
+          {
+            "jp": "<ruby>部屋<rt>へや</rt></ruby>に<ruby>入<rt>はい</rt></ruby>る<ruby>前<rt>まえ</rt></ruby>に、<ruby>靴<rt>くつ</rt></ruby>を<ruby>脱<rt>ぬ</rt></ruby>いでください。",
+            "en": "Please take off your shoes before entering the room."
+          }
+        ],
+        "dialogue": [
+          {
+            "who": "A",
+            "jp": "この<ruby>荷物<rt>にもつ</rt></ruby>、どこへ<ruby>送<rt>おく</rt></ruby>るんですか。",
+            "en": "Where are you sending this package?"
+          },
+          {
+            "who": "B",
+            "jp": "<ruby>国<rt>くに</rt></ruby>の<ruby>家族<rt>かぞく</rt></ruby>への<ruby>誕生日<rt>たんじょうび</rt></ruby>プレゼントです。",
+            "en": "It's a birthday present for my family back home."
+          },
+          {
+            "who": "A",
+            "jp": "いいですね。いつ<ruby>着<rt>つ</rt></ruby>きますか。",
+            "en": "Nice. When will it arrive?"
+          },
+          {
+            "who": "B",
+            "jp": "<ruby>来週<rt>らいしゅう</rt></ruby>の<ruby>月曜日<rt>げつようび</rt></ruby>に<ruby>着<rt>つ</rt></ruby>くそうです。",
+            "en": "They said it'll get there next Monday."
+          }
+        ],
+        "tip": "When in doubt with places, に is the safer choice. It covers almost everything へ does. Use へ when you need 'への' before a noun, or when you mean 'toward'.",
+        "quiz": [
+          {
+            "q": "「これは<ruby>母<rt>はは</rt></ruby>＿＿<ruby>手紙<rt>てがみ</rt></ruby>です。」",
+            "choices": [
+              "への",
+              "にの",
+              "での",
+              "をの"
+            ],
+            "a": 0,
+            "ex": "Only へ can take の to modify a noun: <ruby>母<rt>はは</rt></ruby>への<ruby>手紙<rt>てがみ</rt></ruby> (a letter to Mom).",
+            "why": [
+              null,
+              "にの isn't possible. に can't be followed by の.",
+              "での would mean 'a letter (written) at Mom', which doesn't make sense.",
+              "をの is never possible."
+            ]
+          },
+          {
+            "q": "「バス＿＿<ruby>乗<rt>の</rt></ruby>って、<ruby>学校<rt>がっこう</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きます。」",
+            "choices": [
+              "に",
+              "へ",
+              "を",
+              "で"
+            ],
+            "a": 0,
+            "ex": "<ruby>乗<rt>の</rt></ruby>る marks what you get into with に: バスに<ruby>乗<rt>の</rt></ruby>る.",
+            "why": [
+              null,
+              "へ is for direction, not the vehicle you board.",
+              "を goes with <ruby>降<rt>お</rt></ruby>りる (getting off), not <ruby>乗<rt>の</rt></ruby>る.",
+              "バスで means 'by bus' and goes with movement verbs like <ruby>行<rt>い</rt></ruby>く, not <ruby>乗<rt>の</rt></ruby>る."
+            ]
+          }
+        ]
+      },
+      {
+        "jp": "に vs で（<ruby>場所<rt>ばしょ</rt></ruby>）",
+        "romaji": "ni vs de (place)",
+        "fn": "Where something IS / ends up vs where an action HAPPENS",
+        "sources": [
+          "MNN Bk1 L6, L10, L15",
+          "Genki I Ch3, Ch4",
+          "Sou Matome Wk1"
+        ],
+        "explain": "Both mark a place, but they answer different questions.<br><b>に</b> = where something <b>exists or ends up</b>. Use it with ある・いる・<ruby>住<rt>す</rt></ruby>む・<ruby>座<rt>すわ</rt></ruby>る・<ruby>置<rt>お</rt></ruby>く・<ruby>止<rt>と</rt></ruby>める・<ruby>書<rt>か</rt></ruby>く (on a surface)・<ruby>勤<rt>つと</rt></ruby>める.<br><b>で</b> = where an <b>action takes place</b>. Use it with <ruby>食<rt>た</rt></ruby>べる・<ruby>働<rt>はたら</rt></ruby>く・<ruby>遊<rt>あそ</rt></ruby>ぶ・<ruby>勉強<rt>べんきょう</rt></ruby>する・<ruby>買<rt>か</rt></ruby>う・<ruby>会<rt>あ</rt></ruby>う.<br><br>Contrast pairs:<br><ruby>東京<rt>とうきょう</rt></ruby><b>に</b><ruby>住<rt>す</rt></ruby>んでいます (I live in Tokyo: where I am) vs <ruby>東京<rt>とうきょう</rt></ruby><b>で</b><ruby>働<rt>はたら</rt></ruby>いています (I work in Tokyo: what I do there)<br><ruby>公園<rt>こうえん</rt></ruby><b>に</b><ruby>子<rt>こ</rt></ruby>どもがいます (there are kids in the park) vs <ruby>公園<rt>こうえん</rt></ruby><b>で</b><ruby>子<rt>こ</rt></ruby>どもが<ruby>遊<rt>あそ</rt></ruby>んでいます (kids are playing in the park)<br><br><b>The big trap:</b> ある about an <b>event</b> takes で, because an event 'happens' there. Compare <ruby>会議室<rt>かいぎしつ</rt></ruby>は<ruby>三階<rt>さんがい</rt></ruby><b>に</b>あります (the meeting room is on the 3rd floor: a thing that exists) with <ruby>会議<rt>かいぎ</rt></ruby>は<ruby>三階<rt>さんがい</rt></ruby><b>で</b>あります (the meeting is held on the 3rd floor: an event). The same goes for parties, exams, concerts and festivals.",
+        "formation": [
+          "Place + に + ある・いる・<ruby>住<rt>す</rt></ruby>む・<ruby>座<rt>すわ</rt></ruby>る・<ruby>置<rt>お</rt></ruby>く・<ruby>止<rt>と</rt></ruby>める (existence / end point)",
+          "Place + で + action verb (location of the activity)",
+          "Event (<ruby>会議<rt>かいぎ</rt></ruby>・パーティー・<ruby>試験<rt>しけん</rt></ruby>) + は + place + で + あります"
+        ],
+        "examples": [
+          {
+            "jp": "<ruby>姉<rt>あね</rt></ruby>は<ruby>東京<rt>とうきょう</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでいて、<ruby>銀行<rt>ぎんこう</rt></ruby>で<ruby>働<rt>はたら</rt></ruby>いています。",
+            "en": "My older sister lives in Tokyo and works at a bank."
+          },
+          {
+            "jp": "<ruby>公園<rt>こうえん</rt></ruby>に<ruby>子<rt>こ</rt></ruby>どもがたくさんいます。",
+            "en": "There are lots of kids in the park."
+          },
+          {
+            "jp": "<ruby>公園<rt>こうえん</rt></ruby>で<ruby>子<rt>こ</rt></ruby>どもが<ruby>遊<rt>あそ</rt></ruby>んでいます。",
+            "en": "Kids are playing in the park."
+          },
+          {
+            "jp": "ここに<ruby>名前<rt>なまえ</rt></ruby>を<ruby>書<rt>か</rt></ruby>いてください。",
+            "en": "Please write your name here (in this box)."
+          },
+          {
+            "jp": "<ruby>駅前<rt>えきまえ</rt></ruby>に<ruby>車<rt>くるま</rt></ruby>を<ruby>止<rt>と</rt></ruby>めないでください。",
+            "en": "Please don't park in front of the station."
+          },
+          {
+            "jp": "<ruby>会議室<rt>かいぎしつ</rt></ruby>は<ruby>三階<rt>さんがい</rt></ruby>にあります。",
+            "en": "The meeting room is on the third floor. (a thing exists)"
+          },
+          {
+            "jp": "<ruby>会議<rt>かいぎ</rt></ruby>は<ruby>三階<rt>さんがい</rt></ruby>であります。",
+            "en": "The meeting is on the third floor. (an event takes place)"
+          },
+          {
+            "jp": "<ruby>土曜日<rt>どようび</rt></ruby>に<ruby>私<rt>わたし</rt></ruby>の<ruby>家<rt>いえ</rt></ruby>でパーティーがあります。",
+            "en": "There's a party at my place on Saturday."
+          }
+        ],
+        "dialogue": [
+          {
+            "who": "A",
+            "jp": "<ruby>明日<rt>あした</rt></ruby>の<ruby>説明会<rt>せつめいかい</rt></ruby>はどこでありますか。",
+            "en": "Where's tomorrow's info session being held?"
+          },
+          {
+            "who": "B",
+            "jp": "<ruby>本館<rt>ほんかん</rt></ruby>の<ruby>二階<rt>にかい</rt></ruby>であります。<ruby>受付<rt>うけつけ</rt></ruby>は<ruby>一階<rt>いっかい</rt></ruby>にありますよ。",
+            "en": "On the 2nd floor of the main building. Reception is on the 1st floor."
+          },
+          {
+            "who": "A",
+            "jp": "<ruby>自転車<rt>じてんしゃ</rt></ruby>はどこに<ruby>止<rt>と</rt></ruby>めればいいですか。",
+            "en": "Where should I park my bike?"
+          },
+          {
+            "who": "B",
+            "jp": "<ruby>入口<rt>いりぐち</rt></ruby>の<ruby>横<rt>よこ</rt></ruby>に<ruby>止<rt>と</rt></ruby>めてください。",
+            "en": "Park it beside the entrance."
+          }
+        ],
+        "tip": "Ask: is something just being there or landing there (に), or is something being done there (で)? With ある: a thing is に, an event is で.",
+        "quiz": [
+          {
+            "q": "「<ruby>会議<rt>かいぎ</rt></ruby>は<ruby>二階<rt>にかい</rt></ruby>の<ruby>部屋<rt>へや</rt></ruby>＿＿あります。」",
+            "choices": [
+              "に",
+              "で",
+              "を",
+              "へ"
+            ],
+            "a": 1,
+            "ex": "A meeting is an event. Events 'take place', so ある uses で here.",
+            "why": [
+              "に + ある is for things or places that exist (<ruby>会議室<rt>かいぎしつ</rt></ruby>は<ruby>二階<rt>にかい</rt></ruby>にあります). A meeting is an event.",
+              null,
+              "を marks an object or a route, not a location.",
+              "へ marks direction of movement."
+            ]
+          },
+          {
+            "q": "「<ruby>私<rt>わたし</rt></ruby>は<ruby>大阪<rt>おおさか</rt></ruby>＿＿<ruby>住<rt>す</rt></ruby>んでいます。」",
+            "choices": [
+              "で",
+              "に",
+              "を",
+              "から"
+            ],
+            "a": 1,
+            "ex": "<ruby>住<rt>す</rt></ruby>む marks where you are/reside with に.",
+            "why": [
+              "で marks where an action happens. <ruby>住<rt>す</rt></ruby>む takes に.",
+              null,
+              "を doesn't mark where you live.",
+              "から means 'from'. <ruby>大阪<rt>おおさか</rt></ruby>から<ruby>来<rt>き</rt></ruby>ました would be 'I came from Osaka'."
+            ]
+          },
+          {
+            "q": "「<ruby>毎日<rt>まいにち</rt></ruby>、<ruby>図書館<rt>としょかん</rt></ruby>＿＿<ruby>勉強<rt>べんきょう</rt></ruby>しています。」",
+            "choices": [
+              "に",
+              "で",
+              "を",
+              "へ"
+            ],
+            "a": 1,
+            "ex": "Studying is an action, so the place it happens in takes で.",
+            "why": [
+              "に would mark a place of existence or a destination, not where an activity takes place.",
+              null,
+              "を with a place marks a route you move through, not where you sit and study.",
+              "へ marks direction, as with <ruby>図書館<rt>としょかん</rt></ruby>へ<ruby>行<rt>い</rt></ruby>く."
+            ]
+          }
+        ]
+      },
+      {
+        "jp": "<ruby>道<rt>みち</rt></ruby>を<ruby>歩<rt>ある</rt></ruby>く：<ruby>通過<rt>つうか</rt></ruby>・<ruby>出発<rt>しゅっぱつ</rt></ruby>の「を」",
+        "romaji": "michi wo aruku: tsuuka / shuppatsu no 'wo'",
+        "fn": "を for the route you move along, and the place you leave",
+        "sources": [
+          "MNN Bk1 L16, L23",
+          "Genki II Ch16",
+          "Sou Matome Wk1"
+        ],
+        "explain": "This is the <ruby>道<rt>みち</rt></ruby>＿<ruby>歩<rt>ある</rt></ruby>きます question. With motion verbs, <b>を</b> marks the <b>space you move through or along</b>: <ruby>道<rt>みち</rt></ruby>を<ruby>歩<rt>ある</rt></ruby>く, <ruby>公園<rt>こうえん</rt></ruby>を<ruby>散歩<rt>さんぽ</rt></ruby>する, <ruby>橋<rt>はし</rt></ruby>を<ruby>渡<rt>わた</rt></ruby>る, <ruby>角<rt>かど</rt></ruby>を<ruby>曲<rt>ま</rt></ruby>がる, <ruby>空<rt>そら</rt></ruby>を<ruby>飛<rt>と</rt></ruby>ぶ, <ruby>廊下<rt>ろうか</rt></ruby>を<ruby>走<rt>はし</rt></ruby>る. It's not an 'object' in the usual sense. It's the route.<br><br>を also marks the <b>place you leave or get off</b>: <ruby>家<rt>いえ</rt></ruby>を<ruby>出<rt>で</rt></ruby>る, <ruby>電車<rt>でんしゃ</rt></ruby>を<ruby>降<rt>お</rt></ruby>りる, <ruby>大学<rt>だいがく</rt></ruby>を<ruby>卒業<rt>そつぎょう</rt></ruby>する, <ruby>部屋<rt>へや</rt></ruby>を<ruby>出<rt>で</rt></ruby>る.<br><br>So why not で? <b>で</b> is the stage where an activity happens: <ruby>道<rt>みち</rt></ruby><b>で</b><ruby>遊<rt>あそ</rt></ruby>ぶ (play in the street) or <ruby>道<rt>みち</rt></ruby><b>で</b><ruby>友達<rt>ともだち</rt></ruby>に<ruby>会<rt>あ</rt></ruby>った (I met a friend on the street). <ruby>道<rt>みち</rt></ruby><b>を</b><ruby>歩<rt>ある</rt></ruby>く is about moving along the street. <ruby>公園<rt>こうえん</rt></ruby>で<ruby>走<rt>はし</rt></ruby>る (running around inside the park) and <ruby>公園<rt>こうえん</rt></ruby>を<ruby>走<rt>はし</rt></ruby>る (running through or across it) are both OK, with that nuance.<br><br>Some fixed combinations: <ruby>道<rt>みち</rt></ruby><b>に</b><ruby>迷<rt>まよ</rt></ruby>う (get lost), <ruby>電車<rt>でんしゃ</rt></ruby><b>に</b><ruby>乗<rt>の</rt></ruby>る ↔ <ruby>電車<rt>でんしゃ</rt></ruby><b>を</b><ruby>降<rt>お</rt></ruby>りる, <ruby>家<rt>いえ</rt></ruby><b>を</b><ruby>出<rt>で</rt></ruby>る ↔ <ruby>家<rt>いえ</rt></ruby><b>に</b><ruby>帰<rt>かえ</rt></ruby>る. <ruby>家<rt>いえ</rt></ruby>から<ruby>出<rt>で</rt></ruby>る (come out from inside) also exists, with more focus on the physical exit.",
+        "formation": [
+          "Route + を + <ruby>歩<rt>ある</rt></ruby>く・<ruby>走<rt>はし</rt></ruby>る・<ruby>散歩<rt>さんぽ</rt></ruby>する・<ruby>渡<rt>わた</rt></ruby>る・<ruby>曲<rt>ま</rt></ruby>がる・<ruby>通<rt>とお</rt></ruby>る・<ruby>飛<rt>と</rt></ruby>ぶ",
+          "Starting point + を + <ruby>出<rt>で</rt></ruby>る・<ruby>降<rt>お</rt></ruby>りる・<ruby>卒業<rt>そつぎょう</rt></ruby>する・<ruby>離<rt>はな</rt></ruby>れる",
+          "Compare: place + で + activity (<ruby>遊<rt>あそ</rt></ruby>ぶ・<ruby>会<rt>あ</rt></ruby>う・<ruby>待<rt>ま</rt></ruby>つ)"
+        ],
+        "examples": [
+          {
+            "jp": "この<ruby>道<rt>みち</rt></ruby>をまっすぐ<ruby>歩<rt>ある</rt></ruby>くと、<ruby>駅<rt>えき</rt></ruby>があります。",
+            "en": "Walk straight along this road and you'll reach the station."
+          },
+          {
+            "jp": "<ruby>毎朝<rt>まいあさ</rt></ruby>、<ruby>川<rt>かわ</rt></ruby>のそばを<ruby>散歩<rt>さんぽ</rt></ruby>します。",
+            "en": "Every morning I take a walk along the river."
+          },
+          {
+            "jp": "<ruby>橋<rt>はし</rt></ruby>を<ruby>渡<rt>わた</rt></ruby>って、<ruby>次<rt>つぎ</rt></ruby>の<ruby>角<rt>かど</rt></ruby>を<ruby>左<rt>ひだり</rt></ruby>に<ruby>曲<rt>ま</rt></ruby>がってください。",
+            "en": "Cross the bridge and turn left at the next corner."
+          },
+          {
+            "jp": "<ruby>廊下<rt>ろうか</rt></ruby>を<ruby>走<rt>はし</rt></ruby>らないでください。",
+            "en": "Please don't run in the hallway. (moving along it)"
+          },
+          {
+            "jp": "<ruby>七時<rt>しちじ</rt></ruby>に<ruby>家<rt>いえ</rt></ruby>を<ruby>出<rt>で</rt></ruby>ました。",
+            "en": "I left home at seven."
+          },
+          {
+            "jp": "<ruby>次<rt>つぎ</rt></ruby>の<ruby>駅<rt>えき</rt></ruby>で<ruby>電車<rt>でんしゃ</rt></ruby>を<ruby>降<rt>お</rt></ruby>ります。",
+            "en": "I'm getting off the train at the next station. (で = where, を = what you leave)"
+          },
+          {
+            "jp": "<ruby>兄<rt>あに</rt></ruby>は<ruby>去年<rt>きょねん</rt></ruby>、<ruby>大学<rt>だいがく</rt></ruby>を<ruby>卒業<rt>そつぎょう</rt></ruby>しました。",
+            "en": "My older brother graduated from university last year."
+          },
+          {
+            "jp": "<ruby>道<rt>みち</rt></ruby>で<ruby>子<rt>こ</rt></ruby>どもが<ruby>遊<rt>あそ</rt></ruby>んでいます。",
+            "en": "Kids are playing in the street. (activity = で)"
+          }
+        ],
+        "dialogue": [
+          {
+            "who": "A",
+            "jp": "すみません、<ruby>美術館<rt>びじゅつかん</rt></ruby>へはどう<ruby>行<rt>い</rt></ruby>けばいいですか。",
+            "en": "Excuse me, how do I get to the art museum?"
+          },
+          {
+            "who": "B",
+            "jp": "この<ruby>道<rt>みち</rt></ruby>をまっすぐ<ruby>行<rt>い</rt></ruby>って、<ruby>二<rt>ふた</rt></ruby>つ<ruby>目<rt>め</rt></ruby>の<ruby>信号<rt>しんごう</rt></ruby>を<ruby>右<rt>みぎ</rt></ruby>に<ruby>曲<rt>ま</rt></ruby>がってください。",
+            "en": "Go straight along this road and turn right at the second traffic light."
+          },
+          {
+            "who": "A",
+            "jp": "<ruby>橋<rt>はし</rt></ruby>を<ruby>渡<rt>わた</rt></ruby>りますか。",
+            "en": "Do I cross a bridge?"
+          },
+          {
+            "who": "B",
+            "jp": "いいえ、<ruby>橋<rt>はし</rt></ruby>の<ruby>手前<rt>てまえ</rt></ruby>にありますよ。<ruby>道<rt>みち</rt></ruby>に<ruby>迷<rt>まよ</rt></ruby>ったら、また<ruby>聞<rt>き</rt></ruby>いてください。",
+            "en": "No, it's just before the bridge. If you get lost, ask again."
+          }
+        ],
+        "tip": "If you're moving along, through, across or around it, use を. If you're leaving it, use を. If you're doing something while standing in it, use で.",
+        "quiz": [
+          {
+            "q": "「この<ruby>道<rt>みち</rt></ruby>＿＿まっすぐ<ruby>歩<rt>ある</rt></ruby>くと、<ruby>駅<rt>えき</rt></ruby>があります。」",
+            "choices": [
+              "を",
+              "で",
+              "に",
+              "へ"
+            ],
+            "a": 0,
+            "ex": "You're moving along the road, so を marks the route.",
+            "why": [
+              null,
+              "で would mean doing an activity located on the road. Walking along it is a route, so を.",
+              "に marks a destination or where something exists. You're not arriving at 'the road'.",
+              "へ marks direction toward a place, not the path you travel along."
+            ]
+          },
+          {
+            "q": "「<ruby>七時<rt>しちじ</rt></ruby>に<ruby>家<rt>いえ</rt></ruby>＿＿<ruby>出<rt>で</rt></ruby>ました。」",
+            "choices": [
+              "を",
+              "で",
+              "に",
+              "へ"
+            ],
+            "a": 0,
+            "ex": "The place you leave takes を: <ruby>家<rt>いえ</rt></ruby>を<ruby>出<rt>で</rt></ruby>る. (<ruby>家<rt>いえ</rt></ruby>から<ruby>出<rt>で</rt></ruby>る is also possible.)",
+            "why": [
+              null,
+              "で would mark where an activity happens, not the place you leave.",
+              "<ruby>家<rt>いえ</rt></ruby>に<ruby>出<rt>で</rt></ruby>る would mean 'go out to the house'. It's the wrong direction.",
+              "へ is direction toward. You're leaving the house, not heading to it."
+            ]
+          },
+          {
+            "q": "「<ruby>次<rt>つぎ</rt></ruby>の<ruby>駅<rt>えき</rt></ruby>で<ruby>電車<rt>でんしゃ</rt></ruby>＿＿<ruby>降<rt>お</rt></ruby>ります。」",
+            "choices": [
+              "に",
+              "を",
+              "で",
+              "へ"
+            ],
+            "a": 1,
+            "ex": "<ruby>降<rt>お</rt></ruby>りる takes を for what you get off: <ruby>電車<rt>でんしゃ</rt></ruby>を<ruby>降<rt>お</rt></ruby>りる. It's the opposite of <ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>る.",
+            "why": [
+              "に goes with <ruby>乗<rt>の</rt></ruby>る (getting on), not <ruby>降<rt>お</rt></ruby>りる.",
+              null,
+              "で is already used for the station. <ruby>電車<rt>でんしゃ</rt></ruby>で means 'by train'.",
+              "へ marks direction, not the vehicle you leave."
+            ]
+          }
+        ]
+      },
+      {
+        "jp": "と vs に（<ruby>相手<rt>あいて</rt></ruby>）",
+        "romaji": "to vs ni (the other person)",
+        "fn": "Doing it together vs doing it toward someone",
+        "sources": [
+          "MNN Bk1 L6, L7",
+          "Genki I Ch4",
+          "Sou Matome Wk1"
+        ],
+        "explain": "Verbs involving another person can take と or に, and the particle changes who's doing the acting.<br><b>と</b> = <b>mutual</b>: both sides take part equally. <ruby>友達<rt>ともだち</rt></ruby><b>と</b><ruby>会<rt>あ</rt></ruby>う (meet up with a friend, by arrangement). <ruby>彼<rt>かれ</rt></ruby><b>と</b><ruby>話<rt>はな</rt></ruby>す (talk with him).<br><b>に</b> = <b>one-directional</b>: you act toward a target. <ruby>先生<rt>せんせい</rt></ruby><b>に</b><ruby>会<rt>あ</rt></ruby>う (go to see the teacher, or run into them). <ruby>先生<rt>せんせい</rt></ruby><b>に</b><ruby>話<rt>はな</rt></ruby>す (tell the teacher).<br><br>Some verbs only go one way:<br>• Always <b>と</b> (it takes two): <ruby>結婚<rt>けっこん</rt></ruby>する, けんかする, <ruby>別<rt>わか</rt></ruby>れる, <ruby>一緒<rt>いっしょ</rt></ruby>に〜する.<br>• Always <b>に</b> (there's a target): <ruby>電話<rt>でんわ</rt></ruby>する, <ruby>聞<rt>き</rt></ruby>く (ask), <ruby>教<rt>おし</rt></ruby>える, <ruby>質問<rt>しつもん</rt></ruby>する, あげる, <ruby>手紙<rt>てがみ</rt></ruby>を<ruby>書<rt>か</rt></ruby>く.<br>• Either, with a nuance: <ruby>会<rt>あ</rt></ruby>う, <ruby>話<rt>はな</rt></ruby>す, <ruby>相談<rt>そうだん</rt></ruby>する, <ruby>似<rt>に</rt></ruby>ている (<ruby>父<rt>ちち</rt></ruby>に<ruby>似<rt>に</rt></ruby>ている and <ruby>父<rt>ちち</rt></ruby>と<ruby>似<rt>に</rt></ruby>ている both mean 'look like Dad'), ぶつかる (<ruby>車<rt>くるま</rt></ruby>にぶつかる = I hit a car; <ruby>車<rt>くるま</rt></ruby>とぶつかる = we collided).",
+        "formation": [
+          "Person + と + verb: mutual, both take part",
+          "Person + に + verb: one-way, toward a target",
+          "Always と: <ruby>結婚<rt>けっこん</rt></ruby>する・けんかする・<ruby>別<rt>わか</rt></ruby>れる · Always に: <ruby>電話<rt>でんわ</rt></ruby>する・<ruby>聞<rt>き</rt></ruby>く・<ruby>教<rt>おし</rt></ruby>える・<ruby>質問<rt>しつもん</rt></ruby>する"
+        ],
+        "examples": [
+          {
+            "jp": "<ruby>週末<rt>しゅうまつ</rt></ruby>、<ruby>友達<rt>ともだち</rt></ruby>と<ruby>会<rt>あ</rt></ruby>います。",
+            "en": "I'm meeting up with a friend this weekend."
+          },
+          {
+            "jp": "<ruby>駅<rt>えき</rt></ruby>で<ruby>偶然<rt>ぐうぜん</rt></ruby>、<ruby>先生<rt>せんせい</rt></ruby>に<ruby>会<rt>あ</rt></ruby>いました。",
+            "en": "I happened to run into my teacher at the station."
+          },
+          {
+            "jp": "<ruby>来年<rt>らいねん</rt></ruby>、<ruby>彼女<rt>かのじょ</rt></ruby>と<ruby>結婚<rt>けっこん</rt></ruby>します。",
+            "en": "I'm marrying her next year."
+          },
+          {
+            "jp": "<ruby>分<rt>わ</rt></ruby>からないことは<ruby>先生<rt>せんせい</rt></ruby>に<ruby>質問<rt>しつもん</rt></ruby>してください。",
+            "en": "Ask the teacher about anything you don't understand."
+          },
+          {
+            "jp": "<ruby>将来<rt>しょうらい</rt></ruby>のことを<ruby>両親<rt>りょうしん</rt></ruby>に<ruby>相談<rt>そうだん</rt></ruby>しました。",
+            "en": "I talked to my parents about my future. (asked them for advice)"
+          },
+          {
+            "jp": "<ruby>弟<rt>おとうと</rt></ruby>とけんかしました。",
+            "en": "I had a fight with my younger brother."
+          },
+          {
+            "jp": "<ruby>彼<rt>かれ</rt></ruby>はお<ruby>父<rt>とう</rt></ruby>さんによく<ruby>似<rt>に</rt></ruby>ていますね。",
+            "en": "He looks a lot like his father."
+          }
+        ],
+        "dialogue": [
+          {
+            "who": "A",
+            "jp": "<ruby>昨日<rt>きのう</rt></ruby>、<ruby>誰<rt>だれ</rt></ruby>と<ruby>会<rt>あ</rt></ruby>ったんですか。",
+            "en": "Who did you meet up with yesterday?"
+          },
+          {
+            "who": "B",
+            "jp": "<ruby>高校<rt>こうこう</rt></ruby>の<ruby>友達<rt>ともだち</rt></ruby>と<ruby>会<rt>あ</rt></ruby>いました。それから、<ruby>帰<rt>かえ</rt></ruby>りに<ruby>駅<rt>えき</rt></ruby>で<ruby>部長<rt>ぶちょう</rt></ruby>に<ruby>会<rt>あ</rt></ruby>いましたよ。",
+            "en": "A friend from high school. And on the way home, I ran into the department head at the station."
+          },
+          {
+            "who": "A",
+            "jp": "えっ、<ruby>何<rt>なに</rt></ruby>か<ruby>話<rt>はな</rt></ruby>しましたか。",
+            "en": "Oh, did you talk about anything?"
+          },
+          {
+            "who": "B",
+            "jp": "ええ、<ruby>来週<rt>らいしゅう</rt></ruby>の<ruby>会議<rt>かいぎ</rt></ruby>のことを<ruby>部長<rt>ぶちょう</rt></ruby>に<ruby>聞<rt>き</rt></ruby>きました。",
+            "en": "Yeah, I asked about next week's meeting."
+          }
+        ],
+        "tip": "Could the other person say the same sentence about you? Then it's mutual: と. If you're the one acting on them (calling, asking, telling, teaching), use に.",
+        "quiz": [
+          {
+            "q": "「<ruby>来月<rt>らいげつ</rt></ruby>、<ruby>佐藤<rt>さとう</rt></ruby>さん＿＿<ruby>結婚<rt>けっこん</rt></ruby>することになりました。」",
+            "choices": [
+              "と",
+              "に",
+              "を",
+              "で"
+            ],
+            "a": 0,
+            "ex": "<ruby>結婚<rt>けっこん</rt></ruby>する always takes と. It takes two people equally.",
+            "why": [
+              null,
+              "に would make it one-directional, as if you were marrying 'at' Sato-san. <ruby>結婚<rt>けっこん</rt></ruby>する is always と.",
+              "を would make Sato-san the object, which isn't how <ruby>結婚<rt>けっこん</rt></ruby>する works.",
+              "で marks a place or means, not your partner."
+            ]
+          },
+          {
+            "q": "「<ruby>分<rt>わ</rt></ruby>からなかったので、<ruby>先生<rt>せんせい</rt></ruby>＿＿<ruby>質問<rt>しつもん</rt></ruby>しました。」",
+            "choices": [
+              "と",
+              "に",
+              "で",
+              "を"
+            ],
+            "a": 1,
+            "ex": "<ruby>質問<rt>しつもん</rt></ruby>する is one-directional. The person you ask takes に.",
+            "why": [
+              "と would make it mutual, 'asked questions together with the teacher'.",
+              null,
+              "で marks place or means, not the person you ask.",
+              "を marks the question topic in some patterns, never the person you ask."
+            ]
+          }
+        ]
+      },
+      {
+        "jp": "から vs ので",
+        "romaji": "kara vs node",
+        "fn": "Two ways to give a reason: personal vs soft and objective",
+        "sources": [
+          "MNN Bk1 L9 / Bk2 L39",
+          "Genki I Ch6, Genki II Ch12",
+          "Sou Matome Wk4"
+        ],
+        "explain": "Both mean 'because/so'. The difference is <b>tone</b>.<br><b>から</b> is your <b>own reason</b>. It's direct and a little assertive, natural with friends, and it can lead into commands and strong opinions: <ruby>危<rt>あぶ</rt></ruby>ないから、<ruby>触<rt>さわ</rt></ruby>らないで！ It can also stand alone as an answer: どうして？ —<ruby>忙<rt>いそが</rt></ruby>しいから。<br><b>ので</b> presents the reason as an <b>objective circumstance</b>. It's softer and more polite, so it's the default for <b>excuses, apologies and requests to superiors</b>: <ruby>熱<rt>ねつ</rt></ruby>があるので、<ruby>早退<rt>そうたい</rt></ruby>してもよろしいでしょうか。<br><br>Form trap: with nouns and な-adjectives, ので needs <b>な</b>: <ruby>雨<rt>あめ</rt></ruby><b>な</b>ので, <ruby>静<rt>しず</rt></ruby>か<b>な</b>ので. から uses だ: <ruby>雨<rt>あめ</rt></ruby><b>だ</b>から. <ruby>雨<rt>あめ</rt></ruby>ので ✗ and <ruby>雨<rt>あめ</rt></ruby>なから ✗.<br>In very polite speech you'll hear です／ますform + ので: <ruby>雨<rt>あめ</rt></ruby>ですので, ありますので.",
+        "formation": [
+          "Plain form + から · noun / な-adj + だから",
+          "Plain form + ので · noun / な-adj + なので",
+          "Commands and strong opinions → から · excuses and polite requests → ので"
+        ],
+        "conjugation": [
+          {
+            "label": "Verb",
+            "from": "<ruby>行<rt>い</rt></ruby>く",
+            "to": "<ruby>行<rt>い</rt></ruby>くから／<ruby>行<rt>い</rt></ruby>くので"
+          },
+          {
+            "label": "い-adj",
+            "from": "<ruby>寒<rt>さむ</rt></ruby>い",
+            "to": "<ruby>寒<rt>さむ</rt></ruby>いから／<ruby>寒<rt>さむ</rt></ruby>いので"
+          },
+          {
+            "label": "な-adj",
+            "from": "<ruby>暇<rt>ひま</rt></ruby>",
+            "to": "<ruby>暇<rt>ひま</rt></ruby>だから／<ruby>暇<rt>ひま</rt></ruby>なので"
+          },
+          {
+            "label": "Noun",
+            "from": "<ruby>休<rt>やす</rt></ruby>み",
+            "to": "<ruby>休<rt>やす</rt></ruby>みだから／<ruby>休<rt>やす</rt></ruby>みなので"
+          }
+        ],
+        "examples": [
+          {
+            "jp": "<ruby>危<rt>あぶ</rt></ruby>ないから、<ruby>触<rt>さわ</rt></ruby>らないで！",
+            "en": "It's dangerous, so don't touch it!"
+          },
+          {
+            "jp": "<ruby>頭<rt>あたま</rt></ruby>が<ruby>痛<rt>いた</rt></ruby>いので、<ruby>今日<rt>きょう</rt></ruby>は<ruby>早<rt>はや</rt></ruby>く<ruby>帰<rt>かえ</rt></ruby>ってもよろしいでしょうか。",
+            "en": "I have a headache. Would it be all right if I went home early today?"
+          },
+          {
+            "jp": "<ruby>明日<rt>あした</rt></ruby>は<ruby>休<rt>やす</rt></ruby>みなので、ゆっくり<ruby>寝<rt>ね</rt></ruby>ます。",
+            "en": "Tomorrow's a day off, so I'll sleep in."
+          },
+          {
+            "jp": "<ruby>雨<rt>あめ</rt></ruby>だから、<ruby>今日<rt>きょう</rt></ruby>は<ruby>出<rt>で</rt></ruby>かけない。",
+            "en": "It's raining, so I'm not going out today."
+          },
+          {
+            "jp": "A：どうして<ruby>来<rt>こ</rt></ruby>なかったの？　B：<ruby>忙<rt>いそが</rt></ruby>しかったから。",
+            "en": "A: Why didn't you come? B: Because I was busy."
+          },
+          {
+            "jp": "<ruby>電車<rt>でんしゃ</rt></ruby>が<ruby>遅<rt>おく</rt></ruby>れたので、<ruby>遅刻<rt>ちこく</rt></ruby>してしまいました。すみません。",
+            "en": "The train was late, so I ended up being late. I'm sorry."
+          },
+          {
+            "jp": "この<ruby>店<rt>みせ</rt></ruby>は<ruby>安<rt>やす</rt></ruby>いし、おいしいから、よく<ruby>来<rt>く</rt></ruby>るんだ。",
+            "en": "This place is cheap and tasty, so I come here a lot."
+          }
+        ],
+        "dialogue": [
+          {
+            "who": "A",
+            "jp": "<ruby>課長<rt>かちょう</rt></ruby>、すみません。<ruby>子<rt>こ</rt></ruby>どもが<ruby>熱<rt>ねつ</rt></ruby>を<ruby>出<rt>だ</rt></ruby>したので、<ruby>今日<rt>きょう</rt></ruby>は<ruby>早<rt>はや</rt></ruby>めに<ruby>帰<rt>かえ</rt></ruby>らせていただけませんか。",
+            "en": "Excuse me, section chief. My child has a fever, so could you let me go home a little early today?"
+          },
+          {
+            "who": "課長",
+            "jp": "それは<ruby>大変<rt>たいへん</rt></ruby>ですね。いいですよ。",
+            "en": "Oh no. Sure, go ahead."
+          },
+          {
+            "who": "A",
+            "jp": "ありがとうございます。<ruby>明日<rt>あした</rt></ruby>の<ruby>資料<rt>しりょう</rt></ruby>はもうできていますので。",
+            "en": "Thank you. Tomorrow's materials are already done, by the way."
+          }
+        ],
+        "tip": "Talking to your boss, apologising, or making an excuse: ので. Giving a friend an order or a strong opinion: から. Nouns and な-adjectives: なので vs だから.",
+        "quiz": [
+          {
+            "q": "「<ruby>明日<rt>あした</rt></ruby>は<ruby>休<rt>やす</rt></ruby>み＿＿、ゆっくり<ruby>寝<rt>ね</rt></ruby>ます。」",
+            "choices": [
+              "なので",
+              "ので",
+              "だので",
+              "なから"
+            ],
+            "a": 0,
+            "ex": "Nouns and な-adjectives take な before ので: <ruby>休<rt>やす</rt></ruby>みなので. (Or <ruby>休<rt>やす</rt></ruby>みだから.)",
+            "why": [
+              null,
+              "ので can't attach directly to a noun. It needs な.",
+              "だ becomes な before ので: なので, not だので.",
+              "から takes だ, not な: <ruby>休<rt>やす</rt></ruby>みだから."
+            ]
+          },
+          {
+            "q": "You're asking your boss to leave early. Which sounds most polite and natural?",
+            "choices": [
+              "<ruby>頭<rt>あたま</rt></ruby>が<ruby>痛<rt>いた</rt></ruby>いから、<ruby>帰<rt>かえ</rt></ruby>ります。",
+              "<ruby>頭<rt>あたま</rt></ruby>が<ruby>痛<rt>いた</rt></ruby>いので、<ruby>早<rt>はや</rt></ruby>く<ruby>帰<rt>かえ</rt></ruby>ってもよろしいでしょうか。",
+              "<ruby>頭<rt>あたま</rt></ruby>が<ruby>痛<rt>いた</rt></ruby>いのに、<ruby>早<rt>はや</rt></ruby>く<ruby>帰<rt>かえ</rt></ruby>ってもいいですか。",
+              "<ruby>頭<rt>あたま</rt></ruby>が<ruby>痛<rt>いた</rt></ruby>いし、<ruby>帰<rt>かえ</rt></ruby>る。"
+            ],
+            "a": 1,
+            "ex": "ので presents the reason softly as a circumstance, which is what you want when asking a superior for something.",
+            "why": [
+              "から plus a flat 'I'm going home' sounds like you're announcing it, not asking.",
+              null,
+              "のに means 'even though', which makes no sense as a reason here.",
+              "Plain-form し + <ruby>帰<rt>かえ</rt></ruby>る is far too casual for your boss."
+            ]
+          }
+        ]
+      },
+      {
+        "jp": "が vs を（<ruby>好<rt>す</rt></ruby>き・<ruby>分<rt>わ</rt></ruby>かる・できる・ほしい・〜たい）",
+        "romaji": "ga vs wo (suki / wakaru / dekiru / hoshii / ~tai)",
+        "fn": "Why 'I like dogs' is 犬が好き, not 犬を好き",
+        "sources": [
+          "MNN Bk1 L9, L13",
+          "Genki I Ch5, Ch11",
+          "Sou Matome Wk1"
+        ],
+        "explain": "を marks the object of an <b>action verb</b>: <ruby>本<rt>ほん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>む, <ruby>水<rt>みず</rt></ruby>を<ruby>飲<rt>の</rt></ruby>む. But a group of words that describe <b>feelings, abilities or states</b> mark their 'object' with <b>が</b>:<br>• <ruby>好<rt>す</rt></ruby>き・<ruby>嫌<rt>きら</rt></ruby>い・<ruby>上手<rt>じょうず</rt></ruby>・<ruby>下手<rt>へた</rt></ruby>: <ruby>犬<rt>いぬ</rt></ruby><b>が</b><ruby>好<rt>す</rt></ruby>きです<br>• <ruby>分<rt>わ</rt></ruby>かる: <ruby>日本語<rt>にほんご</rt></ruby><b>が</b><ruby>分<rt>わ</rt></ruby>かります<br>• できる & potential verbs: <ruby>料理<rt>りょうり</rt></ruby><b>が</b>できます, <ruby>漢字<rt>かんじ</rt></ruby><b>が</b><ruby>読<rt>よ</rt></ruby>めます<br>• ほしい: <ruby>車<rt>くるま</rt></ruby><b>が</b>ほしいです<br>• ある・いる (have): <ruby>兄弟<rt>きょうだい</rt></ruby><b>が</b>います, <ruby>時間<rt>じかん</rt></ruby><b>が</b>あります<br>• <ruby>見<rt>み</rt></ruby>える・<ruby>聞<rt>き</rt></ruby>こえる: <ruby>山<rt>やま</rt></ruby><b>が</b><ruby>見<rt>み</rt></ruby>えます<br><br>Two loose ends:<br>• <b>〜たい</b> accepts both: <ruby>水<rt>みず</rt></ruby><b>が</b><ruby>飲<rt>の</rt></ruby>みたい／<ruby>水<rt>みず</rt></ruby><b>を</b><ruby>飲<rt>の</rt></ruby>みたい. Both are fine, and が puts a bit more focus on the thing. ほしい is always が.<br>• In negatives and contrasts, は often replaces が: <ruby>肉<rt>にく</rt></ruby><b>は</b><ruby>食<rt>た</rt></ruby>べられません (meat, I can't eat), <ruby>日本語<rt>にほんご</rt></ruby><b>は</b><ruby>分<rt>わ</rt></ruby>かりますが、<ruby>中国語<rt>ちゅうごくご</rt></ruby><b>は</b><ruby>分<rt>わ</rt></ruby>かりません.",
+        "formation": [
+          "Noun + が + <ruby>好<rt>す</rt></ruby>き・<ruby>嫌<rt>きら</rt></ruby>い・<ruby>上手<rt>じょうず</rt></ruby>・<ruby>下手<rt>へた</rt></ruby>・<ruby>分<rt>わ</rt></ruby>かる・できる・ほしい",
+          "Noun + が + potential verb (<ruby>読<rt>よ</rt></ruby>める・<ruby>話<rt>はな</rt></ruby>せる・<ruby>泳<rt>およ</rt></ruby>げる)",
+          "Noun + が／を + ます-stem + たい (both OK)"
+        ],
+        "examples": [
+          {
+            "jp": "<ruby>私<rt>わたし</rt></ruby>は<ruby>犬<rt>いぬ</rt></ruby>が<ruby>好<rt>す</rt></ruby>きです。",
+            "en": "I like dogs."
+          },
+          {
+            "jp": "<ruby>母<rt>はは</rt></ruby>は<ruby>料理<rt>りょうり</rt></ruby>が<ruby>上手<rt>じょうず</rt></ruby>です。",
+            "en": "My mother is good at cooking."
+          },
+          {
+            "jp": "<ruby>少<rt>すこ</rt></ruby>し<ruby>日本語<rt>にほんご</rt></ruby>が<ruby>分<rt>わ</rt></ruby>かります。",
+            "en": "I understand a little Japanese."
+          },
+          {
+            "jp": "<ruby>新<rt>あたら</rt></ruby>しいパソコンがほしいです。",
+            "en": "I want a new computer."
+          },
+          {
+            "jp": "<ruby>漢字<rt>かんじ</rt></ruby>が<ruby>読<rt>よ</rt></ruby>めるようになりました。",
+            "en": "I've become able to read kanji."
+          },
+          {
+            "jp": "<ruby>冷<rt>つめ</rt></ruby>たい<ruby>水<rt>みず</rt></ruby>が<ruby>飲<rt>の</rt></ruby>みたい。／<ruby>冷<rt>つめ</rt></ruby>たい<ruby>水<rt>みず</rt></ruby>を<ruby>飲<rt>の</rt></ruby>みたい。",
+            "en": "I want to drink some cold water. (both fine)"
+          },
+          {
+            "jp": "ここから<ruby>富士山<rt>ふじさん</rt></ruby>が<ruby>見<rt>み</rt></ruby>えます。",
+            "en": "You can see Mt. Fuji from here."
+          },
+          {
+            "jp": "<ruby>魚<rt>さかな</rt></ruby>は<ruby>食<rt>た</rt></ruby>べられますが、<ruby>肉<rt>にく</rt></ruby>は<ruby>食<rt>た</rt></ruby>べられません。",
+            "en": "I can eat fish, but I can't eat meat. (は for contrast)"
+          }
+        ],
+        "dialogue": [
+          {
+            "who": "A",
+            "jp": "<ruby>何<rt>なに</rt></ruby>かスポーツができますか。",
+            "en": "Can you play any sports?"
+          },
+          {
+            "who": "B",
+            "jp": "テニスができます。でも、<ruby>泳<rt>およ</rt></ruby>ぐのは<ruby>下手<rt>へた</rt></ruby>なんです。",
+            "en": "I can play tennis. But I'm bad at swimming."
+          },
+          {
+            "who": "A",
+            "jp": "そうですか。<ruby>私<rt>わたし</rt></ruby>はサッカーが<ruby>好<rt>す</rt></ruby>きです。<ruby>今度<rt>こんど</rt></ruby>、<ruby>一緒<rt>いっしょ</rt></ruby>にしませんか。",
+            "en": "I see. I like soccer. Want to play together sometime?"
+          },
+          {
+            "who": "B",
+            "jp": "いいですね。",
+            "en": "Sounds good."
+          }
+        ],
+        "tip": "If the word describes how you feel about something or what you're able to do (like, good at, understand, can, want), the thing takes が. Real actions take を. 〜たい can take either.",
+        "quiz": [
+          {
+            "q": "「<ruby>新<rt>あたら</rt></ruby>しいパソコン＿＿ほしいです。」",
+            "choices": [
+              "が",
+              "を",
+              "に",
+              "で"
+            ],
+            "a": 0,
+            "ex": "ほしい is an adjective of desire, and its object always takes が.",
+            "why": [
+              null,
+              "を is for action verbs. ほしい is an adjective, so it takes が. (Compare 〜たい, which accepts either.)",
+              "に marks a target or destination, not the thing you want.",
+              "で marks place or means."
+            ]
+          },
+          {
+            "q": "「<ruby>私<rt>わたし</rt></ruby>は<ruby>日本語<rt>にほんご</rt></ruby>＿＿<ruby>少<rt>すこ</rt></ruby>し<ruby>分<rt>わ</rt></ruby>かります。」",
+            "choices": [
+              "を",
+              "が",
+              "で",
+              "に"
+            ],
+            "a": 1,
+            "ex": "<ruby>分<rt>わ</rt></ruby>かる takes が for what is understood.",
+            "why": [
+              "<ruby>分<rt>わ</rt></ruby>かる isn't an action verb, so it doesn't take を.",
+              null,
+              "で would mean 'by means of Japanese'.",
+              "に marks a target or place, not what you understand."
+            ]
+          }
+        ]
+      },
+      {
+        "jp": "で の<ruby>色々<rt>いろいろ</rt></ruby>な<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>",
+        "romaji": "de no iroiro na tsukaikata",
+        "fn": "The many jobs of で: means, material, cause, scope, total",
+        "sources": [
+          "MNN Bk1 L5, L7 / Bk2 L37, L39",
+          "Genki I Ch10",
+          "Sou Matome Wk1"
+        ],
+        "explain": "Beyond 'place of action', で has a handful of jobs that all boil down to <b>'by way of / within the frame of'</b>:<br>• <b>Means / tool / language</b>: バス<b>で</b><ruby>行<rt>い</rt></ruby>く, はし<b>で</b><ruby>食<rt>た</rt></ruby>べる, <ruby>日本語<rt>にほんご</rt></ruby><b>で</b><ruby>話<rt>はな</rt></ruby>す<br>• <b>Material you can still see</b>: <ruby>木<rt>き</rt></ruby><b>で</b><ruby>作<rt>つく</rt></ruby>った<ruby>机<rt>つくえ</rt></ruby>. Compare <b>から</b> for raw material that's been transformed: ワインはぶどう<b>から</b><ruby>作<rt>つく</rt></ruby>られます (you can't see the grapes anymore).<br>• <b>Cause</b> (with a noun, usually for events beyond your control): <ruby>風邪<rt>かぜ</rt></ruby><b>で</b><ruby>休<rt>やす</rt></ruby>む, <ruby>台風<rt>たいふう</rt></ruby><b>で</b><ruby>電車<rt>でんしゃ</rt></ruby>が<ruby>止<rt>と</rt></ruby>まった<br>• <b>Scope</b>: クラス<b>で</b><ruby>一番<rt>いちばん</rt></ruby> (best in the class), <ruby>日本<rt>にほん</rt></ruby><b>で</b><ruby>一番<rt>いちばん</rt></ruby><ruby>高<rt>たか</rt></ruby>い<ruby>山<rt>やま</rt></ruby><br>• <b>Total / time taken</b>: <ruby>全部<rt>ぜんぶ</rt></ruby><b>で</b><ruby>千円<rt>せんえん</rt></ruby> (1,000 yen in all), <ruby>三日<rt>みっか</rt></ruby><b>で</b><ruby>終<rt>お</rt></ruby>わる (finish in three days)<br>• <b>How many people</b>: <ruby>一人<rt>ひとり</rt></ruby><b>で</b> (alone), みんな<b>で</b> (all together)",
+        "formation": [
+          "Means: noun + で + verb",
+          "Material: visible → で · transformed → から",
+          "Cause: noun + で (<ruby>風邪<rt>かぜ</rt></ruby>で・<ruby>地震<rt>じしん</rt></ruby>で・<ruby>事故<rt>じこ</rt></ruby>で)",
+          "Scope / total / number of people: noun + で"
+        ],
+        "examples": [
+          {
+            "jp": "<ruby>毎日<rt>まいにち</rt></ruby>、<ruby>自転車<rt>じてんしゃ</rt></ruby>で<ruby>学校<rt>がっこう</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きます。",
+            "en": "I go to school by bike every day."
+          },
+          {
+            "jp": "レポートは<ruby>日本語<rt>にほんご</rt></ruby>で<ruby>書<rt>か</rt></ruby>いてください。",
+            "en": "Please write the report in Japanese."
+          },
+          {
+            "jp": "この<ruby>机<rt>つくえ</rt></ruby>は<ruby>木<rt>き</rt></ruby>で<ruby>作<rt>つく</rt></ruby>られています。",
+            "en": "This desk is made of wood."
+          },
+          {
+            "jp": "ビールは<ruby>麦<rt>むぎ</rt></ruby>から<ruby>作<rt>つく</rt></ruby>られます。",
+            "en": "Beer is made from barley. (transformed: から)"
+          },
+          {
+            "jp": "<ruby>風邪<rt>かぜ</rt></ruby>で<ruby>学校<rt>がっこう</rt></ruby>を<ruby>休<rt>やす</rt></ruby>みました。",
+            "en": "I missed school because of a cold."
+          },
+          {
+            "jp": "<ruby>台風<rt>たいふう</rt></ruby>で<ruby>電車<rt>でんしゃ</rt></ruby>が<ruby>止<rt>と</rt></ruby>まりました。",
+            "en": "The trains stopped because of the typhoon."
+          },
+          {
+            "jp": "<ruby>富士山<rt>ふじさん</rt></ruby>は<ruby>日本<rt>にほん</rt></ruby>で<ruby>一番<rt>いちばん</rt></ruby><ruby>高<rt>たか</rt></ruby>い<ruby>山<rt>やま</rt></ruby>です。",
+            "en": "Mt. Fuji is the tallest mountain in Japan."
+          },
+          {
+            "jp": "りんごを<ruby>三<rt>みっ</rt></ruby>つ<ruby>買<rt>か</rt></ruby>って、<ruby>全部<rt>ぜんぶ</rt></ruby>で<ruby>三百円<rt>さんびゃくえん</rt></ruby>でした。",
+            "en": "I bought three apples. It was 300 yen in total."
+          }
+        ],
+        "dialogue": [
+          {
+            "who": "A",
+            "jp": "この<ruby>人形<rt>にんぎょう</rt></ruby>、かわいいですね。<ruby>何<rt>なに</rt></ruby>で<ruby>作<rt>つく</rt></ruby>ったんですか。",
+            "en": "This doll is cute. What did you make it from?"
+          },
+          {
+            "who": "B",
+            "jp": "<ruby>古<rt>ふる</rt></ruby>いシャツで<ruby>作<rt>つく</rt></ruby>りました。<ruby>一人<rt>ひとり</rt></ruby>で<ruby>二日<rt>ふつか</rt></ruby>で<ruby>作<rt>つく</rt></ruby>ったんですよ。",
+            "en": "I made it from an old shirt. I made it by myself, in two days."
+          },
+          {
+            "who": "A",
+            "jp": "すごい！<ruby>売<rt>う</rt></ruby>ったら、きっと<ruby>人気<rt>にんき</rt></ruby>が<ruby>出<rt>で</rt></ruby>ますよ。",
+            "en": "Amazing! If you sold them, I bet they'd be popular."
+          }
+        ],
+        "tip": "If you can still see the material in the finished thing (wood desk, paper crane), use で. If it's been transformed (grapes into wine, barley into beer), use から.",
+        "quiz": [
+          {
+            "q": "「ビールは<ruby>麦<rt>むぎ</rt></ruby>＿＿<ruby>作<rt>つく</rt></ruby>られます。」",
+            "choices": [
+              "で",
+              "から",
+              "に",
+              "を"
+            ],
+            "a": 1,
+            "ex": "The barley is transformed and you can't see it in the beer, so から.",
+            "why": [
+              "で is for material you can still see in the finished product, like a wooden desk.",
+              null,
+              "に doesn't mark material.",
+              "を would make barley the object being made."
+            ]
+          },
+          {
+            "q": "「<ruby>台風<rt>たいふう</rt></ruby>＿＿<ruby>電車<rt>でんしゃ</rt></ruby>が<ruby>止<rt>と</rt></ruby>まりました。」",
+            "choices": [
+              "で",
+              "に",
+              "を",
+              "と"
+            ],
+            "a": 0,
+            "ex": "Noun + で marks a cause: 'because of the typhoon'.",
+            "why": [
+              null,
+              "に doesn't mark a cause here.",
+              "を would make the typhoon the object.",
+              "と would mean 'together with the typhoon'."
+            ]
+          },
+          {
+            "q": "「りんごとみかんを<ruby>買<rt>か</rt></ruby>って、<ruby>全部<rt>ぜんぶ</rt></ruby>＿＿<ruby>五百円<rt>ごひゃくえん</rt></ruby>でした。」",
+            "choices": [
+              "に",
+              "で",
+              "を",
+              "が"
+            ],
+            "a": 1,
+            "ex": "<ruby>全部<rt>ぜんぶ</rt></ruby>で = 'in total'. で marks the total.",
+            "why": [
+              "に doesn't mark a total.",
+              null,
+              "を doesn't fit here.",
+              "が would make <ruby>全部<rt>ぜんぶ</rt></ruby> the subject, 'everything was 500 yen', which isn't the set phrase."
+            ]
+          }
+        ]
+      }
+    ],
+    "check": [
+      {
+        "q": "「<ruby>机<rt>つくえ</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>＿＿<ruby>辞書<rt>じしょ</rt></ruby>があります。」",
+        "choices": [
+          "に",
+          "で",
+          "を",
+          "へ"
+        ],
+        "a": 0,
+        "ex": "Something existing somewhere: に + ある."
+      },
+      {
+        "q": "「この<ruby>角<rt>かど</rt></ruby>＿＿<ruby>右<rt>みぎ</rt></ruby>に<ruby>曲<rt>ま</rt></ruby>がってください。」",
+        "choices": [
+          "を",
+          "で",
+          "に",
+          "へ"
+        ],
+        "a": 0,
+        "ex": "The corner is the point you move around, so を. (<ruby>右<rt>みぎ</rt></ruby>に is the direction.)"
+      },
+      {
+        "q": "「<ruby>友達<rt>ともだち</rt></ruby>＿＿お<ruby>土産<rt>みやげ</rt></ruby>を<ruby>買<rt>か</rt></ruby>いました。」 (a souvenir for a friend)",
+        "choices": [
+          "への",
+          "にの",
+          "での",
+          "との"
+        ],
+        "a": 0,
+        "ex": "Only へ can take の before a noun: <ruby>友達<rt>ともだち</rt></ruby>へのお<ruby>土産<rt>みやげ</rt></ruby>."
+      },
+      {
+        "q": "「バス＿＿<ruby>降<rt>お</rt></ruby>りて、<ruby>少<rt>すこ</rt></ruby>し<ruby>歩<rt>ある</rt></ruby>きます。」",
+        "choices": [
+          "を",
+          "に",
+          "で",
+          "へ"
+        ],
+        "a": 0,
+        "ex": "<ruby>降<rt>お</rt></ruby>りる takes を: バスを<ruby>降<rt>お</rt></ruby>りる. (バスに<ruby>乗<rt>の</rt></ruby>る is the opposite.)"
+      },
+      {
+        "q": "「<ruby>私<rt>わたし</rt></ruby>は<ruby>料理<rt>りょうり</rt></ruby>＿＿できません。」",
+        "choices": [
+          "を",
+          "が",
+          "で",
+          "に"
+        ],
+        "a": 1,
+        "ex": "できる takes が for the skill. (は is also possible for contrast, but を never is.)"
+      },
+      {
+        "q": "「<ruby>雨<rt>あめ</rt></ruby>＿＿、<ruby>試合<rt>しあい</rt></ruby>は<ruby>中止<rt>ちゅうし</rt></ruby>になりました。」",
+        "choices": [
+          "で",
+          "を",
+          "に",
+          "へ"
+        ],
+        "a": 0,
+        "ex": "Noun + で marks a cause: because of the rain."
+      },
+      {
+        "q": "「<ruby>全部<rt>ぜんぶ</rt></ruby>＿＿<ruby>三千円<rt>さんぜんえん</rt></ruby>です。」",
+        "choices": [
+          "で",
+          "に",
+          "を",
+          "が"
+        ],
+        "a": 0,
+        "ex": "<ruby>全部<rt>ぜんぶ</rt></ruby>で = 'all together / in total'."
+      },
+      {
+        "q": "「<ruby>明日<rt>あした</rt></ruby>は<ruby>日曜日<rt>にちようび</rt></ruby>＿＿、<ruby>店<rt>みせ</rt></ruby>は<ruby>休<rt>やす</rt></ruby>みです。」",
+        "choices": [
+          "なので",
+          "ので",
+          "だので",
+          "なから"
+        ],
+        "a": 0,
+        "ex": "Noun + ので needs な: <ruby>日曜日<rt>にちようび</rt></ruby>なので. (Or <ruby>日曜日<rt>にちようび</rt></ruby>だから.)"
+      },
+      {
+        "q": "「この<ruby>大学<rt>だいがく</rt></ruby>＿＿<ruby>卒業<rt>そつぎょう</rt></ruby>したのは、<ruby>二十年<rt>にじゅうねん</rt></ruby><ruby>前<rt>まえ</rt></ruby>です。」",
+        "choices": [
+          "を",
+          "で",
+          "に",
+          "へ"
+        ],
+        "a": 0,
+        "ex": "<ruby>卒業<rt>そつぎょう</rt></ruby>する marks the place you leave with を."
+      },
+      {
+        "q": "「ここ＿＿<ruby>座<rt>すわ</rt></ruby>ってもいいですか。」",
+        "choices": [
+          "に",
+          "を",
+          "へ",
+          "と"
+        ],
+        "a": 0,
+        "ex": "<ruby>座<rt>すわ</rt></ruby>る marks where you end up with に."
+      },
+      {
+        "q": "「パーティーは<ruby>土曜日<rt>どようび</rt></ruby>に<ruby>私<rt>わたし</rt></ruby>の<ruby>家<rt>いえ</rt></ruby>＿＿あります。」",
+        "choices": [
+          "で",
+          "に",
+          "を",
+          "へ"
+        ],
+        "a": 0,
+        "ex": "A party is an event that takes place somewhere, so で + ある."
+      },
+      {
+        "q": "「<ruby>日本語<rt>にほんご</rt></ruby>＿＿<ruby>手紙<rt>てがみ</rt></ruby>を<ruby>書<rt>か</rt></ruby>きました。」",
+        "choices": [
+          "で",
+          "に",
+          "を",
+          "が"
+        ],
+        "a": 0,
+        "ex": "で marks the means or language: in Japanese."
+      },
+      {
+        "q": "「ワインはぶどう＿＿<ruby>作<rt>つく</rt></ruby>られます。」",
+        "choices": [
+          "から",
+          "で",
+          "に",
+          "を"
+        ],
+        "a": 0,
+        "ex": "The grapes are transformed and invisible in the wine, so から."
+      },
+      {
+        "q": "「<ruby>昨日<rt>きのう</rt></ruby>、<ruby>駅<rt>えき</rt></ruby>で<ruby>偶然<rt>ぐうぜん</rt></ruby><ruby>先生<rt>せんせい</rt></ruby>＿＿<ruby>会<rt>あ</rt></ruby>いました。」",
+        "choices": [
+          "に",
+          "を",
+          "で",
+          "へ"
+        ],
+        "a": 0,
+        "ex": "Running into someone by chance is one-directional: <ruby>先生<rt>せんせい</rt></ruby>に<ruby>会<rt>あ</rt></ruby>う. (と would suggest a planned meet-up.)"
+      }
+    ]
+  }
+]

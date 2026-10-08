@@ -5,9 +5,9 @@
       {
         "q": "「<ruby>駅<rt>えき</rt></ruby>に＿＿、<ruby>電話<rt>でんわ</rt></ruby>してください。」",
         "choices": [
-          "<ruby>着<rt>き</rt></ruby>くし",
-          "<ruby>着<rt>き</rt></ruby>くのに",
-          "<ruby>着<rt>き</rt></ruby>くと",
+          "<ruby>着<rt>つ</rt></ruby>くし",
+          "<ruby>着<rt>つ</rt></ruby>くのに",
+          "<ruby>着<rt>つ</rt></ruby>くと",
           "着いたら"
         ],
         "a": 3,
@@ -907,6 +907,121 @@
         ],
         "a": 2,
         "ex": "〜ていただけませんか is the politest of the four — humble receiving plus a negative question. Use it with strangers and at work."
+      }
+    ]
+  },
+  {
+    "title": "紛らわしい文法・助詞 — Look-alikes & particles",
+    "items": [
+      {
+        "q": "「この<ruby>料理<rt>りょうり</rt></ruby>、からそうですね。」 What does からそう mean here?",
+        "choices": [
+          "'I heard it's spicy'",
+          "'It looks spicy'",
+          "'It's definitely spicy'",
+          "'It was spicy'"
+        ],
+        "a": 1,
+        "ex": "The adjective stem (から) + そう is appearance, 'looks spicy'. Hearsay would be からいそう."
+      },
+      {
+        "q": "「<ruby>彼女<rt>かのじょ</rt></ruby>は<ruby>来月<rt>らいげつ</rt></ruby>アメリカに<ruby>留学<rt>りゅうがく</rt></ruby>する＿＿。<ruby>本人<rt>ほんにん</rt></ruby>から<ruby>聞<rt>き</rt></ruby>きました。」",
+        "choices": [
+          "そうです",
+          "ようです",
+          "っぽいです",
+          "はずがありません"
+        ],
+        "a": 0,
+        "ex": "She told you herself, so you're passing on information: hearsay そうです."
+      },
+      {
+        "q": "「<ruby>公園<rt>こうえん</rt></ruby>＿＿<ruby>散歩<rt>さんぽ</rt></ruby>するのが<ruby>好<rt>す</rt></ruby>きです。」",
+        "choices": [
+          "を",
+          "に",
+          "へ",
+          "が"
+        ],
+        "a": 0,
+        "ex": "<ruby>散歩<rt>さんぽ</rt></ruby>する marks the route you walk through with を."
+      },
+      {
+        "q": "「アメリカへ＿＿、<ruby>英語<rt>えいご</rt></ruby>を<ruby>勉強<rt>べんきょう</rt></ruby>しておいたほうがいいですよ。」",
+        "choices": [
+          "<ruby>留学<rt>りゅうがく</rt></ruby>するなら",
+          "<ruby>留学<rt>りゅうがく</rt></ruby>したら",
+          "<ruby>留学<rt>りゅうがく</rt></ruby>すると",
+          "<ruby>留学<rt>りゅうがく</rt></ruby>すれば"
+        ],
+        "a": 0,
+        "ex": "Studying English happens before going, so なら. したら would mean 'once you're there, study beforehand', which contradicts itself."
+      },
+      {
+        "q": "「<ruby>宿題<rt>しゅくだい</rt></ruby>が＿＿、テレビを<ruby>見<rt>み</rt></ruby>てもいいよ。」",
+        "choices": [
+          "<ruby>終<rt>お</rt></ruby>わったら",
+          "<ruby>終<rt>お</rt></ruby>わるなら",
+          "<ruby>終<rt>お</rt></ruby>わるのに",
+          "<ruby>終<rt>お</rt></ruby>わるし"
+        ],
+        "a": 0,
+        "ex": "Homework finishes first, then TV, so たら."
+      },
+      {
+        "q": "「<ruby>彼<rt>かれ</rt></ruby>はよく<ruby>約束<rt>やくそく</rt></ruby>を<ruby>忘<rt>わす</rt></ruby>れる。<ruby>本当<rt>ほんとう</rt></ruby>に＿＿<ruby>人<rt>ひと</rt></ruby>だ。」",
+        "choices": [
+          "<ruby>忘<rt>わす</rt></ruby>れっぽい",
+          "<ruby>忘<rt>わす</rt></ruby>れそうな",
+          "<ruby>忘<rt>わす</rt></ruby>れるそうな",
+          "<ruby>忘<rt>わす</rt></ruby>れらしい"
+        ],
+        "a": 0,
+        "ex": "Verb stem + っぽい = 'tends to': <ruby>忘<rt>わす</rt></ruby>れっぽい (forgetful)."
+      },
+      {
+        "q": "「<ruby>毎朝<rt>まいあさ</rt></ruby>、<ruby>八時<rt>はちじ</rt></ruby>に<ruby>家<rt>いえ</rt></ruby>＿＿<ruby>出<rt>で</rt></ruby>ます。」",
+        "choices": [
+          "を",
+          "で",
+          "に",
+          "へ"
+        ],
+        "a": 0,
+        "ex": "The place you leave takes を: <ruby>家<rt>いえ</rt></ruby>を<ruby>出<rt>で</rt></ruby>る."
+      },
+      {
+        "q": "「<ruby>姉<rt>あね</rt></ruby>は<ruby>銀行<rt>ぎんこう</rt></ruby>＿＿<ruby>働<rt>はたら</rt></ruby>いています。」",
+        "choices": [
+          "で",
+          "に",
+          "を",
+          "へ"
+        ],
+        "a": 0,
+        "ex": "Working is an action, so the place takes で."
+      },
+      {
+        "q": "「<ruby>熱<rt>ねつ</rt></ruby>がある＿＿、<ruby>今日<rt>きょう</rt></ruby>は<ruby>休<rt>やす</rt></ruby>ませていただけませんか。」",
+        "choices": [
+          "ので",
+          "のに",
+          "なら",
+          "ても"
+        ],
+        "a": 0,
+        "ex": "A polite request with a reason: ので."
+      },
+      {
+        "q": "「<ruby>窓<rt>まど</rt></ruby>から<ruby>外<rt>そと</rt></ruby>を＿＿、<ruby>雪<rt>ゆき</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>っていた。」",
+        "choices": [
+          "<ruby>見<rt>み</rt></ruby>たら",
+          "<ruby>見<rt>み</rt></ruby>れば",
+          "<ruby>見<rt>み</rt></ruby>るなら",
+          "<ruby>見<rt>み</rt></ruby>ても"
+        ],
+        "a": 0,
+        "ex": "Past discovery ('when I looked, I found…') takes たら."
       }
     ]
   }

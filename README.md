@@ -38,8 +38,8 @@ weak points.
 
 **Stack:** Claude Pro, Monster Energy, React19.
 
-**Contents:** 11 modules / 63 grammar points, 183 kanji, 6 reading passages,
-34 conversation scenarios, 142 phrases, ~480 quiz questions.
+**Contents:** 13 modules / 76 grammar points, 183 kanji, 6 reading passages,
+34 conversation scenarios, 142 phrases, ~575 quiz questions.
 
 ## Run it
 

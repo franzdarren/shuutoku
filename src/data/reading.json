@@ -3,7 +3,7 @@
     "title": "<ruby>日記<rt>にっき</rt></ruby> — <ruby>週末<rt>しゅうまつ</rt></ruby>の<ruby>旅行<rt>りょこう</rt></ruby>",
     "titleEn": "Diary — a weekend trip",
     "text": "<ruby>土曜日<rt>どようび</rt></ruby>に<ruby>友達<rt>ともだち</rt></ruby>と<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>京都<rt>きょうと</rt></ruby>に<ruby>旅行<rt>りょこう</rt></ruby>に<ruby>行<rt>い</rt></ruby>った。<ruby>朝<rt>あさ</rt></ruby><ruby>早<rt>はや</rt></ruby>く<ruby>起<rt>お</rt></ruby>きて、<ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>った。<ruby>京都<rt>きょうと</rt></ruby><ruby>駅<rt>えき</rt></ruby>に<ruby>着<rt>つ</rt></ruby>いたら、すごく<ruby>人<rt>ひと</rt></ruby>が<ruby>多<rt>おお</rt></ruby>かった。まず<ruby>清水寺<rt>きよみずでら</rt></ruby>に<ruby>行<rt>い</rt></ruby>くことにした。<ruby>坂<rt>さか</rt></ruby>を<ruby>歩<rt>ある</rt></ruby>いていたら、<ruby>小<rt>ちい</rt></ruby>さいお<ruby>店<rt>みせ</rt></ruby>がたくさんあって、お<ruby>土産<rt>みやげ</rt></ruby>を<ruby>買<rt>か</rt></ruby>った。\n\nお<ruby>昼<rt>ひる</rt></ruby>はうどんを<ruby>食<rt>た</rt></ruby>べた。とてもおいしかったので、また<ruby>来<rt>き</rt></ruby>たいと<ruby>思<rt>おも</rt></ruby>う。<ruby>午後<rt>ごご</rt></ruby>は<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>りそうだったので、<ruby>早<rt>はや</rt></ruby>めにホテルに<ruby>戻<rt>もど</rt></ruby>った。<ruby>友達<rt>ともだち</rt></ruby>は「<ruby>今度<rt>こんど</rt></ruby>は<ruby>紅葉<rt>こうよう</rt></ruby>の<ruby>季節<rt>きせつ</rt></ruby>に<ruby>行<rt>い</rt></ruby>ってみたい」と<ruby>言<rt>い</rt></ruby>っていた。わたしも<ruby>本当<rt>ほんとう</rt></ruby>にそう<ruby>思<rt>おも</rt></ruby>う。",
-    "gloss": "<ruby>旅行<rt>りょこう</rt></ruby> (りょこう) trip ・ <ruby>着<rt>き</rt></ruby>く (つく) to arrive ・ <ruby>清水寺<rt>きよみずでら</rt></ruby> (きよみずでら) Kiyomizu Temple ・ 坂 (さか) slope ・ お<ruby>土産<rt>みやげ</rt></ruby> (おみやげ) souvenir ・ <ruby>早<rt>はや</rt></ruby>めに (はやめに) ahead of time, early ・ 戻る (もどる) to return ・ <ruby>紅葉<rt>こうよう</rt></ruby> (こうよう) autumn leaves ・ <ruby>季節<rt>きせつ</rt></ruby> (きせつ) season",
+    "gloss": "<ruby>旅行<rt>りょこう</rt></ruby> (りょこう) trip ・ <ruby>着<rt>つ</rt></ruby>く (つく) to arrive ・ <ruby>清水寺<rt>きよみずでら</rt></ruby> (きよみずでら) Kiyomizu Temple ・ 坂 (さか) slope ・ お<ruby>土産<rt>みやげ</rt></ruby> (おみやげ) souvenir ・ <ruby>早<rt>はや</rt></ruby>めに (はやめに) ahead of time, early ・ 戻る (もどる) to return ・ <ruby>紅葉<rt>こうよう</rt></ruby> (こうよう) autumn leaves ・ <ruby>季節<rt>きせつ</rt></ruby> (きせつ) season",
     "quiz": [
       {
         "q": "なぜ<ruby>早<rt>はや</rt></ruby>めにホテルに<ruby>戻<rt>もど</rt></ruby>りましたか。",
@@ -46,7 +46,7 @@
         "en": "trip"
       },
       {
-        "jp": "<ruby>着<rt>き</rt></ruby>く",
+        "jp": "<ruby>着<rt>つ</rt></ruby>く",
         "reading": "つく",
         "en": "to arrive"
       },

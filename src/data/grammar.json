@@ -1923,7 +1923,7 @@
             "q": "Which sentence is grammatically WRONG because と can't express an invitation?",
             "choices": [
               "冬になると<ruby>寒<rt>さむ</rt></ruby>くなります",
-              "<ruby>駅<rt>えき</rt></ruby>に<ruby>着<rt>き</rt></ruby>くと<ruby>電話<rt>でんわ</rt></ruby>してください",
+              "<ruby>駅<rt>えき</rt></ruby>に<ruby>着<rt>つ</rt></ruby>くと<ruby>電話<rt>でんわ</rt></ruby>してください",
               "このボタンを<ruby>押<rt>お</rt></ruby>すと<ruby>音<rt>おと</rt></ruby>が<ruby>出<rt>で</rt></ruby>ます",
               "<ruby>春<rt>はる</rt></ruby>になると<ruby>暖<rt>あたた</rt></ruby>かくなります"
             ],
@@ -2420,10 +2420,10 @@
       {
         "q": "「<ruby>駅<rt>えき</rt></ruby>に＿＿、<ruby>電話<rt>でんわ</rt></ruby>をください。」 (a request after arriving)",
         "choices": [
-          "<ruby>着<rt>き</rt></ruby>いたら",
-          "<ruby>着<rt>き</rt></ruby>けば",
-          "<ruby>着<rt>き</rt></ruby>くなら",
-          "<ruby>着<rt>き</rt></ruby>くと"
+          "<ruby>着<rt>つ</rt></ruby>いたら",
+          "<ruby>着<rt>つ</rt></ruby>けば",
+          "<ruby>着<rt>つ</rt></ruby>くなら",
+          "<ruby>着<rt>つ</rt></ruby>くと"
         ],
         "a": 0,
         "ex": "と cannot be followed by a request. たら is the form that leads into 〜てください."

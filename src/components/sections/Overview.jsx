@@ -40,7 +40,7 @@ export default function Overview({ onNavigate }) {
 
       <div className="ovgrid">
         <OverviewCard mk="文法" title="Grammar Deep-Dive" size="lg" go={go("grammar")}>
-          {countGrammarPoints()} grammar points across {grammarModules.length} modules — the four conditionals, passive/causative, giving &amp; receiving, hearsay &amp; appearance, and a round of extra N4 essentials. Grouped into tabs so you can work through one module at a time instead of one long scroll.
+          {countGrammarPoints()} grammar points across {grammarModules.length} modules — the four conditionals, passive/causative, giving &amp; receiving, hearsay &amp; appearance, a round of extra N4 essentials, and side-by-side breakdowns of the look-alikes and particles that trip people up. Grouped into tabs so you can work through one module at a time instead of one long scroll.
         </OverviewCard>
         <OverviewCard mk="漢字" title="Kanji Focus" size="sm" go={go("kanji")}>
           All {kanjiFocus.length} N4 characters — both readings, core meaning, a common compound, plus a {kanjiQuiz.length}-question reading check.
