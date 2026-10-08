@@ -4,7 +4,30 @@ import {
   FORMS, FORM_BY_ID, conjugate, explain, formApplies, isVerb, isGroupTrap, classLabel, rubyFor,
 } from "../../lib/conjugate.js";
 import { romajiToKana, toHiragana } from "../../lib/kana.js";
+import { sceneFor, fillScene } from "../../lib/dojo-scenes.js";
 import JpText from "../JpText.jsx";
+import SpeakButton from "../SpeakButton.jsx";
+
+/** The example sentence under the prompt. The blank stays an empty slot
+ *  while you answer (the sentence is context, not a hint), then fills with
+ *  the correct form so the line can be read, and heard, whole. */
+function Scene({ lines, answerHtml }) {
+  const filled = fillScene(lines, answerHtml ? `<span class="dojo-fill">${answerHtml}</span>` : `<span class="dojo-blank" aria-label="blank"></span>`);
+  // speech.js gives speaker "B" the second voice; the second named speaker
+  // in a scene gets it, so a two-person exchange sounds like two people.
+  const speakers = [...new Set(lines.map((l) => l.who).filter(Boolean))];
+  return (
+    <div className="dojo-scene">
+      {filled.map((l, i) => (
+        <div key={i} className="dojo-line">
+          {l.who && <span className="dojo-who">{l.who}</span>}
+          <JpText tag="span" className="dojo-say" html={l.html} />
+          {answerHtml && <SpeakButton html={l.html} who={speakers.indexOf(l.who) === 1 ? "B" : "A"} />}
+        </div>
+      ))}
+    </div>
+  );
+}
 
 const SETTINGS_KEY = "n4.dojoSettings";
 const STATS_KEY = "n4.dojoStats";
@@ -180,6 +203,7 @@ export default function ConjugationDojo({ isActive }) {
 
   const form = card && FORM_BY_ID[card.form];
   const answer = card && conjugate(card.word, card.form);
+  const scene = card && sceneFor(card.word, card.form);
   const activeForms = FORMS.filter((f) => settings.forms.includes(f.id));
 
   return (
@@ -189,7 +213,7 @@ export default function ConjugationDojo({ isActive }) {
         <h1>Conjugation Dojo</h1>
       </div>
       <p className="section-note">
-        N4 doesn't ask you to conjugate in a vacuum, but almost every grammar question assumes you can produce 書かされる or 静かじゃなかった without stopping to think. Type the form in romaji or kana (it converts as you type) and press Enter. Every answer comes with the rule behind it. The forms you miss come up more often.
+        N4 doesn't ask you to conjugate in a vacuum, but almost every grammar question assumes you can produce 書かされる or 静かじゃなかった without stopping to think. Type the form in romaji or kana (it converts as you type) and press Enter. Most questions come with a short scene showing where the form goes in a real sentence; once you answer, the blank fills in and you can listen to it. Every answer comes with the rule behind it, and the forms you miss come up more often.
       </p>
 
       <div className="dojo-grid">
@@ -217,6 +241,8 @@ export default function ConjugationDojo({ isActive }) {
                   {result ? classLabel(card.word) : isVerb(card.word) ? "Verb · which group?" : "Adjective · い or な?"}
                 </div>
               </div>
+
+              {scene && <Scene lines={scene} answerHtml={result ? rubyFor(answer.kj[0], answer.kana[0]) : null} />}
 
               <form className="dojo-answer" onSubmit={onSubmit}>
                 <input

@@ -1656,6 +1656,25 @@ footer.pagefoot{ margin-top:60px; padding-top:20px; border-top:1px solid var(--l
 .dojo-word rt{ font-size:.3em; color:var(--ink-faint); }
 .dojo-en{ font-size:var(--fs-sm); color:var(--ink-soft); }
 .dojo-class{ font-size:var(--fs-2xs); color:var(--ink-faint); margin-top:8px; letter-spacing:.04em; }
+/* The example scene: a quiet sheet under the prompt, so it reads as
+   context for the word rather than competing with it. */
+.dojo-scene{
+  background:var(--sheet); border:1px solid var(--sheet-line); border-radius:var(--radius-sm);
+  padding:12px 14px; margin:0 0 16px; display:grid; gap:6px;
+}
+.dojo-line{ display:flex; align-items:baseline; gap:10px; min-width:0; }
+.dojo-who{
+  flex:0 0 auto; font-size:var(--fs-2xs); color:var(--ink-faint); letter-spacing:.04em;
+  min-width:2.6em;
+}
+.dojo-say{ font-family:var(--serif); font-size:var(--fs-lg); color:var(--ink); line-height:1.9; min-width:0; }
+.dojo-say rt{ font-size:.5em; color:var(--ink-faint); }
+.dojo-blank{
+  display:inline-block; min-width:3.2em; height:1.1em; margin:0 .15em;
+  border-bottom:2px solid var(--shu); vertical-align:-.15em;
+}
+.dojo-fill{ color:var(--shu); font-weight:700; background:var(--shu-tint); border-radius:3px; padding:0 .15em; }
+.dojo-line .speak-btn{ margin-left:auto; flex-shrink:0; }
 .dojo-answer{ display:flex; gap:8px; }
 .dojo-input{
   flex:1; min-width:0; font-family:var(--sans); font-size:var(--fs-xl);

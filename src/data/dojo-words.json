@@ -1,110 +1,1399 @@
 [
-  { "kj": "書く", "kana": "かく", "en": "to write", "type": "v1" },
-  { "kj": "聞く", "kana": "きく", "en": "to listen / to ask", "type": "v1" },
-  { "kj": "歩く", "kana": "あるく", "en": "to walk", "type": "v1" },
-  { "kj": "働く", "kana": "はたらく", "en": "to work", "type": "v1" },
-  { "kj": "行く", "kana": "いく", "en": "to go", "type": "v1", "special": "iku" },
-  { "kj": "急ぐ", "kana": "いそぐ", "en": "to hurry", "type": "v1" },
-  { "kj": "泳ぐ", "kana": "およぐ", "en": "to swim", "type": "v1" },
-  { "kj": "脱ぐ", "kana": "ぬぐ", "en": "to take off (clothes)", "type": "v1" },
-  { "kj": "話す", "kana": "はなす", "en": "to speak", "type": "v1" },
-  { "kj": "貸す", "kana": "かす", "en": "to lend", "type": "v1" },
-  { "kj": "返す", "kana": "かえす", "en": "to give back", "type": "v1" },
-  { "kj": "押す", "kana": "おす", "en": "to push", "type": "v1" },
-  { "kj": "待つ", "kana": "まつ", "en": "to wait", "type": "v1" },
-  { "kj": "持つ", "kana": "もつ", "en": "to hold / to have", "type": "v1" },
-  { "kj": "立つ", "kana": "たつ", "en": "to stand", "type": "v1" },
-  { "kj": "死ぬ", "kana": "しぬ", "en": "to die", "type": "v1" },
-  { "kj": "遊ぶ", "kana": "あそぶ", "en": "to play / to hang out", "type": "v1" },
-  { "kj": "呼ぶ", "kana": "よぶ", "en": "to call (someone over)", "type": "v1" },
-  { "kj": "運ぶ", "kana": "はこぶ", "en": "to carry", "type": "v1" },
-  { "kj": "選ぶ", "kana": "えらぶ", "en": "to choose", "type": "v1" },
-  { "kj": "読む", "kana": "よむ", "en": "to read", "type": "v1" },
-  { "kj": "飲む", "kana": "のむ", "en": "to drink", "type": "v1" },
-  { "kj": "休む", "kana": "やすむ", "en": "to rest / to take a day off", "type": "v1" },
-  { "kj": "住む", "kana": "すむ", "en": "to live (somewhere)", "type": "v1" },
-  { "kj": "頼む", "kana": "たのむ", "en": "to ask (a favour) / to order", "type": "v1" },
-  { "kj": "買う", "kana": "かう", "en": "to buy", "type": "v1" },
-  { "kj": "会う", "kana": "あう", "en": "to meet", "type": "v1" },
-  { "kj": "使う", "kana": "つかう", "en": "to use", "type": "v1" },
-  { "kj": "洗う", "kana": "あらう", "en": "to wash", "type": "v1" },
-  { "kj": "習う", "kana": "ならう", "en": "to learn (from someone)", "type": "v1" },
-  { "kj": "払う", "kana": "はらう", "en": "to pay", "type": "v1" },
-  { "kj": "手伝う", "kana": "てつだう", "en": "to help", "type": "v1" },
-  { "kj": "歌う", "kana": "うたう", "en": "to sing", "type": "v1" },
-  { "kj": "言う", "kana": "いう", "en": "to say", "type": "v1" },
-  { "kj": "思う", "kana": "おもう", "en": "to think", "type": "v1" },
-  { "kj": "帰る", "kana": "かえる", "en": "to go home", "type": "v1" },
-  { "kj": "入る", "kana": "はいる", "en": "to enter", "type": "v1" },
-  { "kj": "走る", "kana": "はしる", "en": "to run", "type": "v1" },
-  { "kj": "切る", "kana": "きる", "en": "to cut", "type": "v1" },
-  { "kj": "知る", "kana": "しる", "en": "to get to know", "type": "v1" },
-  { "kj": "作る", "kana": "つくる", "en": "to make", "type": "v1" },
-  { "kj": "乗る", "kana": "のる", "en": "to ride / to get on", "type": "v1" },
-  { "kj": "送る", "kana": "おくる", "en": "to send", "type": "v1" },
-  { "kj": "座る", "kana": "すわる", "en": "to sit", "type": "v1" },
-  { "kj": "取る", "kana": "とる", "en": "to take", "type": "v1" },
-  { "kj": "終わる", "kana": "おわる", "en": "to end", "type": "v1" },
-  { "kj": "止まる", "kana": "とまる", "en": "to stop (by itself)", "type": "v1" },
-  { "kj": "怒る", "kana": "おこる", "en": "to get angry / to scold", "type": "v1" },
-  { "kj": "笑う", "kana": "わらう", "en": "to laugh", "type": "v1" },
-  { "kj": "食べる", "kana": "たべる", "en": "to eat", "type": "v2" },
-  { "kj": "見る", "kana": "みる", "en": "to see / to watch", "type": "v2" },
-  { "kj": "寝る", "kana": "ねる", "en": "to sleep / to go to bed", "type": "v2" },
-  { "kj": "起きる", "kana": "おきる", "en": "to get up", "type": "v2" },
-  { "kj": "教える", "kana": "おしえる", "en": "to teach / to tell", "type": "v2" },
-  { "kj": "開ける", "kana": "あける", "en": "to open (something)", "type": "v2" },
-  { "kj": "閉める", "kana": "しめる", "en": "to close (something)", "type": "v2" },
-  { "kj": "着る", "kana": "きる", "en": "to wear (on the body)", "type": "v2" },
-  { "kj": "借りる", "kana": "かりる", "en": "to borrow", "type": "v2" },
-  { "kj": "浴びる", "kana": "あびる", "en": "to take (a shower)", "type": "v2" },
-  { "kj": "忘れる", "kana": "わすれる", "en": "to forget", "type": "v2" },
-  { "kj": "覚える", "kana": "おぼえる", "en": "to memorise", "type": "v2" },
-  { "kj": "調べる", "kana": "しらべる", "en": "to look up / to investigate", "type": "v2" },
-  { "kj": "答える", "kana": "こたえる", "en": "to answer", "type": "v2" },
-  { "kj": "捨てる", "kana": "すてる", "en": "to throw away", "type": "v2" },
-  { "kj": "出る", "kana": "でる", "en": "to leave / to come out", "type": "v2" },
-  { "kj": "決める", "kana": "きめる", "en": "to decide", "type": "v2" },
-  { "kj": "続ける", "kana": "つづける", "en": "to continue (something)", "type": "v2" },
-  { "kj": "降りる", "kana": "おりる", "en": "to get off", "type": "v2" },
-  { "kj": "考える", "kana": "かんがえる", "en": "to think about", "type": "v2" },
-  { "kj": "褒める", "kana": "ほめる", "en": "to praise", "type": "v2" },
-  { "kj": "する", "kana": "する", "en": "to do", "type": "vs" },
-  { "kj": "勉強する", "kana": "べんきょうする", "en": "to study", "type": "vs" },
-  { "kj": "運転する", "kana": "うんてんする", "en": "to drive", "type": "vs" },
-  { "kj": "説明する", "kana": "せつめいする", "en": "to explain", "type": "vs" },
-  { "kj": "掃除する", "kana": "そうじする", "en": "to clean", "type": "vs" },
-  { "kj": "来る", "kana": "くる", "en": "to come", "type": "vk" },
-  { "kj": "高い", "kana": "たかい", "en": "expensive / tall", "type": "i" },
-  { "kj": "安い", "kana": "やすい", "en": "cheap", "type": "i" },
-  { "kj": "大きい", "kana": "おおきい", "en": "big", "type": "i" },
-  { "kj": "小さい", "kana": "ちいさい", "en": "small", "type": "i" },
-  { "kj": "新しい", "kana": "あたらしい", "en": "new", "type": "i" },
-  { "kj": "古い", "kana": "ふるい", "en": "old (things)", "type": "i" },
-  { "kj": "暑い", "kana": "あつい", "en": "hot (weather)", "type": "i" },
-  { "kj": "寒い", "kana": "さむい", "en": "cold (weather)", "type": "i" },
-  { "kj": "忙しい", "kana": "いそがしい", "en": "busy", "type": "i" },
-  { "kj": "楽しい", "kana": "たのしい", "en": "fun", "type": "i" },
-  { "kj": "難しい", "kana": "むずかしい", "en": "difficult", "type": "i" },
-  { "kj": "優しい", "kana": "やさしい", "en": "kind / gentle", "type": "i" },
-  { "kj": "痛い", "kana": "いたい", "en": "painful", "type": "i" },
-  { "kj": "早い", "kana": "はやい", "en": "early", "type": "i" },
-  { "kj": "遠い", "kana": "とおい", "en": "far", "type": "i" },
-  { "kj": "強い", "kana": "つよい", "en": "strong", "type": "i" },
-  { "kj": "眠い", "kana": "ねむい", "en": "sleepy", "type": "i" },
-  { "kj": "いい", "kana": "いい", "en": "good", "type": "i", "special": "ii" },
-  { "kj": "静か", "kana": "しずか", "en": "quiet", "type": "na" },
-  { "kj": "元気", "kana": "げんき", "en": "healthy / energetic", "type": "na" },
-  { "kj": "便利", "kana": "べんり", "en": "convenient", "type": "na" },
-  { "kj": "有名", "kana": "ゆうめい", "en": "famous", "type": "na" },
-  { "kj": "簡単", "kana": "かんたん", "en": "easy / simple", "type": "na" },
-  { "kj": "大切", "kana": "たいせつ", "en": "important / precious", "type": "na" },
-  { "kj": "親切", "kana": "しんせつ", "en": "kind (to others)", "type": "na" },
-  { "kj": "好き", "kana": "すき", "en": "liked", "type": "na" },
-  { "kj": "嫌い", "kana": "きらい", "en": "disliked", "type": "na" },
-  { "kj": "上手", "kana": "じょうず", "en": "skilled", "type": "na" },
-  { "kj": "暇", "kana": "ひま", "en": "free (not busy)", "type": "na" },
-  { "kj": "丁寧", "kana": "ていねい", "en": "polite / careful", "type": "na" },
-  { "kj": "きれい", "kana": "きれい", "en": "pretty / clean", "type": "na" },
-  { "kj": "大丈夫", "kana": "だいじょうぶ", "en": "all right", "type": "na" }
+  {
+    "kj": "書く",
+    "kana": "かく",
+    "en": "to write",
+    "type": "v1",
+    "o": "[手紙|てがみ]を",
+    "ok": [
+      "causative",
+      "causPassive",
+      "imperative",
+      "prohibitive"
+    ]
+  },
+  {
+    "kj": "聞く",
+    "kana": "きく",
+    "en": "to listen / to ask",
+    "type": "v1",
+    "o": "[音楽|おんがく]を",
+    "ok": [
+      "causative",
+      "prohibitive"
+    ]
+  },
+  {
+    "kj": "歩く",
+    "kana": "あるく",
+    "en": "to walk",
+    "type": "v1",
+    "o": "[駅|えき]まで",
+    "ok": [
+      "causative",
+      "causPassive",
+      "imperative"
+    ]
+  },
+  {
+    "kj": "働く",
+    "kana": "はたらく",
+    "en": "to work",
+    "type": "v1",
+    "o": "[駅前|えきまえ]の[店|みせ]で"
+  },
+  {
+    "kj": "行く",
+    "kana": "いく",
+    "en": "to go",
+    "type": "v1",
+    "special": "iku",
+    "o": "[京都|きょうと]へ",
+    "ok": [
+      "causative",
+      "causPassive",
+      "imperative",
+      "prohibitive"
+    ]
+  },
+  {
+    "kj": "泳ぐ",
+    "kana": "およぐ",
+    "en": "to swim",
+    "type": "v1",
+    "o": "[海|うみ]で",
+    "ok": [
+      "causative",
+      "causPassive",
+      "prohibitive"
+    ]
+  },
+  {
+    "kj": "脱ぐ",
+    "kana": "ぬぐ",
+    "en": "to take off (clothes)",
+    "type": "v1",
+    "o": "[靴|くつ]を",
+    "ok": [
+      "causative",
+      "imperative"
+    ],
+    "s": {
+      "masu": "[家|いえ]に[入|はい]る[前|まえ]に、[靴|くつ]を＿＿。",
+      "masen": "この[店|みせ]では、[靴|くつ]を＿＿。",
+      "mashita": "[暑|あつ]かったので、[上着|うわぎ]を＿＿。",
+      "ta": [
+        [
+          "田中",
+          "[靴|くつ]を＿＿ほうがいいですよ。"
+        ]
+      ],
+      "nai": "[靴|くつ]を＿＿[人|ひと]は、ここで[待|ま]ってください。",
+      "nakatta": "[靴|くつ]を＿＿ので、[怒|おこ]られました。",
+      "potential": [
+        [
+          "田中",
+          "このブーツ、[一人|ひとり]で＿＿？"
+        ],
+        [
+          "山田",
+          "うん、たぶん[大丈夫|だいじょうぶ]。"
+        ]
+      ],
+      "volitional": [
+        [
+          "山田",
+          "[暑|あつ]いから、[上着|うわぎ]を＿＿。"
+        ]
+      ],
+      "tara": [
+        [
+          "先生",
+          "[靴|くつ]を＿＿、ここに[置|お]いてください。"
+        ]
+      ]
+    }
+  },
+  {
+    "kj": "話す",
+    "kana": "はなす",
+    "en": "to speak",
+    "type": "v1",
+    "o": "[先生|せんせい]と",
+    "s": {
+      "causative": "[先生|せんせい]は[学生|がくせい]に[日本語|にほんご]で＿＿。",
+      "te": "もう[少|すこ]しゆっくり＿＿ください。"
+    }
+  },
+  {
+    "kj": "貸す",
+    "kana": "かす",
+    "en": "to lend",
+    "type": "v1",
+    "o": "[友達|ともだち]にお[金|かね]を",
+    "skip": [
+      "masen",
+      "nai",
+      "nakatta"
+    ],
+    "ok": [
+      "prohibitive"
+    ],
+    "s": {
+      "te": "すみません、[傘|かさ]を＿＿ください。"
+    }
+  },
+  {
+    "kj": "返す",
+    "kana": "かえす",
+    "en": "to give back",
+    "type": "v1",
+    "o": "[図書館|としょかん]に[本|ほん]を",
+    "ok": [
+      "causative",
+      "imperative"
+    ]
+  },
+  {
+    "kj": "押す",
+    "kana": "おす",
+    "en": "to push",
+    "type": "v1",
+    "o": "ボタンを",
+    "skip": [
+      "masu",
+      "masen",
+      "mashita",
+      "nai",
+      "ta",
+      "nakatta",
+      "potential"
+    ],
+    "ok": [
+      "passive",
+      "causative",
+      "imperative",
+      "prohibitive"
+    ]
+  },
+  {
+    "kj": "待つ",
+    "kana": "まつ",
+    "en": "to wait",
+    "type": "v1",
+    "o": "[駅|えき]で",
+    "ok": [
+      "causative",
+      "causPassive"
+    ]
+  },
+  {
+    "kj": "持つ",
+    "kana": "もつ",
+    "en": "to hold / to carry",
+    "type": "v1",
+    "o": "[荷物|にもつ]を",
+    "ok": [
+      "causative",
+      "causPassive",
+      "imperative"
+    ]
+  },
+  {
+    "kj": "立つ",
+    "kana": "たつ",
+    "en": "to stand",
+    "type": "v1",
+    "o": "[教室|きょうしつ]の[前|まえ]に",
+    "skip": [
+      "masu",
+      "masen",
+      "mashita",
+      "nai",
+      "ta",
+      "nakatta",
+      "potential"
+    ],
+    "ok": [
+      "causative",
+      "imperative"
+    ]
+  },
+  {
+    "kj": "死ぬ",
+    "kana": "しぬ",
+    "en": "to die",
+    "type": "v1",
+    "nv": true,
+    "o": "うちの[金魚|きんぎょ]が",
+    "skip": [
+      "masu",
+      "masen",
+      "nai",
+      "tara"
+    ],
+    "s": {
+      "passive": "[大切|たいせつ]なペットに＿＿のは、つらいです。"
+    }
+  },
+  {
+    "kj": "遊ぶ",
+    "kana": "あそぶ",
+    "en": "to play / to hang out",
+    "type": "v1",
+    "o": "[公園|こうえん]で",
+    "ok": [
+      "causative",
+      "prohibitive"
+    ]
+  },
+  {
+    "kj": "呼ぶ",
+    "kana": "よぶ",
+    "en": "to call (someone over)",
+    "type": "v1",
+    "o": "タクシーを",
+    "skip": [
+      "masen",
+      "nai"
+    ],
+    "ok": [
+      "passive",
+      "causative",
+      "imperative",
+      "prohibitive"
+    ]
+  },
+  {
+    "kj": "運ぶ",
+    "kana": "はこぶ",
+    "en": "to carry",
+    "type": "v1",
+    "o": "[荷物|にもつ]を",
+    "ok": [
+      "causative",
+      "causPassive",
+      "imperative"
+    ]
+  },
+  {
+    "kj": "選ぶ",
+    "kana": "えらぶ",
+    "en": "to choose",
+    "type": "v1",
+    "o": "プレゼントを",
+    "ok": [
+      "passive",
+      "causative",
+      "imperative"
+    ]
+  },
+  {
+    "kj": "読む",
+    "kana": "よむ",
+    "en": "to read",
+    "type": "v1",
+    "o": "[新聞|しんぶん]を",
+    "ok": [
+      "causative",
+      "causPassive"
+    ],
+    "s": {
+      "passive": "[弟|おとうと]に[日記|にっき]を＿＿のは[嫌|いや]です。"
+    }
+  },
+  {
+    "kj": "飲む",
+    "kana": "のむ",
+    "en": "to drink",
+    "type": "v1",
+    "o": "コーヒーを",
+    "ok": [
+      "passive",
+      "prohibitive"
+    ]
+  },
+  {
+    "kj": "休む",
+    "kana": "やすむ",
+    "en": "to rest / to take a day off",
+    "type": "v1",
+    "o": "[学校|がっこう]を",
+    "skip": [
+      "masen",
+      "nai",
+      "nakatta"
+    ],
+    "ok": [
+      "causative",
+      "prohibitive"
+    ]
+  },
+  {
+    "kj": "頼む",
+    "kana": "たのむ",
+    "en": "to ask (a favour) / to order",
+    "type": "v1",
+    "o": "ピザを",
+    "ok": [
+      "passive",
+      "prohibitive"
+    ]
+  },
+  {
+    "kj": "買う",
+    "kana": "かう",
+    "en": "to buy",
+    "type": "v1",
+    "o": "[新|あたら]しい[服|ふく]を",
+    "ok": [
+      "passive",
+      "prohibitive"
+    ]
+  },
+  {
+    "kj": "会う",
+    "kana": "あう",
+    "en": "to meet",
+    "type": "v1",
+    "o": "[友達|ともだち]に"
+  },
+  {
+    "kj": "使う",
+    "kana": "つかう",
+    "en": "to use",
+    "type": "v1",
+    "o": "パソコンを",
+    "ok": [
+      "passive",
+      "causative",
+      "prohibitive"
+    ]
+  },
+  {
+    "kj": "洗う",
+    "kana": "あらう",
+    "en": "to wash",
+    "type": "v1",
+    "o": "[車|くるま]を",
+    "ok": [
+      "causative",
+      "causPassive",
+      "imperative"
+    ]
+  },
+  {
+    "kj": "習う",
+    "kana": "ならう",
+    "en": "to learn (from someone)",
+    "type": "v1",
+    "o": "ピアノを",
+    "ok": [
+      "causPassive"
+    ]
+  },
+  {
+    "kj": "払う",
+    "kana": "はらう",
+    "en": "to pay",
+    "type": "v1",
+    "o": "お[金|かね]を",
+    "skip": [
+      "masen",
+      "nai",
+      "nakatta"
+    ],
+    "ok": [
+      "causative",
+      "imperative"
+    ]
+  },
+  {
+    "kj": "手伝う",
+    "kana": "てつだう",
+    "en": "to help",
+    "type": "v1",
+    "o": "[母|はは]を",
+    "ok": [
+      "imperative"
+    ],
+    "s": {
+      "causative": "[母|はは]はいつも[私|わたし]に[料理|りょうり]を＿＿。",
+      "causPassive": "[休|やす]みの[日|ひ]はいつも、[父|ちち]に[店|みせ]の[仕事|しごと]を＿＿。"
+    }
+  },
+  {
+    "kj": "歌う",
+    "kana": "うたう",
+    "en": "to sing",
+    "type": "v1",
+    "o": "[歌|うた]を",
+    "ok": [
+      "causative",
+      "causPassive"
+    ]
+  },
+  {
+    "kj": "言う",
+    "kana": "いう",
+    "en": "to say",
+    "type": "v1",
+    "o": "[本当|ほんとう]のことを",
+    "skip": [
+      "masen",
+      "nai",
+      "nakatta"
+    ],
+    "ok": [
+      "passive",
+      "causative",
+      "imperative",
+      "prohibitive"
+    ]
+  },
+  {
+    "kj": "帰る",
+    "kana": "かえる",
+    "en": "to go home",
+    "type": "v1",
+    "o": "[家|いえ]に",
+    "skip": [
+      "masen",
+      "nai",
+      "nakatta"
+    ],
+    "ok": [
+      "causative",
+      "imperative",
+      "prohibitive"
+    ]
+  },
+  {
+    "kj": "入る",
+    "kana": "はいる",
+    "en": "to enter / to get in (a bath)",
+    "type": "v1",
+    "o": "お[風呂|ふろ]に",
+    "ok": [
+      "causPassive",
+      "imperative"
+    ]
+  },
+  {
+    "kj": "走る",
+    "kana": "はしる",
+    "en": "to run",
+    "type": "v1",
+    "o": "[公園|こうえん]を",
+    "ok": [
+      "causative",
+      "causPassive"
+    ]
+  },
+  {
+    "kj": "切る",
+    "kana": "きる",
+    "en": "to cut",
+    "type": "v1",
+    "o": "[野菜|やさい]を",
+    "ok": [
+      "causative",
+      "causPassive",
+      "imperative"
+    ]
+  },
+  {
+    "kj": "作る",
+    "kana": "つくる",
+    "en": "to make",
+    "type": "v1",
+    "o": "[晩|ばん]ご[飯|はん]を",
+    "ok": [
+      "causative",
+      "causPassive",
+      "imperative"
+    ]
+  },
+  {
+    "kj": "乗る",
+    "kana": "のる",
+    "en": "to ride / to get on",
+    "type": "v1",
+    "o": "[電車|でんしゃ]に",
+    "ok": [
+      "imperative",
+      "prohibitive"
+    ]
+  },
+  {
+    "kj": "送る",
+    "kana": "おくる",
+    "en": "to send",
+    "type": "v1",
+    "o": "メールを",
+    "ok": [
+      "causative",
+      "imperative",
+      "prohibitive"
+    ]
+  },
+  {
+    "kj": "座る",
+    "kana": "すわる",
+    "en": "to sit",
+    "type": "v1",
+    "o": "いすに",
+    "skip": [
+      "masu",
+      "masen",
+      "mashita",
+      "nai",
+      "ta",
+      "nakatta",
+      "potential"
+    ],
+    "ok": [
+      "causative",
+      "imperative",
+      "prohibitive"
+    ]
+  },
+  {
+    "kj": "取る",
+    "kana": "とる",
+    "en": "to take",
+    "type": "v1",
+    "o": "メモを",
+    "skip": [
+      "masu",
+      "masen",
+      "mashita",
+      "nai",
+      "ta",
+      "nakatta",
+      "potential"
+    ],
+    "ok": [
+      "causative"
+    ],
+    "s": {
+      "passive": "[弟|おとうと]にお[菓子|かし]を＿＿のは[嫌|いや]です。"
+    }
+  },
+  {
+    "kj": "終わる",
+    "kana": "おわる",
+    "en": "to end",
+    "type": "v1",
+    "nv": true,
+    "o": "[授業|じゅぎょう]が",
+    "s": {
+      "ba": "[仕事|しごと]が＿＿、[飲|の]みに[行|い]きましょう。"
+    }
+  },
+  {
+    "kj": "止まる",
+    "kana": "とまる",
+    "en": "to stop (by itself)",
+    "type": "v1",
+    "nv": true,
+    "o": "バスが"
+  },
+  {
+    "kj": "怒る",
+    "kana": "おこる",
+    "en": "to get angry / to scold",
+    "type": "v1",
+    "nv": true,
+    "o": "[先生|せんせい]が",
+    "s": {
+      "passive": "[遅刻|ちこく]すると、[先生|せんせい]に＿＿よ。",
+      "causative": "そんなことを[言|い]うと、[田中|たなか]さんを＿＿よ。"
+    }
+  },
+  {
+    "kj": "笑う",
+    "kana": "わらう",
+    "en": "to laugh",
+    "type": "v1",
+    "nv": true,
+    "o": "みんなが",
+    "s": {
+      "passive": "みんなの[前|まえ]で[失敗|しっぱい]して、＿＿のは[恥|は]ずかしいです。",
+      "causative": "[田中|たなか]さんはいつもみんなを＿＿。"
+    },
+    "skip": [
+      "masu",
+      "tara"
+    ]
+  },
+  {
+    "kj": "食べる",
+    "kana": "たべる",
+    "en": "to eat",
+    "type": "v2",
+    "o": "[野菜|やさい]を",
+    "ok": [
+      "causative",
+      "causPassive",
+      "imperative",
+      "prohibitive"
+    ],
+    "s": {
+      "passive": "[弟|おとうと]に[勝手|かって]にケーキを＿＿のは[嫌|いや]です。"
+    }
+  },
+  {
+    "kj": "見る",
+    "kana": "みる",
+    "en": "to see / to watch",
+    "type": "v2",
+    "o": "[映画|えいが]を",
+    "ok": [
+      "causative",
+      "prohibitive"
+    ],
+    "s": {
+      "passive": "[人|ひと]に[携帯|けいたい]を＿＿のは[嫌|いや]です。"
+    }
+  },
+  {
+    "kj": "寝る",
+    "kana": "ねる",
+    "en": "to sleep / to go to bed",
+    "type": "v2",
+    "ok": [
+      "imperative"
+    ],
+    "s": {
+      "masu": "[今日|きょう]は[疲|つか]れたので、もう＿＿。",
+      "masen": "[今夜|こんや]は[試験|しけん]の[勉強|べんきょう]があるので、＿＿。",
+      "mashita": "[昨日|きのう]は[十時|じゅうじ]に＿＿。",
+      "nai": [
+        [
+          "田中",
+          "まだ＿＿の？"
+        ],
+        [
+          "山田",
+          "うん、レポートが[終|お]わらなくて。"
+        ]
+      ],
+      "potential": "コーヒーを[飲|の]んだから、[今夜|こんや]は＿＿かな。",
+      "volitional": "もう[遅|おそ]いから、そろそろ＿＿か。",
+      "tara": "[子|こ]どもが＿＿、[静|しず]かにしてくださいね。"
+    }
+  },
+  {
+    "kj": "起きる",
+    "kana": "おきる",
+    "en": "to get up",
+    "type": "v2",
+    "ok": [
+      "imperative"
+    ],
+    "s": {
+      "masu": "[明日|あした]は[六時|ろくじ]に＿＿。",
+      "masen": "[日曜日|にちようび]は[昼|ひる]まで＿＿。",
+      "mashita": "[今朝|けさ]は[五時|ごじ]に＿＿。",
+      "nai": [
+        [
+          "田中",
+          "[弟|おとうと]さん、まだ＿＿の？"
+        ],
+        [
+          "山田",
+          "うん、[日曜日|にちようび]だから。"
+        ]
+      ],
+      "ta": [
+        [
+          "田中",
+          "[今朝|けさ]は[何時|なんじ]に＿＿の？"
+        ]
+      ],
+      "nakatta": "[目覚|めざ]ましが[鳴|な]ったのに、＿＿。",
+      "potential": [
+        [
+          "田中",
+          "[明日|あした]、[六時|ろくじ]に＿＿？"
+        ],
+        [
+          "山田",
+          "うん、たぶん[大丈夫|だいじょうぶ]。"
+        ]
+      ],
+      "volitional": "[明日|あした]は[早|はや]く＿＿と[思|おも]います。"
+    }
+  },
+  {
+    "kj": "教える",
+    "kana": "おしえる",
+    "en": "to teach / to tell",
+    "type": "v2",
+    "o": "[日本語|にほんご]を",
+    "ok": []
+  },
+  {
+    "kj": "開ける",
+    "kana": "あける",
+    "en": "to open (something)",
+    "type": "v2",
+    "o": "[窓|まど]を",
+    "skip": [
+      "masu",
+      "masen",
+      "mashita",
+      "nai",
+      "ta",
+      "nakatta",
+      "potential"
+    ],
+    "ok": [
+      "passive",
+      "causative",
+      "imperative",
+      "prohibitive"
+    ]
+  },
+  {
+    "kj": "閉める",
+    "kana": "しめる",
+    "en": "to close (something)",
+    "type": "v2",
+    "o": "ドアを",
+    "skip": [
+      "masu",
+      "masen",
+      "mashita",
+      "nai",
+      "ta",
+      "nakatta",
+      "potential"
+    ],
+    "ok": [
+      "causative",
+      "imperative"
+    ]
+  },
+  {
+    "kj": "着る",
+    "kana": "きる",
+    "en": "to wear (on the body)",
+    "type": "v2",
+    "o": "[着物|きもの]を",
+    "ok": [
+      "causative",
+      "causPassive",
+      "prohibitive"
+    ]
+  },
+  {
+    "kj": "借りる",
+    "kana": "かりる",
+    "en": "to borrow",
+    "type": "v2",
+    "o": "[図書館|としょかん]で[本|ほん]を",
+    "ok": []
+  },
+  {
+    "kj": "浴びる",
+    "kana": "あびる",
+    "en": "to take (a shower)",
+    "type": "v2",
+    "o": "シャワーを",
+    "skip": [
+      "masu",
+      "mashita",
+      "ta",
+      "potential"
+    ],
+    "ok": [
+      "imperative"
+    ]
+  },
+  {
+    "kj": "忘れる",
+    "kana": "わすれる",
+    "en": "to forget",
+    "type": "v2",
+    "nv": true,
+    "o": "[宿題|しゅくだい]を",
+    "s": {
+      "masu": "[田中|たなか]さんはよく[宿題|しゅくだい]を＿＿。",
+      "masen": "[大切|たいせつ]なことは＿＿。",
+      "mashita": "[電車|でんしゃ]に[傘|かさ]を＿＿。",
+      "nai": "この[景色|けしき]は[一生|いっしょう]＿＿よ。",
+      "ta": "あ、[財布|さいふ]を＿＿！",
+      "prohibitive": "[約束|やくそく]を＿＿よ。"
+    }
+  },
+  {
+    "kj": "覚える",
+    "kana": "おぼえる",
+    "en": "to memorise",
+    "type": "v2",
+    "o": "[漢字|かんじ]を",
+    "ok": [
+      "causative",
+      "causPassive",
+      "imperative"
+    ]
+  },
+  {
+    "kj": "調べる",
+    "kana": "しらべる",
+    "en": "to look up / to investigate",
+    "type": "v2",
+    "o": "[言葉|ことば]の[意味|いみ]を",
+    "ok": [
+      "causative",
+      "imperative"
+    ]
+  },
+  {
+    "kj": "答える",
+    "kana": "こたえる",
+    "en": "to answer",
+    "type": "v2",
+    "o": "[質問|しつもん]に",
+    "ok": [
+      "causative",
+      "imperative"
+    ]
+  },
+  {
+    "kj": "捨てる",
+    "kana": "すてる",
+    "en": "to throw away",
+    "type": "v2",
+    "o": "ゴミを",
+    "ok": [
+      "causative",
+      "causPassive",
+      "imperative",
+      "prohibitive"
+    ],
+    "s": {
+      "passive": "[母|はは]に[古|ふる]いマンガを＿＿のは[悲|かな]しいです。"
+    }
+  },
+  {
+    "kj": "出る",
+    "kana": "でる",
+    "en": "to leave / to come out",
+    "type": "v2",
+    "o": "[部屋|へや]を",
+    "ok": [
+      "causative",
+      "imperative",
+      "prohibitive"
+    ],
+    "skip": [
+      "masu",
+      "mashita",
+      "ta"
+    ]
+  },
+  {
+    "kj": "決める",
+    "kana": "きめる",
+    "en": "to decide",
+    "type": "v2",
+    "o": "[旅行|りょこう]の[日|ひ]を",
+    "ok": [
+      "passive",
+      "causative",
+      "imperative",
+      "prohibitive"
+    ]
+  },
+  {
+    "kj": "続ける",
+    "kana": "つづける",
+    "en": "to continue (something)",
+    "type": "v2",
+    "o": "[練習|れんしゅう]を",
+    "ok": [
+      "causative",
+      "causPassive"
+    ]
+  },
+  {
+    "kj": "降りる",
+    "kana": "おりる",
+    "en": "to get off",
+    "type": "v2",
+    "o": "[次|つぎ]の[駅|えき]で",
+    "skip": [
+      "masu",
+      "masen",
+      "mashita",
+      "nai",
+      "ta",
+      "nakatta",
+      "potential"
+    ],
+    "ok": []
+  },
+  {
+    "kj": "考える",
+    "kana": "かんがえる",
+    "en": "to think about",
+    "type": "v2",
+    "o": "[将来|しょうらい]のことを",
+    "ok": [
+      "causative",
+      "imperative"
+    ]
+  },
+  {
+    "kj": "褒める",
+    "kana": "ほめる",
+    "en": "to praise",
+    "type": "v2",
+    "o": "[子|こ]どもを",
+    "skip": [
+      "masu",
+      "masen",
+      "mashita",
+      "nai",
+      "ta",
+      "nakatta",
+      "potential"
+    ],
+    "s": {
+      "passive": "[先生|せんせい]に＿＿と、うれしいです。"
+    }
+  },
+  {
+    "kj": "する",
+    "kana": "する",
+    "en": "to do",
+    "type": "vs",
+    "o": "[宿題|しゅくだい]を",
+    "ok": [
+      "causative",
+      "causPassive",
+      "imperative"
+    ]
+  },
+  {
+    "kj": "勉強する",
+    "kana": "べんきょうする",
+    "en": "to study",
+    "type": "vs",
+    "o": "[日本語|にほんご]を",
+    "ok": [
+      "causative",
+      "causPassive",
+      "imperative"
+    ]
+  },
+  {
+    "kj": "運転する",
+    "kana": "うんてんする",
+    "en": "to drive",
+    "type": "vs",
+    "o": "[車|くるま]を",
+    "ok": [
+      "passive",
+      "prohibitive"
+    ]
+  },
+  {
+    "kj": "説明する",
+    "kana": "せつめいする",
+    "en": "to explain",
+    "type": "vs",
+    "o": "ルールを",
+    "ok": [
+      "causative",
+      "imperative"
+    ]
+  },
+  {
+    "kj": "掃除する",
+    "kana": "そうじする",
+    "en": "to clean",
+    "type": "vs",
+    "o": "[部屋|へや]を",
+    "ok": [
+      "causative",
+      "causPassive",
+      "imperative"
+    ]
+  },
+  {
+    "kj": "来る",
+    "kana": "くる",
+    "en": "to come",
+    "type": "vk",
+    "o": "うちに",
+    "skip": [
+      "volitional"
+    ],
+    "ok": [
+      "imperative",
+      "prohibitive"
+    ],
+    "s": {
+      "masu": "[明日|あした]は[友達|ともだち]がうちに＿＿。",
+      "mashita": "[昨日|きのう]、[友達|ともだち]がうちに＿＿。",
+      "masen": "[今日|きょう]は[田中|たなか]さんは＿＿。",
+      "ta": "[昨日|きのう]、[母|はは]が[東京|とうきょう]に＿＿。",
+      "passive": "[夜遅|よるおそ]くに[友達|ともだち]に＿＿と、[困|こま]ります。"
+    }
+  },
+  {
+    "kj": "高い",
+    "kana": "たかい",
+    "en": "expensive / tall",
+    "type": "i",
+    "subj": "[駅前|えきまえ]のレストラン",
+    "te": "、あまり[行|い]けません。",
+    "adv": "ボールを＿＿[投|な]げてください。",
+    "neg": true
+  },
+  {
+    "kj": "安い",
+    "kana": "やすい",
+    "en": "cheap",
+    "type": "i",
+    "subj": "あの[店|みせ]の[野菜|やさい]",
+    "te": "、よく[買|か]います。",
+    "adv": "もう[少|すこ]し＿＿してください。"
+  },
+  {
+    "kj": "大きい",
+    "kana": "おおきい",
+    "en": "big",
+    "type": "i",
+    "subj": "[新|あたら]しい[部屋|へや]",
+    "te": "、うれしいです。",
+    "adv": "[名前|なまえ]を＿＿[書|か]いてください。"
+  },
+  {
+    "kj": "小さい",
+    "kana": "ちいさい",
+    "en": "small",
+    "type": "i",
+    "subj": "ホテルの[部屋|へや]",
+    "te": "、ちょっと[困|こま]りました。",
+    "adv": "テレビの[音|おと]を＿＿してください。",
+    "neg": true
+  },
+  {
+    "kj": "新しい",
+    "kana": "あたらしい",
+    "en": "new",
+    "type": "i",
+    "subj": "[駅|えき]のビル",
+    "te": "、とてもきれいです。",
+    "adv": "この[店|みせ]は[去年|きょねん]、＿＿なりました。"
+  },
+  {
+    "kj": "古い",
+    "kana": "ふるい",
+    "en": "old (things)",
+    "type": "i",
+    "subj": "このパソコン",
+    "te": "、よく[止|と]まります。",
+    "adv": "この[家|いえ]も＿＿なりましたね。",
+    "neg": true
+  },
+  {
+    "kj": "暑い",
+    "kana": "あつい",
+    "en": "hot (weather)",
+    "type": "i",
+    "subj": "[今年|ことし]の[夏|なつ]",
+    "te": "、[毎日|まいにち][大変|たいへん]です。",
+    "adv": "だんだん＿＿なってきました。",
+    "neg": true
+  },
+  {
+    "kj": "寒い",
+    "kana": "さむい",
+    "en": "cold (weather)",
+    "type": "i",
+    "subj": "[北海道|ほっかいどう]の[冬|ふゆ]",
+    "te": "、[外|そと]に[出|で]たくないです。",
+    "adv": "[夜|よる]になると、＿＿なります。",
+    "neg": true
+  },
+  {
+    "kj": "忙しい",
+    "kana": "いそがしい",
+    "en": "busy",
+    "type": "i",
+    "subj": "[今週|こんしゅう]の[仕事|しごと]",
+    "te": "、[寝|ね]る[時間|じかん]がありません。",
+    "adv": "[最近|さいきん]、[仕事|しごと]が＿＿なりました。",
+    "neg": true
+  },
+  {
+    "kj": "楽しい",
+    "kana": "たのしい",
+    "en": "fun",
+    "type": "i",
+    "subj": "[日本語|にほんご]の[授業|じゅぎょう]",
+    "te": "、[時間|じかん]が[早|はや]く[過|す]ぎます。",
+    "adv": "みんなで＿＿[歌|うた]いました。"
+  },
+  {
+    "kj": "難しい",
+    "kana": "むずかしい",
+    "en": "difficult",
+    "type": "i",
+    "subj": "[今日|きょう]の[試験|しけん]",
+    "te": "、[全然|ぜんぜん][分|わ]かりませんでした。",
+    "adv": "[試験|しけん]が[前|まえ]より＿＿なりました。",
+    "neg": true
+  },
+  {
+    "kj": "優しい",
+    "kana": "やさしい",
+    "en": "kind / gentle",
+    "type": "i",
+    "subj": "[新|あたら]しい[先生|せんせい]",
+    "te": "、うれしいです。",
+    "adv": "[先生|せんせい]は＿＿[教|おし]えてくれました。"
+  },
+  {
+    "kj": "痛い",
+    "kana": "いたい",
+    "en": "painful",
+    "type": "i",
+    "subj": "[注射|ちゅうしゃ]",
+    "te": "、[泣|な]いてしまいました。",
+    "adv": "[急|きゅう]に[頭|あたま]が＿＿なりました。",
+    "neg": true
+  },
+  {
+    "kj": "早い",
+    "kana": "はやい",
+    "en": "early",
+    "type": "i",
+    "subj": "[明日|あした]の[出発|しゅっぱつ]",
+    "te": "、[心配|しんぱい]です。",
+    "adv": "[明日|あした]は＿＿[起|お]きてください。",
+    "neg": true,
+    "s": {
+      "ta": "[今朝|けさ]は[起|お]きるのが＿＿。",
+      "nakatta": "[今日|きょう]は[起|お]きるのが[全然|ぜんぜん]＿＿。"
+    }
+  },
+  {
+    "kj": "遠い",
+    "kana": "とおい",
+    "en": "far",
+    "type": "i",
+    "subj": "[新|あたら]しい[学校|がっこう]",
+    "te": "、[毎朝|まいあさ][大変|たいへん]です。",
+    "adv": "ここから＿＿の[山|やま]まで[見|み]えますね。",
+    "neg": true
+  },
+  {
+    "kj": "強い",
+    "kana": "つよい",
+    "en": "strong",
+    "type": "i",
+    "subj": "[今日|きょう]の[風|かぜ]",
+    "te": "、[傘|かさ]が[使|つか]えません。",
+    "adv": "ボタンを＿＿[押|お]してください。",
+    "neg": true
+  },
+  {
+    "kj": "眠い",
+    "kana": "ねむい",
+    "en": "sleepy",
+    "type": "i",
+    "adv": "ご[飯|はん]を[食|た]べたら、＿＿なりました。",
+    "s": {
+      "nai": [
+        [
+          "田中",
+          "[眠|ねむ]い？"
+        ],
+        [
+          "山田",
+          "ううん、まだ＿＿よ。"
+        ]
+      ],
+      "ta": "[昨日|きのう]は[遅|おそ]くまで[起|お]きていたので、とても＿＿。",
+      "nakatta": "コーヒーを[飲|の]んだので、[全然|ぜんぜん]＿＿。",
+      "te": "＿＿、[何|なに]も[考|かんが]えられません。",
+      "ba": "＿＿、[寝|ね]てもいいですよ。",
+      "tara": "＿＿、[先|さき]に[寝|ね]てね。",
+      "sou": "[田中|たなか]さん、＿＿ですね。"
+    },
+    "neg": true
+  },
+  {
+    "kj": "いい",
+    "kana": "いい",
+    "en": "good",
+    "type": "i",
+    "special": "ii",
+    "subj": "[今日|きょう]の[天気|てんき]",
+    "te": "、[洗濯|せんたく]ができました。",
+    "adv": "[日本語|にほんご]が＿＿なりましたね。"
+  },
+  {
+    "kj": "静か",
+    "kana": "しずか",
+    "en": "quiet",
+    "type": "na",
+    "subj": "[新|あたら]しいアパート",
+    "te": "、よく[眠|ねむ]れます。",
+    "adv": "[図書館|としょかん]では＿＿してください。"
+  },
+  {
+    "kj": "元気",
+    "kana": "げんき",
+    "en": "healthy / energetic",
+    "type": "na",
+    "subj": "おばあさん",
+    "te": "、[毎日|まいにち][散歩|さんぽ]しています。",
+    "adv": "[子|こ]どもたちが＿＿[遊|あそ]んでいます。"
+  },
+  {
+    "kj": "便利",
+    "kana": "べんり",
+    "en": "convenient",
+    "type": "na",
+    "subj": "[新|あたら]しいアプリ",
+    "te": "、[毎日|まいにち][使|つか]っています。",
+    "adv": "[駅|えき]ができて、[町|まち]が＿＿なりました。"
+  },
+  {
+    "kj": "有名",
+    "kana": "ゆうめい",
+    "en": "famous",
+    "type": "na",
+    "subj": "あの[店|みせ]",
+    "te": "、いつも[込|こ]んでいます。",
+    "adv": "この[店|みせ]はテレビで＿＿なりました。"
+  },
+  {
+    "kj": "簡単",
+    "kana": "かんたん",
+    "en": "easy / simple",
+    "type": "na",
+    "subj": "この[料理|りょうり]",
+    "te": "、[毎日|まいにち][作|つく]っています。",
+    "adv": "このケーキは＿＿[作|つく]れますよ。"
+  },
+  {
+    "kj": "大切",
+    "kana": "たいせつ",
+    "en": "important / precious",
+    "type": "na",
+    "subj": "この[写真|しゃしん]",
+    "te": "、いつも[持|も]っています。",
+    "adv": "この[本|ほん]を＿＿してください。",
+    "skip": [
+      "ta",
+      "nakatta",
+      "ba",
+      "sou"
+    ],
+    "s": {
+      "nai": "この[仕事|しごと]は、あまり＿＿。"
+    }
+  },
+  {
+    "kj": "親切",
+    "kana": "しんせつ",
+    "en": "kind (to others)",
+    "type": "na",
+    "subj": "ホテルの[人|ひと]",
+    "te": "、うれしかったです。",
+    "adv": "[店員|てんいん]さんが＿＿[教|おし]えてくれました。"
+  },
+  {
+    "kj": "好き",
+    "kana": "すき",
+    "en": "liked",
+    "type": "na",
+    "subj": "[甘|あま]いもの",
+    "te": "、[毎日|まいにち][食|た]べています。",
+    "adv": "この[部屋|へや]は＿＿[使|つか]ってください。",
+    "s": {
+      "ta": "[子|こ]どものころは、[野菜|やさい]が＿＿。",
+      "nakatta": "[子|こ]どものころ、[野菜|やさい]は＿＿。",
+      "ba": "[甘|あま]いものが＿＿、このケーキをどうぞ。",
+      "sou": "[田中|たなか]さんは[甘|あま]いものが＿＿ですね。"
+    }
+  },
+  {
+    "kj": "嫌い",
+    "kana": "きらい",
+    "en": "disliked",
+    "type": "na",
+    "subj": "[野菜|やさい]",
+    "te": "、よく[母|はは]に[怒|おこ]られます。",
+    "adv": "[勉強|べんきょう]が＿＿なりました。",
+    "s": {
+      "ta": "[子|こ]どものころは、[魚|さかな]が＿＿。",
+      "nakatta": "[意外|いがい]と、[勉強|べんきょう]は＿＿。",
+      "sou": "[田中|たなか]さんは[野菜|やさい]が＿＿ですね。"
+    },
+    "neg": true
+  },
+  {
+    "kj": "上手",
+    "kana": "じょうず",
+    "en": "skilled",
+    "type": "na",
+    "subj": "[田中|たなか]さんの[日本語|にほんご]",
+    "te": "、びっくりしました。",
+    "adv": "[字|じ]を＿＿[書|か]けるようになりたいです。",
+    "s": {
+      "sou": "あの[人|ひと]、[料理|りょうり]が＿＿ですね。"
+    }
+  },
+  {
+    "kj": "暇",
+    "kana": "ひま",
+    "en": "free (not busy)",
+    "type": "na",
+    "subj": "[週末|しゅうまつ]",
+    "te": "、[退屈|たいくつ]でした。",
+    "adv": "[来週|らいしゅう]は＿＿なります。"
+  },
+  {
+    "kj": "丁寧",
+    "kana": "ていねい",
+    "en": "polite / careful",
+    "type": "na",
+    "subj": "ホテルのサービス",
+    "te": "、[気持|きも]ちがよかったです。",
+    "adv": "[字|じ]を＿＿[書|か]いてください。"
+  },
+  {
+    "kj": "きれい",
+    "kana": "きれい",
+    "en": "pretty / clean",
+    "type": "na",
+    "subj": "この[町|まち]の[川|かわ]",
+    "te": "、[魚|さかな]が[見|み]えます。",
+    "adv": "[部屋|へや]を＿＿[掃除|そうじ]しました。",
+    "skip": [
+      "sou"
+    ]
+  },
+  {
+    "kj": "大丈夫",
+    "kana": "だいじょうぶ",
+    "en": "all right",
+    "type": "na",
+    "subj": "[足|あし]のけが",
+    "te": "、[安心|あんしん]しました。",
+    "s": {
+      "ba": "[足|あし]が＿＿、[明日|あした]も[練習|れんしゅう]に[来|き]てください。",
+      "te": "[子|こ]どもが＿＿、[安心|あんしん]しました。"
+    }
+  }
 ]
