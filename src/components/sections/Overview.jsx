@@ -3,6 +3,9 @@ import {
   grammarModules, kanjiFocus, kanjiQuiz, readingPassages, kaiwaScenarios,
   countGrammarPoints, countPhrases, countQuizPool,
 } from "../../data/index.js";
+import dojoWords from "../../data/dojo-words.json";
+
+const dojoWordCount = dojoWords.length;
 
 /* Each card is a shortcut into its section — the overview is the first thing
    you see, so reading about Grammar Deep-Dive and then having to go find it in
@@ -56,6 +59,9 @@ export default function Overview({ onNavigate }) {
         </OverviewCard>
         <OverviewCard mk="試" title="Mock Exam" size="half" go={go("exam")}>
           A timed run shaped like the written half of a real N4 paper: 35 questions in 40 minutes, weighted the way the exam weights them, with no feedback until you finish.
+        </OverviewCard>
+        <OverviewCard mk="活用" title="Conjugation Dojo" size="full" go={go("dojo")}>
+          A typing drill for every N4 verb and adjective form: potential, passive, causative-passive, ば, volitional and the rest, across {dojoWordCount} words. Answer in romaji or kana and get the rule behind each answer. The forms you miss come up more often until they stop being the ones you miss.
         </OverviewCard>
       </div>
 

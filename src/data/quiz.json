@@ -1024,5 +1024,120 @@
         "ex": "Past discovery ('when I looked, I found…') takes たら."
       }
     ]
+  },
+  {
+    "title": "毎日の表現 — Everyday N4 patterns",
+    "items": [
+      {
+        "q": "「<ruby>辞書<rt>じしょ</rt></ruby>を＿＿、この<ruby>文<rt>ぶん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>んでみてください。」",
+        "choices": [
+          "<ruby>使<rt>つか</rt></ruby>わないで",
+          "<ruby>使<rt>つか</rt></ruby>わなくて",
+          "<ruby>使<rt>つか</rt></ruby>わなければ",
+          "<ruby>使<rt>つか</rt></ruby>わないと"
+        ],
+        "a": 0,
+        "ex": "'Without using a dictionary': ないで."
+      },
+      {
+        "q": "「お<ruby>返事<rt>へんじ</rt></ruby>が<ruby>遅<rt>おそ</rt></ruby>くなって、＿＿。」",
+        "choices": [
+          "<ruby>申<rt>もう</rt></ruby>し<ruby>訳<rt>わけ</rt></ruby>ありません",
+          "ください",
+          "いただけませんか",
+          "ほしいです"
+        ],
+        "a": 0,
+        "ex": "て-form + apology: 'Sorry for the late reply.'"
+      },
+      {
+        "q": "「<ruby>日本<rt>にほん</rt></ruby>に＿＿よかったです。<ruby>毎日<rt>まいにち</rt></ruby><ruby>楽<rt>たの</rt></ruby>しいです。」",
+        "choices": [
+          "<ruby>来<rt>き</rt></ruby>て",
+          "<ruby>来<rt>く</rt></ruby>れば",
+          "<ruby>来<rt>く</rt></ruby>ると",
+          "<ruby>来<rt>く</rt></ruby>るなら"
+        ],
+        "a": 0,
+        "ex": "Glad you did it: 〜てよかった."
+      },
+      {
+        "q": "「<ruby>妹<rt>いもうと</rt></ruby>は<ruby>毎日<rt>まいにち</rt></ruby>スマホを＿＿ばかりいます。」",
+        "choices": [
+          "<ruby>見<rt>み</rt></ruby>て",
+          "<ruby>見<rt>み</rt></ruby>た",
+          "<ruby>見<rt>み</rt></ruby>る",
+          "<ruby>見<rt>み</rt></ruby>"
+        ],
+        "a": 0,
+        "ex": "'Does nothing but': て-form + ばかりいる."
+      },
+      {
+        "q": "「『ありがとう』は<ruby>英語<rt>えいご</rt></ruby>で<ruby>何<rt>なん</rt></ruby>＿＿<ruby>言<rt>い</rt></ruby>いますか。」",
+        "choices": [
+          "と",
+          "を",
+          "が",
+          "で"
+        ],
+        "a": 0,
+        "ex": "Quoting a word: <ruby>何<rt>なん</rt></ruby>と<ruby>言<rt>い</rt></ruby>いますか."
+      },
+      {
+        "q": "「<ruby>駅<rt>えき</rt></ruby>までの＿＿を<ruby>教<rt>おし</rt></ruby>えてください。」",
+        "choices": [
+          "<ruby>行<rt>い</rt></ruby>き<ruby>方<rt>かた</rt></ruby>",
+          "<ruby>行<rt>い</rt></ruby>く<ruby>方<rt>かた</rt></ruby>",
+          "<ruby>行<rt>い</rt></ruby>った<ruby>方<rt>ほう</rt></ruby>",
+          "<ruby>行<rt>い</rt></ruby>って<ruby>方<rt>かた</rt></ruby>"
+        ],
+        "a": 0,
+        "ex": "ます-stem + <ruby>方<rt>かた</rt></ruby>: how to get there."
+      },
+      {
+        "q": "「<ruby>母<rt>はは</rt></ruby>が<ruby>料理<rt>りょうり</rt></ruby>を<ruby>作<rt>つく</rt></ruby>る＿＿<ruby>手伝<rt>てつだ</rt></ruby>いました。」",
+        "choices": [
+          "のを",
+          "ことが",
+          "のに",
+          "ことに"
+        ],
+        "a": 0,
+        "ex": "<ruby>手伝<rt>てつだ</rt></ruby>う takes の: 〜のを<ruby>手伝<rt>てつだ</rt></ruby>う."
+      },
+      {
+        "q": "「ちょっと<ruby>待<rt>ま</rt></ruby>って。<ruby>今<rt>いま</rt></ruby>、<ruby>電話<rt>でんわ</rt></ruby>＿＿なの。」",
+        "choices": [
+          "<ruby>中<rt>ちゅう</rt></ruby>",
+          "<ruby>目<rt>め</rt></ruby>",
+          "ずつ",
+          "ごろ"
+        ],
+        "a": 0,
+        "ex": "'In the middle of a call': <ruby>電話<rt>でんわ</rt></ruby><ruby>中<rt>ちゅう</rt></ruby>."
+      },
+      {
+        "q": "「お<ruby>茶<rt>ちゃ</rt></ruby>＿＿<ruby>飲<rt>の</rt></ruby>みながら、<ruby>話<rt>はな</rt></ruby>しましょう。」",
+        "choices": [
+          "でも",
+          "しか",
+          "ずつ",
+          "ばかり"
+        ],
+        "a": 0,
+        "ex": "Noun + でも: '…over some tea or something.'"
+      },
+      {
+        "q": "To your boss: 「この<ruby>書類<rt>しょるい</rt></ruby>を＿＿。」",
+        "choices": [
+          "<ruby>見<rt>み</rt></ruby>ていただけませんか",
+          "<ruby>見<rt>み</rt></ruby>て",
+          "<ruby>見<rt>み</rt></ruby>てくれる？",
+          "<ruby>見<rt>み</rt></ruby>なさい"
+        ],
+        "a": 0,
+        "ex": "A request to a superior: 〜ていただけませんか."
+      }
+    ]
   }
 ]

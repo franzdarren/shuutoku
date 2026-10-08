@@ -1,0 +1,2328 @@
+[
+  {
+    "num": 14,
+    "jpTitle": "毎日使う表現",
+    "reading": "まいにちつかうひょうげん",
+    "enTitle": "Everyday Patterns the Test Loves",
+    "accent": "shu",
+    "points": [
+      {
+        "jp": "〜ないで vs 〜なくて",
+        "romaji": "~naide vs ~nakute",
+        "fn": "'Without / instead of' vs 'because it didn't'",
+        "sources": [
+          "MNN Bk2 L34, L39",
+          "Genki II Ch20",
+          "Sou Matome Wk4"
+        ],
+        "explain": "Both are the ない-form plus て, but N4 tests them as two different tools.<br><br><b>〜ないで</b> = 'without doing X' or 'instead of doing X'. Verbs only. The second half is what you did in that state: <ruby>朝<rt>あさ</rt></ruby>ご<ruby>飯<rt>はん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べないで<ruby>学校<rt>がっこう</rt></ruby>へ<ruby>行<rt>い</rt></ruby>った (went to school without eating breakfast). <ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>らないで<ruby>歩<rt>ある</rt></ruby>いて<ruby>帰<rt>かえ</rt></ruby>った (walked home instead of taking the train). It's also the base of 〜ないでください.<br><br><b>〜なくて</b> = 'because it didn't / wasn't'. A cause, and the second half is usually a feeling or a result you didn't control: <ruby>宿題<rt>しゅくだい</rt></ruby>が<ruby>終<rt>お</rt></ruby>わらなくて<ruby>困<rt>こま</rt></ruby>っている. <ruby>彼女<rt>かのじょ</rt></ruby>が<ruby>来<rt>こ</rt></ruby>なくて、さびしかった. It's also the only option for adjectives and nouns: <ruby>高<rt>たか</rt></ruby>くなくて, <ruby>静<rt>しず</rt></ruby>かじゃなくて, <ruby>学生<rt>がくせい</rt></ruby>じゃなくて.<br><br><b>Test:</b> if 'without' or 'instead of' works in English, use ないで. If it means 'because it didn't…', use なくて.",
+        "formation": [
+          "Verb ない-form + で: <ruby>食<rt>た</rt></ruby>べないで · <ruby>行<rt>い</rt></ruby>かないで (without / instead of)",
+          "Verb ない-form → なくて: <ruby>食<rt>た</rt></ruby>べなくて · <ruby>行<rt>い</rt></ruby>かなくて (because not)",
+          "い-adj → くなくて (<ruby>高<rt>たか</rt></ruby>くなくて) · な-adj / noun → じゃなくて (only なくて)",
+          "Each row below reads <b>ないで (without) → なくて (because not)</b>."
+        ],
+        "conjugation": [
+          {
+            "label": "Group 1 行く",
+            "from": "<ruby>行<rt>い</rt></ruby>かないで",
+            "to": "<ruby>行<rt>い</rt></ruby>かなくて"
+          },
+          {
+            "label": "Group 2 食べる",
+            "from": "<ruby>食<rt>た</rt></ruby>べないで",
+            "to": "<ruby>食<rt>た</rt></ruby>べなくて"
+          },
+          {
+            "label": "する",
+            "from": "しないで",
+            "to": "しなくて"
+          },
+          {
+            "label": "来る",
+            "from": "<ruby>来<rt>こ</rt></ruby>ないで",
+            "to": "<ruby>来<rt>こ</rt></ruby>なくて"
+          },
+          {
+            "label": "い-adj 高い",
+            "from": "✗",
+            "to": "<ruby>高<rt>たか</rt></ruby>くなくて"
+          },
+          {
+            "label": "な-adj 静か",
+            "from": "✗",
+            "to": "<ruby>静<rt>しず</rt></ruby>かじゃなくて"
+          }
+        ],
+        "examples": [
+          {
+            "jp": "<ruby>朝<rt>あさ</rt></ruby>ご<ruby>飯<rt>はん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べないで、<ruby>学校<rt>がっこう</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きました。",
+            "en": "I went to school without eating breakfast."
+          },
+          {
+            "jp": "<ruby>傘<rt>かさ</rt></ruby>を<ruby>持<rt>も</rt></ruby>たないで<ruby>出<rt>で</rt></ruby>かけたら、<ruby>雨<rt>あめ</rt></ruby>に<ruby>降<rt>ふ</rt></ruby>られました。",
+            "en": "I went out without an umbrella and got caught in the rain."
+          },
+          {
+            "jp": "<ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>らないで、<ruby>歩<rt>ある</rt></ruby>いて<ruby>帰<rt>かえ</rt></ruby>りました。",
+            "en": "Instead of taking the train, I walked home."
+          },
+          {
+            "jp": "<ruby>辞書<rt>じしょ</rt></ruby>を<ruby>使<rt>つか</rt></ruby>わないで<ruby>読<rt>よ</rt></ruby>んでみてください。",
+            "en": "Try reading it without using a dictionary."
+          },
+          {
+            "jp": "<ruby>宿題<rt>しゅくだい</rt></ruby>が<ruby>終<rt>お</rt></ruby>わらなくて、<ruby>困<rt>こま</rt></ruby>っています。",
+            "en": "My homework isn't getting finished, and I'm in trouble."
+          },
+          {
+            "jp": "<ruby>子<rt>こ</rt></ruby>どもが<ruby>野菜<rt>やさい</rt></ruby>を<ruby>食<rt>た</rt></ruby>べなくて、<ruby>困<rt>こま</rt></ruby>っています。",
+            "en": "My kid won't eat vegetables, and it's a problem."
+          },
+          {
+            "jp": "<ruby>試験<rt>しけん</rt></ruby>に<ruby>合格<rt>ごうかく</rt></ruby>できなくて、<ruby>残念<rt>ざんねん</rt></ruby>でした。",
+            "en": "I couldn't pass the exam, which was a shame."
+          },
+          {
+            "jp": "このアパートは<ruby>駅<rt>えき</rt></ruby>から<ruby>遠<rt>とお</rt></ruby>くなくて、<ruby>便利<rt>べんり</rt></ruby>です。",
+            "en": "This apartment isn't far from the station, so it's convenient."
+          }
+        ],
+        "dialogue": [
+          {
+            "who": "A",
+            "jp": "<ruby>顔色<rt>かおいろ</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>いですね。どうしたんですか。",
+            "en": "You look pale. What's wrong?"
+          },
+          {
+            "who": "B",
+            "jp": "<ruby>昨日<rt>きのう</rt></ruby>、<ruby>夜遅<rt>よるおそ</rt></ruby>くまで<ruby>寝<rt>ね</rt></ruby>られなくて…。それに、<ruby>朝<rt>あさ</rt></ruby>ご<ruby>飯<rt>はん</rt></ruby>も<ruby>食<rt>た</rt></ruby>べないで<ruby>来<rt>き</rt></ruby>たんです。",
+            "en": "I couldn't sleep until late last night… and I came without eating breakfast, too."
+          },
+          {
+            "who": "A",
+            "jp": "それはよくないですよ。<ruby>何<rt>なに</rt></ruby>か<ruby>食<rt>た</rt></ruby>べたほうがいいですよ。",
+            "en": "That's not good. You should eat something."
+          }
+        ],
+        "tip": "Swap in 'without' or 'instead of': if the English still works, it's ないで. If the meaning is 'because it didn't…', it's なくて. Adjectives and nouns only ever take なくて.",
+        "quiz": [
+          {
+            "q": "「<ruby>今朝<rt>けさ</rt></ruby>は<ruby>時間<rt>じかん</rt></ruby>がなかったので、<ruby>顔<rt>かお</rt></ruby>を＿＿<ruby>出<rt>で</rt></ruby>かけました。」 (without washing)",
+            "choices": [
+              "<ruby>洗<rt>あら</rt></ruby>わないで",
+              "<ruby>洗<rt>あら</rt></ruby>わなくて",
+              "<ruby>洗<rt>あら</rt></ruby>わないと",
+              "<ruby>洗<rt>あら</rt></ruby>わなければ"
+            ],
+            "a": 0,
+            "ex": "'Went out without washing my face': ないで describes the state you did the action in.",
+            "why": [
+              null,
+              "なくて would make 'didn't wash' the cause of going out, which isn't the meaning.",
+              "〜ないと here would mean 'if I don't wash'.",
+              "〜なければ is a conditional ('if I don't wash')."
+            ]
+          },
+          {
+            "q": "「<ruby>友達<rt>ともだち</rt></ruby>が<ruby>約束<rt>やくそく</rt></ruby>の<ruby>時間<rt>じかん</rt></ruby>に＿＿、<ruby>心配<rt>しんぱい</rt></ruby>しました。」",
+            "choices": [
+              "<ruby>来<rt>こ</rt></ruby>ないで",
+              "<ruby>来<rt>こ</rt></ruby>なくて",
+              "<ruby>来<rt>こ</rt></ruby>ないでください",
+              "<ruby>来<rt>こ</rt></ruby>なければ"
+            ],
+            "a": 1,
+            "ex": "My friend not coming was the cause of my worry, so なくて.",
+            "why": [
+              "ないで would mean 'without coming', which doesn't make sense as a reason for worry.",
+              null,
+              "That's a request ('please don't come'), not a reason.",
+              "なければ is a conditional ('if they don't come')."
+            ]
+          },
+          {
+            "q": "「この<ruby>部屋<rt>へや</rt></ruby>は＿＿、いいですね。」 (it isn't noisy, so it's nice)",
+            "choices": [
+              "うるさくないで",
+              "うるさくなくて",
+              "うるさいないで",
+              "うるさくないでは"
+            ],
+            "a": 1,
+            "ex": "Adjectives only take なくて: うるさい → うるさくない → うるさくなくて.",
+            "why": [
+              "ないで only attaches to verbs.",
+              null,
+              "Not a real form. The い-adjective negative is うるさくない.",
+              "Not a real form."
+            ]
+          }
+        ]
+      },
+      {
+        "jp": "〜て（<ruby>理由<rt>りゆう</rt></ruby>）・〜てすみません・〜てくれてありがとう",
+        "romaji": "~te (reason) / ~te sumimasen / ~te kurete arigatou",
+        "fn": "The て-form as a reason: feelings, apologies and thanks",
+        "sources": [
+          "MNN Bk2 L39",
+          "Genki II Ch19",
+          "Sou Matome Wk4"
+        ],
+        "explain": "The て-form doesn't only link actions in order. It can also give a <b>cause</b>, and then the second half is usually a <b>feeling or a state you didn't choose</b>: うれしい, <ruby>困<rt>こま</rt></ruby>る, <ruby>疲<rt>つか</rt></ruby>れた, <ruby>安心<rt>あんしん</rt></ruby>した, びっくりした, <ruby>残念<rt>ざんねん</rt></ruby>だ, or a 'couldn't'.<br>ニュースを<ruby>聞<rt>き</rt></ruby>いて、びっくりしました (I was surprised to hear the news).<br>い-adj → くて (<ruby>寒<rt>さむ</rt></ruby>くて), な-adj / noun → で (<ruby>心配<rt>しんぱい</rt></ruby>で, <ruby>病気<rt>びょうき</rt></ruby>で).<br><br>Two set phrases come straight from this:<br>• <b>〜てすみません</b> = 'sorry for…': <ruby>遅<rt>おそ</rt></ruby>くなってすみません.<br>• <b>〜てくれてありがとう / 〜てくださってありがとうございます</b> = 'thank you for doing…': <ruby>手伝<rt>てつだ</rt></ruby>ってくれてありがとう.<br><br><b>The trap:</b> a て-reason can't be followed by a request, command, invitation or your own plan. <ruby>寒<rt>さむ</rt></ruby>くて、<ruby>窓<rt>まど</rt></ruby>を<ruby>閉<rt>し</rt></ruby>めてください ✗ → <ruby>寒<rt>さむ</rt></ruby>いので／<ruby>寒<rt>さむ</rt></ruby>いから、<ruby>窓<rt>まど</rt></ruby>を<ruby>閉<rt>し</rt></ruby>めてください ✓.",
+        "formation": [
+          "Verb て-form / い-adj くて / な-adj, noun で + feeling or state",
+          "て-form + すみません／ごめんなさい／<ruby>申<rt>もう</rt></ruby>し<ruby>訳<rt>わけ</rt></ruby>ありません",
+          "て-form + くれて ありがとう (casual) · くださって ありがとうございます (polite)",
+          "✗ て-reason + request / invitation / plan → use から or ので"
+        ],
+        "examples": [
+          {
+            "jp": "ニュースを<ruby>聞<rt>き</rt></ruby>いて、びっくりしました。",
+            "en": "I was surprised to hear the news."
+          },
+          {
+            "jp": "<ruby>試験<rt>しけん</rt></ruby>に<ruby>合格<rt>ごうかく</rt></ruby>して、<ruby>本当<rt>ほんとう</rt></ruby>にうれしいです。",
+            "en": "I passed the exam and I'm really happy."
+          },
+          {
+            "jp": "<ruby>昨日<rt>きのう</rt></ruby>は<ruby>忙<rt>いそが</rt></ruby>しくて、<ruby>電話<rt>でんわ</rt></ruby>できませんでした。",
+            "en": "I was busy yesterday, so I couldn't call."
+          },
+          {
+            "jp": "<ruby>母<rt>はは</rt></ruby>が<ruby>病気<rt>びょうき</rt></ruby>で、<ruby>心配<rt>しんぱい</rt></ruby>です。",
+            "en": "My mother is ill and I'm worried."
+          },
+          {
+            "jp": "<ruby>遅<rt>おそ</rt></ruby>くなって、すみません。",
+            "en": "Sorry I'm late."
+          },
+          {
+            "jp": "お<ruby>返事<rt>へんじ</rt></ruby>が<ruby>遅<rt>おそ</rt></ruby>くなって、<ruby>申<rt>もう</rt></ruby>し<ruby>訳<rt>わけ</rt></ruby>ありません。",
+            "en": "I'm very sorry for the late reply."
+          },
+          {
+            "jp": "<ruby>来<rt>き</rt></ruby>てくれて、ありがとう。",
+            "en": "Thanks for coming."
+          },
+          {
+            "jp": "<ruby>手伝<rt>てつだ</rt></ruby>ってくださって、ありがとうございました。",
+            "en": "Thank you very much for helping."
+          }
+        ],
+        "dialogue": [
+          {
+            "who": "A",
+            "jp": "<ruby>田中<rt>たなか</rt></ruby>さん、<ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>しを<ruby>手伝<rt>てつだ</rt></ruby>ってくれて、ありがとう。",
+            "en": "Tanaka-san, thanks for helping with the move."
+          },
+          {
+            "who": "B",
+            "jp": "いえいえ。<ruby>荷物<rt>にもつ</rt></ruby>が<ruby>多<rt>おお</rt></ruby>くて、<ruby>大変<rt>たいへん</rt></ruby>でしたね。",
+            "en": "No problem. There was so much stuff, it was hard work."
+          },
+          {
+            "who": "A",
+            "jp": "<ruby>本当<rt>ほんとう</rt></ruby>に<ruby>助<rt>たす</rt></ruby>かりました。<ruby>待<rt>ま</rt></ruby>たせてすみません、<ruby>今<rt>いま</rt></ruby>お<ruby>茶<rt>ちゃ</rt></ruby>をいれますね。",
+            "en": "You really saved me. Sorry to keep you waiting, I'll make some tea now."
+          },
+          {
+            "who": "B",
+            "jp": "ありがとう。のどがかわいて、ちょうど<ruby>飲<rt>の</rt></ruby>みたかったんです。",
+            "en": "Thanks. I'm thirsty, so that's just what I wanted."
+          }
+        ],
+        "tip": "A て-reason is for things that just happen to you: surprise, relief, tiredness, 'couldn't'. If the second half is a request or a plan, switch to から or ので.",
+        "quiz": [
+          {
+            "q": "「<ruby>誕生日<rt>たんじょうび</rt></ruby>のプレゼントを＿＿、ありがとう。」",
+            "choices": [
+              "<ruby>送<rt>おく</rt></ruby>ってくれて",
+              "<ruby>送<rt>おく</rt></ruby>ってあげて",
+              "<ruby>送<rt>おく</rt></ruby>らせて",
+              "<ruby>送<rt>おく</rt></ruby>ってくれたら"
+            ],
+            "a": 0,
+            "ex": "Thanking someone for what they did for you: 〜てくれてありがとう.",
+            "why": [
+              null,
+              "あげて would mean you sent it to them, so thanking them makes no sense.",
+              "<ruby>送<rt>おく</rt></ruby>らせて = 'make/let someone send', the wrong meaning.",
+              "たら makes it conditional: 'thank you if you send it'."
+            ]
+          },
+          {
+            "q": "Which sentence is unnatural?",
+            "choices": [
+              "<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>って、<ruby>試合<rt>しあい</rt></ruby>が<ruby>中止<rt>ちゅうし</rt></ruby>になった。",
+              "<ruby>寒<rt>さむ</rt></ruby>くて、<ruby>窓<rt>まど</rt></ruby>を<ruby>閉<rt>し</rt></ruby>めてください。",
+              "ニュースを<ruby>聞<rt>き</rt></ruby>いて、<ruby>安心<rt>あんしん</rt></ruby>しました。",
+              "<ruby>遅<rt>おく</rt></ruby>れて、すみません。"
+            ],
+            "a": 1,
+            "ex": "A て-reason can't lead into a request. Say <ruby>寒<rt>さむ</rt></ruby>いので、<ruby>窓<rt>まど</rt></ruby>を<ruby>閉<rt>し</rt></ruby>めてください.",
+            "why": [
+              "Fine: the cause is followed by an outcome nobody chose.",
+              null,
+              "Fine: the cause is followed by a feeling.",
+              "Fine: the set phrase 〜てすみません."
+            ]
+          },
+          {
+            "q": "「<ruby>約束<rt>やくそく</rt></ruby>を<ruby>忘<rt>わす</rt></ruby>れて、＿＿。」",
+            "choices": [
+              "すみません",
+              "ください",
+              "ほしいです",
+              "いけません"
+            ],
+            "a": 0,
+            "ex": "〜てすみません apologises for the thing in the て-clause.",
+            "why": [
+              null,
+              "〜てください would be asking them to forget the promise.",
+              "〜てほしい would mean you want them to forget.",
+              "Prohibition needs は: 〜てはいけません. And even then the meaning is wrong."
+            ]
+          }
+        ]
+      },
+      {
+        "jp": "〜てよかった・〜といいですね・〜ばよかった",
+        "romaji": "~te yokatta / ~to ii desu ne / ~ba yokatta",
+        "fn": "Relief, hope and regret",
+        "sources": [
+          "Genki II Ch18, Ch19",
+          "MNN Bk2 L35",
+          "Sou Matome Wk5"
+        ],
+        "explain": "Three short endings that carry a lot of feeling, and appear all over N4 listening.<br><br><b>〜てよかった</b> = 'I'm glad (that)…'. You did it, or it happened, and you're relieved: <ruby>日本<rt>にほん</rt></ruby>に<ruby>来<rt>き</rt></ruby>てよかった. For 'glad it didn't': 〜なくてよかった, as in <ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>らなくてよかった.<br><br><b>〜といいですね</b> = 'I hope (for you) that…': <ruby>明日<rt>あした</rt></ruby><ruby>晴<rt>は</rt></ruby>れるといいですね. For your own hopes: 〜といいんですが／〜といいなあ (<ruby>合格<rt>ごうかく</rt></ruby>できるといいんですが).<br><br><b>〜ばよかった</b> (or 〜たらよかった) = 'I should have…'. You didn't do it and you regret it: もっと<ruby>勉強<rt>べんきょう</rt></ruby>すればよかった. 〜なければよかった = 'I wish I hadn't': あんなことを<ruby>言<rt>い</rt></ruby>わなければよかった.<br><br>Did it and glad → てよかった. Didn't do it and sorry → ばよかった. Hasn't happened yet → といい.",
+        "formation": [
+          "て-form + よかった (glad) · ない → なくてよかった (glad it didn't)",
+          "Plain non-past + といいですね (hope, for someone) · といいんですが／といいなあ (for yourself)",
+          "ば-form + よかった (regret) · なければよかった (wish I hadn't)"
+        ],
+        "examples": [
+          {
+            "jp": "<ruby>日本<rt>にほん</rt></ruby>に<ruby>来<rt>き</rt></ruby>て、<ruby>本当<rt>ほんとう</rt></ruby>によかったです。",
+            "en": "I'm really glad I came to Japan."
+          },
+          {
+            "jp": "<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>らなくて、よかったですね。",
+            "en": "Good thing it didn't rain."
+          },
+          {
+            "jp": "<ruby>試験<rt>しけん</rt></ruby>に<ruby>合格<rt>ごうかく</rt></ruby>できるといいですね。",
+            "en": "I hope you pass the exam."
+          },
+          {
+            "jp": "<ruby>明日<rt>あした</rt></ruby>、<ruby>晴<rt>は</rt></ruby>れるといいなあ。",
+            "en": "I hope it's sunny tomorrow."
+          },
+          {
+            "jp": "<ruby>早<rt>はや</rt></ruby>くよくなるといいですね。",
+            "en": "I hope you get well soon."
+          },
+          {
+            "jp": "もっと<ruby>早<rt>はや</rt></ruby>く<ruby>予約<rt>よやく</rt></ruby>すればよかった。",
+            "en": "I should have booked earlier."
+          },
+          {
+            "jp": "あんなに<ruby>食<rt>た</rt></ruby>べなければよかった。おなかが<ruby>痛<rt>いた</rt></ruby>い。",
+            "en": "I wish I hadn't eaten so much. My stomach hurts."
+          },
+          {
+            "jp": "<ruby>先生<rt>せんせい</rt></ruby>に<ruby>聞<rt>き</rt></ruby>いてよかった。よく<ruby>分<rt>わ</rt></ruby>かりました。",
+            "en": "I'm glad I asked the teacher. I understand it now."
+          }
+        ],
+        "dialogue": [
+          {
+            "who": "A",
+            "jp": "<ruby>来週<rt>らいしゅう</rt></ruby>、<ruby>面接<rt>めんせつ</rt></ruby>があるんです。",
+            "en": "I have an interview next week."
+          },
+          {
+            "who": "B",
+            "jp": "そうですか。うまくいくといいですね。",
+            "en": "Oh really? I hope it goes well."
+          },
+          {
+            "who": "A",
+            "jp": "ありがとうございます。もっと<ruby>早<rt>はや</rt></ruby>く<ruby>準備<rt>じゅんび</rt></ruby>を<ruby>始<rt>はじ</rt></ruby>めればよかったんですが…",
+            "en": "Thanks. I should have started preparing sooner, though…"
+          },
+          {
+            "who": "B",
+            "jp": "<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>ですよ。<ruby>今日<rt>きょう</rt></ruby>から<ruby>練習<rt>れんしゅう</rt></ruby>しましょう。",
+            "en": "You'll be fine. Let's start practising today."
+          }
+        ],
+        "tip": "Did it and glad: 〜てよかった. Didn't do it and sorry: 〜ばよかった. Hasn't happened yet: 〜といいですね. A ready-made get-well message: 早くよくなるといいですね.",
+        "quiz": [
+          {
+            "q": "Your friend has an exam tomorrow. 「<ruby>明日<rt>あした</rt></ruby>の<ruby>試験<rt>しけん</rt></ruby>、＿＿。」",
+            "choices": [
+              "<ruby>合格<rt>ごうかく</rt></ruby>できるといいですね",
+              "<ruby>合格<rt>ごうかく</rt></ruby>できてよかったですね",
+              "<ruby>合格<rt>ごうかく</rt></ruby>すればよかったですね",
+              "<ruby>合格<rt>ごうかく</rt></ruby>してもいいですね"
+            ],
+            "a": 0,
+            "ex": "It hasn't happened yet, and you're wishing them well: 〜といいですね.",
+            "why": [
+              null,
+              "〜てよかった is for something that has already happened.",
+              "〜ばよかった is regret about the past, as if they'd already failed.",
+              "〜てもいい is permission ('you may pass'), which is odd."
+            ]
+          },
+          {
+            "q": "「<ruby>財布<rt>さいふ</rt></ruby>を<ruby>落<rt>お</rt></ruby>とした。もっと<ruby>気<rt>き</rt></ruby>をつけ＿＿。」",
+            "choices": [
+              "ればよかった",
+              "てよかった",
+              "るといい",
+              "てもよかった"
+            ],
+            "a": 0,
+            "ex": "Regret about something you didn't do: 〜ばよかった, 'I should have been more careful.'",
+            "why": [
+              null,
+              "〜てよかった = 'glad I was careful', which contradicts losing the wallet.",
+              "〜といい is a hope for the future, not regret about the past.",
+              "〜てもよかった = 'it would have been OK to be careful', which isn't regret."
+            ]
+          },
+          {
+            "q": "「<ruby>台風<rt>たいふう</rt></ruby>が<ruby>来<rt>こ</rt></ruby>なかった。<ruby>旅行<rt>りょこう</rt></ruby>が<ruby>中止<rt>ちゅうし</rt></ruby>に＿＿よかった。」",
+            "choices": [
+              "ならなくて",
+              "ならないで",
+              "ならなければ",
+              "なって"
+            ],
+            "a": 0,
+            "ex": "'Glad it didn't get cancelled': 〜なくてよかった.",
+            "why": [
+              null,
+              "ないで means 'without', not a cause. It doesn't combine with よかった like this.",
+              "〜なければよかった = 'I wish it hadn't been cancelled', but it wasn't cancelled.",
+              "〜てよかった = 'glad it got cancelled', the opposite of what happened."
+            ]
+          }
+        ]
+      },
+      {
+        "jp": "〜ばかり（〜てばかりいる・<ruby>名詞<rt>めいし</rt></ruby>ばかり）",
+        "romaji": "~bakari (~te bakari iru / meishi bakari)",
+        "fn": "'Nothing but…', and how it differs from たばかり, だけ and しか",
+        "sources": [
+          "MNN Bk2 L46",
+          "Genki II Ch17",
+          "Sou Matome Wk5"
+        ],
+        "explain": "ばかり has two jobs at N4. You've already met 〜たばかり ('just did', Module 9). The other one is <b>'nothing but / always just'</b>, usually with a <b>complaining</b> tone:<br>• Noun + ばかり: <ruby>弟<rt>おとうと</rt></ruby>は<ruby>肉<rt>にく</rt></ruby>ばかり<ruby>食<rt>た</rt></ruby>べている (my brother eats nothing but meat).<br>• Verb て-form + ばかりいる: <ruby>息子<rt>むすこ</rt></ruby>はゲームをしてばかりいる (my son does nothing but play games).<br><br>Compare the other 'only' words:<br>• <b>だけ</b> = only, as a neutral fact: <ruby>肉<rt>にく</rt></ruby>だけ<ruby>食<rt>た</rt></ruby>べた (I only ate the meat).<br>• <b>しか〜ない</b> = only, with a feeling of 'not enough': <ruby>肉<rt>にく</rt></ruby>しか<ruby>食<rt>た</rt></ruby>べなかった.<br>• <b>ばかり</b> adds 'too much of it, again and again'.<br><br>Don't confuse <ruby>食<rt>た</rt></ruby>べ<b>た</b>ばかり (just ate) with <ruby>食<rt>た</rt></ruby>べ<b>て</b>ばかりいる (does nothing but eat). Check the form in front: た-form means just did, て-form means nothing but.",
+        "formation": [
+          "Noun + ばかり + verb: <ruby>肉<rt>にく</rt></ruby>ばかり<ruby>食<rt>た</rt></ruby>べる",
+          "Verb て-form + ばかりいる: <ruby>寝<rt>ね</rt></ruby>てばかりいる",
+          "Compare: た-form + ばかり = just did (<ruby>食<rt>た</rt></ruby>べたばかり)"
+        ],
+        "examples": [
+          {
+            "jp": "<ruby>弟<rt>おとうと</rt></ruby>は<ruby>肉<rt>にく</rt></ruby>ばかり<ruby>食<rt>た</rt></ruby>べて、<ruby>野菜<rt>やさい</rt></ruby>を<ruby>食<rt>た</rt></ruby>べません。",
+            "en": "My younger brother eats nothing but meat and won't eat vegetables."
+          },
+          {
+            "jp": "<ruby>息子<rt>むすこ</rt></ruby>は<ruby>毎日<rt>まいにち</rt></ruby>ゲームをしてばかりいます。",
+            "en": "My son does nothing but play games every day."
+          },
+          {
+            "jp": "<ruby>休<rt>やす</rt></ruby>みの<ruby>日<rt>ひ</rt></ruby>は<ruby>寝<rt>ね</rt></ruby>てばかりいました。",
+            "en": "On my day off I did nothing but sleep."
+          },
+          {
+            "jp": "<ruby>最近<rt>さいきん</rt></ruby>、<ruby>雨<rt>あめ</rt></ruby>ばかりですね。",
+            "en": "It's been nothing but rain lately."
+          },
+          {
+            "jp": "<ruby>文句<rt>もんく</rt></ruby>ばかり<ruby>言<rt>い</rt></ruby>わないで、<ruby>手伝<rt>てつだ</rt></ruby>ってよ。",
+            "en": "Stop complaining and help me."
+          },
+          {
+            "jp": "<ruby>昼<rt>ひる</rt></ruby>ご<ruby>飯<rt>はん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べたばかりなので、おなかがいっぱいです。",
+            "en": "I just had lunch, so I'm full. (たばかり = just did)"
+          },
+          {
+            "jp": "<ruby>冷蔵庫<rt>れいぞうこ</rt></ruby>には<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>だけ<ruby>入<rt>はい</rt></ruby>っています。",
+            "en": "There are only drinks in the fridge. (だけ = neutral)"
+          },
+          {
+            "jp": "<ruby>財布<rt>さいふ</rt></ruby>に<ruby>百円<rt>ひゃくえん</rt></ruby>しかありません。",
+            "en": "I only have 100 yen in my wallet. (しか = not enough)"
+          }
+        ],
+        "dialogue": [
+          {
+            "who": "A",
+            "jp": "うちの<ruby>子<rt>こ</rt></ruby>、<ruby>勉強<rt>べんきょう</rt></ruby>しないで、テレビばかり<ruby>見<rt>み</rt></ruby>ているんです。",
+            "en": "My kid doesn't study, just watches TV all the time."
+          },
+          {
+            "who": "B",
+            "jp": "うちもですよ。<ruby>毎日<rt>まいにち</rt></ruby>スマホを<ruby>見<rt>み</rt></ruby>てばかりいます。",
+            "en": "Mine too. Does nothing but look at their phone every day."
+          },
+          {
+            "who": "A",
+            "jp": "<ruby>困<rt>こま</rt></ruby>りますね。",
+            "en": "It's a problem, isn't it."
+          },
+          {
+            "who": "B",
+            "jp": "でも、<ruby>私<rt>わたし</rt></ruby>も<ruby>子<rt>こ</rt></ruby>どもの<ruby>時<rt>とき</rt></ruby>はマンガばかり<ruby>読<rt>よ</rt></ruby>んでいましたから…",
+            "en": "Then again, I read nothing but manga when I was a kid…"
+          }
+        ],
+        "tip": "ばかり almost always sounds like a complaint: too much of one thing. Check the form in front: たばかり = just did, てばかり = nothing but.",
+        "quiz": [
+          {
+            "q": "「<ruby>兄<rt>あに</rt></ruby>は<ruby>休<rt>やす</rt></ruby>みの<ruby>日<rt>ひ</rt></ruby>、＿＿ばかりいます。」",
+            "choices": [
+              "<ruby>寝<rt>ね</rt></ruby>て",
+              "<ruby>寝<rt>ね</rt></ruby>た",
+              "<ruby>寝<rt>ね</rt></ruby>る",
+              "<ruby>寝<rt>ね</rt></ruby>"
+            ],
+            "a": 0,
+            "ex": "'Does nothing but…' is て-form + ばかりいる.",
+            "why": [
+              null,
+              "た-form + ばかり means 'just did' and doesn't take いる.",
+              "Dictionary form doesn't attach to ばかりいる.",
+              "The bare stem doesn't attach to ばかり."
+            ]
+          },
+          {
+            "q": "「<ruby>肉<rt>にく</rt></ruby>＿＿<ruby>食<rt>た</rt></ruby>べないで、<ruby>野菜<rt>やさい</rt></ruby>も<ruby>食<rt>た</rt></ruby>べなさい。」",
+            "choices": [
+              "ばかり",
+              "しか",
+              "ほど",
+              "まで"
+            ],
+            "a": 0,
+            "ex": "'Don't eat nothing but meat': Noun + ばかり.",
+            "why": [
+              null,
+              "しか pairs with a negative to mean 'only'. <ruby>肉<rt>にく</rt></ruby>しか<ruby>食<rt>た</rt></ruby>べないで would be a confusing 'without eating only meat'.",
+              "ほど means 'to the extent of'.",
+              "まで means 'even' or 'until', the wrong meaning."
+            ]
+          },
+          {
+            "q": "「さっき<ruby>昼<rt>ひる</rt></ruby>ご<ruby>飯<rt>はん</rt></ruby>を＿＿なので、まだおなかがいっぱいです。」",
+            "choices": [
+              "<ruby>食<rt>た</rt></ruby>べたばかり",
+              "<ruby>食<rt>た</rt></ruby>べてばかり",
+              "<ruby>食<rt>た</rt></ruby>べるばかり",
+              "<ruby>食<rt>た</rt></ruby>べばかり"
+            ],
+            "a": 0,
+            "ex": "'Just ate': た-form + ばかり.",
+            "why": [
+              null,
+              "てばかり means 'nothing but', and it needs いる.",
+              "Dictionary form + ばかり isn't the 'just did' pattern.",
+              "Not a real form."
+            ]
+          }
+        ]
+      },
+      {
+        "jp": "〜ることがある・〜たことがある・〜ことにしている",
+        "romaji": "~ru koto ga aru / ~ta koto ga aru / ~koto ni shite iru",
+        "fn": "Sometimes do vs have done vs make a habit of",
+        "sources": [
+          "MNN Bk2 L36",
+          "Genki II Ch23",
+          "Sou Matome Wk5"
+        ],
+        "explain": "These こと patterns look almost identical. <b>The verb form in front of こと</b> decides the meaning.<br><br><b>Dictionary / ない-form + ことがある</b> = 'there are times when / sometimes': <ruby>朝<rt>あさ</rt></ruby>ご<ruby>飯<rt>はん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べないことがあります (sometimes I skip breakfast).<br><b>た-form + ことがある</b> = 'have done before' (Module 7): <ruby>富士山<rt>ふじさん</rt></ruby>に<ruby>登<rt>のぼ</rt></ruby>ったことがあります.<br><b>Dictionary / ない-form + ことにしている</b> = 'I make it a rule to', a habit you chose: <ruby>毎朝<rt>まいあさ</rt></ruby>ジョギングすることにしています.<br><br>Related: ことにした = decided once (Module 6). ことになっている = it's the rule here, or it's been arranged, decided by others: <ruby>会社<rt>かいしゃ</rt></ruby>では<ruby>制服<rt>せいふく</rt></ruby>を<ruby>着<rt>き</rt></ruby>ることになっています.",
+        "formation": [
+          "Dict / ない + ことがある: sometimes",
+          "た + ことがある: experience",
+          "Dict / ない + ことにしている: habit by your own choice",
+          "Dict / ない + ことになっている: a rule set by others, or something scheduled"
+        ],
+        "examples": [
+          {
+            "jp": "<ruby>忙<rt>いそが</rt></ruby>しい<ruby>時<rt>とき</rt></ruby>は、<ruby>昼<rt>ひる</rt></ruby>ご<ruby>飯<rt>はん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べないことがあります。",
+            "en": "When I'm busy, I sometimes skip lunch."
+          },
+          {
+            "jp": "この<ruby>電車<rt>でんしゃ</rt></ruby>は、たまに<ruby>遅<rt>おく</rt></ruby>れることがあります。",
+            "en": "This train is occasionally late."
+          },
+          {
+            "jp": "<ruby>北海道<rt>ほっかいどう</rt></ruby>に<ruby>行<rt>い</rt></ruby>ったことがあります。",
+            "en": "I've been to Hokkaido."
+          },
+          {
+            "jp": "<ruby>寝<rt>ね</rt></ruby>る<ruby>前<rt>まえ</rt></ruby>に、<ruby>日記<rt>にっき</rt></ruby>を<ruby>書<rt>か</rt></ruby>くことにしています。",
+            "en": "I make a point of writing in my diary before bed."
+          },
+          {
+            "jp": "<ruby>健康<rt>けんこう</rt></ruby>のために、エレベーターを<ruby>使<rt>つか</rt></ruby>わないことにしています。",
+            "en": "For my health, I make a rule of not using elevators."
+          },
+          {
+            "jp": "この<ruby>学校<rt>がっこう</rt></ruby>では、<ruby>教室<rt>きょうしつ</rt></ruby>で<ruby>日本語<rt>にほんご</rt></ruby>だけ<ruby>話<rt>はな</rt></ruby>すことになっています。",
+            "en": "At this school, the rule is to speak only Japanese in the classroom."
+          },
+          {
+            "jp": "<ruby>来月<rt>らいげつ</rt></ruby>から<ruby>大阪<rt>おおさか</rt></ruby>で<ruby>働<rt>はたら</rt></ruby>くことになっています。",
+            "en": "It's been arranged that I'll work in Osaka from next month."
+          }
+        ],
+        "dialogue": [
+          {
+            "who": "A",
+            "jp": "<ruby>毎日<rt>まいにち</rt></ruby>、<ruby>自分<rt>じぶん</rt></ruby>で<ruby>料理<rt>りょうり</rt></ruby>するんですか。",
+            "en": "Do you cook for yourself every day?"
+          },
+          {
+            "who": "B",
+            "jp": "ええ、できるだけ<ruby>自炊<rt>じすい</rt></ruby>することにしています。でも、<ruby>疲<rt>つか</rt></ruby>れた<ruby>日<rt>ひ</rt></ruby>は、コンビニで<ruby>買<rt>か</rt></ruby>うこともありますよ。",
+            "en": "Yes, I make a point of cooking as much as I can. But on days I'm tired, I sometimes buy from the convenience store."
+          },
+          {
+            "who": "A",
+            "jp": "そうですか。<ruby>私<rt>わたし</rt></ruby>は<ruby>料理<rt>りょうり</rt></ruby>をしたことがほとんどないんです。",
+            "en": "I see. I've hardly ever cooked."
+          }
+        ],
+        "tip": "Look at the verb before こと. Dictionary form means sometimes or a habit; た-form means experience. ことにしている is your own rule; ことになっている is someone else's.",
+        "quiz": [
+          {
+            "q": "「この<ruby>時計<rt>とけい</rt></ruby>は、<ruby>時々<rt>ときどき</rt></ruby><ruby>止<rt>と</rt></ruby>まる＿＿。」",
+            "choices": [
+              "ことがあります",
+              "ことにしています",
+              "ことになっています",
+              "ことができます"
+            ],
+            "a": 0,
+            "ex": "Dictionary form + ことがある = 'sometimes': this clock sometimes stops.",
+            "why": [
+              null,
+              "ことにしている is a habit someone chooses. A clock can't choose.",
+              "ことになっている is a rule or arrangement, not an occasional event.",
+              "ことができる means the clock is able to stop, not that it sometimes does."
+            ]
+          },
+          {
+            "q": "「<ruby>私<rt>わたし</rt></ruby>は、<ruby>毎晩<rt>まいばん</rt></ruby><ruby>十二時<rt>じゅうにじ</rt></ruby>までに<ruby>寝<rt>ね</rt></ruby>る＿＿。」 (my own rule)",
+            "choices": [
+              "ことにしています",
+              "ことがあります",
+              "ことになっています",
+              "ことがありました"
+            ],
+            "a": 0,
+            "ex": "A habit you decided on yourself: ことにしている.",
+            "why": [
+              null,
+              "ことがあります = 'sometimes', not a rule.",
+              "ことになっています = a rule set by someone else.",
+              "ことがありました = 'there were times when…'."
+            ]
+          },
+          {
+            "q": "「すしは、<ruby>一度<rt>いちど</rt></ruby>も＿＿ことがありません。」",
+            "choices": [
+              "<ruby>食<rt>た</rt></ruby>べた",
+              "<ruby>食<rt>た</rt></ruby>べる",
+              "<ruby>食<rt>た</rt></ruby>べて",
+              "<ruby>食<rt>た</rt></ruby>べない"
+            ],
+            "a": 0,
+            "ex": "'Have never eaten': た-form + ことがない.",
+            "why": [
+              null,
+              "<ruby>食<rt>た</rt></ruby>べることがない = 'there are no times I eat it', which is about habit, and <ruby>一度<rt>いちど</rt></ruby>も ('not once') points to experience.",
+              "て-form doesn't attach to こと.",
+              "<ruby>食<rt>た</rt></ruby>べないことがない is a double negative: 'there's never a time I don't eat it'."
+            ]
+          }
+        ]
+      },
+      {
+        "jp": "〜にする・〜くする",
+        "romaji": "~ni suru / ~ku suru",
+        "fn": "Choosing something, and making something become X",
+        "sources": [
+          "MNN Bk2 L44",
+          "Genki II Ch23",
+          "Sou Matome Wk2"
+        ],
+        "explain": "する partners with に in two ways that N4 tests.<br><br><b>Noun + にする</b> = 'go with / decide on', choosing from options: <ruby>私<rt>わたし</rt></ruby>はコーヒーにします (I'll have coffee). <ruby>会議<rt>かいぎ</rt></ruby>は<ruby>月曜日<rt>げつようび</rt></ruby>にしましょう.<br><br><b>い-adj → くする / な-adj or noun → にする</b> = 'make (something) X'. Someone causes the change: <ruby>音<rt>おと</rt></ruby>を<ruby>小<rt>ちい</rt></ruby>さくしてください (turn the volume down), <ruby>部屋<rt>へや</rt></ruby>をきれいにする.<br><br>Compare なる (Module 8): <ruby>音<rt>おと</rt></ruby>が<ruby>小<rt>ちい</rt></ruby>さくなった (the sound got quieter by itself). <b>する</b> means someone makes it happen; <b>なる</b> means it becomes so. Particles follow: <ruby>音<rt>おと</rt></ruby><b>を</b><ruby>小<rt>ちい</rt></ruby>さくする vs <ruby>音<rt>おと</rt></ruby><b>が</b><ruby>小<rt>ちい</rt></ruby>さくなる.",
+        "formation": [
+          "Noun + にする／にします (choose)",
+          "Object を + い-adj く + する (make it X)",
+          "Object を + な-adj / noun に + する",
+          "Each row below reads <b>なる (becomes) → する (make it)</b>."
+        ],
+        "conjugation": [
+          {
+            "label": "小さい",
+            "from": "<ruby>小<rt>ちい</rt></ruby>さくなる",
+            "to": "<ruby>小<rt>ちい</rt></ruby>さくする"
+          },
+          {
+            "label": "短い",
+            "from": "<ruby>短<rt>みじか</rt></ruby>くなる",
+            "to": "<ruby>短<rt>みじか</rt></ruby>くする"
+          },
+          {
+            "label": "きれい",
+            "from": "きれいになる",
+            "to": "きれいにする"
+          },
+          {
+            "label": "静か",
+            "from": "<ruby>静<rt>しず</rt></ruby>かになる",
+            "to": "<ruby>静<rt>しず</rt></ruby>かにする"
+          },
+          {
+            "label": "Noun 子ども部屋",
+            "from": "<ruby>子<rt>こ</rt></ruby>ども<ruby>部屋<rt>べや</rt></ruby>になる",
+            "to": "<ruby>子<rt>こ</rt></ruby>ども<ruby>部屋<rt>べや</rt></ruby>にする"
+          }
+        ],
+        "examples": [
+          {
+            "jp": "A：<ruby>何<rt>なに</rt></ruby>にしますか。　B：<ruby>私<rt>わたし</rt></ruby>はカレーにします。",
+            "en": "A: What will you have? B: I'll have the curry."
+          },
+          {
+            "jp": "<ruby>次<rt>つぎ</rt></ruby>の<ruby>会議<rt>かいぎ</rt></ruby>は、<ruby>金曜日<rt>きんようび</rt></ruby>にしましょう。",
+            "en": "Let's make the next meeting Friday."
+          },
+          {
+            "jp": "テレビの<ruby>音<rt>おと</rt></ruby>を<ruby>小<rt>ちい</rt></ruby>さくしてください。",
+            "en": "Please turn the TV down."
+          },
+          {
+            "jp": "<ruby>髪<rt>かみ</rt></ruby>を<ruby>短<rt>みじか</rt></ruby>くしました。",
+            "en": "I had my hair cut short."
+          },
+          {
+            "jp": "<ruby>図書館<rt>としょかん</rt></ruby>では<ruby>静<rt>しず</rt></ruby>かにしてください。",
+            "en": "Please be quiet in the library."
+          },
+          {
+            "jp": "お<ruby>客<rt>きゃく</rt></ruby>さんが<ruby>来<rt>く</rt></ruby>るので、<ruby>部屋<rt>へや</rt></ruby>を<ruby>暖<rt>あたた</rt></ruby>かくしておきました。",
+            "en": "Guests are coming, so I warmed up the room in advance."
+          },
+          {
+            "jp": "<ruby>子<rt>こ</rt></ruby>どもが<ruby>生<rt>う</rt></ruby>まれたので、<ruby>部屋<rt>へや</rt></ruby>を<ruby>一<rt>ひと</rt></ruby>つ<ruby>子<rt>こ</rt></ruby>ども<ruby>部屋<rt>べや</rt></ruby>にしました。",
+            "en": "Our child was born, so we turned one room into a kid's room."
+          }
+        ],
+        "dialogue": [
+          {
+            "who": "店員",
+            "jp": "ご<ruby>注文<rt>ちゅうもん</rt></ruby>はお<ruby>決<rt>き</rt></ruby>まりですか。",
+            "en": "Are you ready to order?"
+          },
+          {
+            "who": "A",
+            "jp": "えっと、<ruby>私<rt>わたし</rt></ruby>はこの<ruby>日替<rt>ひが</rt></ruby>わり<ruby>定食<rt>ていしょく</rt></ruby>にします。",
+            "en": "Um, I'll have this daily set meal."
+          },
+          {
+            "who": "B",
+            "jp": "<ruby>私<rt>わたし</rt></ruby>はラーメンにします。あ、すみません、<ruby>辛<rt>から</rt></ruby>さを<ruby>少<rt>すこ</rt></ruby>し<ruby>控<rt>ひか</rt></ruby>えめにできますか。",
+            "en": "I'll have the ramen. Oh, excuse me, could you make it a little less spicy?"
+          },
+          {
+            "who": "店員",
+            "jp": "はい、できますよ。",
+            "en": "Yes, we can do that."
+          }
+        ],
+        "tip": "Ordering food? 〜にします is all you need. Asking someone to change something: 〜くしてください or 〜にしてください (小さく, 静かに, 短く).",
+        "quiz": [
+          {
+            "q": "A：「<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>は<ruby>何<rt>なに</rt></ruby>にしますか。」　B：「オレンジジュース＿＿します。」",
+            "choices": [
+              "に",
+              "が",
+              "を",
+              "で"
+            ],
+            "a": 0,
+            "ex": "Choosing: Noun + にする.",
+            "why": [
+              null,
+              "が doesn't go with する in this meaning.",
+              "ジュースをします would mean 'do juice', which isn't Japanese.",
+              "で marks place or means."
+            ]
+          },
+          {
+            "q": "「<ruby>暑<rt>あつ</rt></ruby>いので、エアコンで<ruby>部屋<rt>へや</rt></ruby>を＿＿ください。」",
+            "choices": [
+              "<ruby>涼<rt>すず</rt></ruby>しくして",
+              "<ruby>涼<rt>すず</rt></ruby>しくなって",
+              "<ruby>涼<rt>すず</rt></ruby>しいにして",
+              "<ruby>涼<rt>すず</rt></ruby>しさして"
+            ],
+            "a": 0,
+            "ex": "Making the room cool (someone causes it): い-adj く + する.",
+            "why": [
+              null,
+              "なって = 'become', and the room can't follow a request to 'become cool'. You make it cool.",
+              "い-adjectives use く, not に: <ruby>涼<rt>すず</rt></ruby>しくする.",
+              "Not a real form."
+            ]
+          },
+          {
+            "q": "「<ruby>赤<rt>あか</rt></ruby>ちゃんが<ruby>寝<rt>ね</rt></ruby>ているから、＿＿ね。」",
+            "choices": [
+              "<ruby>静<rt>しず</rt></ruby>かにして",
+              "<ruby>静<rt>しず</rt></ruby>かくして",
+              "<ruby>静<rt>しず</rt></ruby>かになって",
+              "<ruby>静<rt>しず</rt></ruby>かでして"
+            ],
+            "a": 0,
+            "ex": "Asking someone to be quiet: な-adj + にする.",
+            "why": [
+              null,
+              "な-adjectives take に, not く.",
+              "なって ('become quiet') focuses on the change happening by itself. To ask someone to act, use する.",
+              "Not a real form."
+            ]
+          }
+        ]
+      },
+      {
+        "jp": "〜という",
+        "romaji": "~to iu",
+        "fn": "'Called…', 'the [news] that…', and what something means",
+        "sources": [
+          "MNN Bk2 L21, L33",
+          "Genki II Ch20",
+          "Sou Matome Wk6"
+        ],
+        "explain": "という (と + <ruby>言<rt>い</rt></ruby>う) quotes a name or some content and hooks it onto a noun.<br><br><b>Name + という + noun</b> = 'a … called X': 「さくら」という<ruby>店<rt>みせ</rt></ruby> (a shop called Sakura). Use it for names your listener might not know.<br><b>Sentence + という + noun</b> = 'the [news / story / message] that…': <ruby>来週<rt>らいしゅう</rt></ruby>テストがあるというメール (an email saying there's a test next week). Common nouns here: <ruby>話<rt>はなし</rt></ruby>, ニュース, <ruby>意味<rt>いみ</rt></ruby>, <ruby>連絡<rt>れんらく</rt></ruby>, メール, <ruby>手紙<rt>てがみ</rt></ruby>.<br><b>Xというのは〜という<ruby>意味<rt>いみ</rt></ruby>です／〜ことです</b> = 'X means…'.<br><br>In casual speech, って replaces という: 「さくら」って<ruby>店<rt>みせ</rt></ruby> / 〜ってどういう<ruby>意味<rt>いみ</rt></ruby>？ To ask what something's called: これは<ruby>何<rt>なん</rt></ruby>といいますか.",
+        "formation": [
+          "Noun + という + noun ('called')",
+          "Plain-form sentence + という + noun ('that says')",
+          "X というのは ～ という<ruby>意味<rt>いみ</rt></ruby>です／ことです (definition)"
+        ],
+        "examples": [
+          {
+            "jp": "<ruby>駅<rt>えき</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>に「さくら」という<ruby>喫茶店<rt>きっさてん</rt></ruby>があります。",
+            "en": "There's a café called 'Sakura' in front of the station."
+          },
+          {
+            "jp": "これは<ruby>何<rt>なん</rt></ruby>という<ruby>花<rt>はな</rt></ruby>ですか。",
+            "en": "What's this flower called?"
+          },
+          {
+            "jp": "<ruby>山田<rt>やまだ</rt></ruby>さんという<ruby>人<rt>ひと</rt></ruby>から<ruby>電話<rt>でんわ</rt></ruby>がありました。",
+            "en": "There was a call from someone called Yamada."
+          },
+          {
+            "jp": "<ruby>来週<rt>らいしゅう</rt></ruby>の<ruby>授業<rt>じゅぎょう</rt></ruby>は<ruby>休<rt>やす</rt></ruby>みだという<ruby>連絡<rt>れんらく</rt></ruby>がありました。",
+            "en": "We were notified that next week's class is cancelled."
+          },
+          {
+            "jp": "<ruby>田中<rt>たなか</rt></ruby>さんが<ruby>結婚<rt>けっこん</rt></ruby>するという<ruby>話<rt>はなし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>きました。",
+            "en": "I heard (the story) that Tanaka-san is getting married."
+          },
+          {
+            "jp": "「<ruby>積<rt>つ</rt></ruby>ん<ruby>読<rt>どく</rt></ruby>」というのは、<ruby>本<rt>ほん</rt></ruby>を<ruby>買<rt>か</rt></ruby>っても<ruby>読<rt>よ</rt></ruby>まないことです。",
+            "en": "'Tsundoku' means buying books and never reading them."
+          },
+          {
+            "jp": "「いただきます」って、どういう<ruby>意味<rt>いみ</rt></ruby>？",
+            "en": "What does 'itadakimasu' mean? (casual)"
+          }
+        ],
+        "dialogue": [
+          {
+            "who": "A",
+            "jp": "この「<ruby>立入禁止<rt>たちいりきんし</rt></ruby>」という<ruby>漢字<rt>かんじ</rt></ruby>は、どういう<ruby>意味<rt>いみ</rt></ruby>ですか。",
+            "en": "What do these kanji, '立入禁止', mean?"
+          },
+          {
+            "who": "B",
+            "jp": "「<ruby>入<rt>はい</rt></ruby>ってはいけない」という<ruby>意味<rt>いみ</rt></ruby>ですよ。",
+            "en": "They mean 'do not enter'."
+          },
+          {
+            "who": "A",
+            "jp": "そうですか。じゃあ、あの「<ruby>関係者以外<rt>かんけいしゃいがい</rt></ruby>」というのは？",
+            "en": "I see. And that '関係者以外'?"
+          },
+          {
+            "who": "B",
+            "jp": "「そこで<ruby>働<rt>はたら</rt></ruby>いている<ruby>人<rt>ひと</rt></ruby>だけ」ということです。",
+            "en": "It means 'only people who work there'."
+          }
+        ],
+        "tip": "To ask what a word means: 「〜」というのは、どういう意味ですか (casual: 〜ってどういう意味？). To ask what something is called: これは何といいますか.",
+        "quiz": [
+          {
+            "q": "「これは<ruby>日本語<rt>にほんご</rt></ruby>で<ruby>何<rt>なん</rt></ruby>＿＿<ruby>言<rt>い</rt></ruby>いますか。」",
+            "choices": [
+              "と",
+              "を",
+              "に",
+              "が"
+            ],
+            "a": 0,
+            "ex": "Quoting a word or name takes と: <ruby>何<rt>なん</rt></ruby>と<ruby>言<rt>い</rt></ruby>いますか.",
+            "why": [
+              null,
+              "を would make 'what' the object of saying, but names and words are quoted with と.",
+              "に doesn't quote.",
+              "が would make 'what' the subject."
+            ]
+          },
+          {
+            "q": "「『<ruby>山<rt>やま</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>』＿＿レストランで<ruby>晩<rt>ばん</rt></ruby>ご<ruby>飯<rt>はん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べました。」",
+            "choices": [
+              "という",
+              "といった",
+              "ということ",
+              "というのは"
+            ],
+            "a": 0,
+            "ex": "Name + という + noun: 'a restaurant called Yama no Ue'.",
+            "why": [
+              null,
+              "といった means 'such as / like', listing examples.",
+              "ということ turns it into 'the fact that', which can't modify レストラン.",
+              "というのは introduces a definition ('X means…')."
+            ]
+          },
+          {
+            "q": "「<ruby>来週<rt>らいしゅう</rt></ruby>の<ruby>会議<rt>かいぎ</rt></ruby>は<ruby>中止<rt>ちゅうし</rt></ruby>だ＿＿メールが<ruby>来<rt>き</rt></ruby>ました。」",
+            "choices": [
+              "という",
+              "として",
+              "とか",
+              "ので"
+            ],
+            "a": 0,
+            "ex": "The email's content + という + メール: 'an email saying the meeting is cancelled'.",
+            "why": [
+              null,
+              "として means 'as / in the role of'.",
+              "とか lists examples casually.",
+              "だ doesn't come before ので (it would be なので). And it would turn the cancellation into the reason the email came."
+            ]
+          }
+        ]
+      },
+      {
+        "jp": "〜<ruby>方<rt>かた</rt></ruby>・〜とおりに",
+        "romaji": "~kata / ~toori ni",
+        "fn": "How to do it, and doing it exactly as shown",
+        "sources": [
+          "MNN Bk1 L14 / Bk2 L34",
+          "Genki II Ch23",
+          "Sou Matome Wk6"
+        ],
+        "explain": "<b>Verb ます-stem + <ruby>方<rt>かた</rt></ruby></b> turns a verb into 'the way of doing it': <ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby> (how to read), <ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby> (how to use), <ruby>作<rt>つく</rt></ruby>り<ruby>方<rt>かた</rt></ruby> (recipe). The result is a <b>noun</b>, so its object switches from を to <b>の</b>: <ruby>漢字<rt>かんじ</rt></ruby><b>の</b><ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>, not <ruby>漢字<rt>かんじ</rt></ruby>を<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>. With する-verbs: <ruby>勉強<rt>べんきょう</rt></ruby>の<ruby>仕方<rt>しかた</rt></ruby>.<br><br><b>〜とおり(に)</b> = 'exactly as…':<br>• た-form + とおりに (as was said / as you saw): <ruby>先生<rt>せんせい</rt></ruby>が<ruby>言<rt>い</rt></ruby>ったとおりに<ruby>書<rt>か</rt></ruby>いてください.<br>• Dictionary form + とおりに (as instructed): <ruby>説明書<rt>せつめいしょ</rt></ruby>に<ruby>書<rt>か</rt></ruby>いてあるとおりにやる.<br>• Noun + のとおり(に) or Noun + どおり(に): <ruby>地図<rt>ちず</rt></ruby>のとおりに<ruby>行<rt>い</rt></ruby>く, <ruby>予定<rt>よてい</rt></ruby>どおり (on schedule).",
+        "formation": [
+          "ます-stem + <ruby>方<rt>かた</rt></ruby> (<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>・<ruby>食<rt>た</rt></ruby>べ<ruby>方<rt>かた</rt></ruby>・<ruby>行<rt>い</rt></ruby>き<ruby>方<rt>かた</rt></ruby>) · the object takes の",
+          "する-verb: Noun + の + <ruby>仕方<rt>しかた</rt></ruby>",
+          "た-form / dictionary form + とおり(に)",
+          "Noun + の + とおり(に) · Noun + どおり(に)"
+        ],
+        "examples": [
+          {
+            "jp": "この<ruby>漢字<rt>かんじ</rt></ruby>の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えてください。",
+            "en": "Please tell me how to read this kanji."
+          },
+          {
+            "jp": "<ruby>駅<rt>えき</rt></ruby>までの<ruby>行<rt>い</rt></ruby>き<ruby>方<rt>かた</rt></ruby>が<ruby>分<rt>わ</rt></ruby>かりません。",
+            "en": "I don't know how to get to the station."
+          },
+          {
+            "jp": "<ruby>新<rt>あたら</rt></ruby>しいパソコンの<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えました。",
+            "en": "I learned how to use the new computer."
+          },
+          {
+            "jp": "<ruby>日本語<rt>にほんご</rt></ruby>の<ruby>勉強<rt>べんきょう</rt></ruby>の<ruby>仕方<rt>しかた</rt></ruby>について、<ruby>先生<rt>せんせい</rt></ruby>に<ruby>相談<rt>そうだん</rt></ruby>しました。",
+            "en": "I asked my teacher for advice on how to study Japanese."
+          },
+          {
+            "jp": "<ruby>私<rt>わたし</rt></ruby>が<ruby>言<rt>い</rt></ruby>ったとおりに、やってみてください。",
+            "en": "Try doing it exactly as I said."
+          },
+          {
+            "jp": "<ruby>説明書<rt>せつめいしょ</rt></ruby>に<ruby>書<rt>か</rt></ruby>いてあるとおりに<ruby>組<rt>く</rt></ruby>み<ruby>立<rt>た</rt></ruby>てました。",
+            "en": "I put it together exactly as the instructions said."
+          },
+          {
+            "jp": "<ruby>電車<rt>でんしゃ</rt></ruby>は<ruby>予定<rt>よてい</rt></ruby>どおりに<ruby>着<rt>つ</rt></ruby>きました。",
+            "en": "The train arrived on schedule."
+          },
+          {
+            "jp": "<ruby>天気予報<rt>てんきよほう</rt></ruby>のとおり、<ruby>午後<rt>ごご</rt></ruby>から<ruby>雨<rt>あめ</rt></ruby>になりました。",
+            "en": "Just as the forecast said, it started raining in the afternoon."
+          }
+        ],
+        "dialogue": [
+          {
+            "who": "A",
+            "jp": "すみません、この<ruby>券売機<rt>けんばいき</rt></ruby>の<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>が<ruby>分<rt>わ</rt></ruby>からないんですが…",
+            "en": "Excuse me, I can't work out how to use this ticket machine…"
+          },
+          {
+            "who": "B",
+            "jp": "<ruby>画面<rt>がめん</rt></ruby>に<ruby>出<rt>で</rt></ruby>るとおりに<ruby>押<rt>お</rt></ruby>せば、<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>ですよ。まず、ここで<ruby>行<rt>い</rt></ruby>き<ruby>先<rt>さき</rt></ruby>を<ruby>選<rt>えら</rt></ruby>んでください。",
+            "en": "Just press things as they come up on the screen and you'll be fine. First, choose your destination here."
+          },
+          {
+            "who": "A",
+            "jp": "あ、できました。ありがとうございます。",
+            "en": "Oh, done it. Thank you."
+          }
+        ],
+        "tip": "方 makes a noun, so the object takes の: 漢字の読み方, 箸の使い方. For 'on schedule' or 'as planned', use 予定どおり.",
+        "quiz": [
+          {
+            "q": "「この<ruby>料理<rt>りょうり</rt></ruby>の＿＿を<ruby>教<rt>おし</rt></ruby>えてください。」",
+            "choices": [
+              "<ruby>作<rt>つく</rt></ruby>り<ruby>方<rt>かた</rt></ruby>",
+              "<ruby>作<rt>つく</rt></ruby>る<ruby>方<rt>かた</rt></ruby>",
+              "<ruby>作<rt>つく</rt></ruby>って<ruby>方<rt>かた</rt></ruby>",
+              "<ruby>作<rt>つく</rt></ruby>った<ruby>方<rt>ほう</rt></ruby>"
+            ],
+            "a": 0,
+            "ex": "ます-stem + <ruby>方<rt>かた</rt></ruby>: <ruby>作<rt>つく</rt></ruby>り<ruby>方<rt>かた</rt></ruby> (how to make it).",
+            "why": [
+              null,
+              "<ruby>作<rt>つく</rt></ruby>る<ruby>方<rt>かた</rt></ruby> would be read as 'the person who makes it', since <ruby>方<rt>かた</rt></ruby> also means a person, politely.",
+              "て-form doesn't attach to <ruby>方<rt>かた</rt></ruby>.",
+              "<ruby>作<rt>つく</rt></ruby>った<ruby>方<rt>ほう</rt></ruby> is the start of 'had better make' (〜たほうがいい), not 'how to'."
+            ]
+          },
+          {
+            "q": "「<ruby>漢字<rt>かんじ</rt></ruby>＿＿<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>が<ruby>分<rt>わ</rt></ruby>かりません。」",
+            "choices": [
+              "の",
+              "を",
+              "が",
+              "に"
+            ],
+            "a": 0,
+            "ex": "<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby> is a noun, so its object takes の.",
+            "why": [
+              null,
+              "を would need a verb, and <ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby> is a noun.",
+              "が would make 'kanji' the subject of 'don't understand', so the sentence would have two subjects.",
+              "に doesn't fit here."
+            ]
+          },
+          {
+            "q": "「<ruby>先生<rt>せんせい</rt></ruby>が＿＿とおりに、もう<ruby>一度<rt>いちど</rt></ruby><ruby>言<rt>い</rt></ruby>ってみてください。」",
+            "choices": [
+              "<ruby>言<rt>い</rt></ruby>った",
+              "<ruby>言<rt>い</rt></ruby>って",
+              "<ruby>言<rt>い</rt></ruby>い",
+              "<ruby>言<rt>い</rt></ruby>いたい"
+            ],
+            "a": 0,
+            "ex": "'Exactly as the teacher said': た-form + とおりに.",
+            "why": [
+              null,
+              "て-form doesn't attach to とおり.",
+              "The bare stem doesn't attach to とおり.",
+              "〜たいとおり isn't a pattern."
+            ]
+          }
+        ]
+      }
+    ],
+    "check": [
+      {
+        "q": "「<ruby>昨日<rt>きのう</rt></ruby>は<ruby>宿題<rt>しゅくだい</rt></ruby>をし＿＿、<ruby>寝<rt>ね</rt></ruby>てしまいました。」",
+        "choices": [
+          "ないで",
+          "なくて",
+          "なければ",
+          "ないと"
+        ],
+        "a": 0,
+        "ex": "'Went to sleep without doing my homework': ないで."
+      },
+      {
+        "q": "「お<ruby>金<rt>かね</rt></ruby>が＿＿、<ruby>旅行<rt>りょこう</rt></ruby>に<ruby>行<rt>い</rt></ruby>けませんでした。」",
+        "choices": [
+          "<ruby>足<rt>た</rt></ruby>りなくて",
+          "<ruby>足<rt>た</rt></ruby>りないで",
+          "<ruby>足<rt>た</rt></ruby>りなければ",
+          "<ruby>足<rt>た</rt></ruby>りないと"
+        ],
+        "a": 0,
+        "ex": "Not having enough money was the cause: なくて."
+      },
+      {
+        "q": "「<ruby>試験<rt>しけん</rt></ruby>に<ruby>合格<rt>ごうかく</rt></ruby>して、＿＿。」",
+        "choices": [
+          "うれしいです",
+          "<ruby>行<rt>い</rt></ruby>きましょう",
+          "<ruby>待<rt>ま</rt></ruby>ってください",
+          "<ruby>勉強<rt>べんきょう</rt></ruby>するつもりです"
+        ],
+        "a": 0,
+        "ex": "A て-reason is followed by a feeling, not an invitation, request or plan."
+      },
+      {
+        "q": "「<ruby>手伝<rt>てつだ</rt></ruby>って＿＿、ありがとう。」",
+        "choices": [
+          "くれて",
+          "あげて",
+          "くれたら",
+          "くれても"
+        ],
+        "a": 0,
+        "ex": "〜てくれてありがとう = thanks for doing it for me."
+      },
+      {
+        "q": "「<ruby>雨<rt>あめ</rt></ruby>が＿＿よかったですね。」 (it didn't rain)",
+        "choices": [
+          "<ruby>降<rt>ふ</rt></ruby>らなくて",
+          "<ruby>降<rt>ふ</rt></ruby>らないで",
+          "<ruby>降<rt>ふ</rt></ruby>らなければ",
+          "<ruby>降<rt>ふ</rt></ruby>って"
+        ],
+        "a": 0,
+        "ex": "Glad it didn't: 〜なくてよかった."
+      },
+      {
+        "q": "「<ruby>旅行<rt>りょこう</rt></ruby>、<ruby>楽<rt>たの</rt></ruby>しめる＿＿ですね。」",
+        "choices": [
+          "といい",
+          "てよかった",
+          "ばよかった",
+          "ことがある"
+        ],
+        "a": 0,
+        "ex": "Hope for the future: 〜といいですね."
+      },
+      {
+        "q": "「あんなことを<ruby>言<rt>い</rt></ruby>わなければ＿＿。」",
+        "choices": [
+          "よかった",
+          "いい",
+          "よくて",
+          "よかったら"
+        ],
+        "a": 0,
+        "ex": "〜なければよかった = 'I wish I hadn't'."
+      },
+      {
+        "q": "「<ruby>妹<rt>いもうと</rt></ruby>は<ruby>甘<rt>あま</rt></ruby>い<ruby>物<rt>もの</rt></ruby>＿＿<ruby>食<rt>た</rt></ruby>べています。」",
+        "choices": [
+          "ばかり",
+          "しか",
+          "ほど",
+          "まで"
+        ],
+        "a": 0,
+        "ex": "'Eats nothing but sweets': Noun + ばかり. しか would need a negative verb."
+      },
+      {
+        "q": "「さっき<ruby>起<rt>お</rt></ruby>きた＿＿なので、まだ<ruby>眠<rt>ねむ</rt></ruby>いです。」",
+        "choices": [
+          "ばかり",
+          "ほど",
+          "ことに",
+          "はず"
+        ],
+        "a": 0,
+        "ex": "た-form + ばかり = just did."
+      },
+      {
+        "q": "「<ruby>会社<rt>かいしゃ</rt></ruby>の<ruby>規則<rt>きそく</rt></ruby>で、ネクタイをする＿＿。」",
+        "choices": [
+          "ことになっています",
+          "ことにしています",
+          "ことがあります",
+          "ことができます"
+        ],
+        "a": 0,
+        "ex": "A rule set by the company, not by you: ことになっている."
+      },
+      {
+        "q": "「この<ruby>店<rt>みせ</rt></ruby>は、たまに<ruby>休<rt>やす</rt></ruby>む＿＿ので、<ruby>電話<rt>でんわ</rt></ruby>してから<ruby>行<rt>い</rt></ruby>ったほうがいいですよ。」",
+        "choices": [
+          "ことがある",
+          "ことにする",
+          "ことになる",
+          "ことだ"
+        ],
+        "a": 0,
+        "ex": "'Is sometimes closed': dictionary form + ことがある."
+      },
+      {
+        "q": "「エアコンの<ruby>温度<rt>おんど</rt></ruby>を＿＿ください。」 (please turn it down)",
+        "choices": [
+          "<ruby>低<rt>ひく</rt></ruby>くして",
+          "<ruby>低<rt>ひく</rt></ruby>くなって",
+          "<ruby>低<rt>ひく</rt></ruby>いにして",
+          "<ruby>低<rt>ひく</rt></ruby>いして"
+        ],
+        "a": 0,
+        "ex": "Making it lower: い-adj く + する."
+      },
+      {
+        "q": "「『みんなの<ruby>日本語<rt>にほんご</rt></ruby>』＿＿<ruby>教科書<rt>きょうかしょ</rt></ruby>を<ruby>使<rt>つか</rt></ruby>っています。」",
+        "choices": [
+          "という",
+          "として",
+          "とか",
+          "では"
+        ],
+        "a": 0,
+        "ex": "Name + という + noun: 'a textbook called…'."
+      },
+      {
+        "q": "「この<ruby>機械<rt>きかい</rt></ruby>の＿＿が<ruby>分<rt>わ</rt></ruby>かりません。」",
+        "choices": [
+          "<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>",
+          "<ruby>使<rt>つか</rt></ruby>う<ruby>方<rt>かた</rt></ruby>",
+          "<ruby>使<rt>つか</rt></ruby>った<ruby>方<rt>ほう</rt></ruby>",
+          "<ruby>使<rt>つか</rt></ruby>って<ruby>方<rt>かた</rt></ruby>"
+        ],
+        "a": 0,
+        "ex": "ます-stem + <ruby>方<rt>かた</rt></ruby>: <ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby> (how to use)."
+      },
+      {
+        "q": "「<ruby>説明書<rt>せつめいしょ</rt></ruby>に<ruby>書<rt>か</rt></ruby>いてある＿＿、やってみました。」",
+        "choices": [
+          "とおりに",
+          "ばかり",
+          "ことに",
+          "ために"
+        ],
+        "a": 0,
+        "ex": "'Exactly as the instructions say': とおりに."
+      }
+    ]
+  },
+  {
+    "num": 15,
+    "jpTitle": "話し言葉と丁寧さ",
+    "reading": "はなしことばとていねいさ",
+    "enTitle": "Casual Speech, Politeness & Little Words",
+    "accent": "indigo-deep",
+    "points": [
+      {
+        "jp": "〜の vs 〜こと",
+        "romaji": "~no vs ~koto",
+        "fn": "Turning a verb into a noun: which one when?",
+        "sources": [
+          "MNN Bk2 L38",
+          "Genki II Ch16, Ch18",
+          "Sou Matome Wk2"
+        ],
+        "explain": "Both の and こと turn a verb phrase into a noun: <ruby>日本語<rt>にほんご</rt></ruby>を<ruby>話<rt>はな</rt></ruby>すのは<ruby>楽<rt>たの</rt></ruby>しい = <ruby>日本語<rt>にほんご</rt></ruby>を<ruby>話<rt>はな</rt></ruby>すことは<ruby>楽<rt>たの</rt></ruby>しい. Often either works, but some patterns lock one in.<br><br><b>Only の</b>:<br>• With perception verbs (<ruby>見<rt>み</rt></ruby>る, <ruby>聞<rt>き</rt></ruby>く, <ruby>見<rt>み</rt></ruby>える, <ruby>聞<rt>き</rt></ruby>こえる): <ruby>彼<rt>かれ</rt></ruby>が<ruby>出<rt>で</rt></ruby>かけるのを<ruby>見<rt>み</rt></ruby>た, <ruby>子<rt>こ</rt></ruby>どもが<ruby>歌<rt>うた</rt></ruby>っているのが<ruby>聞<rt>き</rt></ruby>こえる.<br>• With <ruby>待<rt>ま</rt></ruby>つ, <ruby>手伝<rt>てつだ</rt></ruby>う, <ruby>止<rt>と</rt></ruby>める: <ruby>母<rt>はは</rt></ruby>が<ruby>料理<rt>りょうり</rt></ruby>するのを<ruby>手伝<rt>てつだ</rt></ruby>う.<br>• In the spotlight pattern <b>〜のは X です</b>: <ruby>私<rt>わたし</rt></ruby>が<ruby>欲<rt>ほ</rt></ruby>しいのは、この<ruby>時計<rt>とけい</rt></ruby>です (what I want is this watch).<br><br><b>Only こと</b>:<br>• For the content of something before です: <ruby>趣味<rt>しゅみ</rt></ruby>は<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>撮<rt>と</rt></ruby>ることです.<br>• In fixed patterns: ことができる, ことがある, ことにする, ことになる.<br><br><b>Either</b> with <ruby>好<rt>す</rt></ruby>き, <ruby>嫌<rt>きら</rt></ruby>い, <ruby>上手<rt>じょうず</rt></ruby>, <ruby>下手<rt>へた</rt></ruby> and <ruby>忘<rt>わす</rt></ruby>れる: <ruby>歌<rt>うた</rt></ruby>うのが<ruby>好<rt>す</rt></ruby>き (more natural in speech) or <ruby>歌<rt>うた</rt></ruby>うことが<ruby>好<rt>す</rt></ruby>き.",
+        "formation": [
+          "Plain form + の／こと + particle (は・が・を)",
+          "Perception verbs (<ruby>見<rt>み</rt></ruby>る・<ruby>聞<rt>き</rt></ruby>こえる) / <ruby>待<rt>ま</rt></ruby>つ / <ruby>手伝<rt>てつだ</rt></ruby>う → の only",
+          "〜のは X です: spotlight ('the thing that… is X')",
+          "<ruby>趣味<rt>しゅみ</rt></ruby>は〜ことです / ことができる / ことがある → こと only"
+        ],
+        "examples": [
+          {
+            "jp": "<ruby>日本語<rt>にほんご</rt></ruby>で<ruby>話<rt>はな</rt></ruby>すのは<ruby>楽<rt>たの</rt></ruby>しいです。",
+            "en": "Speaking in Japanese is fun."
+          },
+          {
+            "jp": "<ruby>私<rt>わたし</rt></ruby>の<ruby>趣味<rt>しゅみ</rt></ruby>は<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>撮<rt>と</rt></ruby>ることです。",
+            "en": "My hobby is taking photos."
+          },
+          {
+            "jp": "<ruby>子<rt>こ</rt></ruby>どもたちが<ruby>歌<rt>うた</rt></ruby>っているのが<ruby>聞<rt>き</rt></ruby>こえます。",
+            "en": "I can hear the kids singing."
+          },
+          {
+            "jp": "<ruby>彼<rt>かれ</rt></ruby>が<ruby>部屋<rt>へや</rt></ruby>を<ruby>出<rt>で</rt></ruby>て<ruby>行<rt>い</rt></ruby>くのを<ruby>見<rt>み</rt></ruby>ました。",
+            "en": "I saw him leave the room."
+          },
+          {
+            "jp": "<ruby>母<rt>はは</rt></ruby>が<ruby>料理<rt>りょうり</rt></ruby>するのを<ruby>手伝<rt>てつだ</rt></ruby>いました。",
+            "en": "I helped my mother cook."
+          },
+          {
+            "jp": "<ruby>窓<rt>まど</rt></ruby>を<ruby>閉<rt>し</rt></ruby>めるのを<ruby>忘<rt>わす</rt></ruby>れました。",
+            "en": "I forgot to close the window."
+          },
+          {
+            "jp": "<ruby>私<rt>わたし</rt></ruby>が<ruby>生<rt>う</rt></ruby>まれたのは、<ruby>大阪<rt>おおさか</rt></ruby>です。",
+            "en": "Where I was born is Osaka. (spotlight)"
+          },
+          {
+            "jp": "ピアノを<ruby>弾<rt>ひ</rt></ruby>くことができます。",
+            "en": "I can play the piano."
+          }
+        ],
+        "dialogue": [
+          {
+            "who": "A",
+            "jp": "<ruby>趣味<rt>しゅみ</rt></ruby>は<ruby>何<rt>なん</rt></ruby>ですか。",
+            "en": "What are your hobbies?"
+          },
+          {
+            "who": "B",
+            "jp": "<ruby>料理<rt>りょうり</rt></ruby>をすることです。<ruby>特<rt>とく</rt></ruby>に、パンを<ruby>焼<rt>や</rt></ruby>くのが<ruby>好<rt>す</rt></ruby>きなんです。",
+            "en": "Cooking. I especially love baking bread."
+          },
+          {
+            "who": "A",
+            "jp": "いいですね。<ruby>私<rt>わたし</rt></ruby>は<ruby>食<rt>た</rt></ruby>べるのは<ruby>好<rt>す</rt></ruby>きですけど、<ruby>作<rt>つく</rt></ruby>るのは<ruby>苦手<rt>にがて</rt></ruby>です。",
+            "en": "Nice. I like eating, but I'm bad at making things."
+          },
+          {
+            "who": "B",
+            "jp": "じゃあ、<ruby>今度<rt>こんど</rt></ruby><ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>作<rt>つく</rt></ruby>りませんか。<ruby>教<rt>おし</rt></ruby>えるのは<ruby>得意<rt>とくい</rt></ruby>ですよ。",
+            "en": "Then why don't we make some together next time? I'm good at teaching."
+          }
+        ],
+        "tip": "If you can see or hear it happening (見る, 聞こえる), use の. If it's a hobby or a definition before です, use こと. With 好き, 嫌い and 上手, の sounds most natural in conversation.",
+        "quiz": [
+          {
+            "q": "「<ruby>隣<rt>となり</rt></ruby>の<ruby>部屋<rt>へや</rt></ruby>で<ruby>誰<rt>だれ</rt></ruby>かが<ruby>話<rt>はな</rt></ruby>している＿＿が<ruby>聞<rt>き</rt></ruby>こえます。」",
+            "choices": [
+              "の",
+              "こと",
+              "もの",
+              "ため"
+            ],
+            "a": 0,
+            "ex": "Perception verbs (<ruby>聞<rt>き</rt></ruby>こえる, <ruby>見<rt>み</rt></ruby>える) take の.",
+            "why": [
+              null,
+              "こと is for abstract content, not something you directly hear happening.",
+              "もの means a physical thing.",
+              "ため means 'for the sake of' or 'because'."
+            ]
+          },
+          {
+            "q": "「<ruby>私<rt>わたし</rt></ruby>の<ruby>趣味<rt>しゅみ</rt></ruby>は、<ruby>古<rt>ふる</rt></ruby>い<ruby>映画<rt>えいが</rt></ruby>を<ruby>見<rt>み</rt></ruby>る＿＿です。」",
+            "choices": [
+              "こと",
+              "の",
+              "もの",
+              "ところ"
+            ],
+            "a": 0,
+            "ex": "<ruby>趣味<rt>しゅみ</rt></ruby>は〜ことです: こと names the content of the hobby.",
+            "why": [
+              null,
+              "<ruby>見<rt>み</rt></ruby>るのです would become the explanatory のです ('it's that I watch…') rather than stating a hobby.",
+              "もの refers to a physical thing.",
+              "ところ means a place, or a point in time."
+            ]
+          },
+          {
+            "q": "「<ruby>財布<rt>さいふ</rt></ruby>を<ruby>持<rt>も</rt></ruby>ってくる＿＿<ruby>忘<rt>わす</rt></ruby>れました。」",
+            "choices": [
+              "のを",
+              "のに",
+              "のが",
+              "ので"
+            ],
+            "a": 0,
+            "ex": "'Forgot to bring': the nominalised action is the object of <ruby>忘<rt>わす</rt></ruby>れる, so のを.",
+            "why": [
+              null,
+              "のに = 'even though'.",
+              "<ruby>忘<rt>わす</rt></ruby>れる takes its object with を, not が.",
+              "ので = 'because'."
+            ]
+          }
+        ]
+      },
+      {
+        "jp": "<ruby>縮約形<rt>しゅくやくけい</rt></ruby>（〜ちゃう・〜とく・〜てる・〜なきゃ）",
+        "romaji": "shukuyakukei (~chau / ~toku / ~teru / ~nakya)",
+        "fn": "The casual short forms you'll hear in every listening section",
+        "sources": [
+          "Genki II Ch18",
+          "MNN Bk2 (会話)",
+          "Sou Matome Wk7"
+        ],
+        "explain": "In conversation, several N4 forms get squashed. You don't need to use them, but N4 listening is full of them, so you need to recognise them instantly.<br><br>• 〜てしまう → <b>〜ちゃう</b> · 〜でしまう → <b>〜じゃう</b>: <ruby>食<rt>た</rt></ruby>べちゃった, <ruby>飲<rt>の</rt></ruby>んじゃった<br>• 〜ておく → <b>〜とく</b> · 〜でおく → <b>〜どく</b>: <ruby>買<rt>か</rt></ruby>っとく, <ruby>読<rt>よ</rt></ruby>んどく<br>• 〜ている → <b>〜てる</b>: <ruby>何<rt>なに</rt></ruby>してるの？ <ruby>知<rt>し</rt></ruby>ってる<br>• 〜なければ → <b>〜なきゃ</b> · 〜なくては → <b>〜なくちゃ</b>: もう<ruby>行<rt>い</rt></ruby>かなきゃ<br>• 〜てはいけない → <b>〜ちゃいけない／〜ちゃだめ</b> · 〜では → <b>〜じゃ</b>: <ruby>触<rt>さわ</rt></ruby>っちゃだめ, <ruby>飲<rt>の</rt></ruby>んじゃだめ<br>• 〜のです → <b>〜んだ</b>, 〜と<ruby>言<rt>い</rt></ruby>った → <b>〜って</b> (Modules 6 and 7)<br><br>Decode by reversing: ちゃ／じゃ came from て／で + は; とく came from て + おく.",
+        "formation": [
+          "てしまう → ちゃう · でしまう → じゃう",
+          "ておく → とく · でおく → どく",
+          "ている → てる · でいる → でる",
+          "なければ → なきゃ · なくては → なくちゃ",
+          "てはいけない → ちゃいけない／ちゃだめ · ではいけない → じゃだめ"
+        ],
+        "conjugation": [
+          {
+            "label": "てしまう",
+            "from": "<ruby>食<rt>た</rt></ruby>べてしまった",
+            "to": "<ruby>食<rt>た</rt></ruby>べちゃった"
+          },
+          {
+            "label": "でしまう",
+            "from": "<ruby>飲<rt>の</rt></ruby>んでしまった",
+            "to": "<ruby>飲<rt>の</rt></ruby>んじゃった"
+          },
+          {
+            "label": "ておく",
+            "from": "<ruby>買<rt>か</rt></ruby>っておく",
+            "to": "<ruby>買<rt>か</rt></ruby>っとく"
+          },
+          {
+            "label": "でおく",
+            "from": "<ruby>読<rt>よ</rt></ruby>んでおく",
+            "to": "<ruby>読<rt>よ</rt></ruby>んどく"
+          },
+          {
+            "label": "ている",
+            "from": "<ruby>知<rt>し</rt></ruby>っている",
+            "to": "<ruby>知<rt>し</rt></ruby>ってる"
+          },
+          {
+            "label": "なければ",
+            "from": "<ruby>行<rt>い</rt></ruby>かなければ",
+            "to": "<ruby>行<rt>い</rt></ruby>かなきゃ"
+          },
+          {
+            "label": "てはいけない",
+            "from": "<ruby>触<rt>さわ</rt></ruby>ってはいけない",
+            "to": "<ruby>触<rt>さわ</rt></ruby>っちゃだめ"
+          }
+        ],
+        "examples": [
+          {
+            "jp": "ケーキ、<ruby>全部<rt>ぜんぶ</rt></ruby><ruby>食<rt>た</rt></ruby>べちゃった。",
+            "en": "I ate all the cake."
+          },
+          {
+            "jp": "<ruby>財布<rt>さいふ</rt></ruby>、<ruby>忘<rt>わす</rt></ruby>れちゃった！",
+            "en": "I forgot my wallet!"
+          },
+          {
+            "jp": "ビール、<ruby>冷蔵庫<rt>れいぞうこ</rt></ruby>に<ruby>入<rt>い</rt></ruby>れとくね。",
+            "en": "I'll put the beer in the fridge."
+          },
+          {
+            "jp": "<ruby>今<rt>いま</rt></ruby>、<ruby>何<rt>なに</rt></ruby>してる？",
+            "en": "What are you doing right now?"
+          },
+          {
+            "jp": "やばい、もう<ruby>行<rt>い</rt></ruby>かなきゃ。",
+            "en": "Oh no, I've got to go."
+          },
+          {
+            "jp": "<ruby>明日<rt>あした</rt></ruby>までにレポートを<ruby>書<rt>か</rt></ruby>かなくちゃ。",
+            "en": "I have to write the report by tomorrow."
+          },
+          {
+            "jp": "ここで<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>撮<rt>と</rt></ruby>っちゃだめだよ。",
+            "en": "You can't take photos here."
+          },
+          {
+            "jp": "<ruby>薬<rt>くすり</rt></ruby>、<ruby>飲<rt>の</rt></ruby>んどいたほうがいいよ。",
+            "en": "You'd better take some medicine."
+          }
+        ],
+        "dialogue": [
+          {
+            "who": "A",
+            "jp": "あれ、もう<ruby>帰<rt>かえ</rt></ruby>っちゃうの？",
+            "en": "Huh, you're leaving already?"
+          },
+          {
+            "who": "B",
+            "jp": "うん、<ruby>明日<rt>あした</rt></ruby><ruby>早<rt>はや</rt></ruby>いから、もう<ruby>寝<rt>ね</rt></ruby>なきゃ。",
+            "en": "Yeah, I've got an early start tomorrow, so I have to sleep."
+          },
+          {
+            "who": "A",
+            "jp": "そっか。じゃあ、<ruby>残<rt>のこ</rt></ruby>ったケーキ、<ruby>冷蔵庫<rt>れいぞうこ</rt></ruby>に<ruby>入<rt>い</rt></ruby>れとくね。",
+            "en": "Got it. Then I'll put the leftover cake in the fridge."
+          },
+          {
+            "who": "B",
+            "jp": "ありがとう。<ruby>食<rt>た</rt></ruby>べちゃだめだよ！",
+            "en": "Thanks. Don't you eat it!"
+          }
+        ],
+        "tip": "Recognition comes first: N4 listening uses these constantly. Decode by reversing: ちゃう = てしまう, とく = ておく, なきゃ = なければ. Keep them out of polite speech and writing.",
+        "quiz": [
+          {
+            "q": "「<ruby>宿題<rt>しゅくだい</rt></ruby>、もう＿＿。」 = <ruby>宿題<rt>しゅくだい</rt></ruby>をもうやってしまった",
+            "choices": [
+              "やっちゃった",
+              "やっといた",
+              "やってた",
+              "やらなきゃ"
+            ],
+            "a": 0,
+            "ex": "てしまった → ちゃった.",
+            "why": [
+              null,
+              "やっといた = やっておいた ('did it in advance').",
+              "やってた = やっていた ('was doing it').",
+              "やらなきゃ = やらなければ ('have to do it')."
+            ]
+          },
+          {
+            "q": "「なきゃ」 is short for…",
+            "choices": [
+              "なければ",
+              "なくても",
+              "ないで",
+              "なくて"
+            ],
+            "a": 0,
+            "ex": "なきゃ = なければ, usually short for なければならない (must).",
+            "why": [
+              null,
+              "なくても shortens to なくたって, not なきゃ.",
+              "ないで doesn't shorten.",
+              "なくて shortens to なくちゃ only in the なくては sense."
+            ]
+          },
+          {
+            "q": "「<ruby>明日<rt>あした</rt></ruby>の<ruby>会議<rt>かいぎ</rt></ruby>の<ruby>資料<rt>しりょう</rt></ruby>、コピーし＿＿ね。」 (I'll get them ready in advance)",
+            "choices": [
+              "とく",
+              "ちゃう",
+              "てる",
+              "なきゃ"
+            ],
+            "a": 0,
+            "ex": "Preparing in advance is ておく, which shortens to とく.",
+            "why": [
+              null,
+              "ちゃう (てしまう) means 'get it done / finish off', with no sense of 'in advance'.",
+              "てる (ている) describes an ongoing state.",
+              "なきゃ is 'have to', which is an obligation, not a promise to prepare."
+            ]
+          }
+        ]
+      },
+      {
+        "jp": "〜かな・〜かしら・〜でしょうか・〜だろう",
+        "romaji": "~kana / ~kashira / ~deshou ka / ~darou",
+        "fn": "Wondering out loud: from casual to polite",
+        "sources": [
+          "Genki II Ch12 (でしょう)",
+          "MNN Bk2 L32",
+          "Sou Matome Wk6"
+        ],
+        "explain": "When you're unsure and thinking aloud, Japanese adds a 'wondering' ending to the plain form.<br><br><b>〜かな</b> = 'I wonder…'. Casual, and used by everyone: <ruby>明日<rt>あした</rt></ruby>、<ruby>雨<rt>あめ</rt></ruby>かな. <ruby>彼<rt>かれ</rt></ruby>、<ruby>来<rt>く</rt></ruby>るかな. With ない it softens a wish: <ruby>早<rt>はや</rt></ruby>く<ruby>来<rt>こ</rt></ruby>ないかな (I wish they'd hurry up).<br><b>〜かしら</b> = the same meaning, but it sounds traditionally feminine and a little old-fashioned. Recognise it in listening.<br><b>〜だろう</b> = plain 'probably' (written, or men's speech). <b>〜だろうか</b> = 'I wonder' in writing.<br><b>〜でしょうか</b> = polite 'I wonder / might it be'. Softer than ですか for questions to strangers: すみません、<ruby>駅<rt>えき</rt></ruby>はどちらでしょうか.<br><b>〜でしょう？ / 〜でしょ？</b> with rising intonation = 'right?', seeking agreement: <ruby>言<rt>い</rt></ruby>ったでしょ？<br><br>With nouns and な-adjectives, drop だ: <ruby>雨<rt>あめ</rt></ruby>かな, <ruby>静<rt>しず</rt></ruby>かでしょう.",
+        "formation": [
+          "Plain form + かな／かしら (nouns / な-adj: drop だ)",
+          "Plain form + だろう(か) · でしょう(か)",
+          "〜ないかな = 'I wish…' (a soft hope or request)",
+          "Volitional + かな = 'I think I'll… / should I…?' (<ruby>行<rt>い</rt></ruby>こうかな)"
+        ],
+        "examples": [
+          {
+            "jp": "<ruby>明日<rt>あした</rt></ruby>は<ruby>晴<rt>は</rt></ruby>れるかな。",
+            "en": "I wonder if it'll be sunny tomorrow."
+          },
+          {
+            "jp": "この<ruby>答<rt>こた</rt></ruby>え、<ruby>合<rt>あ</rt></ruby>ってるかな。",
+            "en": "I wonder if this answer is right."
+          },
+          {
+            "jp": "<ruby>田中<rt>たなか</rt></ruby>さん、もう<ruby>着<rt>つ</rt></ruby>いたかしら。",
+            "en": "I wonder if Tanaka-san has arrived yet."
+          },
+          {
+            "jp": "すみません、トイレはどちらでしょうか。",
+            "en": "Excuse me, where might the restroom be?"
+          },
+          {
+            "jp": "<ruby>早<rt>はや</rt></ruby>く<ruby>夏休<rt>なつやす</rt></ruby>みにならないかな。",
+            "en": "I wish summer vacation would hurry up and come."
+          },
+          {
+            "jp": "<ruby>明日<rt>あした</rt></ruby>はたぶん<ruby>雨<rt>あめ</rt></ruby>だろう。",
+            "en": "It'll probably rain tomorrow."
+          },
+          {
+            "jp": "そろそろ<ruby>帰<rt>かえ</rt></ruby>ろうかな。",
+            "en": "I think I'll head home soon."
+          },
+          {
+            "jp": "ね、<ruby>言<rt>い</rt></ruby>ったでしょう？",
+            "en": "See, I told you so, right?"
+          }
+        ],
+        "dialogue": [
+          {
+            "who": "A",
+            "jp": "この<ruby>服<rt>ふく</rt></ruby>、<ruby>私<rt>わたし</rt></ruby>に<ruby>似合<rt>にあ</rt></ruby>うかな。",
+            "en": "I wonder if this outfit suits me."
+          },
+          {
+            "who": "B",
+            "jp": "うん、<ruby>似合<rt>にあ</rt></ruby>うと<ruby>思<rt>おも</rt></ruby>うよ。",
+            "en": "Yeah, I think it does."
+          },
+          {
+            "who": "A",
+            "jp": "でも、ちょっと<ruby>高<rt>たか</rt></ruby>いかな…。もっと<ruby>安<rt>やす</rt></ruby>いのないかな。",
+            "en": "But it's a bit expensive… I wonder if there's a cheaper one."
+          },
+          {
+            "who": "B",
+            "jp": "あっちにセールのコーナーがあったでしょ？<ruby>行<rt>い</rt></ruby>ってみよう。",
+            "en": "There was a sale corner over there, right? Let's check it out."
+          }
+        ],
+        "tip": "Talking to yourself or a friend: かな. Asking a stranger politely: でしょうか. And 〜ないかな is a gentle 'I wish…'.",
+        "quiz": [
+          {
+            "q": "Asking station staff politely: 「すみません、<ruby>新宿<rt>しんじゅく</rt></ruby><ruby>行<rt>ゆ</rt></ruby>きのバスはどこから<ruby>出<rt>で</rt></ruby>る＿＿。」",
+            "choices": [
+              "でしょうか",
+              "かな",
+              "かしら",
+              "だろう"
+            ],
+            "a": 0,
+            "ex": "A polite question to a stranger: でしょうか.",
+            "why": [
+              null,
+              "かな is casual, for talking to yourself or friends.",
+              "かしら is casual too, and it's for wondering, not asking staff.",
+              "だろう is plain 'probably', far too blunt for a question to staff."
+            ]
+          },
+          {
+            "q": "(Muttering to yourself) 「<ruby>明日<rt>あした</rt></ruby>のパーティー、<ruby>何<rt>なに</rt></ruby>を<ruby>着<rt>き</rt></ruby>て<ruby>行<rt>い</rt></ruby>こう＿＿。」",
+            "choices": [
+              "かな",
+              "でしょうか",
+              "だろう",
+              "らしい"
+            ],
+            "a": 0,
+            "ex": "Volitional + かな = 'what should I…, I wonder'.",
+            "why": [
+              null,
+              "でしょうか politely asks someone else, which is odd when you're wondering about your own outfit.",
+              "Volitional + だろう isn't a pattern.",
+              "Volitional + らしい isn't a pattern."
+            ]
+          },
+          {
+            "q": "「<ruby>早<rt>はや</rt></ruby>く<ruby>週末<rt>しゅうまつ</rt></ruby>にならない＿＿。」 (I wish…)",
+            "choices": [
+              "かな",
+              "のに",
+              "から",
+              "ので"
+            ],
+            "a": 0,
+            "ex": "〜ないかな = 'I wish it would…'.",
+            "why": [
+              null,
+              "のに here would mean 'even though it doesn't become the weekend', which isn't a complete thought.",
+              "から = because.",
+              "ので = because."
+            ]
+          }
+        ]
+      },
+      {
+        "jp": "<ruby>依頼<rt>いらい</rt></ruby>の<ruby>丁寧<rt>ていねい</rt></ruby>さ（〜て → 〜ていただけませんか）",
+        "romaji": "irai no teineisa (~te → ~te itadakemasen ka)",
+        "fn": "From casual to very polite: picking the right request",
+        "sources": [
+          "MNN Bk2 L26, L41, L48",
+          "Genki II Ch16, Ch22",
+          "Sou Matome Wk7"
+        ],
+        "explain": "Japanese has a whole ladder of ways to ask someone to do something. You climb it with <b>negative questions</b> (くれない？ is softer than くれる？), <b>potential forms</b> (もらえる, いただける) and <b>humble verbs</b> (いただく).<br><br>1. 〜て。 (family, close friends)<br>2. 〜てくれる？ / 〜てくれない？ (friends)<br>3. 〜てください。 (polite but direct, close to an instruction)<br>4. 〜てくれませんか。 (polite)<br>5. 〜てもらえませんか。 (polite, softer)<br>6. 〜ていただけませんか。 (very polite: your boss, a teacher, strangers, shops)<br>7. 〜ていただけないでしょうか。 (most polite, formal)<br><br><b>Asking permission</b> climbs the same ladder with the causative: 〜てもいい？ → 〜てもいいですか → 〜させてください → 〜させてもらえませんか → <b>〜させていただけませんか</b>. And <b>〜させていただきます</b> humbly announces what you're about to do: <ruby>本日<rt>ほんじつ</rt></ruby>は<ruby>早<rt>はや</rt></ruby>めに<ruby>帰<rt>かえ</rt></ruby>らせていただきます.<br><br>Note: てください isn't very soft. With a superior, use 〜ていただけませんか.",
+        "formation": [
+          "て-form + くれる？ / くれない？ / ください / くれませんか / もらえませんか / いただけませんか",
+          "Causative て-form + ください / もらえませんか / いただけませんか (asking permission)",
+          "Causative て-form + いただきます (humbly announcing your own action)"
+        ],
+        "examples": [
+          {
+            "jp": "ちょっと<ruby>待<rt>ま</rt></ruby>って。",
+            "en": "Wait a sec. (family, close friends)"
+          },
+          {
+            "jp": "ペン、<ruby>貸<rt>か</rt></ruby>してくれない？",
+            "en": "Can you lend me a pen? (friends)"
+          },
+          {
+            "jp": "ここに<ruby>名前<rt>なまえ</rt></ruby>を<ruby>書<rt>か</rt></ruby>いてください。",
+            "en": "Please write your name here. (a clear instruction)"
+          },
+          {
+            "jp": "<ruby>窓<rt>まど</rt></ruby>を<ruby>開<rt>あ</rt></ruby>けてくれませんか。",
+            "en": "Would you open the window?"
+          },
+          {
+            "jp": "<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>撮<rt>と</rt></ruby>ってもらえませんか。",
+            "en": "Could you take a photo for us?"
+          },
+          {
+            "jp": "<ruby>推薦状<rt>すいせんじょう</rt></ruby>を<ruby>書<rt>か</rt></ruby>いていただけませんか。",
+            "en": "Would you be so kind as to write me a recommendation letter? (to a professor)"
+          },
+          {
+            "jp": "<ruby>少<rt>すこ</rt></ruby>し<ruby>考<rt>かんが</rt></ruby>えさせてください。",
+            "en": "Please let me think about it a little."
+          },
+          {
+            "jp": "<ruby>今日<rt>きょう</rt></ruby>は<ruby>早<rt>はや</rt></ruby>く<ruby>帰<rt>かえ</rt></ruby>らせていただけませんか。",
+            "en": "Could you let me go home early today?"
+          },
+          {
+            "jp": "それでは、<ruby>説明<rt>せつめい</rt></ruby>させていただきます。",
+            "en": "Then, allow me to explain."
+          }
+        ],
+        "dialogue": [
+          {
+            "who": "A",
+            "jp": "<ruby>先生<rt>せんせい</rt></ruby>、すみません。<ruby>来週<rt>らいしゅう</rt></ruby>の<ruby>発表<rt>はっぴょう</rt></ruby>の<ruby>資料<rt>しりょう</rt></ruby>を<ruby>見<rt>み</rt></ruby>ていただけませんか。",
+            "en": "Excuse me, professor. Would you mind looking over my materials for next week's presentation?"
+          },
+          {
+            "who": "先生",
+            "jp": "いいですよ。<ruby>金曜日<rt>きんようび</rt></ruby>までに<ruby>送<rt>おく</rt></ruby>ってください。",
+            "en": "Sure. Send them by Friday."
+          },
+          {
+            "who": "A",
+            "jp": "ありがとうございます。それから、<ruby>発表<rt>はっぴょう</rt></ruby>の<ruby>日<rt>ひ</rt></ruby>を<ruby>一日<rt>いちにち</rt></ruby><ruby>遅<rt>おく</rt></ruby>らせていただけないでしょうか。",
+            "en": "Thank you. Also, might it be possible to push my presentation back by a day?"
+          },
+          {
+            "who": "先生",
+            "jp": "うーん、ちょっと<ruby>考<rt>かんが</rt></ruby>えさせてください。",
+            "en": "Hmm, let me think about that."
+          }
+        ],
+        "tip": "Strangers, shop staff, teachers, your boss: 〜ていただけませんか is the safe default. Friends: 〜てくれない？. Plain 〜てください can sound like an order.",
+        "quiz": [
+          {
+            "q": "To your professor: 「この<ruby>本<rt>ほん</rt></ruby>を＿＿。」",
+            "choices": [
+              "<ruby>貸<rt>か</rt></ruby>していただけませんか",
+              "<ruby>貸<rt>か</rt></ruby>して",
+              "<ruby>貸<rt>か</rt></ruby>してくれる？",
+              "<ruby>貸<rt>か</rt></ruby>しなさい"
+            ],
+            "a": 0,
+            "ex": "A request to a professor calls for the top of the ladder: 〜ていただけませんか.",
+            "why": [
+              null,
+              "Bare て-form is for family and close friends.",
+              "〜てくれる？ is casual, for friends.",
+              "〜なさい is a command, as from a parent to a child."
+            ]
+          },
+          {
+            "q": "Asking your boss for permission to leave early. Which is most polite?",
+            "choices": [
+              "<ruby>早<rt>はや</rt></ruby>く<ruby>帰<rt>かえ</rt></ruby>らせていただけませんか",
+              "<ruby>早<rt>はや</rt></ruby>く<ruby>帰<rt>かえ</rt></ruby>ってもいい？",
+              "<ruby>早<rt>はや</rt></ruby>く<ruby>帰<rt>かえ</rt></ruby>らせて",
+              "<ruby>早<rt>はや</rt></ruby>く<ruby>帰<rt>かえ</rt></ruby>ってください"
+            ],
+            "a": 0,
+            "ex": "Causative + ていただけませんか = 'Could you let me…?', the politest permission request.",
+            "why": [
+              null,
+              "Casual plain form, fine for a friend but not your boss.",
+              "Casual. Missing the polite request ending.",
+              "〜てください would be telling your boss to go home early."
+            ]
+          },
+          {
+            "q": "Humbly announcing that you'll explain: 「では、<ruby>私<rt>わたし</rt></ruby>から<ruby>説明<rt>せつめい</rt></ruby>＿＿。」",
+            "choices": [
+              "させていただきます",
+              "していただきます",
+              "してくださいます",
+              "させてください"
+            ],
+            "a": 0,
+            "ex": "〜させていただきます = humbly 'I will (with your permission)…'.",
+            "why": [
+              null,
+              "していただきます = 'I'll have you explain'. The other person would be explaining.",
+              "してくださいます = someone above you will kindly explain.",
+              "させてください asks for permission rather than announcing."
+            ]
+          }
+        ]
+      },
+      {
+        "jp": "〜うちに",
+        "romaji": "~uchi ni",
+        "fn": "While it's still… / before it changes",
+        "sources": [
+          "Sou Matome Wk8",
+          "Genki II (reading)",
+          "N4/N3 boundary"
+        ],
+        "explain": "うちに marks a window of time that's going to end, and says 'do it while you still can'.<br><br>• い-adj / な-adj + な / Noun + の + うちに: <ruby>若<rt>わか</rt></ruby>いうちに (while you're young), <ruby>元気<rt>げんき</rt></ruby>なうちに, <ruby>学生<rt>がくせい</rt></ruby>のうちに.<br>• Verb ない + うちに = 'before X happens': <ruby>暗<rt>くら</rt></ruby>くならないうちに<ruby>帰<rt>かえ</rt></ruby>りましょう (let's head home before it gets dark), <ruby>冷<rt>さ</rt></ruby>めないうちに<ruby>食<rt>た</rt></ruby>べてください.<br>• Verb ている + うちに = 'while doing X (something changed without you noticing)': <ruby>本<rt>ほん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>んでいるうちに、<ruby>寝<rt>ね</rt></ruby>てしまった.<br><br>Compare: <ruby>前<rt>まえ</rt></ruby>に is a plain 'before'. <ruby>間<rt>あいだ</rt></ruby>に (Module 8) is a neutral window of time. うちに adds 'before it's too late', or 'without noticing'.",
+        "formation": [
+          "い-adj + うちに · な-adj + な + うちに · Noun + の + うちに",
+          "Verb ない + うちに (before…)",
+          "Verb ている + うちに (while…, without noticing)"
+        ],
+        "examples": [
+          {
+            "jp": "<ruby>若<rt>わか</rt></ruby>いうちに、いろいろな<ruby>国<rt>くに</rt></ruby>へ<ruby>行<rt>い</rt></ruby>ってみたいです。",
+            "en": "I want to travel to lots of countries while I'm young."
+          },
+          {
+            "jp": "<ruby>学生<rt>がくせい</rt></ruby>のうちに、<ruby>運転免許<rt>うんてんめんきょ</rt></ruby>を<ruby>取<rt>と</rt></ruby>っておきたい。",
+            "en": "I want to get my driver's license while I'm still a student."
+          },
+          {
+            "jp": "<ruby>温<rt>あたた</rt></ruby>かいうちに、どうぞ<ruby>召<rt>め</rt></ruby>し<ruby>上<rt>あ</rt></ruby>がってください。",
+            "en": "Please eat it while it's warm."
+          },
+          {
+            "jp": "<ruby>冷<rt>さ</rt></ruby>めないうちに<ruby>食<rt>た</rt></ruby>べてね。",
+            "en": "Eat it before it gets cold."
+          },
+          {
+            "jp": "<ruby>暗<rt>くら</rt></ruby>くならないうちに、<ruby>家<rt>いえ</rt></ruby>に<ruby>帰<rt>かえ</rt></ruby>りましょう。",
+            "en": "Let's go home before it gets dark."
+          },
+          {
+            "jp": "<ruby>音楽<rt>おんがく</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いているうちに、<ruby>眠<rt>ねむ</rt></ruby>くなってきました。",
+            "en": "While I was listening to music, I started getting sleepy."
+          },
+          {
+            "jp": "<ruby>日本<rt>にほん</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでいるうちに、<ruby>日本語<rt>にほんご</rt></ruby>が<ruby>上手<rt>じょうず</rt></ruby>になりました。",
+            "en": "While living in Japan, my Japanese got good."
+          },
+          {
+            "jp": "<ruby>忘<rt>わす</rt></ruby>れないうちに、メモしておきます。",
+            "en": "I'll make a note before I forget."
+          }
+        ],
+        "dialogue": [
+          {
+            "who": "A",
+            "jp": "わあ、おいしそうなスープ！",
+            "en": "Wow, that soup looks delicious!"
+          },
+          {
+            "who": "B",
+            "jp": "<ruby>熱<rt>あつ</rt></ruby>いうちにどうぞ。",
+            "en": "Have it while it's hot."
+          },
+          {
+            "who": "A",
+            "jp": "いただきます。…おいしい！<ruby>話<rt>はな</rt></ruby>しているうちに、<ruby>全部<rt>ぜんぶ</rt></ruby><ruby>飲<rt>の</rt></ruby>んじゃいました。",
+            "en": "Thank you. …It's delicious! I finished it all while we were talking."
+          },
+          {
+            "who": "B",
+            "jp": "よかった。<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>らないうちに、そろそろ<ruby>帰<rt>かえ</rt></ruby>りましょうか。",
+            "en": "Glad you liked it. Shall we head home before it starts raining?"
+          }
+        ],
+        "tip": "うちに means 'while you still can'. 暗くならないうちに and 暗くなる前に both mean 'before it gets dark', but うちに adds urgency.",
+        "quiz": [
+          {
+            "q": "「<ruby>料理<rt>りょうり</rt></ruby>が＿＿うちに、<ruby>食<rt>た</rt></ruby>べてください。」",
+            "choices": [
+              "<ruby>温<rt>あたた</rt></ruby>かい",
+              "<ruby>温<rt>あたた</rt></ruby>かく",
+              "<ruby>温<rt>あたた</rt></ruby>かくない",
+              "<ruby>温<rt>あたた</rt></ruby>かった"
+            ],
+            "a": 0,
+            "ex": "'While it's still warm': い-adj + うちに.",
+            "why": [
+              null,
+              "The く-form doesn't attach to うちに.",
+              "<ruby>温<rt>あたた</rt></ruby>かくないうちに = 'while it's not warm', the opposite.",
+              "Past tense doesn't go before うちに."
+            ]
+          },
+          {
+            "q": "「＿＿うちに、たくさん<ruby>本<rt>ほん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>んでおきたいです。」",
+            "choices": [
+              "<ruby>学生<rt>がくせい</rt></ruby>の",
+              "<ruby>学生<rt>がくせい</rt></ruby>",
+              "<ruby>学生<rt>がくせい</rt></ruby>な",
+              "<ruby>学生<rt>がくせい</rt></ruby>だ"
+            ],
+            "a": 0,
+            "ex": "Noun + の + うちに: 'while I'm a student'.",
+            "why": [
+              null,
+              "Nouns need の before うちに.",
+              "な is for な-adjectives, not nouns.",
+              "だ doesn't go before うちに."
+            ]
+          },
+          {
+            "q": "「テレビを＿＿うちに、<ruby>寝<rt>ね</rt></ruby>てしまいました。」",
+            "choices": [
+              "<ruby>見<rt>み</rt></ruby>ている",
+              "<ruby>見<rt>み</rt></ruby>た",
+              "<ruby>見<rt>み</rt></ruby>ます",
+              "<ruby>見<rt>み</rt></ruby>て"
+            ],
+            "a": 0,
+            "ex": "'While I was watching (and without noticing)': ている + うちに.",
+            "why": [
+              null,
+              "Past tense doesn't go before うちに.",
+              "The ます-form doesn't attach to うちに.",
+              "The bare て-form doesn't attach to うちに."
+            ]
+          }
+        ]
+      },
+      {
+        "jp": "〜ずつ・〜<ruby>目<rt>め</rt></ruby>・〜中",
+        "romaji": "~zutsu / ~me / ~chuu, ~juu",
+        "fn": "Little suffixes for amounts, order and 'in the middle of'",
+        "sources": [
+          "MNN Bk1 L11 / Bk2 L34",
+          "Genki I Ch11",
+          "Sou Matome Wk2"
+        ],
+        "explain": "Three small suffixes that attach to numbers or nouns.<br><br><b>〜ずつ</b> = 'each / at a time': the same amount shared out or repeated. <ruby>一人<rt>ひとり</rt></ruby><ruby>二<rt>ふた</rt></ruby>つずつ<ruby>取<rt>と</rt></ruby>ってください (take two each). <ruby>毎日<rt>まいにち</rt></ruby><ruby>少<rt>すこ</rt></ruby>しずつ<ruby>勉強<rt>べんきょう</rt></ruby>する (a little at a time).<br><br><b>〜<ruby>目<rt>め</rt></ruby></b> = ordinal, 'the Nth': <ruby>一<rt>ひと</rt></ruby>つ<ruby>目<rt>め</rt></ruby>, <ruby>二回目<rt>にかいめ</rt></ruby>, <ruby>三番目<rt>さんばんめ</rt></ruby>, <ruby>二日目<rt>ふつかめ</rt></ruby>. <ruby>二<rt>ふた</rt></ruby>つ<ruby>目<rt>め</rt></ruby>の<ruby>角<rt>かど</rt></ruby>を<ruby>右<rt>みぎ</rt></ruby>に<ruby>曲<rt>ま</rt></ruby>がる (turn right at the second corner).<br><br><b>〜中</b> has two readings with different meanings:<br>• <b>ちゅう</b> = 'in the middle of (an activity)': <ruby>会議<rt>かいぎ</rt></ruby><ruby>中<rt>ちゅう</rt></ruby>, <ruby>授業<rt>じゅぎょう</rt></ruby><ruby>中<rt>ちゅう</rt></ruby>, <ruby>電話<rt>でんわ</rt></ruby><ruby>中<rt>ちゅう</rt></ruby>, <ruby>工事<rt>こうじ</rt></ruby><ruby>中<rt>ちゅう</rt></ruby>. It also means 'within', as in <ruby>今週<rt>こんしゅう</rt></ruby><ruby>中<rt>ちゅう</rt></ruby>に (some time this week).<br>• <b>じゅう</b> = 'throughout, all over': <ruby>一日<rt>いちにち</rt></ruby><ruby>中<rt>じゅう</rt></ruby> (all day long), <ruby>一年<rt>いちねん</rt></ruby><ruby>中<rt>じゅう</rt></ruby>, <ruby>世界<rt>せかい</rt></ruby><ruby>中<rt>じゅう</rt></ruby>.",
+        "formation": [
+          "Number / quantity + ずつ",
+          "Number + counter + <ruby>目<rt>め</rt></ruby>",
+          "Activity noun + <ruby>中<rt>ちゅう</rt></ruby>: in the middle of",
+          "Time or place noun + <ruby>中<rt>じゅう</rt></ruby>: throughout"
+        ],
+        "examples": [
+          {
+            "jp": "お<ruby>菓子<rt>かし</rt></ruby>を<ruby>一人<rt>ひとり</rt></ruby><ruby>三<rt>みっ</rt></ruby>つずつ<ruby>取<rt>と</rt></ruby>ってください。",
+            "en": "Please take three sweets each."
+          },
+          {
+            "jp": "<ruby>毎日<rt>まいにち</rt></ruby><ruby>少<rt>すこ</rt></ruby>しずつ<ruby>漢字<rt>かんじ</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えています。",
+            "en": "I'm learning kanji a little at a time every day."
+          },
+          {
+            "jp": "<ruby>二<rt>ふた</rt></ruby>つ<ruby>目<rt>め</rt></ruby>の<ruby>信号<rt>しんごう</rt></ruby>を<ruby>左<rt>ひだり</rt></ruby>に<ruby>曲<rt>ま</rt></ruby>がってください。",
+            "en": "Turn left at the second traffic light."
+          },
+          {
+            "jp": "<ruby>日本<rt>にほん</rt></ruby>に<ruby>来<rt>く</rt></ruby>るのは、<ruby>今回<rt>こんかい</rt></ruby>で<ruby>三回目<rt>さんかいめ</rt></ruby>です。",
+            "en": "This is my third time coming to Japan."
+          },
+          {
+            "jp": "<ruby>部長<rt>ぶちょう</rt></ruby>は<ruby>今<rt>いま</rt></ruby>、<ruby>会議<rt>かいぎ</rt></ruby><ruby>中<rt>ちゅう</rt></ruby>です。",
+            "en": "The department head is in a meeting right now."
+          },
+          {
+            "jp": "<ruby>運転<rt>うんてん</rt></ruby><ruby>中<rt>ちゅう</rt></ruby>は、<ruby>携帯電話<rt>けいたいでんわ</rt></ruby>を<ruby>使<rt>つか</rt></ruby>わないでください。",
+            "en": "Please don't use your phone while driving."
+          },
+          {
+            "jp": "<ruby>昨日<rt>きのう</rt></ruby>は<ruby>一日<rt>いちにち</rt></ruby><ruby>中<rt>じゅう</rt></ruby>、<ruby>雨<rt>あめ</rt></ruby>でした。",
+            "en": "It rained all day yesterday."
+          },
+          {
+            "jp": "このお<ruby>祭<rt>まつ</rt></ruby>りには、<ruby>世界<rt>せかい</rt></ruby><ruby>中<rt>じゅう</rt></ruby>から<ruby>人<rt>ひと</rt></ruby>が<ruby>来<rt>き</rt></ruby>ます。",
+            "en": "People come to this festival from all over the world."
+          },
+          {
+            "jp": "レポートは<ruby>今週<rt>こんしゅう</rt></ruby><ruby>中<rt>ちゅう</rt></ruby>に<ruby>出<rt>だ</rt></ruby>してください。",
+            "en": "Please hand in the report some time this week."
+          }
+        ],
+        "dialogue": [
+          {
+            "who": "A",
+            "jp": "すみません、<ruby>田中<rt>たなか</rt></ruby><ruby>部長<rt>ぶちょう</rt></ruby>はいらっしゃいますか。",
+            "en": "Excuse me, is Mr. Tanaka, the department head, available?"
+          },
+          {
+            "who": "B",
+            "jp": "<ruby>申<rt>もう</rt></ruby>し<ruby>訳<rt>わけ</rt></ruby>ありません。<ruby>部長<rt>ぶちょう</rt></ruby>はただ<ruby>今<rt>いま</rt></ruby>、<ruby>会議<rt>かいぎ</rt></ruby><ruby>中<rt>ちゅう</rt></ruby>です。",
+            "en": "I'm very sorry. He's in a meeting at the moment."
+          },
+          {
+            "who": "A",
+            "jp": "そうですか。<ruby>今日<rt>きょう</rt></ruby>、<ruby>電話<rt>でんわ</rt></ruby>するのはこれで<ruby>三回目<rt>さんかいめ</rt></ruby>なんですが…",
+            "en": "I see. This is the third time I've called today, though…"
+          },
+          {
+            "who": "B",
+            "jp": "<ruby>失礼<rt>しつれい</rt></ruby>しました。<ruby>会議<rt>かいぎ</rt></ruby>が<ruby>終<rt>お</rt></ruby>わったら、すぐお<ruby>伝<rt>つた</rt></ruby>えします。",
+            "en": "My apologies. I'll let him know as soon as the meeting ends."
+          }
+        ],
+        "tip": "Is it an activity you could interrupt (会議, 授業, 電話)? Then 中 = ちゅう. Is it a stretch of time or space (一日, 世界)? Then 中 = じゅう.",
+        "quiz": [
+          {
+            "q": "「みかんを<ruby>一人<rt>ひとり</rt></ruby><ruby>二<rt>ふた</rt></ruby>つ＿＿<ruby>配<rt>くば</rt></ruby>りました。」",
+            "choices": [
+              "ずつ",
+              "<ruby>目<rt>め</rt></ruby>",
+              "<ruby>中<rt>ちゅう</rt></ruby>",
+              "ごろ"
+            ],
+            "a": 0,
+            "ex": "'Two each': ずつ.",
+            "why": [
+              null,
+              "<ruby>二<rt>ふた</rt></ruby>つ<ruby>目<rt>め</rt></ruby> = 'the second one', an ordinal.",
+              "<ruby>中<rt>ちゅう</rt></ruby> means 'in the middle of', which doesn't attach to a number like this.",
+              "ごろ means 'about', and it's for time."
+            ]
+          },
+          {
+            "q": "How is 中 read in 「<ruby>一日<rt>いちにち</rt></ruby>中」 (all day long)?",
+            "choices": [
+              "ちゅう",
+              "じゅう",
+              "なか",
+              "うち"
+            ],
+            "a": 1,
+            "ex": "'Throughout a stretch of time' is じゅう: いちにちじゅう.",
+            "why": [
+              "ちゅう is for activities in progress (<ruby>会議<rt>かいぎ</rt></ruby>中) or 'within' (<ruby>今週<rt>こんしゅう</rt></ruby>中に).",
+              null,
+              "なか is the standalone word 'inside'.",
+              "うち is a different word, as in うちに."
+            ]
+          },
+          {
+            "q": "「この<ruby>道<rt>みち</rt></ruby>をまっすぐ<ruby>行<rt>い</rt></ruby>って、<ruby>三<rt>みっ</rt></ruby>つ＿＿の<ruby>角<rt>かど</rt></ruby>を<ruby>右<rt>みぎ</rt></ruby>です。」",
+            "choices": [
+              "<ruby>目<rt>め</rt></ruby>",
+              "ずつ",
+              "<ruby>中<rt>ちゅう</rt></ruby>",
+              "<ruby>回<rt>かい</rt></ruby>"
+            ],
+            "a": 0,
+            "ex": "'The third corner': ordinal <ruby>目<rt>め</rt></ruby>.",
+            "why": [
+              null,
+              "ずつ = 'each', which isn't about order.",
+              "<ruby>中<rt>ちゅう</rt></ruby> = 'in the middle of'.",
+              "<ruby>回<rt>かい</rt></ruby> counts times or occurrences, not objects in a row."
+            ]
+          }
+        ]
+      },
+      {
+        "jp": "〜でも・〜とか・〜や〜など",
+        "romaji": "~demo / ~toka / ~ya ~nado",
+        "fn": "Softening suggestions and giving examples",
+        "sources": [
+          "MNN Bk1 L10 / Bk2 L32",
+          "Genki I Ch11",
+          "Sou Matome Wk2"
+        ],
+        "explain": "<b>Noun + でも</b> = '…or something'. It softens an invitation or suggestion by not insisting on that exact thing: お<ruby>茶<rt>ちゃ</rt></ruby>でも<ruby>飲<rt>の</rt></ruby>みませんか (how about some tea or something?). <ruby>映画<rt>えいが</rt></ruby>でも<ruby>見<rt>み</rt></ruby>に<ruby>行<rt>い</rt></ruby>こうか. (Don't mix it up with <ruby>疑問詞<rt>ぎもんし</rt></ruby> + でも 'any… at all' from Module 8, or with 〜ても／でも 'even if'.)<br><br><b>A や B (など)</b> = 'A and B, among other things'. It makes an incomplete list of nouns: <ruby>机<rt>つくえ</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>に<ruby>本<rt>ほん</rt></ruby>やノートなどがあります.<br><b>A とか B とか</b> = the casual version, and it can also list actions: <ruby>休<rt>やす</rt></ruby>みの<ruby>日<rt>ひ</rt></ruby>は、<ruby>映画<rt>えいが</rt></ruby>を<ruby>見<rt>み</rt></ruby>るとか、<ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>に<ruby>行<rt>い</rt></ruby>くとかしています.<br><b>A と B</b> = exactly A and B, a complete list.<br><b>〜たり〜たりする</b> (Module 7) is the verb version of や.",
+        "formation": [
+          "Noun + でも + invitation or suggestion",
+          "Noun や Noun (など): partial list",
+          "Noun / plain form + とか + Noun / plain form + とか: casual partial list",
+          "Noun と Noun: complete list"
+        ],
+        "examples": [
+          {
+            "jp": "<ruby>疲<rt>つか</rt></ruby>れたね。コーヒーでも<ruby>飲<rt>の</rt></ruby>もうか。",
+            "en": "I'm tired. Shall we get a coffee or something?"
+          },
+          {
+            "jp": "<ruby>週末<rt>しゅうまつ</rt></ruby>、<ruby>映画<rt>えいが</rt></ruby>でも<ruby>見<rt>み</rt></ruby>に<ruby>行<rt>い</rt></ruby>きませんか。",
+            "en": "Want to go see a movie or something this weekend?"
+          },
+          {
+            "jp": "<ruby>冷蔵庫<rt>れいぞうこ</rt></ruby>に<ruby>牛乳<rt>ぎゅうにゅう</rt></ruby>や<ruby>卵<rt>たまご</rt></ruby>などがあります。",
+            "en": "There's milk, eggs and so on in the fridge."
+          },
+          {
+            "jp": "<ruby>京都<rt>きょうと</rt></ruby>や<ruby>奈良<rt>なら</rt></ruby>などの<ruby>古<rt>ふる</rt></ruby>い<ruby>町<rt>まち</rt></ruby>が<ruby>好<rt>す</rt></ruby>きです。",
+            "en": "I like old towns like Kyoto and Nara."
+          },
+          {
+            "jp": "<ruby>休<rt>やす</rt></ruby>みの<ruby>日<rt>ひ</rt></ruby>は、<ruby>掃除<rt>そうじ</rt></ruby>とか<ruby>洗濯<rt>せんたく</rt></ruby>とかで<ruby>忙<rt>いそが</rt></ruby>しいです。",
+            "en": "On my days off I'm busy with cleaning, laundry and stuff."
+          },
+          {
+            "jp": "ストレスがたまったら、<ruby>歌<rt>うた</rt></ruby>うとか、<ruby>走<rt>はし</rt></ruby>るとかするといいですよ。",
+            "en": "When stress builds up, it helps to sing, go for a run or something."
+          },
+          {
+            "jp": "かばんには<ruby>本<rt>ほん</rt></ruby>とノートが<ruby>入<rt>はい</rt></ruby>っています。",
+            "en": "There's a book and a notebook in the bag. (complete list)"
+          }
+        ],
+        "dialogue": [
+          {
+            "who": "A",
+            "jp": "<ruby>来週<rt>らいしゅう</rt></ruby>、お<ruby>客<rt>きゃく</rt></ruby>さんが<ruby>来<rt>く</rt></ruby>るんですが、お<ruby>土産<rt>みやげ</rt></ruby>は<ruby>何<rt>なに</rt></ruby>がいいでしょうか。",
+            "en": "I have visitors coming next week. What would make a good gift?"
+          },
+          {
+            "who": "B",
+            "jp": "そうですね、お<ruby>菓子<rt>かし</rt></ruby>とか、お<ruby>茶<rt>ちゃ</rt></ruby>とかはどうですか。",
+            "en": "Let's see… how about sweets, or tea or something?"
+          },
+          {
+            "who": "A",
+            "jp": "いいですね。<ruby>駅前<rt>えきまえ</rt></ruby>の<ruby>店<rt>みせ</rt></ruby>に、せんべいやまんじゅうなどがありますよね。",
+            "en": "Good idea. The shop by the station has rice crackers, manju and things, right?"
+          },
+          {
+            "who": "B",
+            "jp": "ええ。じゃあ、<ruby>帰<rt>かえ</rt></ruby>りにちょっと<ruby>見<rt>み</rt></ruby>に<ruby>行<rt>い</rt></ruby>きませんか。お<ruby>茶<rt>ちゃ</rt></ruby>でも<ruby>飲<rt>の</rt></ruby>みながら。",
+            "en": "Yes. Shall we go take a look on the way home? Maybe over a cup of tea."
+          }
+        ],
+        "tip": "でも after a noun in an invitation isn't 'but' or 'even'. It means '…or something', and it makes the invitation easy to say no to.",
+        "quiz": [
+          {
+            "q": "「ちょっと<ruby>休<rt>やす</rt></ruby>みましょう。お<ruby>茶<rt>ちゃ</rt></ruby>＿＿<ruby>飲<rt>の</rt></ruby>みませんか。」",
+            "choices": [
+              "でも",
+              "しか",
+              "や",
+              "ばかり"
+            ],
+            "a": 0,
+            "ex": "Noun + でも softens the invitation: 'tea or something'.",
+            "why": [
+              null,
+              "しか needs a negative ('only'), and it doesn't fit an invitation.",
+              "や lists nouns and needs a second item.",
+              "ばかり ('nothing but') sounds like a complaint."
+            ]
+          },
+          {
+            "q": "「かばんの<ruby>中<rt>なか</rt></ruby>に、<ruby>財布<rt>さいふ</rt></ruby>＿＿かぎなどが<ruby>入<rt>はい</rt></ruby>っています。」",
+            "choices": [
+              "や",
+              "でも",
+              "しか",
+              "ずつ"
+            ],
+            "a": 0,
+            "ex": "A や B など: a partial list.",
+            "why": [
+              null,
+              "でも doesn't link items in a list.",
+              "しか needs a negative verb.",
+              "ずつ = 'each', for amounts."
+            ]
+          },
+          {
+            "q": "Which one is a complete list (only these two things)?",
+            "choices": [
+              "<ruby>本<rt>ほん</rt></ruby>とノートを<ruby>買<rt>か</rt></ruby>いました。",
+              "<ruby>本<rt>ほん</rt></ruby>やノートを<ruby>買<rt>か</rt></ruby>いました。",
+              "<ruby>本<rt>ほん</rt></ruby>とかノートとかを<ruby>買<rt>か</rt></ruby>いました。",
+              "<ruby>本<rt>ほん</rt></ruby>やノートなどを<ruby>買<rt>か</rt></ruby>いました。"
+            ],
+            "a": 0,
+            "ex": "と gives a complete list. や and とか imply there were other things too.",
+            "why": [
+              null,
+              "や implies 'among other things'.",
+              "とか〜とか is a casual partial list.",
+              "など makes it explicitly partial ('and so on')."
+            ]
+          }
+        ]
+      }
+    ],
+    "check": [
+      {
+        "q": "「<ruby>父<rt>ちち</rt></ruby>がテレビを<ruby>見<rt>み</rt></ruby>ている＿＿<ruby>見<rt>み</rt></ruby>えました。」",
+        "choices": [
+          "のが",
+          "ことが",
+          "ものが",
+          "ためが"
+        ],
+        "a": 0,
+        "ex": "Perception verbs (<ruby>見<rt>み</rt></ruby>える, <ruby>聞<rt>き</rt></ruby>こえる) take の."
+      },
+      {
+        "q": "「<ruby>私<rt>わたし</rt></ruby>の<ruby>夢<rt>ゆめ</rt></ruby>は、<ruby>自分<rt>じぶん</rt></ruby>の<ruby>店<rt>みせ</rt></ruby>を<ruby>持<rt>も</rt></ruby>つ＿＿です。」",
+        "choices": [
+          "こと",
+          "の",
+          "もの",
+          "ところ"
+        ],
+        "a": 0,
+        "ex": "Naming the content of a dream or hobby before です: こと."
+      },
+      {
+        "q": "「ごめん、<ruby>牛乳<rt>ぎゅうにゅう</rt></ruby>を<ruby>買<rt>か</rt></ruby>う＿＿<ruby>忘<rt>わす</rt></ruby>れちゃった。」",
+        "choices": [
+          "のを",
+          "のに",
+          "ので",
+          "のが"
+        ],
+        "a": 0,
+        "ex": "'Forgot to buy': のを + <ruby>忘<rt>わす</rt></ruby>れる."
+      },
+      {
+        "q": "(casual) 「もう<ruby>遅<rt>おそ</rt></ruby>いから、<ruby>帰<rt>かえ</rt></ruby>ら＿＿。」",
+        "choices": [
+          "なきゃ",
+          "ちゃう",
+          "とく",
+          "てる"
+        ],
+        "a": 0,
+        "ex": "'Have to go home': なければ → なきゃ."
+      },
+      {
+        "q": "「あ、ケーキ、<ruby>全部<rt>ぜんぶ</rt></ruby><ruby>食<rt>た</rt></ruby>べ＿＿。ごめん！」",
+        "choices": [
+          "ちゃった",
+          "といた",
+          "なきゃ",
+          "てる"
+        ],
+        "a": 0,
+        "ex": "てしまった → ちゃった: 'I ate it all (oops)'."
+      },
+      {
+        "q": "「ビール、<ruby>冷蔵庫<rt>れいぞうこ</rt></ruby>に<ruby>入<rt>い</rt></ruby>れ＿＿ね。<ruby>後<rt>あと</rt></ruby>で<ruby>飲<rt>の</rt></ruby>むから。」",
+        "choices": [
+          "とく",
+          "ちゃだめ",
+          "なかった",
+          "たら"
+        ],
+        "a": 0,
+        "ex": "ておく → とく: put it in now, ready for later."
+      },
+      {
+        "q": "「ここでたばこを<ruby>吸<rt>す</rt></ruby>っ＿＿だめですよ。」",
+        "choices": [
+          "ちゃ",
+          "とく",
+          "ちゃう",
+          "てる"
+        ],
+        "a": 0,
+        "ex": "てはだめ → ちゃだめ: 'you can't smoke here'."
+      },
+      {
+        "q": "(talking to yourself) 「<ruby>明日<rt>あした</rt></ruby>、<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>る＿＿。」",
+        "choices": [
+          "かな",
+          "でしょうか",
+          "ください",
+          "ましょう"
+        ],
+        "a": 0,
+        "ex": "Wondering to yourself: かな."
+      },
+      {
+        "q": "To a stranger: 「すみません、この<ruby>近<rt>ちか</rt></ruby>くに<ruby>郵便局<rt>ゆうびんきょく</rt></ruby>はある＿＿。」",
+        "choices": [
+          "でしょうか",
+          "かな",
+          "かしら",
+          "だろう"
+        ],
+        "a": 0,
+        "ex": "A polite question to a stranger: でしょうか."
+      },
+      {
+        "q": "「<ruby>先生<rt>せんせい</rt></ruby>、<ruby>推薦状<rt>すいせんじょう</rt></ruby>を<ruby>書<rt>か</rt></ruby>い＿＿。」",
+        "choices": [
+          "ていただけませんか",
+          "てくれる？",
+          "て",
+          "なさい"
+        ],
+        "a": 0,
+        "ex": "To a teacher: 〜ていただけませんか."
+      },
+      {
+        "q": "「すみません、<ruby>少<rt>すこ</rt></ruby>し<ruby>考<rt>かんが</rt></ruby>え＿＿。」 (asking for time to think)",
+        "choices": [
+          "させてください",
+          "てください",
+          "られてください",
+          "させられてください"
+        ],
+        "a": 0,
+        "ex": "Causative + てください = 'please let me…'."
+      },
+      {
+        "q": "「＿＿うちに、<ruby>帰<rt>かえ</rt></ruby>りましょう。」 (before it gets dark)",
+        "choices": [
+          "<ruby>暗<rt>くら</rt></ruby>くならない",
+          "<ruby>暗<rt>くら</rt></ruby>くなった",
+          "<ruby>暗<rt>くら</rt></ruby>くなって",
+          "<ruby>暗<rt>くら</rt></ruby>くなろう"
+        ],
+        "a": 0,
+        "ex": "Verb ない + うちに = 'before X happens'."
+      },
+      {
+        "q": "「ケーキを<ruby>一人<rt>ひとり</rt></ruby><ruby>一<rt>ひと</rt></ruby>つ＿＿<ruby>取<rt>と</rt></ruby>ってください。」",
+        "choices": [
+          "ずつ",
+          "<ruby>目<rt>め</rt></ruby>",
+          "しか",
+          "<ruby>中<rt>ちゅう</rt></ruby>"
+        ],
+        "a": 0,
+        "ex": "'One each': ずつ."
+      },
+      {
+        "q": "「<ruby>部長<rt>ぶちょう</rt></ruby>は<ruby>今<rt>いま</rt></ruby>、<ruby>会議<rt>かいぎ</rt></ruby>＿＿です。」",
+        "choices": [
+          "<ruby>中<rt>ちゅう</rt></ruby>",
+          "<ruby>目<rt>め</rt></ruby>",
+          "ずつ",
+          "ごろ"
+        ],
+        "a": 0,
+        "ex": "'In the middle of a meeting': <ruby>会議<rt>かいぎ</rt></ruby><ruby>中<rt>ちゅう</rt></ruby>."
+      },
+      {
+        "q": "「<ruby>疲<rt>つか</rt></ruby>れたから、コーヒー＿＿<ruby>飲<rt>の</rt></ruby>もうか。」",
+        "choices": [
+          "でも",
+          "しか",
+          "ずつ",
+          "ばかり"
+        ],
+        "a": 0,
+        "ex": "Noun + でも softens the suggestion: 'a coffee or something'."
+      }
+    ]
+  }
+]

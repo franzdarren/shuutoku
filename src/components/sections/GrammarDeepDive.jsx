@@ -195,6 +195,18 @@ export default function GrammarDeepDive({ jumpTarget, isActive }) {
   const [, bump] = useReducer((c) => c + 1, 0);
   const sampleCache = useRef({});
   const pendingScrollId = useRef(null);
+  const [recall, setRecall] = useState(() => {
+    try { return localStorage.getItem("n4.recall") === "1"; } catch { return false; }
+  });
+
+  useEffect(() => {
+    try { localStorage.setItem("n4.recall", recall ? "1" : "0"); } catch { /* ignore */ }
+  }, [recall]);
+
+  function revealTranslation(e) {
+    if (!recall) return;
+    e.target.closest?.(".ex-en, .dline .en")?.classList.toggle("revealed");
+  }
 
   function drawCheckSet(mi, seen = poolStats) {
     return drawFreshSample(moduleCheckPool(mi), 10, seen, getCheckId);
@@ -325,9 +337,22 @@ export default function GrammarDeepDive({ jumpTarget, isActive }) {
         </div>
         <ModuleProgress mi={activeMod} />
       </div>
-      {mod.points.map((pt, pi) => (
-        <GrammarCard key={pi} mod={mod} mi={activeMod} pt={pt} pi={pi} />
-      ))}
+      <div className="recall-bar">
+        <button className={"qc-reset recall-btn" + (recall ? " on" : "")} aria-pressed={recall} onClick={() => setRecall(!recall)}>
+          {recall ? "Recall mode: on" : "Recall mode"}
+        </button>
+        <span>{recall ? "Translations are hidden. Read the Japanese, decide what it means, then tap the blur to check." : "Hide the English under examples and dialogues, so you read the Japanese first."}</span>
+      </div>
+
+      {/* Revealing a line toggles a class directly on the DOM node, so the
+          wrapper is keyed on module and mode: switching either remounts the
+          cards and starts every translation hidden again, instead of React
+          reusing a node that's still marked revealed from another module. */}
+      <div key={activeMod + "-" + recall} className={recall ? "recall-mode" : undefined} onClick={revealTranslation}>
+        {mod.points.map((pt, pi) => (
+          <GrammarCard key={pi} mod={mod} mi={activeMod} pt={pt} pi={pi} />
+        ))}
+      </div>
 
       <ModuleCheck mi={activeMod} sample={moduleSample} onNewSet={newModuleSet} onResetModule={resetModule} />
 

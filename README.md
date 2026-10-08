@@ -38,8 +38,9 @@ weak points.
 
 **Stack:** Claude Pro, Monster Energy, React19.
 
-**Contents:** 13 modules / 76 grammar points, 183 kanji, 6 reading passages,
-34 conversation scenarios, 142 phrases, ~575 quiz questions.
+**Contents:** 15 modules / 91 grammar points, 183 kanji, 6 reading passages,
+34 conversation scenarios, 142 phrases, ~660 quiz questions, and a conjugation
+drill over 108 verbs and adjectives.
 
 ## Run it
 
@@ -71,6 +72,8 @@ src/
     LookupContext    Text-selection listener behind the vocab tooltip.
   lib/
     dictionary.js    Local glossary first, then Jisho.
+    conjugate.js     Rule-based verb/adjective conjugation behind the Conjugation Dojo.
+    kana.js          Romaji → hiragana as you type, for answering without an IME.
     speech.js        Web Speech API wrapper for the dialogues.
 api/jisho.js         Vercel Edge function proxying Jisho in production.
 scripts/             One-off data maintenance. See below.

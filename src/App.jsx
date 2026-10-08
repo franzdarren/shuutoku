@@ -7,7 +7,7 @@ import { LookupProvider } from "./context/LookupContext.jsx";
 import { buildLocalIndex } from "./lib/dictionary.js";
 
 /* Sections load on first visit rather than all at once. Each one does real
-   work at module scope — GrammarDeepDive flattens 63 points, KanjiFocus and
+   work at module scope — GrammarDeepDive flattens every grammar point, KanjiFocus and
    KaiwaLab build their own lookup tables — and doing all of that before the
    first paint was work nobody had asked for yet. */
 const SECTIONS = [
@@ -17,6 +17,7 @@ const SECTIONS = [
   { id: "reading", Comp: lazy(() => import("./components/sections/ReadingLab.jsx")) },
   { id: "kaiwa", Comp: lazy(() => import("./components/sections/KaiwaLab.jsx")) },
   { id: "quiz", Comp: lazy(() => import("./components/sections/QuizCenter.jsx")) },
+  { id: "dojo", Comp: lazy(() => import("./components/sections/ConjugationDojo.jsx")) },
   { id: "exam", Comp: lazy(() => import("./components/sections/MockExam.jsx")) },
   { id: "mistakes", Comp: lazy(() => import("./components/sections/ReviewMistakes.jsx")) },
   { id: "ai", Comp: lazy(() => import("./components/sections/RenshuuAI.jsx")) },

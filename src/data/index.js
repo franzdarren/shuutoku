@@ -1,6 +1,7 @@
 import grammarBase from "./grammar.json";
 import grammarExtra from "./grammar-extra.json";
 import grammarConfusables from "./grammar-confusables.json";
+import grammarEveryday from "./grammar-everyday.json";
 import kanjiData from "./kanji.json";
 import readingPassages from "./reading.json";
 import kaiwaTips from "./kaiwa-tips.json";
@@ -8,7 +9,7 @@ import phraseBank from "./kaiwa-phrasebank.json";
 import kaiwaScenarios from "./kaiwa-scenarios.json";
 import quizGroups from "./quiz.json";
 
-export const grammarModules = [...grammarBase, ...grammarExtra, ...grammarConfusables];
+export const grammarModules = [...grammarBase, ...grammarExtra, ...grammarConfusables, ...grammarEveryday];
 export const kanjiFocus = kanjiData.kanjiFocus;
 export const kanjiQuiz = kanjiData.kanjiQuiz;
 export { readingPassages, kaiwaTips, phraseBank, kaiwaScenarios };

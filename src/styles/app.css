@@ -1624,6 +1624,125 @@ footer.pagefoot{ margin-top:60px; padding-top:20px; border-top:1px solid var(--l
 .soon-note{ font-size:var(--fs-sm); color:var(--ink-faint); margin-top:20px; }
 
 /* ============================================================
+   CONJUGATION DOJO
+   The drill card takes the column; the stats sit beside it on a wide
+   screen and drop below it on a narrow one. The prompt word is the one
+   big thing on the page. Everything else is quiet so the eye goes
+   word → box → feedback and back again.
+   ============================================================ */
+.dojo-grid{ display:grid; grid-template-columns:minmax(0,1fr) 250px; gap:20px; align-items:start; margin-bottom:28px; }
+.dojo-card{
+  background:var(--paper-2); border:1px solid var(--line); border-radius:var(--radius);
+  padding:22px 26px 18px; min-width:0;
+  box-shadow:inset 3px 0 0 var(--shu), var(--elev-1);
+}
+.dojo-top{ display:flex; justify-content:space-between; align-items:flex-start; gap:12px; }
+.dojo-form{ display:flex; flex-wrap:wrap; align-items:baseline; gap:2px 10px; min-width:0; }
+.dojo-form-jp{ font-family:var(--serif); font-size:var(--fs-xl); color:var(--shu); }
+.dojo-form-en{ font-size:var(--fs-sm); font-weight:700; color:var(--ink); }
+.dojo-form-hint{ font-size:var(--fs-xs); color:var(--ink-faint); }
+.dojo-streak{ text-align:center; line-height:1.1; flex-shrink:0; }
+.dojo-streak-num{ display:block; font-family:var(--serif); font-size:var(--fs-2xl); color:var(--gold); font-variant-numeric:tabular-nums; }
+.dojo-streak-lbl{ font-size:var(--fs-3xs); color:var(--ink-faint); letter-spacing:.1em; }
+.dojo-prompt{ text-align:center; padding:22px 0 20px; }
+.dojo-word{ font-family:var(--serif); font-size:clamp(2.2rem, 7vw, 3.2rem); color:var(--ink); line-height:1.55; }
+.dojo-word rt{ font-size:.3em; color:var(--ink-faint); }
+.dojo-en{ font-size:var(--fs-sm); color:var(--ink-soft); }
+.dojo-class{ font-size:var(--fs-2xs); color:var(--ink-faint); margin-top:8px; letter-spacing:.04em; }
+.dojo-answer{ display:flex; gap:8px; }
+.dojo-input{
+  flex:1; min-width:0; font-family:var(--sans); font-size:var(--fs-xl);
+  padding:10px 14px; border:1px solid var(--line); border-radius:var(--radius-sm);
+  background:var(--paper); color:var(--ink);
+  transition:border-color var(--t-fast), box-shadow var(--t-fast), background var(--t-fast);
+}
+.dojo-input::placeholder{ color:var(--ink-faint); font-size:var(--fs-md); }
+.dojo-input:focus{ outline:none; border-color:var(--indigo); box-shadow:0 0 0 3px var(--indigo-tint); }
+.dojo-input.ok{ border-color:var(--matcha); background:var(--matcha-tint); }
+.dojo-input.bad{ border-color:var(--shu); background:var(--shu-tint); }
+.dojo-go{
+  font-family:var(--sans); font-size:var(--fs-sm); font-weight:700; padding:0 20px;
+  border-radius:var(--radius-sm); border:1px solid var(--indigo); background:var(--indigo);
+  color:var(--on-accent); cursor:pointer; white-space:nowrap;
+  transition:background var(--t-fast), border-color var(--t-fast);
+}
+.dojo-go:hover{ background:var(--indigo-deep); border-color:var(--indigo-deep); }
+.dojo-go:active{ transform:translateY(1px); }
+.dojo-result{
+  margin-top:14px; padding:14px 16px; border-radius:var(--radius-sm);
+  border:1px solid var(--line); background:var(--paper);
+  animation:fadein var(--dur) var(--ease-out);
+}
+.dojo-result.ok{ border-color:var(--matcha); }
+.dojo-result.bad{ border-color:var(--shu); }
+.dojo-verdict{ font-size:var(--fs-sm); font-weight:700; display:flex; gap:10px; align-items:baseline; flex-wrap:wrap; }
+.dojo-result.ok .dojo-verdict{ color:var(--matcha); }
+.dojo-result.bad .dojo-verdict{ color:var(--shu); }
+.dojo-given{ font-weight:400; color:var(--ink-faint); font-size:var(--fs-xs); }
+.dojo-correct{ font-family:var(--serif); font-size:var(--fs-2xl); color:var(--ink); margin:2px 0; line-height:1.6; }
+.dojo-correct rt{ font-size:.38em; color:var(--ink-faint); }
+.dojo-alt{ font-size:var(--fs-xs); color:var(--ink-soft); }
+.dojo-rule{ font-size:var(--fs-sm); color:var(--ink-soft); margin-top:8px; }
+.dojo-rule b{ color:var(--ink); }
+.dojo-note{ font-size:var(--fs-sm); color:var(--ink); margin-top:8px; padding:8px 11px; border-radius:var(--radius-sm); background:var(--gold-tint); }
+.dojo-actions{ display:flex; align-items:center; gap:10px; margin-top:12px; min-height:22px; }
+.dojo-keyhint{ font-size:var(--fs-2xs); color:var(--ink-faint); margin-left:auto; }
+.dojo-empty{ color:var(--ink-soft); font-size:var(--fs-sm); padding:30px 0; text-align:center; }
+
+.dojo-side{ background:var(--paper-2); border:1px solid var(--line); border-radius:var(--radius); padding:16px 18px; box-shadow:var(--elev-1); }
+.dojo-session{
+  display:flex; justify-content:space-between; gap:12px; padding-bottom:12px; margin-bottom:12px;
+  border-bottom:1px solid var(--line-soft); color:var(--ink-faint); font-size:var(--fs-sm);
+}
+.dojo-session .num{ font-family:var(--serif); font-size:var(--fs-2xl); color:var(--gold); font-variant-numeric:tabular-nums; }
+.dojo-session .lbl{ font-size:var(--fs-3xs); letter-spacing:.08em; text-transform:uppercase; }
+.dojo-stats{ list-style:none; padding:0; margin:8px 0 12px; display:grid; gap:6px; }
+.dojo-stats li{ display:grid; grid-template-columns:6.4em minmax(0,1fr) 2.8em; align-items:center; gap:8px; font-size:var(--fs-xs); }
+.ds-name{ font-family:var(--serif); color:var(--ink-soft); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.ds-track{ height:4px; background:var(--line); border-radius:var(--radius-pill); overflow:hidden; }
+.ds-fill{ display:block; height:100%; background:var(--matcha); border-radius:inherit; transition:width var(--dur-slow) var(--ease-out); }
+.dojo-stats li.weak .ds-fill{ background:var(--shu); }
+.dojo-stats li.weak .ds-name{ color:var(--shu); }
+.ds-pct{ text-align:right; color:var(--ink-faint); font-variant-numeric:tabular-nums; }
+
+.dojo-settings{ max-width:var(--measure-card); display:grid; gap:14px; }
+.dojo-set-row{ display:grid; gap:7px; }
+.dojo-set-row .qlabel{ display:flex; gap:10px; align-items:baseline; }
+.dojo-all{
+  background:none; border:none; padding:0; font:inherit; color:var(--indigo); cursor:pointer;
+  text-decoration:underline; text-underline-offset:2px; text-transform:none; letter-spacing:0;
+}
+.dojo-chips{ display:flex; flex-wrap:wrap; gap:6px; }
+.dojo-chip{
+  font-family:var(--sans); font-size:var(--fs-xs); padding:6px 12px; border-radius:var(--radius-pill);
+  border:1px solid var(--line); background:var(--paper); color:var(--ink-faint); cursor:pointer;
+  transition:background var(--t-fast), border-color var(--t-fast), color var(--t-fast);
+}
+.dojo-chip .jp{ font-family:var(--serif); }
+.dojo-chip:hover{ border-color:var(--indigo); color:var(--indigo); }
+.dojo-chip.on{ background:var(--indigo-tint); border-color:var(--indigo); color:var(--ink); }
+
+/* ============================================================
+   RECALL MODE (Grammar Deep-Dive)
+   Translations under examples and dialogue lines are blurred until
+   tapped, so you read the Japanese and commit to a meaning first.
+   ============================================================ */
+.recall-bar{ display:flex; align-items:center; gap:12px; flex-wrap:wrap; margin:-6px 0 20px; font-size:var(--fs-xs); color:var(--ink-faint); max-width:var(--measure-card); }
+.recall-bar span{ flex:1 1 240px; min-width:0; }
+.recall-btn.on{ background:var(--indigo); border-color:var(--indigo); color:var(--on-accent); }
+.recall-btn.on:hover{ color:var(--on-accent); border-color:var(--indigo-deep); background:var(--indigo-deep); }
+.recall-mode .ex-en,
+.recall-mode .dline .en{
+  filter:blur(5px); cursor:pointer; user-select:none;
+  transition:filter var(--t-fast);
+}
+.recall-mode .ex-en.revealed,
+.recall-mode .dline .en.revealed{ filter:none; cursor:auto; user-select:auto; }
+@media print{
+  .recall-mode .ex-en, .recall-mode .dline .en{ filter:none; }
+}
+
+/* ============================================================
    RESPONSIVE
    ============================================================ */
 @media (max-width: 860px){
@@ -1657,4 +1776,9 @@ footer.pagefoot{ margin-top:60px; padding-top:20px; border-top:1px solid var(--l
   .kgrid{ grid-template-columns:1fr; }
   .modjump-rich button{ flex:1 1 100%; }
   .lookup-pop{ max-width:calc(100vw - 20px); }
+  .dojo-card{ padding:18px 16px 14px; }
+  .dojo-go{ padding:0 14px; }
+}
+@media (max-width: 860px){
+  .dojo-grid{ grid-template-columns:minmax(0,1fr); }
 }
